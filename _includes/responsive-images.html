@@ -1,0 +1,15 @@
+{% if include.link != "" %}
+  <a href="{{ include.link }}" title="{{ include.title }}">
+{% endif %}
+
+<div data-picture data-alt="{{ include.title }}">
+  <div data-src="{{ site.url }}{{ include.normal }}"></div>
+  <div data-src="{{ site.url }}{{ include.mobile }}" data-media="(max-width: 768px)"></div>
+  <noscript>
+    <img src="{{ site.url }}{{ include.normal }}" alt="{{ include.title }}">
+  </noscript>
+</div>
+  
+{% if include.link != '' %}
+  </a>
+{% endif %}

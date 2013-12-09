@@ -1,0 +1,200 @@
+/* Groups of molecules (and possibly atoms) joined together to form distinct section of an interface.
+*/
+
+
+/* Navigation
+--------------------------------------------------------------------------------
+*/
+
+
+
+
+
+
+/* Grid
+--------------------------------------------------------------------------------
+*/
+
+
+
+/* Displays a product thumb in different ways
+  - thumb structure is:
+  - <header> with <h3> title
+  - <figure> with <figcaption>
+  - <aside> with details
+*/
+@mixin thumb($header: false, $figure: true, $aside: false) {
+  header, figure, aside {
+    display: none;
+  }
+  
+  @if ($header != false) {
+    header {
+      display: block;
+    }
+  }
+  
+  @if ($figure != false) {
+    figure {
+      display: block;
+    }
+  }
+  
+  @if ($aside != false) {
+    aside {
+      display: block;
+    }
+  }
+}
+
+
+/* Displaying product / article thumbs
+  - if thumbs are filtered by Isotope the standard grid is replaced by an isotope grid
+*/
+@mixin thumbs($type: normal, $margin-bottom: 0) {
+  article {
+    &.thumb {
+      @if ($type == normal) {
+        @include col(5);
+      } @elseif ($type == isotope) {
+        @include isotope(5);
+      }
+      
+      @include thumb;
+      margin-bottom: $margin-bottom;
+    }
+  }
+}
+
+
+
+/* Float left child elements like in inline lists
+  - it selects only the direct descendants of the parent element
+  - its a free-form grid
+*/
+@mixin float-left {
+  @include block;
+  
+  > * {
+    width: auto;
+    float: left;
+    margin-right: $pad;
+  }
+}
+
+
+
+/* A classic, centered container
+  - adapts to small screens 
+*/
+@mixin container {
+  @include m_container($container-mobile);
+  
+  @include large-screen-and-above {
+    @include m_container($container-desktop);
+  }
+}
+
+
+
+
+/* Typography
+--------------------------------------------------------------------------------
+*/
+
+
+/* Default font, color, typography settings for non text elements
+*/
+@mixin default-settings {
+  @include color;
+  @include font;
+  
+  a {
+    @include link;
+  }
+  
+  img {
+    @include fluid-image;
+  }
+}
+
+
+
+/* Vertical spacing of all typographic elements
+*/
+@mixin vertical-rhythm {
+  /* Padding of individual elements
+  */
+  ul, ol, dl, table, figure, form, q {
+    margin: $pad 0;
+  }
+  
+  figure {
+    margin-top: $pad*2;
+  }
+  
+  
+  /* Padding of consecutive elements
+  */
+  dd + dt {
+    margin-top: $pad;
+  }
+  
+  p + p {
+    margin-top: $pad;
+  }
+  
+  h1 + h2, h2 + h3 {
+    padding-top: 0;
+  }
+  
+  
+  h1 + ul, h2 + ul, h3 + ul,
+  h1 + ol, h2 + ol, h3 + ol {
+    margin-top: 0;
+  }
+  
+  
+  li ul, li ol {
+    margin-top: 0;
+  }
+  
+}
+
+
+/* Settings for long text content like articles, blog posts
+*/
+@mixin body-text {
+  max-width: $body-text-width; 
+  @include line-height(text);
+  
+  /* Headings
+  */
+  @include headings;
+  h1, h2, h3 {
+    @include line-height(headings);
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: $h1-padding 0; 
+  }
+  
+  /* Elements
+  */
+  em, i {
+    font-style: italic;
+  }
+  
+  strong, b {
+    font-weight: bold;
+  }
+  
+  @include ul;
+  @include ol;
+  @include dl;
+  @include table;
+  @include figure;
+  @include form;
+  @include q;
+  
+  @include vertical-rhythm;
+}

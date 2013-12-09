@@ -1,0 +1,25 @@
+/* Groups of molecules (and possibly atoms) joined together to form distinct section of an interface.
+*/
+/* Navigation
+--------------------------------------------------------------------------------
+*/
+/* Grid
+--------------------------------------------------------------------------------
+*/
+/* Displays a product thumb in different ways - thumb structure is: - <header> with <h3> title - <figure> with <figcaption> - <aside> with details
+*/
+/* Displaying product / article thumbs - if thumbs are filtered by Isotope the standard grid is replaced by an isotope grid
+*/
+/* Float left child elements like in inline lists - it selects only the direct descendants of the parent element - its a free-form grid
+*/
+/* A classic, centered container - adapts to small screens 
+*/
+/* Typography
+--------------------------------------------------------------------------------
+*/
+/* Default font, color, typography settings for non text elements
+*/
+/* Vertical spacing of all typographic elements
+*/
+/* Settings for long text content like articles, blog posts
+*/

@@ -1,0 +1,616 @@
+/* Special decorations for this site
+*/
+
+
+
+/* Brands will be naked unlike product thumbs
+*/
+@mixin remove-thumb-anvelocom {
+  article {
+    &.thumb {
+      height: auto !important;
+      
+      figure {
+        height: auto !important;
+        border: none;
+        padding: 0;
+        
+        figcaption {
+          display: none;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+
+
+/* The product thumb must be styled specially for this theme
+*/
+@mixin thumb-anvelocom($figcaption: true, $price: true) {
+  article {
+    &.thumb, &.product {
+      height: 20em;
+      
+      @include landscape {
+        height: 21em;
+      }
+      
+      @include below-mobile-landscape {
+        height: 24em;
+      }
+      
+      @include below-and-small-screen-portrait {
+        height: 22em;
+      }
+      
+      @include below-and-normal-screen {
+        height: 24em;
+      }
+    
+      figure {
+        height: 18em;
+        
+        @include landscape {
+          height: 19em;
+        }
+        
+        @include below-mobile-landscape {
+          height: 22em;
+        }
+        
+        @include below-and-small-screen-portrait {
+          height: 20em;
+        }
+        
+        @include below-and-normal-screen {
+          height: 22em;
+        }
+        
+        @include bordered(double);
+        
+        position: relative;
+        
+        div {
+          max-height: 10em;
+          overflow: hidden;
+          
+          img {
+            width: 100%;
+          }
+        }
+        
+        figcaption {
+          margin: $pad 0;
+        }
+      }
+      
+      @if ($figcaption != true) {
+        figcaption {
+          display: none;
+        }
+      }
+      
+      @if ($price != false) {
+        aside {
+          display: block;
+          @include remove-title;
+          
+          #dimension, #content {
+            display: none;
+          }
+          
+          #price {
+            display: block;
+            @include price;
+            
+            position: relative;
+            top: -$pad - $pad/2;
+            left: $pad/2;
+          }
+        }
+      }
+    }
+    
+    /* The first article as section title
+    */
+    &.title {
+      header {
+        display: block;
+        @include bordered(double);
+        height: 91%;
+        
+        h3 {
+          margin: $pad/2;
+          height: 18em;
+          
+          &:after {
+            display: inline-block;
+            content: $arrow-down;
+            font-size: $before-font-size;
+            margin-left: $pad/4;
+            position: relative;
+            top: 2px;
+          }
+        }
+      }
+      
+      @include mobile {
+        height: $pad*2;
+        
+        header {
+          border: none;
+          padding: 0;
+          
+          &:after {
+            border: none;
+          }
+          
+          h3 {
+            &:after {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    
+    /* Hover on product thumb
+    */
+    &.thumb {
+      figure {
+        @include transition($easing);
+        
+        &:after, div, figcaption {
+          @include transition($easing);
+        }
+      }
+    }
+    
+    &.active {
+      figure {
+        background: #fff;
+        border-color: lightgray;
+        @include box-shadow($shadow);
+        
+        div {
+          max-height: 19em;
+        }
+        
+        figcaption {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+
+/* Display a single post
+*/
+@mixin single {
+  @include block;
+  @include bordered(double);
+  padding: 0;
+  width: col-resize(100%, 0, 4px);
+  
+  header {
+    display: none;
+  }
+  
+  figure {
+    text-align: center;
+    background: #fff;
+    margin: 0;
+    padding: $pad 0;
+    
+    figcaption {
+      display: none;
+    }
+    
+    @include mobile {
+      div {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  
+  aside {
+    padding: $pad*2;
+    
+    width: col-resize($major - 5%, $pad*4, 1px);
+    @include below-small-screen {
+      width: col-resize(100%, $pad*4, 1px);
+    } 
+  
+    #price {
+      @include price;
+    }
+    
+    #price, #dimension {
+      @include block;
+      @include bordered;
+      width: 51%;
+      margin-bottom: $pad;
+      
+      @include mobile {
+        width: col-resize(100%, $pad*2, 0px);
+      }
+    }
+    
+    #content {
+      @include block;
+      @include body-text;
+      
+      img {
+        display: none;
+      }
+    }
+  }
+}
+
+
+/* Display page content
+*/
+@mixin page {
+  background: white; 
+  padding: $pad;
+  width: col-resize(100%, $pad*2, 0px);
+  
+  figure {
+    display: none;
+  }
+  
+  aside {
+    #price, #dimension {
+      display: none;
+    }
+    
+    #content {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+@mixin comments {
+  max-width: $body-text-width;
+  margin: $pad 0;
+  
+  background: #fff;
+  padding: $pad;
+  width: col-resize(100%, $pad*2, 0px);
+  
+  @include form;
+  
+  h3, h2 {
+    margin-bottom: $pad;
+  }
+  
+  ol {
+    li {
+      margin-bottom: $pad;
+      padding-bottom: $pad;
+      border-bottom: 1px solid $gray;
+      
+      @include body-text;
+      
+      a {
+        @include link($highlight);
+      }
+      
+      .reply {
+        margin: $pad/2 0;
+      }
+      
+      .vcard {
+        display: none;
+      }
+    }
+    
+    &.children {
+      margin: $pad;
+    }
+  }
+  
+  
+  form {
+    width: 60%;
+    
+    @include mobile {
+      width: 90%;
+    }
+    
+    input, textarea {
+      margin-bottom: $pad/2;
+      
+      &#submit {
+        width: 15em;
+      }
+    }
+  }
+}
+
+
+/* The sidebar
+*/
+@mixin sidebar($padding: $pad*2) {
+  @include bordered(double);
+  padding: $padding;
+  width: col-resize(100%, $padding*2, 2px);
+  @include ul;
+  
+  @include below-small-screen {
+    margin-bottom: $pad;
+  }
+  
+  h3 {
+    display: none;
+  }
+  
+  ul {
+    @include ol-ul('-');
+    
+    li {
+      margin: $pad/2 0;
+    }
+  }
+}
+
+@mixin menu-anvelocom {
+  @include below-tablet {
+    &.active {
+      @include sidebar($pad);
+      
+      ul {
+        @include list-normal;
+      }
+    }
+  }
+}
+
+
+
+/* Display price
+*/
+@mixin price {
+  @include list-inline;
+  
+  li {
+    &:nth-of-type(1) {
+      font-weight: bold;
+      margin-right: $pad/2;
+    }
+    
+    &:nth-of-type(2) {
+      text-decoration: line-through;
+      margin-right: 0;
+      color: $highlight;
+    }
+  }
+}
+
+
+/* A white text on a black, opaque background
+*/
+@mixin black-background {
+  position: relative;
+  top: -$pad*2 - $pad/4;
+  background: $background;
+  display: inline-block;
+  
+  @include bordered;
+  border-width: $pad/4;
+  padding: $pad;
+  @include color(invert);
+  
+  opacity: .9;
+  
+  @include mobile {
+    border-width: 0;
+    top: 0;
+    margin-bottom: $pad;
+    display: block;
+  }
+}
+
+
+
+/* Highlight a text, even if it is a link
+*/
+@mixin highlight {
+  color: $highlight;
+  a {
+    @include link($highlight);
+  }
+}
+
+
+/* Add border to text
+*/
+@mixin bordered($type : simple) {
+  padding: $pad/2;
+  border: 1px solid;
+  
+  @if ($type == double) {
+    background: $background;
+    position: relative;
+    
+    &:after {
+      content: '';
+      padding: $pad/2;
+      border: 1px solid;
+      
+      top: $pad/2;
+      left: $pad/2;
+      width: col-resize(100%, $pad, 0px);
+      height: col-resize(100%, $pad, 0px);
+      
+      position: absolute;
+      z-index: -1;
+    }
+  }
+}
+
+
+
+
+html {
+  body {
+    .container {
+      #header {
+        h1 {
+          @include bordered;
+          border: 3px solid;
+        }
+        /* Nav must be adjusted to the bordered header
+        */
+        nav {
+          @include menu-anvelocom;
+          margin-top: $pad - $pad/4;
+          
+          @include below-tablet {
+            margin-top: $pad/2;
+          }
+        }
+      }
+      
+      main {
+        section {
+          header {
+            display: none;
+          }
+            
+          &.articles {
+            @include thumb-anvelocom;
+          }
+          
+          &#intro {
+            figure {
+              img {
+                @include box-shadow($shadow-remove);
+              }
+                
+              figcaption {
+                @include black-background;
+              }
+            }
+            /* Figcaption has relative positioning with negative top margin 
+            */
+            margin-bottom: 0; 
+          }
+        }
+      }
+      
+      #footer {
+        #company {
+          @include address;
+          address {
+            max-width: 50em;
+            margin: $pad 0;
+          }
+        }
+      }
+    }
+    
+  
+    /* Archives
+    */
+    &.page {
+      .container {
+        main {
+          section {
+            /* On mobiles the 'Configurator' border is removed
+            */
+            @include mobile {
+              &:nth-of-type(2) {
+                header {
+                  h2 {
+                    border: none;
+                    padding-left: 0;
+                  }
+                }
+              }
+            }
+            
+            &#filters {
+              ul {
+                li {
+                  @include color(invert);
+                  padding: $pad/4;
+                  width: col-resize(isotope-col-width(5), $pad/2, 0px);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    
+    /* Single product
+    */
+    &.single-post {
+      main {
+        section {
+          /* Display Articole similare, Toate marcile
+          */
+          header {
+            display: block;
+            
+            h2 {
+              margin-bottom: $pad;
+            }
+          }
+          
+          &#index {
+            margin-bottom: $pad;
+            
+            article.product {
+              @include single;
+            }
+          }
+        }
+        
+      }
+    }
+    
+    
+    /* Content page
+    */
+    &.page {
+      main {
+        #index {
+          article.thumb, #comments {
+            float: left;
+            @include body-text;
+          }
+          
+          article.thumb {
+            @include page;
+          }
+          
+          #comments {
+            @include comments;
+          }
+        }
+        
+        #sidebar {
+          @include sidebar;
+          width: col-resize($minor - 5%, $pad*4, 2px);
+          
+          @include below-small-screen {
+            padding: $pad;
+            width: col-resize(100%, $pad*2, 2px);
+          }
+        }
+      }
+    }
+  
+  }
+}
+
