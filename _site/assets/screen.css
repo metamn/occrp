@@ -142,3 +142,176 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 */
 /* Settings for long text content like articles, blog posts
 */
+/* Templates mostly focus on content structure (such as character length, image size, etc) rather than the actual content. - they are wireframes describing the layout
+*/
+/* An arrow  - to scroll to top of the page - or to reveal a menu
+*/
+/* A classic, horizontal menu for <nav> elements
+*/
+/* The filters
+*/
+/* Remove a section or nav title required by HTML5 outliner
+*/
+html body { background: #f1f1f1; color: #1f1f1f; font-size: 100%; line-height: 1.25; font-family: "HelveticaNeue", "Helvetica", "Arial", sans-serif; /* Archives
+*/ /* Single product
+*/ /* Content pages
+*/ }
+html body h1, html body h2, html body h3 { font-size: 20px; font-size: 1.25rem; font-weight: normal; line-height: 1.1; }
+html body h1 { font-weight: bold; }
+html body h2 { text-transform: uppercase; letter-spacing: 0.15625em; }
+html body h4, html body h5, html body h6 { font-size: larger; }
+html body a { color: #1f1f1f; text-decoration: none; outline: 0; text-transform: uppercase; letter-spacing: 0.15625em; -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; }
+html body a:hover, html body a:focus { color: #f3aaaa; }
+html body img { max-width: 100%; height: auto; }
+html body .container { width: 90%; margin: 0 auto; }
+@media only screen and (min-width: 90em) { html body .container { width: 80%; margin: 0 auto; } }
+html body .container #header, html body .container #footer { width: 100%; float: left; width: 100%; float: left; margin: 1.25em 0; }
+html body .container #header > *, html body .container #footer > * { width: auto; float: left; margin-right: 1.25em; }
+html body .container #header { margin-bottom: 0; }
+html body .container #header nav { /* We have two menus, the last is for contact
+*/ }
+html body .container #header nav h3 { display: none; }
+html body .container #header nav ul { margin: 0; display: block; list-style-type: none; }
+html body .container #header nav ul li { display: inline-block; float: left; margin-right: 1.25em; }
+html body .container #header nav ul li:last-of-type { margin-right: 0; }
+html body .container #header nav ul li.current_page_item a { background: #f1f1f1; color: #f3aaaa; }
+html body .container #header nav:last-of-type { display: none; }
+@media only screen and (min-width: 80em) { html body .container #header nav:last-of-type { float: right; margin-right: 0em; display: block; } }
+@media only screen and (max-width: 47.999em) { html body .container #header nav { /* Remove the arrow when menu is active
+*/ }
+  html body .container #header nav ul { display: none; }
+  html body .container #header nav:last-of-type { cursor: pointer; margin-right: 0; display: block; float: right; }
+  html body .container #header nav:last-of-type:before { content: "\2794"; font-size: 150%; display: block; -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); -ms-transform: rotate(90deg); -o-transform: rotate(90deg); transform: rotate(90deg); }
+  html body .container #header nav.active:last-of-type { float: left; }
+  html body .container #header nav.active:last-of-type:before { content: ''; padding: 0; font-size: normal; display: none; } }
+@media only screen and (max-width: 24em) { html body .container #header nav.active { /* Display the menu as a normal list
+*/ width: 100%; float: left; } }
+html body .container main { width: 100%; float: left; }
+html body .container main section { width: 100%; float: left; margin: 1.25em 0 0; /* The space between the intro image and real content is adjusted
+*/ }
+html body .container main section:nth-of-type(2) { margin-top: 0; }
+html body .container main section#intro h2, html body .container main section#intro h3, html body .container main section#intro h4 { display: none; }
+html body .container main section#intro figure img { -webkit-box-shadow: 1px 0 #1f1f1f, 0 1px #1f1f1f, 2px 1px #1f1f1f, 1px 2px #1f1f1f, 3px 2px #1f1f1f, 2px 3px #1f1f1f, 4px 3px #1f1f1f, 3px 4px #1f1f1f, 5px 4px #1f1f1f, 4px 5px #1f1f1f; -moz-box-shadow: 1px 0 #1f1f1f, 0 1px #1f1f1f, 2px 1px #1f1f1f, 1px 2px #1f1f1f, 3px 2px #1f1f1f, 2px 3px #1f1f1f, 4px 3px #1f1f1f, 3px 4px #1f1f1f, 5px 4px #1f1f1f, 4px 5px #1f1f1f; box-shadow: 1px 0 #1f1f1f, 0 1px #1f1f1f, 2px 1px #1f1f1f, 1px 2px #1f1f1f, 3px 2px #1f1f1f, 2px 3px #1f1f1f, 4px 3px #1f1f1f, 3px 4px #1f1f1f, 5px 4px #1f1f1f, 4px 5px #1f1f1f; width: 100%; }
+html body .container main section#intro figure figcaption { font-size: smaller; }
+html body .container main section.articles article.thumb { width: 18%; margin-right: 2.5%; float: left; margin-bottom: 1.25em; }
+html body .container main section.articles article.thumb:nth-of-type(2) { margin-right: 2.5%; }
+html body .container main section.articles article.thumb:nth-of-type(3) { margin-right: 2.5%; }
+html body .container main section.articles article.thumb:nth-of-type(4) { margin-right: 2.5%; }
+html body .container main section.articles article.thumb:nth-of-type(5) { margin-right: 0; }
+html body .container main section.articles article.thumb:nth-of-type(6) { margin-right: 2.5%; }
+html body .container main section.articles article.thumb:nth-of-type(7) { margin-right: 2.5%; }
+html body .container main section.articles article.thumb:nth-of-type(8) { margin-right: 2.5%; }
+html body .container main section.articles article.thumb:nth-of-type(9) { margin-right: 2.5%; }
+html body .container main section.articles article.thumb:nth-of-type(10) { margin-right: 0; }
+@media only screen and (max-width: 64em) { html body .container main section.articles article.thumb { width: 30%; margin-right: 5%; float: left; }
+  html body .container main section.articles article.thumb:nth-of-type(2) { margin-right: 5%; }
+  html body .container main section.articles article.thumb:nth-of-type(3) { margin-right: 0; }
+  html body .container main section.articles article.thumb:nth-of-type(4) { margin-right: 5%; }
+  html body .container main section.articles article.thumb:nth-of-type(5) { margin-right: 5%; }
+  html body .container main section.articles article.thumb:nth-of-type(6) { margin-right: 0; }
+  html body .container main section.articles article.thumb:nth-of-type(7) { margin-right: 5%; }
+  html body .container main section.articles article.thumb:nth-of-type(8) { margin-right: 5%; }
+  html body .container main section.articles article.thumb:nth-of-type(9) { margin-right: 0; }
+  html body .container main section.articles article.thumb:nth-of-type(10) { margin-right: 5%; } }
+@media only screen and (max-width: 47.999em) { html body .container main section.articles article.thumb { width: 45%; margin-right: 10%; float: left; }
+  html body .container main section.articles article.thumb:nth-of-type(2) { margin-right: 0; }
+  html body .container main section.articles article.thumb:nth-of-type(3) { margin-right: 10%; }
+  html body .container main section.articles article.thumb:nth-of-type(4) { margin-right: 0; }
+  html body .container main section.articles article.thumb:nth-of-type(5) { margin-right: 10%; }
+  html body .container main section.articles article.thumb:nth-of-type(6) { margin-right: 0; }
+  html body .container main section.articles article.thumb:nth-of-type(7) { margin-right: 10%; }
+  html body .container main section.articles article.thumb:nth-of-type(8) { margin-right: 0; }
+  html body .container main section.articles article.thumb:nth-of-type(9) { margin-right: 10%; }
+  html body .container main section.articles article.thumb:nth-of-type(10) { margin-right: 0; } }
+@media only screen and (max-width: 24em) { html body .container main section.articles article.thumb { width: 100%; margin-right: 0; float: left; } }
+html body .container main section.articles article.thumb header, html body .container main section.articles article.thumb figure, html body .container main section.articles article.thumb aside { display: none; }
+html body .container main section.articles article.thumb figure { display: block; }
+html body .container main section#index h2, html body .container main section#index h3, html body .container main section#index h4 { display: none; }
+html body .container #footer nav { float: right; margin-right: 0; cursor: pointer; margin-right: 0; }
+html body .container #footer nav h2, html body .container #footer nav h3, html body .container #footer nav h4 { display: none; }
+html body .container #footer nav:before { content: "\2794"; font-size: 150%; display: block; -webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); -ms-transform: rotate(-90deg); -o-transform: rotate(-90deg); transform: rotate(-90deg); }
+@media only screen and (max-width: 40em) and (orientation: landscape) { html body .container #footer nav { float: left; } }
+html body.page main section { /* The filters have relative posistioning with a negative top margin - it's container bottom margin and the next container's top margin must be reset 
+*/ }
+html body.page main section.articles article.thumb { width: 17%; margin-right: 2%; float: left; margin-bottom: 1.25em; }
+html body.page main section.articles article.thumb:nth-of-type(2) { margin-right: 2%; }
+html body.page main section.articles article.thumb:nth-of-type(3) { margin-right: 2%; }
+html body.page main section.articles article.thumb:nth-of-type(4) { margin-right: 2%; }
+html body.page main section.articles article.thumb:nth-of-type(5) { margin-right: 2%; }
+html body.page main section.articles article.thumb:nth-of-type(6) { margin-right: 2%; }
+html body.page main section.articles article.thumb:nth-of-type(7) { margin-right: 2%; }
+html body.page main section.articles article.thumb:nth-of-type(8) { margin-right: 2%; }
+html body.page main section.articles article.thumb:nth-of-type(9) { margin-right: 2%; }
+html body.page main section.articles article.thumb:nth-of-type(10) { margin-right: 2%; }
+@media only screen and (max-width: 64em) { html body.page main section.articles article.thumb { width: 32%; margin-right: 1%; float: left; }
+  html body.page main section.articles article.thumb:nth-of-type(2) { margin-right: 1%; }
+  html body.page main section.articles article.thumb:nth-of-type(3) { margin-right: 1%; }
+  html body.page main section.articles article.thumb:nth-of-type(4) { margin-right: 1%; }
+  html body.page main section.articles article.thumb:nth-of-type(5) { margin-right: 1%; }
+  html body.page main section.articles article.thumb:nth-of-type(6) { margin-right: 1%; }
+  html body.page main section.articles article.thumb:nth-of-type(7) { margin-right: 1%; }
+  html body.page main section.articles article.thumb:nth-of-type(8) { margin-right: 1%; }
+  html body.page main section.articles article.thumb:nth-of-type(9) { margin-right: 1%; }
+  html body.page main section.articles article.thumb:nth-of-type(10) { margin-right: 1%; } }
+@media only screen and (max-width: 47.999em) { html body.page main section.articles article.thumb { width: 44%; margin-right: 5%; float: left; }
+  html body.page main section.articles article.thumb:nth-of-type(2) { margin-right: 5%; }
+  html body.page main section.articles article.thumb:nth-of-type(3) { margin-right: 5%; }
+  html body.page main section.articles article.thumb:nth-of-type(4) { margin-right: 5%; }
+  html body.page main section.articles article.thumb:nth-of-type(5) { margin-right: 5%; }
+  html body.page main section.articles article.thumb:nth-of-type(6) { margin-right: 5%; }
+  html body.page main section.articles article.thumb:nth-of-type(7) { margin-right: 5%; }
+  html body.page main section.articles article.thumb:nth-of-type(8) { margin-right: 5%; }
+  html body.page main section.articles article.thumb:nth-of-type(9) { margin-right: 5%; }
+  html body.page main section.articles article.thumb:nth-of-type(10) { margin-right: 5%; } }
+@media only screen and (max-width: 24em) { html body.page main section.articles article.thumb { width: 100%; margin-right: 0; float: left; } }
+html body.page main section.articles article.thumb header, html body.page main section.articles article.thumb figure, html body.page main section.articles article.thumb aside { display: none; }
+html body.page main section.articles article.thumb figure { display: block; }
+html body.page main section#filters { margin-bottom: 0; }
+html body.page main section#filters #labels, html body.page main section#filters #select { width: 100%; float: left; }
+html body.page main section#filters label.select:after { content: "\2794"; -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); -ms-transform: rotate(90deg); -o-transform: rotate(90deg); transform: rotate(90deg); float: right; display: inline-block; position: relative; padding: 0; left: -0.3125em; background: #f1f1f1; font-size: 150%; top: -1.25em; pointer-events: none; /* this is a must */ cursor: pointer; }
+html body.page main section#filters select { border: none; outline: 0; background: #f1f1f1; appearance: none; -webkit-appearance: none; -moz-appearance: none; border: 1px solid; cursor: pointer; width: 100%; padding: 0.3125em; }
+html body.page main section#filters ul li, html body.page main section#filters .select { width: 17%; margin-right: 2%; float: left; }
+html body.page main section#filters ul li:nth-of-type(2), html body.page main section#filters .select:nth-of-type(2) { margin-right: 2%; }
+html body.page main section#filters ul li:nth-of-type(3), html body.page main section#filters .select:nth-of-type(3) { margin-right: 2%; }
+html body.page main section#filters ul li:nth-of-type(4), html body.page main section#filters .select:nth-of-type(4) { margin-right: 2%; }
+html body.page main section#filters ul li:nth-of-type(5), html body.page main section#filters .select:nth-of-type(5) { margin-right: 2%; }
+html body.page main section#filters ul li:nth-of-type(6), html body.page main section#filters .select:nth-of-type(6) { margin-right: 2%; }
+html body.page main section#filters ul li:nth-of-type(7), html body.page main section#filters .select:nth-of-type(7) { margin-right: 2%; }
+html body.page main section#filters ul li:nth-of-type(8), html body.page main section#filters .select:nth-of-type(8) { margin-right: 2%; }
+html body.page main section#filters ul li:nth-of-type(9), html body.page main section#filters .select:nth-of-type(9) { margin-right: 2%; }
+html body.page main section#filters ul li:nth-of-type(10), html body.page main section#filters .select:nth-of-type(10) { margin-right: 2%; }
+@media only screen and (max-width: 64em) { html body.page main section#filters ul li, html body.page main section#filters .select { width: 32%; margin-right: 1%; float: left; }
+  html body.page main section#filters ul li:nth-of-type(2), html body.page main section#filters .select:nth-of-type(2) { margin-right: 1%; }
+  html body.page main section#filters ul li:nth-of-type(3), html body.page main section#filters .select:nth-of-type(3) { margin-right: 1%; }
+  html body.page main section#filters ul li:nth-of-type(4), html body.page main section#filters .select:nth-of-type(4) { margin-right: 1%; }
+  html body.page main section#filters ul li:nth-of-type(5), html body.page main section#filters .select:nth-of-type(5) { margin-right: 1%; }
+  html body.page main section#filters ul li:nth-of-type(6), html body.page main section#filters .select:nth-of-type(6) { margin-right: 1%; }
+  html body.page main section#filters ul li:nth-of-type(7), html body.page main section#filters .select:nth-of-type(7) { margin-right: 1%; }
+  html body.page main section#filters ul li:nth-of-type(8), html body.page main section#filters .select:nth-of-type(8) { margin-right: 1%; }
+  html body.page main section#filters ul li:nth-of-type(9), html body.page main section#filters .select:nth-of-type(9) { margin-right: 1%; }
+  html body.page main section#filters ul li:nth-of-type(10), html body.page main section#filters .select:nth-of-type(10) { margin-right: 1%; } }
+@media only screen and (max-width: 47.999em) { html body.page main section#filters ul li, html body.page main section#filters .select { width: 44%; margin-right: 5%; float: left; }
+  html body.page main section#filters ul li:nth-of-type(2), html body.page main section#filters .select:nth-of-type(2) { margin-right: 5%; }
+  html body.page main section#filters ul li:nth-of-type(3), html body.page main section#filters .select:nth-of-type(3) { margin-right: 5%; }
+  html body.page main section#filters ul li:nth-of-type(4), html body.page main section#filters .select:nth-of-type(4) { margin-right: 5%; }
+  html body.page main section#filters ul li:nth-of-type(5), html body.page main section#filters .select:nth-of-type(5) { margin-right: 5%; }
+  html body.page main section#filters ul li:nth-of-type(6), html body.page main section#filters .select:nth-of-type(6) { margin-right: 5%; }
+  html body.page main section#filters ul li:nth-of-type(7), html body.page main section#filters .select:nth-of-type(7) { margin-right: 5%; }
+  html body.page main section#filters ul li:nth-of-type(8), html body.page main section#filters .select:nth-of-type(8) { margin-right: 5%; }
+  html body.page main section#filters ul li:nth-of-type(9), html body.page main section#filters .select:nth-of-type(9) { margin-right: 5%; }
+  html body.page main section#filters ul li:nth-of-type(10), html body.page main section#filters .select:nth-of-type(10) { margin-right: 5%; } }
+@media only screen and (max-width: 24em) { html body.page main section#filters ul li, html body.page main section#filters .select { width: 100%; margin-right: 0; float: left; } }
+@media only screen and (max-width: 64em) { html body.page main section#filters ul { display: none; } }
+html body.page main section#results { margin-top: 0; }
+html body.page main section#results h2, html body.page main section#results h3, html body.page main section#results h4 { display: none; }
+html body.single-post main article.product { /* The Golden Ratios 
+*/ }
+html body.single-post main article.product figure { width: 38.1953%; margin-right: 5%; float: left; }
+html body.single-post main article.product aside { width: 56.8047%; margin-right: 0; float: left; }
+@media only screen and (max-width: 63.999em) { html body.single-post main article.product figure, html body.single-post main article.product aside { width: 100%; margin-right: 0; float: left; } }
+html body.page main { /* The Golden Ratios 
+*/ }
+html body.page main #index { width: 61.8047%; margin-right: 5%; float: left; }
+html body.page main #sidebar { width: 33.1953%; margin-right: 0; float: left; }
+html body.page main #sidebar h2, html body.page main #sidebar h3, html body.page main #sidebar h4 { display: none; }
+@media only screen and (max-width: 63.999em) { html body.page main #index, html body.page main #sidebar { width: 100%; margin-right: 0; float: left; } }

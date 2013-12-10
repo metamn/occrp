@@ -1,12 +1,25 @@
-{% if include.link != "" %}
-  <a href="{{ include.link }}" title="{{ include.title }}">
+{% if include.type %}
+  {% assign title = page.images[image_index].title %}
+  {% assign link = '' %}
+  {% assign normal = page.images[image_index].url %}
+  {% assign mobile = page.images[image_index].url %}
+{% else %}
+  {% assign title = include.title %}
+  {% assign normal = include.normal %}
+  {% assign link = include.link %}
+  {% assign mobile = include.mobile %}
 {% endif %}
 
-<div data-picture data-alt="{{ include.title }}">
-  <div data-src="{{ site.url }}{{ include.normal }}"></div>
-  <div data-src="{{ site.url }}{{ include.mobile }}" data-media="(max-width: 768px)"></div>
+
+{% if link != "" %}
+  <a href="{{ link }}" title="{{ title }}">
+{% endif %}
+
+<div data-picture data-alt="{{ title }}">
+  <div data-src="{{ site.url }}{{ normal }}"></div>
+  <div data-src="{{ site.url }}{{ mobile }}" data-media="(max-width: 768px)"></div>
   <noscript>
-    <img src="{{ site.url }}{{ include.normal }}" alt="{{ include.title }}">
+    <img src="{{ site.url }}{{ normal }}" alt="{{ title }}">
   </noscript>
 </div>
   
