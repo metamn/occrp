@@ -11,18 +11,30 @@
 {% endif %}
 
 
-{% if link != "" %}
-  <a href="{{ link }}" title="{{ title }}">
-{% endif %}
+<figure>
+  {% if link != "" %}
+    <a href="{{ link }}" title="{{ title }}">
+  {% endif %}
 
-<div data-picture data-alt="{{ title }}">
-  <div data-src="{{ site.url }}{{ normal }}"></div>
-  <div data-src="{{ site.url }}{{ mobile }}" data-media="(max-width: 768px)"></div>
-  <noscript>
-    <img src="{{ site.url }}{{ normal }}" alt="{{ title }}">
-  </noscript>
-</div>
+  <div data-picture data-alt="{{ title }}">
+    <div data-src="{{ site.url }}{{ normal }}"></div>
+    <div data-src="{{ site.url }}{{ mobile }}" data-media="(max-width: 768px)"></div>
+    <noscript>
+      <img src="{{ site.url }}{{ normal }}" alt="{{ title }}">
+    </noscript>
+  </div>
+    
+  {% if link != '' %}
+    </a>
+  {% endif %}
   
-{% if include.link != '' %}
-  </a>
-{% endif %}
+  <figcaption>
+    {% if link != "" %}
+      <a href="{{ link }}" title="{{ title }}">
+    {% endif %}
+    {{ title }}
+    {% if link != '' %}
+      </a>
+    {% endif %}
+  </figcaption>
+</figure>
