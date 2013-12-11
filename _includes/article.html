@@ -1,0 +1,13 @@
+<article class="{{ post.categories.first}}">
+  <h1>
+    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+  </h1>
+  
+  {% assign page = post %}
+  {% assign image_index = 1 %}
+  {% include responsive-images.html type='from post'  %}
+  
+  <div id="excerpt">
+    {{ page.excerpt }}
+  </div>
+</article>

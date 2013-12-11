@@ -7,24 +7,24 @@ class: frontpage
 <section>
   <h3>Slideshow and News</h3>
   
-  <article>
-    slides
-  </article>
+  {% for post in site.categories.slider limit:1  offset:2 %}
+    {% include article.html %}
+  {% endfor %}
   
   <aside>
-    news ticker
+    <h3>
+      <a href="{{ site.categories.daily.url }}" title="Daily News">Daily News</a>
+    </h3>
+    {% for post in site.categories.daily %}
+      {% include article.html %}
+    {% endfor %}
   </aside>
 </section>
 
-
 <section>
-  <h3>Stories</h3>
-  
-  <article>
-    story #1
-  </article>
-  
-  <article>
-    story #2
-  </article>
+  {% for post in site.categories.investigations %}
+    {% include article.html %}
+  {% endfor %}
 </section>
+
+

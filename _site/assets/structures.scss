@@ -32,9 +32,25 @@ html {
         section {
           @include block;
           
-          h3 {
-            &:first-of-type {
-              display: none;
+          > h3 {
+            display: none;
+          }
+          
+          article {
+            @include block;
+            
+            &.slider {
+              figure {
+                figcaption {
+                  display: none;
+                }
+              }
+            }
+            
+            &.daily {
+              figure, #excerpt {
+                display: none;
+              }
             }
           }
         }
@@ -53,6 +69,8 @@ html {
     .container {
       main {
         section {
+          /* Sliders and News
+          */
           &:first-of-type {
             @include golden-ratio(2, 3);
           }

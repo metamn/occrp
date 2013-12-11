@@ -109,7 +109,12 @@ html body .container #header nav ul li:last-of-type { margin-right: 0; }
 html body .container #header nav:last-of-type { float: right; }
 html body .container main { width: 100%; float: left; }
 html body .container main section { width: 100%; float: left; }
-html body .container main section h3:first-of-type { display: none; }
+html body .container main section > h3 { display: none; }
+html body .container main section article { width: 100%; float: left; }
+html body .container main section article.slider figure figcaption { display: none; }
+html body .container main section article.daily figure, html body .container main section article.daily #excerpt { display: none; }
 html body .container #footer { width: 100%; float: left; display: none; }
+html body.frontpage .container main section { /* Sliders and News
+*/ }
 html body.frontpage .container main section:first-of-type > *:nth-child(2) { float: left; width: 61.8%; }
 html body.frontpage .container main section:first-of-type > *:nth-child(3) { float: left; width: 38.2%; }
