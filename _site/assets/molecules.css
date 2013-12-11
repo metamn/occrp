@@ -1,55 +1,25 @@
-@charset "UTF-8";
-/* Groups of atoms which function together as a unit -  “do one thing and do it well” 
+/* Molecules of the Atomic web design - atoms combined together - they do one thing and do it well
 */
-/* Navigational elements
+/* Grid
+--------------------------------------------------------------------------------
 */
-/* Grid elements - the $width is coming from the layer above, organisms
+/* Golden ratio - applies to a container which contains at least two sub-containers of any type - $first and $second params are the child-index of the two sub-containers - example: @include golden-ratio(2, 3) makes the 2nd and 3rd sub-container to be in golden-ratio
 */
-/* Left aligned column
+/* The width of the content - the content is centered with automatic left and right margins
 */
-/* Columns for Isotope - since Isotope filters out elements we don't know which element will be the last in a row, so we can't make it's righ margin 0 - in this grid all elements in a row will have the same right margin
+/* Adds padding around a grid element - the width of the element must be recalculated
 */
-/* Columns for the grid - calculates automatically the columns size and margin - the right margin of the last element in a row is set to zero - $maximum sets how many articles will be displayed on a single page 
+/* Resize a grid column 
 */
-/* Returns the with of a column in a grid - This is useful to resize other elements to the grid - The formula is taken and must be in sync with the mixin col
+/* Makes a container height fixed
 */
-/* Returns the margin of a column in a grid
+/* Navigation
+--------------------------------------------------------------------------------
 */
-/* Generates a full grid of $how-many columns and $maximum elements
+/* Displays an <ul> list inline
 */
-/* Remove right margin of the last element in a row of a grid - the non-last elements will have the righ margin set again required by responsive layouts
+/* Transforms an inline list back to normal
 */
-/* When decorations and padding is added to a column in a grid these must be removed from the original column width - params can be any of %, em, px
-*/
-/* Typographic elements
-*/
-/* Select box - put <select> inside a <label class="select"> - label:after is positioned over the original selectbox arrow - label after must have a background color to hide the default arrow
-*/
-/* <dl>
-*/
-/* <ul> and <ol> lists - they display a custom bullet / number via $before - the text of the list is aligned right related to the bullet / number
-*/
-/* Set links
-*/
-/* Set the font-size and decoration for headings - These setting will be used universally, inside a body text or let's say in the header
-*/
-/* The <dt> in <dl> can look look like a <h1>, <h2> or <h3>
-*/
-/* When uppercasing fonts the letter spacing must be enlarged */
-/* Set the font size - 'body' goes from non text elements, it is the default setting put in <body> - 'text' goes for long texts like blog posts, articles, etc; - 'headings' goes for <h1>, etc
-*/
-/* Set the background and font color - 'invert' inverts this color scheme
-*/
-/* Various mixins
-*/
-/* Draws a CSS circle around something
-*/
-/* An inline list
-*/
-/* A normal list (A reset of list inline)
-*/
-/* Stretching child element to fill parent's width
-*/
-/* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback  
-	Usage: @include font-size(1, large);
+/* Typography
+--------------------------------------------------------------------------------
 */

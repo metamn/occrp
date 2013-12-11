@@ -1,29 +1,21 @@
-/* Basic building blocks and definitions
+/* Atoms of the Atomic web design - basic constants, definitions and declarations - they cannot be divided further - they are reused across molecules, organisms and up
 */
 /* Grid
+--------------------------------------------------------------------------------
 */
-/* Default unit for horizontal and vertical spacing - Combined from $font-size and $line-height
+/* Default unit for horizontal and vertical spacing - combined from $font-size and $line-height - used for margin and padding
 */
 /* Long texts cannot span the entire screen, they have to be organized into lines containing 50-80 characters only - See http://www.kaikkonendesign.fi/typography/#section/3 - Depends on $font-size
 */
 /* 700px / 16px */
-/* Responsive breakpoints
+/* The width of the content
 */
-/* 384px, Android Nexus 4 */
-/* 640px, iPhone 5 */
-/* 768px */
-/* 1024px */
-/* 1280px */
-/* 1440px */
-/* This is not a best practice but sometimes is very useful - for example this can tell jQuery we are in mobile mode
+/* The folden ratio
 */
-.mobile { display: none; }
-@media only screen and (max-width: 47.999em) { .mobile { display: block; } }
-
-.desktop { display: block; }
-@media only screen and (max-width: 47.999em) { .desktop { display: none; } }
-
+/* Strech content to fill parent width
+*/
 /* Typography
+--------------------------------------------------------------------------------
 */
 /* The basic body font size - See http://lamb.cc/typograph/
 */
@@ -35,13 +27,11 @@
 */
 /* Font sizing for headers - We employ modern typography where headers differ by design not by font size - We size fonts by REM instead of EM - We use Traditional / em scaling from http://lamb.cc/typograph/
 */
-/* Letter spacing for uppercase text - adjusted based on font-type
-*/
-/* Font families
+/* Letter spacing for uppercase
 */
 /* Colors
+--------------------------------------------------------------------------------
 */
-/* Animations, decorations
-*/
-/* in :before and :after usually the font size is larger for better visibility
-*/
+/* Background */
+/* Font, black */
+/* Link, OCCRP red */
