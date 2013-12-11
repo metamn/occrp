@@ -31,10 +31,7 @@ html {
         
         section {
           @include block;
-          
-          > h3 {
-            display: none;
-          }
+          margin: $pad 0;
           
           article {
             @include block;
@@ -49,6 +46,21 @@ html {
             
             &.daily {
               figure, #excerpt {
+                display: none;
+              }
+            }
+            
+            &.investigations {
+              max-width: 50%;
+              float: left;
+              
+              figure {
+                figcaption {
+                  display: none;
+                }
+              }
+              
+              #excerpt {
                 display: none;
               }
             }
@@ -72,7 +84,33 @@ html {
           /* Sliders and News
           */
           &:first-of-type {
+            > h3 {
+              display: none;
+            }
+          
             @include golden-ratio(2, 3);
+          }
+          
+          /* Stories
+          */
+          &:nth-of-type(2) {
+            article {
+              &.slider {
+                max-width: 50%;
+                float: left;
+                width: auto;
+                
+                figure {
+                  figcaption {
+                    display: none;
+                  }
+                }
+                
+                #excerpt {
+                  display: none;
+                }
+              }
+            }
           }
         }
       }
