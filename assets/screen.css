@@ -126,21 +126,19 @@ html body { background: white; color: #333333; font-family: 'Old Standard TT', s
 html body a { color: #333333; text-decoration: none; }
 html body a:hover { color: #982022; }
 html body img { width: auto; height: auto; max-width: 100%; }
+html body li { border-bottom: 1px solid; margin-bottom: 0.625em; }
+html body h1, html body h3 { margin-bottom: 0.625em; }
+html body nav { padding: 1.25em; }
+html body nav:nth-of-type(2) a { color: red; }
+html body #news { margin-top: 0; width: 33%; }
+html body #news article { background: #f1f1f1; padding: 0.625em 1.25em; border-bottom: 1px dashed; }
 html body .container { width: 90%; margin: 0 5%; /* The main grid elements, the containers
 */ }
-html body .container .section { /*
-width: auto;
-float: left;
-
-max-width: $max-width;
-margin: $margin;
-margin-left: 0;
-*/ width: 30%; margin-right: 3%; float: left; }
+html body .container .section { width: auto; float: left; max-width: 47.5%; margin: 2.5%; margin-left: 0; }
 html body .container .section > h3 { display: none; }
 html body .container #identity h1 { display: none; }
 html body .container #identity figure { margin-right: 1.25em; }
 html body .container #identity figure figcaption { display: none; }
-html body .container nav { padding: 1.25em; width: calc(100% - 2.5em); }
 html body.frontpage .container #slider nav { width: 100%; max-width: 100%; float: left; }
 html body.frontpage .container #slider nav > h3 { display: none; }
 html body.frontpage .container #slider nav ul li { display: inline-block; float: left; margin-right: 1.25em; }
@@ -152,24 +150,10 @@ html body.frontpage .container #news article #excerpt { display: none; }
 html body.frontpage .container #news article #body { display: none; }
 html body.frontpage .container #investigations { width: 100%; max-width: 100%; float: left; }
 html body.frontpage .container #investigations h3 { display: block; }
-html body.frontpage .container #investigations article { /*
-width: auto;
-float: left;
-
-max-width: $max-width;
-margin: $margin;
-margin-left: 0;
-*/ width: 30%; margin-right: 3%; float: left; }
+html body.frontpage .container #investigations article { width: auto; float: left; max-width: 47.5%; margin: 2.5%; margin-left: 0; }
 html body.frontpage .container #investigations article figcaption { display: none; }
 html body.frontpage .container #investigations article #excerpt { display: none; }
 html body.frontpage .container #investigations article #body { display: none; }
 html body.investigations section { width: 100%; max-width: 100%; float: left; }
-html body.investigations section article { /*
-width: auto;
-float: left;
-
-max-width: $max-width;
-margin: $margin;
-margin-left: 0;
-*/ width: 30%; margin-right: 3%; float: left; }
+html body.investigations section article { width: auto; float: left; max-width: 47.5%; margin: 2.5%; margin-left: 0; }
 html body.investigations section article > h3 { display: none; }

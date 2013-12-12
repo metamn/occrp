@@ -21,10 +21,6 @@ html {
       #identity {
         @include logo;
       }
-      
-      nav {
-        @include padding;
-      }
     }
     
     /* Frontpage

@@ -122,6 +122,36 @@
   @include font-body;
   font-size: $font-size;
   line-height: $line-height;
+  
+  li {
+    border-bottom: 1px solid;
+    margin-bottom: $pad/2;
+  }
+  
+  h1, h3 {
+    margin-bottom: $pad/2;
+  }
+  
+  nav {
+    padding: $pad;
+    
+    &:nth-of-type(2) {
+      a {
+        color: red;
+      }
+    }
+  }
+  
+  #news {
+    margin-top: 0;
+    width: 33%;
+    
+    article {
+      background: $grey;
+      padding: $pad/2 $pad;
+      border-bottom: 1px dashed ;
+    }
+  }
 }
 
 

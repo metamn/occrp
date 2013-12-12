@@ -1,13 +1,28 @@
 
 $(document).ready(function() {
- 
- 
- // The window onload script
+
+  // Cache container
+  var $investigations = $('#investigations'); 
+  
+  
+  // The window onload script
   // - here we put all scripts which must run after the page is completelly loaded
   $(window).load(function(){
-    $('#investigations').isotope({ 
+    // Initialize isotope filter plugin
+    // Set options
+    
+    $investigations.isotope({
       itemSelector : 'article',
-      layoutMode : 'fitRows' 
+      layoutMode : 'fitRows',
+      // The CSS animation was too fancy, we've switched to a simpler one
+      animationEngine: 'jquery',
+      animationOptions: {
+        duration: 750,
+        easing: 'linear',
+        queue: false
+      }
     });
-  });
+    
+  }); 
+ 
 });
