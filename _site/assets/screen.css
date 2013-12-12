@@ -42,9 +42,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 */
 /* Line heights for headers and body text - See http://www.kaikkonendesign.fi/typography/#section/4
 */
-/* Font sizing for headers - We employ modern typography where headers differ by design not by font size - We size fonts by REM instead of EM - We use Traditional / em scaling from http://lamb.cc/typograph/
-*/
 /* Letter spacing for uppercase
+*/
+/* Font families
 */
 /* Colors
 --------------------------------------------------------------------------------
@@ -52,12 +52,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* Background */
 /* Font, black */
 /* Link, OCCRP red */
+/* Decorations
+--------------------------------------------------------------------------------
+*/
 /* Molecules of the Atomic web design - atoms combined together - they do one thing and do it well
 */
 /* Grid
 --------------------------------------------------------------------------------
 */
-/* Golden ratio - applies to a container which contains at least two sub-containers of any type - $first and $second params are the child-index of the two sub-containers - example: @include golden-ratio(2, 3) makes the 2nd and 3rd sub-container to be in golden-ratio
+/* Golden ratio - applies to a container which contains at least two sub-containers of any type - $first and $second params are the child-index of the two sub-containers to be in golden-ratio - $margin is the right margin of the first element in the golden ratios - example: @include golden-ratio(2, 3) makes the 2nd and 3rd sub-container to be in golden-ratio
 */
 /* The width of the content - the content is centered with automatic left and right margins
 */
@@ -77,6 +80,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* Typography
 --------------------------------------------------------------------------------
 */
+/* From http://lamb.cc/typograph/ using traditional / em scaling
+*/
+h1, h2, h3 { margin-top: 0; margin-bottom: 0; }
+
+h1 { font-size: 1.16667em; }
+
+h2 { font-size: 1.33333em; }
+
+h3 { font-size: 1.16667em; }
+
+/* Long text font settings
+*/
+/* Headings, navigation font settings
+*/
+/* Headings
+*/
+h1, h2, h3, h4, h4, h6 { font-family: 'Averia Serif Libre', serif; line-height: 1.1; }
+
+/* Decorations
+--------------------------------------------------------------------------------
+*/
 /* Organisms of the Atomic web design - groups of molecules joined together to form a relatively complex, distinct section of an interface.
 */
 /* Default settings
@@ -90,25 +114,29 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 */
 /* Structures / Templates of the Atomic web design - the layout, the grid, the wireframe - groups of organisms stitched together to form pages 
 */
-html body { background: white; color: black; /* Frontpage
+html body { background: white; color: black; font-family: 'Old Standard TT', sans-serif; font-size: 100%; line-height: 1.25; /* Frontpage
 */ }
 html body a { color: black; text-decoration: none; }
 html body a:hover { color: #982022; }
 html body img { width: auto; height: auto; max-width: 100%; }
 html body .container { width: 90%; margin: 0 5%; }
-html body .container #header { width: 100%; float: left; }
+html body .container #header { width: 100%; float: left; margin: 1.25em 0; }
 html body .container #header hgroup { float: left; }
 html body .container #header hgroup h1 { display: none; }
 html body .container #header hgroup figure { margin-right: 1.25em; }
 html body .container #header hgroup figure figcaption { display: none; }
-html body .container #header nav { float: left; /* Secondary navigation
+html body .container #header nav { float: left; font-family: 'Averia Serif Libre', serif; margin: 1.25em 0; /* Tags
 */ }
 html body .container #header nav h3 { display: none; }
 html body .container #header nav ul li { display: inline-block; float: left; margin-right: 1.25em; }
 html body .container #header nav ul li:last-of-type { margin-right: 0; }
-html body .container #header nav:last-of-type { float: right; }
+html body .container #header nav:nth-of-type(1) a { color: #982022; }
+html body .container #header nav:nth-of-type(1), html body .container #header nav:nth-of-type(2) { border-bottom: 1px solid; padding: 0.625em; position: relative; background: white; margin-left: 2.5em; }
+html body .container #header nav:nth-of-type(1):after, html body .container #header nav:nth-of-type(2):after { border-bottom: 1px solid; content: ""; height: calc(100% - 0.625em - 0px); left: 0.3125em; padding: 0.3125em; position: absolute; top: 0.3125em; width: calc(100% - 0.625em - 0px); z-index: -1; }
+html body .container #header nav:last-of-type { color: white; background: black; padding: 1.25em; }
+html body .container #header nav:last-of-type a { color: white; }
 html body .container main { width: 100%; float: left; }
-html body .container main section { width: 100%; float: left; margin: 1.25em 0; }
+html body .container main section { width: 100%; float: left; margin-bottom: 1.25em; }
 html body .container main section article { width: 100%; float: left; }
 html body .container main section article.slider figure figcaption { display: none; }
 html body .container main section article.daily figure, html body .container main section article.daily #excerpt { display: none; }
@@ -119,9 +147,12 @@ html body .container #footer { width: 100%; float: left; display: none; }
 html body.frontpage .container main section { /* Sliders and News
 */ /* Stories
 */ }
+html body.frontpage .container main section:first-of-type { background: #a5a333; }
 html body.frontpage .container main section:first-of-type > h3 { display: none; }
-html body.frontpage .container main section:first-of-type > *:nth-child(2) { float: left; width: 61.8%; }
-html body.frontpage .container main section:first-of-type > *:nth-child(3) { float: left; width: 38.2%; }
+html body.frontpage .container main section:first-of-type article { width: 50%; padding: 1.25em; width: calc(45% - 2.5em); margin-right: 5%; }
+html body.frontpage .container main section:first-of-type aside { width: 45%; padding: 1.25em; width: calc(45% - 2.5em); float: left; }
+html body.frontpage .container main section:first-of-type aside article { border-bottom: 1px solid; padding: 0.625em; position: relative; background: white; width: auto; border-color: #a5a333; }
+html body.frontpage .container main section:first-of-type aside article:after { border-bottom: 1px solid; content: ""; height: calc(100% - 0.625em - 0px); left: 0.3125em; padding: 0.3125em; position: absolute; top: 0.3125em; width: calc(100% - 0.625em - 0px); z-index: -1; }
 html body.frontpage .container main section:nth-of-type(2) article.slider { max-width: 50%; float: left; width: auto; }
 html body.frontpage .container main section:nth-of-type(2) article.slider figure figcaption { display: none; }
 html body.frontpage .container main section:nth-of-type(2) article.slider #excerpt { display: none; }

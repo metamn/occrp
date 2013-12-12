@@ -5,6 +5,9 @@
 */
 
 
+
+
+
 /* Grid
 --------------------------------------------------------------------------------
 */
@@ -12,14 +15,16 @@
 
 /* Golden ratio
   - applies to a container which contains at least two sub-containers of any type
-  - $first and $second params are the child-index of the two sub-containers
+  - $first and $second params are the child-index of the two sub-containers to be in golden-ratio
+  - $margin is the right margin of the first element in the golden ratios
   - example: @include golden-ratio(2, 3) makes the 2nd and 3rd sub-container to be in golden-ratio
 */
-@mixin golden-ratio($first: 1, $second: 2) {
+@mixin golden-ratio($first: 1, $second: 2, $margin: 0) {
   > * {
     &:nth-child(#{$first}) {
       float: left;
-      width: $major;
+      width: $major - $margin;
+      margin-right: $margin;
     }
     
     &:nth-child(#{$second}) {
@@ -64,6 +69,8 @@
 
 
 
+
+
 /* Navigation
 --------------------------------------------------------------------------------
 */
@@ -94,12 +101,81 @@
 
 
 
+
+
 /* Typography
 --------------------------------------------------------------------------------
 */
 
-@import "compass/typography/links/link-colors";
+/* From http://lamb.cc/typograph/ using traditional / em scaling
+*/
+h1, h2, h3 { margin-top:0; margin-bottom:0; }
+h1 { font-size:1.16667em; }
+h2 { font-size:1.33333em; }
+h3 { font-size:1.16667em; }
 
+
+/* Long text font settings
+*/
+@mixin text-body {
+  @include font-body;
+  line-height: $line-height-body-text;
+  
+  h1 { padding:1.45833em 0; }
+  h2 { padding:1.25em 0; }
+  h3 { padding:1.51785em 0; }
+}
+
+/* Headings, navigation font settings
+*/
+@mixin text-headings {
+  @include font-headings;
+  line-height: $line-height-headings;
+}
+
+/* Headings
+*/
+h1, h2, h3, h4, h4, h6 {
+  @include text-headings;
+}
+
+
+
+
+/* Decorations
+--------------------------------------------------------------------------------
+*/
+
+
+@mixin invert {
+  color: $background;
+  background: $color;
+  
+  a {
+    color: $background;
+  }
+}
+
+@mixin bordered {
+  border-bottom: $border;
+  padding: $pad/2;
+  position: relative;
+  background: $background;
+  
+  &:after {
+    border-bottom: $border;
+    content: "";
+    height: calc(100% - #{$pad/2} - 0px);
+    left: $pad/4;
+    padding: $pad/4;
+    position: absolute;
+    top: $pad/4;
+    width: calc(100% - #{$pad/2} - 0px);
+    z-index: -1;
+  }
+}
+
+@import "compass/typography/links/link-colors";
 @mixin link {
   @include link-colors($color, $highlight);
   text-decoration: none;

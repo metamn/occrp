@@ -71,20 +71,20 @@ $line-height-body-text: 1.75;
 $line-height-headings: 1.1;
 
 
-/* Font sizing for headers
-  - We employ modern typography where headers differ by design not by font size
-  - We size fonts by REM instead of EM
-  - We use Traditional / em scaling from http://lamb.cc/typograph/
-*/
-$h1: 1.25;
-$h1-padding: 1.45833em;
-
-
 /* Letter spacing for uppercase
 */
 $letter-spacing-uppercase: 1.1;
 
 
+/* Font families
+*/
+@mixin font-body {
+  font-family: 'Old Standard TT', sans-serif;
+}
+
+@mixin font-headings {
+  font-family: 'Averia Serif Libre', serif;
+}
 
 
 
@@ -94,7 +94,18 @@ $letter-spacing-uppercase: 1.1;
 */
 
 $background: #FFFFFF; /* Background */
-$color: #000000; /* Font, black */
+$color: #000; /* Font, black */
+$grey: #f1f1f1;
+
 $highlight: #982022; /* Link, OCCRP red */
-$blue: #0B4365;
+$yellow: #A5A333;
+
+
+
+
+/* Decorations
+--------------------------------------------------------------------------------
+*/
+
+$border: 1px solid;
 

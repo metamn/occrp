@@ -19,6 +19,10 @@
     height: auto;
     max-width: 100%;
   }
+  
+  @include font-body;
+  font-size: $font-size;
+  line-height: $line-height;
 }
 
 
@@ -50,6 +54,9 @@
 /* Transforms a <nav> element into a menu
 */
 @mixin menu {
+  @include font-headings;
+  margin: $pad 0;
+  
   h3 {
     display: none;
   }
@@ -58,9 +65,21 @@
     @include list-inline;
   }
   
-  /* Secondary navigation
+  &:nth-of-type(1) {
+    a {
+      color: $highlight;
+    }
+  }
+  
+  &:nth-of-type(1), &:nth-of-type(2) {
+    @include bordered;
+    margin-left: $pad*2;
+  }
+  
+  /* Tags
   */
   &:last-of-type {
-    float: right;
+    @include invert;
+    padding: $pad;
   }
 }

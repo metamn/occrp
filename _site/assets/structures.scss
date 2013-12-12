@@ -14,6 +14,7 @@ html {
       
       #header {
         @include block;
+        margin: $pad 0;
         
         hgroup {
           float: left;
@@ -31,7 +32,7 @@ html {
         
         section {
           @include block;
-          margin: $pad 0;
+          margin-bottom: $pad;
           
           article {
             @include block;
@@ -84,11 +85,30 @@ html {
           /* Sliders and News
           */
           &:first-of-type {
+            background: $yellow;
+            
             > h3 {
               display: none;
             }
-          
-            @include golden-ratio(2, 3);
+            
+            article {
+              width: 50%;
+              @include padding(45%);
+              margin-right: 5%;
+            }
+            
+            aside {
+              width: 45%;
+              @include padding(45%);
+              float: left;
+              
+              article {
+                @include bordered;
+                width: auto;
+                border-color: $yellow;
+              }
+            }
+            
           }
           
           /* Stories
