@@ -2,7 +2,7 @@
 $(document).ready(function() {
 
   // Cache container
-  var $investigations = $('#investigations'); 
+  var $investigations = $('.container'); 
   
   
   // The window onload script
@@ -12,8 +12,8 @@ $(document).ready(function() {
     // Set options
     
     $investigations.isotope({
-      itemSelector : 'article',
-      layoutMode : 'fitRows',
+      itemSelector : '.section',
+      layoutMode : 'masonry',
       // The CSS animation was too fancy, we've switched to a simpler one
       animationEngine: 'jquery',
       animationOptions: {
