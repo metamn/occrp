@@ -21,6 +21,10 @@ html {
       #identity {
         @include logo;
       }
+      
+      nav {
+        @include padding;
+      }
     }
     
     /* Frontpage
@@ -37,6 +41,16 @@ html {
         
         #investigations {
           @include investigations;
+        }
+      }
+    }
+    
+    &.investigations {
+      section {
+        @include block;
+        
+        article {
+          @include section;
         }
       }
     } 

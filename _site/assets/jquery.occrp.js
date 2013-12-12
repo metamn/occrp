@@ -6,7 +6,7 @@ $(document).ready(function() {
   // - here we put all scripts which must run after the page is completelly loaded
   $(window).load(function(){
     $('#investigations').isotope({ 
-      itemSelector : 'investigations',
+      itemSelector : 'article',
       layoutMode : 'fitRows' 
     });
   });
