@@ -55,7 +55,7 @@
 */
 @mixin menu {
   @include font-headings;
-  margin: $pad 0;
+  margin: $pad 0 0;
   
   h3 {
     display: none;
@@ -79,7 +79,8 @@
   /* Tags
   */
   &:last-of-type {
+    @include block;
     @include invert;
-    padding: $pad;
+    @include padding;
   }
 }

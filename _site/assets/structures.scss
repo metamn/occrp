@@ -14,7 +14,7 @@ html {
       
       #header {
         @include block;
-        margin: $pad 0;
+        margin: $pad 0 0;
         
         hgroup {
           float: left;
@@ -32,13 +32,13 @@ html {
         
         section {
           @include block;
-          margin-bottom: $pad;
           
           article {
             @include block;
             
             &.slider {
               figure {
+                background: $color;
                 figcaption {
                   display: none;
                 }
@@ -46,6 +46,9 @@ html {
             }
             
             &.daily {
+              @include block;
+              @include padding;
+              
               figure, #excerpt {
                 display: none;
               }
@@ -85,7 +88,8 @@ html {
           /* Sliders and News
           */
           &:first-of-type {
-            background: $yellow;
+            position: relative;
+            background: $grey;
             
             > h3 {
               display: none;
@@ -93,8 +97,24 @@ html {
             
             article {
               width: 50%;
+              float: left;
               @include padding(45%);
               margin-right: 5%;
+            }
+            
+            nav {
+              position: absolute;
+              bottom: $pad;
+              left: $pad;
+              margin-top: $pad;
+              
+              h3 {
+                display: none;
+              }
+              
+              ul {
+                @include list-inline;
+              }
             }
             
             aside {
@@ -103,9 +123,10 @@ html {
               float: left;
               
               article {
+                @include block;
                 @include bordered;
-                width: auto;
-                border-color: $yellow;
+                @include padding;
+                border-color: $color;
               }
             }
             
