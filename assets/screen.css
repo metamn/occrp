@@ -128,22 +128,23 @@ html body a:hover { color: #982022; }
 html body img { width: auto; height: auto; max-width: 100%; }
 html body .container { width: 90%; margin: 0 5%; /* The main grid elements, the containers
 */ }
-html body .container #identity, html body .container nav, html body .container section, html body .container #footer { width: auto; float: left; max-width: 47.5%; margin: 2.5%; margin-left: 0; }
-html body .container #identity > h3, html body .container nav > h3, html body .container section > h3, html body .container #footer > h3 { display: none; }
+html body .container .section { width: auto; float: left; max-width: 47.5%; margin: 2.5em; margin-left: 0; }
+html body .container .section > h3 { display: none; }
 html body .container #identity h1 { display: none; }
 html body .container #identity figure { margin-right: 1.25em; }
 html body .container #identity figure figcaption { display: none; }
 html body.frontpage .container #slider nav { width: 100%; max-width: 100%; float: left; }
+html body.frontpage .container #slider nav > h3 { display: none; }
 html body.frontpage .container #slider nav ul li { display: inline-block; float: left; margin-right: 1.25em; }
 html body.frontpage .container #slider nav ul li:last-of-type { margin-right: 0; }
 html body.frontpage .container #news h3 { display: block; }
 html body.frontpage .container #news article figure { display: none; }
-html body.frontpage .container #news article figcation { display: none; }
+html body.frontpage .container #news article figcaption { display: none; }
 html body.frontpage .container #news article #excerpt { display: none; }
 html body.frontpage .container #news article #body { display: none; }
 html body.frontpage .container #investigations { width: 100%; max-width: 100%; float: left; }
 html body.frontpage .container #investigations h3 { display: block; }
-html body.frontpage .container #investigations article { width: auto; float: left; max-width: 47.5%; margin: 2.5%; margin-left: 0; }
-html body.frontpage .container #investigations article figcation { display: none; }
+html body.frontpage .container #investigations article { width: auto; float: left; max-width: 47.5%; margin: 2.5em; margin-left: 0; }
+html body.frontpage .container #investigations article figcaption { display: none; }
 html body.frontpage .container #investigations article #excerpt { display: none; }
 html body.frontpage .container #investigations article #body { display: none; }

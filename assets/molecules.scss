@@ -16,7 +16,7 @@
 /* Flexible grid
   - all items are aligned left with an uniform margin
 */
-@mixin flexible-grid ($max-width: 47.5%, $margin: 2.5%) {
+@mixin flexible-grid ($max-width: 47.5%, $margin: 2.5em) {
   width: auto;
   float: left;
   

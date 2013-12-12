@@ -14,7 +14,7 @@ html {
       
       /* The main grid elements, the containers
       */
-      #identity, nav, section, #footer {
+      .section {
         @include section;
       }
       

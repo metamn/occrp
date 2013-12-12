@@ -21,7 +21,7 @@
   }
   
   @if ($figcaption == null) {
-    figcation {
+    figcaption {
       display: none;
     }
   }
@@ -47,6 +47,7 @@
 @mixin slider {
   nav {
     @include block;
+    @include hide-title;
     
     ul {
       @include list-inline;
