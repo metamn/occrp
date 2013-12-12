@@ -4,6 +4,104 @@
 */
 
 
+
+/* An article
+*/
+@mixin article($title, $figure: null, $figcaption: null, $excerpt: null, $body: null) {
+  @if ($title == null) {
+    h1 {
+      display: none;
+    }
+  }
+  
+  @if ($figure == null) {
+    figure {
+      display: none;
+    }
+  }
+  
+  @if ($figcaption == null) {
+    figcation {
+      display: none;
+    }
+  }
+  
+  @if ($excerpt == null) {
+    #excerpt {
+      display: none;
+    }
+  }
+  
+  @if ($body == null) {
+    #body {
+      display: none;
+    }
+  }
+}
+
+
+
+
+/* The slider
+*/
+@mixin slider {
+  nav {
+    @include block;
+    
+    ul {
+      @include list-inline;
+    }
+  }
+}
+
+
+/* The news
+*/
+@mixin news {
+  h3 {
+    display: block;
+  }
+  
+  article {
+    @include article(title);
+  }
+}
+
+
+/* Investigations
+*/
+@mixin investigations {
+  @include block;
+  
+  h3 {
+    display: block;
+  }
+  
+  article {
+    @include flexible-grid;
+    @include article(title, figure);
+  }
+}
+
+
+
+/* The logo
+*/
+@mixin logo {
+  h1 {
+    display: none;
+  }
+  
+  figure {
+    margin-right: $pad;
+    
+    figcaption {
+      display: none;
+    }
+  }
+}
+
+
 /* Default settings
 */
 @mixin default-settings {
@@ -27,60 +125,7 @@
 
 
 
-/* The logo
-*/
-@mixin logo {
-  h1 {
-    display: none;
-  }
-  
-  figure {
-    margin-right: $pad;
-    
-    figcaption {
-      display: none;
-    }
-  }
-}
 
 
 
 
-/* Navigation
---------------------------------------------------------------------------------
-*/
-
-
-/* Transforms a <nav> element into a menu
-*/
-@mixin menu {
-  @include font-headings;
-  margin: $pad 0 0;
-  
-  h3 {
-    display: none;
-  }
-  
-  ul {
-    @include list-inline;
-  }
-  
-  &:nth-of-type(1) {
-    a {
-      color: $highlight;
-    }
-  }
-  
-  &:nth-of-type(1), &:nth-of-type(2) {
-    @include bordered;
-    margin-left: $pad*2;
-  }
-  
-  /* Tags
-  */
-  &:last-of-type {
-    @include block;
-    @include invert;
-    @include padding;
-  }
-}

@@ -13,6 +13,19 @@
 */
 
 
+/* Flexible grid
+  - all items are aligned left with an uniform margin
+*/
+@mixin flexible-grid ($max-width: 47.5%, $margin: 2.5%) {
+  width: auto;
+  float: left;
+  
+  max-width: $max-width;
+  margin: $margin;
+  margin-left: 0;
+}
+
+
 /* Golden ratio
   - applies to a container which contains at least two sub-containers of any type
   - $first and $second params are the child-index of the two sub-containers to be in golden-ratio
@@ -44,6 +57,22 @@
 }
 
 
+/* The basic building block of the grid
+  - it's title specified for HTML5 outliner compatibility is hidden
+*/
+@mixin section {
+  @include flexible-grid;
+  @include hide-title;
+}
+
+/* Hide a section title
+*/
+@mixin hide-title {
+  > h3 {
+    display: none;
+  }
+}
+
 /* Adds padding around a grid element
   - the width of the element must be recalculated
 */
@@ -60,12 +89,7 @@
 }
 
 
-/* Makes a container height fixed
-*/
-@mixin fixed-height($height) {
-   height: auto;
-   min-height: $height;
-}
+
 
 
 

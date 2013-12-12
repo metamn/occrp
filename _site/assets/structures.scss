@@ -12,152 +12,33 @@ html {
     .container {
       @include container;
       
-      #header {
-        @include block;
-        margin: $pad 0 0;
-        
-        hgroup {
-          float: left;
-          @include logo;
-        }
-        
-        nav {
-          float: left;
-          @include menu;
-        }
+      /* The main grid elements, the containers
+      */
+      #identity, nav, section, #footer {
+        @include section;
       }
       
-      main {
-        @include block;
+      #identity {
+        @include logo;
+      }
+    }
+    
+    /* Frontpage
+    */
+    &.frontpage {
+      .container {  
+        #slider {
+          @include slider;
+        }
         
-        section {
-          @include block;
-          
-          article {
-            @include block;
-            
-            &.slider {
-              figure {
-                background: $color;
-                figcaption {
-                  display: none;
-                }
-              }
-            }
-            
-            &.daily {
-              @include block;
-              @include padding;
-              
-              figure, #excerpt {
-                display: none;
-              }
-            }
-            
-            &.investigations {
-              max-width: 50%;
-              float: left;
-              
-              figure {
-                figcaption {
-                  display: none;
-                }
-              }
-              
-              #excerpt {
-                display: none;
-              }
-            }
-          }
+        #news {
+          @include news;
+        }
+        
+        #investigations {
+          @include investigations;
         }
       }
-      
-      #footer {
-        @include block;
-        display: none;
-      }
-    }
-  
-  
-  /* Frontpage
-  */
-  &.frontpage {
-    .container {
-      main {
-        section {
-          /* Sliders and News
-          */
-          &:first-of-type {
-            position: relative;
-            background: $grey;
-            
-            > h3 {
-              display: none;
-            }
-            
-            article {
-              width: 50%;
-              float: left;
-              @include padding(45%);
-              margin-right: 5%;
-            }
-            
-            nav {
-              position: absolute;
-              bottom: $pad;
-              left: $pad;
-              margin-top: $pad;
-              
-              h3 {
-                display: none;
-              }
-              
-              ul {
-                @include list-inline;
-              }
-            }
-            
-            aside {
-              width: 45%;
-              @include padding(45%);
-              float: left;
-              
-              article {
-                @include block;
-                @include bordered;
-                @include padding;
-                border-color: $color;
-              }
-            }
-            
-          }
-          
-          /* Stories
-          */
-          &:nth-of-type(2) {
-            article {
-              &.slider {
-                max-width: 50%;
-                float: left;
-                width: auto;
-                
-                figure {
-                  figcaption {
-                    display: none;
-                  }
-                }
-                
-                #excerpt {
-                  display: none;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  
-  
+    } 
   }
 }
