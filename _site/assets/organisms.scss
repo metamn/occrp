@@ -45,6 +45,11 @@
 /* The slider
 */
 @mixin slider {
+  width: 59%;
+  max-width: 59%;
+  text-align: center;
+  padding: $pad;
+  
   nav {
     @include block;
     @include hide-title;
@@ -67,23 +72,6 @@
     @include article(title);
   }
 }
-
-
-/* Investigations
-*/
-@mixin investigations {
-  @include block;
-  
-  h3 {
-    display: block;
-  }
-  
-  article {
-    @include flexible-grid;
-    @include article(title, figure);
-  }
-}
-
 
 
 /* The logo
@@ -123,35 +111,7 @@
   font-size: $font-size;
   line-height: $line-height;
   
-  li {
-    border-bottom: 1px solid;
-    margin-bottom: $pad/2;
-  }
   
-  h1, h3 {
-    margin-bottom: $pad/2;
-  }
-  
-  nav {
-    padding: $pad;
-    
-    &:nth-of-type(2) {
-      a {
-        color: red;
-      }
-    }
-  }
-  
-  #news {
-    margin-top: 0;
-    width: 33%;
-    
-    article {
-      background: $grey;
-      padding: $pad/2 $pad;
-      border-bottom: 1px dashed ;
-    }
-  }
 }
 
 
