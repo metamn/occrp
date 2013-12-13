@@ -43,18 +43,6 @@
 
 
 
-/* The slider on the frontpage
-*/
-@mixin slider {
-  nav {
-    @include block;
-    @include hide-title;
-    
-    ul {
-      @include list-inline;
-    }
-  }
-}
 
 
 
@@ -69,6 +57,37 @@
     @include article(title);
   }
 }
+
+
+/* The slider on the frontpage
+*/
+@mixin slider {
+  max-width: $slider;
+  width: $slider;
+  background: $color;
+  
+  nav {
+    @include block;
+    @include hide-title;
+    
+    ul {
+      @include list-inline;
+    }
+  }
+}
+
+
+
+
+/* The basic building block of the grid
+  - it's title specified for HTML5 outliner compatibility is hidden
+*/
+@mixin section {
+  @include flexible-grid;
+  @include hide-title;
+}
+
+
 
 
 /* The logo

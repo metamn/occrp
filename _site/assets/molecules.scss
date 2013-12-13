@@ -57,13 +57,7 @@
 }
 
 
-/* The basic building block of the grid
-  - it's title specified for HTML5 outliner compatibility is hidden
-*/
-@mixin section {
-  @include flexible-grid;
-  @include hide-title;
-}
+
 
 /* Hide a section title
 */

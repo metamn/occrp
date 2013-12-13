@@ -27,7 +27,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* 700px / 16px */
 /* The width of the content
 */
-/* The folden ratio
+/* The golden ratio
+*/
+/* Slider & news must stay in the same row - this is a forced width for the slider
 */
 /* Strech content to fill parent width
 */
@@ -65,8 +67,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* Golden ratio - applies to a container which contains at least two sub-containers of any type - $first and $second params are the child-index of the two sub-containers to be in golden-ratio - $margin is the right margin of the first element in the golden ratios - example: @include golden-ratio(2, 3) makes the 2nd and 3rd sub-container to be in golden-ratio
 */
 /* The width of the content - the content is centered with automatic left and right margins
-*/
-/* The basic building block of the grid - it's title specified for HTML5 outliner compatibility is hidden
 */
 /* Hide a section title
 */
@@ -109,9 +109,11 @@ h1, h2, h3, h4, h4, h6 { font-family: 'Averia Serif Libre', serif; line-height: 
 */
 /* An article - displays mostly article thumbs
 */
+/* The news
+*/
 /* The slider on the frontpage
 */
-/* The news
+/* The basic building block of the grid - it's title specified for HTML5 outliner compatibility is hidden
 */
 /* The logo
 */
@@ -132,6 +134,7 @@ html body .container .section > h3 { display: none; }
 html body .container #identity h1 { display: none; }
 html body .container #identity figure { margin-right: 1.25em; }
 html body .container #identity figure figcaption { display: none; }
+html body.frontpage .container #slider { max-width: 54%; width: 54%; background: #333333; }
 html body.frontpage .container #slider nav { width: 100%; max-width: 100%; float: left; }
 html body.frontpage .container #slider nav > h3 { display: none; }
 html body.frontpage .container #slider nav ul li { display: inline-block; float: left; margin-right: 1.25em; }
