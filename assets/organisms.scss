@@ -6,6 +6,7 @@
 
 
 /* An article
+  - displays mostly article thumbs
 */
 @mixin article($title, $figure: null, $figcaption: null, $excerpt: null, $body: null) {
   @if ($title == null) {
@@ -42,14 +43,9 @@
 
 
 
-/* The slider
+/* The slider on the frontpage
 */
 @mixin slider {
-  width: 59%;
-  max-width: 59%;
-  text-align: center;
-  padding: $pad;
-  
   nav {
     @include block;
     @include hide-title;
@@ -59,6 +55,7 @@
     }
   }
 }
+
 
 
 /* The news
@@ -91,7 +88,8 @@
 }
 
 
-/* Default settings
+/* Default settings for this theme
+  - like typography, links, colors, etc
 */
 @mixin default-settings {
   background: $background;

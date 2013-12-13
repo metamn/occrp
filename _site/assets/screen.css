@@ -60,7 +60,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* Grid
 --------------------------------------------------------------------------------
 */
-/* Flexible grid - all items are aligned left with an uniform margin
+/* Flexible grid - all items are aligned left with an uniform margin - this grid can be dynamically positioned by Isotope
 */
 /* Golden ratio - applies to a container which contains at least two sub-containers of any type - $first and $second params are the child-index of the two sub-containers to be in golden-ratio - $margin is the right margin of the first element in the golden ratios - example: @include golden-ratio(2, 3) makes the 2nd and 3rd sub-container to be in golden-ratio
 */
@@ -107,31 +107,31 @@ h1, h2, h3, h4, h4, h6 { font-family: 'Averia Serif Libre', serif; line-height: 
 */
 /* Organisms of the Atomic web design - groups of molecules joined together to form a relatively complex, distinct section of an interface.
 */
-/* An article
+/* An article - displays mostly article thumbs
 */
-/* The slider
+/* The slider on the frontpage
 */
 /* The news
 */
 /* The logo
 */
-/* Default settings
+/* Default settings for this theme - like typography, links, colors, etc
 */
 /* Structures / Templates of the Atomic web design - the layout, the grid, the wireframe - groups of organisms stitched together to form pages 
 */
 html body { background: white; color: #333333; font-family: 'Old Standard TT', sans-serif; font-size: 100%; line-height: 1.25; /* Frontpage
+*/ /* Investigations page
 */ }
 html body a { color: #333333; text-decoration: none; }
 html body a:hover { color: #982022; }
 html body img { width: auto; height: auto; max-width: 100%; }
-html body .container { width: 90%; margin: 0 5%; /* The main grid elements, the containers
+html body .container { width: 90%; margin: 0 5%; /* The main grid elements, the containers - these will be automatically arranged by the Isotope plugin
 */ }
-html body .container .section { width: auto; float: left; max-width: 30%; margin: 3%; margin-left: 0; background: #f1f1f1; }
+html body .container .section { width: auto; float: left; max-width: 30%; margin: 3% 3% 0 0; }
 html body .container .section > h3 { display: none; }
 html body .container #identity h1 { display: none; }
 html body .container #identity figure { margin-right: 1.25em; }
 html body .container #identity figure figcaption { display: none; }
-html body.frontpage .container #slider { width: 59%; max-width: 59%; text-align: center; padding: 1.25em; }
 html body.frontpage .container #slider nav { width: 100%; max-width: 100%; float: left; }
 html body.frontpage .container #slider nav > h3 { display: none; }
 html body.frontpage .container #slider nav ul li { display: inline-block; float: left; margin-right: 1.25em; }
@@ -142,5 +142,5 @@ html body.frontpage .container #news article figcaption { display: none; }
 html body.frontpage .container #news article #excerpt { display: none; }
 html body.frontpage .container #news article #body { display: none; }
 html body.investigations section { width: 100%; max-width: 100%; float: left; }
-html body.investigations section article { width: auto; float: left; max-width: 30%; margin: 3%; margin-left: 0; background: #f1f1f1; }
+html body.investigations section article { width: auto; float: left; max-width: 30%; margin: 3% 3% 0 0; }
 html body.investigations section article > h3 { display: none; }

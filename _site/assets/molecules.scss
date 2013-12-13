@@ -15,15 +15,14 @@
 
 /* Flexible grid
   - all items are aligned left with an uniform margin
+  - this grid can be dynamically positioned by Isotope
 */
 @mixin flexible-grid ($max-width: 30%, $margin: 3%) {
   width: auto;
   float: left;
   
   max-width: $max-width;
-  margin:$margin;
-  margin-left: 0;
-  background: $grey;
+  margin: $margin $margin 0 0;
 }
 
 

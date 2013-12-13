@@ -13,6 +13,7 @@ html {
       @include container;
       
       /* The main grid elements, the containers
+        - these will be automatically arranged by the Isotope plugin
       */
       .section {
         @include section;
@@ -37,6 +38,8 @@ html {
       }
     }
     
+    /* Investigations page
+    */
     &.investigations {
       section {
         @include block;
