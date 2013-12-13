@@ -5,9 +5,13 @@
   {% assign mobile = page.images[image_index].url %}
 {% else %}
   {% assign title = include.title %}
-  {% assign normal = include.normal %}
   {% assign link = include.link %}
-  {% assign mobile = include.mobile %}
+  {% capture normal %}
+    {{ site.url }}{{ include.normal }}
+  {% endcapture %}
+  {% capture mobile %}
+    {{ site.url }}{{ include.mobile }}
+  {% endcapture %}
 {% endif %}
 
 
