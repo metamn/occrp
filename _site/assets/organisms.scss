@@ -8,7 +8,7 @@
 /* An article
   - displays mostly article thumbs
 */
-@mixin article($title, $figure: null, $figcaption: null, $excerpt: null, $body: null) {
+@mixin article($category, $date, $title, $figure: null, $figcaption: null, $excerpt: null, $body: null) {
   @if ($title == null) {
     h1 {
       display: none;
@@ -38,13 +38,30 @@
       display: none;
     }
   }
+  
+  @if ($category == null) {
+    #category {
+      display: none;
+    }
+  }
+  
+  @if ($date == null) {
+    #date {
+      display: none;
+    }
+  }
+  
+  #date {
+    color: $dark-grey;
+    font-size: small;
+  }
 }
 
 
 /* Investigations
 */
 @mixin investigations {
-  @include article(title, figure, null, excerpt);
+  @include article(category, date, title, figure, null, excerpt, null);
 }
 
 
@@ -54,10 +71,13 @@
 @mixin news {
   h3 {
     display: block;
+    @include invert($background, $highlight);
   }
   
   article {
-    @include article(title);
+    @include block;
+    @include article(null, date, title);
+    margin: $pad/2 0;
   }
 }
 
@@ -69,14 +89,24 @@
   width: $slider;
   margin-right: 0;
   
-  background: $color;
+  @include invert($background, black);
+  
+  article {
+    @include article(null, null, title, figure, null, excerpt);
+    width: 35em; /* The image width, which is fixed it seems */
+    float: left;
+  }
   
   nav {
-    @include block;
     @include hide-title;
+    @include grid-resize($slider, 35em);
+    float: left;
     
-    ul {
-      @include list-inline;
+    ol {
+      margin-left: $pad;
+      li {
+        border-bottom: 1px solid $background;
+      }
     }
   }
 }
@@ -92,6 +122,21 @@
   @include hide-title;
 }
 
+
+/* The menu
+*/
+@mixin menu {
+  ul {
+    li {
+      padding-right: $pad*3;
+    }
+  }
+  
+  &#tags {
+    color: $red;
+    @include link($red, $color);
+  }
+}
 
 
 
@@ -119,21 +164,15 @@
   background: $background;
   color: $color;
   
-  a {
-    @include link;
-  }
+  @include link;
   
-  img {
-    width: auto;
-    height: auto;
-    max-width: 100%;
-  }
+  @include fluid-image;
   
   @include font-body;
   font-size: $font-size;
   line-height: $line-height;
   
-  
+  @include list;
 }
 
 

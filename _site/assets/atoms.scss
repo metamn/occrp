@@ -105,10 +105,11 @@ $letter-spacing-uppercase: 1.1;
 
 $background: #FFFFFF; /* Background */
 $color: #333; /* Font, black */
-$grey: #f1f1f1;
+$grey: #ccc; /* From Kuler, based on $color */
+$dark-grey: #7F7F7F; /* From Kuler, based on $color */
 
 $highlight: #982022; /* Link, OCCRP red */
-$yellow: #A5A333;
+$red: #E43033; /* From Kuler, based on $highlight */
 
 
 

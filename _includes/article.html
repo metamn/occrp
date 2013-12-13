@@ -1,11 +1,19 @@
 <article class="{{ klass }}">
-  <h1>
-    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-  </h1>
+  <div id="category">
+    <a href="{{ site.url }}/{{ post.categories.first }}" title="{{ post.categories.first | capitalize }}">{{ post.categories.first | capitalize }}</a>
+  </div>
+  
+  <div id="date">
+    {{ post.date | date: "%-d %B %Y" }}
+  </div>
   
   {% assign page = post %}
   {% assign image_index = 0 %}
   {% include responsive-images.html type='from post'  %}
+  
+  <h1>
+    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+  </h1>
   
   <div id="excerpt">
     {{ page.excerpt }}

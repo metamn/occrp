@@ -22,6 +22,10 @@ html {
       #identity {
         @include logo;
       }
+      
+      nav.menu {
+        @include menu;
+      }
     }
     
     /* Frontpage
