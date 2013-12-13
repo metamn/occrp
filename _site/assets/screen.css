@@ -29,7 +29,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 */
 /* The golden ratio
 */
-/* Slider & news must stay in the same row - this is a forced width for the slider
+/* Slider & news must stay in the same row - this is a forced width, the maximum possible for the slider
 */
 /* Strech content to fill parent width
 */
@@ -109,6 +109,8 @@ h1, h2, h3, h4, h4, h6 { font-family: 'Averia Serif Libre', serif; line-height: 
 */
 /* An article - displays mostly article thumbs
 */
+/* Investigations
+*/
 /* The news
 */
 /* The slider on the frontpage
@@ -121,7 +123,7 @@ h1, h2, h3, h4, h4, h6 { font-family: 'Averia Serif Libre', serif; line-height: 
 */
 /* Structures / Templates of the Atomic web design - the layout, the grid, the wireframe - groups of organisms stitched together to form pages 
 */
-html body { background: white; color: #333333; font-family: 'Old Standard TT', sans-serif; font-size: 100%; line-height: 1.25; /* Frontpage
+html body { background: white; color: #333333; font-family: 'Old Standard TT', sans-serif; font-size: large; font-size: 100%; line-height: 1.25; /* Frontpage
 */ /* Investigations page
 */ }
 html body a { color: #333333; text-decoration: none; }
@@ -134,7 +136,7 @@ html body .container .section > h3 { display: none; }
 html body .container #identity h1 { display: none; }
 html body .container #identity figure { margin-right: 1.25em; }
 html body .container #identity figure figcaption { display: none; }
-html body.frontpage .container #slider { max-width: 54%; width: 54%; background: #333333; }
+html body.frontpage .container #slider { max-width: 63%; width: 63%; margin-right: 0; background: #333333; }
 html body.frontpage .container #slider nav { width: 100%; max-width: 100%; float: left; }
 html body.frontpage .container #slider nav > h3 { display: none; }
 html body.frontpage .container #slider nav ul li { display: inline-block; float: left; margin-right: 1.25em; }
@@ -144,6 +146,8 @@ html body.frontpage .container #news article figure { display: none; }
 html body.frontpage .container #news article figcaption { display: none; }
 html body.frontpage .container #news article #excerpt { display: none; }
 html body.frontpage .container #news article #body { display: none; }
+html body.frontpage .container article.investigations figcaption { display: none; }
+html body.frontpage .container article.investigations #body { display: none; }
 html body.investigations section { width: 100%; max-width: 100%; float: left; }
 html body.investigations section article { width: auto; float: left; max-width: 30%; margin: 3% 3% 0 0; }
 html body.investigations section article > h3 { display: none; }

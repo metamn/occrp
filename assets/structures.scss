@@ -35,6 +35,10 @@ html {
         #news {
           @include news;
         }
+        
+        article.investigations {
+          @include investigations;
+        }
       }
     }
     

@@ -2,7 +2,7 @@
 $(document).ready(function() {
 
   // Cache container
-  var $investigations = $('.container'); 
+  var $container = $('.container'); 
   
   
   // The window onload script
@@ -11,9 +11,10 @@ $(document).ready(function() {
     // Initialize isotope filter plugin
     // Set options
     
-    $investigations.isotope({
+    $container.isotope({
       itemSelector : '.section',
-      layoutMode : 'masonry',
+      
+      
       // The CSS animation was too fancy, we've switched to a simpler one
       animationEngine: 'jquery',
       animationOptions: {

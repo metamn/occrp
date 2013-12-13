@@ -41,8 +41,11 @@
 }
 
 
-
-
+/* Investigations
+*/
+@mixin investigations {
+  @include article(title, figure, null, excerpt);
+}
 
 
 
@@ -64,6 +67,8 @@
 @mixin slider {
   max-width: $slider;
   width: $slider;
+  margin-right: 0;
+  
   background: $color;
   
   nav {

@@ -39,9 +39,9 @@ $minor: 38.2%;
 
 
 /* Slider & news must stay in the same row
-  - this is a forced width for the slider
+  - this is a forced width, the maximum possible for the slider
 */
-$slider: 54%;
+$slider: 63%;
 
 
 
@@ -89,6 +89,7 @@ $letter-spacing-uppercase: 1.1;
 */
 @mixin font-body {
   font-family: 'Old Standard TT', sans-serif;
+  font-size: large;
 }
 
 @mixin font-headings {
