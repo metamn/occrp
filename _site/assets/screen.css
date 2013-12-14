@@ -31,6 +31,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 */
 /* Flexible grid
 */
+/* Slider image width
+*/
 /* Strech content to fill parent width
 */
 /* Typography
@@ -52,6 +54,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 --------------------------------------------------------------------------------
 */
 /* Background */
+/* From Kuler, based on $background */
 /* Font, black */
 /* From Kuler, based on $color */
 /* From Kuler, based on $color */
@@ -99,6 +102,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* Typography
 --------------------------------------------------------------------------------
 */
+h1 { font-weight: bold; }
+
 /* From http://lamb.cc/typograph/ using traditional / em scaling
 */
 h1, h2, h3 { margin-top: 0; margin-bottom: 0; }
@@ -195,39 +200,39 @@ html body .container #header nav:nth-of-type(7) { margin-right: 3%; }
 html body .container #header nav:nth-of-type(8) { margin-right: 0; }
 html body .container #header nav:nth-of-type(9) { margin-right: 3%; }
 html body .container #header nav:nth-of-type(10) { margin-right: 3%; }
-html body.frontpage .container main #slider { width: auto; float: left; max-width: 47%; margin: 3% 3% 0 0; }
-html body.frontpage .container main #slider article #meta { width: 100%; max-width: 100%; float: left; }
-html body.frontpage .container main #slider article #meta li { display: inline-block; float: left; margin-right: 0.625em; }
-html body.frontpage .container main #slider article #meta li:last-of-type { margin-right: 0; }
-html body.frontpage .container main #slider article h1 { margin: 0.3125em 0; }
-html body.frontpage .container main #slider article #date { color: #7f7f7f; }
-html body.frontpage .container main #slider article figcaption { display: none; }
-html body.frontpage .container main #slider article #body { display: none; }
-html body.frontpage .container main #slider article #meta #category { display: none; }
-html body.frontpage .container main #slider article #meta #date { display: none; }
-html body.frontpage .container main #slider nav { margin: 1.25em 0; }
-html body.frontpage .container main #slider nav > h3 { display: none; }
-html body.frontpage .container main #slider nav ol li { display: inline-block; float: left; margin-right: 1.25em; }
-html body.frontpage .container main #slider nav ol li:last-of-type { margin-right: 0; }
-html body.frontpage .container main #news { width: auto; float: left; max-width: 47%; margin: 3% 3% 0 0; margin-right: 0; }
-html body.frontpage .container main #news h3 { display: block; }
-html body.frontpage .container main #news article { width: auto; float: left; max-width: 30%; margin: 3% 3% 0 0; height: 7.5em; margin-bottom: 3%; }
-html body.frontpage .container main #news article #meta { width: 100%; max-width: 100%; float: left; }
-html body.frontpage .container main #news article #meta li { display: inline-block; float: left; margin-right: 0.625em; }
-html body.frontpage .container main #news article #meta li:last-of-type { margin-right: 0; }
-html body.frontpage .container main #news article h1 { margin: 0.3125em 0; }
-html body.frontpage .container main #news article #date { color: #7f7f7f; }
-html body.frontpage .container main #news article figure { display: none; }
-html body.frontpage .container main #news article figcaption { display: none; }
-html body.frontpage .container main #news article #excerpt { display: none; }
-html body.frontpage .container main #news article #body { display: none; }
-html body.frontpage .container main #news article #meta #category { display: none; }
+html body.frontpage .container main #intro { padding: 1.25em; width: calc(100% - 2.5em); padding-top: 0; }
+html body.frontpage .container main #intro #slider { width: auto; float: left; max-width: 47%; margin: 3% 3% 0 0; }
+html body.frontpage .container main #intro #slider article { width: 34.375em; }
+html body.frontpage .container main #intro #slider article #meta { width: 100%; max-width: 100%; float: left; }
+html body.frontpage .container main #intro #slider article #meta li { display: inline-block; float: left; margin-right: 0.625em; }
+html body.frontpage .container main #intro #slider article #meta li:last-of-type { margin-right: 0; }
+html body.frontpage .container main #intro #slider article #meta, html body.frontpage .container main #intro #slider article figure, html body.frontpage .container main #intro #slider article h1 { margin-bottom: 0.3125em; }
+html body.frontpage .container main #intro #slider article figcaption { display: none; }
+html body.frontpage .container main #intro #slider article #body { display: none; }
+html body.frontpage .container main #intro #slider article #meta #category { display: none; }
+html body.frontpage .container main #intro #slider article #meta #date { display: none; }
+html body.frontpage .container main #intro #slider nav { margin: 1.25em 0; }
+html body.frontpage .container main #intro #slider nav > h3 { display: none; }
+html body.frontpage .container main #intro #slider nav ol li { display: inline-block; float: left; margin-right: 1.25em; }
+html body.frontpage .container main #intro #slider nav ol li:last-of-type { margin-right: 0; }
+html body.frontpage .container main #intro #slider nav ol li { margin-right: 1.5625em; }
+html body.frontpage .container main #intro #news { width: auto; float: left; max-width: 47%; margin: 3% 3% 0 0; }
+html body.frontpage .container main #intro #news h3 { display: block; }
+html body.frontpage .container main #intro #news article { width: auto; float: left; max-width: 30%; margin: 3% 3% 0 0; height: 7.5em; margin-bottom: 3%; }
+html body.frontpage .container main #intro #news article #meta { width: 100%; max-width: 100%; float: left; }
+html body.frontpage .container main #intro #news article #meta li { display: inline-block; float: left; margin-right: 0.625em; }
+html body.frontpage .container main #intro #news article #meta li:last-of-type { margin-right: 0; }
+html body.frontpage .container main #intro #news article #meta, html body.frontpage .container main #intro #news article figure, html body.frontpage .container main #intro #news article h1 { margin-bottom: 0.3125em; }
+html body.frontpage .container main #intro #news article figure { display: none; }
+html body.frontpage .container main #intro #news article figcaption { display: none; }
+html body.frontpage .container main #intro #news article #excerpt { display: none; }
+html body.frontpage .container main #intro #news article #body { display: none; }
+html body.frontpage .container main #intro #news article #meta #category { display: none; }
 html body.frontpage .container main #investigations { width: 100%; max-width: 100%; float: left; }
 html body.frontpage .container main #investigations article { width: auto; float: left; max-width: 30%; margin: 3% 3% 0 0; }
 html body.frontpage .container main #investigations article #meta { width: 100%; max-width: 100%; float: left; }
 html body.frontpage .container main #investigations article #meta li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.frontpage .container main #investigations article #meta li:last-of-type { margin-right: 0; }
-html body.frontpage .container main #investigations article h1 { margin: 0.3125em 0; }
-html body.frontpage .container main #investigations article #date { color: #7f7f7f; }
+html body.frontpage .container main #investigations article #meta, html body.frontpage .container main #investigations article figure, html body.frontpage .container main #investigations article h1 { margin-bottom: 0.3125em; }
 html body.frontpage .container main #investigations article figcaption { display: none; }
 html body.frontpage .container main #investigations article #body { display: none; }

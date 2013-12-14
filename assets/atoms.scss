@@ -44,6 +44,11 @@ $flexible-grid-width: 30%;
 $flexible-grid-margin: 3%;
 
 
+/* Slider image width
+*/
+$slider-image-width: 34.375em;
+
+
 
 /* Strech content to fill parent width
 */
@@ -82,7 +87,7 @@ $line-height-headings: 1.1;
 
 /* Letter spacing for uppercase
 */
-$letter-spacing-uppercase: 1.1;
+$letter-spacing-uppercase: 1.1px;
 
 
 /* Font families
@@ -103,12 +108,16 @@ $letter-spacing-uppercase: 1.1;
 */
 
 $background: #FFFFFF; /* Background */
+$light-grey: #f1f1f1; /* From Kuler, based on $background */
+
 $color: #333; /* Font, black */
 $grey: #ccc; /* From Kuler, based on $color */
 $dark-grey: #7F7F7F; /* From Kuler, based on $color */
 
 $highlight: #982022; /* Link, OCCRP red */
 $red: #E43033; /* From Kuler, based on $highlight */
+
+
 
 
 

@@ -37,16 +37,21 @@ html {
     &.frontpage {
       .container {  
         main {
-          #slider {
-            @include flexible-grid(47%);
-            @include slider;
+          #intro {
+            @include padding;
+            padding-top: 0;
+            
+            #slider {
+              @include flexible-grid(47%);
+              @include slider;
+            }
+            
+            #news {
+              @include flexible-grid(47%);
+              @include news;
+            }
           }
           
-          #news {
-            @include flexible-grid(47%);
-            margin-right: 0;
-            @include news;
-          }
           
           #investigations {
             @include investigations;

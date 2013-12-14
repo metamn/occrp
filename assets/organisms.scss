@@ -14,12 +14,8 @@
     @include list-inline($pad/2);
   }
   
-  h1 {
-    margin: $pad/4 0;
-  }
-  
-  #date {
-    color: $dark-grey;
+  #meta, figure, h1 {
+    margin-bottom: $pad/4;
   }
   
   
@@ -91,6 +87,7 @@
     @include flexible-grid;
     height: $pad*6;
     margin-bottom: $flexible-grid-margin;
+    
     @include article(null, date, title);
   }
 }
@@ -101,6 +98,7 @@
 @mixin slider {
   article {
     @include article(null, null, title, figure, null, excerpt);
+    width: $slider-image-width;
   }
   
   nav {
@@ -109,6 +107,10 @@
     
     ol {
       @include list-inline;
+      
+      li {
+        margin-right: $pad + $pad/4;
+      }
     }
   }
 }
