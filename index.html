@@ -4,7 +4,7 @@ title: Organized Crime and Corruption Reporting Project
 class: frontpage
 ---
 
-<section id="slider" class="section">
+<section id="slider">
   <h3>Slideshow and News</h3>
   
   {% for post in site.categories.slider limit:1 offset:0 %}
@@ -28,7 +28,7 @@ class: frontpage
   </nav>
 </section>
 
-<section id="news" class="section">
+<section id="news">
   <h3>
     <a href="{{site.url }}/daily" title="Daily News">Daily News</a>
   </h3>
@@ -40,19 +40,21 @@ class: frontpage
 
 
 
+<section id="investigations">
+  <h3>
+    <a href="{{site.url }}/investigations" title="Investigations">Investigations</a>
+  </h3>
 
-{% assign klass='section investigations' %}
+  {% for post in site.categories.investigations %}
+    {% include article.html %}
+  {% endfor %}
 
-{% for post in site.categories.investigations %}
-  {% include article.html %}
-{% endfor %}
+  {% for post in site.categories.slider %}
+    {% include article.html %}
+  {% endfor %}
 
-{% for post in site.categories.slider %}
-  {% include article.html %}
-{% endfor %}
-
-{% for post in site.categories.daily %}
-  {% include article.html %}
-{% endfor %}
-
+  {% for post in site.categories.daily %}
+    {% include article.html %}
+  {% endfor %}
+</section>
 

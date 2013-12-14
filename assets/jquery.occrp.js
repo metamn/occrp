@@ -2,7 +2,7 @@
 $(document).ready(function() {
 
   // Cache container
-  var $container = $('.container'); 
+  var $container = $('#investigations'); 
   
   
   // The window onload script
@@ -12,7 +12,7 @@ $(document).ready(function() {
     // Set options
     
     $container.isotope({
-      itemSelector : '.section',
+      itemSelector : 'article',
       
       
       // The CSS animation was too fancy, we've switched to a simpler one

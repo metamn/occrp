@@ -1,96 +1,99 @@
-<header id="identity" class="section">
-  <h3>Identity</h3>
-  <h1>
-    <a href="{{ site.url }}/" title="{{ site.title }}">
-      {{ site.title }}
-    </a>
-  </h1>
-  {% include responsive-images.html  link=site.url title=site.title normal="/assets/logo.png" mobile="/assets/logo.png" %}
+<header id="header">
+  <hgroup>
+    <h1>
+      <a href="{{ site.url }}/" title="{{ site.title }}">
+        {{ site.title }}
+      </a>
+    </h1>
+    {% include responsive-images.html  link=site.url title=site.title normal="/assets/logo.png" mobile="/assets/logo.png" %}
+  </hgroup>
+  
+  <nav id="main">
+    <h3>Main navigation</h3>
+    <ul>
+      <li>
+        <a href="{{ site.url }}/" title="Home">
+          Home
+        </a>
+      </li>
+      
+      <li>
+        <a href="{{ site.url }}/daily" title="Daily">
+          Daily
+        </a>
+      </li>
+      
+      <li>
+        <a href="{{ site.url }}/investigations" title="Investigations">
+          Investigations
+        </a>
+      </li>
+      
+      <li>
+        <a href="{{ site.url }}/resources" title="Resources">
+          Resources
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <nav id="tags">
+    <h3>Tag navigation</h3>
+    <ul>
+      <li>
+        <a href="{{ site.url }}/about" title="About Us">
+          #Russia
+        </a>
+      </li>
+      
+      <li>
+        <a href="{{ site.url }}/get-involved" title="Get involved">
+          #Drugs & Weapons
+        </a>
+      </li>
+      
+      <li>
+        <a href="{{ site.url }}/contact" title="Contact">
+          #Nelson Mandela
+        </a>
+      </li>
+      
+      <li>
+        <a href="{{ site.url }}/contact" title="Contact">
+          #Soci 2014
+        </a>
+      </li>
+      
+      <li>
+        <a href="{{ site.url }}/contact" title="Contact">
+          #Putin & Khodorkovskiy
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <nav id="secondary">
+    <h3>Secondary navigation</h3>
+    <ul>
+      <li>
+        <a href="{{ site.url }}/about" title="About Us">
+          About Us
+        </a>
+      </li>
+      
+      <li>
+        <a href="{{ site.url }}/get-involved" title="Get involved">
+          Get involved
+        </a>
+      </li>
+      
+      <li>
+        <a href="{{ site.url }}/contact" title="Contact">
+          Contact
+        </a>
+      </li>
+    </ul>
+  </nav>
 </header>
 
-<nav id="main" class="section menu">
-  <h3>Main navigation</h3>
-  <ul>
-    <li>
-      <a href="{{ site.url }}/" title="Home">
-        Home
-      </a>
-    </li>
-    
-    <li>
-      <a href="{{ site.url }}/daily" title="Daily">
-        Daily
-      </a>
-    </li>
-    
-    <li>
-      <a href="{{ site.url }}/investigations" title="Investigations">
-        Investigations
-      </a>
-    </li>
-    
-    <li>
-      <a href="{{ site.url }}/resources" title="Resources">
-        Resources
-      </a>
-    </li>
-  </ul>
-</nav>
 
-<nav id="tags" class="section menu">
-  <h3>Tag navigation</h3>
-  <ul>
-    <li>
-      <a href="{{ site.url }}/about" title="About Us">
-        #Russia
-      </a>
-    </li>
-    
-    <li>
-      <a href="{{ site.url }}/get-involved" title="Get involved">
-        #Drugs & Weapons
-      </a>
-    </li>
-    
-    <li>
-      <a href="{{ site.url }}/contact" title="Contact">
-        #Nelson Mandela
-      </a>
-    </li>
-    
-    <li>
-      <a href="{{ site.url }}/contact" title="Contact">
-        #Soci 2014
-      </a>
-    </li>
-    
-    <li>
-      <a href="{{ site.url }}/contact" title="Contact">
-        #Putin & Khodorkovskiy
-      </a>
-    </li>
-  </ul>
-</nav>
-
-<nav id="secondary" class="section menu">
-  <h3>Secondary navigation</h3>
-  <ul>
-    <li>
-      <a href="{{ site.url }}/about" title="About Us">
-        About Us
-      </a>
-    </li>
-    
-    <li>
-      <a href="{{ site.url }}/get-involved" title="Get involved">
-        Get involved
-      </a>
-    </li>
-    
-    <li>
-      <a href="{{ site.url }}/contact" title="Contact">
-        Contact
-      </a>
-    </li>
-  </ul>
-</nav>

@@ -12,24 +12,23 @@ html {
     .container {
       @include container;
       
-      /* The main grid elements, the containers
-        - these will be automatically arranged by the Isotope plugin
-      */
-      .section {
-        @include section;
+      #header, main, section, nav, #footer {
+        @include block;
+        @include hide-title;
       }
       
-      #identity {
-        @include logo;
-      }
-      
-      nav.menu {
-        @include menu;
-      }
-      
-      #identity, nav.menu {
-        max-width: 20%;
-        margin-right: 4%;
+      #header {
+        margin: $pad 0;
+        
+        hgroup {
+          @include responsive-grid(4);
+          @include logo;
+        }
+        
+        nav {
+          @include responsive-grid(4);
+          @include menu;
+        }
       }
     }
     
@@ -37,30 +36,23 @@ html {
     */
     &.frontpage {
       .container {  
-        #slider {
-          @include slider;
-        }
-        
-        #news {
-          @include news;
-        }
-        
-        article.investigations {
-          @include investigations;
+        main {
+          #slider {
+            @include responsive-grid(2);
+            @include slider;
+          }
+          
+          #news {
+            @include responsive-grid(2);
+            @include news;
+          }
+          
+          #investigations {
+            @include investigations;
+          }
         }
       }
     }
     
-    /* Investigations page
-    */
-    &.investigations {
-      section {
-        @include block;
-        
-        article {
-          @include section;
-        }
-      }
-    } 
   }
 }

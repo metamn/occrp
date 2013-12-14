@@ -61,7 +61,12 @@
 /* Investigations
 */
 @mixin investigations {
-  @include article(category, date, title, figure, null, excerpt, null);
+  @include block;
+  
+  article {
+    @include isotope;
+    @include article(category, date, title, figure, null, excerpt, null);
+  }
 }
 
 
@@ -71,7 +76,6 @@
 @mixin news {
   h3 {
     display: block;
-    @include invert($background, $highlight);
   }
   
   article {
@@ -85,40 +89,12 @@
 /* The slider on the frontpage
 */
 @mixin slider {
-  max-width: $slider;
-  width: $slider;
-  margin-right: 0;
-  
-  background: #f1f1f1;
-  padding: $pad;
-  
-  position: relative;
-  
   article {
     @include article(null, null, title, figure, null, excerpt);
-    width: 35em; /* The image width, which is fixed it seems */
-    float: left;
-    
-    position: relative;
-    
-    figure {
-      position: absolute;
-      top: -$pad;
-      left: -$pad;
-    }
   }
   
   nav {
     @include hide-title;
-    @include grid-resize($slider, 35em);
-    float: left;
-    
-    ol {
-      margin-left: $pad;
-      li {
-        border-bottom: 1px solid $background;
-      }
-    }
   }
 }
 
@@ -128,21 +104,14 @@
 /* The basic building block of the grid
   - it's title specified for HTML5 outliner compatibility is hidden
 */
-@mixin section {
+@mixin isotope {
   @include flexible-grid;
-  @include hide-title;
 }
 
 
 /* The menu
 */
 @mixin menu {
-  ul {
-    li {
-      padding-right: $pad*3;
-    }
-  }
-  
   &#tags {
     color: $red;
     @include link($red, $color);
@@ -182,8 +151,6 @@
   @include font-body;
   font-size: $font-size;
   line-height: $line-height;
-  
-  @include list;
 }
 
 

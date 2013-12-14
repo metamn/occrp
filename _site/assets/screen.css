@@ -77,6 +77,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 */
 /* Resize a grid column 
 */
+/* A responsive grid
+*/
+/* Generates a full grid of $how-many columns and $maximum elements - calculates automatically the columns size and margin - the right margin of the last element in a row is set to zero - $maximum sets how many articles will be displayed on a single page 
+*/
+/* Returns the width of a column in a grid
+*/
+/* Returns the margin of a column in a grid
+*/
+/* A left aligned column
+*/
+/* Remove right margin of the last element in a row of a grid - on responsive layouts we setup upd different grids - on every grid re-declaration the previous margins of last elements must be removed
+*/
 /* Navigation
 --------------------------------------------------------------------------------
 */
@@ -111,8 +123,6 @@ h1, h2, h3, h4, h4, h6 { font-family: 'Averia Serif Libre', serif; line-height: 
 /* Decorations
 --------------------------------------------------------------------------------
 */
-/* Lists
-*/
 /* Links
 */
 /* Organisms of the Atomic web design - groups of molecules joined together to form a relatively complex, distinct section of an interface.
@@ -136,49 +146,112 @@ h1, h2, h3, h4, h4, h6 { font-family: 'Averia Serif Libre', serif; line-height: 
 /* Structures / Templates of the Atomic web design - the layout, the grid, the wireframe - groups of organisms stitched together to form pages 
 */
 html body { background: white; color: #333333; font-family: 'Old Standard TT', sans-serif; font-size: large; font-size: 100%; line-height: 1.25; /* Frontpage
-*/ /* Investigations page
 */ }
 html body a { color: #333333; text-decoration: none; }
 html body a:hover { color: #982022; }
 html body img { width: auto; height: auto; max-width: 100%; }
-html body ul li, html body ol li { border-bottom: 1px solid; margin-bottom: 0.3125em; }
-html body .container { width: 90%; margin: 0 5%; /* The main grid elements, the containers - these will be automatically arranged by the Isotope plugin
+html body .container { width: 90%; margin: 0 5%; }
+html body .container #header, html body .container main, html body .container section, html body .container nav, html body .container #footer { width: 100%; max-width: 100%; float: left; }
+html body .container #header > h3, html body .container main > h3, html body .container section > h3, html body .container nav > h3, html body .container #footer > h3 { display: none; }
+html body .container #header { margin: 1.25em 0; }
+html body .container #header hgroup { width: 22%; margin-right: 3%; float: left; /*
+@include below-and-small-screen { @include grid(3, $maximum);
+}
+
+@include below-tablet { @include grid(2, $maximum);
+}
+
+@include mobile { @include grid(100%, 0);
+}
 */ }
-html body .container .section { width: auto; float: left; max-width: 30%; margin: 3% 3% 0 0; }
-html body .container .section > h3 { display: none; }
-html body .container #identity h1 { display: none; }
-html body .container #identity figure { margin-right: 1.25em; }
-html body .container #identity figure figcaption { display: none; }
-html body .container nav.menu ul li { padding-right: 3.75em; }
-html body .container nav.menu#tags { color: #e43033; }
-html body .container nav.menu#tags a { color: #e43033; text-decoration: none; }
-html body .container nav.menu#tags a:hover { color: #333333; }
-html body .container #identity, html body .container nav.menu { max-width: 20%; margin-right: 4%; }
-html body.frontpage .container #slider { max-width: 45%; width: 45%; margin-right: 0; background: #f1f1f1; padding: 1.25em; position: relative; }
-html body.frontpage .container #slider article { width: 35em; /* The image width, which is fixed it seems */ float: left; position: relative; }
-html body.frontpage .container #slider article figcaption { display: none; }
-html body.frontpage .container #slider article #body { display: none; }
-html body.frontpage .container #slider article #category { display: none; }
-html body.frontpage .container #slider article #date { display: none; }
-html body.frontpage .container #slider article #date { color: #7f7f7f; font-size: small; }
-html body.frontpage .container #slider article figure { position: absolute; top: -1.25em; left: -1.25em; }
-html body.frontpage .container #slider nav { width: calc(45% - 35em); float: left; }
-html body.frontpage .container #slider nav > h3 { display: none; }
-html body.frontpage .container #slider nav ol { margin-left: 1.25em; }
-html body.frontpage .container #slider nav ol li { border-bottom: 1px solid white; }
-html body.frontpage .container #news h3 { display: block; color: white; background: #982022; padding: 0.625em; }
-html body.frontpage .container #news h3 a { color: white; text-decoration: none; }
-html body.frontpage .container #news h3 a:hover { color: white; }
-html body.frontpage .container #news article { width: 100%; max-width: 100%; float: left; margin: 0.625em 0; }
-html body.frontpage .container #news article figure { display: none; }
-html body.frontpage .container #news article figcaption { display: none; }
-html body.frontpage .container #news article #excerpt { display: none; }
-html body.frontpage .container #news article #body { display: none; }
-html body.frontpage .container #news article #category { display: none; }
-html body.frontpage .container #news article #date { color: #7f7f7f; font-size: small; }
-html body.frontpage .container article.investigations figcaption { display: none; }
-html body.frontpage .container article.investigations #body { display: none; }
-html body.frontpage .container article.investigations #date { color: #7f7f7f; font-size: small; }
-html body.investigations section { width: 100%; max-width: 100%; float: left; }
-html body.investigations section article { width: auto; float: left; max-width: 30%; margin: 3% 3% 0 0; }
-html body.investigations section article > h3 { display: none; }
+html body .container #header hgroup:nth-of-type(2) { margin-right: 3%; }
+html body .container #header hgroup:nth-of-type(3) { margin-right: 3%; }
+html body .container #header hgroup:nth-of-type(4) { margin-right: 0; }
+html body .container #header hgroup:nth-of-type(5) { margin-right: 3%; }
+html body .container #header hgroup:nth-of-type(6) { margin-right: 3%; }
+html body .container #header hgroup:nth-of-type(7) { margin-right: 3%; }
+html body .container #header hgroup:nth-of-type(8) { margin-right: 0; }
+html body .container #header hgroup:nth-of-type(9) { margin-right: 3%; }
+html body .container #header hgroup:nth-of-type(10) { margin-right: 3%; }
+html body .container #header hgroup h1 { display: none; }
+html body .container #header hgroup figure { margin-right: 1.25em; }
+html body .container #header hgroup figure figcaption { display: none; }
+html body .container #header nav { width: 22%; margin-right: 3%; float: left; /*
+@include below-and-small-screen { @include grid(3, $maximum);
+}
+
+@include below-tablet { @include grid(2, $maximum);
+}
+
+@include mobile { @include grid(100%, 0);
+}
+*/ }
+html body .container #header nav:nth-of-type(2) { margin-right: 3%; }
+html body .container #header nav:nth-of-type(3) { margin-right: 3%; }
+html body .container #header nav:nth-of-type(4) { margin-right: 0; }
+html body .container #header nav:nth-of-type(5) { margin-right: 3%; }
+html body .container #header nav:nth-of-type(6) { margin-right: 3%; }
+html body .container #header nav:nth-of-type(7) { margin-right: 3%; }
+html body .container #header nav:nth-of-type(8) { margin-right: 0; }
+html body .container #header nav:nth-of-type(9) { margin-right: 3%; }
+html body .container #header nav:nth-of-type(10) { margin-right: 3%; }
+html body .container #header nav#tags { color: #e43033; }
+html body .container #header nav#tags a { color: #e43033; text-decoration: none; }
+html body .container #header nav#tags a:hover { color: #333333; }
+html body.frontpage .container main #slider { width: 45%; margin-right: 10%; float: left; /*
+@include below-and-small-screen { @include grid(3, $maximum);
+}
+
+@include below-tablet { @include grid(2, $maximum);
+}
+
+@include mobile { @include grid(100%, 0);
+}
+*/ }
+html body.frontpage .container main #slider:nth-of-type(2) { margin-right: 0; }
+html body.frontpage .container main #slider:nth-of-type(3) { margin-right: 10%; }
+html body.frontpage .container main #slider:nth-of-type(4) { margin-right: 0; }
+html body.frontpage .container main #slider:nth-of-type(5) { margin-right: 10%; }
+html body.frontpage .container main #slider:nth-of-type(6) { margin-right: 0; }
+html body.frontpage .container main #slider:nth-of-type(7) { margin-right: 10%; }
+html body.frontpage .container main #slider:nth-of-type(8) { margin-right: 0; }
+html body.frontpage .container main #slider:nth-of-type(9) { margin-right: 10%; }
+html body.frontpage .container main #slider:nth-of-type(10) { margin-right: 0; }
+html body.frontpage .container main #slider article figcaption { display: none; }
+html body.frontpage .container main #slider article #body { display: none; }
+html body.frontpage .container main #slider article #category { display: none; }
+html body.frontpage .container main #slider article #date { display: none; }
+html body.frontpage .container main #slider article #date { color: #7f7f7f; font-size: small; }
+html body.frontpage .container main #slider nav > h3 { display: none; }
+html body.frontpage .container main #news { width: 45%; margin-right: 10%; float: left; /*
+@include below-and-small-screen { @include grid(3, $maximum);
+}
+
+@include below-tablet { @include grid(2, $maximum);
+}
+
+@include mobile { @include grid(100%, 0);
+}
+*/ }
+html body.frontpage .container main #news:nth-of-type(2) { margin-right: 0; }
+html body.frontpage .container main #news:nth-of-type(3) { margin-right: 10%; }
+html body.frontpage .container main #news:nth-of-type(4) { margin-right: 0; }
+html body.frontpage .container main #news:nth-of-type(5) { margin-right: 10%; }
+html body.frontpage .container main #news:nth-of-type(6) { margin-right: 0; }
+html body.frontpage .container main #news:nth-of-type(7) { margin-right: 10%; }
+html body.frontpage .container main #news:nth-of-type(8) { margin-right: 0; }
+html body.frontpage .container main #news:nth-of-type(9) { margin-right: 10%; }
+html body.frontpage .container main #news:nth-of-type(10) { margin-right: 0; }
+html body.frontpage .container main #news h3 { display: block; }
+html body.frontpage .container main #news article { width: 100%; max-width: 100%; float: left; margin: 0.625em 0; }
+html body.frontpage .container main #news article figure { display: none; }
+html body.frontpage .container main #news article figcaption { display: none; }
+html body.frontpage .container main #news article #excerpt { display: none; }
+html body.frontpage .container main #news article #body { display: none; }
+html body.frontpage .container main #news article #category { display: none; }
+html body.frontpage .container main #news article #date { color: #7f7f7f; font-size: small; }
+html body.frontpage .container main #investigations { width: 100%; max-width: 100%; float: left; }
+html body.frontpage .container main #investigations article { width: auto; float: left; max-width: 30%; margin: 3% 3% 0 0; }
+html body.frontpage .container main #investigations article figcaption { display: none; }
+html body.frontpage .container main #investigations article #body { display: none; }
+html body.frontpage .container main #investigations article #date { color: #7f7f7f; font-size: small; }
