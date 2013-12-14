@@ -89,12 +89,23 @@
   width: $slider;
   margin-right: 0;
   
-  @include invert($background, black);
+  background: #f1f1f1;
+  padding: $pad;
+  
+  position: relative;
   
   article {
     @include article(null, null, title, figure, null, excerpt);
     width: 35em; /* The image width, which is fixed it seems */
     float: left;
+    
+    position: relative;
+    
+    figure {
+      position: absolute;
+      top: -$pad;
+      left: -$pad;
+    }
   }
   
   nav {

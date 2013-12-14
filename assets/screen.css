@@ -153,16 +153,16 @@ html body .container nav.menu ul li { padding-right: 3.75em; }
 html body .container nav.menu#tags { color: #e43033; }
 html body .container nav.menu#tags a { color: #e43033; text-decoration: none; }
 html body .container nav.menu#tags a:hover { color: #333333; }
-html body.frontpage .container #slider { max-width: 63%; width: 63%; margin-right: 0; color: white; background: black; padding: 0.625em; }
-html body.frontpage .container #slider a { color: white; text-decoration: none; }
-html body.frontpage .container #slider a:hover { color: white; }
-html body.frontpage .container #slider article { width: 35em; /* The image width, which is fixed it seems */ float: left; }
+html body .container #identity, html body .container nav.menu { max-width: 20%; margin-right: 4%; }
+html body.frontpage .container #slider { max-width: 45%; width: 45%; margin-right: 0; background: #f1f1f1; padding: 1.25em; position: relative; }
+html body.frontpage .container #slider article { width: 35em; /* The image width, which is fixed it seems */ float: left; position: relative; }
 html body.frontpage .container #slider article figcaption { display: none; }
 html body.frontpage .container #slider article #body { display: none; }
 html body.frontpage .container #slider article #category { display: none; }
 html body.frontpage .container #slider article #date { display: none; }
 html body.frontpage .container #slider article #date { color: #7f7f7f; font-size: small; }
-html body.frontpage .container #slider nav { width: calc(63% - 35em); float: left; }
+html body.frontpage .container #slider article figure { position: absolute; top: -1.25em; left: -1.25em; }
+html body.frontpage .container #slider nav { width: calc(45% - 35em); float: left; }
 html body.frontpage .container #slider nav > h3 { display: none; }
 html body.frontpage .container #slider nav ol { margin-left: 1.25em; }
 html body.frontpage .container #slider nav ol li { border-bottom: 1px solid white; }

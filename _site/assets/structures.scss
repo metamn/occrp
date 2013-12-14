@@ -26,6 +26,11 @@ html {
       nav.menu {
         @include menu;
       }
+      
+      #identity, nav.menu {
+        max-width: 20%;
+        margin-right: 4%;
+      }
     }
     
     /* Frontpage
