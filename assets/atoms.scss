@@ -7,11 +7,123 @@
 
 
 
-/* Grid
+/* Responsiveness
 --------------------------------------------------------------------------------
 */
 
 
+$breakpoint-mobile: 24em !default; /* 384px, Android Nexus 4 */
+$breakpoint-mobile-landscape: 40em !default; /* 640px, iPhone 5 */
+$breakpoint-tablet: 48em !default; /* 768px */
+$breakpoint-small-screen: 64em !default; /* 1024px */
+$breakpoint-normal-screen: 80em !default; /* 1280px */
+$breakpoint-large-screen: 90em !default; /* 1440px */
+
+@mixin portrait {
+	@media only screen and (orientation : portrait) {
+		@content;
+	}
+}
+
+@mixin landscape {
+	@media only screen and (orientation : landscape) {
+		@content;
+	}
+}
+
+@mixin mobile {
+	@media only screen and (max-width: $breakpoint-mobile) {
+		@content;
+	}
+} 
+@mixin below-mobile-landscape {
+	@media only screen and (max-width: $breakpoint-mobile-landscape) and (orientation : landscape) {
+		@content;
+	}
+}
+
+@mixin below-tablet {
+	@media only screen and (max-width: $breakpoint-tablet - 0.001) {
+		@content;
+	}
+}
+@mixin below-tablet-landscape {
+	@media only screen and (max-width: $breakpoint-tablet - 0.001) and (orientation : landscape) {
+		@content;
+	}
+}
+@mixin below-tablet-portrait {
+	@media only screen and (max-width: $breakpoint-tablet - 0.001) and (orientation : portrait) {
+		@content;
+	}
+}
+@mixin below-and-tablet-portrait {
+	@media only screen and (max-width: $breakpoint-tablet) and (orientation : portrait) {
+		@content;
+	}
+}
+@mixin tablet-and-above {
+  @media only screen and (min-width: $breakpoint-tablet) {
+		@content;
+	}
+}
+
+@mixin below-small-screen {
+	@media only screen and (max-width: $breakpoint-small-screen - 0.001) {
+		@content;
+	}
+}
+@mixin below-and-small-screen {
+	@media only screen and (max-width: $breakpoint-small-screen) {
+		@content;
+	}
+}
+@mixin small-screen {
+	@media only screen and (min-width: $breakpoint-tablet + 0.001) and (max-width: $breakpoint-small-screen) {
+		@content;
+	}
+}
+@mixin small-screen-and-above {
+  @media only screen and (min-width: $breakpoint-small-screen) {
+		@content;
+	}
+}
+@mixin below-small-screen-landscape {
+	@media only screen and (max-width: $breakpoint-small-screen - 0.001) and (orientation : landscape) {
+		@content;
+	}
+}
+@mixin below-and-small-screen-portrait {
+	@media only screen and (max-width: $breakpoint-small-screen) and (orientation : portrait) {
+		@content;
+	}
+}
+
+@mixin below-normal-screen {
+	@media only screen and (max-width: $breakpoint-normal-screen - 0.001) {
+		@content;
+	}
+}
+@mixin normal-screen-and-above {
+	@media only screen and (min-width: $breakpoint-normal-screen) {
+		@content;
+	}
+}
+
+@mixin large-screen-and-above {
+	@media only screen and (min-width: $breakpoint-large-screen) {
+		@content;
+	}
+}
+
+
+
+
+
+
+/* Grid
+--------------------------------------------------------------------------------
+*/
 
 /* Default unit for horizontal and vertical spacing
   - combined from $font-size and $line-height

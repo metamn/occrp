@@ -66,10 +66,8 @@
 /* Investigations
 */
 @mixin investigations {
-  @include block;
-  
   article {
-    @include isotope;
+    @include flexible-grid;
     @include article(category, date, title, figure, null, excerpt, null);
   }
 }
@@ -84,7 +82,7 @@
   }
   
   article {
-    @include flexible-grid;
+    @include responsive-grid(3);
     height: $pad*6;
     margin-bottom: $flexible-grid-margin;
     
@@ -98,7 +96,7 @@
 @mixin slider {
   article {
     @include article(null, null, title, figure, null, excerpt);
-    width: $slider-image-width;
+    max-width: $slider-image-width;
   }
   
   nav {
@@ -116,20 +114,22 @@
 }
 
 
-
-
-/* The basic building block of the grid
-  - it's title specified for HTML5 outliner compatibility is hidden
-*/
-@mixin isotope {
-  @include flexible-grid;
-}
-
-
 /* The menu
 */
 @mixin menu {
+  ul {
+    @include list-inline;
+  }
   
+  @include below-tablet {
+    h3 {
+      display: block;
+    }
+    
+    ul {
+      display: none;
+    }
+  }
 }
 
 

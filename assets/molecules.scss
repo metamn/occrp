@@ -17,12 +17,21 @@
   - all items are aligned left with an uniform margin
   - this grid can be dynamically positioned by Isotope
 */
-@mixin flexible-grid ($max-width: $flexible-grid-width, $margin: $flexible-grid-margin) {
+@mixin flexible-grid($max-width: $flexible-grid-width, $margin: $flexible-grid-margin) {
   width: auto;
   float: left;
   
-  max-width: $max-width;
-  margin: $margin $margin 0 0;
+  @include below-normal-screen {
+    @include block;
+    max-width: 100%;
+    margin-right: 0;
+  }
+  
+  
+  @include normal-screen-and-above {
+    max-width: $max-width;
+    margin: $margin $margin 0 0;
+  }
 }
 
 
@@ -87,21 +96,17 @@
 /* A responsive grid
 */
 @mixin responsive-grid($how-many, $maximum : 10) {
-  @include grid($how-many, $maximum);
-  
-  /*
-  @include below-and-small-screen {
-    @include grid(3, $maximum);
+  @include below-tablet {
+    @include col(100%, 0);
   }
   
-  @include below-tablet {
+  @include tablet-and-above {
     @include grid(2, $maximum);
   }
   
-  @include mobile {
-    @include grid(100%, 0);
+  @include normal-screen-and-above {
+    @include grid($how-many, $maximum);
   }
-  */
 }
 
 

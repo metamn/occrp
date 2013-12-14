@@ -38,9 +38,6 @@ html {
       .container {  
         main {
           #intro {
-            @include padding;
-            padding-top: 0;
-            
             #slider {
               @include flexible-grid(47%);
               @include slider;
@@ -52,8 +49,8 @@ html {
             }
           }
           
-          
           #investigations {
+            @include block;
             @include investigations;
           }
         }
