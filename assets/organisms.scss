@@ -79,9 +79,9 @@
   }
   
   article {
-    @include block;
+    @include flexible-grid;
+    margin-bottom: $flexible-grid-margin;
     @include article(null, date, title);
-    margin: $pad/2 0;
   }
 }
 
@@ -95,6 +95,10 @@
   
   nav {
     @include hide-title;
+    
+    ol {
+      @include list-inline;
+    }
   }
 }
 
@@ -112,10 +116,7 @@
 /* The menu
 */
 @mixin menu {
-  &#tags {
-    color: $red;
-    @include link($red, $color);
-  }
+  
 }
 
 

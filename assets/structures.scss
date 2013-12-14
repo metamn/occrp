@@ -38,12 +38,13 @@ html {
       .container {  
         main {
           #slider {
-            @include responsive-grid(2);
+            @include flexible-grid(47%);
             @include slider;
           }
           
           #news {
-            @include responsive-grid(2);
+            @include flexible-grid(47%);
+            margin-right: 0;
             @include news;
           }
           

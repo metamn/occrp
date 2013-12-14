@@ -29,7 +29,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 */
 /* The golden ratio
 */
-/* Slider & news must stay in the same row - this is a forced width, the maximum possible for the slider
+/* Flexible grid
 */
 /* Strech content to fill parent width
 */
@@ -195,55 +195,18 @@ html body .container #header nav:nth-of-type(7) { margin-right: 3%; }
 html body .container #header nav:nth-of-type(8) { margin-right: 0; }
 html body .container #header nav:nth-of-type(9) { margin-right: 3%; }
 html body .container #header nav:nth-of-type(10) { margin-right: 3%; }
-html body .container #header nav#tags { color: #e43033; }
-html body .container #header nav#tags a { color: #e43033; text-decoration: none; }
-html body .container #header nav#tags a:hover { color: #333333; }
-html body.frontpage .container main #slider { width: 45%; margin-right: 10%; float: left; /*
-@include below-and-small-screen { @include grid(3, $maximum);
-}
-
-@include below-tablet { @include grid(2, $maximum);
-}
-
-@include mobile { @include grid(100%, 0);
-}
-*/ }
-html body.frontpage .container main #slider:nth-of-type(2) { margin-right: 0; }
-html body.frontpage .container main #slider:nth-of-type(3) { margin-right: 10%; }
-html body.frontpage .container main #slider:nth-of-type(4) { margin-right: 0; }
-html body.frontpage .container main #slider:nth-of-type(5) { margin-right: 10%; }
-html body.frontpage .container main #slider:nth-of-type(6) { margin-right: 0; }
-html body.frontpage .container main #slider:nth-of-type(7) { margin-right: 10%; }
-html body.frontpage .container main #slider:nth-of-type(8) { margin-right: 0; }
-html body.frontpage .container main #slider:nth-of-type(9) { margin-right: 10%; }
-html body.frontpage .container main #slider:nth-of-type(10) { margin-right: 0; }
+html body.frontpage .container main #slider { width: auto; float: left; max-width: 47%; margin: 3% 3% 0 0; }
 html body.frontpage .container main #slider article figcaption { display: none; }
 html body.frontpage .container main #slider article #body { display: none; }
 html body.frontpage .container main #slider article #category { display: none; }
 html body.frontpage .container main #slider article #date { display: none; }
 html body.frontpage .container main #slider article #date { color: #7f7f7f; font-size: small; }
 html body.frontpage .container main #slider nav > h3 { display: none; }
-html body.frontpage .container main #news { width: 45%; margin-right: 10%; float: left; /*
-@include below-and-small-screen { @include grid(3, $maximum);
-}
-
-@include below-tablet { @include grid(2, $maximum);
-}
-
-@include mobile { @include grid(100%, 0);
-}
-*/ }
-html body.frontpage .container main #news:nth-of-type(2) { margin-right: 0; }
-html body.frontpage .container main #news:nth-of-type(3) { margin-right: 10%; }
-html body.frontpage .container main #news:nth-of-type(4) { margin-right: 0; }
-html body.frontpage .container main #news:nth-of-type(5) { margin-right: 10%; }
-html body.frontpage .container main #news:nth-of-type(6) { margin-right: 0; }
-html body.frontpage .container main #news:nth-of-type(7) { margin-right: 10%; }
-html body.frontpage .container main #news:nth-of-type(8) { margin-right: 0; }
-html body.frontpage .container main #news:nth-of-type(9) { margin-right: 10%; }
-html body.frontpage .container main #news:nth-of-type(10) { margin-right: 0; }
+html body.frontpage .container main #slider nav ol li { display: inline-block; float: left; margin-right: 1.25em; }
+html body.frontpage .container main #slider nav ol li:last-of-type { margin-right: 0; }
+html body.frontpage .container main #news { width: auto; float: left; max-width: 47%; margin: 3% 3% 0 0; margin-right: 0; }
 html body.frontpage .container main #news h3 { display: block; }
-html body.frontpage .container main #news article { width: 100%; max-width: 100%; float: left; margin: 0.625em 0; }
+html body.frontpage .container main #news article { width: auto; float: left; max-width: 30%; margin: 3% 3% 0 0; margin-bottom: 3%; }
 html body.frontpage .container main #news article figure { display: none; }
 html body.frontpage .container main #news article figcaption { display: none; }
 html body.frontpage .container main #news article #excerpt { display: none; }
