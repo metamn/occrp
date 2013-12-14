@@ -115,7 +115,7 @@ h3 { font-size: 1.16667em; }
 */
 /* Headings
 */
-h1, h2, h3, h4, h4, h6 { font-family: 'Averia Serif Libre', serif; line-height: 1.1; }
+h1, h2, h3, h4, h4, h6 { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; line-height: 1.1; }
 
 /* Images
 --------------------------------------------------------------------------------
@@ -145,7 +145,7 @@ h1, h2, h3, h4, h4, h6 { font-family: 'Averia Serif Libre', serif; line-height: 
 */
 /* Structures / Templates of the Atomic web design - the layout, the grid, the wireframe - groups of organisms stitched together to form pages 
 */
-html body { background: white; color: #333333; font-family: 'Old Standard TT', sans-serif; font-size: large; font-size: 100%; line-height: 1.25; /* Frontpage
+html body { background: white; color: #333333; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-size: 100%; line-height: 1.25; /* Frontpage
 */ }
 html body a { color: #333333; text-decoration: none; }
 html body a:hover { color: #982022; }
@@ -196,25 +196,38 @@ html body .container #header nav:nth-of-type(8) { margin-right: 0; }
 html body .container #header nav:nth-of-type(9) { margin-right: 3%; }
 html body .container #header nav:nth-of-type(10) { margin-right: 3%; }
 html body.frontpage .container main #slider { width: auto; float: left; max-width: 47%; margin: 3% 3% 0 0; }
+html body.frontpage .container main #slider article #meta { width: 100%; max-width: 100%; float: left; }
+html body.frontpage .container main #slider article #meta li { display: inline-block; float: left; margin-right: 0.625em; }
+html body.frontpage .container main #slider article #meta li:last-of-type { margin-right: 0; }
+html body.frontpage .container main #slider article h1 { margin: 0.3125em 0; }
+html body.frontpage .container main #slider article #date { color: #7f7f7f; }
 html body.frontpage .container main #slider article figcaption { display: none; }
 html body.frontpage .container main #slider article #body { display: none; }
-html body.frontpage .container main #slider article #category { display: none; }
-html body.frontpage .container main #slider article #date { display: none; }
-html body.frontpage .container main #slider article #date { color: #7f7f7f; font-size: small; }
+html body.frontpage .container main #slider article #meta #category { display: none; }
+html body.frontpage .container main #slider article #meta #date { display: none; }
+html body.frontpage .container main #slider nav { margin: 1.25em 0; }
 html body.frontpage .container main #slider nav > h3 { display: none; }
 html body.frontpage .container main #slider nav ol li { display: inline-block; float: left; margin-right: 1.25em; }
 html body.frontpage .container main #slider nav ol li:last-of-type { margin-right: 0; }
 html body.frontpage .container main #news { width: auto; float: left; max-width: 47%; margin: 3% 3% 0 0; margin-right: 0; }
 html body.frontpage .container main #news h3 { display: block; }
-html body.frontpage .container main #news article { width: auto; float: left; max-width: 30%; margin: 3% 3% 0 0; margin-bottom: 3%; }
+html body.frontpage .container main #news article { width: auto; float: left; max-width: 30%; margin: 3% 3% 0 0; height: 7.5em; margin-bottom: 3%; }
+html body.frontpage .container main #news article #meta { width: 100%; max-width: 100%; float: left; }
+html body.frontpage .container main #news article #meta li { display: inline-block; float: left; margin-right: 0.625em; }
+html body.frontpage .container main #news article #meta li:last-of-type { margin-right: 0; }
+html body.frontpage .container main #news article h1 { margin: 0.3125em 0; }
+html body.frontpage .container main #news article #date { color: #7f7f7f; }
 html body.frontpage .container main #news article figure { display: none; }
 html body.frontpage .container main #news article figcaption { display: none; }
 html body.frontpage .container main #news article #excerpt { display: none; }
 html body.frontpage .container main #news article #body { display: none; }
-html body.frontpage .container main #news article #category { display: none; }
-html body.frontpage .container main #news article #date { color: #7f7f7f; font-size: small; }
+html body.frontpage .container main #news article #meta #category { display: none; }
 html body.frontpage .container main #investigations { width: 100%; max-width: 100%; float: left; }
 html body.frontpage .container main #investigations article { width: auto; float: left; max-width: 30%; margin: 3% 3% 0 0; }
+html body.frontpage .container main #investigations article #meta { width: 100%; max-width: 100%; float: left; }
+html body.frontpage .container main #investigations article #meta li { display: inline-block; float: left; margin-right: 0.625em; }
+html body.frontpage .container main #investigations article #meta li:last-of-type { margin-right: 0; }
+html body.frontpage .container main #investigations article h1 { margin: 0.3125em 0; }
+html body.frontpage .container main #investigations article #date { color: #7f7f7f; }
 html body.frontpage .container main #investigations article figcaption { display: none; }
 html body.frontpage .container main #investigations article #body { display: none; }
-html body.frontpage .container main #investigations article #date { color: #7f7f7f; font-size: small; }

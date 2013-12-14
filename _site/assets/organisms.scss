@@ -9,9 +9,23 @@
   - displays mostly article thumbs
 */
 @mixin article($category, $date, $title, $figure: null, $figcaption: null, $excerpt: null, $body: null) {
+  #meta {
+    @include block;
+    @include list-inline($pad/2);
+  }
+  
+  h1 {
+    margin: $pad/4 0;
+  }
+  
+  #date {
+    color: $dark-grey;
+  }
+  
+  
   @if ($title == null) {
     h1 {
-      display: none;
+      display: none ;
     }
   }
   
@@ -40,20 +54,15 @@
   }
   
   @if ($category == null) {
-    #category {
+    #meta #category {
       display: none;
     }
   }
   
   @if ($date == null) {
-    #date {
+    #meta #date {
       display: none;
     }
-  }
-  
-  #date {
-    color: $dark-grey;
-    font-size: small;
   }
 }
 
@@ -80,6 +89,7 @@
   
   article {
     @include flexible-grid;
+    height: $pad*6;
     margin-bottom: $flexible-grid-margin;
     @include article(null, date, title);
   }
@@ -95,6 +105,7 @@
   
   nav {
     @include hide-title;
+    margin: $pad 0;
     
     ol {
       @include list-inline;

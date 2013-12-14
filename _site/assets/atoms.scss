@@ -88,12 +88,11 @@ $letter-spacing-uppercase: 1.1;
 /* Font families
 */
 @mixin font-body {
-  font-family: 'Old Standard TT', sans-serif;
-  font-size: large;
+  font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
 }
 
 @mixin font-headings {
-  font-family: 'Averia Serif Libre', serif;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 

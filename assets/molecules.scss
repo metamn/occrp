@@ -169,11 +169,11 @@
 
 /* Displays an <ul> list inline
 */
-@mixin list-inline {
+@mixin list-inline($margin-right: $pad) {
   li {
     display: inline-block;
     float: left;
-    margin-right: $pad;
+    margin-right: $margin-right;
     
     &:last-of-type {
       margin-right: 0;
