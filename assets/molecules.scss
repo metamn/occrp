@@ -200,16 +200,29 @@
 */
 
 
-h1 {
-  font-weight: bold;
+/* Text styles
+*/
+
+/* General settings for headings
+*/
+@mixin text-headings {
+  @include font-headings;
+  line-height: $line-height-headings;
 }
 
-/* From http://lamb.cc/typograph/ using traditional / em scaling
+/* Article title in thumbs
 */
-h1, h2, h3 { margin-top:0; margin-bottom:0; }
-h1 { font-size:1.16667em; }
-h2 { font-size:1.33333em; }
-h3 { font-size:1.16667em; }
+@mixin text-article-title {
+  @include text-headings;
+  font-size: 1.16667em; /* h3 */
+}
+
+@mixin text-news-title {
+  @include text-headings;
+  font-size: 1.5em; /* h1 */
+  font-style: italic;
+  font-weight: normal;
+}
 
 
 /* Long text font settings
@@ -223,24 +236,50 @@ h3 { font-size:1.16667em; }
   h3 { padding:1.51785em 0; }
 }
 
-/* Headings, navigation font settings
+/* Mostly for links to other sections
 */
-@mixin text-headings {
-  @include font-headings;
-  line-height: $line-height-headings;
+@mixin text-navigation {
+  @include uppercase;
+  font-size: small;
 }
+
+
+@mixin text-heading-large {
+  @include text-headings;
+}
+
+
+
+
+
+/* From http://lamb.cc/typograph/ using traditional / em scaling
+*/
+h1, h2, h3 { margin-top:0; margin-bottom:0; }
+h1 { font-size:1.5em; }
+h2 { font-size:1.33333em; }
+h3 { font-size:1.16667em; }
+
+
+
+
 
 /* Headings
 */
 h1, h2, h3, h4, h4, h6 {
   @include text-headings;
 }
+h1 {
+  font-weight: bold;
+}
+
+
 
 
 @mixin uppercase {
   text-transform: uppercase;
   letter-spacing: $letter-spacing-uppercase;
 }
+
 
 
 /* Images

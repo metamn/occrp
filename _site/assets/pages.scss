@@ -1,0 +1,30 @@
+html {
+  body.frontpage {
+    .container {
+      main {
+        article {
+          #category {  
+            @include text-navigation;
+          }
+          
+          #date {
+            font-size: small;
+          }
+        }
+        
+        #intro {
+          #news {
+            article {
+              h1 {
+                @include text-news-title;
+                @include link($highlight);
+              }
+            }
+          }
+        }
+        
+        
+      }
+    }
+  }
+}

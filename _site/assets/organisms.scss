@@ -18,6 +18,7 @@
   }
   
   h1 {
+    @include text-article-title;
     padding: $pad/4 0;
   }
   
@@ -98,10 +99,11 @@
 @mixin news {
   h3 {
     display: block;
+    margin-bottom: $pad/2;
   }
   
   article {
-    @include responsive-grid(3);
+    @include responsive-grid(2);
     @include article(null, date, title);
   }
 }
@@ -134,6 +136,8 @@
 /* The menu
 */
 @mixin menu {
+  margin-bottom: 0;
+  
   ul {
     @include list-inline;
   }
