@@ -4,15 +4,6 @@ html {
       #header {
         nav {
           @include text-navigation;
-          border-bottom: $border;
-          
-          &#tags {
-            margin-top: $pad*2;
-            min-width: 60%;
-            border-bottom: none;
-            
-            @include link($red, $color);
-          }
         }
       }
         
@@ -34,33 +25,11 @@ html {
         
         #intro {
           #slider {
-            article, nav ol li.active {
+            nav ol li.active {
               @include invert;
-            }
-          } 
-          
-          #news {
-            article {
-              text-align: right;
-              
-              h1 {
-                @include text-news-title;
-              }
-              
-              #meta {
-                margin: 0;
-                
-                ul {
-                  li {
-                    float: right;
-                  }
-                }
-              }
             }
           }
         }
-        
-        
       }
     }
   }
