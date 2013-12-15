@@ -214,7 +214,6 @@
 */
 @mixin text-article-title {
   @include text-headings;
-  font-size: 1.16667em; /* h3 */
 }
 
 @mixin text-article-excerpt {

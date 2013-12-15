@@ -5,6 +5,7 @@ html {
         article {
           #category {  
             @include text-navigation;
+            @include link($highlight, $color);
           }
           
           #date {

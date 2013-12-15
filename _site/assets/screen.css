@@ -190,7 +190,7 @@ html body.frontpage .container main #intro #slider article { margin-bottom: 3%; 
 html body.frontpage .container main #intro #slider article #meta { padding: 1.25em; }
 html body.frontpage .container main #intro #slider article #meta li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.frontpage .container main #intro #slider article #meta li:last-of-type { margin-right: 0; }
-html body.frontpage .container main #intro #slider article h1 { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Merriweather', serif; line-height: 1.1; font-size: 1.16667em; /* h3 */ padding: 0.3125em 0; }
+html body.frontpage .container main #intro #slider article h1 { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Merriweather', serif; line-height: 1.1; padding: 0.3125em 0; }
 html body.frontpage .container main #intro #slider article figure { float: left; margin-right: 1.25em; max-height: 30em; overflow: hidden; }
 html body.frontpage .container main #intro #slider article h1, html body.frontpage .container main #intro #slider article #excerpt, html body.frontpage .container main #intro #slider article #meta { width: 100%; max-width: 100%; float: left; }
 html body.frontpage .container main #intro #slider article figcaption { display: none; }
@@ -230,7 +230,7 @@ html body.frontpage .container main #intro #news article { margin-bottom: 3%; /*
 html body.frontpage .container main #intro #news article #meta { padding: 1.25em; }
 html body.frontpage .container main #intro #news article #meta li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.frontpage .container main #intro #news article #meta li:last-of-type { margin-right: 0; }
-html body.frontpage .container main #intro #news article h1 { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Merriweather', serif; line-height: 1.1; font-size: 1.16667em; /* h3 */ padding: 0.3125em 0; }
+html body.frontpage .container main #intro #news article h1 { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Merriweather', serif; line-height: 1.1; padding: 0.3125em 0; }
 html body.frontpage .container main #intro #news article figure { float: left; margin-right: 1.25em; max-height: 30em; overflow: hidden; }
 html body.frontpage .container main #intro #news article h1, html body.frontpage .container main #intro #news article #excerpt, html body.frontpage .container main #intro #news article #meta { width: 100%; max-width: 100%; float: left; }
 html body.frontpage .container main #intro #news article figure { display: none; }
@@ -245,13 +245,15 @@ html body.frontpage .container main #investigations article { width: auto; float
 html body.frontpage .container main #investigations article #meta { padding: 1.25em; }
 html body.frontpage .container main #investigations article #meta li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.frontpage .container main #investigations article #meta li:last-of-type { margin-right: 0; }
-html body.frontpage .container main #investigations article h1 { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Merriweather', serif; line-height: 1.1; font-size: 1.16667em; /* h3 */ padding: 0.3125em 0; }
+html body.frontpage .container main #investigations article h1 { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Merriweather', serif; line-height: 1.1; padding: 0.3125em 0; }
 html body.frontpage .container main #investigations article figure { float: left; margin-right: 1.25em; max-height: 30em; overflow: hidden; }
 html body.frontpage .container main #investigations article h1, html body.frontpage .container main #investigations article #excerpt, html body.frontpage .container main #investigations article #meta { width: 100%; max-width: 100%; float: left; }
 html body.frontpage .container main #investigations article figcaption { display: none; }
 html body.frontpage .container main #investigations article #body { display: none; }
 
 html body.frontpage .container main article #category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
+html body.frontpage .container main article #category a { color: #982022; text-decoration: none; }
+html body.frontpage .container main article #category a:hover { color: #231f20; }
 html body.frontpage .container main article #date { font-size: small; }
 html body.frontpage .container main article #excerpt { line-height: 1.5; }
 html body.frontpage .container main #intro #news article { text-align: right; }
