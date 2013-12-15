@@ -217,12 +217,18 @@
   font-size: 1.16667em; /* h3 */
 }
 
+@mixin text-article-excerpt {
+  line-height: 1.5;
+}
+
 @mixin text-news-title {
   @include text-headings;
   font-size: 1.5em; /* h1 */
   font-style: italic;
-  font-weight: normal;
+  font-weight: 800;
+  @include link($blue, $color);
 }
+
 
 
 /* Long text font settings
@@ -268,8 +274,9 @@ h3 { font-size:1.16667em; }
 h1, h2, h3, h4, h4, h6 {
   @include text-headings;
 }
+
 h1 {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 

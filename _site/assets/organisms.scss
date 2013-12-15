@@ -12,9 +12,8 @@
   margin-bottom: $flexible-grid-margin;
   
   #meta {
-    @include block;
     @include list-inline($pad/2);
-    padding-bottom: $pad/4;
+    padding: $pad;
   }
   
   h1 {
@@ -22,21 +21,18 @@
     padding: $pad/4 0;
   }
   
-  /* Make small images inline with their heading and description
+  /* Make images display in a non-standard way
   */
   overflow: hidden;
-  
   figure {
     float: left;
     margin-right: $pad;
     max-height: 30em;
     overflow: hidden;
   }
-  
-  h1, #excerpt {
-    background: $background;
+  h1, #excerpt, #meta {
+    @include block;
   }
-  
   
   
   @if ($title == null) {

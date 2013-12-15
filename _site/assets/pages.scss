@@ -10,14 +10,19 @@ html {
           #date {
             font-size: small;
           }
+          
+          #excerpt {
+            @include text-article-excerpt;
+          }
         }
         
         #intro {
           #news {
             article {
+              text-align: right;
+              
               h1 {
                 @include text-news-title;
-                @include link($highlight);
               }
             }
           }

@@ -1,14 +1,4 @@
 <article class="{{ klass }}">
-  <ul id="meta">
-    <li id="category">
-      <a href="{{ site.url }}/{{ post.categories.first }}" title="{{ post.categories.first | capitalize }}">{{ post.categories.first | capitalize }}</a>
-    </li>
-    
-    <li id="date">
-      {{ post.date | date: "%-d %B %Y" }}
-    </li>
-  </ul>
-  
   {% assign page = post %}
   {% assign image_index = 0 %}
   {% include responsive-images.html type='from post'  %}
@@ -20,4 +10,14 @@
   <div id="excerpt">
     {{ page.excerpt }}
   </div>
+  
+  <ul id="meta">
+    <li id="category">
+      <a href="{{ site.url }}/{{ post.categories.first }}" title="{{ post.categories.first | capitalize }}">{{ post.categories.first | capitalize }}</a>
+    </li>
+    
+    <li id="date">
+      {{ post.date | date: "%-d %B %Y" }}
+    </li>
+  </ul>
 </article>
