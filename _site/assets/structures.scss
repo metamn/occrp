@@ -21,12 +21,12 @@ html {
         margin: $pad 0;
         
         hgroup {
-          @include responsive-grid(4);
+          @include flexible-grid;
           @include logo;
         }
         
         nav {
-          @include responsive-grid(4);
+          @include flexible-grid;
           @include menu;
         }
       }

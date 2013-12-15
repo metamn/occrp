@@ -21,16 +21,11 @@
   width: auto;
   float: left;
   
-  @include below-normal-screen {
+  max-width: $max-width;
+  margin: $margin $margin 0 0;
+  
+  @include below-tablet {
     @include block;
-    max-width: 100%;
-    margin-right: 0;
-  }
-  
-  
-  @include normal-screen-and-above {
-    max-width: $max-width;
-    margin: $margin $margin 0 0;
   }
 }
 
@@ -100,7 +95,7 @@
     @include col(100%, 0);
   }
   
-  @include tablet-and-above {
+  @include small-screen {
     @include grid(2, $maximum);
   }
   

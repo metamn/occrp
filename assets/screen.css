@@ -166,59 +166,23 @@ html body .container { width: 90%; margin: 0 5%; }
 html body .container #header, html body .container main, html body .container section, html body .container nav, html body .container #footer { width: 100%; max-width: 100%; float: left; }
 html body .container #header > h3, html body .container main > h3, html body .container section > h3, html body .container nav > h3, html body .container #footer > h3 { display: none; }
 html body .container #header { margin: 1.25em 0; }
-@media only screen and (max-width: 47.999em) { html body .container #header hgroup { width: 100%; margin-right: 0; float: left; } }
-@media only screen and (min-width: 48em) { html body .container #header hgroup { width: 45%; margin-right: 10%; float: left; }
-  html body .container #header hgroup:nth-of-type(2) { margin-right: 0; }
-  html body .container #header hgroup:nth-of-type(3) { margin-right: 10%; }
-  html body .container #header hgroup:nth-of-type(4) { margin-right: 0; }
-  html body .container #header hgroup:nth-of-type(5) { margin-right: 10%; }
-  html body .container #header hgroup:nth-of-type(6) { margin-right: 0; }
-  html body .container #header hgroup:nth-of-type(7) { margin-right: 10%; }
-  html body .container #header hgroup:nth-of-type(8) { margin-right: 0; }
-  html body .container #header hgroup:nth-of-type(9) { margin-right: 10%; }
-  html body .container #header hgroup:nth-of-type(10) { margin-right: 0; } }
-@media only screen and (min-width: 80em) { html body .container #header hgroup { width: 22%; margin-right: 3%; float: left; }
-  html body .container #header hgroup:nth-of-type(2) { margin-right: 3%; }
-  html body .container #header hgroup:nth-of-type(3) { margin-right: 3%; }
-  html body .container #header hgroup:nth-of-type(4) { margin-right: 0; }
-  html body .container #header hgroup:nth-of-type(5) { margin-right: 3%; }
-  html body .container #header hgroup:nth-of-type(6) { margin-right: 3%; }
-  html body .container #header hgroup:nth-of-type(7) { margin-right: 3%; }
-  html body .container #header hgroup:nth-of-type(8) { margin-right: 0; }
-  html body .container #header hgroup:nth-of-type(9) { margin-right: 3%; }
-  html body .container #header hgroup:nth-of-type(10) { margin-right: 3%; } }
+html body .container #header hgroup { width: auto; float: left; max-width: 30%; margin: 3% 3% 0 0; }
+@media only screen and (max-width: 47.999em) { html body .container #header hgroup { width: 100%; max-width: 100%; float: left; } }
 html body .container #header hgroup h1 { display: none; }
 html body .container #header hgroup figure { margin-right: 1.25em; }
 html body .container #header hgroup figure figcaption { display: none; }
-@media only screen and (max-width: 47.999em) { html body .container #header nav { width: 100%; margin-right: 0; float: left; } }
-@media only screen and (min-width: 48em) { html body .container #header nav { width: 45%; margin-right: 10%; float: left; }
-  html body .container #header nav:nth-of-type(2) { margin-right: 0; }
-  html body .container #header nav:nth-of-type(3) { margin-right: 10%; }
-  html body .container #header nav:nth-of-type(4) { margin-right: 0; }
-  html body .container #header nav:nth-of-type(5) { margin-right: 10%; }
-  html body .container #header nav:nth-of-type(6) { margin-right: 0; }
-  html body .container #header nav:nth-of-type(7) { margin-right: 10%; }
-  html body .container #header nav:nth-of-type(8) { margin-right: 0; }
-  html body .container #header nav:nth-of-type(9) { margin-right: 10%; }
-  html body .container #header nav:nth-of-type(10) { margin-right: 0; } }
-@media only screen and (min-width: 80em) { html body .container #header nav { width: 22%; margin-right: 3%; float: left; }
-  html body .container #header nav:nth-of-type(2) { margin-right: 3%; }
-  html body .container #header nav:nth-of-type(3) { margin-right: 3%; }
-  html body .container #header nav:nth-of-type(4) { margin-right: 0; }
-  html body .container #header nav:nth-of-type(5) { margin-right: 3%; }
-  html body .container #header nav:nth-of-type(6) { margin-right: 3%; }
-  html body .container #header nav:nth-of-type(7) { margin-right: 3%; }
-  html body .container #header nav:nth-of-type(8) { margin-right: 0; }
-  html body .container #header nav:nth-of-type(9) { margin-right: 3%; }
-  html body .container #header nav:nth-of-type(10) { margin-right: 3%; } }
+@media only screen and (max-width: 47.999em) { html body .container #header hgroup { text-align: center; } }
+html body .container #header nav { width: auto; float: left; max-width: 30%; margin: 3% 3% 0 0; }
+@media only screen and (max-width: 47.999em) { html body .container #header nav { width: 100%; max-width: 100%; float: left; } }
 html body .container #header nav ul li { display: inline-block; float: left; margin-right: 1.25em; }
 html body .container #header nav ul li:last-of-type { margin-right: 0; }
-@media only screen and (max-width: 47.999em) { html body .container #header nav h3 { display: block; }
+@media only screen and (max-width: 47.999em) { html body .container #header nav { text-align: center; width: 33%; margin-right: 0%; float: left; }
+  html body .container #header nav h3 { display: block; }
   html body .container #header nav ul { display: none; } }
-html body.frontpage .container main #intro #slider { width: auto; float: left; }
-@media only screen and (max-width: 79.999em) { html body.frontpage .container main #intro #slider { width: 100%; max-width: 100%; float: left; max-width: 100%; margin-right: 0; } }
-@media only screen and (min-width: 80em) { html body.frontpage .container main #intro #slider { max-width: 47%; margin: 3% 3% 0 0; } }
-html body.frontpage .container main #intro #slider article { max-width: 34.375em; }
+@media only screen and (min-width: 48em) and (max-width: 79.999em) { html body .container #header nav#tags { width: 100%; max-width: 100%; float: left; } }
+html body.frontpage .container main #intro #slider { width: auto; float: left; max-width: 47%; margin: 3% 3% 0 0; margin-bottom: 3%; }
+@media only screen and (max-width: 47.999em) { html body.frontpage .container main #intro #slider { width: 100%; max-width: 100%; float: left; } }
+html body.frontpage .container main #intro #slider article { margin-bottom: 3%; max-width: 34.375em; }
 html body.frontpage .container main #intro #slider article #meta { width: 100%; max-width: 100%; float: left; }
 html body.frontpage .container main #intro #slider article #meta li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.frontpage .container main #intro #slider article #meta li:last-of-type { margin-right: 0; }
@@ -227,18 +191,16 @@ html body.frontpage .container main #intro #slider article figcaption { display:
 html body.frontpage .container main #intro #slider article #body { display: none; }
 html body.frontpage .container main #intro #slider article #meta #category { display: none; }
 html body.frontpage .container main #intro #slider article #meta #date { display: none; }
-html body.frontpage .container main #intro #slider nav { margin: 1.25em 0; }
 html body.frontpage .container main #intro #slider nav > h3 { display: none; }
 html body.frontpage .container main #intro #slider nav ol li { display: inline-block; float: left; margin-right: 1.25em; }
 html body.frontpage .container main #intro #slider nav ol li:last-of-type { margin-right: 0; }
 html body.frontpage .container main #intro #slider nav ol li { margin-right: 1.5625em; }
-html body.frontpage .container main #intro #news { width: auto; float: left; }
-@media only screen and (max-width: 79.999em) { html body.frontpage .container main #intro #news { width: 100%; max-width: 100%; float: left; max-width: 100%; margin-right: 0; } }
-@media only screen and (min-width: 80em) { html body.frontpage .container main #intro #news { max-width: 47%; margin: 3% 3% 0 0; } }
+html body.frontpage .container main #intro #news { width: auto; float: left; max-width: 47%; margin: 3% 3% 0 0; }
+@media only screen and (max-width: 47.999em) { html body.frontpage .container main #intro #news { width: 100%; max-width: 100%; float: left; } }
 html body.frontpage .container main #intro #news h3 { display: block; }
-html body.frontpage .container main #intro #news article { height: 7.5em; margin-bottom: 3%; }
+html body.frontpage .container main #intro #news article { margin-bottom: 3%; }
 @media only screen and (max-width: 47.999em) { html body.frontpage .container main #intro #news article { width: 100%; margin-right: 0; float: left; } }
-@media only screen and (min-width: 48em) { html body.frontpage .container main #intro #news article { width: 45%; margin-right: 10%; float: left; }
+@media only screen and (min-width: 48em) and (max-width: 79.999em) { html body.frontpage .container main #intro #news article { width: 45%; margin-right: 10%; float: left; }
   html body.frontpage .container main #intro #news article:nth-of-type(2) { margin-right: 0; }
   html body.frontpage .container main #intro #news article:nth-of-type(3) { margin-right: 10%; }
   html body.frontpage .container main #intro #news article:nth-of-type(4) { margin-right: 0; }
@@ -268,9 +230,8 @@ html body.frontpage .container main #intro #news article #excerpt { display: non
 html body.frontpage .container main #intro #news article #body { display: none; }
 html body.frontpage .container main #intro #news article #meta #category { display: none; }
 html body.frontpage .container main #investigations { width: 100%; max-width: 100%; float: left; }
-html body.frontpage .container main #investigations article { width: auto; float: left; }
-@media only screen and (max-width: 79.999em) { html body.frontpage .container main #investigations article { width: 100%; max-width: 100%; float: left; max-width: 100%; margin-right: 0; } }
-@media only screen and (min-width: 80em) { html body.frontpage .container main #investigations article { max-width: 30%; margin: 3% 3% 0 0; } }
+html body.frontpage .container main #investigations article { width: auto; float: left; max-width: 30%; margin: 3% 3% 0 0; margin-bottom: 3%; }
+@media only screen and (max-width: 47.999em) { html body.frontpage .container main #investigations article { width: 100%; max-width: 100%; float: left; } }
 html body.frontpage .container main #investigations article #meta { width: 100%; max-width: 100%; float: left; }
 html body.frontpage .container main #investigations article #meta li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.frontpage .container main #investigations article #meta li:last-of-type { margin-right: 0; }
