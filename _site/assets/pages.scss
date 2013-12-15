@@ -4,9 +4,14 @@ html {
       #header {
         nav {
           @include text-navigation;
+          border-bottom: $border;
           
           &#tags {
-            margin-top: $pad;
+            margin-top: $pad*2;
+            min-width: 60%;
+            border-bottom: none;
+            
+            @include link($red, $color);
           }
         }
       }

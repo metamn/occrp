@@ -256,8 +256,10 @@ html body.frontpage .container main #investigations article h1, html body.frontp
 html body.frontpage .container main #investigations article figcaption { display: none; }
 html body.frontpage .container main #investigations article #body { display: none; }
 
-html body.frontpage .container #header nav { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
-html body.frontpage .container #header nav#tags { margin-top: 1.25em; }
+html body.frontpage .container #header nav { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; border-bottom: 0.3125em solid; }
+html body.frontpage .container #header nav#tags { margin-top: 2.5em; min-width: 60%; border-bottom: none; }
+html body.frontpage .container #header nav#tags a { color: #e43033; text-decoration: none; }
+html body.frontpage .container #header nav#tags a:hover { color: #231f20; }
 html body.frontpage .container main article #category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
 html body.frontpage .container main article #category a { color: #982022; text-decoration: none; }
 html body.frontpage .container main article #category a:hover { color: #231f20; }
