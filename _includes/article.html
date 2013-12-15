@@ -11,13 +11,15 @@
     {{ page.excerpt }}
   </div>
   
-  <ul id="meta">
-    <li id="category">
-      <a href="{{ site.url }}/{{ post.categories.first }}" title="{{ post.categories.first | capitalize }}">{{ post.categories.first | capitalize }}</a>
-    </li>
-    
-    <li id="date">
-      {{ post.date | date: "%-d %B %Y" }}
-    </li>
-  </ul>
+  <nav id="meta">
+    <ul>
+      <li id="category">
+        <a href="{{ site.url }}/{{ post.categories.first }}" title="{{ post.categories.first | capitalize }}">{{ post.categories.first | capitalize }}</a>
+      </li>
+      
+      <li id="date">
+        {{ post.date | date: "%-d %B %Y" }}
+      </li>
+    </ul>
+  </nav>
 </article>

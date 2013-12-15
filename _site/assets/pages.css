@@ -1,22 +1,14 @@
 /*
 Syntax error: Undefined mixin 'text-navigation'.
-        on line 7 of /home/cs/work/occrp/assets/pages.scss, in `text-navigation'
-        from line 7 of /home/cs/work/occrp/assets/pages.scss
+        on line 6 of /home/cs/work/occrp/assets/pages.scss, in `text-navigation'
+        from line 6 of /home/cs/work/occrp/assets/pages.scss
+
+1: /home/cs/work/occrp/assets/pages.scss
 
 Backtrace:
-/home/cs/work/occrp/assets/pages.scss:7:in `text-navigation'
-/home/cs/work/occrp/assets/pages.scss:7
+/home/cs/work/occrp/assets/pages.scss:6:in `text-navigation'
+/home/cs/work/occrp/assets/pages.scss:6
 /var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
-/var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
 /var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
 /var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
 /var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
@@ -130,4 +122,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'text-navigation'.\A         on line 7 of /home/cs/work/occrp/assets/pages.scss, in `text-navigation'\A         from line 7 of /home/cs/work/occrp/assets/pages.scss"; }
+  content: "Syntax error: Undefined mixin 'text-navigation'.\A         on line 6 of /home/cs/work/occrp/assets/pages.scss, in `text-navigation'\A         from line 6 of /home/cs/work/occrp/assets/pages.scss\A \A 1: /home/cs/work/occrp/assets/pages.scss"; }

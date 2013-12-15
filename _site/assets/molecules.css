@@ -1,13 +1,13 @@
 /*
 Syntax error: Undefined mixin 'font-headings'.
-        on line 209 of /home/cs/work/occrp/assets/molecules.scss, in `font-headings'
-        from line 209 of /home/cs/work/occrp/assets/molecules.scss, in `text-headings'
-        from line 274 of /home/cs/work/occrp/assets/molecules.scss
+        on line 215 of /home/cs/work/occrp/assets/molecules.scss, in `font-headings'
+        from line 215 of /home/cs/work/occrp/assets/molecules.scss, in `text-headings'
+        from line 276 of /home/cs/work/occrp/assets/molecules.scss
 
 Backtrace:
-/home/cs/work/occrp/assets/molecules.scss:209:in `font-headings'
-/home/cs/work/occrp/assets/molecules.scss:209:in `text-headings'
-/home/cs/work/occrp/assets/molecules.scss:274
+/home/cs/work/occrp/assets/molecules.scss:215:in `font-headings'
+/home/cs/work/occrp/assets/molecules.scss:215:in `text-headings'
+/home/cs/work/occrp/assets/molecules.scss:276
 /var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
 /var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
 /var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
@@ -91,4 +91,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'font-headings'.\A         on line 209 of /home/cs/work/occrp/assets/molecules.scss, in `font-headings'\A         from line 209 of /home/cs/work/occrp/assets/molecules.scss, in `text-headings'\A         from line 274 of /home/cs/work/occrp/assets/molecules.scss"; }
+  content: "Syntax error: Undefined mixin 'font-headings'.\A         on line 215 of /home/cs/work/occrp/assets/molecules.scss, in `font-headings'\A         from line 215 of /home/cs/work/occrp/assets/molecules.scss, in `text-headings'\A         from line 276 of /home/cs/work/occrp/assets/molecules.scss"; }

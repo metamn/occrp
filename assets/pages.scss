@@ -1,6 +1,16 @@
 html {
   body.frontpage {
     .container {
+      #header {
+        nav {
+          @include text-navigation;
+          
+          &#tags {
+            margin-top: $pad;
+          }
+        }
+      }
+        
       main {
         article {
           #category {  
@@ -18,12 +28,28 @@ html {
         }
         
         #intro {
+          #slider {
+            article, nav ol li.active {
+              @include invert;
+            }
+          } 
+          
           #news {
             article {
               text-align: right;
               
               h1 {
                 @include text-news-title;
+              }
+              
+              #meta {
+                margin: 0;
+                
+                ul {
+                  li {
+                    float: right;
+                  }
+                }
               }
             }
           }

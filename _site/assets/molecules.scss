@@ -174,10 +174,16 @@
     display: inline-block;
     float: left;
     margin-right: $margin-right;
+    border-bottom: $border;
+    border-color: $background;
     
     &:last-of-type {
       margin-right: 0;
     }  
+    
+    &.active, &:hover {
+      border-bottom: $border;
+    }
   }
 }
 
@@ -255,16 +261,12 @@
 
 
 
-
-
 /* From http://lamb.cc/typograph/ using traditional / em scaling
 */
 h1, h2, h3 { margin-top:0; margin-bottom:0; }
 h1 { font-size:1.5em; }
 h2 { font-size:1.33333em; }
 h3 { font-size:1.16667em; }
-
-
 
 
 
@@ -277,8 +279,6 @@ h1, h2, h3, h4, h4, h6 {
 h1 {
   font-weight: 700;
 }
-
-
 
 
 @mixin uppercase {
