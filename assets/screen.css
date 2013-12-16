@@ -67,6 +67,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* Font, black */
 /* Link, OCCRP red */
 /* From Kuler, based on $highlight */
+/* From Kuler, based on $highlight */
+/* From Kuler, based on $highlight */
 /* Decorations
 --------------------------------------------------------------------------------
 */
@@ -169,13 +171,13 @@ html body img { width: auto; height: auto; max-width: 100%; }
 html body .container { width: 90%; margin: 0 5%; }
 html body .container #header, html body .container main, html body .container section, html body .container nav, html body .container #footer { width: 100%; max-width: 100%; float: left; }
 html body .container #header > h3, html body .container main > h3, html body .container section > h3, html body .container nav > h3, html body .container #footer > h3 { display: none; }
-html body .container #header hgroup { width: auto; float: left; max-width: 30%; margin: 3% 3% 0 0; }
+html body .container #header hgroup { width: auto; float: left; max-width: 30%; margin: 1.5% 3% 0 0; padding-top: 1.25em; border-top: 0.3125em solid; }
 @media only screen and (max-width: 47.999em) { html body .container #header hgroup { width: 100%; max-width: 100%; float: left; } }
 html body .container #header hgroup h1 { display: none; }
 html body .container #header hgroup figure { margin-right: 1.25em; }
 html body .container #header hgroup figure figcaption { display: none; }
 @media only screen and (max-width: 47.999em) { html body .container #header hgroup { text-align: center; } }
-html body .container #header nav { width: auto; float: left; max-width: 30%; margin: 3% 3% 0 0; margin-bottom: 0; }
+html body .container #header nav { width: auto; float: left; max-width: 30%; margin: 1.5% 3% 0 0; padding-top: 1.25em; border-top: 0.3125em solid; margin-bottom: 0; }
 @media only screen and (max-width: 47.999em) { html body .container #header nav { width: 100%; max-width: 100%; float: left; } }
 html body .container #header nav ul li { display: inline-block; float: left; margin-right: 1.25em; border-bottom: 0.3125em solid; border-color: white; }
 html body .container #header nav ul li:last-of-type { margin-right: 0; }
@@ -184,7 +186,8 @@ html body .container #header nav ul li.active, html body .container #header nav 
   html body .container #header nav h3 { display: block; }
   html body .container #header nav ul { display: none; } }
 @media only screen and (min-width: 48em) and (max-width: 79.999em) { html body .container #header nav#tags { width: 100%; max-width: 100%; float: left; } }
-html body.frontpage .container main #intro #slider { width: auto; float: left; max-width: 47%; margin: 3% 3% 0 0; margin-bottom: 3%; }
+@media only screen and (min-width: 80em) and (max-width: 89.999em) { html body .container #header nav#tags { min-width: 45%; } }
+html body.frontpage .container main #intro #slider { width: auto; float: left; max-width: 47%; margin: 1.5% 3% 0 0; padding-top: 1.25em; border-top: 0.3125em solid; margin-bottom: 3%; }
 @media only screen and (max-width: 47.999em) { html body.frontpage .container main #intro #slider { width: 100%; max-width: 100%; float: left; } }
 html body.frontpage .container main #intro #slider article { margin-bottom: 3%; /* Make images display in a non-standard way
 */ overflow: hidden; max-width: 34.375em; }
@@ -205,7 +208,7 @@ html body.frontpage .container main #intro #slider nav ol li { display: inline-b
 html body.frontpage .container main #intro #slider nav ol li:last-of-type { margin-right: 0; }
 html body.frontpage .container main #intro #slider nav ol li.active, html body.frontpage .container main #intro #slider nav ol li:hover { border-bottom: 0.3125em solid; }
 html body.frontpage .container main #intro #slider nav ol li { padding: 0 0.3125em; cursor: pointer; }
-html body.frontpage .container main #intro #news { width: auto; float: left; max-width: 47%; margin: 3% 3% 0 0; }
+html body.frontpage .container main #intro #news { width: auto; float: left; max-width: 47%; margin: 1.5% 3% 0 0; padding-top: 1.25em; border-top: 0.3125em solid; }
 @media only screen and (max-width: 47.999em) { html body.frontpage .container main #intro #news { width: 100%; max-width: 100%; float: left; } }
 html body.frontpage .container main #intro #news article { margin-bottom: 3%; /* Make images display in a non-standard way
 */ overflow: hidden; }
@@ -243,7 +246,7 @@ html body.frontpage .container main #intro #news article #excerpt { display: non
 html body.frontpage .container main #intro #news article #body { display: none; }
 html body.frontpage .container main #intro #news article #meta #category { display: none; }
 html body.frontpage .container main #investigations { width: 100%; max-width: 100%; float: left; }
-html body.frontpage .container main #investigations article { width: auto; float: left; max-width: 30%; margin: 3% 3% 0 0; margin-bottom: 3%; /* Make images display in a non-standard way
+html body.frontpage .container main #investigations article { width: auto; float: left; max-width: 30%; margin: 1.5% 3% 0 0; padding-top: 1.25em; border-top: 0.3125em solid; margin-bottom: 3%; /* Make images display in a non-standard way
 */ overflow: hidden; }
 @media only screen and (max-width: 47.999em) { html body.frontpage .container main #investigations article { width: 100%; max-width: 100%; float: left; } }
 html body.frontpage .container main #investigations article #meta { margin-top: 1.25em; }
@@ -256,12 +259,22 @@ html body.frontpage .container main #investigations article h1, html body.frontp
 html body.frontpage .container main #investigations article figcaption { display: none; }
 html body.frontpage .container main #investigations article #body { display: none; }
 
+html body.frontpage .container #header #logo, html body.frontpage .container #header nav { border-top: 0; }
 html body.frontpage .container #header nav { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
+html body.frontpage .container #header nav#tags { padding-top: 0; }
+html body.frontpage .container #header nav#tags a { color: #e43033; text-decoration: none; }
+html body.frontpage .container #header nav#tags a:hover { color: #231f20; }
 html body.frontpage .container main article #category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
 html body.frontpage .container main article #category a { color: #982022; text-decoration: none; }
 html body.frontpage .container main article #category a:hover { color: #231f20; }
 html body.frontpage .container main article #date { font-size: small; }
 html body.frontpage .container main article #excerpt { line-height: 1.5; }
+html body.frontpage .container main #intro #slider { background: #f1f1f1; border-top: 0; padding-top: 0; }
+html body.frontpage .container main #intro #slider article, html body.frontpage .container main #intro #slider nav { padding: 1.25em; width: calc(100% - 2.5em); }
+html body.frontpage .container main #intro #slider article figure, html body.frontpage .container main #intro #slider nav figure { float: none; margin-right: 0; }
+html body.frontpage .container main #intro #slider nav ol li { border-color: #f1f1f1; }
 html body.frontpage .container main #intro #slider nav ol li.active { color: white; background: #231f20; padding: 0.625em; }
 html body.frontpage .container main #intro #slider nav ol li.active a { color: white; text-decoration: none; }
 html body.frontpage .container main #intro #slider nav ol li.active a:hover { color: white; }
+html body.frontpage .container main #intro #slider nav ol li.active ol li, html body.frontpage .container main #intro #slider nav ol li.active ul li { border-color: #231f20; }
+html body.frontpage .container main #intro #news article #meta { border-top: 1px solid #f1f1f1; }

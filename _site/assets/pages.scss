@@ -2,11 +2,21 @@ html {
   body.frontpage {
     .container {
       #header {
+        #logo, nav {
+          border-top: 0;
+        }
+        
         nav {
           @include text-navigation;
+          
+          &#tags {
+            @include link($red, $color);
+            padding-top: 0;
+          }
         }
-      }
         
+      }
+       
       main {
         article {
           #category {  
@@ -25,12 +35,38 @@ html {
         
         #intro {
           #slider {
-            nav ol li.active {
-              @include invert;
+            background: $light-grey;
+            border-top: 0;
+            padding-top: 0;
+            
+            article, nav {
+              @include padding;
+              
+              figure {
+                float: none;
+                margin-right: 0;
+              }
+            }
+            
+            nav ol li {
+              border-color: $light-grey;
+              
+              &.active {
+                @include invert;
+              }
+            }
+          }
+          
+          #news {
+            article {
+              #meta {
+                border-top: $border-thin;
+              }
             }
           }
         }
       }
+      
     }
   }
 }

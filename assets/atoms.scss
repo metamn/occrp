@@ -43,6 +43,12 @@ $breakpoint-large-screen: 90em !default; /* 1440px */
 	}
 }
 
+@mixin normal-screen {
+	@media only screen and (min-width: $breakpoint-normal-screen) and (max-width: $breakpoint-large-screen - 0.001) {
+		@content;
+	}
+}
+
 @mixin normal-screen-and-above {
 	@media only screen and (min-width: $breakpoint-normal-screen) {
 		@content;
@@ -162,8 +168,8 @@ $color: #231F20; /* Font, black */
 
 $highlight: #982022; /* Link, OCCRP red */
 $red: #E43033; /* From Kuler, based on $highlight */
-$blue: #259CE4;
-
+$blue: #259CE4; /* From Kuler, based on $highlight */
+$yellow: #A5A333; /* From Kuler, based on $highlight */
 
 
 
@@ -173,4 +179,5 @@ $blue: #259CE4;
 */
 
 $border: $pad/4 solid;
+$border-thin: 1px solid $light-grey;
 
