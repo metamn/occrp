@@ -328,7 +328,11 @@ h1 {
   
   ol, ul {
     li {
-      border-color: $b;
+      border-color: $b !important;
+      
+      &.active {
+        border-color: $c !important;
+      }
     }
   }
 }

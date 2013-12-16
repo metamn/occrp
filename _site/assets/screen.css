@@ -269,12 +269,16 @@ html body.frontpage .container main article #category a { color: #982022; text-d
 html body.frontpage .container main article #category a:hover { color: #231f20; }
 html body.frontpage .container main article #date { font-size: small; }
 html body.frontpage .container main article #excerpt { line-height: 1.5; }
-html body.frontpage .container main #intro #slider { background: #f1f1f1; border-top: 0; padding-top: 0; }
+html body.frontpage .container main #intro #slider { color: #231f20; background: #f1f1f1; padding: 0.625em; border-top: 0; padding-top: 0; }
+html body.frontpage .container main #intro #slider a { color: #231f20; text-decoration: none; }
+html body.frontpage .container main #intro #slider a:hover { color: #231f20; }
+html body.frontpage .container main #intro #slider ol li, html body.frontpage .container main #intro #slider ul li { border-color: #f1f1f1 !important; }
+html body.frontpage .container main #intro #slider ol li.active, html body.frontpage .container main #intro #slider ul li.active { border-color: #231f20 !important; }
 html body.frontpage .container main #intro #slider article, html body.frontpage .container main #intro #slider nav { padding: 1.25em; width: calc(100% - 2.5em); }
 html body.frontpage .container main #intro #slider article figure, html body.frontpage .container main #intro #slider nav figure { float: none; margin-right: 0; }
-html body.frontpage .container main #intro #slider nav ol li { border-color: #f1f1f1; }
 html body.frontpage .container main #intro #slider nav ol li.active { color: white; background: #231f20; padding: 0.625em; }
 html body.frontpage .container main #intro #slider nav ol li.active a { color: white; text-decoration: none; }
 html body.frontpage .container main #intro #slider nav ol li.active a:hover { color: white; }
-html body.frontpage .container main #intro #slider nav ol li.active ol li, html body.frontpage .container main #intro #slider nav ol li.active ul li { border-color: #231f20; }
+html body.frontpage .container main #intro #slider nav ol li.active ol li, html body.frontpage .container main #intro #slider nav ol li.active ul li { border-color: #231f20 !important; }
+html body.frontpage .container main #intro #slider nav ol li.active ol li.active, html body.frontpage .container main #intro #slider nav ol li.active ul li.active { border-color: white !important; }
 html body.frontpage .container main #intro #news article #meta { border-top: 1px solid #f1f1f1; }
