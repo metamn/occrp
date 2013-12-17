@@ -187,7 +187,7 @@ html body .container #header nav ul li.active, html body .container #header nav 
   html body .container #header nav ul { display: none; } }
 @media only screen and (min-width: 48em) and (max-width: 79.999em) { html body .container #header nav#tags { width: 100%; max-width: 100%; float: left; } }
 @media only screen and (min-width: 80em) and (max-width: 89.999em) { html body .container #header nav#tags { min-width: 45%; } }
-html body.frontpage .container main #intro #slider { width: auto; float: left; max-width: 47%; margin: 1.5% 3% 0 0; padding-top: 1.25em; border-top: 0.3125em solid; margin-bottom: 3%; }
+html body.frontpage .container main #intro #slider { width: auto; float: left; max-width: 45%; margin: 1.5% 3% 0 0; padding-top: 1.25em; border-top: 0.3125em solid; margin-bottom: 3%; }
 @media only screen and (max-width: 47.999em) { html body.frontpage .container main #intro #slider { width: 100%; max-width: 100%; float: left; } }
 html body.frontpage .container main #intro #slider article { margin-bottom: 3%; /* Make images display in a non-standard way
 */ overflow: hidden; max-width: 34.375em; }
@@ -274,8 +274,9 @@ html body.frontpage .container main #intro #slider a { color: #231f20; text-deco
 html body.frontpage .container main #intro #slider a:hover { color: #231f20; }
 html body.frontpage .container main #intro #slider ol li, html body.frontpage .container main #intro #slider ul li { border-color: #f1f1f1 !important; }
 html body.frontpage .container main #intro #slider ol li.active, html body.frontpage .container main #intro #slider ul li.active { border-color: #231f20 !important; }
-html body.frontpage .container main #intro #slider article, html body.frontpage .container main #intro #slider nav { padding: 1.25em; width: calc(100% - 2.5em); }
-html body.frontpage .container main #intro #slider article figure, html body.frontpage .container main #intro #slider nav figure { float: none; margin-right: 0; }
+html body.frontpage .container main #intro #slider article { padding: 1.25em; width: calc(100% - 2.5em); padding-bottom: 0; }
+html body.frontpage .container main #intro #slider article figure { float: none; margin-right: 0; }
+html body.frontpage .container main #intro #slider nav { padding: 1.25em; width: calc(100% - 2.5em); padding-top: 0; }
 html body.frontpage .container main #intro #slider nav ol li.active { color: white; background: #231f20; padding: 0.625em; }
 html body.frontpage .container main #intro #slider nav ol li.active a { color: white; text-decoration: none; }
 html body.frontpage .container main #intro #slider nav ol li.active a:hover { color: white; }

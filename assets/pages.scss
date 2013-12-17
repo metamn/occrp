@@ -39,8 +39,9 @@ html {
             border-top: 0;
             padding-top: 0;
             
-            article, nav {
+            article {
               @include padding;
+              padding-bottom: 0;
               
               figure {
                 float: none;
@@ -48,9 +49,14 @@ html {
               }
             }
             
-            nav ol li {
-              &.active {
-                @include invert;
+            nav {
+              @include padding;
+              padding-top: 0;
+              
+              ol li {
+                &.active {
+                  @include invert;
+                }
               }
             }
           }

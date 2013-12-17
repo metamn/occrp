@@ -37,7 +37,7 @@ html {
         main {
           #intro {
             #slider {
-              @include flexible-grid(47%);
+              @include flexible-grid(45%);
               @include slider;
             }
             
