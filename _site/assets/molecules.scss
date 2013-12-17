@@ -17,12 +17,18 @@
   - all items are aligned left with an uniform margin
   - this grid can be dynamically positioned by Isotope
 */
-@mixin flexible-grid ($max-width: 30%, $margin: 3%) {
+@mixin flexible-grid($max-width: $flexible-grid-width, $margin: $flexible-grid-margin) {
   width: auto;
   float: left;
   
   max-width: $max-width;
-  margin: $margin $margin 0 0;
+  margin: $margin/2 $margin 0 0;
+  padding-top: $pad;
+  border-top: $border;
+  
+  @include below-tablet {
+    @include block;
+  }
 }
 
 
@@ -57,13 +63,7 @@
 }
 
 
-/* The basic building block of the grid
-  - it's title specified for HTML5 outliner compatibility is hidden
-*/
-@mixin section {
-  @include flexible-grid;
-  @include hide-title;
-}
+
 
 /* Hide a section title
 */
@@ -90,6 +90,76 @@
 
 
 
+/* A responsive grid
+*/
+@mixin responsive-grid($how-many, $maximum : 10) {
+  @include below-tablet {
+    @include col(100%, 0);
+  }
+  
+  @include small-screen {
+    @include grid(2, $maximum);
+  }
+  
+  @include normal-screen-and-above {
+    @include grid($how-many, $maximum);
+  }
+}
+
+
+/* Generates a full grid of $how-many columns and $maximum elements
+  - calculates automatically the columns size and margin
+  - the right margin of the last element in a row is set to zero
+  - $maximum sets how many articles will be displayed on a single page 
+*/
+@mixin grid($how-many, $maximum) {
+  $gutter: col-gutter($how-many);
+  $width: col-width($how-many);
+  
+  @include col($width, $gutter);
+  @include col-right-margin($how-many, $gutter, $maximum);
+}
+
+
+/* Returns the width of a column in a grid
+*/
+@function col-width($how-many) {
+  @return floor(90% / $how-many);
+}
+
+/* Returns the margin of a column in a grid
+*/
+@function col-gutter($how-many) {
+  @return round(10% / ($how-many - 1));
+}
+
+
+/* A left aligned column
+*/
+@mixin col($width, $margin: 0) {
+  width: $width;
+  margin-right: $margin;
+  float: left;
+}
+
+/* Remove right margin of the last element in a row of a grid
+  - on responsive layouts we setup upd different grids
+  - on every grid re-declaration the previous margins of last elements must be removed
+*/
+@mixin col-right-margin($how-many, $gutter, $maximum) {
+  @for $i from 2 through $maximum {
+    @if (($how-many != 0) and (($i % $how-many) == 0)) {
+      &:nth-of-type(#{$i}) {
+         margin-right: 0;
+      }
+    } @else {
+      &:nth-of-type(#{$i}) {
+         margin-right: $gutter;
+      }
+    }
+  }
+}
+
 
 
 
@@ -101,15 +171,21 @@
 
 /* Displays an <ul> list inline
 */
-@mixin list-inline {
+@mixin list-inline($margin-right: $pad) {
   li {
     display: inline-block;
     float: left;
-    margin-right: $pad;
+    margin-right: $margin-right;
+    border-bottom: $border;
+    border-color: $background;
     
     &:last-of-type {
       margin-right: 0;
     }  
+    
+    &.active, &:hover {
+      border-bottom: $border;
+    }
   }
 }
 
@@ -131,12 +207,35 @@
 --------------------------------------------------------------------------------
 */
 
-/* From http://lamb.cc/typograph/ using traditional / em scaling
+
+/* Text styles
 */
-h1, h2, h3 { margin-top:0; margin-bottom:0; }
-h1 { font-size:1.16667em; }
-h2 { font-size:1.33333em; }
-h3 { font-size:1.16667em; }
+
+/* General settings for headings
+*/
+@mixin text-headings {
+  @include font-headings;
+  line-height: $line-height-headings;
+}
+
+/* Article title in thumbs
+*/
+@mixin text-article-title {
+  @include text-headings;
+}
+
+@mixin text-article-excerpt {
+  line-height: 1.5;
+}
+
+@mixin text-news-title {
+  @include text-headings;
+  font-size: 1.5em; /* h1 */
+  font-style: italic;
+  font-weight: 800;
+  @include link($blue, $color);
+}
+
 
 
 /* Long text font settings
@@ -150,17 +249,66 @@ h3 { font-size:1.16667em; }
   h3 { padding:1.51785em 0; }
 }
 
-/* Headings, navigation font settings
+/* Mostly for links to other sections
 */
-@mixin text-headings {
-  @include font-headings;
-  line-height: $line-height-headings;
+@mixin text-navigation {
+  @include uppercase;
+  font-size: small;
 }
+
+
+@mixin text-heading-large {
+  @include text-headings;
+}
+
+
+
+/* From http://lamb.cc/typograph/ using traditional / em scaling
+*/
+h1, h2, h3 { margin-top:0; margin-bottom:0; }
+h1 { font-size:1.5em; }
+h2 { font-size:1.33333em; }
+h3 { font-size:1.16667em; }
+
+
 
 /* Headings
 */
 h1, h2, h3, h4, h4, h6 {
   @include text-headings;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+
+@mixin uppercase {
+  text-transform: uppercase;
+  letter-spacing: $letter-spacing-uppercase;
+}
+
+
+
+/* Images
+--------------------------------------------------------------------------------
+*/
+
+@mixin fluid-image{
+  img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+
+@mixin big-background-image($height: 100%) {
+  background-attachment: fixed;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: $height;
 }
 
 
@@ -171,38 +319,35 @@ h1, h2, h3, h4, h4, h6 {
 */
 
 
-@mixin invert {
-  color: $background;
-  background: $color;
+@mixin invert($c: $background, $b: $color, $p: $pad/2) {
+  color: $c;
+  background: $b;
+  padding: $pad/2;
   
-  a {
-    color: $background;
+  @include link($c, $c);
+  
+  ol, ul {
+    li {
+      border-color: $b !important;
+      
+      &.active {
+        border-color: $c !important;
+      }
+    }
   }
 }
 
-@mixin bordered {
-  border-bottom: $border;
-  padding: $pad/2;
-  position: relative;
-  background: $background;
-  
-  &:after {
-    border-bottom: $border;
-    content: "";
-    height: calc(100% - #{$pad/2} - 0px);
-    left: $pad/4;
-    padding: $pad/4;
-    position: absolute;
-    top: $pad/4;
-    width: calc(100% - #{$pad/2} - 0px);
-    z-index: -1;
-  }
-}
+
+
+/* Links
+*/
 
 @import "compass/typography/links/link-colors";
-@mixin link {
-  @include link-colors($color, $highlight);
-  text-decoration: none;
+@mixin link($c: $color, $h: $highlight) {
+  a {
+    @include link-colors($c, $h);
+    text-decoration: none;
+  }
 }
 
 

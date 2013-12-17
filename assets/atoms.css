@@ -1,5 +1,14 @@
 /* Atoms of the Atomic web design - basic constants, definitions and declarations - they cannot be divided further - they are reused across molecules, organisms and up
 */
+/* Responsiveness
+--------------------------------------------------------------------------------
+*/
+/* 384px, Android Nexus 4 */
+/* 640px, iPhone 5 */
+/* 768px */
+/* 1024px */
+/* 1280px */
+/* 1440px */
 /* Grid
 --------------------------------------------------------------------------------
 */
@@ -10,7 +19,11 @@
 /* 700px / 16px */
 /* The width of the content
 */
-/* The folden ratio
+/* The golden ratio
+*/
+/* Flexible grid
+*/
+/* Slider image width
 */
 /* Strech content to fill parent width
 */
@@ -33,8 +46,12 @@
 --------------------------------------------------------------------------------
 */
 /* Background */
+/* From Kuler, based on $background */
 /* Font, black */
 /* Link, OCCRP red */
+/* From Kuler, based on $highlight */
+/* From Kuler, based on $highlight */
+/* From Kuler, based on $highlight */
 /* Decorations
 --------------------------------------------------------------------------------
 */

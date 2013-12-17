@@ -12,15 +12,21 @@ html {
     .container {
       @include container;
       
-      /* The main grid elements, the containers
-        - these will be automatically arranged by the Isotope plugin
-      */
-      .section {
-        @include section;
+      #header, main, section, nav, #footer {
+        @include block;
+        @include hide-title;
       }
       
-      #identity {
-        @include logo;
+      #header {
+        hgroup {
+          @include flexible-grid;
+          @include logo;
+        }
+        
+        nav {
+          @include flexible-grid;
+          @include menu;
+        }
       }
     }
     
@@ -28,26 +34,26 @@ html {
     */
     &.frontpage {
       .container {  
-        #slider {
-          @include slider;
-        }
-        
-        #news {
-          @include news;
+        main {
+          #intro {
+            #slider {
+              @include flexible-grid(45%);
+              @include slider;
+            }
+            
+            #news {
+              @include flexible-grid(47%);
+              @include news;
+            }
+          }
+          
+          #investigations {
+            @include block;
+            @include investigations;
+          }
         }
       }
     }
     
-    /* Investigations page
-    */
-    &.investigations {
-      section {
-        @include block;
-        
-        article {
-          @include section;
-        }
-      }
-    } 
   }
 }

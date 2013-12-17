@@ -7,11 +7,61 @@
 
 
 
-/* Grid
+/* Responsiveness
 --------------------------------------------------------------------------------
 */
 
 
+$breakpoint-mobile: 24em !default; /* 384px, Android Nexus 4 */
+$breakpoint-mobile-landscape: 40em !default; /* 640px, iPhone 5 */
+$breakpoint-tablet: 48em !default; /* 768px */
+$breakpoint-small-screen: 64em !default; /* 1024px */
+$breakpoint-normal-screen: 80em !default; /* 1280px */
+$breakpoint-large-screen: 90em !default; /* 1440px */
+
+@mixin portrait {
+	@media only screen and (orientation : portrait) {
+		@content;
+	}
+}
+
+@mixin landscape {
+	@media only screen and (orientation : landscape) {
+		@content;
+	}
+}
+
+@mixin below-tablet {
+	@media only screen and (max-width: $breakpoint-tablet - 0.001) {
+		@content;
+	}
+}
+
+@mixin small-screen {
+	@media only screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-normal-screen - 0.001) {
+		@content;
+	}
+}
+
+@mixin normal-screen {
+	@media only screen and (min-width: $breakpoint-normal-screen) and (max-width: $breakpoint-large-screen - 0.001) {
+		@content;
+	}
+}
+
+@mixin normal-screen-and-above {
+	@media only screen and (min-width: $breakpoint-normal-screen) {
+		@content;
+	}
+}
+
+
+
+
+
+/* Grid
+--------------------------------------------------------------------------------
+*/
 
 /* Default unit for horizontal and vertical spacing
   - combined from $font-size and $line-height
@@ -32,10 +82,23 @@ $container-width: 90%;
 $container-margin: 5%;
 
 
-/* The folden ratio
+/* The golden ratio
 */
 $major: 61.8%;
 $minor: 38.2%;
+
+
+/* Flexible grid
+*/
+$flexible-grid-width: 30%;
+$flexible-grid-margin: 3%;
+
+
+/* Slider image width
+*/
+$slider-image-width: 34.375em;
+
+
 
 /* Strech content to fill parent width
 */
@@ -74,18 +137,22 @@ $line-height-headings: 1.1;
 
 /* Letter spacing for uppercase
 */
-$letter-spacing-uppercase: 1.1;
+$letter-spacing-uppercase: 1.1px;
 
 
 /* Font families
 */
 @mixin font-body {
-  font-family: 'Old Standard TT', sans-serif;
+  font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-family: 'Merriweather Sans', sans serif;
 }
 
 @mixin font-headings {
-  font-family: 'Averia Serif Libre', serif;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: 'Merriweather', serif;
 }
+
+
 
 
 
@@ -95,11 +162,14 @@ $letter-spacing-uppercase: 1.1;
 */
 
 $background: #FFFFFF; /* Background */
-$color: #333; /* Font, black */
-$grey: #f1f1f1;
+$light-grey: #f1f1f1; /* From Kuler, based on $background */
+
+$color: #231F20; /* Font, black */
 
 $highlight: #982022; /* Link, OCCRP red */
-$yellow: #A5A333;
+$red: #E43033; /* From Kuler, based on $highlight */
+$blue: #259CE4; /* From Kuler, based on $highlight */
+$yellow: #A5A333; /* From Kuler, based on $highlight */
 
 
 
@@ -108,5 +178,6 @@ $yellow: #A5A333;
 --------------------------------------------------------------------------------
 */
 
-$border: 1px solid;
+$border: $pad/4 solid;
+$border-thin: 1px solid $light-grey;
 

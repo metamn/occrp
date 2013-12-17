@@ -8,10 +8,39 @@
 /* An article
   - displays mostly article thumbs
 */
-@mixin article($title, $figure: null, $figcaption: null, $excerpt: null, $body: null) {
+@mixin article($category, $date, $title, $figure: null, $figcaption: null, $excerpt: null, $body: null) {
+  margin-bottom: $flexible-grid-margin;
+  
+  #meta {
+    margin-top: $pad;
+    
+    ul {
+      @include list-inline($pad/2);
+    }
+  }
+  
+  h1 {
+    @include text-article-title;
+    padding: $pad/4 0;
+  }
+  
+  /* Make images display in a non-standard way
+  */
+  overflow: hidden;
+  figure {
+    float: left;
+    margin-right: $pad;
+    max-height: 30em;
+    overflow: hidden;
+  }
+  h1, #excerpt, #meta {
+    @include block;
+  }
+  
+  
   @if ($title == null) {
     h1 {
-      display: none;
+      display: none ;
     }
   }
   
@@ -38,21 +67,33 @@
       display: none;
     }
   }
+  
+  @if ($category == null) {
+    #meta #category {
+      display: none;
+    }
+  }
+  
+  @if ($date == null) {
+    #meta #date {
+      display: none;
+    }
+  }
+  
+  @if ($category == null) and ($date == null) {
+    #meta {
+      display: none;
+    }
+  }
 }
 
 
-
-
-/* The slider on the frontpage
+/* Investigations
 */
-@mixin slider {
-  nav {
-    @include block;
-    @include hide-title;
-    
-    ul {
-      @include list-inline;
-    }
+@mixin investigations {
+  article {
+    @include flexible-grid;
+    @include article(category, date, title, figure, null, excerpt, null);
   }
 }
 
@@ -61,14 +102,74 @@
 /* The news
 */
 @mixin news {
-  h3 {
-    display: block;
-  }
-  
   article {
-    @include article(title);
+    @include responsive-grid(2);
+    @include article(null, date, title);
   }
 }
+
+
+/* The slider on the frontpage
+*/
+@mixin slider {
+  margin-bottom: $flexible-grid-margin;
+  
+  article {
+    @include article(null, null, title, figure, null, excerpt);
+    max-width: $slider-image-width;
+  }
+  
+  nav {
+    @include hide-title;
+    
+    ol {
+      @include list-inline;
+      
+      li {
+        padding: 0 $pad/4;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+
+/* The menu
+*/
+@mixin menu {
+  margin-bottom: 0;
+  
+  ul {
+    @include list-inline;
+  }
+  
+    
+  @include below-tablet {
+    text-align: center;
+    @include col(33%, 0%);
+    
+    h3 {
+      display: block;
+    }
+    
+    ul {
+      display: none;
+    }
+  }
+   
+  @include small-screen {
+    &#tags {
+      @include block;
+    }
+  } 
+  
+  @include normal-screen {
+    &#tags {
+      min-width: 45%;
+    }
+  } 
+}
+
 
 
 /* The logo
@@ -85,6 +186,10 @@
       display: none;
     }
   }
+  
+  @include below-tablet {
+    text-align: center;
+  }
 }
 
 
@@ -95,21 +200,13 @@
   background: $background;
   color: $color;
   
-  a {
-    @include link;
-  }
+  @include link;
   
-  img {
-    width: auto;
-    height: auto;
-    max-width: 100%;
-  }
+  @include fluid-image;
   
   @include font-body;
   font-size: $font-size;
   line-height: $line-height;
-  
-  
 }
 
 
