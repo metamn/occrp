@@ -1,5 +1,28 @@
 <header id="header">
-  
+
+  <nav id="secondary">
+    <h3>About us</h3>
+    <ul>
+      <li>
+        <a href="{{ site.url }}/about" title="About Us">
+          About Us
+        </a>
+      </li>
+      
+      <li>
+        <a href="{{ site.url }}/get-involved" title="Get involved">
+          Get involved
+        </a>
+      </li>
+      
+      <li>
+        <a href="{{ site.url }}/contact" title="Contact">
+          Contact
+        </a>
+      </li>
+    </ul>
+  </nav>
+ 
   <hgroup id="logo">
     <h1>
       <a href="{{ site.url }}/" title="{{ site.title }}">
@@ -8,6 +31,7 @@
     </h1>
     {% include responsive-images.html  link=site.url title=site.title normal="/assets/logo.png" mobile="/assets/logo.png" %}
   </hgroup>
+
   
   <nav id="main">
     <h3>Sections</h3>
@@ -37,32 +61,6 @@
       </li>
     </ul>
   </nav>
-  
-  <nav id="secondary">
-    <h3>About us</h3>
-    <ul>
-      <li>
-        <a href="{{ site.url }}/about" title="About Us">
-          About Us
-        </a>
-      </li>
-      
-      <li>
-        <a href="{{ site.url }}/get-involved" title="Get involved">
-          Get involved
-        </a>
-      </li>
-      
-      <li>
-        <a href="{{ site.url }}/contact" title="Contact">
-          Contact
-        </a>
-      </li>
-    </ul>
-  </nav>
-  
-
-  
   
   
   <nav id="tags">
