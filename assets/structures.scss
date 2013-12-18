@@ -18,13 +18,15 @@ html {
       }
       
       #header {
+        margin-top: 1%;
+        
         hgroup {
-          @include flexible-grid;
+          @include col(33%);
           @include logo;
         }
         
         nav {
-          @include flexible-grid;
+          @include col(33%);
           @include menu;
         }
       }

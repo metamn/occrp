@@ -137,37 +137,31 @@
 /* The menu
 */
 @mixin menu {
-  margin-bottom: 0;
+  margin-top: $pad*2;
   
   ul {
     @include list-inline;
   }
   
-    
-  @include below-tablet {
-    text-align: center;
-    @include col(33%, 0%);
-    
-    h3 {
-      display: block;
-    }
-    
+  &#secondary {
     ul {
-      display: none;
+      float: right;
     }
   }
-   
-  @include small-screen {
-    &#tags {
-      @include block;
-    }
-  } 
   
-  @include normal-screen {
-    &#tags {
-      min-width: 45%;
+  &#main {
+    margin-right: 0;
+  }
+  
+  &#tags {
+    @include block;
+    
+    ul {
+      width: 66%;
+      margin: 0 auto;
+      text-align: center;
     }
-  } 
+  }
 }
 
 
@@ -175,6 +169,8 @@
 /* The logo
 */
 @mixin logo {
+  text-align: center;
+  
   h1 {
     display: none;
   }
@@ -185,10 +181,6 @@
     figcaption {
       display: none;
     }
-  }
-  
-  @include below-tablet {
-    text-align: center;
   }
 }
 

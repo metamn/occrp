@@ -2,16 +2,15 @@ html {
   body.frontpage {
     .container {
       #header {
-        #logo, nav {
-          border-top: 0;
-        }
-        
-        nav {
+       nav {
           @include text-navigation;
           
           &#tags {
             @include link($red, $color);
-            padding-top: 0;
+            border-top: $border-thin;
+            border-bottom: $border-thin;
+            margin-top: 1%;
+            padding: 1% 0;
           }
         }
         

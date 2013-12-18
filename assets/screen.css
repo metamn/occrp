@@ -171,22 +171,19 @@ html body img { width: auto; height: auto; max-width: 100%; }
 html body .container { width: 90%; margin: 0 5%; }
 html body .container #header, html body .container main, html body .container section, html body .container nav, html body .container #footer { width: 100%; max-width: 100%; float: left; }
 html body .container #header > h3, html body .container main > h3, html body .container section > h3, html body .container nav > h3, html body .container #footer > h3 { display: none; }
-html body .container #header hgroup { width: auto; float: left; max-width: 30%; margin: 1.5% 3% 0 0; padding-top: 1.25em; border-top: 0.3125em solid; }
-@media only screen and (max-width: 47.999em) { html body .container #header hgroup { width: 100%; max-width: 100%; float: left; } }
+html body .container #header { margin-top: 1%; }
+html body .container #header hgroup { width: 33%; margin-right: 0; float: left; text-align: center; }
 html body .container #header hgroup h1 { display: none; }
 html body .container #header hgroup figure { margin-right: 1.25em; }
 html body .container #header hgroup figure figcaption { display: none; }
-@media only screen and (max-width: 47.999em) { html body .container #header hgroup { text-align: center; } }
-html body .container #header nav { width: auto; float: left; max-width: 30%; margin: 1.5% 3% 0 0; padding-top: 1.25em; border-top: 0.3125em solid; margin-bottom: 0; }
-@media only screen and (max-width: 47.999em) { html body .container #header nav { width: 100%; max-width: 100%; float: left; } }
+html body .container #header nav { width: 33%; margin-right: 0; float: left; margin-top: 2.5em; }
 html body .container #header nav ul li { display: inline-block; float: left; margin-right: 1.25em; border-bottom: 0.3125em solid; border-color: white; }
 html body .container #header nav ul li:last-of-type { margin-right: 0; }
 html body .container #header nav ul li.active, html body .container #header nav ul li:hover { border-bottom: 0.3125em solid; }
-@media only screen and (max-width: 47.999em) { html body .container #header nav { text-align: center; width: 33%; margin-right: 0%; float: left; }
-  html body .container #header nav h3 { display: block; }
-  html body .container #header nav ul { display: none; } }
-@media only screen and (min-width: 48em) and (max-width: 79.999em) { html body .container #header nav#tags { width: 100%; max-width: 100%; float: left; } }
-@media only screen and (min-width: 80em) and (max-width: 89.999em) { html body .container #header nav#tags { min-width: 45%; } }
+html body .container #header nav#secondary ul { float: right; }
+html body .container #header nav#main { margin-right: 0; }
+html body .container #header nav#tags { width: 100%; max-width: 100%; float: left; }
+html body .container #header nav#tags ul { width: 66%; margin: 0 auto; text-align: center; }
 html body.frontpage .container main #intro #slider { width: auto; float: left; max-width: 45%; margin: 1.5% 3% 0 0; padding-top: 1.25em; border-top: 0.3125em solid; margin-bottom: 3%; }
 @media only screen and (max-width: 47.999em) { html body.frontpage .container main #intro #slider { width: 100%; max-width: 100%; float: left; } }
 html body.frontpage .container main #intro #slider article { margin-bottom: 3%; /* Make images display in a non-standard way
@@ -259,9 +256,8 @@ html body.frontpage .container main #investigations article h1, html body.frontp
 html body.frontpage .container main #investigations article figcaption { display: none; }
 html body.frontpage .container main #investigations article #body { display: none; }
 
-html body.frontpage .container #header #logo, html body.frontpage .container #header nav { border-top: 0; }
 html body.frontpage .container #header nav { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
-html body.frontpage .container #header nav#tags { padding-top: 0; }
+html body.frontpage .container #header nav#tags { border-top: 1px solid #f1f1f1; border-bottom: 1px solid #f1f1f1; margin-top: 1%; padding: 1% 0; }
 html body.frontpage .container #header nav#tags a { color: #e43033; text-decoration: none; }
 html body.frontpage .container #header nav#tags a:hover { color: #231f20; }
 html body.frontpage .container main article #category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
