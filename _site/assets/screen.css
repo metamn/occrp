@@ -180,14 +180,18 @@ html body .container #header nav#tags { width: 100%; max-width: 100%; float: lef
 @media only screen and (max-width: 63.999em) { html body .container #header { border-bottom: 1px solid #f1f1f1; cursor: pointer; }
   html body .container #header hgroup { border-bottom: 1px solid #f1f1f1; padding-bottom: 0.625em; }
   html body .container #header hgroup, html body .container #header nav { width: 100%; max-width: 100%; float: left; }
-  html body .container #header nav { padding: 0.625em 0; width: 33%; margin-right: 0; float: left; text-align: center; }
+  html body .container #header nav { padding: 0.625em 0; width: 30%; margin-right: 5%; float: left; text-align: center; }
   html body .container #header nav:nth-of-type(1) { display: none; }
   html body .container #header nav.mobile { display: block; }
-  html body .container #header nav#tags { width: 33%; margin-right: 0; float: left; }
+  html body .container #header nav#tags { width: 30%; margin-right: 0; float: left; }
   html body .container #header nav h3 { display: block; font-size: small; }
-  html body .container #header nav ul { display: none; }
-  html body .container #header.active ul { display: block; }
-  html body .container #header.active ul li { display: block; margin-right: none; float: none; } }
+  html body .container #header nav ul { display: none; margin: 1.25em 0; }
+  html body .container #header nav ul li { margin-right: 0; word-wrap: break-word; margin-bottom: 0.625em; }
+  html body .container #header nav ul li a { color: #259ce4; text-decoration: none; }
+  html body .container #header nav ul li a:hover { color: #982022; }
+  html body .container #header.active nav h3 { font-weight: bold; }
+  html body .container #header.active nav ul { display: block; }
+  html body .container #header.active nav ul li { display: block; margin-right: none; float: none; } }
 html body.frontpage .container main #intro #slider { width: auto; float: left; max-width: 45%; margin: 1.5% 3% 0 0; margin-bottom: 3%; }
 @media only screen and (max-width: 48em) { html body.frontpage .container main #intro #slider { width: 100%; max-width: 100%; float: left; } }
 html body.frontpage .container main #intro #slider article { margin-bottom: 3%; max-width: 34.375em; }

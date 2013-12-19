@@ -1,6 +1,15 @@
 
 $(document).ready(function() {
 
+  // Toggle menu on mobile 
+  $('#header').click(function() {
+    // Check if we are on mobile
+    if ($('#header .mobile').is(':visible')) {
+      $('#header').toggleClass('active');
+    }
+  });
+
+
   // Cache container
   var $container = $('#investigations'); 
   

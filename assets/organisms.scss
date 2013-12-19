@@ -201,9 +201,9 @@
         display: block;
       }
       
-      @include col(33%, 0);
+      @include col(30%, 5%);
       &#tags {
-        @include col(33%, 0);
+        @include col(30%, 0);
       }
       text-align: center;
       
@@ -214,13 +214,26 @@
       
       ul {
         display: none;
+        margin: $pad 0;
+        
+        li {
+          margin-right: 0;
+          word-wrap: break-word;
+          margin-bottom: $pad/2;
+          @include link($blue);
+        }
       }
     }
     
     &.active {
-      ul {
-        display: block;
-        @include list-normal;
+      nav {
+        h3 {
+          font-weight: bold;
+        }
+        ul {
+          display: block;
+          @include list-normal;
+        }
       }
     }
   }
