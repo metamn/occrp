@@ -24,7 +24,7 @@
   max-width: $max-width;
   margin: $margin/2 $margin 0 0;
   
-  @include below-tablet {
+  @include below-and-tablet {
     @include block;
   }
 }
@@ -91,7 +91,7 @@
 /* A responsive grid
 */
 @mixin responsive-grid($how-many, $maximum : 10) {
-  @include below-tablet {
+  @include below-and-tablet {
     @include col(100%, 0);
   }
   
@@ -236,9 +236,7 @@
   @include font-body;
   line-height: $line-height-body-text;
   
-  h1 { padding:1.45833em 0; }
-  h2 { padding:1.25em 0; }
-  h3 { padding:1.51785em 0; }
+  h1, h2, h3 { padding:1.51785em 0; }
 }
 
 /* Mostly for links to other sections
@@ -258,9 +256,8 @@
 /* From http://lamb.cc/typograph/ using traditional / em scaling
 */
 h1, h2, h3 { margin-top:0; margin-bottom:0; }
-h1 { font-size:1.5em; }
-h2 { font-size:1.33333em; }
-h3 { font-size:1.16667em; }
+h1, h2, h3 {  font-size:1.16667em;  }
+
 
 
 

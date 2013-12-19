@@ -1,12 +1,7 @@
 html {
   body.frontpage {
     .container {
-      #header {
-       nav {
-          @include text-navigation;
-        }
-      }
-       
+      
       main {
         article {
           #date {

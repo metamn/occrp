@@ -130,25 +130,7 @@
 /* The menu
 */
 @mixin menu {
-  margin-top: $pad*2;
   
-  ul {
-    @include list-inline;
-  }
-  
-  &:first-of-type {
-    ul {
-      float: right;
-    }
-  }
-  
-  &:nth-of-type(2) {
-    margin-right: 0;
-  }
-  
-  &#tags {
-    @include block;
-  }
 }
 
 
@@ -158,18 +140,92 @@
 @mixin logo {
   text-align: center;
   
-  h1 {
+  h1, figure figcaption {
     display: none;
   }
+}
+
+
+/* The header
+*/
+@mixin header {
+  hgroup {
+    @include col(33%);
+    @include logo;
+  }
   
-  figure {
-    margin-right: $pad;
+  nav {
+    @include col(33%);
+    @include text-navigation;
     
-    figcaption {
+    &.mobile {
       display: none;
+    }
+    
+    ul {
+      @include list-inline;
+    }
+    
+    &:nth-of-type(1) {
+      ul {
+        float: right;
+      }
+    }
+    
+    &#tags {
+      @include block;
+    }
+  }
+  
+  @include below-small-screen {
+    border-bottom: $border-thin;
+    cursor: pointer;
+    
+    hgroup {
+      border-bottom: $border-thin;
+      padding-bottom: $pad/2;
+    }
+  
+    hgroup, nav {
+      @include block;
+    }
+    
+    nav {
+      padding: $pad/2 0;
+      
+      &:nth-of-type(1) {
+        display: none;
+      }
+      
+      &.mobile {
+        display: block;
+      }
+      
+      @include col(33%, 0);
+      &#tags {
+        @include col(33%, 0);
+      }
+      text-align: center;
+      
+      h3 {
+        display: block;
+        font-size: small;
+      }
+      
+      ul {
+        display: none;
+      }
+    }
+    
+    &.active {
+      ul {
+        display: block;
+        @include list-normal;
+      }
     }
   }
 }
+
 
 
 /* Default settings for this theme

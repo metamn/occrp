@@ -31,8 +31,14 @@ $breakpoint-large-screen: 90em !default; /* 1440px */
 	}
 }
 
-@mixin below-tablet {
-	@media only screen and (max-width: $breakpoint-tablet - 0.001) {
+@mixin below-and-tablet {
+	@media only screen and (max-width: $breakpoint-tablet) {
+		@content;
+	}
+}
+
+@mixin below-small-screen {
+	@media only screen and (max-width: $breakpoint-small-screen - 0.001) {
 		@content;
 	}
 }
@@ -132,7 +138,7 @@ $base-font-multiplier: 1;
   - See http://www.kaikkonendesign.fi/typography/#section/4
 */
 $line-height-body-text: 1.75;
-$line-height-headings: 1.1;
+$line-height-headings: 1.25;
 
 
 /* Letter spacing for uppercase

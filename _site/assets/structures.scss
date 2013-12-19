@@ -18,17 +18,7 @@ html {
       }
       
       #header {
-        margin-top: 1%;
-        
-        hgroup {
-          @include col(33%);
-          @include logo;
-        }
-        
-        nav {
-          @include col(33%);
-          @include menu;
-        }
+        @include header;
       }
     }
     

@@ -125,15 +125,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 */
 h1, h2, h3 { margin-top: 0; margin-bottom: 0; }
 
-h1 { font-size: 1.5em; }
-
-h2 { font-size: 1.33333em; }
-
-h3 { font-size: 1.16667em; }
+h1, h2, h3 { font-size: 1.16667em; }
 
 /* Headings
 */
-h1, h2, h3, h4, h4, h6 { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Merriweather', serif; line-height: 1.1; }
+h1, h2, h3, h4, h4, h6 { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Merriweather', serif; line-height: 1.25; }
 
 h1 { font-weight: 700; }
 
@@ -159,6 +155,8 @@ h1 { font-weight: 700; }
 */
 /* The logo
 */
+/* The header
+*/
 /* Default settings for this theme - like typography, links, colors, etc
 */
 /* Structures / Templates of the Atomic web design - the layout, the grid, the wireframe - groups of organisms stitched together to form pages 
@@ -171,23 +169,31 @@ html body img { width: auto; height: auto; max-width: 100%; }
 html body .container { width: 90%; margin: 0 5%; }
 html body .container #header, html body .container main, html body .container section, html body .container nav, html body .container #footer { width: 100%; max-width: 100%; float: left; }
 html body .container #header > h3, html body .container main > h3, html body .container section > h3, html body .container nav > h3, html body .container #footer > h3 { display: none; }
-html body .container #header { margin-top: 1%; }
 html body .container #header hgroup { width: 33%; margin-right: 0; float: left; text-align: center; }
-html body .container #header hgroup h1 { display: none; }
-html body .container #header hgroup figure { margin-right: 1.25em; }
-html body .container #header hgroup figure figcaption { display: none; }
-html body .container #header nav { width: 33%; margin-right: 0; float: left; margin-top: 2.5em; }
+html body .container #header hgroup h1, html body .container #header hgroup figure figcaption { display: none; }
+html body .container #header nav { width: 33%; margin-right: 0; float: left; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
+html body .container #header nav.mobile { display: none; }
 html body .container #header nav ul li { display: inline-block; float: left; margin-right: 1.25em; }
 html body .container #header nav ul li:last-of-type { margin-right: 0; }
-html body .container #header nav:first-of-type ul { float: right; }
-html body .container #header nav:nth-of-type(2) { margin-right: 0; }
+html body .container #header nav:nth-of-type(1) ul { float: right; }
 html body .container #header nav#tags { width: 100%; max-width: 100%; float: left; }
+@media only screen and (max-width: 63.999em) { html body .container #header { border-bottom: 1px solid #f1f1f1; cursor: pointer; }
+  html body .container #header hgroup { border-bottom: 1px solid #f1f1f1; padding-bottom: 0.625em; }
+  html body .container #header hgroup, html body .container #header nav { width: 100%; max-width: 100%; float: left; }
+  html body .container #header nav { padding: 0.625em 0; width: 33%; margin-right: 0; float: left; text-align: center; }
+  html body .container #header nav:nth-of-type(1) { display: none; }
+  html body .container #header nav.mobile { display: block; }
+  html body .container #header nav#tags { width: 33%; margin-right: 0; float: left; }
+  html body .container #header nav h3 { display: block; font-size: small; }
+  html body .container #header nav ul { display: none; }
+  html body .container #header.active ul { display: block; }
+  html body .container #header.active ul li { display: block; margin-right: none; float: none; } }
 html body.frontpage .container main #intro #slider { width: auto; float: left; max-width: 45%; margin: 1.5% 3% 0 0; margin-bottom: 3%; }
-@media only screen and (max-width: 47.999em) { html body.frontpage .container main #intro #slider { width: 100%; max-width: 100%; float: left; } }
+@media only screen and (max-width: 48em) { html body.frontpage .container main #intro #slider { width: 100%; max-width: 100%; float: left; } }
 html body.frontpage .container main #intro #slider article { margin-bottom: 3%; max-width: 34.375em; }
 html body.frontpage .container main #intro #slider article #meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.frontpage .container main #intro #slider article #meta ul li:last-of-type { margin-right: 0; }
-html body.frontpage .container main #intro #slider article h1 { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Merriweather', serif; line-height: 1.1; padding: 0.3125em 0; }
+html body.frontpage .container main #intro #slider article h1 { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Merriweather', serif; line-height: 1.25; padding: 0.3125em 0; }
 html body.frontpage .container main #intro #slider article figcaption { display: none; }
 html body.frontpage .container main #intro #slider article #body { display: none; }
 html body.frontpage .container main #intro #slider article #meta #category { display: none; }
@@ -198,10 +204,10 @@ html body.frontpage .container main #intro #slider nav ol li { display: inline-b
 html body.frontpage .container main #intro #slider nav ol li:last-of-type { margin-right: 0; }
 html body.frontpage .container main #intro #slider nav ol li { padding: 0 0.3125em; cursor: pointer; }
 html body.frontpage .container main #intro #news { width: auto; float: left; max-width: 47%; margin: 1.5% 3% 0 0; }
-@media only screen and (max-width: 47.999em) { html body.frontpage .container main #intro #news { width: 100%; max-width: 100%; float: left; } }
+@media only screen and (max-width: 48em) { html body.frontpage .container main #intro #news { width: 100%; max-width: 100%; float: left; } }
 html body.frontpage .container main #intro #news h3 { display: block; }
 html body.frontpage .container main #intro #news article { margin-bottom: 3%; }
-@media only screen and (max-width: 47.999em) { html body.frontpage .container main #intro #news article { width: 100%; margin-right: 0; float: left; } }
+@media only screen and (max-width: 48em) { html body.frontpage .container main #intro #news article { width: 100%; margin-right: 0; float: left; } }
 @media only screen and (min-width: 48em) and (max-width: 79.999em) { html body.frontpage .container main #intro #news article { width: 45%; margin-right: 10%; float: left; }
   html body.frontpage .container main #intro #news article:nth-of-type(2) { margin-right: 0; }
   html body.frontpage .container main #intro #news article:nth-of-type(3) { margin-right: 10%; }
@@ -224,7 +230,7 @@ html body.frontpage .container main #intro #news article { margin-bottom: 3%; }
   html body.frontpage .container main #intro #news article:nth-of-type(10) { margin-right: 0; } }
 html body.frontpage .container main #intro #news article #meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.frontpage .container main #intro #news article #meta ul li:last-of-type { margin-right: 0; }
-html body.frontpage .container main #intro #news article h1 { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Merriweather', serif; line-height: 1.1; padding: 0.3125em 0; }
+html body.frontpage .container main #intro #news article h1 { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Merriweather', serif; line-height: 1.25; padding: 0.3125em 0; }
 html body.frontpage .container main #intro #news article figure { display: none; }
 html body.frontpage .container main #intro #news article figcaption { display: none; }
 html body.frontpage .container main #intro #news article #excerpt { display: none; }
@@ -233,15 +239,14 @@ html body.frontpage .container main #intro #news article #meta #category { displ
 html body.frontpage .container main #investigations { width: 100%; max-width: 100%; float: left; }
 html body.frontpage .container main #investigations h3 { display: block; }
 html body.frontpage .container main #investigations article { width: auto; float: left; max-width: 30%; margin: 1.5% 3% 0 0; margin-bottom: 3%; }
-@media only screen and (max-width: 47.999em) { html body.frontpage .container main #investigations article { width: 100%; max-width: 100%; float: left; } }
+@media only screen and (max-width: 48em) { html body.frontpage .container main #investigations article { width: 100%; max-width: 100%; float: left; } }
 html body.frontpage .container main #investigations article #meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.frontpage .container main #investigations article #meta ul li:last-of-type { margin-right: 0; }
-html body.frontpage .container main #investigations article h1 { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Merriweather', serif; line-height: 1.1; padding: 0.3125em 0; }
+html body.frontpage .container main #investigations article h1 { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Merriweather', serif; line-height: 1.25; padding: 0.3125em 0; }
 html body.frontpage .container main #investigations article figcaption { display: none; }
 html body.frontpage .container main #investigations article #body { display: none; }
 html body.frontpage .container main #investigations article #meta #category { display: none; }
 
-html body.frontpage .container #header nav { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
 html body.frontpage .container main article #date { font-size: small; }
 html body.frontpage .container main article #excerpt { line-height: 1.5; }
 html body.frontpage .container main #intro #slider { color: #231f20; background: #f1f1f1; padding: 0.625em; border-top: 0; padding-top: 0; }
