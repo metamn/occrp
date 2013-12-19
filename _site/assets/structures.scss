@@ -29,12 +29,10 @@ html {
         main {
           #intro {
             #slider {
-              @include flexible-grid(45%);
               @include slider;
             }
             
             #news {
-              @include flexible-grid(47%);
               @include news;
             }
           }

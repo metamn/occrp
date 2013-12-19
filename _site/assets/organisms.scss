@@ -91,13 +91,17 @@
 /* The news
 */
 @mixin news {
+  @include col(30%, 0);
   h3 {
     display: block;
   }
   
   article {
-    @include responsive-grid(2);
     @include article(null, date, title);
+  }
+  
+  @include below-and-tablet {
+    @include block;
   }
 }
 
@@ -105,11 +109,19 @@
 /* The slider on the frontpage
 */
 @mixin slider {
-  margin-bottom: $flexible-grid-margin;
+  @include col(65%, 5%);
   
   article {
     @include article(null, null, title, figure, null, excerpt);
-    max-width: $slider-image-width;
+    @include block;
+    
+    figure {
+      @include col(46%, 3%);
+      
+      @include below-normal-screen {
+        @include block;
+      }
+    }
   }
   
   nav {
@@ -123,6 +135,10 @@
         cursor: pointer;
       }
     }
+  }
+  
+  @include below-and-tablet {
+    @include block;
   }
 }
 

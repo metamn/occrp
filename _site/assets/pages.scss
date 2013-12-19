@@ -15,24 +15,7 @@ html {
         
         #intro {
           #slider {
-            @include invert($color, $light-grey);
-            border-top: 0;
-            padding-top: 0;
             
-            article {
-              @include padding;
-              padding-bottom: 0;
-              
-              figure {
-                float: none;
-                margin-right: 0;
-              }
-            }
-            
-            nav {
-              @include padding;
-              padding-top: 0;
-            }
           }
           
         }
