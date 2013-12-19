@@ -12,6 +12,8 @@
   margin-bottom: $flexible-grid-margin;
   
   #meta {
+    margin-top: $pad/2;
+    
     ul {
       @include list-inline($pad/2);
     }
@@ -78,11 +80,15 @@
 @mixin investigations {
   h3 {
     display: block;
+    @include text-navigation;
+    @include link($highlight);
   }
   
   article {
     @include flexible-grid;
     @include article(null, date, title, figure, null, excerpt, null);
+    border-top: $border;
+    padding-top: $pad;
   }
 }
 
@@ -91,13 +97,21 @@
 /* The news
 */
 @mixin news {
-  @include col(30%, 0);
+  @include col(33%, 0);
+  
   h3 {
     display: block;
+    @include text-navigation;
+    @include link($highlight);
   }
   
   article {
-    @include article(null, date, title);
+    @include article(null, null, title);
+    border-bottom: $border-thin;
+    
+    h1 {
+      font-size: medium;
+    }
   }
   
   @include below-and-tablet {
@@ -109,11 +123,15 @@
 /* The slider on the frontpage
 */
 @mixin slider {
-  @include col(65%, 5%);
+  @include col(64%, 3%);
+  @include padding(63%);
+  background: $light-grey;
+  border: $border-thin;
   
   article {
     @include article(null, null, title, figure, null, excerpt);
     @include block;
+    margin-bottom: 0;
     
     figure {
       @include col(46%, 3%);
@@ -122,17 +140,30 @@
         @include block;
       }
     }
+    
+    #excerpt {
+      margin-top: $pad;
+    }
   }
   
   nav {
     @include hide-title;
+    margin-top: $pad;
     
     ol {
       @include list-inline;
       
       li {
-        padding: 0 $pad/4;
+        padding: $pad/4 $pad/2;
         cursor: pointer;
+        border: 1px solid $background;
+        background: $background;
+        
+        &.active, &:hover {
+          @include invert($background, $highlight);
+          padding: $pad/4 $pad/2;
+          border: 1px solid $highlight;
+        }
       }
     }
   }
@@ -165,7 +196,7 @@
 /* The header
 */
 @mixin header {
-  margin-top: $pad;
+  margin: $pad 0;
   
   hgroup {
     @include col(33%);
@@ -187,6 +218,14 @@
     ul {
       @include list-inline;
       @include list-centered;
+      
+      li {
+        &.active {
+          a {
+            @include invert($background, $highlight);
+          }
+        }
+      }
     }
     
     

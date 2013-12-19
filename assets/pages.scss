@@ -6,10 +6,12 @@ html {
         article {
           #date {
             font-size: small;
+            color: lighten($color, 30%);
           }
           
           #excerpt {
             @include text-article-excerpt;
+            color: lighten($color, 15%);
           }
         }
         
