@@ -191,6 +191,16 @@
   }
 }
 
+/* Centers an inline list
+*/
+@mixin list-centered {
+  text-align: center;
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 
 
 
@@ -242,6 +252,7 @@
 /* Mostly for links to other sections
 */
 @mixin text-navigation {
+  @include font-body;
   @include uppercase;
   font-size: small;
 }

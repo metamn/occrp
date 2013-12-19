@@ -149,6 +149,8 @@
 /* The header
 */
 @mixin header {
+  margin-top: $pad;
+  
   hgroup {
     @include col(33%);
     @include logo;
@@ -157,6 +159,10 @@
   nav {
     @include col(33%);
     @include text-navigation;
+    border-bottom: $border-thin;
+    border-color: $color;
+    padding: $pad/2 0;
+    margin-top: $pad*2;
     
     &.mobile {
       display: none;
@@ -164,20 +170,19 @@
     
     ul {
       @include list-inline;
+      @include list-centered;
     }
     
-    &:nth-of-type(1) {
-      ul {
-        float: right;
-      }
-    }
     
     &#tags {
       @include block;
+      @include invert;
+      border: none;
+      margin-top: $pad;
     }
   }
   
-  @include below-small-screen {
+  @include below-normal-screen {
     border-bottom: $border-thin;
     cursor: pointer;
     
@@ -210,6 +215,7 @@
       h3 {
         display: block;
         font-size: small;
+        @include text-navigation;
       }
       
       ul {
