@@ -4,25 +4,11 @@ html {
       #header {
        nav {
           @include text-navigation;
-          
-          &#tags {
-            @include link($red, $color);
-            border-top: $border-thin;
-            border-bottom: $border-thin;
-            margin-top: 1%;
-            padding: 1% 0;
-          }
         }
-        
       }
        
       main {
         article {
-          #category {  
-            @include text-navigation;
-            @include link($highlight, $color);
-          }
-          
           #date {
             font-size: small;
           }
@@ -51,22 +37,9 @@ html {
             nav {
               @include padding;
               padding-top: 0;
-              
-              ol li {
-                &.active {
-                  @include invert;
-                }
-              }
             }
           }
           
-          #news {
-            article {
-              #meta {
-                border-top: $border-thin;
-              }
-            }
-          }
         }
       }
       

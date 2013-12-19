@@ -23,8 +23,6 @@
   
   max-width: $max-width;
   margin: $margin/2 $margin 0 0;
-  padding-top: $pad;
-  border-top: $border;
   
   @include below-tablet {
     @include block;
@@ -176,16 +174,10 @@
     display: inline-block;
     float: left;
     margin-right: $margin-right;
-    border-bottom: $border;
-    border-color: $background;
     
     &:last-of-type {
       margin-right: 0;
     }  
-    
-    &.active, &:hover {
-      border-bottom: $border;
-    }
   }
 }
 
@@ -325,16 +317,6 @@ h1 {
   padding: $pad/2;
   
   @include link($c, $c);
-  
-  ol, ul {
-    li {
-      border-color: $b !important;
-      
-      &.active {
-        border-color: $c !important;
-      }
-    }
-  }
 }
 
 
