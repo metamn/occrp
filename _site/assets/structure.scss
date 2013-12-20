@@ -1,0 +1,272 @@
+/* Templates mostly focus on content structure (such as character length, image size, etc) rather than the actual content.
+  - they are wireframes describing the layout
+*/
+
+
+/* An arrow 
+  - to scroll to top of the page
+  - or to reveal a menu
+*/
+@mixin arrow($arrow: up, $hide: false) {
+  @if ($hide == false) {
+    cursor: pointer;
+    margin-right: 0;
+    
+    &:before {
+      content: $arrow-down;
+      font-size: $before-font-size;
+      display: block;
+      
+      @if ($arrow == up) {
+        @include transform(rotate(-90deg));
+      }
+      @if ($arrow == down) {
+        @include transform(rotate(90deg));
+      }
+    }
+  } @else {
+    &:before {
+      content: '';
+      padding: 0;
+      font-size: normal;
+      display: none;
+    }
+  }
+}
+
+
+
+
+
+/* A classic, horizontal menu for <nav> elements
+*/
+@mixin menu {
+  h3 {
+    display: none;
+  }
+  
+  ul {
+    @include list-inline;
+    
+    li {
+      &.current_page_item {
+        a {
+          @include color(highlight);
+        }
+      }
+    }
+  }
+  
+  /* We have two menus, the last is for contact
+  */       
+  &:last-of-type {
+    display: none;
+    
+    @include above-and-normal-screen {
+      float: right;
+      margin-right: 0em;
+      display: block;
+    }
+  }
+  
+  @include below-tablet {
+    ul { 
+      display: none;
+    }    
+    
+    &:last-of-type {
+      @include arrow(down);
+      display: block;
+      float: right;
+    }
+    
+    /* Remove the arrow when menu is active
+    */
+    &.active {
+      &:last-of-type {
+        @include arrow('', hide);
+        float: left;
+      }
+    }
+  }
+  
+  @include mobile {
+    &.active {
+      /* Display the menu as a normal list
+      */
+      @include block;
+    }
+  }
+  
+  
+}
+
+
+/* The filters
+*/
+@mixin filters {
+  #labels, #select {
+    @include block;
+  }
+  
+  @include select;
+  
+  ul li, .select {
+    @include isotope(5);
+  }
+  
+  @include below-and-small-screen {
+    ul {
+      display: none;
+    }
+  }
+}
+
+
+/* Remove a section or nav title required by HTML5 outliner
+*/
+@mixin remove-title {
+  h2, h3, h4 {
+    display: none;
+  }
+}
+
+
+
+html {
+  body {
+    @include default-settings;
+    
+    .container {
+      @include container;
+      
+      #header, #footer {
+        @include block;
+        @include float-left;
+        margin: $pad 0;
+      }
+      
+      #header {
+        margin-bottom: 0;
+        
+        nav {
+          @include menu;
+        }
+      }
+            
+      main {
+        @include block;
+        
+        section {
+          @include block;
+          margin: $pad 0 0;
+          
+          /* The space between the intro image and real content is adjusted
+          */
+          &:nth-of-type(2) {
+            margin-top: 0;
+          }
+          
+          &#intro {
+            @include remove-title;
+            @include figure(100%);
+          }
+          
+          &.articles {
+            @include thumbs(normal, $pad);
+          }
+          
+          &#index {
+            @include remove-title;
+          }
+        }
+      }
+      
+      #footer {
+        nav {
+          float: right;
+          margin-right: 0;
+          @include remove-title;
+          @include arrow(up); 
+          
+          @include below-mobile-landscape {
+            float: left;
+          }
+        }
+      }
+    }
+    
+    
+    /* Archives
+    */
+    &.page {
+      main {
+        section {
+          &.articles {
+            @include thumbs(isotope, $pad);
+          }
+          
+          &#filters {
+            @include filters;
+            margin-bottom: 0;
+          }
+          /* The filters have relative posistioning with a negative top margin
+            - it's container bottom margin and the next container's top margin must be reset 
+          */
+          &#results {
+            @include remove-title;
+            margin-top: 0;
+          }
+        }
+      }
+    }
+    
+    
+    /* Single product
+    */
+    &.single-post {
+      main {
+        article.product {
+          /* The Golden Ratios 
+          */
+          figure {
+            @include m_column($minor, 5%);
+          }
+          
+          aside {
+            @include m_column($major - 5%, 0);
+          }
+          
+          @include below-small-screen {
+            figure, aside {
+              @include m_column(100%, 0);
+            }
+          }
+        }
+      }
+    }
+    
+    /* Content pages
+    */
+    &.page {
+      main {
+        /* The Golden Ratios 
+        */
+        #index {
+          @include m_column($major, 5%);
+        }
+        
+        #sidebar {
+          @include m_column($minor - 5%, 0);
+          @include remove-title;
+        }
+        
+        @include below-small-screen {
+          #index, #sidebar {
+            @include m_column(100%, 0);
+          }
+        }
+      }
+    }
+  }
+}

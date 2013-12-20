@@ -10,7 +10,7 @@ class: frontpage
   <section id="slider">
     <h3>Slideshow</h3>
     
-    {% for post in site.categories.slider limit:1 offset:2 %}
+    {% for post in site.categories.slider limit:1 offset:3 %}
       {% include article.html %}
     {% endfor %}
     
@@ -52,12 +52,9 @@ class: frontpage
   {% for post in site.categories.investigations %}
     {% include article.html %}
   {% endfor %}
+  
 
-  {% for post in site.categories.slider %}
-    {% include article.html %}
-  {% endfor %}
-
-  {% for post in site.categories.daily %}
+  {% for post in site.categories.daily limit:2 %}
     {% include article.html %}
   {% endfor %}
 </section>
