@@ -86,9 +86,39 @@
       display: block;
       @include text-navigation;
       @include link($highlight);
+      margin-bottom: $pad/2;
     }
     
-    @include article(null, null, title, null);
+    counter-reset: counter;
+    article {
+      @include article(null, null, title, null);
+      border-bottom: $border-thin;
+      height: $pad*2 + $pad/2;
+    
+      h1 {
+        font-size: medium;
+      }
+      
+      &:before {
+        content: counter(counter);
+        counter-increment: counter;
+        @include invert;
+        padding: $pad/4 $pad/2;
+        display: inline-block;
+        margin-right: $pad/2;
+        float: left;
+      }
+    }
+    
+    &:last-of-type {
+      article {
+        height: auto;
+        
+        &:before {
+          display: none;
+        }
+      }
+    }
   }
 }
 
@@ -105,13 +135,7 @@
   
   article {
     @include article(null, null, title, figure);
-    @include responsive-grid(3);
-    
-    figure {
-      width: 10em;
-      float: left;
-      margin-right: $pad;
-    }
+    @include responsive-grid(6);
   }
 }
 
@@ -119,14 +143,16 @@
 /* Products
 */
 @mixin products {
-  h3 {
-    display: block;
-    @include text-navigation;
-    @include link($highlight);
-  }
+  border-top: $border;
+  padding-top: $pad;
   
   article {
     @include article(null, null, title, figure);
+    
+    h1 {
+      border-top: $border;
+      margin-top: $pad;
+    }
   }
 }
 

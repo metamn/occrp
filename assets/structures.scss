@@ -20,6 +20,10 @@ html {
       #header {
         @include header;
       }
+      
+      #footer {
+        margin: $pad 0;
+      }
     }
     
     /* Frontpage

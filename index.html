@@ -64,7 +64,7 @@ class: frontpage
     <a href="{{ site.url }}/products" title="Products">Products</a>
   </h3>
   
-  {% for post in site.categories.projects limit:1 %}
+  {% for post in site.categories.projects limit:1 offset:2 %}
     {% include article.html %}
   {% endfor %}
 </section>
@@ -100,7 +100,7 @@ class: frontpage
       <a href="{{ site.url }}/products" title="Products">Most Shared</a>
     </h3>
     
-    {% for post in site.categories.investigations limit:5 %}
+    {% for post in site.categories.slider limit:5 %}
       {% include article.html %}
     {% endfor %}
   </aside>
