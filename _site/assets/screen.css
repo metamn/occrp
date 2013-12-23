@@ -147,6 +147,12 @@ h1 { font-weight: 700; }
 */
 /* An article - displays mostly article thumbs
 */
+/* Most read
+*/
+/* Projects
+*/
+/* Products
+*/
 /* Investigations
 */
 /* The news
@@ -254,6 +260,95 @@ html body.frontpage .container main #investigations article h1 { font-family: Ar
 html body.frontpage .container main #investigations article figcaption { display: none; }
 html body.frontpage .container main #investigations article #body { display: none; }
 html body.frontpage .container main #investigations article #meta #category { display: none; }
+html body.frontpage .container main #products { width: 100%; max-width: 100%; float: left; }
+html body.frontpage .container main #products h3 { display: block; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Merriweather Sans', sans serif; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
+html body.frontpage .container main #products h3 a { color: #982022; text-decoration: none; }
+html body.frontpage .container main #products h3 a:hover { color: #982022; }
+html body.frontpage .container main #products article { margin-bottom: 3%; }
+html body.frontpage .container main #products article #meta { margin-top: 0.625em; }
+html body.frontpage .container main #products article #meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
+html body.frontpage .container main #products article #meta ul li:last-of-type { margin-right: 0; }
+html body.frontpage .container main #products article h1 { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Merriweather', serif; line-height: 1.25; padding: 0.3125em 0; }
+html body.frontpage .container main #products article figcaption { display: none; }
+html body.frontpage .container main #products article #excerpt { display: none; }
+html body.frontpage .container main #products article #body { display: none; }
+html body.frontpage .container main #products article #meta #category { display: none; }
+html body.frontpage .container main #products article #meta #date { display: none; }
+html body.frontpage .container main #products article #meta { display: none; }
+html body.frontpage .container main #projects { width: 100%; max-width: 100%; float: left; }
+html body.frontpage .container main #projects h3 { display: block; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Merriweather Sans', sans serif; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
+html body.frontpage .container main #projects h3 a { color: #982022; text-decoration: none; }
+html body.frontpage .container main #projects h3 a:hover { color: #982022; }
+html body.frontpage .container main #projects article { margin-bottom: 3%; }
+html body.frontpage .container main #projects article #meta { margin-top: 0.625em; }
+html body.frontpage .container main #projects article #meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
+html body.frontpage .container main #projects article #meta ul li:last-of-type { margin-right: 0; }
+html body.frontpage .container main #projects article h1 { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Merriweather', serif; line-height: 1.25; padding: 0.3125em 0; }
+html body.frontpage .container main #projects article figcaption { display: none; }
+html body.frontpage .container main #projects article #excerpt { display: none; }
+html body.frontpage .container main #projects article #body { display: none; }
+html body.frontpage .container main #projects article #meta #category { display: none; }
+html body.frontpage .container main #projects article #meta #date { display: none; }
+html body.frontpage .container main #projects article #meta { display: none; }
+@media only screen and (max-width: 48em) { html body.frontpage .container main #projects article { width: 100%; margin-right: 0; float: left; } }
+@media only screen and (min-width: 48em) and (max-width: 79.999em) { html body.frontpage .container main #projects article { width: 45%; margin-right: 10%; float: left; }
+  html body.frontpage .container main #projects article:nth-of-type(2) { margin-right: 0; }
+  html body.frontpage .container main #projects article:nth-of-type(3) { margin-right: 10%; }
+  html body.frontpage .container main #projects article:nth-of-type(4) { margin-right: 0; }
+  html body.frontpage .container main #projects article:nth-of-type(5) { margin-right: 10%; }
+  html body.frontpage .container main #projects article:nth-of-type(6) { margin-right: 0; }
+  html body.frontpage .container main #projects article:nth-of-type(7) { margin-right: 10%; }
+  html body.frontpage .container main #projects article:nth-of-type(8) { margin-right: 0; }
+  html body.frontpage .container main #projects article:nth-of-type(9) { margin-right: 10%; }
+  html body.frontpage .container main #projects article:nth-of-type(10) { margin-right: 0; } }
+@media only screen and (min-width: 80em) { html body.frontpage .container main #projects article { width: 30%; margin-right: 5%; float: left; }
+  html body.frontpage .container main #projects article:nth-of-type(2) { margin-right: 5%; }
+  html body.frontpage .container main #projects article:nth-of-type(3) { margin-right: 0; }
+  html body.frontpage .container main #projects article:nth-of-type(4) { margin-right: 5%; }
+  html body.frontpage .container main #projects article:nth-of-type(5) { margin-right: 5%; }
+  html body.frontpage .container main #projects article:nth-of-type(6) { margin-right: 0; }
+  html body.frontpage .container main #projects article:nth-of-type(7) { margin-right: 5%; }
+  html body.frontpage .container main #projects article:nth-of-type(8) { margin-right: 5%; }
+  html body.frontpage .container main #projects article:nth-of-type(9) { margin-right: 0; }
+  html body.frontpage .container main #projects article:nth-of-type(10) { margin-right: 5%; } }
+html body.frontpage .container main #projects article figure { width: 10em; float: left; margin-right: 1.25em; }
+html body.frontpage .container main #most-read { @includ block; }
+html body.frontpage .container main #most-read aside { margin-bottom: 3%; }
+@media only screen and (max-width: 48em) { html body.frontpage .container main #most-read aside { width: 100%; margin-right: 0; float: left; } }
+@media only screen and (min-width: 48em) and (max-width: 79.999em) { html body.frontpage .container main #most-read aside { width: 45%; margin-right: 10%; float: left; }
+  html body.frontpage .container main #most-read aside:nth-of-type(2) { margin-right: 0; }
+  html body.frontpage .container main #most-read aside:nth-of-type(3) { margin-right: 10%; }
+  html body.frontpage .container main #most-read aside:nth-of-type(4) { margin-right: 0; }
+  html body.frontpage .container main #most-read aside:nth-of-type(5) { margin-right: 10%; }
+  html body.frontpage .container main #most-read aside:nth-of-type(6) { margin-right: 0; }
+  html body.frontpage .container main #most-read aside:nth-of-type(7) { margin-right: 10%; }
+  html body.frontpage .container main #most-read aside:nth-of-type(8) { margin-right: 0; }
+  html body.frontpage .container main #most-read aside:nth-of-type(9) { margin-right: 10%; }
+  html body.frontpage .container main #most-read aside:nth-of-type(10) { margin-right: 0; } }
+@media only screen and (min-width: 80em) { html body.frontpage .container main #most-read aside { width: 30%; margin-right: 5%; float: left; }
+  html body.frontpage .container main #most-read aside:nth-of-type(2) { margin-right: 5%; }
+  html body.frontpage .container main #most-read aside:nth-of-type(3) { margin-right: 0; }
+  html body.frontpage .container main #most-read aside:nth-of-type(4) { margin-right: 5%; }
+  html body.frontpage .container main #most-read aside:nth-of-type(5) { margin-right: 5%; }
+  html body.frontpage .container main #most-read aside:nth-of-type(6) { margin-right: 0; }
+  html body.frontpage .container main #most-read aside:nth-of-type(7) { margin-right: 5%; }
+  html body.frontpage .container main #most-read aside:nth-of-type(8) { margin-right: 5%; }
+  html body.frontpage .container main #most-read aside:nth-of-type(9) { margin-right: 0; }
+  html body.frontpage .container main #most-read aside:nth-of-type(10) { margin-right: 5%; } }
+html body.frontpage .container main #most-read aside h3 { display: block; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Merriweather Sans', sans serif; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
+html body.frontpage .container main #most-read aside h3 a { color: #982022; text-decoration: none; }
+html body.frontpage .container main #most-read aside h3 a:hover { color: #982022; }
+html body.frontpage .container main #most-read aside #meta { margin-top: 0.625em; }
+html body.frontpage .container main #most-read aside #meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
+html body.frontpage .container main #most-read aside #meta ul li:last-of-type { margin-right: 0; }
+html body.frontpage .container main #most-read aside h1 { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Merriweather', serif; line-height: 1.25; padding: 0.3125em 0; }
+html body.frontpage .container main #most-read aside figure { display: none; }
+html body.frontpage .container main #most-read aside figcaption { display: none; }
+html body.frontpage .container main #most-read aside #excerpt { display: none; }
+html body.frontpage .container main #most-read aside #body { display: none; }
+html body.frontpage .container main #most-read aside #meta #category { display: none; }
+html body.frontpage .container main #most-read aside #meta #date { display: none; }
+html body.frontpage .container main #most-read aside #meta { display: none; }
 
 html body.frontpage .container main article #date { font-size: small; color: #74676a; }
 html body.frontpage .container main article #excerpt { line-height: 1.5; color: #4c4345; }

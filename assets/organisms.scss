@@ -75,6 +75,62 @@
 }
 
 
+
+/* Most read
+*/
+@mixin most-read {
+  aside {
+    @include responsive-grid(3);
+    
+    h3 {
+      display: block;
+      @include text-navigation;
+      @include link($highlight);
+    }
+    
+    @include article(null, null, title, null);
+  }
+}
+
+
+
+/* Projects
+*/
+@mixin projects {
+  h3 {
+    display: block;
+    @include text-navigation;
+    @include link($highlight);
+  }
+  
+  article {
+    @include article(null, null, title, figure);
+    @include responsive-grid(3);
+    
+    figure {
+      width: 10em;
+      float: left;
+      margin-right: $pad;
+    }
+  }
+}
+
+
+/* Products
+*/
+@mixin products {
+  h3 {
+    display: block;
+    @include text-navigation;
+    @include link($highlight);
+  }
+  
+  article {
+    @include article(null, null, title, figure);
+  }
+}
+
+
 /* Investigations
 */
 @mixin investigations {
