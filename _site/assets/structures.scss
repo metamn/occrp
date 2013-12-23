@@ -1,0 +1,69 @@
+/*
+  Structures / Templates of the Atomic web design
+  - the layout, the grid, the wireframe
+  - groups of organisms stitched together to form pages 
+*/
+
+
+html {
+  body {
+    @include default-settings;
+    
+    .container {
+      @include container;
+      
+      #header, main, section, nav, #footer {
+        @include block;
+        @include hide-title;
+      }
+      
+      #header {
+        @include header;
+      }
+      
+      #footer {
+        @include footer;
+      }
+    }
+    
+    /* Frontpage
+    */
+    &.frontpage {
+      .container {  
+        main {
+          #intro {
+            #slider {
+              @include slider;
+            }
+            
+            #news {
+              @include news;
+            }
+            
+          }
+          
+          #investigations {
+            @include block;
+            @include investigations;
+          }
+          
+          #products {
+            @include block;
+            @include products;
+          }
+          
+          #projects {
+            @include block;
+            @include projects;
+          }
+          
+          #most-read {
+            @includ block;
+            @include most-read;
+          }
+        }
+      }
+    }
+    
+  }
+}
