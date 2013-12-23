@@ -165,6 +165,8 @@ h1 { font-weight: 700; }
 */
 /* The header
 */
+/* Footer
+*/
 /* Default settings for this theme - like typography, links, colors, etc
 */
 /* Structures / Templates of the Atomic web design - the layout, the grid, the wireframe - groups of organisms stitched together to form pages 
@@ -206,7 +208,11 @@ html body .container #header nav#tags a:hover { color: white; }
   html body .container #header.active nav h3 { font-weight: bold; }
   html body .container #header.active nav ul { display: block; }
   html body .container #header.active nav ul li { display: block; margin-right: none; float: none; } }
-html body .container #footer { margin: 1.25em 0; }
+html body .container #footer { margin: 1.25em 0; padding: 1.25em 0; border-top: 0.3125em solid; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Merriweather Sans', sans serif; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
+html body .container #footer ul li { display: inline-block; float: left; margin-right: 1.25em; }
+html body .container #footer ul li:last-of-type { margin-right: 0; }
+html body .container #footer ul li#social { float: right; }
+html body .container #footer ul li#social img { max-width: 24px; max-height: 24px; }
 html body.frontpage .container main #intro #slider { width: 64%; margin-right: 3%; float: left; padding: 1.25em; width: calc(63% - 2.5em); background: #f1f1f1; border: 1px solid #f1f1f1; }
 html body.frontpage .container main #intro #slider article { margin-bottom: 3%; width: 100%; max-width: 100%; float: left; margin-bottom: 0; }
 html body.frontpage .container main #intro #slider article #meta { margin-top: 0.625em; }
@@ -262,7 +268,7 @@ html body.frontpage .container main #investigations article figcaption { display
 html body.frontpage .container main #investigations article #body { display: none; }
 html body.frontpage .container main #investigations article #meta #category { display: none; }
 html body.frontpage .container main #products { width: 100%; max-width: 100%; float: left; border-top: 0.3125em solid; padding-top: 1.25em; }
-html body.frontpage .container main #products article { margin-bottom: 3%; }
+html body.frontpage .container main #products article { margin-bottom: 3%; position: relative; }
 html body.frontpage .container main #products article #meta { margin-top: 0.625em; }
 html body.frontpage .container main #products article #meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.frontpage .container main #products article #meta ul li:last-of-type { margin-right: 0; }
@@ -274,6 +280,11 @@ html body.frontpage .container main #products article #meta #category { display:
 html body.frontpage .container main #products article #meta #date { display: none; }
 html body.frontpage .container main #products article #meta { display: none; }
 html body.frontpage .container main #products article h1 { border-top: 0.3125em solid; margin-top: 1.25em; }
+html body.frontpage .container main #products article:before, html body.frontpage .container main #products article:after { content: '\2794'; display: inline-block; font-size: 150%; position: absolute; top: 25%; color: white; background: #231f20; padding: 0.625em; }
+html body.frontpage .container main #products article:before a, html body.frontpage .container main #products article:after a { color: white; text-decoration: none; }
+html body.frontpage .container main #products article:before a:hover, html body.frontpage .container main #products article:after a:hover { color: white; }
+html body.frontpage .container main #products article:before { -webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); transform: rotate(180deg); }
+html body.frontpage .container main #products article:after { right: 0; }
 html body.frontpage .container main #projects { width: 100%; max-width: 100%; float: left; }
 html body.frontpage .container main #projects h3 { display: block; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Merriweather Sans', sans serif; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
 html body.frontpage .container main #projects h3 a { color: #982022; text-decoration: none; }

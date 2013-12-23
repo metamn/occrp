@@ -22,7 +22,7 @@ html {
       }
       
       #footer {
-        margin: $pad 0;
+        @include footer;
       }
     }
     
