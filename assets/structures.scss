@@ -42,6 +42,21 @@ html {
             @include block;
             @include investigations;
           }
+          
+          #products {
+            @include block;
+            @include products;
+          }
+          
+          #projects {
+            @include block;
+            @include projects;
+          }
+          
+          #most-read {
+            @includ block;
+            @include most-read;
+          }
         }
       }
     }
