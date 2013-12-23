@@ -268,7 +268,7 @@ html body.frontpage .container main #investigations article figcaption { display
 html body.frontpage .container main #investigations article #body { display: none; }
 html body.frontpage .container main #investigations article #meta #category { display: none; }
 html body.frontpage .container main #products { width: 100%; max-width: 100%; float: left; border-top: 0.3125em solid; padding-top: 1.25em; }
-html body.frontpage .container main #products article { margin-bottom: 3%; position: relative; }
+html body.frontpage .container main #products article { margin-bottom: 3%; }
 html body.frontpage .container main #products article #meta { margin-top: 0.625em; }
 html body.frontpage .container main #products article #meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.frontpage .container main #products article #meta ul li:last-of-type { margin-right: 0; }
@@ -279,12 +279,28 @@ html body.frontpage .container main #products article #body { display: none; }
 html body.frontpage .container main #products article #meta #category { display: none; }
 html body.frontpage .container main #products article #meta #date { display: none; }
 html body.frontpage .container main #products article #meta { display: none; }
-html body.frontpage .container main #products article h1 { border-top: 0.3125em solid; margin-top: 1.25em; }
-html body.frontpage .container main #products article:before, html body.frontpage .container main #products article:after { content: '\2794'; display: inline-block; font-size: 150%; position: absolute; top: 25%; color: white; background: #231f20; padding: 0.625em; }
-html body.frontpage .container main #products article:before a, html body.frontpage .container main #products article:after a { color: white; text-decoration: none; }
-html body.frontpage .container main #products article:before a:hover, html body.frontpage .container main #products article:after a:hover { color: white; }
-html body.frontpage .container main #products article:before { -webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); transform: rotate(180deg); }
-html body.frontpage .container main #products article:after { right: 0; }
+@media only screen and (max-width: 48em) { html body.frontpage .container main #products article { width: 100%; margin-right: 0; float: left; } }
+@media only screen and (min-width: 48em) and (max-width: 79.999em) { html body.frontpage .container main #products article { width: 45%; margin-right: 10%; float: left; }
+  html body.frontpage .container main #products article:nth-of-type(2) { margin-right: 0; }
+  html body.frontpage .container main #products article:nth-of-type(3) { margin-right: 10%; }
+  html body.frontpage .container main #products article:nth-of-type(4) { margin-right: 0; }
+  html body.frontpage .container main #products article:nth-of-type(5) { margin-right: 10%; }
+  html body.frontpage .container main #products article:nth-of-type(6) { margin-right: 0; }
+  html body.frontpage .container main #products article:nth-of-type(7) { margin-right: 10%; }
+  html body.frontpage .container main #products article:nth-of-type(8) { margin-right: 0; }
+  html body.frontpage .container main #products article:nth-of-type(9) { margin-right: 10%; }
+  html body.frontpage .container main #products article:nth-of-type(10) { margin-right: 0; } }
+@media only screen and (min-width: 80em) { html body.frontpage .container main #products article { width: 18%; margin-right: 2.5%; float: left; }
+  html body.frontpage .container main #products article:nth-of-type(2) { margin-right: 2.5%; }
+  html body.frontpage .container main #products article:nth-of-type(3) { margin-right: 2.5%; }
+  html body.frontpage .container main #products article:nth-of-type(4) { margin-right: 2.5%; }
+  html body.frontpage .container main #products article:nth-of-type(5) { margin-right: 0; }
+  html body.frontpage .container main #products article:nth-of-type(6) { margin-right: 2.5%; }
+  html body.frontpage .container main #products article:nth-of-type(7) { margin-right: 2.5%; }
+  html body.frontpage .container main #products article:nth-of-type(8) { margin-right: 2.5%; }
+  html body.frontpage .container main #products article:nth-of-type(9) { margin-right: 2.5%; }
+  html body.frontpage .container main #products article:nth-of-type(10) { margin-right: 0; } }
+html body.frontpage .container main #products article figure { max-height: 209px; overflow: hidden; }
 html body.frontpage .container main #projects { width: 100%; max-width: 100%; float: left; }
 html body.frontpage .container main #projects h3 { display: block; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Merriweather Sans', sans serif; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
 html body.frontpage .container main #projects h3 a { color: #982022; text-decoration: none; }

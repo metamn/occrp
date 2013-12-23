@@ -148,29 +148,11 @@
   
   article {
     @include article(null, null, title, figure);
-    position: relative;
+    @include responsive-grid(5);
     
-    h1 {
-      border-top: $border;
-      margin-top: $pad;
-    }
-    
-    &:before, &:after {
-      content: '\2794';
-      display: inline-block;
-      font-size: 150%;
-      
-      position: absolute;
-      top: 25%;
-      @include invert;
-    }
-    
-    &:before {
-      @include transform(rotate(180deg));
-    }
-    
-    &:after {
-      right: 0;
+    figure {
+      max-height: 209px;
+      overflow: hidden;
     }
   }
 }

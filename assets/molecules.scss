@@ -128,7 +128,7 @@
 /* Returns the margin of a column in a grid
 */
 @function col-gutter($how-many) {
-  @return round(10% / ($how-many - 1));
+  @return 10% / ($how-many - 1);
 }
 
 
