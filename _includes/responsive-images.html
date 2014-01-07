@@ -1,8 +1,8 @@
 {% if include.type %}
-  {% assign title = page.images[image_index].title %}
-  {% assign link = page.url %}
-  {% assign normal = page.images[image_index].url %}
-  {% assign mobile = page.images[image_index].url %}
+  {% assign title = post.images[image_index].title %}
+  {% assign link = post.url %}
+  {% assign normal = post.images[image_index].url %}
+  {% assign mobile = post.images[image_index].url %}
 {% else %}
   {% assign title = include.title %}
   {% assign link = include.link %}
