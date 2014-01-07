@@ -1,6 +1,23 @@
 
 $(document).ready(function() {
 
+  // Sticky header
+  var menu = document.querySelector('#header');
+  var origOffsetY = menu.offsetTop;
+
+  function scroll () {
+    if ($(window).scrollTop() >= origOffsetY) {
+      $('#header').addClass('sticky');
+      $('main').addClass('sticky');
+    } else {
+      $('#header').removeClass('sticky');
+      $('main').removeClass('sticky');
+    } 
+  }
+  document.onscroll = scroll;
+
+
+
   // Toggle menu on mobile 
   $('#header').click(function() {
     // Check if we are on mobile
@@ -22,8 +39,6 @@ $(document).ready(function() {
     
     $container.isotope({
       itemSelector : 'article',
-      
-      
       // The CSS animation was too fancy, we've switched to a simpler one
       animationEngine: 'jquery',
       animationOptions: {
