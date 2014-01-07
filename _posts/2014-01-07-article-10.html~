@@ -1,0 +1,45 @@
+---
+layout: default
+title: OCCRP's New and Improved Investigative Dashboard Is Here
+category: slider
+excerpt: From corrupt business takeovers to horsemeat scandals, investigative reporters worldwide are using the Investigative Dashboard with award-winning results. The Organized Crime and Corruption Reporting Project (OCCRP) rolled out the new and improved&nbsp;<a href="http://investigativedashboard.org/" target="_blank">Investigative Dashboard</a> at the Google Ideas Summit in New York, showcasing the platform's abilities and ambitions in ways that will "take public records to a whole new level," says Google
+images:
+  - title: 
+    url: /assets/Business_registry.png
+	- title:
+    url: /assets/Lejla.png
+videos:
+	- url: VYUBYZMEF40
+authors:
+  - name:
+    url:
+    email:
+---
+
+{% assign image_index = 1 %}
+{% include responsive-images.html type='from post'  %}
+
+<p>From corrupt business takeovers to horsemeat scandals, investigative reporters worldwide are using the Investigative Dashboard with award-winning results. The Organized Crime and Corruption Reporting Project (OCCRP) rolled out the new and improved&nbsp;<a href="http://investigativedashboard.org/" target="_blank">Investigative Dashboard</a> at the Google Ideas Summit in New York, showcasing the platform's abilities and ambitions in ways that will "take public records to a whole new level," says Google.</p>
+<p><strong>What is the Investigative Dashboard?</strong></p>
+<p>"ID is the research desk for the world," explains OCCRP editor Drew Sullivan. "It could be the difference, for some reporters, between getting the story and not getting it."</p>
+<p>The Dashboard is a massive global data clearing house, an international network of journalists, and community of professionals working together to uncover corruption and reveal crime.</p>
+<p>The Dashboard offers a collection of 400 different databases with important documents obtained and tracked down by the OCCRP in conjunction with a secure communication system. The Dashboard also connects reporters with a professional network of researchers around the world.</p>
+<p><strong>The Research Desk</strong></p>
+
+{% assign image_index = 2 %}
+{% include responsive-images.html type='from post'  %}
+
+<p>For years, OCCRP researchers have provided critical information to journalists using an earlier version of the Dashboard, helping them work on stories that have won more than a dozen international awards, led to indictments, arrests, and seizures, forced the resignation of heads of state, and exposed the activities of organized crime.</p>
+<p>The Research Desk concept grew out of a “Journalism that Matters” workshop at MIT which brought together journalists and librarians to brainstorm on tools.</p>
+<p>Headed by the award-winning Sarajevo team of OCCRP researchers Miranda Patrucić and Lejla Čamdzić, the Dashboard will now be rolled out to locations around the world with local teams proficient in a dozen language.</p>
+<p>The OCCRP-managed Research Desk currently features four partner centers - the African Network of Centers for Investigative Reporting (ANCIR), the Arab Reporters for Investigative Journalism (ARIJ), the International Center for Journalists, and Connectas in Colombia.</p>
+<p><strong>The Database</strong></p>
+<p>The Dashboard's collection of data is a lifesaver for reporters looking for that one document that brings their story together, or it can serve as the jumping-off point for a groundbreaking new project. It consists of an extensive crowd-sourced database, put together by dozens of reporters and civic hackers, and more than 400 online databases in 120 jurisdictions, including vast numbers of company registration records and other related public records.</p>
+<p>OCCRP technology coordinator Dan O'Huiginn attended a preview event for the Dashboard last week. O'Huiginn, who has worked on the Dashboard for nearly a year, said," One journalist from Botswana told me after the presentation that he had used the Investigative Dashboard to find information he had been looking for four years."</p>
+<p><strong>The Roll Out</strong></p>
+<p>The first iteration of the ID website, launched in 2010, shared detailed methodologies, resources, and links for journalists to track money, shareholders, and company ownership across international borders. It also offered video tutorials and other tools to help journalists navigate rapidly evolving data sources.</p>
+<p>The new Dashboard was previewed on October 13 at the 2013 <a href="http://gijc2013.org/2013/10/08/new-investigative-dashboard-debuts-in-rio/" target="_blank">Global Investigative Journalism Conference</a> in Rio de Janeiro where projects utilizing the older Dashboard netted several awards and nominations. Nearly 40 clients signed up for the service at the conference, representing a huge geographical range: Kenya, China, Tajikistan, Chile, Italy, Norway, Peru, Canada, UK, Latvia, Brazil, USA, France, Ukraine, Turkey, and Germany, making the clientele of the Dashboard as global as the services it provides.</p>
+<p>On October 22, at the <a href="http://www.google.com/ideas/projects/investigative-dashboard/" target="_blank">Google Ideas Summit</a> in New York, OCCRP staff demonstrated the new Dashboard’s improved interface, better software compatibility, and a plethora of new features.</p>
+<p>Available free of charge for qualified freelancers and reporters in the developing world, the Dashboard will allow journalists access to crucial documents and a professional staff to aid in sifting through them. The Dashboard will remain free in the developing world as it grows in scope, in order to encourage the advancement of journalism in critical regions.</p>
+<p>Reporters are invited to experience the <a href="http://investigativedashboard.org/" target="_blank">Investigative Dashboard</a> online today to look for that missing link in a project, the connection with a native-speaking researcher, or the document that blows an investigation wide open.</p>
+<p><iframe src="https://www.youtube.com/embed/VYUBYZMEF40?rel=0&amp;fs=1&amp;wmode=transparent" width="400" height="300" frameborder="0" allowfullscreen title="JoomlaWorks AllVideos Player"></iframe></p>
