@@ -2,7 +2,8 @@
 {% include header.html %}
 
 <main id="main">
-  {% include article.html %}
+  {% assign post = page %}
+  {% include article.html klass = 'single' %}
   
   <section id="related-documents">
     <h3>Related documents</h3>

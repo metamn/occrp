@@ -1,36 +1,48 @@
-<article class="{{ klass }}">
+<article class="{{ include.klass }}">
+  
+  {% if include.klass == 'single' %}
+    <h1>
+      <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </h1>
+  {% endif %} 
+
   {% assign image_index = 0 %}
   {% include responsive-images.html type='from post'  %}
   
-  <h1>
-    <a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a>
-  </h1>
+  {% if include.klass != 'single' %}
+    <h1>
+      <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </h1>
+  {% endif %} 
+ 
   
   <div id="excerpt">
-    {{ page.excerpt }}
+    {{ post.excerpt }}
   </div>
   
   <nav id="meta">
     <ul>
       <li id="category">
-        <a href="{{ site.url }}/{{ page.categories.first }}" title="{{ page.categories.first | capitalize }}">{{ page.categories.first | capitalize }}</a>
+        <a href="{{ site.url }}/{{ post.categories.first }}" title="{{ post.categories.first | capitalize }}">{{ post.categories.first | capitalize }}</a>
       </li>
       
       <li id="date">
-        {{ page.date | date: "%-d %B %Y" }}
+        {{ post.date | date: "%-d %B %Y" }}
       </li>
       
       <li id="authors">
         <ul>
-          {% for author in page.authors %}
-            <li>{{ author.url }}</li>
+          {% for author in post.authors %}
+            <li>{{ author.name }}</li>
           {% endfor %}
         </ul>
       </li>
     </ul>
   </nav>
   
-  <div id="content">
-    {{ content }}
-  </div>
+  {% if include.klass == 'single' %}
+    <div id="content">
+      {{ content }}
+    </div>
+  {% endif %} 
 </article>

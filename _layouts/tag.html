@@ -3,6 +3,22 @@
 
 <main id="main">
   {{ content }}
+  
+  <section id="most-read">
+    <h3>Most read in this category</h3>
+    
+    {% for post in site.categories.investigations limit:5 %}
+      {% include article.html klass = 'thumb' %}
+    {% endfor %}
+  </section>
+  
+  <section id="most-recent">
+    <h3>Most recent</h3>
+    
+    {% for post in site.categories.daily limit:5 %}
+      {% include article.html klass = 'thumb' %}
+    {% endfor %}
+  </section>
 </main>
 
 {% include footer.html %}

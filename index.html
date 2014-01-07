@@ -11,7 +11,7 @@ class: frontpage
     <h3>Slideshow</h3>
     
     {% for post in site.categories.slider limit:1 offset:0 %}
-      {% include article.html %}
+      {% include article.html klass = 'thumb' %}
     {% endfor %}
     
     <nav>
@@ -34,7 +34,7 @@ class: frontpage
     </h3>
     
     {% for post in site.categories.daily %}
-      {% include article.html %}
+      {% include article.html klass = 'thumb' %}
     {% endfor %}
   </section>
 </section>
@@ -48,12 +48,12 @@ class: frontpage
 
   
   {% for post in site.categories.investigations %}
-    {% include article.html %}
+    {% include article.html klass = 'thumb' %}
   {% endfor %}
   
 
   {% for post in site.categories.daily limit:2 %}
-    {% include article.html %}
+    {% include article.html klass = 'thumb' %}
   {% endfor %}
   
 </section>
@@ -65,7 +65,7 @@ class: frontpage
   </h3>
   
   {% for post in site.categories.projects limit:5 offset:0 %}
-    {% include article.html %}
+    {% include article.html klass = 'thumb' %}
   {% endfor %}
 </section>
 
