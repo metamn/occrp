@@ -19,54 +19,6 @@ html {
       
       #header {
         @include header;
-        
-        &.sticky {
-          position: fixed;
-          @include container;
-          margin: 0;
-          padding-top: $pad;
-          top: 0;
-          height: $pad*3;
-          
-          background: $background;
-          z-index: 1;
-          
-          nav {
-            margin-top: 0;
-          }
-          
-          #logo {
-            border-bottom: $border-thin;
-            border-color: $color;
-            height: $pad + $pad/2 + $pad/8;
-          }
-          
-          #logo figure {
-            img {
-              width: 0;
-            }
-            
-            figcaption {
-              display: block;
-              @include text-headings;
-              font-weight: 700;
-              @include link($highlight);
-              position: relative;
-              top: -$pad/2 - $pad/8;
-            }
-          }
-          
-          #tags {
-            display: none;
-          }
-        }
-      }
-      
-      main {
-        &.sticky {
-          position: relative;
-          top: $pad*6;
-        }
       }
       
       #footer {
@@ -111,7 +63,53 @@ html {
           }
         }
       }
-    }
-    
+    }   
   }
 }
+
+
+/* Sticky header
+*/
+html {
+  body.sticky {
+    .container {
+      #header {
+        position: fixed;
+        @include container;
+        margin: 0;
+        padding-top: $pad;
+        top: 0;
+        height: $pad*3;
+        
+        background: $background;
+        z-index: 1;
+        
+        nav {
+          margin-top: 0;
+        }
+        
+        #logo {
+          border-bottom: $border-thin;
+          border-color: $color;
+          height: $pad + $pad/2 + $pad/8;
+        }
+        
+        #logo figure img {
+          max-width: 10em;
+          position: relative;
+          top: -$pad/4;
+        }
+        
+        #tags {
+          display: none;
+        }
+      }
+      
+      main, #footer {
+        position: relative;
+        top: $pad*6;
+      }
+    }
+  }
+}
+

@@ -208,15 +208,6 @@ html body .container #header nav#tags a:hover { color: white; }
   html body .container #header.active nav h3 { font-weight: bold; }
   html body .container #header.active nav ul { display: block; }
   html body .container #header.active nav ul li { display: block; margin-right: none; float: none; } }
-html body .container #header.sticky { position: fixed; width: 90%; margin: 0 5%; margin: 0; padding-top: 1.25em; top: 0; height: 3.75em; background: white; z-index: 1; }
-html body .container #header.sticky nav { margin-top: 0; }
-html body .container #header.sticky #logo { border-bottom: 1px solid #f1f1f1; border-color: #231f20; height: 2.03125em; }
-html body .container #header.sticky #logo figure img { width: 0; }
-html body .container #header.sticky #logo figure figcaption { display: block; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; line-height: 1.25; font-weight: 700; position: relative; top: -0.78125em; }
-html body .container #header.sticky #logo figure figcaption a { color: #982022; text-decoration: none; }
-html body .container #header.sticky #logo figure figcaption a:hover { color: #982022; }
-html body .container #header.sticky #tags { display: none; }
-html body .container main.sticky { position: relative; top: 7.5em; }
 html body .container #footer { margin: 1.25em 0; padding: 1.25em 0; border-top: 0.3125em solid; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
 html body .container #footer ul li { display: inline-block; float: left; margin-right: 1.25em; }
 html body .container #footer ul li:last-of-type { margin-right: 0; }
@@ -390,6 +381,15 @@ html body.frontpage .container main #most-read aside article:before a { color: w
 html body.frontpage .container main #most-read aside article:before a:hover { color: white; }
 html body.frontpage .container main #most-read aside:last-of-type article { height: auto; }
 html body.frontpage .container main #most-read aside:last-of-type article:before { display: none; }
+
+/* Sticky header
+*/
+html body.sticky .container #header { position: fixed; width: 90%; margin: 0 5%; margin: 0; padding-top: 1.25em; top: 0; height: 3.75em; background: white; z-index: 1; }
+html body.sticky .container #header nav { margin-top: 0; }
+html body.sticky .container #header #logo { border-bottom: 1px solid #f1f1f1; border-color: #231f20; height: 2.03125em; }
+html body.sticky .container #header #logo figure img { max-width: 10em; position: relative; top: -0.3125em; }
+html body.sticky .container #header #tags { display: none; }
+html body.sticky .container main, html body.sticky .container #footer { position: relative; top: 7.5em; }
 
 html body.frontpage .container main article #date { font-size: small; color: #74676a; }
 html body.frontpage .container main article #excerpt { line-height: 1.5; color: #4c4345; }

@@ -7,11 +7,9 @@ $(document).ready(function() {
 
   function scroll () {
     if ($(window).scrollTop() >= origOffsetY) {
-      $('#header').addClass('sticky');
-      $('main').addClass('sticky');
+      $('body').addClass('sticky');
     } else {
-      $('#header').removeClass('sticky');
-      $('main').removeClass('sticky');
+      $('body').removeClass('sticky');
     } 
   }
   document.onscroll = scroll;
