@@ -190,6 +190,7 @@ html body .container #header nav ul li:last-of-type { margin-right: 0; }
 html body .container #header nav ul li.active a { color: white; background: #982022; padding: 0.625em; }
 html body .container #header nav ul li.active a a { color: white; text-decoration: none; }
 html body .container #header nav ul li.active a a:hover { color: white; }
+html body .container #header nav ul li#english { display: none; }
 html body .container #header nav#tags { width: 100%; max-width: 100%; float: left; color: white; background: #231f20; padding: 0.625em; border: none; margin-top: 1.25em; }
 html body .container #header nav#tags a { color: white; text-decoration: none; }
 html body .container #header nav#tags a:hover { color: white; }
@@ -211,8 +212,10 @@ html body .container #header nav#tags a:hover { color: white; }
 html body .container #footer { margin: 1.25em 0; padding: 1.25em 0; border-top: 0.3125em solid; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
 html body .container #footer ul li { display: inline-block; float: left; margin-right: 1.25em; }
 html body .container #footer ul li:last-of-type { margin-right: 0; }
-html body .container #footer ul li#social { float: right; }
-html body .container #footer ul li#social img { max-width: 24px; max-height: 24px; }
+html body .container #footer ul li#usaid { position: relative; top: -0.625em; }
+html body .container #footer ul li:last-of-type { float: right; }
+html body .container #footer ul li p + ul { margin-top: 1.25em; }
+html body .container #footer ul li#social { position: relative; top: -2.8125em; }
 html body.frontpage .container main #intro #slider { width: 64%; margin-right: 3%; float: left; padding: 1.25em; width: calc(63% - 2.5em); background: #f1f1f1; border: 1px solid #f1f1f1; }
 html body.frontpage .container main #intro #slider article { margin-bottom: 3%; width: 100%; max-width: 100%; float: left; margin-bottom: 0; }
 html body.frontpage .container main #intro #slider article #meta { margin-top: 0.625em; }

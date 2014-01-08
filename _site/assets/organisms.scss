@@ -308,6 +308,10 @@
             @include invert($background, $highlight);
           }
         }
+        
+        &#english {
+          display: none;
+        }
       }
     }
     
@@ -396,12 +400,25 @@
     @include list-inline;
     
     li {
-      &#social {
+      &#usaid {
+        position: relative;
+        top: -$pad/2;
+      }
+    
+      &:last-of-type {
         float: right;
+      }
+      
+      p + ul {
+        margin-top: $pad;
+      }
+      
+      &#social {
+        position: relative;
+        top: -$pad*2 - $pad/4;
         
-        img {
-          max-width: 24px;
-          max-height: 24px;
+        p {
+          
         }
       }
     }
