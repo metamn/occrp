@@ -59,7 +59,7 @@ html {
             @include products;
           }
           
-          #projects {
+          #projects, #videos {
             @include projects;
           }
           

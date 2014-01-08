@@ -80,6 +80,19 @@ class: frontpage
   {% endfor %}
 </section>
 
+
+<section id="videos">
+  <h3>
+    <a href="{{ site.url }}/videos" title="Videos">Videos</a>
+  </h3>
+  
+  {% for post in site.categories.projects limit:6 offset:5 %}
+    {% include article.html %}
+  {% endfor %}
+</section>
+
+
+
 <section id="most-read">
   <h3>
     Most Read

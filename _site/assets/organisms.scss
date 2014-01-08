@@ -228,7 +228,7 @@
     @include container;
     
     border-bottom: $border-thin;
-    margin: 0 0 $pad*2;
+    margin: 0 0 $pad*2 !important;
     padding-top: $pad;
     top: 0;
     height: $pad*2;

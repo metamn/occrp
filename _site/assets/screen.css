@@ -312,37 +312,37 @@ html body.frontpage .container main #products article #meta { display: none; }
   html body.frontpage .container main #products article:nth-of-type(9) { margin-right: 2.5%; }
   html body.frontpage .container main #products article:nth-of-type(10) { margin-right: 0; } }
 html body.frontpage .container main #products article figure { max-height: 209px; overflow: hidden; }
-html body.frontpage .container main #projects h3 { display: block; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
-html body.frontpage .container main #projects h3 a { color: #982022; text-decoration: none; }
-html body.frontpage .container main #projects h3 a:hover { color: #982022; }
-html body.frontpage .container main #projects article { margin-bottom: 3%; }
-html body.frontpage .container main #projects article figcaption { display: none; }
-html body.frontpage .container main #projects article #excerpt { display: none; }
-html body.frontpage .container main #projects article #body { display: none; }
-html body.frontpage .container main #projects article #meta #category { display: none; }
-html body.frontpage .container main #projects article #meta #date { display: none; }
-html body.frontpage .container main #projects article #meta { display: none; }
-@media only screen and (max-width: 48em) { html body.frontpage .container main #projects article { width: 100%; margin-right: 0; float: left; } }
-@media only screen and (min-width: 48em) and (max-width: 79.999em) { html body.frontpage .container main #projects article { width: 45%; margin-right: 10%; float: left; }
-  html body.frontpage .container main #projects article:nth-of-type(2) { margin-right: 0; }
-  html body.frontpage .container main #projects article:nth-of-type(3) { margin-right: 10%; }
-  html body.frontpage .container main #projects article:nth-of-type(4) { margin-right: 0; }
-  html body.frontpage .container main #projects article:nth-of-type(5) { margin-right: 10%; }
-  html body.frontpage .container main #projects article:nth-of-type(6) { margin-right: 0; }
-  html body.frontpage .container main #projects article:nth-of-type(7) { margin-right: 10%; }
-  html body.frontpage .container main #projects article:nth-of-type(8) { margin-right: 0; }
-  html body.frontpage .container main #projects article:nth-of-type(9) { margin-right: 10%; }
-  html body.frontpage .container main #projects article:nth-of-type(10) { margin-right: 0; } }
-@media only screen and (min-width: 80em) { html body.frontpage .container main #projects article { width: 15%; margin-right: 2%; float: left; }
-  html body.frontpage .container main #projects article:nth-of-type(2) { margin-right: 2%; }
-  html body.frontpage .container main #projects article:nth-of-type(3) { margin-right: 2%; }
-  html body.frontpage .container main #projects article:nth-of-type(4) { margin-right: 2%; }
-  html body.frontpage .container main #projects article:nth-of-type(5) { margin-right: 2%; }
-  html body.frontpage .container main #projects article:nth-of-type(6) { margin-right: 0; }
-  html body.frontpage .container main #projects article:nth-of-type(7) { margin-right: 2%; }
-  html body.frontpage .container main #projects article:nth-of-type(8) { margin-right: 2%; }
-  html body.frontpage .container main #projects article:nth-of-type(9) { margin-right: 2%; }
-  html body.frontpage .container main #projects article:nth-of-type(10) { margin-right: 2%; } }
+html body.frontpage .container main #projects h3, html body.frontpage .container main #videos h3 { display: block; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
+html body.frontpage .container main #projects h3 a, html body.frontpage .container main #videos h3 a { color: #982022; text-decoration: none; }
+html body.frontpage .container main #projects h3 a:hover, html body.frontpage .container main #videos h3 a:hover { color: #982022; }
+html body.frontpage .container main #projects article, html body.frontpage .container main #videos article { margin-bottom: 3%; }
+html body.frontpage .container main #projects article figcaption, html body.frontpage .container main #videos article figcaption { display: none; }
+html body.frontpage .container main #projects article #excerpt, html body.frontpage .container main #videos article #excerpt { display: none; }
+html body.frontpage .container main #projects article #body, html body.frontpage .container main #videos article #body { display: none; }
+html body.frontpage .container main #projects article #meta #category, html body.frontpage .container main #videos article #meta #category { display: none; }
+html body.frontpage .container main #projects article #meta #date, html body.frontpage .container main #videos article #meta #date { display: none; }
+html body.frontpage .container main #projects article #meta, html body.frontpage .container main #videos article #meta { display: none; }
+@media only screen and (max-width: 48em) { html body.frontpage .container main #projects article, html body.frontpage .container main #videos article { width: 100%; margin-right: 0; float: left; } }
+@media only screen and (min-width: 48em) and (max-width: 79.999em) { html body.frontpage .container main #projects article, html body.frontpage .container main #videos article { width: 45%; margin-right: 10%; float: left; }
+  html body.frontpage .container main #projects article:nth-of-type(2), html body.frontpage .container main #videos article:nth-of-type(2) { margin-right: 0; }
+  html body.frontpage .container main #projects article:nth-of-type(3), html body.frontpage .container main #videos article:nth-of-type(3) { margin-right: 10%; }
+  html body.frontpage .container main #projects article:nth-of-type(4), html body.frontpage .container main #videos article:nth-of-type(4) { margin-right: 0; }
+  html body.frontpage .container main #projects article:nth-of-type(5), html body.frontpage .container main #videos article:nth-of-type(5) { margin-right: 10%; }
+  html body.frontpage .container main #projects article:nth-of-type(6), html body.frontpage .container main #videos article:nth-of-type(6) { margin-right: 0; }
+  html body.frontpage .container main #projects article:nth-of-type(7), html body.frontpage .container main #videos article:nth-of-type(7) { margin-right: 10%; }
+  html body.frontpage .container main #projects article:nth-of-type(8), html body.frontpage .container main #videos article:nth-of-type(8) { margin-right: 0; }
+  html body.frontpage .container main #projects article:nth-of-type(9), html body.frontpage .container main #videos article:nth-of-type(9) { margin-right: 10%; }
+  html body.frontpage .container main #projects article:nth-of-type(10), html body.frontpage .container main #videos article:nth-of-type(10) { margin-right: 0; } }
+@media only screen and (min-width: 80em) { html body.frontpage .container main #projects article, html body.frontpage .container main #videos article { width: 15%; margin-right: 2%; float: left; }
+  html body.frontpage .container main #projects article:nth-of-type(2), html body.frontpage .container main #videos article:nth-of-type(2) { margin-right: 2%; }
+  html body.frontpage .container main #projects article:nth-of-type(3), html body.frontpage .container main #videos article:nth-of-type(3) { margin-right: 2%; }
+  html body.frontpage .container main #projects article:nth-of-type(4), html body.frontpage .container main #videos article:nth-of-type(4) { margin-right: 2%; }
+  html body.frontpage .container main #projects article:nth-of-type(5), html body.frontpage .container main #videos article:nth-of-type(5) { margin-right: 2%; }
+  html body.frontpage .container main #projects article:nth-of-type(6), html body.frontpage .container main #videos article:nth-of-type(6) { margin-right: 0; }
+  html body.frontpage .container main #projects article:nth-of-type(7), html body.frontpage .container main #videos article:nth-of-type(7) { margin-right: 2%; }
+  html body.frontpage .container main #projects article:nth-of-type(8), html body.frontpage .container main #videos article:nth-of-type(8) { margin-right: 2%; }
+  html body.frontpage .container main #projects article:nth-of-type(9), html body.frontpage .container main #videos article:nth-of-type(9) { margin-right: 2%; }
+  html body.frontpage .container main #projects article:nth-of-type(10), html body.frontpage .container main #videos article:nth-of-type(10) { margin-right: 2%; } }
 html body.frontpage .container main #most-read aside { counter-reset: counter; }
 @media only screen and (max-width: 48em) { html body.frontpage .container main #most-read aside { width: 100%; margin-right: 0; float: left; } }
 @media only screen and (min-width: 48em) and (max-width: 79.999em) { html body.frontpage .container main #most-read aside { width: 45%; margin-right: 10%; float: left; }
@@ -385,7 +385,7 @@ html body.frontpage .container main #most-read aside:last-of-type article:before
 
 /* Sticky header
 */
-html body.sticky .container #header { position: fixed; width: 90%; margin: 0 5%; border-bottom: 1px solid; margin: 0 0 2.5em; padding-top: 1.25em; top: 0; height: 2.5em; background: white; z-index: 1; }
+html body.sticky .container #header { position: fixed; width: 90%; margin: 0 5%; border-bottom: 1px solid; margin: 0 0 2.5em !important; padding-top: 1.25em; top: 0; height: 2.5em; background: white; z-index: 1; }
 @media only screen and (min-width: 90.001em) { html body.sticky .container #header { width: 70%; margin: 0 15%; } }
 html body.sticky .container #header nav { margin-top: 0; border: none; }
 html body.sticky .container #header #logo { height: 2.03125em; }
