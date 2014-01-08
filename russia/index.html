@@ -4,18 +4,14 @@ title: Russia
 class: tag
 ---
 
-<section id="investigations">
-  <h3>Investigations</h3>
-  
-  {% for post in site.categories.investigations %}
-    {% include article.html %}
-  {% endfor %}
-  
-  {% for post in site.categories.slider %}
-    {% include article.html %}
-  {% endfor %}
-  
-  {% for post in site.categories.daily %}
-    {% include article.html %}
-  {% endfor %}
-</section>
+{% for post in site.categories.investigations %}
+  {% include article.html %}
+{% endfor %}
+
+{% for post in site.categories.slider %}
+  {% include article.html %}
+{% endfor %}
+
+{% for post in site.categories.daily %}
+  {% include article.html %}
+{% endfor %}

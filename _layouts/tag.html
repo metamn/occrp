@@ -2,23 +2,40 @@
 {% include header.html %}
 
 <main id="main">
-  {{ content }}
-  
-  <section id="most-read">
-    <h3>Most read in this category</h3>
-    
-    {% for post in site.categories.investigations limit:5 %}
-      {% include article.html klass = 'thumb' %}
-    {% endfor %}
+  <section id="banner">
+    <img src="http://placehold.it/1920x200" />
   </section>
   
-  <section id="most-recent">
-    <h3>Most recent</h3>
-    
-    {% for post in site.categories.daily limit:5 %}
-      {% include article.html klass = 'thumb' %}
-    {% endfor %}
+  <section id="articles">
+    <h1>{{ page.title }}</h1>
+    {{ content }}
   </section>
+  
+  <aside>
+    <section id="most-read">
+      <h3>Most read in this category</h3>
+      
+      {% for post in site.categories.investigations limit:5 %}
+        {% include article.html klass = 'thumb' %}
+      {% endfor %}
+    </section>
+    
+    <section id="most-recent">
+      <h3>Most recent</h3>
+      
+      {% for post in site.categories.daily limit:5 %}
+        {% include article.html klass = 'thumb' %}
+      {% endfor %}
+    </section>
+    
+    <section id="projects">
+      <h3>Projects</h3>
+      
+      {% for post in site.categories.projects limit:5 offset:0 %}
+        {% include article.html klass = 'thumb' %}
+      {% endfor %}
+    </section>
+  </aside>
 </main>
 
 {% include footer.html %}
