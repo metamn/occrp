@@ -169,6 +169,7 @@ html body a { color: #231f20; text-decoration: none; }
 html body a:hover { color: #982022; }
 html body img { width: auto; height: auto; max-width: 100%; }
 html body .container { width: 90%; margin: 0 5%; }
+@media only screen and (min-width: 90.001em) { html body .container { width: 70%; margin: 0 15%; } }
 html body .container #header, html body .container main, html body .container section, html body .container nav, html body .container #footer { width: 100%; max-width: 100%; float: left; }
 html body .container #header > h3, html body .container main > h3, html body .container section > h3, html body .container nav > h3, html body .container #footer > h3 { display: none; }
 html body .container #header, html body .container main, html body .container footer { margin: 1.25em 0 0; }
@@ -385,6 +386,7 @@ html body.frontpage .container main #most-read aside:last-of-type article:before
 /* Sticky header
 */
 html body.sticky .container #header { position: fixed; width: 90%; margin: 0 5%; border-bottom: 1px solid; margin: 0 0 2.5em; padding-top: 1.25em; top: 0; height: 2.5em; background: white; z-index: 1; }
+@media only screen and (min-width: 90.001em) { html body.sticky .container #header { width: 70%; margin: 0 15%; } }
 html body.sticky .container #header nav { margin-top: 0; border: none; }
 html body.sticky .container #header #logo { height: 2.03125em; }
 html body.sticky .container #header #logo figure img { max-width: 10em; position: relative; top: -0.3125em; }

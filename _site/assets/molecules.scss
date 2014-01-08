@@ -18,6 +18,11 @@
 @mixin container {
   width: $container-width;
   margin: 0 $container-margin;
+  
+  @include above-large-screen {
+    width: $large-screen-container-width;
+    margin: 0 $large-screen-container-margin;
+  }
 }
 
 

@@ -67,6 +67,12 @@ $breakpoint-large-screen: 90em !default; /* 1440px */
 	}
 }
 
+@mixin above-large-screen {
+	@media only screen and (min-width: $breakpoint-large-screen + 0.001) {
+		@content;
+	}
+}
+
 
 
 
@@ -93,6 +99,8 @@ $body-text-width: 43.75em; /* 700px / 16px */
 $container-width: 90%;
 $container-margin: 5%;
 
+$large-screen-container-width: 70%;
+$large-screen-container-margin: 15%;
 
 /* The golden ratio
 */
