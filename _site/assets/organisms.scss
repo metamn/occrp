@@ -279,18 +279,17 @@
 /* The header
 */
 @mixin header {
-  margin: $pad 0;
-  
   hgroup {
-    @include col(33%);
+    @include responsive-grid(3);
     @include logo;
   }
   
   nav {
-    @include col(33%);
+    @include responsive-grid(3);
+    
     @include text-navigation;
-    border-bottom: $border-thin;
-    border-color: $color;
+    @include border-thin($color);
+    
     padding: $pad/2 0;
     margin-top: $pad*2;
     
@@ -301,12 +300,11 @@
     ul {
       @include list-inline;
       @include list-centered;
+      @include list-menu;
       
       li {
-        &.active {
-          a {
-            @include invert($background, $highlight);
-          }
+        &#russian, &#english {
+          height: $pad; /* Because of the icon */
         }
         
         &#english {
@@ -315,12 +313,13 @@
       }
     }
     
-    
     &#tags {
       @include block;
+      margin-top: $pad/2;
       @include invert;
-      border: none;
-      margin-top: $pad;
+      /* To fit the hover on tags we add a border-top */
+      border-top: $border-thin;
+      border-color: $color;
     }
   }
   
@@ -391,7 +390,6 @@
 /* Footer
 */
 @mixin footer {
-  margin: $pad 0;
   padding: $pad 0;
   border-top: $border;
   @include text-navigation;
@@ -409,22 +407,18 @@
         float: right;
       }
       
-      p + ul {
-        margin-top: $pad;
-      }
-      
       &#social {
         position: relative;
         top: -$pad*2 - $pad/4;
         
         p {
-          
+          font-weight: bold;
+          margin-bottom: $pad;
         }
+        
       }
     }
   }
-  
-  
 }
 
 

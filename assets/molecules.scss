@@ -61,8 +61,6 @@
 }
 
 
-
-
 /* Hide a section title
 */
 @mixin hide-title {
@@ -169,7 +167,7 @@
 
 /* Displays an <ul> list inline
 */
-@mixin list-inline($margin-right: $pad) {
+@mixin list-inline($margin-right: $pad/2) {
   li {
     display: inline-block;
     float: left;
@@ -191,6 +189,7 @@
   }
 }
 
+
 /* Centers an inline list
 */
 @mixin list-centered {
@@ -199,6 +198,23 @@
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+/* Highlights an active item in a list
+*/
+
+@mixin list-menu {
+  li {
+    a {
+      padding: $pad/2 $pad/4;
+    }
+    
+    &.active, &:hover {
+      a {
+        @include invert($background, $highlight);
+      }
+    }
+  }
 }
 
 
@@ -319,10 +335,9 @@ h1 {
 */
 
 
-@mixin invert($c: $background, $b: $color, $p: $pad/2) {
+@mixin invert($c: $background, $b: $color) {
   color: $c;
   background: $b;
-  padding: $pad/2;
   
   @include link($c, $c);
 }

@@ -187,10 +187,16 @@ $yellow: #A5A333; /* From Kuler, based on $highlight */
 $grey: #999;
 
 
+
 /* Decorations
 --------------------------------------------------------------------------------
 */
 
 $border: $pad/4 solid;
-$border-thin: 1px solid $light-grey;
+$border-thin: 1px solid;
+
+@mixin border-thin($c: $light-grey) {
+  border-bottom: $border-thin;
+  color: $c;
+}
 
