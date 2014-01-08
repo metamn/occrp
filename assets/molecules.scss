@@ -12,6 +12,24 @@
 --------------------------------------------------------------------------------
 */
 
+/* The width of the content
+  - the content is centered with automatic left and right margins
+*/
+@mixin container {
+  width: $container-width;
+  margin: 0 $container-margin;
+}
+
+
+/* Hide a section title
+*/
+@mixin hide-title {
+  > h3 {
+    display: none;
+  }
+}
+
+
 
 /* Flexible grid
   - all items are aligned left with an uniform margin
@@ -30,44 +48,7 @@
 }
 
 
-/* Golden ratio
-  - applies to a container which contains at least two sub-containers of any type
-  - $first and $second params are the child-index of the two sub-containers to be in golden-ratio
-  - $margin is the right margin of the first element in the golden ratios
-  - example: @include golden-ratio(2, 3) makes the 2nd and 3rd sub-container to be in golden-ratio
-*/
-@mixin golden-ratio($first: 1, $second: 2, $margin: 0) {
-  > * {
-    &:nth-child(#{$first}) {
-      float: left;
-      width: $major - $margin;
-      margin-right: $margin;
-    }
-    
-    &:nth-child(#{$second}) {
-      float: left;
-      width: $minor;
-    }
-  }
-}
 
-
-/* The width of the content
-  - the content is centered with automatic left and right margins
-*/
-@mixin container {
-  width: $container-width;
-  margin: 0 $container-margin;
-}
-
-
-/* Hide a section title
-*/
-@mixin hide-title {
-  > h3 {
-    display: none;
-  }
-}
 
 /* Adds padding around a grid element
   - the width of the element must be recalculated
@@ -200,13 +181,13 @@
   width: fit-content;
 }
 
-/* Highlights an active item in a list
+/* Highlights an active item in a list / menu
 */
-
-@mixin list-menu {
+@mixin list-menu($display: inline, $top : $pad/2, $left: $pad/4)  {
   li {
     a {
-      padding: $pad/2 $pad/4;
+      padding: $top $left;
+      display: $display;
     }
     
     &.active, &:hover {
@@ -229,8 +210,7 @@
 /* Text styles
 */
 
-/* General settings for headings
-*/
+
 @mixin text-headings {
   @include font-headings;
   line-height: $line-height-headings;
@@ -255,9 +235,6 @@
 }
 
 
-
-/* Long text font settings
-*/
 @mixin text-body {
   @include font-body;
   line-height: $line-height-body-text;
@@ -265,8 +242,7 @@
   h1, h2, h3 { padding:1.51785em 0; }
 }
 
-/* Mostly for links to other sections
-*/
+
 @mixin text-navigation {
   @include font-body;
   @include uppercase;
@@ -276,6 +252,13 @@
 
 @mixin text-heading-large {
   @include text-headings;
+}
+
+
+@mixin section-title {
+  display: block;
+  @include text-navigation;
+  @include link($highlight);
 }
 
 
@@ -317,16 +300,6 @@ h1 {
     max-width: 100%;
   }
 }
-
-
-@mixin big-background-image($height: 100%) {
-  background-attachment: fixed;
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: $height;
-}
-
 
 
 

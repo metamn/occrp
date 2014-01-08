@@ -11,19 +11,6 @@
 @mixin article($category, $date, $title, $figure: null, $figcaption: null, $excerpt: null, $body: null) {
   margin-bottom: $flexible-grid-margin;
   
-  #meta {
-    margin-top: $pad/2;
-    
-    ul {
-      @include list-inline($pad/2);
-    }
-  }
-  
-  h1 {
-    @include text-article-title;
-    padding: $pad/4 0;
-  }
-  
   
   @if ($title == null) {
     h1 {
@@ -83,17 +70,14 @@
     @include responsive-grid(3);
     
     h3 {
-      display: block;
-      @include text-navigation;
-      @include link($highlight);
+      @include section-title;
       margin-bottom: $pad/2;
     }
     
     counter-reset: counter;
     article {
       @include article(null, null, title, null);
-      border-bottom: $border-thin;
-      height: $pad*2 + $pad/2;
+      @include border-thin;
     
       h1 {
         font-size: medium;
@@ -128,9 +112,7 @@
 */
 @mixin projects {
   h3 {
-    display: block;
-    @include text-navigation;
-    @include link($highlight);
+    @include section-title;
   }
   
   article {
@@ -162,9 +144,7 @@
 */
 @mixin investigations {
   h3 {
-    display: block;
-    @include text-navigation;
-    @include link($highlight);
+    @include section-title;
   }
   
   article {
@@ -190,7 +170,7 @@
   
   article {
     @include article(null, null, title);
-    border-bottom: $border-thin;
+    @include border-thin;
     
     h1 {
       font-size: medium;
@@ -209,7 +189,6 @@
   @include col(64%, 3%);
   @include padding(63%);
   background: $light-grey;
-  border: $border-thin;
   
   article {
     @include article(null, null, title, figure, null, excerpt);
@@ -217,11 +196,7 @@
     margin-bottom: 0;
     
     figure {
-      @include col(46%, 3%);
-      
-      @include below-normal-screen {
-        @include block;
-      }
+      @include col(47%, 4%);
     }
     
     #excerpt {
@@ -235,45 +210,59 @@
     
     ol {
       @include list-inline;
+      @include list-menu(block, $pad/2, $pad/2 + $pad/4);
       
       li {
-        padding: $pad/4 $pad/2;
-        cursor: pointer;
-        border: 1px solid $background;
-        background: $background;
-        
-        &.active, &:hover {
-          @include invert($background, $highlight);
-          padding: $pad/4 $pad/2;
-          border: 1px solid $highlight;
-        }
+        @include invert($color, $background);
       }
     }
   }
-  
-  @include below-and-tablet {
-    @include block;
+}
+
+
+/* Teh fixed header
+*/
+@mixin fixed-header {
+  #header {
+    position: fixed;
+    @include container;
+    
+    border-bottom: $border-thin;
+    margin: 0 0 $pad*2;
+    padding-top: $pad;
+    top: 0;
+    height: $pad*2;
+    
+    background: $background;
+    z-index: 1;
+    
+    nav {
+      margin-top: 0;
+      border: none;
+    }
+    
+    #logo {
+      height: $pad + $pad/2 + $pad/8;
+      
+      figure img {
+        max-width: 10em;
+        position: relative;
+        top: -$pad/4;
+      }
+    }
+    
+    #tags {
+      display: none;
+    }
+  }
+
+  main, #footer {
+    position: relative;
+    top: $pad*6;
   }
 }
 
 
-/* The menu
-*/
-@mixin menu {
-  
-}
-
-
-
-/* The logo
-*/
-@mixin logo {
-  text-align: center;
-  
-  h1, figure figcaption {
-    display: none;
-  }
-}
 
 
 /* The header
@@ -281,7 +270,11 @@
 @mixin header {
   hgroup {
     @include responsive-grid(3);
-    @include logo;
+    
+    text-align: center;
+    h1, figure figcaption {
+      display: none;
+    }
   }
   
   nav {
@@ -305,6 +298,11 @@
       li {
         &#russian, &#english {
           height: $pad; /* Because of the icon */
+          
+          img {
+            position: relative;
+            top: 1px;
+          }
         }
         
         &#english {
@@ -317,73 +315,13 @@
       @include block;
       margin-top: $pad/2;
       @include invert;
+      
       /* To fit the hover on tags we add a border-top */
       border-top: $border-thin;
       border-color: $color;
     }
   }
   
-  @include below-normal-screen {
-    border-bottom: $border-thin;
-    cursor: pointer;
-    
-    hgroup {
-      border-bottom: $border-thin;
-      padding-bottom: $pad/2;
-    }
-  
-    hgroup, nav {
-      @include block;
-    }
-    
-    nav {
-      padding: $pad/2 0;
-      
-      &:nth-of-type(1) {
-        display: none;
-      }
-      
-      &.mobile {
-        display: block;
-      }
-      
-      @include col(30%, 5%);
-      &#tags {
-        @include col(30%, 0);
-      }
-      text-align: center;
-      
-      h3 {
-        display: block;
-        font-size: small;
-        @include text-navigation;
-      }
-      
-      ul {
-        display: none;
-        margin: $pad 0;
-        
-        li {
-          margin-right: 0;
-          word-wrap: break-word;
-          margin-bottom: $pad/2;
-          @include link($blue);
-        }
-      }
-    }
-    
-    &.active {
-      nav {
-        h3 {
-          font-weight: bold;
-        }
-        ul {
-          display: block;
-          @include list-normal;
-        }
-      }
-    }
-  }
 }
 
 

@@ -13,14 +13,21 @@ html {
             @include text-article-excerpt;
             color: lighten($color, 15%);
           }
-        }
-        
-        #intro {
-          #slider {
+          
+          #meta {
+            margin-top: $pad/2;
             
+            ul {
+              @include list-inline($pad/2);
+            }
           }
           
+          h1 {
+            @include text-article-title;
+            padding: $pad/4 0;
+          }
         }
+        
       }
       
     }
