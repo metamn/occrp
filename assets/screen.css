@@ -445,16 +445,16 @@ html body.category main #articles article #meta { display: none; }
   html body.category main #articles article:nth-of-type(8) { margin-right: 0; }
   html body.category main #articles article:nth-of-type(9) { margin-right: 10%; }
   html body.category main #articles article:nth-of-type(10) { margin-right: 0; } }
-@media only screen and (min-width: 80em) { html body.category main #articles article { width: 45%; margin-right: 10%; float: left; }
-  html body.category main #articles article:nth-of-type(2) { margin-right: 0; }
-  html body.category main #articles article:nth-of-type(3) { margin-right: 10%; }
-  html body.category main #articles article:nth-of-type(4) { margin-right: 0; }
-  html body.category main #articles article:nth-of-type(5) { margin-right: 10%; }
+@media only screen and (min-width: 80em) { html body.category main #articles article { width: 30%; margin-right: 5%; float: left; }
+  html body.category main #articles article:nth-of-type(2) { margin-right: 5%; }
+  html body.category main #articles article:nth-of-type(3) { margin-right: 0; }
+  html body.category main #articles article:nth-of-type(4) { margin-right: 5%; }
+  html body.category main #articles article:nth-of-type(5) { margin-right: 5%; }
   html body.category main #articles article:nth-of-type(6) { margin-right: 0; }
-  html body.category main #articles article:nth-of-type(7) { margin-right: 10%; }
-  html body.category main #articles article:nth-of-type(8) { margin-right: 0; }
-  html body.category main #articles article:nth-of-type(9) { margin-right: 10%; }
-  html body.category main #articles article:nth-of-type(10) { margin-right: 0; } }
+  html body.category main #articles article:nth-of-type(7) { margin-right: 5%; }
+  html body.category main #articles article:nth-of-type(8) { margin-right: 5%; }
+  html body.category main #articles article:nth-of-type(9) { margin-right: 0; }
+  html body.category main #articles article:nth-of-type(10) { margin-right: 5%; } }
 html body.category main aside { width: 33%; margin-right: 0; float: left; }
 html body.category main aside section h3 { display: block; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; color: #982022; }
 html body.category main aside section h3 a { color: #982022; text-decoration: none; }

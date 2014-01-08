@@ -79,7 +79,7 @@
   
   article {
     @include article(null, null, title, figure);
-    @include responsive-grid(2);
+    @include responsive-grid(3);
   }
 }
 
