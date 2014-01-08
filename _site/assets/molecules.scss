@@ -221,22 +221,25 @@
   line-height: $line-height-headings;
 }
 
-/* Article title in thumbs
-*/
+
 @mixin text-article-title {
   @include text-headings;
 }
 
 @mixin text-article-excerpt {
-  line-height: 1.5;
+  line-height: $line-height-body-text;
 }
 
 
 @mixin text-body {
+  max-width: $body-text-width;
+  
   @include font-body;
   line-height: $line-height-body-text;
   
   h1, h2, h3 { padding:1.51785em 0; }
+  
+  
 }
 
 

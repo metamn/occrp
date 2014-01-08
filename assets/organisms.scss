@@ -11,7 +11,6 @@
 @mixin article($category, $date, $title, $figure: null, $figcaption: null, $excerpt: null, $body: null) {
   margin-bottom: $flexible-grid-margin;
   
-  
   @if ($title == null) {
     h1 {
       display: none ;
@@ -62,6 +61,41 @@
     #meta {
       display: none;
     }
+  }
+  
+  #excerpt {
+    @include text-article-excerpt;
+    color: lighten($color, 15%);
+  }
+  
+  
+  #meta {
+    margin-top: $pad/2;
+    
+    ul {
+      @include list-inline($pad/2);
+    }
+    
+    #date {
+      font-size: small;
+      color: lighten($color, 30%);
+    }
+  }
+  
+  #content {
+    @include text-body;
+  }
+}
+
+
+/* Single article
+*/
+@mixin single-article {
+  @include block;
+  @include col(64%, 3%);
+  
+  article {
+    @include article(category, date, title, figure, figcaption, null, body);
   }
 }
 
