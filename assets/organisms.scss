@@ -88,9 +88,23 @@
 */
 @mixin category-aside {
   @include col(33%, 0);
+  @include padding(33%);
+  background: $light-grey;
   
   section {
     @include article-news; 
+    margin-bottom: $pad*2;
+    
+    h3 {
+      margin-bottom: $pad/4;
+    }
+    
+    article {
+      border-color: $background;
+      h1 {
+        font-weight: normal;
+      }
+    }
     
     &#projects {
       article {
