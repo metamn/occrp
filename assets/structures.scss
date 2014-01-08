@@ -17,7 +17,7 @@ html {
         @include hide-title;
       }
       
-      #header, main, footer {
+      #header, main {
         margin: $pad 0 0; 
       }
       
@@ -27,6 +27,7 @@ html {
       }
       
       #footer {
+        margin: $pad*3 0 0;
         @include footer;
       }
     }

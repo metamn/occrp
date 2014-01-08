@@ -180,7 +180,7 @@ html body .container { width: 90%; margin: 0 5%; }
 @media only screen and (min-width: 90.001em) { html body .container { width: 70%; margin: 0 15%; } }
 html body .container #header, html body .container main, html body .container section, html body .container nav, html body .container #footer { width: 100%; max-width: 100%; float: left; }
 html body .container #header > h3, html body .container main > h3, html body .container section > h3, html body .container nav > h3, html body .container #footer > h3 { display: none; }
-html body .container #header, html body .container main, html body .container footer { margin: 1.25em 0 0; }
+html body .container #header, html body .container main { margin: 1.25em 0 0; }
 html body .container #header hgroup { text-align: center; }
 @media only screen and (max-width: 48em) { html body .container #header hgroup { width: 100%; margin-right: 0; float: left; } }
 @media only screen and (min-width: 48em) and (max-width: 79.999em) { html body .container #header hgroup { width: 45%; margin-right: 10%; float: left; }
@@ -240,15 +240,16 @@ html body .container #header nav ul li#english { display: none; }
 html body .container #header nav#tags { width: 100%; max-width: 100%; float: left; margin-top: 0.625em; color: white; background: #231f20; /* To fit the hover on tags we add a border-top */ border-top: 1px solid; border-color: #231f20; }
 html body .container #header nav#tags a { color: white; text-decoration: none; }
 html body .container #header nav#tags a:hover { color: white; }
-html body .container #footer { padding: 1.25em 0; border-top: 0.3125em solid; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
+html body .container #footer { margin: 3.75em 0 0; padding: 1.25em 0; border-top: 0.3125em solid; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
 html body .container #footer ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body .container #footer ul li:last-of-type { margin-right: 0; }
 html body .container #footer ul li#usaid { position: relative; top: -0.625em; }
-html body .container #footer ul li:last-of-type { float: right; }
-html body .container #footer ul li#social { position: relative; top: -2.8125em; }
+html body .container #footer ul li#social { float: right; position: relative; top: -2.8125em; }
 html body .container #footer ul li#social p { font-weight: bold; margin-bottom: 1.25em; text-align: right; color: white; background: #231f20; }
 html body .container #footer ul li#social p a { color: white; text-decoration: none; }
 html body .container #footer ul li#social p a:hover { color: white; }
+html body .container #footer ul li#social ul li { margin-right: 1.25em; }
+html body .container #footer ul li#social ul li:last-of-type { margin-right: 0; }
 html body.sticky .container #header { position: fixed; width: 90%; margin: 0 5%; border-bottom: 1px solid; margin: 0 0 2.5em !important; padding-top: 1.25em; top: 0; height: 2.5em; background: white; z-index: 1; }
 @media only screen and (min-width: 90.001em) { html body.sticky .container #header { width: 70%; margin: 0 15%; } }
 html body.sticky .container #header nav { margin-top: 0; border: none; }

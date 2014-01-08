@@ -434,12 +434,9 @@
         position: relative;
         top: -$pad/2;
       }
-    
-      &:last-of-type {
-        float: right;
-      }
       
       &#social {
+        float: right;
         position: relative;
         top: -$pad*2 - $pad/4;
         
@@ -450,6 +447,15 @@
           @include invert;
         }
         
+        ul {
+          li {
+            margin-right: $pad;
+            
+            &:last-of-type {
+              margin-right: 0;
+            }
+          }
+        }
       }
     }
   }
