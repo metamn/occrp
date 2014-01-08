@@ -36,6 +36,15 @@ html {
       }
     }
     
+    /* Sticky header
+    */
+    &.sticky {
+      .container {
+        @include fixed-header;
+      }
+    }
+    
+    
     /* Frontpage
     */
     &.frontpage {
@@ -68,18 +77,26 @@ html {
           }
         }
       }
-    }   
-  }
-}
-
-
-/* Sticky header
-*/
-html {
-  body.sticky {
-    .container {
-      @include fixed-header;
+    }  
+    
+    
+    
+    /* Category
+    */
+    &.category {
+      main {
+        #articles {
+          @include category-articles;
+        }
+        
+        aside {
+          @include category-aside;
+        }
+      }
     }
+   
   }
+  
 }
+
 

@@ -22,6 +22,10 @@
     figure {
       display: none;
     }
+  } @else {
+    figure {
+      display: block;
+    }
   }
   
   @if ($figcaption == null) {
@@ -60,6 +64,50 @@
     }
   }
 }
+
+
+
+/* Category articles
+*/
+@mixin category-articles {
+  @include col(64%, 3%);
+  
+  h1.title {
+    @include section-title;
+    @include h1;
+  }
+  
+  article {
+    @include article(null, null, title, figure);
+    @include responsive-grid(2);
+  }
+}
+
+
+/* Category aside
+*/
+@mixin category-aside {
+  @include col(33%, 0);
+  
+  section {
+    @include article-news; 
+    
+    &#projects {
+      article {
+        @include block;
+        @include article(null, null, title, figure);
+        
+        figure {
+          width: 50%;
+          float: left;
+          margin-right: $pad;
+        }
+      }
+    }
+  }
+}
+
+
 
 
 
@@ -156,16 +204,11 @@
 }
 
 
-
-/* The news
+/* A list of articles with title only
 */
-@mixin news {
-  @include col(33%, 0);
-  
+@mixin article-news {
   h3 {
-    display: block;
-    @include text-navigation;
-    @include link($highlight);
+    @include section-title;
   }
   
   article {
@@ -176,6 +219,15 @@
       font-size: medium;
     }
   }
+}
+
+
+
+/* The news
+*/
+@mixin news {
+  @include col(33%, 0);
+  @include article-news;
   
   @include below-and-tablet {
     @include block;
@@ -352,6 +404,7 @@
         p {
           font-weight: bold;
           margin-bottom: $pad;
+          text-align: right;
         }
         
       }

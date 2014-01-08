@@ -231,14 +231,6 @@
   line-height: 1.5;
 }
 
-@mixin text-news-title {
-  @include text-headings;
-  font-size: 1.5em; /* h1 */
-  font-style: italic;
-  font-weight: 800;
-  @include link($blue, $color);
-}
-
 
 @mixin text-body {
   @include font-body;
@@ -264,6 +256,11 @@
   display: block;
   @include text-navigation;
   @include link($highlight);
+  color: $highlight;
+}
+
+@mixin h1 {
+  font-size: 1.16667em;
 }
 
 
