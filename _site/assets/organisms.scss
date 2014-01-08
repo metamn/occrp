@@ -171,14 +171,9 @@
     }
     
     counter-reset: counter;
-    article {
-      @include article(null, null, title, null);
-      @include border-thin;
+    @include article-news;
     
-      h1 {
-        font-size: medium;
-      }
-      
+    article {
       &:before {
         content: counter(counter);
         counter-increment: counter;
@@ -192,8 +187,6 @@
     
     &:last-of-type {
       article {
-        height: auto;
-        
         &:before {
           display: none;
         }
@@ -262,6 +255,7 @@
   article {
     @include article(null, null, title);
     @include border-thin;
+    padding-bottom: $flexible-grid-margin;
     
     h1 {
       font-size: medium;
@@ -453,6 +447,7 @@
           font-weight: bold;
           margin-bottom: $pad;
           text-align: right;
+          @include invert;
         }
         
       }

@@ -181,7 +181,6 @@ html body .container { width: 90%; margin: 0 5%; }
 html body .container #header, html body .container main, html body .container section, html body .container nav, html body .container #footer { width: 100%; max-width: 100%; float: left; }
 html body .container #header > h3, html body .container main > h3, html body .container section > h3, html body .container nav > h3, html body .container #footer > h3 { display: none; }
 html body .container #header, html body .container main, html body .container footer { margin: 1.25em 0 0; }
-html body .container main section { margin-bottom: 1.25em; }
 html body .container #header hgroup { text-align: center; }
 @media only screen and (max-width: 48em) { html body .container #header hgroup { width: 100%; margin-right: 0; float: left; } }
 @media only screen and (min-width: 48em) and (max-width: 79.999em) { html body .container #header hgroup { width: 45%; margin-right: 10%; float: left; }
@@ -247,7 +246,9 @@ html body .container #footer ul li:last-of-type { margin-right: 0; }
 html body .container #footer ul li#usaid { position: relative; top: -0.625em; }
 html body .container #footer ul li:last-of-type { float: right; }
 html body .container #footer ul li#social { position: relative; top: -2.8125em; }
-html body .container #footer ul li#social p { font-weight: bold; margin-bottom: 1.25em; text-align: right; }
+html body .container #footer ul li#social p { font-weight: bold; margin-bottom: 1.25em; text-align: right; color: white; background: #231f20; }
+html body .container #footer ul li#social p a { color: white; text-decoration: none; }
+html body .container #footer ul li#social p a:hover { color: white; }
 html body.sticky .container #header { position: fixed; width: 90%; margin: 0 5%; border-bottom: 1px solid; margin: 0 0 2.5em !important; padding-top: 1.25em; top: 0; height: 2.5em; background: white; z-index: 1; }
 @media only screen and (min-width: 90.001em) { html body.sticky .container #header { width: 70%; margin: 0 15%; } }
 html body.sticky .container #header nav { margin-top: 0; border: none; }
@@ -255,6 +256,7 @@ html body.sticky .container #header #logo { height: 2.03125em; }
 html body.sticky .container #header #logo figure img { max-width: 10em; position: relative; top: -0.3125em; }
 html body.sticky .container #header #tags { display: none; }
 html body.sticky .container main, html body.sticky .container #footer { position: relative; top: 7.5em; }
+html body.frontpage .container main #intro { margin-bottom: 1.25em; }
 html body.frontpage .container main #intro #slider { width: 64%; margin-right: 3%; float: left; padding: 1.25em; width: calc(63% - 2.5em); background: #f1f1f1; }
 html body.frontpage .container main #intro #slider article { margin-bottom: 3%; width: 100%; max-width: 100%; float: left; margin-bottom: 0; }
 html body.frontpage .container main #intro #slider article figure { display: block; }
@@ -287,7 +289,7 @@ html body.frontpage .container main #intro #news { width: 33%; margin-right: 0; 
 html body.frontpage .container main #intro #news h3 { display: block; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; color: #982022; }
 html body.frontpage .container main #intro #news h3 a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #intro #news h3 a:hover { color: #982022; }
-html body.frontpage .container main #intro #news article { margin-bottom: 3%; border-bottom: 1px solid; color: #f1f1f1; }
+html body.frontpage .container main #intro #news article { margin-bottom: 3%; border-bottom: 1px solid; color: #f1f1f1; padding-bottom: 3%; }
 html body.frontpage .container main #intro #news article figure { display: none; }
 html body.frontpage .container main #intro #news article figcaption { display: none; }
 html body.frontpage .container main #intro #news article #excerpt { display: none; }
@@ -443,7 +445,10 @@ html body.frontpage .container main #most-read aside { counter-reset: counter; }
 html body.frontpage .container main #most-read aside h3 { display: block; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; color: #982022; margin-bottom: 0.625em; }
 html body.frontpage .container main #most-read aside h3 a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #most-read aside h3 a:hover { color: #982022; }
-html body.frontpage .container main #most-read aside article { margin-bottom: 3%; border-bottom: 1px solid; color: #f1f1f1; }
+html body.frontpage .container main #most-read aside h3 { display: block; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; color: #982022; }
+html body.frontpage .container main #most-read aside h3 a { color: #982022; text-decoration: none; }
+html body.frontpage .container main #most-read aside h3 a:hover { color: #982022; }
+html body.frontpage .container main #most-read aside article { margin-bottom: 3%; border-bottom: 1px solid; color: #f1f1f1; padding-bottom: 3%; }
 html body.frontpage .container main #most-read aside article figure { display: none; }
 html body.frontpage .container main #most-read aside article figcaption { display: none; }
 html body.frontpage .container main #most-read aside article #excerpt { display: none; }
@@ -462,7 +467,6 @@ html body.frontpage .container main #most-read aside article h1 { font-size: med
 html body.frontpage .container main #most-read aside article:before { content: counter(counter); counter-increment: counter; color: white; background: #231f20; padding: 0.3125em 0.625em; display: inline-block; margin-right: 0.625em; float: left; }
 html body.frontpage .container main #most-read aside article:before a { color: white; text-decoration: none; }
 html body.frontpage .container main #most-read aside article:before a:hover { color: white; }
-html body.frontpage .container main #most-read aside:last-of-type article { height: auto; }
 html body.frontpage .container main #most-read aside:last-of-type article:before { display: none; }
 html body.category main #articles { width: 64%; margin-right: 3%; float: left; }
 html body.category main #articles h1.title { display: block; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; color: #982022; font-size: 1.16667em; }
@@ -509,7 +513,7 @@ html body.category main aside section { margin-bottom: 2.5em; }
 html body.category main aside section h3 { display: block; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; color: #982022; }
 html body.category main aside section h3 a { color: #982022; text-decoration: none; }
 html body.category main aside section h3 a:hover { color: #982022; }
-html body.category main aside section article { margin-bottom: 3%; border-bottom: 1px solid; color: #f1f1f1; }
+html body.category main aside section article { margin-bottom: 3%; border-bottom: 1px solid; color: #f1f1f1; padding-bottom: 3%; }
 html body.category main aside section article figure { display: none; }
 html body.category main aside section article figcaption { display: none; }
 html body.category main aside section article #excerpt { display: none; }
@@ -589,7 +593,7 @@ html body.tag main aside section { margin-bottom: 2.5em; }
 html body.tag main aside section h3 { display: block; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; color: #982022; }
 html body.tag main aside section h3 a { color: #982022; text-decoration: none; }
 html body.tag main aside section h3 a:hover { color: #982022; }
-html body.tag main aside section article { margin-bottom: 3%; border-bottom: 1px solid; color: #f1f1f1; }
+html body.tag main aside section article { margin-bottom: 3%; border-bottom: 1px solid; color: #f1f1f1; padding-bottom: 3%; }
 html body.tag main aside section article figure { display: none; }
 html body.tag main aside section article figcaption { display: none; }
 html body.tag main aside section article #excerpt { display: none; }
@@ -640,7 +644,7 @@ html body.article main aside section { margin-bottom: 2.5em; }
 html body.article main aside section h3 { display: block; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; color: #982022; }
 html body.article main aside section h3 a { color: #982022; text-decoration: none; }
 html body.article main aside section h3 a:hover { color: #982022; }
-html body.article main aside section article { margin-bottom: 3%; border-bottom: 1px solid; color: #f1f1f1; }
+html body.article main aside section article { margin-bottom: 3%; border-bottom: 1px solid; color: #f1f1f1; padding-bottom: 3%; }
 html body.article main aside section article figure { display: none; }
 html body.article main aside section article figcaption { display: none; }
 html body.article main aside section article #excerpt { display: none; }

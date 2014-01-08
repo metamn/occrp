@@ -21,11 +21,6 @@ html {
         margin: $pad 0 0; 
       }
       
-      main {
-        section {
-          margin-bottom: $pad;
-        }
-      }
       
       #header {
         @include header;
@@ -51,6 +46,8 @@ html {
       .container {  
         main {
           #intro {
+            margin-bottom: $pad;
+          
             #slider {
               @include slider;
             }
