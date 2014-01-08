@@ -165,7 +165,7 @@
   
   article {
     @include article(null, null, title, figure);
-    @include responsive-grid(6);
+    @include responsive-grid(5);
   }
 }
 
@@ -178,7 +178,7 @@
   
   article {
     @include article(null, null, title, figure);
-    @include responsive-grid(5);
+    @include responsive-grid(4);
     
     figure {
       max-height: 209px;

@@ -319,16 +319,16 @@ html body.frontpage .container main #products article #meta { display: none; }
   html body.frontpage .container main #products article:nth-of-type(8) { margin-right: 0; }
   html body.frontpage .container main #products article:nth-of-type(9) { margin-right: 10%; }
   html body.frontpage .container main #products article:nth-of-type(10) { margin-right: 0; } }
-@media only screen and (min-width: 80em) { html body.frontpage .container main #products article { width: 18%; margin-right: 2.5%; float: left; }
-  html body.frontpage .container main #products article:nth-of-type(2) { margin-right: 2.5%; }
-  html body.frontpage .container main #products article:nth-of-type(3) { margin-right: 2.5%; }
-  html body.frontpage .container main #products article:nth-of-type(4) { margin-right: 2.5%; }
-  html body.frontpage .container main #products article:nth-of-type(5) { margin-right: 0; }
-  html body.frontpage .container main #products article:nth-of-type(6) { margin-right: 2.5%; }
-  html body.frontpage .container main #products article:nth-of-type(7) { margin-right: 2.5%; }
-  html body.frontpage .container main #products article:nth-of-type(8) { margin-right: 2.5%; }
-  html body.frontpage .container main #products article:nth-of-type(9) { margin-right: 2.5%; }
-  html body.frontpage .container main #products article:nth-of-type(10) { margin-right: 0; } }
+@media only screen and (min-width: 80em) { html body.frontpage .container main #products article { width: 22%; margin-right: 3.33333%; float: left; }
+  html body.frontpage .container main #products article:nth-of-type(2) { margin-right: 3.33333%; }
+  html body.frontpage .container main #products article:nth-of-type(3) { margin-right: 3.33333%; }
+  html body.frontpage .container main #products article:nth-of-type(4) { margin-right: 0; }
+  html body.frontpage .container main #products article:nth-of-type(5) { margin-right: 3.33333%; }
+  html body.frontpage .container main #products article:nth-of-type(6) { margin-right: 3.33333%; }
+  html body.frontpage .container main #products article:nth-of-type(7) { margin-right: 3.33333%; }
+  html body.frontpage .container main #products article:nth-of-type(8) { margin-right: 0; }
+  html body.frontpage .container main #products article:nth-of-type(9) { margin-right: 3.33333%; }
+  html body.frontpage .container main #products article:nth-of-type(10) { margin-right: 3.33333%; } }
 html body.frontpage .container main #products article figure { max-height: 209px; overflow: hidden; }
 html body.frontpage .container main #projects h3, html body.frontpage .container main #videos h3 { display: block; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; color: #982022; }
 html body.frontpage .container main #projects h3 a, html body.frontpage .container main #videos h3 a { color: #982022; text-decoration: none; }
@@ -352,16 +352,37 @@ html body.frontpage .container main #projects article #meta, html body.frontpage
   html body.frontpage .container main #projects article:nth-of-type(8), html body.frontpage .container main #videos article:nth-of-type(8) { margin-right: 0; }
   html body.frontpage .container main #projects article:nth-of-type(9), html body.frontpage .container main #videos article:nth-of-type(9) { margin-right: 10%; }
   html body.frontpage .container main #projects article:nth-of-type(10), html body.frontpage .container main #videos article:nth-of-type(10) { margin-right: 0; } }
-@media only screen and (min-width: 80em) { html body.frontpage .container main #projects article, html body.frontpage .container main #videos article { width: 15%; margin-right: 2%; float: left; }
-  html body.frontpage .container main #projects article:nth-of-type(2), html body.frontpage .container main #videos article:nth-of-type(2) { margin-right: 2%; }
-  html body.frontpage .container main #projects article:nth-of-type(3), html body.frontpage .container main #videos article:nth-of-type(3) { margin-right: 2%; }
-  html body.frontpage .container main #projects article:nth-of-type(4), html body.frontpage .container main #videos article:nth-of-type(4) { margin-right: 2%; }
-  html body.frontpage .container main #projects article:nth-of-type(5), html body.frontpage .container main #videos article:nth-of-type(5) { margin-right: 2%; }
-  html body.frontpage .container main #projects article:nth-of-type(6), html body.frontpage .container main #videos article:nth-of-type(6) { margin-right: 0; }
-  html body.frontpage .container main #projects article:nth-of-type(7), html body.frontpage .container main #videos article:nth-of-type(7) { margin-right: 2%; }
-  html body.frontpage .container main #projects article:nth-of-type(8), html body.frontpage .container main #videos article:nth-of-type(8) { margin-right: 2%; }
-  html body.frontpage .container main #projects article:nth-of-type(9), html body.frontpage .container main #videos article:nth-of-type(9) { margin-right: 2%; }
-  html body.frontpage .container main #projects article:nth-of-type(10), html body.frontpage .container main #videos article:nth-of-type(10) { margin-right: 2%; } }
+@media only screen and (min-width: 80em) { html body.frontpage .container main #projects article, html body.frontpage .container main #videos article { width: 18%; margin-right: 2.5%; float: left; }
+  html body.frontpage .container main #projects article:nth-of-type(2), html body.frontpage .container main #videos article:nth-of-type(2) { margin-right: 2.5%; }
+  html body.frontpage .container main #projects article:nth-of-type(3), html body.frontpage .container main #videos article:nth-of-type(3) { margin-right: 2.5%; }
+  html body.frontpage .container main #projects article:nth-of-type(4), html body.frontpage .container main #videos article:nth-of-type(4) { margin-right: 2.5%; }
+  html body.frontpage .container main #projects article:nth-of-type(5), html body.frontpage .container main #videos article:nth-of-type(5) { margin-right: 0; }
+  html body.frontpage .container main #projects article:nth-of-type(6), html body.frontpage .container main #videos article:nth-of-type(6) { margin-right: 2.5%; }
+  html body.frontpage .container main #projects article:nth-of-type(7), html body.frontpage .container main #videos article:nth-of-type(7) { margin-right: 2.5%; }
+  html body.frontpage .container main #projects article:nth-of-type(8), html body.frontpage .container main #videos article:nth-of-type(8) { margin-right: 2.5%; }
+  html body.frontpage .container main #projects article:nth-of-type(9), html body.frontpage .container main #videos article:nth-of-type(9) { margin-right: 2.5%; }
+  html body.frontpage .container main #projects article:nth-of-type(10), html body.frontpage .container main #videos article:nth-of-type(10) { margin-right: 0; } }
+@media only screen and (max-width: 48em) { html body.frontpage .container main #videos article { width: 100%; margin-right: 0; float: left; } }
+@media only screen and (min-width: 48em) and (max-width: 79.999em) { html body.frontpage .container main #videos article { width: 45%; margin-right: 10%; float: left; }
+  html body.frontpage .container main #videos article:nth-of-type(2) { margin-right: 0; }
+  html body.frontpage .container main #videos article:nth-of-type(3) { margin-right: 10%; }
+  html body.frontpage .container main #videos article:nth-of-type(4) { margin-right: 0; }
+  html body.frontpage .container main #videos article:nth-of-type(5) { margin-right: 10%; }
+  html body.frontpage .container main #videos article:nth-of-type(6) { margin-right: 0; }
+  html body.frontpage .container main #videos article:nth-of-type(7) { margin-right: 10%; }
+  html body.frontpage .container main #videos article:nth-of-type(8) { margin-right: 0; }
+  html body.frontpage .container main #videos article:nth-of-type(9) { margin-right: 10%; }
+  html body.frontpage .container main #videos article:nth-of-type(10) { margin-right: 0; } }
+@media only screen and (min-width: 80em) { html body.frontpage .container main #videos article { width: 15%; margin-right: 2%; float: left; }
+  html body.frontpage .container main #videos article:nth-of-type(2) { margin-right: 2%; }
+  html body.frontpage .container main #videos article:nth-of-type(3) { margin-right: 2%; }
+  html body.frontpage .container main #videos article:nth-of-type(4) { margin-right: 2%; }
+  html body.frontpage .container main #videos article:nth-of-type(5) { margin-right: 2%; }
+  html body.frontpage .container main #videos article:nth-of-type(6) { margin-right: 0; }
+  html body.frontpage .container main #videos article:nth-of-type(7) { margin-right: 2%; }
+  html body.frontpage .container main #videos article:nth-of-type(8) { margin-right: 2%; }
+  html body.frontpage .container main #videos article:nth-of-type(9) { margin-right: 2%; }
+  html body.frontpage .container main #videos article:nth-of-type(10) { margin-right: 2%; } }
 html body.frontpage .container main #most-read aside { counter-reset: counter; }
 @media only screen and (max-width: 48em) { html body.frontpage .container main #most-read aside { width: 100%; margin-right: 0; float: left; } }
 @media only screen and (min-width: 48em) and (max-width: 79.999em) { html body.frontpage .container main #most-read aside { width: 45%; margin-right: 10%; float: left; }

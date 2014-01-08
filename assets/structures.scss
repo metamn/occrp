@@ -72,6 +72,12 @@ html {
             @include projects;
           }
           
+          #videos {
+            article {
+              @include responsive-grid(6);
+            }
+          }
+          
           #most-read {
             @include most-read;
           }

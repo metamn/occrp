@@ -64,7 +64,7 @@ class: frontpage
     <a href="{{ site.url }}/products" title="Products">Products</a>
   </h3>
   
-  {% for post in site.categories.projects limit:5 offset:0 %}
+  {% for post in site.categories.projects limit:4 offset:0 %}
     {% include article.html klass = 'thumb' %}
   {% endfor %}
 </section>
@@ -75,7 +75,7 @@ class: frontpage
     <a href="{{ site.url }}/projects" title="Projects">Projects</a>
   </h3>
   
-  {% for post in site.categories.projects limit:6 offset:5 %}
+  {% for post in site.categories.projects limit:5 offset:5 %}
     {% include article.html %}
   {% endfor %}
 </section>
