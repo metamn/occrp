@@ -305,14 +305,18 @@
   } @elseif ($type == date) {
     font-size: small;
     color: $grey;
+  
+  } @elseif ($type == category-title) {
+    padding: $h1-padding 0;
   }
 }
 
 
-@mixin headings {
+@mixin headings($padding: false) {
   h1, h2, h3, h4, h5, h6 {
     @include font-headings;
     @include line-height(headings);
+    padding: 0;
   }
   
   h1 {
@@ -329,6 +333,14 @@
   
   h4 {
     @include h4;
+  }
+  
+  @if ($padding != false) {
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding: $h1-padding 0; 
+    }
   }
 }
 

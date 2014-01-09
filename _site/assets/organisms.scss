@@ -112,6 +112,12 @@
 */
 @mixin category-articles {
   @include col(64%, 3%);
+  
+  .title {
+    @include font(section-title);
+    @include font(category-title);
+  }
+  
   article {
     @include article(null, null, title, figure);
     @include responsive-grid(3);
@@ -531,13 +537,7 @@
   
   /* Headings
   */
-  @include headings;
-  h1, h2, h3 {
-    @include line-height(headings);
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: $h1-padding 0; 
-  }
+  @include headings(padding);
   
   /* Elements
   */
