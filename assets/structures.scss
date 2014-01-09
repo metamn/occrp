@@ -103,6 +103,10 @@ html {
     */
     &.tag {
       main {
+        #banner {
+          margin-bottom: $pad;
+        }
+        
         #articles {
           @include category-articles;
         }

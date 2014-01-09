@@ -579,6 +579,7 @@ html body.category main aside section#projects article #meta #category { text-tr
 html body.category main aside section#projects article #meta #category a { color: #982022; text-decoration: none; }
 html body.category main aside section#projects article #meta #category a:hover { color: #231f20; }
 html body.category main aside section#projects article figure { width: 50%; float: left; margin-right: 1.25em; }
+html body.tag main #banner { margin-bottom: 1.25em; }
 html body.tag main #articles { width: 64%; margin-right: 3%; float: left; }
 html body.tag main #articles .title { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; padding: 1.45833em 0; }
 html body.tag main #articles .title a { color: #982022; text-decoration: none; }
@@ -727,6 +728,7 @@ html body.article main #article article p + p { margin-top: 1.25em; }
 html body.article main #article article h1 + h2, html body.article main #article article h2 + h3 { padding-top: 0; }
 html body.article main #article article h1 + ul, html body.article main #article article h2 + ul, html body.article main #article article h3 + ul, html body.article main #article article h1 + ol, html body.article main #article article h2 + ol, html body.article main #article article h3 + ol, html body.article main #article article h1 + figure, html body.article main #article article h2 + figure, html body.article main #article article h3 + figure { margin-top: 0; }
 html body.article main #article article li ul, html body.article main #article article li ol { margin-top: 0; }
+html body.article main #article article h1:first-of-type { padding-top: 0; }
 html body.article main #article article #meta { border-bottom: 1px solid; color: #f1f1f1; margin-bottom: 1.25em; }
 html body.article main aside { width: 33%; margin-right: 0; float: left; padding: 1.25em; width: calc(33% - 2.5em); background: #f1f1f1; }
 html body.article main aside section { margin-bottom: 2.5em; }
