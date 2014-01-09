@@ -5,6 +5,14 @@ class: category
 ---
 
 
-{% for post in site.categories.projects %}
-  {% include article.html %}
+{% for post in site.categories.investigations %}
+  {% include article.html klass = 'thumb' %}
+{% endfor %}
+
+{% for post in site.categories.slider %}
+  {% include article.html klass = 'thumb' %}
+{% endfor %}
+
+{% for post in site.categories.news %}
+  {% include article.html klass = 'thumb' %}
 {% endfor %}

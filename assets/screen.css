@@ -380,7 +380,6 @@ html body.frontpage .container main #products article #meta #category a:hover { 
   html body.frontpage .container main #products article:nth-of-type(8) { margin-right: 0; }
   html body.frontpage .container main #products article:nth-of-type(9) { margin-right: 3.33333%; }
   html body.frontpage .container main #products article:nth-of-type(10) { margin-right: 3.33333%; } }
-html body.frontpage .container main #products article figure { max-height: 209px; overflow: hidden; }
 html body.frontpage .container main #projects h3, html body.frontpage .container main #videos h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; }
 html body.frontpage .container main #projects h3 a, html body.frontpage .container main #videos h3 a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #projects h3 a:hover, html body.frontpage .container main #videos h3 a:hover { color: #231f20; }
@@ -726,7 +725,7 @@ html body.article main #article article figure { margin-top: 2.5em; }
 html body.article main #article article dd + dt { margin-top: 1.25em; }
 html body.article main #article article p + p { margin-top: 1.25em; }
 html body.article main #article article h1 + h2, html body.article main #article article h2 + h3 { padding-top: 0; }
-html body.article main #article article h1 + ul, html body.article main #article article h2 + ul, html body.article main #article article h3 + ul, html body.article main #article article h1 + ol, html body.article main #article article h2 + ol, html body.article main #article article h3 + ol, html body.article main #article article h1 + figure, html body.article main #article article h2 + figure, html body.article main #article article h3 + figure { margin-top: 0; }
+html body.article main #article article h1 + ul, html body.article main #article article h2 + ul, html body.article main #article article h3 + ul, html body.article main #article article h1 + ol, html body.article main #article article h2 + ol, html body.article main #article article h3 + ol, html body.article main #article article h1 + figure, html body.article main #article article h2 + figure, html body.article main #article article h3 + figure, html body.article main #article article h1 + nav { margin-top: 0; }
 html body.article main #article article li ul, html body.article main #article article li ol { margin-top: 0; }
 html body.article main #article article h1:first-of-type { padding-top: 0; }
 html body.article main #article article #meta { border-bottom: 1px solid; color: #f1f1f1; margin-bottom: 1.25em; }
@@ -774,3 +773,6 @@ html body.article main aside section#projects article #meta #category { text-tra
 html body.article main aside section#projects article #meta #category a { color: #982022; text-decoration: none; }
 html body.article main aside section#projects article #meta #category a:hover { color: #231f20; }
 html body.article main aside section#projects article figure { width: 50%; float: left; margin-right: 1.25em; }
+
+html body .container article figure img { -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; width: auto; }
+html body .container article figure figcaption { font-size: smaller; }

@@ -233,11 +233,6 @@
   article {
     @include article(null, null, title, figure);
     @include responsive-grid(4);
-    
-    figure {
-      max-height: 209px;
-      overflow: hidden;
-    }
   }
 }
 
@@ -523,7 +518,8 @@
   
   h1 + ul, h2 + ul, h3 + ul,
   h1 + ol, h2 + ol, h3 + ol,
-  h1 + figure, h2 + figure, h3 + figure {
+  h1 + figure, h2 + figure, h3 + figure,
+  h1 + nav {
     margin-top: 0;
   }
   

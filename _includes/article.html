@@ -6,8 +6,10 @@
     </h1>
   {% endif %} 
 
-  {% assign image_index = 0 %}
-  {% include responsive-images.html type='from post'  %}
+  {% if post.images.size > 0 %}
+    {% assign image_index = 0 %}
+    {% include responsive-images.html type='from post'  %}
+  {% endif %}
   
   {% if include.klass != 'single' %}
     <h1>
