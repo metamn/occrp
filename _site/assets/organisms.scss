@@ -40,7 +40,7 @@
   }
   
   @if ($body == null) {
-    #body {
+    #content {
       display: none;
     }
   }
@@ -112,6 +112,20 @@
   }
 }
 
+
+
+/* Jobs
+*/
+@mixin jobs {
+  article {
+    @include block;
+    @include body-text;
+    
+    #meta, #meta #date, #excerpt {
+      display: block !important;
+    }
+  }
+}
 
 
 /* Category articles
@@ -215,6 +229,11 @@
 @mixin projects {
   h3 {
     @include font(section-title);
+  }
+  
+  .title {
+    @include font(section-title);
+    @include font(category-title);
   }
   
   article {

@@ -118,6 +118,28 @@ html {
     }
     
     
+    /* Projects
+    */
+    &.projects {
+      main {
+        #articles {
+          @include projects;
+        }
+      }
+    }
+    
+    
+    /* Jobs
+    */
+    &.jobs {
+      main {
+        #articles {
+          @include jobs;
+        }
+      }
+    }
+    
+    
     /* Article
     */
     &.article {
