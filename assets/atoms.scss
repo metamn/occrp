@@ -99,8 +99,8 @@ $body-text-width: 43.75em; /* 700px / 16px */
 $container-width: 90%;
 $container-margin: 5%;
 
-$large-screen-container-width: 70%;
-$large-screen-container-margin: 15%;
+$large-screen-container-width: 75%;
+$large-screen-container-margin: 12.5%;
 
 /* The golden ratio
 */
@@ -168,6 +168,13 @@ $letter-spacing-uppercase: 1.1px;
 }
 
 
+/* Font sizing for headers
+  - We employ modern typography where headers differ by design not by font size
+  - We size fonts by REM instead of EM
+  - We use Traditional / em scaling from http://lamb.cc/typograph/
+*/
+$h1: 1.25;
+$h1-padding: 1.45833em;
 
 
 
@@ -180,13 +187,15 @@ $background: #FFFFFF; /* Background */
 $light-grey: #f1f1f1; /* From Kuler, based on $background */
 
 $color: #231F20; /* Font, black */
+$grey: lighten($color, 30%);
+$gray: lighten($color, 30%);
 
 $highlight: #982022; /* Link, OCCRP red */
 $red: #E43033; /* From Kuler, based on $highlight */
 $blue: #259CE4; /* From Kuler, based on $highlight */
 $yellow: #A5A333; /* From Kuler, based on $highlight */
 
-$grey: #999;
+
 
 
 
@@ -201,4 +210,10 @@ $border-thin: 1px solid;
   border-bottom: $border-thin;
   color: $c;
 }
+
+
+$easing: all 0.5s ease-in-out;
+$shadow: 15px 20px 25px -10px rgba(0, 0, 0, 0.698), 0 1px rgba(0, 0, 0, 0.1), 0 0 4px rgba(0, 0, 0, 0.1) inset;
+$shadow-remove: 0px 0px 0px 0px transparent;
+$shadow: 1px 0 $color, 0 1px $color, 2px 1px $color, 1px 2px $color, 3px 2px $color, 2px 3px $color, 4px 3px $color, 3px 4px $color, 5px 4px $color, 4px 5px $color;
 

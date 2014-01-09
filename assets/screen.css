@@ -57,6 +57,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 */
 /* Font families
 */
+/* Font sizing for headers - We employ modern typography where headers differ by design not by font size - We size fonts by REM instead of EM - We use Traditional / em scaling from http://lamb.cc/typograph/
+*/
 /* Colors
 --------------------------------------------------------------------------------
 */
@@ -108,30 +110,29 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 */
 /* Highlights an active item in a list / menu
 */
-/* Typography
---------------------------------------------------------------------------------
-*/
-/* Text styles
-*/
-/* From http://lamb.cc/typograph/ using traditional / em scaling
-*/
-h1, h2, h3 { margin-top: 0; margin-bottom: 0; }
-
-h1, h2, h3 { font-size: 1.16667em; }
-
-/* Headings
-*/
-h1, h2, h3, h4, h4, h6 { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; line-height: 1.25; }
-
-h1 { font-weight: 700; }
-
 /* Images
 --------------------------------------------------------------------------------
 */
-/* Decorations
+/* Decorations, colors, etc.
 --------------------------------------------------------------------------------
 */
+/* Set the background and font color - 'invert' inverts this color scheme
+*/
 /* Links
+*/
+/* Typography
+--------------------------------------------------------------------------------
+*/
+/* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback  
+	Usage: @include font-size(1, large);
+*/
+/* Set the line height - 'body' goes from non text elements, it is the default setting put in <body> - 'text' goes for long texts like blog posts, articles, etc; - 'headings' goes for <h1>, etc
+*/
+/* Select box - put <select> inside a <label class="select"> - label:after is positioned over the original selectbox arrow - label after must have a background color to hide the default arrow
+*/
+/* <dl>
+*/
+/* <ul> and <ol> lists - they display a custom bullet / number via $before - the text of the list is aligned right related to the bullet / number
 */
 /* Organisms of the Atomic web design - groups of molecules joined together to form a relatively complex, distinct section of an interface.
 */
@@ -163,11 +164,18 @@ h1 { font-weight: 700; }
 */
 /* Footer
 */
+/* Typography
+--------------------------------------------------------------------------------
+*/
 /* Default settings for this theme - like typography, links, colors, etc
+*/
+/* Vertical spacing of all typographic elements
+*/
+/* Settings for long text content like articles, blog posts
 */
 /* Structures / Templates of the Atomic web design - the layout, the grid, the wireframe - groups of organisms stitched together to form pages 
 */
-html body { background: white; color: #231f20; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: 100%; line-height: 1.25; /* Sticky header
+html body { background: white; color: #231f20; font-size: 100%; line-height: 1.25; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; /* Sticky header
 */ /* Frontpage
 */ /* Category
 */ /* Tag
@@ -176,8 +184,13 @@ html body { background: white; color: #231f20; font-family: Baskerville, "Basker
 html body a { color: #231f20; text-decoration: none; }
 html body a:hover { color: #982022; }
 html body img { width: auto; height: auto; max-width: 100%; }
+html body h1, html body h2, html body h3, html body h4, html body h5, html body h6 { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; line-height: 1.25; }
+html body h1 { font-size: 20px; font-size: 1.25rem; font-weight: bold; }
+html body h2 { font-size: 20px; font-size: 1.25rem; font-weight: normal; text-transform: uppercase; letter-spacing: 1.1px; }
+html body h3 { font-size: 20px; font-size: 1.25rem; font-weight: normal; }
+html body h4 { font-size: larger; font-weight: normal; }
 html body .container { width: 90%; margin: 0 5%; }
-@media only screen and (min-width: 90.001em) { html body .container { width: 70%; margin: 0 15%; } }
+@media only screen and (min-width: 90.001em) { html body .container { width: 75%; margin: 0 12.5%; } }
 html body .container #header, html body .container main, html body .container section, html body .container nav, html body .container #footer { width: 100%; max-width: 100%; float: left; }
 html body .container #header > h3, html body .container main > h3, html body .container section > h3, html body .container nav > h3, html body .container #footer > h3 { display: none; }
 html body .container #header, html body .container main { margin: 1.25em 0 0; }
@@ -204,7 +217,7 @@ html body .container #header hgroup { text-align: center; }
   html body .container #header hgroup:nth-of-type(9) { margin-right: 0; }
   html body .container #header hgroup:nth-of-type(10) { margin-right: 5%; } }
 html body .container #header hgroup h1, html body .container #header hgroup figure figcaption { display: none; }
-html body .container #header nav { font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; border-bottom: 1px solid; color: #231f20; padding: 0.625em 0; margin-top: 2.5em; }
+html body .container #header nav { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; border-bottom: 1px solid; color: #231f20; padding: 0.625em 0; margin-top: 2.5em; }
 @media only screen and (max-width: 48em) { html body .container #header nav { width: 100%; margin-right: 0; float: left; } }
 @media only screen and (min-width: 48em) and (max-width: 79.999em) { html body .container #header nav { width: 45%; margin-right: 10%; float: left; }
   html body .container #header nav:nth-of-type(2) { margin-right: 0; }
@@ -231,27 +244,25 @@ html body .container #header nav ul { text-align: center; margin: 0 auto; width:
 html body .container #header nav ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body .container #header nav ul li:last-of-type { margin-right: 0; }
 html body .container #header nav ul li a { padding: 0.625em 0.3125em; display: inline; }
-html body .container #header nav ul li.active a, html body .container #header nav ul li:hover a { color: white; background: #982022; }
+html body .container #header nav ul li.active a, html body .container #header nav ul li:hover a { background: #982022; color: white; }
 html body .container #header nav ul li.active a a, html body .container #header nav ul li:hover a a { color: white; text-decoration: none; }
 html body .container #header nav ul li.active a a:hover, html body .container #header nav ul li:hover a a:hover { color: white; }
 html body .container #header nav ul li#russian, html body .container #header nav ul li#english { height: 1.25em; /* Because of the icon */ }
 html body .container #header nav ul li#russian img, html body .container #header nav ul li#english img { position: relative; top: 1px; }
 html body .container #header nav ul li#english { display: none; }
-html body .container #header nav#tags { width: 100%; max-width: 100%; float: left; margin-top: 0.625em; color: white; background: #231f20; /* To fit the hover on tags we add a border-top */ border-top: 1px solid; border-color: #231f20; }
+html body .container #header nav#tags { width: 100%; max-width: 100%; float: left; margin-top: 0.625em; background: #231f20; color: white; /* To fit the hover on tags we add a border-top */ border-top: 1px solid; border-color: #231f20; }
 html body .container #header nav#tags a { color: white; text-decoration: none; }
 html body .container #header nav#tags a:hover { color: white; }
-html body .container #footer { margin: 3.75em 0 0; padding: 1.25em 0; border-top: 0.3125em solid; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
-html body .container #footer ul li { display: inline-block; float: left; margin-right: 0.625em; }
+html body .container #footer { margin: 3.75em 0 0; padding: 1.25em 0; border-top: 0.3125em solid; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; }
+html body .container #footer ul li { display: inline-block; float: left; margin-right: 1.25em; }
 html body .container #footer ul li:last-of-type { margin-right: 0; }
 html body .container #footer ul li#usaid { position: relative; top: -0.625em; }
 html body .container #footer ul li#social { float: right; position: relative; top: -2.8125em; }
-html body .container #footer ul li#social p { font-weight: bold; margin-bottom: 1.25em; text-align: right; color: white; background: #231f20; }
+html body .container #footer ul li#social p { font-weight: bold; margin-bottom: 1.25em; text-align: right; background: #231f20; color: white; }
 html body .container #footer ul li#social p a { color: white; text-decoration: none; }
 html body .container #footer ul li#social p a:hover { color: white; }
-html body .container #footer ul li#social ul li { margin-right: 1.25em; }
-html body .container #footer ul li#social ul li:last-of-type { margin-right: 0; }
 html body.sticky .container #header { position: fixed; width: 90%; margin: 0 5%; border-bottom: 1px solid; margin: 0 0 2.5em !important; padding-top: 1.25em; top: 0; height: 2.5em; background: white; z-index: 1; }
-@media only screen and (min-width: 90.001em) { html body.sticky .container #header { width: 70%; margin: 0 15%; } }
+@media only screen and (min-width: 90.001em) { html body.sticky .container #header { width: 75%; margin: 0 12.5%; } }
 html body.sticky .container #header nav { margin-top: 0; border: none; }
 html body.sticky .container #header #logo { height: 2.03125em; }
 html body.sticky .container #header #logo figure img { max-width: 10em; position: relative; top: -0.3125em; }
@@ -266,13 +277,15 @@ html body.frontpage .container main #intro #slider article #body { display: none
 html body.frontpage .container main #intro #slider article #meta #category { display: none; }
 html body.frontpage .container main #intro #slider article #meta #date { display: none; }
 html body.frontpage .container main #intro #slider article #meta { display: none; }
-html body.frontpage .container main #intro #slider article #excerpt { line-height: 1.75; color: #4c4345; }
+html body.frontpage .container main #intro #slider article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; }
 html body.frontpage .container main #intro #slider article #meta { margin-top: 0.625em; }
+html body.frontpage .container main #intro #slider article #meta ul { margin: 0; }
 html body.frontpage .container main #intro #slider article #meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.frontpage .container main #intro #slider article #meta ul li:last-of-type { margin-right: 0; }
 html body.frontpage .container main #intro #slider article #meta #date { font-size: small; color: #74676a; }
-html body.frontpage .container main #intro #slider article #content { max-width: 43.75em; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; line-height: 1.75; }
-html body.frontpage .container main #intro #slider article #content h1, html body.frontpage .container main #intro #slider article #content h2, html body.frontpage .container main #intro #slider article #content h3 { padding: 1.51785em 0; }
+html body.frontpage .container main #intro #slider article #meta #category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
+html body.frontpage .container main #intro #slider article #meta #category a { color: #982022; text-decoration: none; }
+html body.frontpage .container main #intro #slider article #meta #category a:hover { color: #231f20; }
 html body.frontpage .container main #intro #slider article figure { width: 47%; margin-right: 4%; float: left; }
 html body.frontpage .container main #intro #slider article #excerpt { margin-top: 1.25em; }
 html body.frontpage .container main #intro #slider nav { margin-top: 1.25em; }
@@ -280,16 +293,16 @@ html body.frontpage .container main #intro #slider nav > h3 { display: none; }
 html body.frontpage .container main #intro #slider nav ol li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.frontpage .container main #intro #slider nav ol li:last-of-type { margin-right: 0; }
 html body.frontpage .container main #intro #slider nav ol li a { padding: 0.625em 0.9375em; display: block; }
-html body.frontpage .container main #intro #slider nav ol li.active a, html body.frontpage .container main #intro #slider nav ol li:hover a { color: white; background: #982022; }
+html body.frontpage .container main #intro #slider nav ol li.active a, html body.frontpage .container main #intro #slider nav ol li:hover a { background: #982022; color: white; }
 html body.frontpage .container main #intro #slider nav ol li.active a a, html body.frontpage .container main #intro #slider nav ol li:hover a a { color: white; text-decoration: none; }
 html body.frontpage .container main #intro #slider nav ol li.active a a:hover, html body.frontpage .container main #intro #slider nav ol li:hover a a:hover { color: white; }
-html body.frontpage .container main #intro #slider nav ol li { color: #231f20; background: white; }
+html body.frontpage .container main #intro #slider nav ol li { background: white; color: #231f20; }
 html body.frontpage .container main #intro #slider nav ol li a { color: #231f20; text-decoration: none; }
-html body.frontpage .container main #intro #slider nav ol li a:hover { color: #231f20; }
+html body.frontpage .container main #intro #slider nav ol li a:hover { color: white; }
 html body.frontpage .container main #intro #news { width: 33%; margin-right: 0; float: left; }
-html body.frontpage .container main #intro #news h3 { display: block; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; color: #982022; }
+html body.frontpage .container main #intro #news h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; }
 html body.frontpage .container main #intro #news h3 a { color: #982022; text-decoration: none; }
-html body.frontpage .container main #intro #news h3 a:hover { color: #982022; }
+html body.frontpage .container main #intro #news h3 a:hover { color: #231f20; }
 html body.frontpage .container main #intro #news article { margin-bottom: 3%; border-bottom: 1px solid; color: #f1f1f1; padding-bottom: 3%; }
 html body.frontpage .container main #intro #news article figure { display: none; }
 html body.frontpage .container main #intro #news article figcaption { display: none; }
@@ -298,31 +311,36 @@ html body.frontpage .container main #intro #news article #body { display: none; 
 html body.frontpage .container main #intro #news article #meta #category { display: none; }
 html body.frontpage .container main #intro #news article #meta #date { display: none; }
 html body.frontpage .container main #intro #news article #meta { display: none; }
-html body.frontpage .container main #intro #news article #excerpt { line-height: 1.75; color: #4c4345; }
+html body.frontpage .container main #intro #news article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; }
 html body.frontpage .container main #intro #news article #meta { margin-top: 0.625em; }
+html body.frontpage .container main #intro #news article #meta ul { margin: 0; }
 html body.frontpage .container main #intro #news article #meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.frontpage .container main #intro #news article #meta ul li:last-of-type { margin-right: 0; }
 html body.frontpage .container main #intro #news article #meta #date { font-size: small; color: #74676a; }
-html body.frontpage .container main #intro #news article #content { max-width: 43.75em; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; line-height: 1.75; }
-html body.frontpage .container main #intro #news article #content h1, html body.frontpage .container main #intro #news article #content h2, html body.frontpage .container main #intro #news article #content h3 { padding: 1.51785em 0; }
+html body.frontpage .container main #intro #news article #meta #category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
+html body.frontpage .container main #intro #news article #meta #category a { color: #982022; text-decoration: none; }
+html body.frontpage .container main #intro #news article #meta #category a:hover { color: #231f20; }
 html body.frontpage .container main #intro #news article h1 { font-size: medium; }
 @media only screen and (max-width: 48em) { html body.frontpage .container main #intro #news { width: 100%; max-width: 100%; float: left; } }
-html body.frontpage .container main #investigations h3 { display: block; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; color: #982022; }
+html body.frontpage .container main #investigations h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; }
 html body.frontpage .container main #investigations h3 a { color: #982022; text-decoration: none; }
-html body.frontpage .container main #investigations h3 a:hover { color: #982022; }
+html body.frontpage .container main #investigations h3 a:hover { color: #231f20; }
 html body.frontpage .container main #investigations article { width: auto; float: left; max-width: 30%; margin: 1.5% 3% 0 0; margin-bottom: 3%; border-top: 0.3125em solid; padding-top: 1.25em; }
 @media only screen and (max-width: 48em) { html body.frontpage .container main #investigations article { width: 100%; max-width: 100%; float: left; } }
 html body.frontpage .container main #investigations article figure { display: block; }
 html body.frontpage .container main #investigations article figcaption { display: none; }
 html body.frontpage .container main #investigations article #body { display: none; }
 html body.frontpage .container main #investigations article #meta #category { display: none; }
-html body.frontpage .container main #investigations article #excerpt { line-height: 1.75; color: #4c4345; }
+html body.frontpage .container main #investigations article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; }
 html body.frontpage .container main #investigations article #meta { margin-top: 0.625em; }
+html body.frontpage .container main #investigations article #meta ul { margin: 0; }
 html body.frontpage .container main #investigations article #meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.frontpage .container main #investigations article #meta ul li:last-of-type { margin-right: 0; }
 html body.frontpage .container main #investigations article #meta #date { font-size: small; color: #74676a; }
-html body.frontpage .container main #investigations article #content { max-width: 43.75em; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; line-height: 1.75; }
-html body.frontpage .container main #investigations article #content h1, html body.frontpage .container main #investigations article #content h2, html body.frontpage .container main #investigations article #content h3 { padding: 1.51785em 0; }
+html body.frontpage .container main #investigations article #meta #category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
+html body.frontpage .container main #investigations article #meta #category a { color: #982022; text-decoration: none; }
+html body.frontpage .container main #investigations article #meta #category a:hover { color: #231f20; }
+html body.frontpage .container main #investigations article #excerpt { margin-top: 0.625em; }
 html body.frontpage .container main #products { border-top: 0.3125em solid; padding-top: 1.25em; }
 html body.frontpage .container main #products article { margin-bottom: 3%; }
 html body.frontpage .container main #products article figure { display: block; }
@@ -332,13 +350,15 @@ html body.frontpage .container main #products article #body { display: none; }
 html body.frontpage .container main #products article #meta #category { display: none; }
 html body.frontpage .container main #products article #meta #date { display: none; }
 html body.frontpage .container main #products article #meta { display: none; }
-html body.frontpage .container main #products article #excerpt { line-height: 1.75; color: #4c4345; }
+html body.frontpage .container main #products article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; }
 html body.frontpage .container main #products article #meta { margin-top: 0.625em; }
+html body.frontpage .container main #products article #meta ul { margin: 0; }
 html body.frontpage .container main #products article #meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.frontpage .container main #products article #meta ul li:last-of-type { margin-right: 0; }
 html body.frontpage .container main #products article #meta #date { font-size: small; color: #74676a; }
-html body.frontpage .container main #products article #content { max-width: 43.75em; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; line-height: 1.75; }
-html body.frontpage .container main #products article #content h1, html body.frontpage .container main #products article #content h2, html body.frontpage .container main #products article #content h3 { padding: 1.51785em 0; }
+html body.frontpage .container main #products article #meta #category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
+html body.frontpage .container main #products article #meta #category a { color: #982022; text-decoration: none; }
+html body.frontpage .container main #products article #meta #category a:hover { color: #231f20; }
 @media only screen and (max-width: 48em) { html body.frontpage .container main #products article { width: 100%; margin-right: 0; float: left; } }
 @media only screen and (min-width: 48em) and (max-width: 79.999em) { html body.frontpage .container main #products article { width: 45%; margin-right: 10%; float: left; }
   html body.frontpage .container main #products article:nth-of-type(2) { margin-right: 0; }
@@ -361,9 +381,9 @@ html body.frontpage .container main #products article #content h1, html body.fro
   html body.frontpage .container main #products article:nth-of-type(9) { margin-right: 3.33333%; }
   html body.frontpage .container main #products article:nth-of-type(10) { margin-right: 3.33333%; } }
 html body.frontpage .container main #products article figure { max-height: 209px; overflow: hidden; }
-html body.frontpage .container main #projects h3, html body.frontpage .container main #videos h3 { display: block; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; color: #982022; }
+html body.frontpage .container main #projects h3, html body.frontpage .container main #videos h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; }
 html body.frontpage .container main #projects h3 a, html body.frontpage .container main #videos h3 a { color: #982022; text-decoration: none; }
-html body.frontpage .container main #projects h3 a:hover, html body.frontpage .container main #videos h3 a:hover { color: #982022; }
+html body.frontpage .container main #projects h3 a:hover, html body.frontpage .container main #videos h3 a:hover { color: #231f20; }
 html body.frontpage .container main #projects article, html body.frontpage .container main #videos article { margin-bottom: 3%; }
 html body.frontpage .container main #projects article figure, html body.frontpage .container main #videos article figure { display: block; }
 html body.frontpage .container main #projects article figcaption, html body.frontpage .container main #videos article figcaption { display: none; }
@@ -372,13 +392,15 @@ html body.frontpage .container main #projects article #body, html body.frontpage
 html body.frontpage .container main #projects article #meta #category, html body.frontpage .container main #videos article #meta #category { display: none; }
 html body.frontpage .container main #projects article #meta #date, html body.frontpage .container main #videos article #meta #date { display: none; }
 html body.frontpage .container main #projects article #meta, html body.frontpage .container main #videos article #meta { display: none; }
-html body.frontpage .container main #projects article #excerpt, html body.frontpage .container main #videos article #excerpt { line-height: 1.75; color: #4c4345; }
+html body.frontpage .container main #projects article #excerpt, html body.frontpage .container main #videos article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; }
 html body.frontpage .container main #projects article #meta, html body.frontpage .container main #videos article #meta { margin-top: 0.625em; }
+html body.frontpage .container main #projects article #meta ul, html body.frontpage .container main #videos article #meta ul { margin: 0; }
 html body.frontpage .container main #projects article #meta ul li, html body.frontpage .container main #videos article #meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.frontpage .container main #projects article #meta ul li:last-of-type, html body.frontpage .container main #videos article #meta ul li:last-of-type { margin-right: 0; }
 html body.frontpage .container main #projects article #meta #date, html body.frontpage .container main #videos article #meta #date { font-size: small; color: #74676a; }
-html body.frontpage .container main #projects article #content, html body.frontpage .container main #videos article #content { max-width: 43.75em; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; line-height: 1.75; }
-html body.frontpage .container main #projects article #content h1, html body.frontpage .container main #projects article #content h2, html body.frontpage .container main #projects article #content h3, html body.frontpage .container main #videos article #content h1, html body.frontpage .container main #videos article #content h2, html body.frontpage .container main #videos article #content h3 { padding: 1.51785em 0; }
+html body.frontpage .container main #projects article #meta #category, html body.frontpage .container main #videos article #meta #category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
+html body.frontpage .container main #projects article #meta #category a, html body.frontpage .container main #videos article #meta #category a { color: #982022; text-decoration: none; }
+html body.frontpage .container main #projects article #meta #category a:hover, html body.frontpage .container main #videos article #meta #category a:hover { color: #231f20; }
 @media only screen and (max-width: 48em) { html body.frontpage .container main #projects article, html body.frontpage .container main #videos article { width: 100%; margin-right: 0; float: left; } }
 @media only screen and (min-width: 48em) and (max-width: 79.999em) { html body.frontpage .container main #projects article, html body.frontpage .container main #videos article { width: 45%; margin-right: 10%; float: left; }
   html body.frontpage .container main #projects article:nth-of-type(2), html body.frontpage .container main #videos article:nth-of-type(2) { margin-right: 0; }
@@ -443,12 +465,12 @@ html body.frontpage .container main #most-read aside { counter-reset: counter; }
   html body.frontpage .container main #most-read aside:nth-of-type(8) { margin-right: 5%; }
   html body.frontpage .container main #most-read aside:nth-of-type(9) { margin-right: 0; }
   html body.frontpage .container main #most-read aside:nth-of-type(10) { margin-right: 5%; } }
-html body.frontpage .container main #most-read aside h3 { display: block; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; color: #982022; margin-bottom: 0.625em; }
+html body.frontpage .container main #most-read aside h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; margin-bottom: 0.625em; }
 html body.frontpage .container main #most-read aside h3 a { color: #982022; text-decoration: none; }
-html body.frontpage .container main #most-read aside h3 a:hover { color: #982022; }
-html body.frontpage .container main #most-read aside h3 { display: block; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; color: #982022; }
+html body.frontpage .container main #most-read aside h3 a:hover { color: #231f20; }
+html body.frontpage .container main #most-read aside h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; }
 html body.frontpage .container main #most-read aside h3 a { color: #982022; text-decoration: none; }
-html body.frontpage .container main #most-read aside h3 a:hover { color: #982022; }
+html body.frontpage .container main #most-read aside h3 a:hover { color: #231f20; }
 html body.frontpage .container main #most-read aside article { margin-bottom: 3%; border-bottom: 1px solid; color: #f1f1f1; padding-bottom: 3%; }
 html body.frontpage .container main #most-read aside article figure { display: none; }
 html body.frontpage .container main #most-read aside article figcaption { display: none; }
@@ -457,22 +479,21 @@ html body.frontpage .container main #most-read aside article #body { display: no
 html body.frontpage .container main #most-read aside article #meta #category { display: none; }
 html body.frontpage .container main #most-read aside article #meta #date { display: none; }
 html body.frontpage .container main #most-read aside article #meta { display: none; }
-html body.frontpage .container main #most-read aside article #excerpt { line-height: 1.75; color: #4c4345; }
+html body.frontpage .container main #most-read aside article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; }
 html body.frontpage .container main #most-read aside article #meta { margin-top: 0.625em; }
+html body.frontpage .container main #most-read aside article #meta ul { margin: 0; }
 html body.frontpage .container main #most-read aside article #meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.frontpage .container main #most-read aside article #meta ul li:last-of-type { margin-right: 0; }
 html body.frontpage .container main #most-read aside article #meta #date { font-size: small; color: #74676a; }
-html body.frontpage .container main #most-read aside article #content { max-width: 43.75em; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; line-height: 1.75; }
-html body.frontpage .container main #most-read aside article #content h1, html body.frontpage .container main #most-read aside article #content h2, html body.frontpage .container main #most-read aside article #content h3 { padding: 1.51785em 0; }
+html body.frontpage .container main #most-read aside article #meta #category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
+html body.frontpage .container main #most-read aside article #meta #category a { color: #982022; text-decoration: none; }
+html body.frontpage .container main #most-read aside article #meta #category a:hover { color: #231f20; }
 html body.frontpage .container main #most-read aside article h1 { font-size: medium; }
-html body.frontpage .container main #most-read aside article:before { content: counter(counter); counter-increment: counter; color: white; background: #231f20; padding: 0.3125em 0.625em; display: inline-block; margin-right: 0.625em; float: left; }
+html body.frontpage .container main #most-read aside article:before { content: counter(counter); counter-increment: counter; background: #231f20; color: white; padding: 0.3125em 0.625em; display: inline-block; margin-right: 0.625em; float: left; }
 html body.frontpage .container main #most-read aside article:before a { color: white; text-decoration: none; }
 html body.frontpage .container main #most-read aside article:before a:hover { color: white; }
 html body.frontpage .container main #most-read aside:last-of-type article:before { display: none; }
 html body.category main #articles { width: 64%; margin-right: 3%; float: left; }
-html body.category main #articles h1.title { display: block; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; color: #982022; font-size: 1.16667em; }
-html body.category main #articles h1.title a { color: #982022; text-decoration: none; }
-html body.category main #articles h1.title a:hover { color: #982022; }
 html body.category main #articles article { margin-bottom: 3%; }
 html body.category main #articles article figure { display: block; }
 html body.category main #articles article figcaption { display: none; }
@@ -481,13 +502,15 @@ html body.category main #articles article #body { display: none; }
 html body.category main #articles article #meta #category { display: none; }
 html body.category main #articles article #meta #date { display: none; }
 html body.category main #articles article #meta { display: none; }
-html body.category main #articles article #excerpt { line-height: 1.75; color: #4c4345; }
+html body.category main #articles article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; }
 html body.category main #articles article #meta { margin-top: 0.625em; }
+html body.category main #articles article #meta ul { margin: 0; }
 html body.category main #articles article #meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.category main #articles article #meta ul li:last-of-type { margin-right: 0; }
 html body.category main #articles article #meta #date { font-size: small; color: #74676a; }
-html body.category main #articles article #content { max-width: 43.75em; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; line-height: 1.75; }
-html body.category main #articles article #content h1, html body.category main #articles article #content h2, html body.category main #articles article #content h3 { padding: 1.51785em 0; }
+html body.category main #articles article #meta #category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
+html body.category main #articles article #meta #category a { color: #982022; text-decoration: none; }
+html body.category main #articles article #meta #category a:hover { color: #231f20; }
 @media only screen and (max-width: 48em) { html body.category main #articles article { width: 100%; margin-right: 0; float: left; } }
 @media only screen and (min-width: 48em) and (max-width: 79.999em) { html body.category main #articles article { width: 45%; margin-right: 10%; float: left; }
   html body.category main #articles article:nth-of-type(2) { margin-right: 0; }
@@ -511,9 +534,9 @@ html body.category main #articles article #content h1, html body.category main #
   html body.category main #articles article:nth-of-type(10) { margin-right: 5%; } }
 html body.category main aside { width: 33%; margin-right: 0; float: left; padding: 1.25em; width: calc(33% - 2.5em); background: #f1f1f1; }
 html body.category main aside section { margin-bottom: 2.5em; }
-html body.category main aside section h3 { display: block; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; color: #982022; }
+html body.category main aside section h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; }
 html body.category main aside section h3 a { color: #982022; text-decoration: none; }
-html body.category main aside section h3 a:hover { color: #982022; }
+html body.category main aside section h3 a:hover { color: #231f20; }
 html body.category main aside section article { margin-bottom: 3%; border-bottom: 1px solid; color: #f1f1f1; padding-bottom: 3%; }
 html body.category main aside section article figure { display: none; }
 html body.category main aside section article figcaption { display: none; }
@@ -522,15 +545,17 @@ html body.category main aside section article #body { display: none; }
 html body.category main aside section article #meta #category { display: none; }
 html body.category main aside section article #meta #date { display: none; }
 html body.category main aside section article #meta { display: none; }
-html body.category main aside section article #excerpt { line-height: 1.75; color: #4c4345; }
+html body.category main aside section article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; }
 html body.category main aside section article #meta { margin-top: 0.625em; }
+html body.category main aside section article #meta ul { margin: 0; }
 html body.category main aside section article #meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.category main aside section article #meta ul li:last-of-type { margin-right: 0; }
 html body.category main aside section article #meta #date { font-size: small; color: #74676a; }
-html body.category main aside section article #content { max-width: 43.75em; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; line-height: 1.75; }
-html body.category main aside section article #content h1, html body.category main aside section article #content h2, html body.category main aside section article #content h3 { padding: 1.51785em 0; }
+html body.category main aside section article #meta #category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
+html body.category main aside section article #meta #category a { color: #982022; text-decoration: none; }
+html body.category main aside section article #meta #category a:hover { color: #231f20; }
 html body.category main aside section article h1 { font-size: medium; }
-html body.category main aside section h3 { margin-bottom: 0.3125em; }
+html body.category main aside section h3 { background: #f1f1f1; }
 html body.category main aside section article { border-color: white; }
 html body.category main aside section article h1 { font-weight: normal; }
 html body.category main aside section#projects article { width: 100%; max-width: 100%; float: left; margin-bottom: 3%; }
@@ -541,18 +566,17 @@ html body.category main aside section#projects article #body { display: none; }
 html body.category main aside section#projects article #meta #category { display: none; }
 html body.category main aside section#projects article #meta #date { display: none; }
 html body.category main aside section#projects article #meta { display: none; }
-html body.category main aside section#projects article #excerpt { line-height: 1.75; color: #4c4345; }
+html body.category main aside section#projects article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; }
 html body.category main aside section#projects article #meta { margin-top: 0.625em; }
+html body.category main aside section#projects article #meta ul { margin: 0; }
 html body.category main aside section#projects article #meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.category main aside section#projects article #meta ul li:last-of-type { margin-right: 0; }
 html body.category main aside section#projects article #meta #date { font-size: small; color: #74676a; }
-html body.category main aside section#projects article #content { max-width: 43.75em; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; line-height: 1.75; }
-html body.category main aside section#projects article #content h1, html body.category main aside section#projects article #content h2, html body.category main aside section#projects article #content h3 { padding: 1.51785em 0; }
+html body.category main aside section#projects article #meta #category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
+html body.category main aside section#projects article #meta #category a { color: #982022; text-decoration: none; }
+html body.category main aside section#projects article #meta #category a:hover { color: #231f20; }
 html body.category main aside section#projects article figure { width: 50%; float: left; margin-right: 1.25em; }
 html body.tag main #articles { width: 64%; margin-right: 3%; float: left; }
-html body.tag main #articles h1.title { display: block; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; color: #982022; font-size: 1.16667em; }
-html body.tag main #articles h1.title a { color: #982022; text-decoration: none; }
-html body.tag main #articles h1.title a:hover { color: #982022; }
 html body.tag main #articles article { margin-bottom: 3%; }
 html body.tag main #articles article figure { display: block; }
 html body.tag main #articles article figcaption { display: none; }
@@ -561,13 +585,15 @@ html body.tag main #articles article #body { display: none; }
 html body.tag main #articles article #meta #category { display: none; }
 html body.tag main #articles article #meta #date { display: none; }
 html body.tag main #articles article #meta { display: none; }
-html body.tag main #articles article #excerpt { line-height: 1.75; color: #4c4345; }
+html body.tag main #articles article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; }
 html body.tag main #articles article #meta { margin-top: 0.625em; }
+html body.tag main #articles article #meta ul { margin: 0; }
 html body.tag main #articles article #meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.tag main #articles article #meta ul li:last-of-type { margin-right: 0; }
 html body.tag main #articles article #meta #date { font-size: small; color: #74676a; }
-html body.tag main #articles article #content { max-width: 43.75em; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; line-height: 1.75; }
-html body.tag main #articles article #content h1, html body.tag main #articles article #content h2, html body.tag main #articles article #content h3 { padding: 1.51785em 0; }
+html body.tag main #articles article #meta #category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
+html body.tag main #articles article #meta #category a { color: #982022; text-decoration: none; }
+html body.tag main #articles article #meta #category a:hover { color: #231f20; }
 @media only screen and (max-width: 48em) { html body.tag main #articles article { width: 100%; margin-right: 0; float: left; } }
 @media only screen and (min-width: 48em) and (max-width: 79.999em) { html body.tag main #articles article { width: 45%; margin-right: 10%; float: left; }
   html body.tag main #articles article:nth-of-type(2) { margin-right: 0; }
@@ -591,9 +617,9 @@ html body.tag main #articles article #content h1, html body.tag main #articles a
   html body.tag main #articles article:nth-of-type(10) { margin-right: 5%; } }
 html body.tag main aside { width: 33%; margin-right: 0; float: left; padding: 1.25em; width: calc(33% - 2.5em); background: #f1f1f1; }
 html body.tag main aside section { margin-bottom: 2.5em; }
-html body.tag main aside section h3 { display: block; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; color: #982022; }
+html body.tag main aside section h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; }
 html body.tag main aside section h3 a { color: #982022; text-decoration: none; }
-html body.tag main aside section h3 a:hover { color: #982022; }
+html body.tag main aside section h3 a:hover { color: #231f20; }
 html body.tag main aside section article { margin-bottom: 3%; border-bottom: 1px solid; color: #f1f1f1; padding-bottom: 3%; }
 html body.tag main aside section article figure { display: none; }
 html body.tag main aside section article figcaption { display: none; }
@@ -602,15 +628,17 @@ html body.tag main aside section article #body { display: none; }
 html body.tag main aside section article #meta #category { display: none; }
 html body.tag main aside section article #meta #date { display: none; }
 html body.tag main aside section article #meta { display: none; }
-html body.tag main aside section article #excerpt { line-height: 1.75; color: #4c4345; }
+html body.tag main aside section article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; }
 html body.tag main aside section article #meta { margin-top: 0.625em; }
+html body.tag main aside section article #meta ul { margin: 0; }
 html body.tag main aside section article #meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.tag main aside section article #meta ul li:last-of-type { margin-right: 0; }
 html body.tag main aside section article #meta #date { font-size: small; color: #74676a; }
-html body.tag main aside section article #content { max-width: 43.75em; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; line-height: 1.75; }
-html body.tag main aside section article #content h1, html body.tag main aside section article #content h2, html body.tag main aside section article #content h3 { padding: 1.51785em 0; }
+html body.tag main aside section article #meta #category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
+html body.tag main aside section article #meta #category a { color: #982022; text-decoration: none; }
+html body.tag main aside section article #meta #category a:hover { color: #231f20; }
 html body.tag main aside section article h1 { font-size: medium; }
-html body.tag main aside section h3 { margin-bottom: 0.3125em; }
+html body.tag main aside section h3 { background: #f1f1f1; }
 html body.tag main aside section article { border-color: white; }
 html body.tag main aside section article h1 { font-weight: normal; }
 html body.tag main aside section#projects article { width: 100%; max-width: 100%; float: left; margin-bottom: 3%; }
@@ -621,30 +649,84 @@ html body.tag main aside section#projects article #body { display: none; }
 html body.tag main aside section#projects article #meta #category { display: none; }
 html body.tag main aside section#projects article #meta #date { display: none; }
 html body.tag main aside section#projects article #meta { display: none; }
-html body.tag main aside section#projects article #excerpt { line-height: 1.75; color: #4c4345; }
+html body.tag main aside section#projects article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; }
 html body.tag main aside section#projects article #meta { margin-top: 0.625em; }
+html body.tag main aside section#projects article #meta ul { margin: 0; }
 html body.tag main aside section#projects article #meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.tag main aside section#projects article #meta ul li:last-of-type { margin-right: 0; }
 html body.tag main aside section#projects article #meta #date { font-size: small; color: #74676a; }
-html body.tag main aside section#projects article #content { max-width: 43.75em; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; line-height: 1.75; }
-html body.tag main aside section#projects article #content h1, html body.tag main aside section#projects article #content h2, html body.tag main aside section#projects article #content h3 { padding: 1.51785em 0; }
+html body.tag main aside section#projects article #meta #category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
+html body.tag main aside section#projects article #meta #category a { color: #982022; text-decoration: none; }
+html body.tag main aside section#projects article #meta #category a:hover { color: #231f20; }
 html body.tag main aside section#projects article figure { width: 50%; float: left; margin-right: 1.25em; }
 html body.article main #article { width: 100%; max-width: 100%; float: left; width: 64%; margin-right: 3%; float: left; }
-html body.article main #article article { margin-bottom: 3%; }
+html body.article main #article article { margin-bottom: 3%; max-width: 43.75em; line-height: 1.75; /* Headings
+*/ /* Elements
+*/ /* Padding of individual elements
+*/ /* Padding of consecutive elements
+*/ }
 html body.article main #article article figure { display: block; }
 html body.article main #article article #excerpt { display: none; }
-html body.article main #article article #excerpt { line-height: 1.75; color: #4c4345; }
+html body.article main #article article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; }
 html body.article main #article article #meta { margin-top: 0.625em; }
+html body.article main #article article #meta ul { margin: 0; }
 html body.article main #article article #meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.article main #article article #meta ul li:last-of-type { margin-right: 0; }
 html body.article main #article article #meta #date { font-size: small; color: #74676a; }
-html body.article main #article article #content { max-width: 43.75em; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; line-height: 1.75; }
-html body.article main #article article #content h1, html body.article main #article article #content h2, html body.article main #article article #content h3 { padding: 1.51785em 0; }
+html body.article main #article article #meta #category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
+html body.article main #article article #meta #category a { color: #982022; text-decoration: none; }
+html body.article main #article article #meta #category a:hover { color: #231f20; }
+html body.article main #article article h1, html body.article main #article article h2, html body.article main #article article h3, html body.article main #article article h4, html body.article main #article article h5, html body.article main #article article h6 { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; line-height: 1.25; }
+html body.article main #article article h1 { font-size: 20px; font-size: 1.25rem; font-weight: bold; }
+html body.article main #article article h2 { font-size: 20px; font-size: 1.25rem; font-weight: normal; text-transform: uppercase; letter-spacing: 1.1px; }
+html body.article main #article article h3 { font-size: 20px; font-size: 1.25rem; font-weight: normal; }
+html body.article main #article article h4 { font-size: larger; font-weight: normal; }
+html body.article main #article article h1, html body.article main #article article h2, html body.article main #article article h3 { line-height: 1.25; margin-top: 0; margin-bottom: 0; padding: 1.45833em 0; }
+html body.article main #article article em, html body.article main #article article i { font-style: italic; }
+html body.article main #article article strong, html body.article main #article article b { font-weight: bold; }
+html body.article main #article article ol { list-style: none outside; counter-reset: ol-counter; }
+html body.article main #article article ol li { /* When parent positioned to 'relative' the children (:before) can be positioned to 'absolute' - this way we can perfectly align the bullets / numbering to the list content
+*/ position: relative; padding-left: 1.25em; }
+html body.article main #article article ol li:before { /* making the content of the list perfectly align with numbering - <li> is relatively positioned - :the numbering (:before) is aboslutely positioned within <li> and fixed to left - the the <li> content has a padding-left to not overlap the numbering
+*/ position: absolute; left: 0; }
+html body.article main #article article ol li { counter-increment: ol-counter; }
+html body.article main #article article ol li:before { content: counter(ol-counter,decimal); }
+html body.article main #article article dl dt { font-size: 20px; font-size: 1.25rem; font-weight: normal; text-transform: uppercase; letter-spacing: 1.1px; }
+html body.article main #article article table { width: 100%; display: table !important; }
+html body.article main #article article table thead { background: #231f20; color: white; }
+html body.article main #article article table thead a { color: white; text-decoration: none; }
+html body.article main #article article table thead a:hover { color: white; }
+html body.article main #article article table thead th, html body.article main #article article table tbody td { padding: 1.25em; padding-left: 0; }
+html body.article main #article article table tbody td { border-bottom: 1px solid #74676a; }
+html body.article main #article article figure img { -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; width: auto; }
+html body.article main #article article figure figcaption { font-size: smaller; }
+html body.article main #article article form { /* Reset */ /* Text */ /* Button */ /* Stretching and padding */ }
+html body.article main #article article form input, html body.article main #article article form textarea, html body.article main #article article form select { border: none; outline: 0; background: white; appearance: none; -webkit-appearance: none; -moz-appearance: none; }
+html body.article main #article article form input[type='text'], html body.article main #article article form input[type='email'], html body.article main #article article form input[type='password'], html body.article main #article article form textarea { border: 1px solid #231f20; font-style: italic; }
+html body.article main #article article form input[type='submit'] { text-transform: uppercase; letter-spacing: 1.1px; border: 1px solid #231f20; cursor: pointer; -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; }
+html body.article main #article article form input[type='submit']:hover { background: #982022; }
+html body.article main #article article form label, html body.article main #article article form input, html body.article main #article article form textarea { width: 100%; max-width: 100%; float: left; }
+html body.article main #article article form input, html body.article main #article article form textarea { padding: 0.625em; width: calc(100% - 1.25em); }
+html body.article main #article article blockquote, html body.article main #article article q { border-top: 1px solid; border-bottom: 1px solid; /* Making room to the " sign 
+*/ position: relative; float: left; padding: 12.5em 0 2.5em 5em; /* Fill the parent block
+*/ width: 100%; max-width: 100%; float: left; text-align: right; width: calc(43.75em - 5em); /*
+@include below-and-small-screen { width: calc(100% - 5em);
+}
+*/ }
+html body.article main #article article blockquote:before, html body.article main #article article q:before { content: '\201C'; font-size: 1400%; position: absolute; top: 0; left: 0; }
+html body.article main #article article ul, html body.article main #article article ol, html body.article main #article article dl, html body.article main #article article table, html body.article main #article article figure, html body.article main #article article form, html body.article main #article article q { margin: 1.25em 0; }
+html body.article main #article article figure { margin-top: 2.5em; }
+html body.article main #article article dd + dt { margin-top: 1.25em; }
+html body.article main #article article p + p { margin-top: 1.25em; }
+html body.article main #article article h1 + h2, html body.article main #article article h2 + h3 { padding-top: 0; }
+html body.article main #article article h1 + ul, html body.article main #article article h2 + ul, html body.article main #article article h3 + ul, html body.article main #article article h1 + ol, html body.article main #article article h2 + ol, html body.article main #article article h3 + ol, html body.article main #article article h1 + figure, html body.article main #article article h2 + figure, html body.article main #article article h3 + figure { margin-top: 0; }
+html body.article main #article article li ul, html body.article main #article article li ol { margin-top: 0; }
+html body.article main #article article #meta { border-bottom: 1px solid; color: #f1f1f1; margin-bottom: 1.25em; }
 html body.article main aside { width: 33%; margin-right: 0; float: left; padding: 1.25em; width: calc(33% - 2.5em); background: #f1f1f1; }
 html body.article main aside section { margin-bottom: 2.5em; }
-html body.article main aside section h3 { display: block; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; color: #982022; }
+html body.article main aside section h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; }
 html body.article main aside section h3 a { color: #982022; text-decoration: none; }
-html body.article main aside section h3 a:hover { color: #982022; }
+html body.article main aside section h3 a:hover { color: #231f20; }
 html body.article main aside section article { margin-bottom: 3%; border-bottom: 1px solid; color: #f1f1f1; padding-bottom: 3%; }
 html body.article main aside section article figure { display: none; }
 html body.article main aside section article figcaption { display: none; }
@@ -653,15 +735,17 @@ html body.article main aside section article #body { display: none; }
 html body.article main aside section article #meta #category { display: none; }
 html body.article main aside section article #meta #date { display: none; }
 html body.article main aside section article #meta { display: none; }
-html body.article main aside section article #excerpt { line-height: 1.75; color: #4c4345; }
+html body.article main aside section article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; }
 html body.article main aside section article #meta { margin-top: 0.625em; }
+html body.article main aside section article #meta ul { margin: 0; }
 html body.article main aside section article #meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.article main aside section article #meta ul li:last-of-type { margin-right: 0; }
 html body.article main aside section article #meta #date { font-size: small; color: #74676a; }
-html body.article main aside section article #content { max-width: 43.75em; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; line-height: 1.75; }
-html body.article main aside section article #content h1, html body.article main aside section article #content h2, html body.article main aside section article #content h3 { padding: 1.51785em 0; }
+html body.article main aside section article #meta #category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
+html body.article main aside section article #meta #category a { color: #982022; text-decoration: none; }
+html body.article main aside section article #meta #category a:hover { color: #231f20; }
 html body.article main aside section article h1 { font-size: medium; }
-html body.article main aside section h3 { margin-bottom: 0.3125em; }
+html body.article main aside section h3 { background: #f1f1f1; }
 html body.article main aside section article { border-color: white; }
 html body.article main aside section article h1 { font-weight: normal; }
 html body.article main aside section#projects article { width: 100%; max-width: 100%; float: left; margin-bottom: 3%; }
@@ -672,11 +756,13 @@ html body.article main aside section#projects article #body { display: none; }
 html body.article main aside section#projects article #meta #category { display: none; }
 html body.article main aside section#projects article #meta #date { display: none; }
 html body.article main aside section#projects article #meta { display: none; }
-html body.article main aside section#projects article #excerpt { line-height: 1.75; color: #4c4345; }
+html body.article main aside section#projects article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; }
 html body.article main aside section#projects article #meta { margin-top: 0.625em; }
+html body.article main aside section#projects article #meta ul { margin: 0; }
 html body.article main aside section#projects article #meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.article main aside section#projects article #meta ul li:last-of-type { margin-right: 0; }
 html body.article main aside section#projects article #meta #date { font-size: small; color: #74676a; }
-html body.article main aside section#projects article #content { max-width: 43.75em; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; line-height: 1.75; }
-html body.article main aside section#projects article #content h1, html body.article main aside section#projects article #content h2, html body.article main aside section#projects article #content h3 { padding: 1.51785em 0; }
+html body.article main aside section#projects article #meta #category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
+html body.article main aside section#projects article #meta #category a { color: #982022; text-decoration: none; }
+html body.article main aside section#projects article #meta #category a:hover { color: #231f20; }
 html body.article main aside section#projects article figure { width: 50%; float: left; margin-right: 1.25em; }

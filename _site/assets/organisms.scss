@@ -64,27 +64,28 @@
   }
   
   #excerpt {
-    @include text-article-excerpt;
+    @include font(excerpt);
     color: lighten($color, 15%);
   }
-  
   
   #meta {
     margin-top: $pad/2;
     
     ul {
       @include list-inline($pad/2);
+      margin: 0;
     }
     
     #date {
-      font-size: small;
-      color: lighten($color, 30%);
+      @include font(date);
+    }
+    
+    #category {
+      @include font(navigation);
+      @include color(highlight);
     }
   }
   
-  #content {
-    @include text-body;
-  }
 }
 
 
@@ -96,6 +97,12 @@
   
   article {
     @include article(category, date, title, figure, figcaption, null, body);
+    @include body-text;
+    
+    #meta {
+      @include border-thin;
+      margin-bottom: $pad;
+    }
   }
 }
 
@@ -105,12 +112,6 @@
 */
 @mixin category-articles {
   @include col(64%, 3%);
-  
-  h1.title {
-    @include section-title;
-    @include h1;
-  }
-  
   article {
     @include article(null, null, title, figure);
     @include responsive-grid(3);
@@ -130,7 +131,7 @@
     margin-bottom: $pad*2;
     
     h3 {
-      margin-bottom: $pad/4;
+      background: $light-grey;
     }
     
     article {
@@ -166,7 +167,7 @@
     @include responsive-grid(3);
     
     h3 {
-      @include section-title;
+      @include font(section-title);
       margin-bottom: $pad/2;
     }
     
@@ -177,7 +178,7 @@
       &:before {
         content: counter(counter);
         counter-increment: counter;
-        @include invert;
+        @include color(invert);
         padding: $pad/4 $pad/2;
         display: inline-block;
         margin-right: $pad/2;
@@ -201,7 +202,7 @@
 */
 @mixin projects {
   h3 {
-    @include section-title;
+    @include font(section-title);
   }
   
   article {
@@ -233,7 +234,7 @@
 */
 @mixin investigations {
   h3 {
-    @include section-title;
+    @include font(section-title);
   }
   
   article {
@@ -241,6 +242,10 @@
     @include article(null, date, title, figure, null, excerpt, null);
     border-top: $border;
     padding-top: $pad;
+    
+    #excerpt {
+      margin-top: $pad/2;
+    }
   }
 }
 
@@ -249,7 +254,7 @@
 */
 @mixin article-news {
   h3 {
-    @include section-title;
+    @include font(section-title);
   }
   
   article {
@@ -307,7 +312,7 @@
       @include list-menu(block, $pad/2, $pad/2 + $pad/4);
       
       li {
-        @include invert($color, $background);
+        @include color(slider);
       }
     }
   }
@@ -374,7 +379,7 @@
   nav {
     @include responsive-grid(3);
     
-    @include text-navigation;
+    @include font(navigation);
     @include border-thin($color);
     
     padding: $pad/2 0;
@@ -408,7 +413,7 @@
     &#tags {
       @include block;
       margin-top: $pad/2;
-      @include invert;
+      @include color(invert);
       
       /* To fit the hover on tags we add a border-top */
       border-top: $border-thin;
@@ -424,10 +429,10 @@
 @mixin footer {
   padding: $pad 0;
   border-top: $border;
-  @include text-navigation;
+  @include font(navigation);
   
   ul {
-    @include list-inline;
+    @include list-inline($pad);
     
     li {
       &#usaid {
@@ -444,17 +449,7 @@
           font-weight: bold;
           margin-bottom: $pad;
           text-align: right;
-          @include invert;
-        }
-        
-        ul {
-          li {
-            margin-right: $pad;
-            
-            &:last-of-type {
-              margin-right: 0;
-            }
-          }
+          @include color(invert);
         }
       }
     }
@@ -463,22 +458,107 @@
 
 
 
+
+
+
+/* Typography
+--------------------------------------------------------------------------------
+*/
+
+
+
+
+
 /* Default settings for this theme
   - like typography, links, colors, etc
 */
 @mixin default-settings {
-  background: $background;
-  color: $color;
-  
-  @include link;
-  
+  @include color;
   @include fluid-image;
-  
-  @include font-body;
-  font-size: $font-size;
-  line-height: $line-height;
+  @include font;
 }
 
+
+
+/* Vertical spacing of all typographic elements
+*/
+@mixin vertical-rhythm {
+  /* Padding of individual elements
+  */
+  ul, ol, dl, table, figure, form, q {
+    margin: $pad 0;
+  }
+  
+  figure {
+    margin-top: $pad*2;
+  }
+  
+  
+  /* Padding of consecutive elements
+  */
+  dd + dt {
+    margin-top: $pad;
+  }
+  
+  p + p {
+    margin-top: $pad;
+  }
+  
+  h1 + h2, h2 + h3 {
+    padding-top: 0;
+  }
+  
+  
+  h1 + ul, h2 + ul, h3 + ul,
+  h1 + ol, h2 + ol, h3 + ol,
+  h1 + figure, h2 + figure, h3 + figure {
+    margin-top: 0;
+  }
+  
+  
+  li ul, li ol {
+    margin-top: 0;
+  }
+  
+}
+
+
+/* Settings for long text content like articles, blog posts
+*/
+@mixin body-text {
+  max-width: $body-text-width; 
+  @include line-height(text);
+  
+  /* Headings
+  */
+  @include headings;
+  h1, h2, h3 {
+    @include line-height(headings);
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: $h1-padding 0; 
+  }
+  
+  /* Elements
+  */
+  em, i {
+    font-style: italic;
+  }
+  
+  strong, b {
+    font-weight: bold;
+  }
+  
+  @include ul;
+  @include ol;
+  @include dl;
+  @include table;
+  @include figure;
+  @include form;
+  @include q;
+  
+  @include vertical-rhythm;
+}
 
 
 
