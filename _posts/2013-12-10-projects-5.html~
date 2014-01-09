@@ -1,0 +1,9 @@
+---
+layout: default
+title: The Proxy Platform
+category: projects
+excerpt: Excerpt
+images:
+  - title: Image title
+    url: /assets/proxy.png
+---

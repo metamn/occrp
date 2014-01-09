@@ -1,0 +1,24 @@
+---
+layout: default
+title: Romania: Former Prime Minister Receives Jail Sentence, Again
+category: news
+excerpt: Former Romanian Prime Minister Adrian Nastase has been sentenced to four years in prison for taking bribes
+images:
+  - title: Adrian Nastase. Source:Romanian Government
+    url: /assets/Nastase3.jpg
+---
+
+<p>Former Romanian Prime Minister Adrian Nastase has been sentenced to four years in prison for taking bribes. This is his second corruption-related sentencing, <a href="http://www.rferl.org/content/romania-nastase-corruption-bribe/25222339.html" target="_blank">reports Radio Free Europe</a>.</p>
+<p>Nastase, who was prime minister from 2000 to 2004, was released from jail in March of 2013 after serving eight months for a separate case involving illegal fundraising in 2004’s electoral campaign, <a href="http://www.romania-insider.com/court-orders-second-jail-sentence-without-parole-for-former-romanian-pm-nastase/112347/" target="_blank">reports Romania–Insider.com</a>.&nbsp;</p>
+
+{% assign image_index = 1 %}
+{% include responsive-images.html type='from post'  %}
+
+<p>According to Radio Free Europe, Nastase was convicted of taking US$858,000 worth of building materials and construction work from Irina Jianu, chief inspector at a state construction company, in exchange for allowing her to keep her job.</p>
+<p>Jianu was sentenced to four years in prison.</p>
+<p>Nastase also received three years in jail for blackmail, but will, per Romanian law, serve the longer of the two sentences.</p>
+<p>Nastase said, “It’s a terrible decision, extremely unfair. A dirty revenge, what more can I say?” <a href="http://www.romania-insider.com/former-romanian-pm-nastase-says-jail-sentence-is-extremely-unfair-a-dirty-revenge/112382/" target="_blank">reports Romania-Insider.com.</a></p>
+<p>Victor Ponta, the current Romanian prime minister and the president of the Social Democratic Party that Nastase used to lead, echoed this statement, saying that the former prime minister is a victim.</p>
+<p>According to Romania-Insider.com, Ponta told a local Romanian TV station that Nastase is being unfairly targeted by Romanian president and opposition party member Traian Basescu.</p>
+<p>The Romanian parliament has had a history of corruption scandals. In December, it &nbsp;amended the criminal code to give its members, as well as other elected government officials, immunity from corruption charges.</p>
+<p>As a result, the OCCRP gave the parliament the <a href="https://reportingproject.net/occrp/index.php/en/press-box/2269-occrp-announces-2013-organized-crime-and-corruption-person-of-the-year-" target="_blank">2013 “Person Of The Year</a>&nbsp;award for its efforts to “promote uncivil society.”</p>

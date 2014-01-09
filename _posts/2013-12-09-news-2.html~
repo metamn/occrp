@@ -1,0 +1,17 @@
+---
+layout: default
+title: Microsoft Crimes Unit Partners Disrupt Huge Click-Fraud Botnet 
+excerpt: The Microsoft Digital Crimes Unit said Thursday that it had disrupted a botnet that has initiated fraudulent transactions on over 2 million computers
+category: daily
+---
+
+
+<p>The Microsoft Digital Crimes Unit <a href="http://www.microsoft.com/en-us/news/press/2013/dec13/12-05zeroaccessbotnetpr.aspx" target="_blank">said Thursday</a> that it had disrupted a botnet that has initiated fraudulent transactions on over 2 million computers. Miscrosoft worked with the FBI, Europol's European Cybercrime Centre, and tech industry partners.</p>
+
+<p>A botnet is a collection of internet programs which communicate together to perform tasks. <a href="http://www.microsoft.com/security/resources/botnet-whatis.aspx" target="_blank">According to Microsoft</a>, criminals can use botnets to infect large quantities of computers, making them perform automated tasks such as sending spam and spreading viruses without their owners’ consent or knowledge.</p>
+<p>The ZeroAccess botnet which was disrupted Thursday was one of the world’s largest, <a href="http://www.bbc.co.uk/news/technology-25227592" target="_blank">reports BBC.</a> The botnet infected 2 million computers, hijacking search queries and redirecting users to sites that could steal their information. It also generated fraudulent clicks on advertisements, allowing cyber criminals to collect payments from advertisers for the bogus internet traffic.</p>
+<p>According to BBC, the botnet cost online advertisers US $2.7 million a month.</p>
+<p>Microsoft filed a suit against eight unnamed defendants for identity theft and distributed denial-of-service attacks on November 25<sup>th</sup>, <a href="http://www.pcworld.com/article/2069940/zeroaccess-clickfraud-botnet-disrupted-but-not-dead-yet.html" target="_blank">reports PCWorld</a>. Though the defendants are anonymous, the lawsuit is in both Russian and English.</p>
+<p>The recent ZeroAccess strike is a multinational effort. According to PCWorld, Europol is working with Latvia, Luxembourg, Switzerland, the Netherlands, and Germany to search and seize computers with the 18 IP addresses linked to ZeroAccess. The U.S. federal court has allowed Microsoft to block communication from the botnet and take over 49 domain names it used.</p>
+<p><a href="http://online.wsj.com/article/PR-CO-20131205-911544.html?dsk=y" target="_blank">According to the Wall Street Journal</a>, Troels Oerting, head of Europol's European Cybercrime Center, said that the operation was an important step in coordinated actions between private companies and international law enforcement agencies to “identify and investigate the criminal organizations and networks behind these dangerous botnets that use malicious software to gain illicit profits.”</p>
+<p>This is the second joint venture in the past six months between Microsoft and law enforcement personnel to disrupt a botnet. According to the Wall Street Journal, Microsoft and its partners do not expect to completely dismantle the botnet due to its complexity, but expect their efforts “will significantly disrupt the botnet's operation.”</p>

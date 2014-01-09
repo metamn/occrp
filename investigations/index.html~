@@ -1,0 +1,14 @@
+---
+layout: category
+title: Organized Crime and Corruption Reporting Project
+class: category
+---
+
+<section id="investigations">
+  <h3>Investigations</h3>
+  
+  {% for post in site.categories.investigations %}
+    {% include article.html %}
+  {% endfor %}
+  
+</section>

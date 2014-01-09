@@ -1,0 +1,9 @@
+---
+layout: default
+title: Man In The Middle
+category: projects
+excerpt: Excerpt
+images:
+  - title: Image title
+    url: /assets/man-in-the-middle.png
+---

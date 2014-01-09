@@ -1,0 +1,9 @@
+---
+layout: default
+title: People of Interest
+category: projects
+excerpt: Excerpt
+images:
+  - title: Image title
+    url: http://placehold.it/350x350.png
+---

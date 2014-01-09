@@ -1,0 +1,9 @@
+---
+layout: default
+title: The Miskovic Millions
+category: projects
+excerpt: Excerpt
+images:
+  - title: Image title
+    url: /assets/miskovic.png
+---
