@@ -106,7 +106,7 @@
 /* Returns the width of a column in a grid
 */
 @function col-width($how-many) {
-  @return floor(90% / $how-many);
+  @return 90% / $how-many;
 }
 
 /* Returns the margin of a column in a grid

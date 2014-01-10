@@ -264,10 +264,12 @@
   }
   
   article {
-    @include flexible-grid;
+    //@include flexible-grid;
+    @include responsive-grid(3);
     @include article(null, date, title, figure, null, excerpt, null);
     border-top: $border;
     padding-top: $pad;
+    height: 30em;
     
     #excerpt {
       margin-top: $pad/2;
@@ -299,7 +301,7 @@
 /* The news
 */
 @mixin news {
-  @include col(33%, 0);
+  @include col(30%, 0);
   @include article-news;
   
   @include below-and-tablet {
@@ -329,8 +331,8 @@
 /* The slider on the frontpage
 */
 @mixin slider {
-  @include col(64%, 3%);
-  @include padding(63%);
+  @include col(65%, 5%);
+  @include padding(65%);
   background: $light-grey;
   
   @include slider-elements;
@@ -341,7 +343,7 @@
     margin-bottom: 0;
     
     figure {
-      @include col(47%, 4%);
+      @include col(44%, 7%);
     }
     
     h1, #excerpt {
