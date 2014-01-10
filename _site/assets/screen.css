@@ -110,6 +110,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 */
 /* Highlights an active item in a list / menu
 */
+/* Navigation
+*/
 /* Images
 --------------------------------------------------------------------------------
 */
@@ -334,7 +336,7 @@ html body.frontpage .container main #intro #news article h1 { font-size: medium;
 html body.frontpage .container main #investigations h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; }
 html body.frontpage .container main #investigations h3 a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #investigations h3 a:hover { color: #231f20; }
-html body.frontpage .container main #investigations article { margin-bottom: 3%; border-top: 0.3125em solid; padding-top: 1.25em; height: 30em; }
+html body.frontpage .container main #investigations article { margin-bottom: 3%; border-top: 0.3125em solid; padding-top: 1.25em; height: 28em; }
 @media only screen and (max-width: 48em) { html body.frontpage .container main #investigations article { width: 100%; margin-right: 0; float: left; } }
 @media only screen and (min-width: 48em) and (max-width: 79.999em) { html body.frontpage .container main #investigations article { width: 45%; margin-right: 10%; float: left; }
   html body.frontpage .container main #investigations article:nth-of-type(2) { margin-right: 0; }
@@ -409,6 +411,7 @@ html body.frontpage .container main #products article #meta #category a:hover { 
   html body.frontpage .container main #products article:nth-of-type(8) { margin-right: 0; }
   html body.frontpage .container main #products article:nth-of-type(9) { margin-right: 3.33333%; }
   html body.frontpage .container main #products article:nth-of-type(10) { margin-right: 3.33333%; } }
+html body.frontpage .container main #products article h1 { font-size: medium; }
 html body.frontpage .container main #projects h3, html body.frontpage .container main #videos h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; }
 html body.frontpage .container main #projects h3 a, html body.frontpage .container main #videos h3 a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #projects h3 a:hover, html body.frontpage .container main #videos h3 a:hover { color: #231f20; }
@@ -453,6 +456,18 @@ html body.frontpage .container main #projects article #meta #category a:hover, h
   html body.frontpage .container main #projects article:nth-of-type(8), html body.frontpage .container main #videos article:nth-of-type(8) { margin-right: 2.5%; }
   html body.frontpage .container main #projects article:nth-of-type(9), html body.frontpage .container main #videos article:nth-of-type(9) { margin-right: 2.5%; }
   html body.frontpage .container main #projects article:nth-of-type(10), html body.frontpage .container main #videos article:nth-of-type(10) { margin-right: 0; } }
+html body.frontpage .container main #projects article h1, html body.frontpage .container main #videos article h1 { font-size: medium; }
+html body.frontpage .container main #projects nav, html body.frontpage .container main #videos nav { margin-top: 1.25em; }
+html body.frontpage .container main #projects nav > h3, html body.frontpage .container main #videos nav > h3 { display: none; }
+html body.frontpage .container main #projects nav ol li, html body.frontpage .container main #videos nav ol li { display: inline-block; float: left; margin-right: 0.625em; }
+html body.frontpage .container main #projects nav ol li:last-of-type, html body.frontpage .container main #videos nav ol li:last-of-type { margin-right: 0; }
+html body.frontpage .container main #projects nav ol li a, html body.frontpage .container main #videos nav ol li a { padding: 0.625em 0.9375em; display: block; }
+html body.frontpage .container main #projects nav ol li.active a, html body.frontpage .container main #projects nav ol li:hover a, html body.frontpage .container main #videos nav ol li.active a, html body.frontpage .container main #videos nav ol li:hover a { background: #982022; color: white; }
+html body.frontpage .container main #projects nav ol li.active a a, html body.frontpage .container main #projects nav ol li:hover a a, html body.frontpage .container main #videos nav ol li.active a a, html body.frontpage .container main #videos nav ol li:hover a a { color: white; text-decoration: none; }
+html body.frontpage .container main #projects nav ol li.active a a:hover, html body.frontpage .container main #projects nav ol li:hover a a:hover, html body.frontpage .container main #videos nav ol li.active a a:hover, html body.frontpage .container main #videos nav ol li:hover a a:hover { color: white; }
+html body.frontpage .container main #projects nav ol li, html body.frontpage .container main #videos nav ol li { background: #f1f1f1; color: #231f20; }
+html body.frontpage .container main #projects nav ol li a, html body.frontpage .container main #videos nav ol li a { color: #231f20; text-decoration: none; }
+html body.frontpage .container main #projects nav ol li a:hover, html body.frontpage .container main #videos nav ol li a:hover { color: white; }
 @media only screen and (max-width: 48em) { html body.frontpage .container main #videos article { width: 100%; margin-right: 0; float: left; } }
 @media only screen and (min-width: 48em) and (max-width: 79.999em) { html body.frontpage .container main #videos article { width: 45%; margin-right: 10%; float: left; }
   html body.frontpage .container main #videos article:nth-of-type(2) { margin-right: 0; }
@@ -555,7 +570,17 @@ html body.category main #articles article #meta #category a:hover { color: #231f
   html body.category main #articles article:nth-of-type(7) { margin-right: 10%; }
   html body.category main #articles article:nth-of-type(8) { margin-right: 0; }
   html body.category main #articles article:nth-of-type(9) { margin-right: 10%; }
-  html body.category main #articles article:nth-of-type(10) { margin-right: 0; } }
+  html body.category main #articles article:nth-of-type(10) { margin-right: 0; }
+  html body.category main #articles article:nth-of-type(11) { margin-right: 10%; }
+  html body.category main #articles article:nth-of-type(12) { margin-right: 0; }
+  html body.category main #articles article:nth-of-type(13) { margin-right: 10%; }
+  html body.category main #articles article:nth-of-type(14) { margin-right: 0; }
+  html body.category main #articles article:nth-of-type(15) { margin-right: 10%; }
+  html body.category main #articles article:nth-of-type(16) { margin-right: 0; }
+  html body.category main #articles article:nth-of-type(17) { margin-right: 10%; }
+  html body.category main #articles article:nth-of-type(18) { margin-right: 0; }
+  html body.category main #articles article:nth-of-type(19) { margin-right: 10%; }
+  html body.category main #articles article:nth-of-type(20) { margin-right: 0; } }
 @media only screen and (min-width: 80em) { html body.category main #articles article { width: 30%; margin-right: 5%; float: left; }
   html body.category main #articles article:nth-of-type(2) { margin-right: 5%; }
   html body.category main #articles article:nth-of-type(3) { margin-right: 0; }
@@ -565,7 +590,29 @@ html body.category main #articles article #meta #category a:hover { color: #231f
   html body.category main #articles article:nth-of-type(7) { margin-right: 5%; }
   html body.category main #articles article:nth-of-type(8) { margin-right: 5%; }
   html body.category main #articles article:nth-of-type(9) { margin-right: 0; }
-  html body.category main #articles article:nth-of-type(10) { margin-right: 5%; } }
+  html body.category main #articles article:nth-of-type(10) { margin-right: 5%; }
+  html body.category main #articles article:nth-of-type(11) { margin-right: 5%; }
+  html body.category main #articles article:nth-of-type(12) { margin-right: 0; }
+  html body.category main #articles article:nth-of-type(13) { margin-right: 5%; }
+  html body.category main #articles article:nth-of-type(14) { margin-right: 5%; }
+  html body.category main #articles article:nth-of-type(15) { margin-right: 0; }
+  html body.category main #articles article:nth-of-type(16) { margin-right: 5%; }
+  html body.category main #articles article:nth-of-type(17) { margin-right: 5%; }
+  html body.category main #articles article:nth-of-type(18) { margin-right: 0; }
+  html body.category main #articles article:nth-of-type(19) { margin-right: 5%; }
+  html body.category main #articles article:nth-of-type(20) { margin-right: 5%; } }
+html body.category main #articles article h1 { font-size: medium; }
+html body.category main #articles nav { margin-top: 1.25em; }
+html body.category main #articles nav > h3 { display: none; }
+html body.category main #articles nav ol li { display: inline-block; float: left; margin-right: 0.625em; }
+html body.category main #articles nav ol li:last-of-type { margin-right: 0; }
+html body.category main #articles nav ol li a { padding: 0.625em 0.9375em; display: block; }
+html body.category main #articles nav ol li.active a, html body.category main #articles nav ol li:hover a { background: #982022; color: white; }
+html body.category main #articles nav ol li.active a a, html body.category main #articles nav ol li:hover a a { color: white; text-decoration: none; }
+html body.category main #articles nav ol li.active a a:hover, html body.category main #articles nav ol li:hover a a:hover { color: white; }
+html body.category main #articles nav ol li { background: #f1f1f1; color: #231f20; }
+html body.category main #articles nav ol li a { color: #231f20; text-decoration: none; }
+html body.category main #articles nav ol li a:hover { color: white; }
 html body.category main aside { width: 33%; margin-right: 0; float: left; padding: 1.25em; width: calc(33% - 2.5em); background: #f1f1f1; }
 html body.category main aside section { margin-bottom: 2.5em; }
 html body.category main aside section h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; }
@@ -642,7 +689,17 @@ html body.tag main #articles article #meta #category a:hover { color: #231f20; }
   html body.tag main #articles article:nth-of-type(7) { margin-right: 10%; }
   html body.tag main #articles article:nth-of-type(8) { margin-right: 0; }
   html body.tag main #articles article:nth-of-type(9) { margin-right: 10%; }
-  html body.tag main #articles article:nth-of-type(10) { margin-right: 0; } }
+  html body.tag main #articles article:nth-of-type(10) { margin-right: 0; }
+  html body.tag main #articles article:nth-of-type(11) { margin-right: 10%; }
+  html body.tag main #articles article:nth-of-type(12) { margin-right: 0; }
+  html body.tag main #articles article:nth-of-type(13) { margin-right: 10%; }
+  html body.tag main #articles article:nth-of-type(14) { margin-right: 0; }
+  html body.tag main #articles article:nth-of-type(15) { margin-right: 10%; }
+  html body.tag main #articles article:nth-of-type(16) { margin-right: 0; }
+  html body.tag main #articles article:nth-of-type(17) { margin-right: 10%; }
+  html body.tag main #articles article:nth-of-type(18) { margin-right: 0; }
+  html body.tag main #articles article:nth-of-type(19) { margin-right: 10%; }
+  html body.tag main #articles article:nth-of-type(20) { margin-right: 0; } }
 @media only screen and (min-width: 80em) { html body.tag main #articles article { width: 30%; margin-right: 5%; float: left; }
   html body.tag main #articles article:nth-of-type(2) { margin-right: 5%; }
   html body.tag main #articles article:nth-of-type(3) { margin-right: 0; }
@@ -652,7 +709,29 @@ html body.tag main #articles article #meta #category a:hover { color: #231f20; }
   html body.tag main #articles article:nth-of-type(7) { margin-right: 5%; }
   html body.tag main #articles article:nth-of-type(8) { margin-right: 5%; }
   html body.tag main #articles article:nth-of-type(9) { margin-right: 0; }
-  html body.tag main #articles article:nth-of-type(10) { margin-right: 5%; } }
+  html body.tag main #articles article:nth-of-type(10) { margin-right: 5%; }
+  html body.tag main #articles article:nth-of-type(11) { margin-right: 5%; }
+  html body.tag main #articles article:nth-of-type(12) { margin-right: 0; }
+  html body.tag main #articles article:nth-of-type(13) { margin-right: 5%; }
+  html body.tag main #articles article:nth-of-type(14) { margin-right: 5%; }
+  html body.tag main #articles article:nth-of-type(15) { margin-right: 0; }
+  html body.tag main #articles article:nth-of-type(16) { margin-right: 5%; }
+  html body.tag main #articles article:nth-of-type(17) { margin-right: 5%; }
+  html body.tag main #articles article:nth-of-type(18) { margin-right: 0; }
+  html body.tag main #articles article:nth-of-type(19) { margin-right: 5%; }
+  html body.tag main #articles article:nth-of-type(20) { margin-right: 5%; } }
+html body.tag main #articles article h1 { font-size: medium; }
+html body.tag main #articles nav { margin-top: 1.25em; }
+html body.tag main #articles nav > h3 { display: none; }
+html body.tag main #articles nav ol li { display: inline-block; float: left; margin-right: 0.625em; }
+html body.tag main #articles nav ol li:last-of-type { margin-right: 0; }
+html body.tag main #articles nav ol li a { padding: 0.625em 0.9375em; display: block; }
+html body.tag main #articles nav ol li.active a, html body.tag main #articles nav ol li:hover a { background: #982022; color: white; }
+html body.tag main #articles nav ol li.active a a, html body.tag main #articles nav ol li:hover a a { color: white; text-decoration: none; }
+html body.tag main #articles nav ol li.active a a:hover, html body.tag main #articles nav ol li:hover a a:hover { color: white; }
+html body.tag main #articles nav ol li { background: #f1f1f1; color: #231f20; }
+html body.tag main #articles nav ol li a { color: #231f20; text-decoration: none; }
+html body.tag main #articles nav ol li a:hover { color: white; }
 html body.tag main aside { width: 33%; margin-right: 0; float: left; padding: 1.25em; width: calc(33% - 2.5em); background: #f1f1f1; }
 html body.tag main aside section { margin-bottom: 2.5em; }
 html body.tag main aside section h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; }
@@ -741,6 +820,18 @@ html body.projects main #articles article #meta #category a:hover { color: #231f
   html body.projects main #articles article:nth-of-type(8) { margin-right: 2.5%; }
   html body.projects main #articles article:nth-of-type(9) { margin-right: 2.5%; }
   html body.projects main #articles article:nth-of-type(10) { margin-right: 0; } }
+html body.projects main #articles article h1 { font-size: medium; }
+html body.projects main #articles nav { margin-top: 1.25em; }
+html body.projects main #articles nav > h3 { display: none; }
+html body.projects main #articles nav ol li { display: inline-block; float: left; margin-right: 0.625em; }
+html body.projects main #articles nav ol li:last-of-type { margin-right: 0; }
+html body.projects main #articles nav ol li a { padding: 0.625em 0.9375em; display: block; }
+html body.projects main #articles nav ol li.active a, html body.projects main #articles nav ol li:hover a { background: #982022; color: white; }
+html body.projects main #articles nav ol li.active a a, html body.projects main #articles nav ol li:hover a a { color: white; text-decoration: none; }
+html body.projects main #articles nav ol li.active a a:hover, html body.projects main #articles nav ol li:hover a a:hover { color: white; }
+html body.projects main #articles nav ol li { background: #f1f1f1; color: #231f20; }
+html body.projects main #articles nav ol li a { color: #231f20; text-decoration: none; }
+html body.projects main #articles nav ol li a:hover { color: white; }
 html body.jobs main #articles article { width: 100%; max-width: 100%; float: left; max-width: 43.75em; line-height: 1.75; /* Headings
 */ /* Elements
 */ /* Padding of individual elements

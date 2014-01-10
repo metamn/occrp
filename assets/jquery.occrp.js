@@ -1,6 +1,10 @@
 
 $(document).ready(function() {
 
+
+  // Mark first item in category navigation active
+  $('#navigation ol li').first().addClass('active');
+
   // Slider
   $('.frontpage #slider article').hide();
   $('.frontpage #slider article').first().show();
@@ -16,6 +20,8 @@ $(document).ready(function() {
     $('.frontpage #slider article:eq(' + index + ')').fadeIn('slow');
     return false;
   });
+  
+  
 
   // Sticky header
   var menu = document.querySelector('#header');

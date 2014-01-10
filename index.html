@@ -14,18 +14,8 @@ class: frontpage
       {% include article.html klass = 'thumb' %}
     {% endfor %}
     
-    <nav>
-      <h3>Slider</h3>
-      <ol>
-        <li><a href="" title="">1</a></li>
-        <li><a href="" title="">2</a></li>
-        <li><a href="" title="">3</a></li>
-        <li><a href="" title="">4</a></li>
-        <li><a href="" title="">5</a></li>
-        <li><a href="" title="">6</a></li>
-        <li><a href="" title="">7</a></li>
-      </ol>
-    </nav>
+    {% assign items = 7 %}
+    {% include navigation.html %}
   </section>
 
   <section id="news">

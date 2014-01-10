@@ -204,6 +204,27 @@
 }
 
 
+/* Navigation
+*/
+@mixin navigation($color-scheme : slider) {
+  nav {
+    @include hide-title;
+    margin-top: $pad;
+    
+    ol {
+      @include list-inline;
+      @include list-menu(block, $pad/2, $pad/2 + $pad/4);
+      
+      li {
+        @include color($color-scheme);
+      }
+    }
+  }
+}
+
+
+
+
 /* Images
 --------------------------------------------------------------------------------
 */
@@ -250,6 +271,11 @@
 
   } @elseif ($type == slider) {
     background: $background;
+    color: $color;
+    @include link($color, $background);
+  
+  } @elseif ($type == navigation) {
+    background: $light-grey;
     color: $color;
     @include link($color, $background);
   }
@@ -308,6 +334,9 @@
   
   } @elseif ($type == category-title) {
     padding: $h1-padding 0;
+  
+  } @elseif ($type == thumb-title) {
+    font-size: medium;
   }
 }
 
