@@ -32,13 +32,16 @@
         {{ post.date | date: "%-d %B %Y" }}
       </li>
       
-      <li id="authors">
-        <ul>
-          {% for author in post.authors %}
-            <li>{{ author.name }}</li>
-          {% endfor %}
-        </ul>
-      </li>
+      {% if post.authors.size > 0 %}
+        <li id="authors">
+          <ul>
+            <li>by</li>
+            {% for author in post.authors %}
+              <li><a href="{{ author.url }}" title="{{ author.name }}" >{{ author.name }}</a></li>
+            {% endfor %}
+          </ul>
+        </li>
+      {% endif %}
     </ul>
   </nav>
   

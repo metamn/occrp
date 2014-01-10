@@ -72,6 +72,7 @@
     margin-top: $pad/2;
     
     ul {
+      @include list-normal;
       @include list-inline($pad/2);
       margin: 0;
     }
@@ -84,6 +85,33 @@
       @include font(navigation);
       @include color(highlight);
     }
+    
+    #authors {
+      @include font(author);
+      
+      ul {
+        li {
+          &:after {
+            content: ',';
+          }
+          
+          &:first-of-type {
+            @include font(italic);
+          }
+          
+          &:first-of-type, &:last-of-type {
+            &:after {
+              content: '';
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  
+  #content {
+    @include link($highlight);
   }
   
 }
@@ -544,7 +572,7 @@
 @mixin vertical-rhythm {
   /* Padding of individual elements
   */
-  ul, ol, dl, table, figure, form, q {
+  ul, ol, dl, table, figure, form, q, blockquote, pre, code {
     margin: $pad 0;
   }
   
@@ -589,19 +617,8 @@
   max-width: $body-text-width; 
   @include line-height(text);
   
-  /* Headings
-  */
   @include headings(padding);
   
-  /* Elements
-  */
-  em, i {
-    font-style: italic;
-  }
-  
-  strong, b {
-    font-weight: bold;
-  }
   
   @include ul;
   @include ol;
@@ -610,6 +627,26 @@
   @include figure;
   @include form;
   @include q;
+  @include code;
+  @include hr;
+  @include em;
+  @include strong;
+  @include small;
+  @include strikethrough;
+  @include cite;
+  @include q;
+  @include dfn;
+  @include abbr;
+  @include time;
+  @include var;
+  @include samp;
+  @include sup;
+  @include mark;
+  @include del;
+  @include address;
+  @include select;
+  @include checkbox;
+  
   
   @include vertical-rhythm;
 }

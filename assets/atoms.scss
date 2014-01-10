@@ -167,6 +167,10 @@ $letter-spacing-uppercase: 1.1px;
   font-family: 'Bitter', serif;
 }
 
+@mixin font-monospace {
+  font-family: "Lucida Console", "Lucida Sans Typewriter", Monaco, "Bitstream Vera Sans Mono", monospace;
+}
+
 
 /* Font sizing for headers
   - We employ modern typography where headers differ by design not by font size
@@ -207,8 +211,7 @@ $border: $pad/4 solid;
 $border-thin: 1px solid;
 
 @mixin border-thin($c: $light-grey) {
-  border-bottom: $border-thin;
-  color: $c;
+  border-bottom: 1px solid $c;
 }
 
 
@@ -217,3 +220,17 @@ $shadow: 15px 20px 25px -10px rgba(0, 0, 0, 0.698), 0 1px rgba(0, 0, 0, 0.1), 0 
 $shadow-remove: 0px 0px 0px 0px transparent;
 $shadow: 1px 0 $color, 0 1px $color, 2px 1px $color, 1px 2px $color, 3px 2px $color, 2px 3px $color, 4px 3px $color, 3px 4px $color, 5px 4px $color, 4px 5px $color;
 
+
+$arrow-down: '\2794';
+$arrow-up: '\21E1';
+$arrow-left: '\21E0';
+$arrow-right: '\21E2';
+
+$checkbox: '\2610';
+$checkbox-checked: '\2611';
+$radio: '\2610';
+$radio-checked: '\25a3';
+
+/* in :before and :after usually the font size is larger for better visibility
+*/
+$before-font-size: 150%;

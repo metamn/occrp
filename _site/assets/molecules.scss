@@ -172,6 +172,11 @@
     display: block;
     margin-right: none;
     float: none;
+    padding-left: 0;
+    
+    &:before {
+      content: '';
+    }
   }
 }
 
@@ -337,6 +342,17 @@
   
   } @elseif ($type == thumb-title) {
     font-size: medium;
+  
+  } @elseif ($type == author) {
+    font-size: small;
+    @include uppercase;
+    
+  } @elseif ($type == italic) {
+    font-size: small;
+    color: $color;
+    font-style: italic;
+    font-family: font-headings;
+    text-transform: none;
   }
 }
 
@@ -435,6 +451,122 @@
 }
 
 
+@mixin code {
+  code, pre {
+    @include color(navigation);
+    padding: $pad/4;
+    @include font-monospace;
+  }
+  
+  pre {
+    white-space: pre-line;
+    padding: $pad;
+  }
+}
+
+@mixin hr {
+  hr {
+    margin: $pad 0;
+  }
+}
+
+@mixin em {
+  em, i {
+    font-style: italic;
+  }
+}
+
+@mixin strong {
+  strong, b {
+    font-weight: bold;
+  }
+}
+
+@mixin small {
+  small {
+    font-size: small;
+  }
+}
+
+@mixin strikethrough {
+  s {
+    text-decoration: line-through;
+  }
+}
+
+@mixin cite {
+  cite {
+    font-style: italic;
+  }
+}
+
+@mixin q {
+  q {
+    quotes: "“" "”" "‘" "’";
+  }
+}
+
+@mixin dfn {
+  dfn {
+    @include border-thin;
+  }
+}
+
+@mixin abbr {
+  abbr {
+    font-variant: small-caps;
+  }
+}
+
+@mixin time {
+  time {
+    @include font(date);
+  }
+}
+
+@mixin var {
+  var {
+    font-style: italic;
+  }
+}
+
+@mixin samp {
+  samp, kbd {
+    @include font-monospace;
+    font-weight: bold;  
+    font-size: small;
+  }
+}
+
+@mixin sup {
+  sup {
+    vertical-align: super;
+    font-size: small;
+  }
+  
+  sub {
+    vertical-align: sub;
+    font-size: small;
+  }
+}
+
+@mixin mark {
+  mark {
+    @include color(invert);
+    padding: $pad/4;
+  }
+}
+
+@mixin del {
+  del {
+    text-decoration: line-through;
+  }
+  
+  ins {
+    @include color(navigation);
+    padding: $pad/4;
+  }
+}
 
 @mixin address {
   address {
@@ -445,8 +577,7 @@
 }
 
 @mixin q {
-  blockquote, q {
-    
+  blockquote {
     border-top: 1px solid;
     border-bottom: 1px solid;
     
@@ -454,7 +585,7 @@
     */
     position: relative;
     float: left;
-    padding: $pad*10 0 $pad*2 $pad*4;
+    padding: $pad*4 0 $pad*2 $pad*4;
     
     
     /* Fill the parent block
@@ -471,10 +602,10 @@
     
     &:before {
       content: '\201C';
-      font-size: 1400%;
+      font-size: 1200%;
       
       position: absolute;
-      top: 0;
+      top: -$pad/4;
       left: 0;
     }
   }
@@ -488,6 +619,8 @@
 
 @mixin select {    
   label.select {
+    @include block;
+    
     &:after {
       content: $arrow-down;
       @include transform(rotate(90deg));
@@ -498,21 +631,67 @@
       padding: 0;
       left: -$pad/4;
       background: $background;
-      font-size: 150%;
-      top: -$pad;
+      font-size: $before-font-size;
+      top: -1.5em;
+      margin-right: $pad/4;
       
       pointer-events: none; /* this is a must */
       cursor: pointer;
     }
+    
+    select {
+      @include reset-form;
+      border: 1px solid;
+      cursor: pointer;
+      width: 100%;
+      padding: $pad/4;
+    }
   }
-  
-  select {
-    @include reset-form;
-    border: 1px solid;
-    cursor: pointer;
-    width: 100%;
-    padding: $pad/4;
-  }
+}
+
+/* Cross browser compatible styling: http://www.inserthtml.com/2012/06/custom-form-radio-checkbox/
+  - the checkbox and radio button is not displayed
+  - instead a label is displayed which can be styled with 'content' 
+  - example: 
+    <ul class="checkbox">
+        <li><input id="checkbox1" name="checkbox" checked="checked" type="checkbox"><label for="checkbox1"></label>Option 1</li>
+        <li><input id="checkbox2" name="checkbox" type="checkbox"><label for="checkbox2"></label>Option 2</li>
+        <li><input id="checkbox3" name="checkbox" type="checkbox"><label for="checkbox3"></label>Option 3</li>
+    </ul>
+*/
+@mixin checkbox {
+	input[type='radio'], input[type='checkbox'] {
+	  display: none;
+	}
+	input[type='radio'] + label, input[type='checkbox'] + label {
+	  display: inline-block;
+	}
+	
+	
+	input[type='radio'] + label:after {
+		content: $radio;
+		margin-right: $pad/2;
+	}
+	input[type='radio']:checked + label:after {
+		content: $radio-checked;
+	}
+	
+	
+	input[type='checkbox'] + label:after {
+		content: $checkbox;
+		margin-right: $pad/4;
+		
+		font-size: $before-font-size;
+		position: relative;
+		top: $pad/8;
+	}
+	input[type='checkbox']:checked + label:after {
+	  content: $checkbox-checked;
+	}
+	
+	ul.checkbox {
+	  @include list-normal;
+	}
 }
 
 @mixin reset-form {
@@ -527,15 +706,25 @@
 
 @mixin form {
   form {
-    
     /* Reset */
     input, textarea, select {
 	    @include reset-form;
     }
     
+    /* Stretching and padding */
+    input, textarea {
+      @include block;
+    }
+    
+    input, textarea {
+      padding: $pad/2;
+      width: calc(100% - #{$pad});
+      margin-bottom: $pad/2;
+    }
+    
 
     /* Text */
-    input[type='text'], input[type='email'], input[type='password'], textarea {
+    input[type='text'], input[type='email'], input[type='password'], input[type='url'], input[type='search'],   textarea {
 	    border: 1px solid $color;
 	    font-style: italic;
     }
@@ -545,23 +734,21 @@
     input[type='submit'] {	
       @include uppercase;	
 	    border: 1px solid $color;
+	    @include color(invert);
 	    cursor: pointer;
 	    
 	    @include transition($easing);
 	    &:hover {
-	      background: $highlight;
+	      @include color(normal);
 	    }
     }
     
-    /* Stretching and padding */
-    label, input, textarea {
-      @include block;
+    /* Label
+    */
+    label {
+      @include uppercase;
     }
     
-    input, textarea {
-      padding: $pad/2;
-      width: calc(100% - #{$pad});
-    }
   }
 }
 
@@ -574,6 +761,11 @@
     }
     
     figcaption {
+      h1, h2, h3, h4, h5, h6 {
+        margin: 0;
+        padding: 0;
+      }
+      
       font-size: smaller;
     }
   }
@@ -586,13 +778,22 @@
     width: 100%;
     display: table !important;
     
+    caption {
+      @include font(italic);
+      margin-bottom: $pad/4;
+    }
+    
     thead {
       @include color(invert);
     }
     
     thead th, tbody td {
-      padding: $pad;
+      padding: $pad/2;
       padding-left: 0;
+      
+      &:first-of-type {
+        padding-left: 1px;
+      }
     }
     
     tbody {
@@ -602,6 +803,8 @@
     }
   }
 }
+
+
 
 /* <dl>
 */
@@ -640,12 +843,15 @@
       */
       position: absolute;
       left: 0;
+      font-weight: bold;
     }
   }
 }
 
 @mixin ul {
-  
+  ul {
+    @include ol-ul('\2610');
+  }
 }
 
 @mixin ol {
@@ -657,11 +863,12 @@
       counter-increment: ol-counter;
       
       &:before {
-        content: counter(ol-counter, decimal);
+        content: counter(ol-counter, decimal) ".";
       }
     }
   }
 }
+
 
 
 
