@@ -9,5 +9,53 @@ html {
         }
       }
     }
+    
+    &.frontpage {
+      #header nav ul li.frontpage {
+        a {
+          @include color(menu);
+        }
+      }
+    }
+    
+    &.investigations {
+      #header nav ul li.investigations {
+        a {
+          @include color(menu);
+        }
+      }
+    }
+    
+    &.resource-center {
+      #header nav ul li.resource-center {
+        a {
+          @include color(menu);
+        }
+      }
+    }
+    
+    &.about-us {
+      #header nav ul li.about-us {
+        a {
+          @include color(menu);
+        }
+      }
+    }
+    
+    &.contact-us {
+      #header nav ul li.contact-us {
+        a {
+          @include color(menu);
+        }
+      }
+    }
+    
+    &.russia {
+      #header #tags ul li.russia {
+        a {
+          @include color(menu);
+        }
+      }
+    }
   }
 }
