@@ -308,12 +308,32 @@
 }
 
 
+/* Positioning slider elements
+*/
+@mixin slider-elements {
+  position: relative;
+  height: 23em;
+  
+  article {
+    position: absolute;
+    top: $pad;
+  }
+  
+  nav {
+    position: absolute;
+    bottom: $pad;
+  }
+}
+
+
 /* The slider on the frontpage
 */
 @mixin slider {
   @include col(64%, 3%);
   @include padding(63%);
   background: $light-grey;
+  
+  @include slider-elements;
   
   article {
     @include article(null, null, title, figure, null, excerpt);
@@ -322,6 +342,11 @@
     
     figure {
       @include col(47%, 4%);
+    }
+    
+    h1, #excerpt {
+      @include grid-resize(49%, $pad*2);
+      float: left;
     }
     
     #excerpt {

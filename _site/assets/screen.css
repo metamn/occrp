@@ -158,6 +158,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 */
 /* The news
 */
+/* Positioning slider elements
+*/
 /* The slider on the frontpage
 */
 /* Teh fixed header
@@ -273,7 +275,9 @@ html body.sticky .container #header #logo figure img { max-width: 10em; position
 html body.sticky .container #header #tags { display: none; }
 html body.sticky .container main, html body.sticky .container #footer { position: relative; top: 7.5em; }
 html body.frontpage .container main #intro { margin-bottom: 1.25em; }
-html body.frontpage .container main #intro #slider { width: 64%; margin-right: 3%; float: left; padding: 1.25em; width: calc(63% - 2.5em); background: #f1f1f1; }
+html body.frontpage .container main #intro #slider { width: 64%; margin-right: 3%; float: left; padding: 1.25em; width: calc(63% - 2.5em); background: #f1f1f1; position: relative; height: 23em; }
+html body.frontpage .container main #intro #slider article { position: absolute; top: 1.25em; }
+html body.frontpage .container main #intro #slider nav { position: absolute; bottom: 1.25em; }
 html body.frontpage .container main #intro #slider article { margin-bottom: 3%; width: 100%; max-width: 100%; float: left; margin-bottom: 0; }
 html body.frontpage .container main #intro #slider article figure { display: block; }
 html body.frontpage .container main #intro #slider article figcaption { display: none; }
@@ -291,6 +295,7 @@ html body.frontpage .container main #intro #slider article #meta #category { tex
 html body.frontpage .container main #intro #slider article #meta #category a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #intro #slider article #meta #category a:hover { color: #231f20; }
 html body.frontpage .container main #intro #slider article figure { width: 47%; margin-right: 4%; float: left; }
+html body.frontpage .container main #intro #slider article h1, html body.frontpage .container main #intro #slider article #excerpt { width: calc(49% - 2.5em); float: left; }
 html body.frontpage .container main #intro #slider article #excerpt { margin-top: 1.25em; }
 html body.frontpage .container main #intro #slider nav { margin-top: 1.25em; }
 html body.frontpage .container main #intro #slider nav > h3 { display: none; }
