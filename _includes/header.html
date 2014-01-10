@@ -35,7 +35,12 @@
         {{ site.title }}
       </a>
     </h1>
+    <!--
     {% include responsive-images.html  link=site.url title=site.title normal="/assets/logo.png" mobile="/assets/logo.png" %}
+    -->
+    <a href="{{ site.url }}/" title="{{ site.title }}">
+      <img src="{{ site.url }}/assets/logo.png">
+    </a>
   </hgroup>
   
   
