@@ -942,7 +942,7 @@ html body.projects main #articles nav ol li a { color: #231f20; text-decoration:
 html body.projects main #articles nav ol li a:hover { color: white; }
 html body.jobs main #articles article { width: 100%; max-width: 100%; float: left; max-width: 43.75em; line-height: 1.75; /* Padding of individual elements
 */ /* Padding of consecutive elements
-*/ }
+*/ border-bottom: 1px solid #f1f1f1; }
 html body.jobs main #articles article h1, html body.jobs main #articles article h2, html body.jobs main #articles article h3, html body.jobs main #articles article h4, html body.jobs main #articles article h5, html body.jobs main #articles article h6 { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; line-height: 1.25; padding: 0; }
 html body.jobs main #articles article h1 { font-size: 20px; font-size: 1.25rem; font-weight: bold; }
 html body.jobs main #articles article h2 { font-size: 20px; font-size: 1.25rem; font-weight: normal; text-transform: uppercase; letter-spacing: 1.1px; }
@@ -1044,6 +1044,7 @@ html body.jobs main #articles article h1 + h2, html body.jobs main #articles art
 html body.jobs main #articles article h1 + ul, html body.jobs main #articles article h2 + ul, html body.jobs main #articles article h3 + ul, html body.jobs main #articles article h1 + ol, html body.jobs main #articles article h2 + ol, html body.jobs main #articles article h3 + ol, html body.jobs main #articles article h1 + figure, html body.jobs main #articles article h2 + figure, html body.jobs main #articles article h3 + figure, html body.jobs main #articles article h1 + nav { margin-top: 0; }
 html body.jobs main #articles article li ul, html body.jobs main #articles article li ol { margin-top: 0; }
 html body.jobs main #articles article #meta, html body.jobs main #articles article #meta #date, html body.jobs main #articles article #excerpt { display: block !important; }
+html body.jobs main #articles article h1 { padding-top: 0; }
 html body.article main #article { width: 100%; max-width: 100%; float: left; width: 64%; margin-right: 3%; float: left; }
 html body.article main #article article { margin-bottom: 3%; max-width: 43.75em; line-height: 1.75; /* Padding of individual elements
 */ /* Padding of consecutive elements
@@ -1230,6 +1231,8 @@ html body.article main aside section#projects article #content a { color: #98202
 html body.article main aside section#projects article #content a:hover { color: #982022; }
 html body.article main aside section#projects article figure { width: 50%; float: left; margin-right: 1.25em; }
 
+html body { /* Highlighting active menu items
+*/ }
 html body .container article figure img { -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; width: auto; }
 html body .container article figure figcaption { font-size: smaller; }
 html body .container article figure figcaption h1, html body .container article figure figcaption h2, html body .container article figure figcaption h3, html body .container article figure figcaption h4, html body .container article figure figcaption h5, html body .container article figure figcaption h6 { margin: 0; padding: 0; }

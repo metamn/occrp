@@ -129,7 +129,7 @@
     
     h1 {
       &:first-of-type {
-        padding-top: 0;
+        @include font(archive-article-title);
       }
     }
       
@@ -152,6 +152,12 @@
     #meta, #meta #date, #excerpt {
       display: block !important;
     }
+    
+    h1 {
+      @include font(archive-article-title);
+    }
+    
+    @include border-thin;
   }
 }
 

@@ -353,6 +353,9 @@
     font-style: italic;
     font-family: font-headings;
     text-transform: none;
+  
+  } @elseif ($type == archive-article-title) {
+    padding-top: 0;
   }
 }
 
@@ -412,6 +415,8 @@
   text-transform: none;
   letter-spacing: 0;
 }
+
+
 
 
 /* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback  
@@ -693,6 +698,7 @@
 	  @include list-normal;
 	}
 }
+
 
 @mixin reset-form {
   border: none;
