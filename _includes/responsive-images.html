@@ -21,7 +21,7 @@
 
 <figure>
   {% if link != "" %}
-    <a href="{{ link }}" title="{{ title }}">
+    <a href="{{ site.url }}{{ link }}" title="{{ title }}">
   {% endif %}
 
   <div data-picture data-alt="{{ title }}">
@@ -38,7 +38,7 @@
   
   <figcaption>
     {% if link != "" %}
-      <a href="{{ link }}" title="{{ title }}">
+      <a href="{{ site.url }}{{ link }}" title="{{ title }}">
     {% endif %}
     {{ title }}
     {% if link != '' %}
