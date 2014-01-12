@@ -288,6 +288,7 @@ html body.sticky .container #header #tags { display: none; }
 html body.sticky .container main, html body.sticky .container #footer { position: relative; top: 7.5em; }
 html body.frontpage .container main #intro { margin-bottom: 1.25em; }
 html body.frontpage .container main #intro #slider { width: 65%; margin-right: 5%; float: left; padding: 1.25em; width: calc(65% - 2.5em); background: #f1f1f1; position: relative; height: 23em; }
+@media only screen and (min-width: 80em) and (max-width: 89.999em) { html body.frontpage .container main #intro #slider { height: 20em; } }
 html body.frontpage .container main #intro #slider article { position: absolute; top: 1.25em; }
 html body.frontpage .container main #intro #slider nav { position: absolute; bottom: 1.25em; }
 html body.frontpage .container main #intro #slider article { margin-bottom: 3%; width: 100%; max-width: 100%; float: left; margin-bottom: 0; }
@@ -405,6 +406,7 @@ html body.frontpage .container main #investigations article #meta #authors ul li
 html body.frontpage .container main #investigations article #meta #authors ul li:first-of-type:after, html body.frontpage .container main #investigations article #meta #authors ul li:last-of-type:after { content: ''; }
 html body.frontpage .container main #investigations article #content a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #investigations article #content a:hover { color: #982022; }
+@media only screen and (min-width: 80em) and (max-width: 89.999em) { html body.frontpage .container main #investigations article { height: 27em; } }
 html body.frontpage .container main #investigations article #excerpt { margin-top: 0.625em; }
 html body.frontpage .container main #products { border-top: 0.3125em solid; padding-top: 1.25em; }
 html body.frontpage .container main #products article { margin-bottom: 3%; }

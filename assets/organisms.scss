@@ -408,12 +408,15 @@
   }
   
   article {
-    //@include flexible-grid;
     @include responsive-grid(3);
     @include article(null, date, title, figure, null, excerpt, null);
     border-top: $border;
     padding-top: $pad;
     height: 28em;
+    
+    @include normal-screen {
+      height: 27em;
+    }
     
     #excerpt {
       margin-top: $pad/2;
@@ -461,6 +464,10 @@
 @mixin slider-elements {
   position: relative;
   height: 23em;
+  
+  @include normal-screen {
+    height: 20em;
+  }
   
   article {
     position: absolute;
