@@ -191,6 +191,7 @@ html body { background: white; color: #231f20; font-size: 100%; line-height: 1.2
 */ /* Tag
 */ /* Projects
 */ /* Jobs
+*/ /* Members with Google Maps
 */ /* Article
 */ }
 html body a { color: #231f20; text-decoration: none; }
@@ -1045,6 +1046,8 @@ html body.jobs main #articles article h1 + ul, html body.jobs main #articles art
 html body.jobs main #articles article li ul, html body.jobs main #articles article li ol { margin-top: 0; }
 html body.jobs main #articles article #meta, html body.jobs main #articles article #meta #date, html body.jobs main #articles article #excerpt { display: block !important; }
 html body.jobs main #articles article h1 { padding-top: 0; }
+html body.members main #google-maps { position: relative; padding-bottom: 45%; height: 0; overflow: hidden; }
+html body.members main #google-maps iframe { position: absolute; top: 0; left: 0; width: 100% !important; height: 100% !important; }
 html body.article main #article { width: 100%; max-width: 100%; float: left; width: 64%; margin-right: 3%; float: left; }
 html body.article main #article article { margin-bottom: 3%; max-width: 43.75em; line-height: 1.75; /* Padding of individual elements
 */ /* Padding of consecutive elements

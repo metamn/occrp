@@ -140,6 +140,29 @@ html {
     }
     
     
+    
+    /* Members with Google Maps
+    */
+    &.members {
+      main {
+        #google-maps {
+          position: relative;
+          padding-bottom: 45%; // This is the aspect ratio
+          height: 0;
+          overflow: hidden;
+          
+          iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100% !important;
+            height: 100% !important;
+          }
+        }
+      }
+    }
+    
+    
     /* Article
     */
     &.article {
