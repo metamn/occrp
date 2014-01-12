@@ -191,6 +191,8 @@
   width: fit-content;
 }
 
+
+
 /* Highlights an active item in a list / menu
 */
 @mixin list-menu($display: inline, $top : $pad/2, $left: $pad/4)  {
@@ -204,6 +206,20 @@
       a {
         @include color(menu);
       }
+    }
+  }
+}
+
+
+@mixin list-download {
+  li {
+    @include border-thin;
+    
+    &:before {
+      content: url(/assets/download.png);
+      margin-right: $pad/2;
+      position: relative;
+      top: $pad/4;
     }
   }
 }

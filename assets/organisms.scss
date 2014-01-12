@@ -151,16 +151,7 @@
     margin-bottom: 3%;
     
     ul {
-      li {
-        @include border-thin;
-        
-        &:before {
-          content: url(/assets/download.png);
-          margin-right: $pad/2;
-          position: relative;
-          top: $pad/4;
-        }
-      }
+      @include list-download;
     }
   }
   
@@ -189,6 +180,58 @@
   }
 }
 
+
+/* Resource Center
+*/
+@mixin resource-center {
+  #article article #content {
+    #handbook, #reports, #academic-studies {
+      @include block;
+      
+      article {
+        @include article(null, null, title, null, null, excerpt, null);
+        
+        h1 {
+          @include link;
+          padding: $pad 0;
+        }
+        
+        #excerpt {
+          display: block;
+          @include body-text;
+        }
+      }
+      
+      #documents {
+        ul {
+          @include list-download;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+/* Members
+*/
+@mixin members {
+  #google-maps {
+  position: relative;
+  padding-bottom: 45%; // This is the aspect ratio
+  height: 0;
+  overflow: hidden;
+  
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+}
 
 
 /* Jobs
