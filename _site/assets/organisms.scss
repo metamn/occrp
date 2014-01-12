@@ -138,6 +138,55 @@
       margin-bottom: $pad;
     }
   }
+  
+  #related-documents, #related-graphics, #related-person, #videos, #related-articles {
+    @include block;
+    
+    h3 {
+      @include font(section-title);
+    }
+  }
+  
+  #related-documents {
+    margin-bottom: 3%;
+    
+    ul {
+      li {
+        @include border-thin;
+        
+        &:before {
+          content: url(/assets/download.png);
+          margin-right: $pad/2;
+          position: relative;
+          top: $pad/4;
+        }
+      }
+    }
+  }
+  
+  #related-graphics, #related-person, #videos {
+    ul {
+      li {
+        @include responsive-grid(3);
+        margin-bottom: 3%;
+      }
+    }
+  }
+  
+  #related-articles {
+    article {
+      @include responsive-grid(3);
+      @include article(null, null, title, figure);
+      
+      figure {
+        margin-top: 0;
+      }
+      
+      h1 {
+        @include font(thumb-title);
+      }
+    }
+  }
 }
 
 
@@ -160,6 +209,8 @@
     @include border-thin;
   }
 }
+
+
 
 
 /* Category articles

@@ -13,9 +13,7 @@
         <ul>
           {% for document in post.related-documents %}
             <li>
-              <h4>
-                <a href="{{ site.url }}/{{ document.url }}" title="{{ document.name }}">{{ document.name }}</a>
-              </h4>
+              <a href="{{ site.url }}/{{ document.url }}" title="{{ document.name }}">{{ document.name }}</a>
             </li>
           {% endfor %}
         </ul>
@@ -38,22 +36,26 @@
     {% if post.related-persons.size > 0 %}
       <div id="related-person">
         <h3>Related person</h3>
-        {% for document in post.related-persons %}
-            <li>
-              {% include responsive-images.html title=document.title link="" normal=document.url mobile=document.url %}
-            </li>
-          {% endfor %}
+          <ul>
+            {% for document in post.related-persons %}
+              <li>
+                {% include responsive-images.html title=document.title link="" normal=document.url mobile=document.url %}
+              </li>
+            {% endfor %}
+          </ul>
       </div>
     {% endif %}
     
     {% if post.videos.size > 0 %}
       <div id="videos">
         <h3>Videos</h3>
-        {% for document in post.videos %}
-            <li>
-              {% include responsive-images.html title=document.title link="" normal=document.url mobile=document.url %}
-            </li>
-          {% endfor %}
+          <ul>  
+            {% for document in post.videos %}
+              <li>
+                {% include responsive-images.html title=document.title link="" normal=document.url mobile=document.url %}
+              </li>
+            {% endfor %}
+          </ul>
       </div>
     {% endif %}
     

@@ -1170,6 +1170,83 @@ html body.article main #article article h1 + ul, html body.article main #article
 html body.article main #article article li ul, html body.article main #article article li ol { margin-top: 0; }
 html body.article main #article article h1:first-of-type { padding-top: 0; }
 html body.article main #article article #meta { border-bottom: 1px solid #f1f1f1; margin-bottom: 1.25em; }
+html body.article main #article #related-documents, html body.article main #article #related-graphics, html body.article main #article #related-person, html body.article main #article #videos, html body.article main #article #related-articles { width: 100%; max-width: 100%; float: left; }
+html body.article main #article #related-documents h3, html body.article main #article #related-graphics h3, html body.article main #article #related-person h3, html body.article main #article #videos h3, html body.article main #article #related-articles h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; }
+html body.article main #article #related-documents h3 a, html body.article main #article #related-graphics h3 a, html body.article main #article #related-person h3 a, html body.article main #article #videos h3 a, html body.article main #article #related-articles h3 a { color: #982022; text-decoration: none; }
+html body.article main #article #related-documents h3 a:hover, html body.article main #article #related-graphics h3 a:hover, html body.article main #article #related-person h3 a:hover, html body.article main #article #videos h3 a:hover, html body.article main #article #related-articles h3 a:hover { color: #231f20; }
+html body.article main #article #related-documents { margin-bottom: 3%; }
+html body.article main #article #related-documents ul li { border-bottom: 1px solid #f1f1f1; }
+html body.article main #article #related-documents ul li:before { content: url(/assets/download.png); margin-right: 0.625em; position: relative; top: 0.3125em; }
+html body.article main #article #related-graphics ul li, html body.article main #article #related-person ul li, html body.article main #article #videos ul li { margin-bottom: 3%; }
+@media only screen and (max-width: 48em) { html body.article main #article #related-graphics ul li, html body.article main #article #related-person ul li, html body.article main #article #videos ul li { width: 100%; margin-right: 0; float: left; } }
+@media only screen and (min-width: 48em) and (max-width: 79.999em) { html body.article main #article #related-graphics ul li, html body.article main #article #related-person ul li, html body.article main #article #videos ul li { width: 45%; margin-right: 10%; float: left; }
+  html body.article main #article #related-graphics ul li:nth-of-type(2), html body.article main #article #related-person ul li:nth-of-type(2), html body.article main #article #videos ul li:nth-of-type(2) { margin-right: 0; }
+  html body.article main #article #related-graphics ul li:nth-of-type(3), html body.article main #article #related-person ul li:nth-of-type(3), html body.article main #article #videos ul li:nth-of-type(3) { margin-right: 10%; }
+  html body.article main #article #related-graphics ul li:nth-of-type(4), html body.article main #article #related-person ul li:nth-of-type(4), html body.article main #article #videos ul li:nth-of-type(4) { margin-right: 0; }
+  html body.article main #article #related-graphics ul li:nth-of-type(5), html body.article main #article #related-person ul li:nth-of-type(5), html body.article main #article #videos ul li:nth-of-type(5) { margin-right: 10%; }
+  html body.article main #article #related-graphics ul li:nth-of-type(6), html body.article main #article #related-person ul li:nth-of-type(6), html body.article main #article #videos ul li:nth-of-type(6) { margin-right: 0; }
+  html body.article main #article #related-graphics ul li:nth-of-type(7), html body.article main #article #related-person ul li:nth-of-type(7), html body.article main #article #videos ul li:nth-of-type(7) { margin-right: 10%; }
+  html body.article main #article #related-graphics ul li:nth-of-type(8), html body.article main #article #related-person ul li:nth-of-type(8), html body.article main #article #videos ul li:nth-of-type(8) { margin-right: 0; }
+  html body.article main #article #related-graphics ul li:nth-of-type(9), html body.article main #article #related-person ul li:nth-of-type(9), html body.article main #article #videos ul li:nth-of-type(9) { margin-right: 10%; }
+  html body.article main #article #related-graphics ul li:nth-of-type(10), html body.article main #article #related-person ul li:nth-of-type(10), html body.article main #article #videos ul li:nth-of-type(10) { margin-right: 0; } }
+@media only screen and (min-width: 80em) { html body.article main #article #related-graphics ul li, html body.article main #article #related-person ul li, html body.article main #article #videos ul li { width: 30%; margin-right: 5%; float: left; }
+  html body.article main #article #related-graphics ul li:nth-of-type(2), html body.article main #article #related-person ul li:nth-of-type(2), html body.article main #article #videos ul li:nth-of-type(2) { margin-right: 5%; }
+  html body.article main #article #related-graphics ul li:nth-of-type(3), html body.article main #article #related-person ul li:nth-of-type(3), html body.article main #article #videos ul li:nth-of-type(3) { margin-right: 0; }
+  html body.article main #article #related-graphics ul li:nth-of-type(4), html body.article main #article #related-person ul li:nth-of-type(4), html body.article main #article #videos ul li:nth-of-type(4) { margin-right: 5%; }
+  html body.article main #article #related-graphics ul li:nth-of-type(5), html body.article main #article #related-person ul li:nth-of-type(5), html body.article main #article #videos ul li:nth-of-type(5) { margin-right: 5%; }
+  html body.article main #article #related-graphics ul li:nth-of-type(6), html body.article main #article #related-person ul li:nth-of-type(6), html body.article main #article #videos ul li:nth-of-type(6) { margin-right: 0; }
+  html body.article main #article #related-graphics ul li:nth-of-type(7), html body.article main #article #related-person ul li:nth-of-type(7), html body.article main #article #videos ul li:nth-of-type(7) { margin-right: 5%; }
+  html body.article main #article #related-graphics ul li:nth-of-type(8), html body.article main #article #related-person ul li:nth-of-type(8), html body.article main #article #videos ul li:nth-of-type(8) { margin-right: 5%; }
+  html body.article main #article #related-graphics ul li:nth-of-type(9), html body.article main #article #related-person ul li:nth-of-type(9), html body.article main #article #videos ul li:nth-of-type(9) { margin-right: 0; }
+  html body.article main #article #related-graphics ul li:nth-of-type(10), html body.article main #article #related-person ul li:nth-of-type(10), html body.article main #article #videos ul li:nth-of-type(10) { margin-right: 5%; } }
+html body.article main #article #related-articles article { margin-bottom: 3%; }
+@media only screen and (max-width: 48em) { html body.article main #article #related-articles article { width: 100%; margin-right: 0; float: left; } }
+@media only screen and (min-width: 48em) and (max-width: 79.999em) { html body.article main #article #related-articles article { width: 45%; margin-right: 10%; float: left; }
+  html body.article main #article #related-articles article:nth-of-type(2) { margin-right: 0; }
+  html body.article main #article #related-articles article:nth-of-type(3) { margin-right: 10%; }
+  html body.article main #article #related-articles article:nth-of-type(4) { margin-right: 0; }
+  html body.article main #article #related-articles article:nth-of-type(5) { margin-right: 10%; }
+  html body.article main #article #related-articles article:nth-of-type(6) { margin-right: 0; }
+  html body.article main #article #related-articles article:nth-of-type(7) { margin-right: 10%; }
+  html body.article main #article #related-articles article:nth-of-type(8) { margin-right: 0; }
+  html body.article main #article #related-articles article:nth-of-type(9) { margin-right: 10%; }
+  html body.article main #article #related-articles article:nth-of-type(10) { margin-right: 0; } }
+@media only screen and (min-width: 80em) { html body.article main #article #related-articles article { width: 30%; margin-right: 5%; float: left; }
+  html body.article main #article #related-articles article:nth-of-type(2) { margin-right: 5%; }
+  html body.article main #article #related-articles article:nth-of-type(3) { margin-right: 0; }
+  html body.article main #article #related-articles article:nth-of-type(4) { margin-right: 5%; }
+  html body.article main #article #related-articles article:nth-of-type(5) { margin-right: 5%; }
+  html body.article main #article #related-articles article:nth-of-type(6) { margin-right: 0; }
+  html body.article main #article #related-articles article:nth-of-type(7) { margin-right: 5%; }
+  html body.article main #article #related-articles article:nth-of-type(8) { margin-right: 5%; }
+  html body.article main #article #related-articles article:nth-of-type(9) { margin-right: 0; }
+  html body.article main #article #related-articles article:nth-of-type(10) { margin-right: 5%; } }
+html body.article main #article #related-articles article figure { display: block; }
+html body.article main #article #related-articles article figcaption { display: none; }
+html body.article main #article #related-articles article #excerpt { display: none; }
+html body.article main #article #related-articles article #content { display: none; }
+html body.article main #article #related-articles article #meta #category { display: none; }
+html body.article main #article #related-articles article #meta #date { display: none; }
+html body.article main #article #related-articles article #meta { display: none; }
+html body.article main #article #related-articles article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; }
+html body.article main #article #related-articles article #meta { margin-top: 0.625em; }
+html body.article main #article #related-articles article #meta ul { margin: 0; }
+html body.article main #article #related-articles article #meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
+html body.article main #article #related-articles article #meta ul li:before { content: ''; }
+html body.article main #article #related-articles article #meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
+html body.article main #article #related-articles article #meta ul li:last-of-type { margin-right: 0; }
+html body.article main #article #related-articles article #meta #date { font-size: small; color: #74676a; }
+html body.article main #article #related-articles article #meta #category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
+html body.article main #article #related-articles article #meta #category a { color: #982022; text-decoration: none; }
+html body.article main #article #related-articles article #meta #category a:hover { color: #231f20; }
+html body.article main #article #related-articles article #meta #authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; }
+html body.article main #article #related-articles article #meta #authors ul li:after { content: ','; }
+html body.article main #article #related-articles article #meta #authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+html body.article main #article #related-articles article #meta #authors ul li:first-of-type:after, html body.article main #article #related-articles article #meta #authors ul li:last-of-type:after { content: ''; }
+html body.article main #article #related-articles article #content a { color: #982022; text-decoration: none; }
+html body.article main #article #related-articles article #content a:hover { color: #982022; }
+html body.article main #article #related-articles article figure { margin-top: 0; }
+html body.article main #article #related-articles article h1 { font-size: medium; }
 html body.article main aside { width: 33%; margin-right: 0; float: left; padding: 1.25em; width: calc(33% - 2.5em); background: #f1f1f1; }
 html body.article main aside section { margin-bottom: 2.5em; }
 html body.article main aside section h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; }
