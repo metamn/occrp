@@ -10,22 +10,12 @@ class: frontpage
   <section id="slider">
     <h3>Slideshow</h3>
     
-    {% for post in site.categories.slider limit:1 offset:3 %}
-      {% include article.html %}
+    {% for post in site.categories.slider limit:7 %}
+      {% include article.html klass = 'thumb' %}
     {% endfor %}
     
-    <nav>
-      <h3>Slider</h3>
-      <ol>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li class="active">4</li>
-        <li>5</li>
-        <li>6</li>
-        <li>7</li>
-      </ol>
-    </nav>
+    {% assign items = 7 %}
+    {% include navigation.html %}
   </section>
 
   <section id="news">
@@ -34,7 +24,7 @@ class: frontpage
     </h3>
     
     {% for post in site.categories.daily %}
-      {% include article.html %}
+      {% include article.html klass = 'thumb' %}
     {% endfor %}
   </section>
 </section>
@@ -46,16 +36,9 @@ class: frontpage
     <a href="{{ site.url }}/investigations" title="Investigations">Investigations</a>
   </h3>
 
-  
-  {% for post in site.categories.investigations %}
-    {% include article.html %}
+  {% for post in site.categories.investigations limit:6 offset:0 %}
+    {% include article.html klass = 'thumb' %}
   {% endfor %}
-  
-
-  {% for post in site.categories.daily limit:2 %}
-    {% include article.html %}
-  {% endfor %}
-  
 </section>
 
 
@@ -64,8 +47,8 @@ class: frontpage
     <a href="{{ site.url }}/products" title="Products">Products</a>
   </h3>
   
-  {% for post in site.categories.projects limit:5 offset:0 %}
-    {% include article.html %}
+  {% for post in site.categories.projects limit:4 offset:0 %}
+    {% include article.html klass = 'thumb' %}
   {% endfor %}
 </section>
 
@@ -75,10 +58,23 @@ class: frontpage
     <a href="{{ site.url }}/projects" title="Projects">Projects</a>
   </h3>
   
+  {% for post in site.categories.projects limit:5 offset:5 %}
+    {% include article.html %}
+  {% endfor %}
+</section>
+
+
+<section id="videos">
+  <h3>
+    <a href="{{ site.url }}/videos" title="Videos">Videos</a>
+  </h3>
+  
   {% for post in site.categories.projects limit:6 offset:5 %}
     {% include article.html %}
   {% endfor %}
 </section>
+
+
 
 <section id="most-read">
   <h3>

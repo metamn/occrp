@@ -3,26 +3,26 @@
   <nav id="main">
     <h3>Sections</h3>
     <ul>
-      <li class="active">
+      <li class="frontpage">
         <a href="{{ site.url }}/" title="Home">
           Home
         </a>
       </li>
       
-      <li>
+      <li class="daily">
         <a href="{{ site.url }}/daily" title="Daily">
           Daily
         </a>
       </li>
       
-      <li>
+      <li class="investigations">
         <a href="{{ site.url }}/investigations" title="Investigations">
           Investigations
         </a>
       </li>
       
-      <li>
-        <a href="{{ site.url }}/resources" title="Resources">
+      <li class="resource-center">
+        <a href="{{ site.url }}/resource-center" title="Resources">
           Resources
         </a>
       </li>
@@ -35,33 +35,44 @@
         {{ site.title }}
       </a>
     </h1>
+    <!--
     {% include responsive-images.html  link=site.url title=site.title normal="/assets/logo.png" mobile="/assets/logo.png" %}
+    -->
+    <figure>
+      <a href="{{ site.url }}/" title="{{ site.title }}">
+        <img src="{{ site.url }}/assets/logo.png">
+      </a>
+      <figcaption>
+        {{ site.title }}
+      </figcaption>
+    </figure>
+    
   </hgroup>
   
   
   <nav id="main" class="mobile">
     <h3>Sections</h3>
     <ul>
-      <li class="active">
+      <li class="frontpage">
         <a href="{{ site.url }}/" title="Home">
           Home
         </a>
       </li>
       
-      <li>
+      <li class="daily">
         <a href="{{ site.url }}/daily" title="Daily">
           Daily
         </a>
       </li>
       
-      <li>
+      <li class="investigations">
         <a href="{{ site.url }}/investigations" title="Investigations">
           Investigations
         </a>
       </li>
       
-      <li>
-        <a href="{{ site.url }}/resources" title="Resources">
+      <li class="resource-center">
+        <a href="{{ site.url }}/resource-center" title="Resources">
           Resources
         </a>
       </li>
@@ -71,21 +82,33 @@
   <nav id="secondary">
     <h3>About us</h3>
     <ul>
-      <li>
-        <a href="{{ site.url }}/about" title="About Us">
+      <li class="about-us">
+        <a href="{{ site.url }}/about-us" title="About Us">
           About Us
         </a>
       </li>
       
-      <li>
+      <li class="get-involved">
         <a href="{{ site.url }}/get-involved" title="Get involved">
           Get involved
         </a>
       </li>
       
-      <li>
-        <a href="{{ site.url }}/contact" title="Contact">
+      <li class="contact-us">
+        <a href="{{ site.url }}/contact-us" title="Contact">
           Contact
+        </a>
+      </li>
+      
+      <li id="russian">
+        <a href="{{ site.url }}/ru" title="Russian">
+          <img src="{{ site.url }}/assets/ru.gif" title="Russian" /> RU
+        </a>
+      </li>
+      
+      <li id="english">
+        <a href="{{ site.url }}/en" title="English">
+          <img src="{{ site.url }}/assets/en.gif" title="English" /> EN
         </a>
       </li>
     </ul>
@@ -95,32 +118,32 @@
   <nav id="tags">
     <h3>Tags</h3>
     <ul>
-      <li>
-        <a href="{{ site.url }}/about" title="About Us">
+      <li class="russia">
+        <a href="{{ site.url }}/russia" title="About Us">
           #Russia
         </a>
       </li>
       
       <li>
-        <a href="{{ site.url }}/get-involved" title="Get involved">
+        <a href="{{ site.url }}/russia" title="Get involved">
           #Drugs & Weapons
         </a>
       </li>
       
       <li>
-        <a href="{{ site.url }}/contact" title="Contact">
+        <a href="{{ site.url }}/russia" title="Contact">
           #Nelson Mandela
         </a>
       </li>
       
       <li>
-        <a href="{{ site.url }}/contact" title="Contact">
+        <a href="{{ site.url }}/russia" title="Contact">
           #Soci 2014
         </a>
       </li>
       
       <li>
-        <a href="{{ site.url }}/contact" title="Contact">
+        <a href="{{ site.url }}/russia" title="Contact">
           #Putin & Khodorkovskiy
         </a>
       </li>

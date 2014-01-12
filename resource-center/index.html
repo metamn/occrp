@@ -1,0 +1,69 @@
+---
+layout: article
+title: Resource Center
+category: page
+images:
+  - title:
+    url: /assets/articles.jpg
+---
+
+<p>The Organized Crime and Corruption Reporting Project Resource Center is a collection of important resources for journalists and researchers on organized crime and corruption.<br /><br /> We have used these in our reporting and they may be helpful to you.  If you know of any resources not represented, please point them out or send them to us and we will add them.  Over the next few years, we will continue to add reports, public records, court cases and other materials that you might find useful.</p>
+
+
+<div id="handbook">
+  {% for post in site.categories.handbook %}
+    {% include article.html klass = 'thumb' %}
+    
+    {% if post.documents.size > 0 %}
+      <div id="documents">
+        <ul>
+          {% for document in post.documents %}
+            <li>
+              <a href="{{ site.url }}/{{ document.url }}" title="{{ document.name }}">{{ document.name }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
+
+
+<div id="reports">
+  {% for post in site.categories.reports %}
+    {% include article.html klass = 'thumb' %}
+    
+    {% if post.documents.size > 0 %}
+      <div id="documents">
+        <ul>
+          {% for document in post.documents %}
+            <li>
+              <a href="{{ site.url }}/{{ document.url }}" title="{{ document.name }}">{{ document.name }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
+
+
+<div id="academic-studies">
+  {% for post in site.categories.academic %}
+    {% include article.html klass = 'thumb' %}
+    
+    {% if post.documents.size > 0 %}
+      <div id="documents">
+        <ul>
+          {% for document in post.documents %}
+            <li>
+              <a href="{{ site.url }}/{{ document.url }}" title="{{ document.name }}">{{ document.name }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
+
+

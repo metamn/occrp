@@ -1,0 +1,180 @@
+/*
+  Structures / Templates of the Atomic web design
+  - the layout, the grid, the wireframe
+  - groups of organisms stitched together to form pages 
+*/
+
+
+html {
+  body {
+    @include default-settings;
+    
+    .container {
+      @include container;
+      
+      #header, main, section, nav, #footer {
+        @include block;
+        @include hide-title;
+      }
+      
+      #header, main {
+        margin: $pad 0 0; 
+      }
+      
+      #header {
+        @include header;
+      }
+      
+      #footer {
+        margin: $pad*3 0 0;
+        @include footer;
+      }
+    }
+    
+    /* Sticky header
+    */
+    &.sticky {
+      .container {
+        @include fixed-header;
+      }
+    }
+    
+    
+    /* Frontpage
+    */
+    &.frontpage {
+      .container {  
+        main {
+          #intro {
+            margin-bottom: $pad;
+          
+            #slider {
+              @include slider;
+            }
+            
+            #news {
+              @include news;
+            }
+          }
+          
+          #investigations {
+            @include investigations;
+          }
+          
+          #products {
+            @include products;
+          }
+          
+          #projects, #videos {
+            @include projects;
+          }
+          
+          #videos {
+            article {
+              @include responsive-grid(6);
+            }
+          }
+          
+          #most-read {
+            @include most-read;
+          }
+        }
+      }
+    }  
+    
+    
+    
+    /* Category
+    */
+    &.category {
+      main {
+        #articles {
+          @include category-articles;
+        }
+        
+        aside {
+          @include category-aside;
+        }
+      }
+    }
+    
+    
+    /* Tag
+    */
+    &.tag {
+      main {
+        #banner {
+          margin-bottom: $pad;
+        }
+        
+        #articles {
+          @include category-articles;
+        }
+        
+        aside {
+          @include category-aside;
+        }
+      }
+    }
+    
+    
+    /* Projects
+    */
+    &.projects {
+      main {
+        #articles {
+          @include projects;
+        }
+      }
+    }
+    
+    
+    /* Jobs
+    */
+    &.jobs {
+      main {
+        #articles {
+          @include jobs;
+        }
+      }
+    }
+    
+    
+    
+    /* Members with Google Maps
+    */
+    &.members {
+      main {
+        @include members;
+      }
+    }
+    
+    
+    /* Resource Center
+    */
+    &.resource-center {
+      main {
+        @include resource-center;
+      }
+    }
+    
+    
+    /* Article
+    */
+    &.article {
+      main {
+        #article {
+          @include single-article;
+        }
+        
+        aside {
+          @include category-aside;
+        }
+      }
+    }
+   
+  }
+  
+}
+
+

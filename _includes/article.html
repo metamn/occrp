@@ -1,14 +1,25 @@
-<article class="{{ klass }}">
-  {% assign page = post %}
-  {% assign image_index = 0 %}
-  {% include responsive-images.html type='from post'  %}
+<article class="{{ include.klass }}">
   
-  <h1>
-    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-  </h1>
+  {% if include.klass == 'single' %}
+    <h1>
+      <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </h1>
+  {% endif %} 
+
+  {% if post.images.size > 0 %}
+    {% assign image_index = 0 %}
+    {% include responsive-images.html type='from post'  %}
+  {% endif %}
+  
+  {% if include.klass != 'single' %}
+    <h1>
+      <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </h1>
+  {% endif %} 
+ 
   
   <div id="excerpt">
-    {{ page.excerpt }}
+    {{ post.excerpt }}
   </div>
   
   <nav id="meta">
@@ -20,6 +31,23 @@
       <li id="date">
         {{ post.date | date: "%-d %B %Y" }}
       </li>
+      
+      {% if post.authors.size > 0 %}
+        <li id="authors">
+          <ul>
+            <li>by</li>
+            {% for author in post.authors %}
+              <li><a href="{{ author.url }}" title="{{ author.name }}" >{{ author.name }}</a></li>
+            {% endfor %}
+          </ul>
+        </li>
+      {% endif %}
     </ul>
   </nav>
+  
+  {% if include.klass == 'single' %}
+    <div id="content">
+      {{ content }}
+    </div>
+  {% endif %} 
 </article>

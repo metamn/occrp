@@ -11,20 +11,6 @@
 @mixin article($category, $date, $title, $figure: null, $figcaption: null, $excerpt: null, $body: null) {
   margin-bottom: $flexible-grid-margin;
   
-  #meta {
-    margin-top: $pad/2;
-    
-    ul {
-      @include list-inline($pad/2);
-    }
-  }
-  
-  h1 {
-    @include text-article-title;
-    padding: $pad/4 0;
-  }
-  
-  
   @if ($title == null) {
     h1 {
       display: none ;
@@ -34,6 +20,10 @@
   @if ($figure == null) {
     figure {
       display: none;
+    }
+  } @else {
+    figure {
+      display: block;
     }
   }
   
@@ -50,7 +40,7 @@
   }
   
   @if ($body == null) {
-    #body {
+    #content {
       display: none;
     }
   }
@@ -72,7 +62,261 @@
       display: none;
     }
   }
+  
+  #excerpt {
+    @include font(excerpt);
+    color: lighten($color, 15%);
+  }
+  
+  #meta {
+    margin-top: $pad/2;
+    
+    ul {
+      @include list-normal;
+      @include list-inline($pad/2);
+      margin: 0;
+    }
+    
+    #date {
+      @include font(date);
+    }
+    
+    #category {
+      @include font(navigation);
+      @include color(highlight);
+    }
+    
+    #authors {
+      @include font(author);
+      
+      ul {
+        li {
+          &:after {
+            content: ',';
+          }
+          
+          &:first-of-type {
+            @include font(italic);
+          }
+          
+          &:first-of-type, &:last-of-type {
+            &:after {
+              content: '';
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  
+  #content {
+    @include link($highlight);
+  }
+  
 }
+
+
+/* Single article
+*/
+@mixin single-article {
+  @include block;
+  @include col(64%, 3%);
+  
+  article {
+    @include article(category, date, title, figure, figcaption, null, body);
+    @include body-text;
+    
+    h1 {
+      &:first-of-type {
+        @include font(archive-article-title);
+      }
+    }
+      
+    #meta {
+      @include border-thin;
+      margin-bottom: $pad;
+    }
+  }
+  
+  #related-documents, #related-graphics, #related-person, #videos, #related-articles {
+    @include block;
+    
+    h3 {
+      @include font(section-title);
+    }
+  }
+  
+  #related-documents {
+    margin-bottom: 3%;
+    
+    ul {
+      @include list-download;
+    }
+  }
+  
+  #related-graphics, #related-person, #videos {
+    ul {
+      li {
+        @include responsive-grid(3);
+        margin-bottom: 3%;
+      }
+    }
+  }
+  
+  #related-articles {
+    article {
+      @include responsive-grid(3);
+      @include article(null, null, title, figure);
+      
+      figure {
+        margin-top: 0;
+      }
+      
+      h1 {
+        @include font(thumb-title);
+      }
+    }
+  }
+}
+
+
+/* Resource Center
+*/
+@mixin resource-center {
+  #article article #content {
+    #handbook, #reports, #academic-studies {
+      @include block;
+      
+      article {
+        @include article(null, null, title, null, null, excerpt, null);
+        
+        h1 {
+          @include link;
+          padding: $pad 0;
+        }
+        
+        #excerpt {
+          display: block;
+          @include body-text;
+        }
+      }
+      
+      #documents {
+        ul {
+          @include list-download;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+/* Members
+*/
+@mixin members {
+  #google-maps {
+  position: relative;
+  padding-bottom: 45%; // This is the aspect ratio
+  height: 0;
+  overflow: hidden;
+  
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+}
+
+
+/* Jobs
+*/
+@mixin jobs {
+  article {
+    @include block;
+    @include body-text;
+    
+    #meta, #meta #date, #excerpt {
+      display: block !important;
+    }
+    
+    h1 {
+      @include font(archive-article-title);
+    }
+    
+    @include border-thin;
+  }
+}
+
+
+
+
+/* Category articles
+*/
+@mixin category-articles {
+  @include col(64%, 3%);
+  
+  .title {
+    @include font(section-title);
+    @include font(category-title);
+  }
+  
+  article {
+    @include article(null, null, title, figure);
+    @include responsive-grid(3, 20);
+    
+    h1 {
+      @include font(thumb-title);
+    }
+  }
+  
+  @include navigation(navigation);
+}
+
+
+/* Category aside
+*/
+@mixin category-aside {
+  @include col(33%, 0);
+  @include padding(33%);
+  background: $light-grey;
+  
+  section {
+    @include article-news; 
+    margin-bottom: $pad*2;
+    
+    h3 {
+      background: $light-grey;
+    }
+    
+    article {
+      border-color: $background;
+      h1 {
+        font-weight: normal;
+      }
+    }
+    
+    &#projects {
+      article {
+        @include block;
+        @include article(null, null, title, figure);
+        
+        figure {
+          width: 50%;
+          float: left;
+          margin-right: $pad;
+        }
+      }
+    }
+  }
+}
+
+
 
 
 
@@ -83,26 +327,18 @@
     @include responsive-grid(3);
     
     h3 {
-      display: block;
-      @include text-navigation;
-      @include link($highlight);
+      @include font(section-title);
       margin-bottom: $pad/2;
     }
     
     counter-reset: counter;
-    article {
-      @include article(null, null, title, null);
-      border-bottom: $border-thin;
-      height: $pad*2 + $pad/2;
+    @include article-news;
     
-      h1 {
-        font-size: medium;
-      }
-      
+    article {
       &:before {
         content: counter(counter);
         counter-increment: counter;
-        @include invert;
+        @include color(invert);
         padding: $pad/4 $pad/2;
         display: inline-block;
         margin-right: $pad/2;
@@ -112,8 +348,6 @@
     
     &:last-of-type {
       article {
-        height: auto;
-        
         &:before {
           display: none;
         }
@@ -128,15 +362,24 @@
 */
 @mixin projects {
   h3 {
-    display: block;
-    @include text-navigation;
-    @include link($highlight);
+    @include font(section-title);
+  }
+  
+  .title {
+    @include font(section-title);
+    @include font(category-title);
   }
   
   article {
     @include article(null, null, title, figure);
-    @include responsive-grid(6);
+    @include responsive-grid(5);
+    
+    h1 {
+      @include font(thumb-title);
+    }
   }
+  
+  @include navigation(navigation);
 }
 
 
@@ -148,11 +391,10 @@
   
   article {
     @include article(null, null, title, figure);
-    @include responsive-grid(5);
+    @include responsive-grid(4);
     
-    figure {
-      max-height: 209px;
-      overflow: hidden;
+    h1 {
+      @include font(thumb-title);
     }
   }
 }
@@ -162,16 +404,42 @@
 */
 @mixin investigations {
   h3 {
-    display: block;
-    @include text-navigation;
-    @include link($highlight);
+    @include font(section-title);
   }
   
   article {
-    @include flexible-grid;
+    @include responsive-grid(3);
     @include article(null, date, title, figure, null, excerpt, null);
     border-top: $border;
     padding-top: $pad;
+    height: 28em;
+    
+    @include normal-screen {
+      height: 27em;
+    }
+    
+    #excerpt {
+      margin-top: $pad/2;
+    }
+  }
+}
+
+
+/* A list of articles with title only
+*/
+@mixin article-news {
+  h3 {
+    @include font(section-title);
+  }
+  
+  article {
+    @include article(null, null, title);
+    @include border-thin;
+    padding-bottom: $flexible-grid-margin;
+    
+    h1 {
+      @include font(thumb-title);
+    }
   }
 }
 
@@ -180,25 +448,35 @@
 /* The news
 */
 @mixin news {
-  @include col(33%, 0);
-  
-  h3 {
-    display: block;
-    @include text-navigation;
-    @include link($highlight);
-  }
-  
-  article {
-    @include article(null, null, title);
-    border-bottom: $border-thin;
-    
-    h1 {
-      font-size: medium;
-    }
-  }
+  @include col(30%, 0);
+  @include article-news;
   
   @include below-and-tablet {
     @include block;
+  }
+}
+
+
+
+
+/* Positioning slider elements
+*/
+@mixin slider-elements {
+  position: relative;
+  height: 23em;
+  
+  @include normal-screen {
+    height: 20em;
+  }
+  
+  article {
+    position: absolute;
+    top: $pad;
+  }
+  
+  nav {
+    position: absolute;
+    bottom: $pad;
   }
 }
 
@@ -206,10 +484,11 @@
 /* The slider on the frontpage
 */
 @mixin slider {
-  @include col(64%, 3%);
-  @include padding(63%);
+  @include col(65%, 5%);
+  @include padding(65%);
   background: $light-grey;
-  border: $border-thin;
+  
+  @include slider-elements;
   
   article {
     @include article(null, null, title, figure, null, excerpt);
@@ -217,11 +496,12 @@
     margin-bottom: 0;
     
     figure {
-      @include col(46%, 3%);
-      
-      @include below-normal-screen {
-        @include block;
-      }
+      @include col(44%, 7%);
+    }
+    
+    h1, #excerpt {
+      @include grid-resize(49%, $pad*2);
+      float: left;
     }
     
     #excerpt {
@@ -229,68 +509,73 @@
     }
   }
   
-  nav {
-    @include hide-title;
-    margin-top: $pad;
+  @include navigation;
+}
+
+
+/* Teh fixed header
+*/
+@mixin fixed-header {
+  #header {
+    position: fixed;
+    @include container;
     
-    ol {
-      @include list-inline;
+    border-bottom: $border-thin;
+    margin: 0 0 $pad*2 !important;
+    padding-top: $pad;
+    top: 0;
+    height: $pad*2;
+    
+    background: $background;
+    z-index: 1;
+    
+    nav {
+      margin-top: 0;
+      border: none;
+    }
+    
+    #logo {
+      height: $pad + $pad/2 + $pad/8;
       
-      li {
-        padding: $pad/4 $pad/2;
-        cursor: pointer;
-        border: 1px solid $background;
-        background: $background;
-        
-        &.active, &:hover {
-          @include invert($background, $highlight);
-          padding: $pad/4 $pad/2;
-          border: 1px solid $highlight;
-        }
+      figure img {
+        max-width: 10em;
+        position: relative;
+        top: -$pad/4;
       }
     }
+    
+    #tags {
+      display: none;
+    }
   }
-  
-  @include below-and-tablet {
-    @include block;
-  }
-}
 
-
-/* The menu
-*/
-@mixin menu {
-  
-}
-
-
-
-/* The logo
-*/
-@mixin logo {
-  text-align: center;
-  
-  h1, figure figcaption {
-    display: none;
+  main, #footer {
+    position: relative;
+    top: $pad*6;
   }
 }
+
+
 
 
 /* The header
 */
 @mixin header {
-  margin: $pad 0;
-  
   hgroup {
-    @include col(33%);
-    @include logo;
+    @include responsive-grid(3);
+    
+    text-align: center;
+    h1, figure figcaption {
+      display: none;
+    }
   }
   
   nav {
-    @include col(33%);
-    @include text-navigation;
-    border-bottom: $border-thin;
-    border-color: $color;
+    @include responsive-grid(3);
+    
+    @include font(navigation);
+    @include border-thin($color);
+    
     padding: $pad/2 0;
     margin-top: $pad*2;
     
@@ -301,114 +586,80 @@
     ul {
       @include list-inline;
       @include list-centered;
+      @include list-menu;
       
       li {
-        &.active {
-          a {
-            @include invert($background, $highlight);
+        &#russian, &#english {
+          height: $pad; /* Because of the icon */
+          
+          img {
+            position: relative;
+            top: 1px;
           }
+        }
+        
+        &#english {
+          display: none;
         }
       }
     }
-    
     
     &#tags {
       @include block;
-      @include invert;
-      border: none;
-      margin-top: $pad;
+      margin-top: $pad/2;
+      @include color(invert);
+      
+      /* To fit the hover on tags we add a border-top */
+      border-top: $border-thin;
+      border-color: $color;
     }
   }
   
-  @include below-normal-screen {
-    border-bottom: $border-thin;
-    cursor: pointer;
-    
-    hgroup {
-      border-bottom: $border-thin;
-      padding-bottom: $pad/2;
-    }
-  
-    hgroup, nav {
-      @include block;
-    }
-    
-    nav {
-      padding: $pad/2 0;
-      
-      &:nth-of-type(1) {
-        display: none;
-      }
-      
-      &.mobile {
-        display: block;
-      }
-      
-      @include col(30%, 5%);
-      &#tags {
-        @include col(30%, 0);
-      }
-      text-align: center;
-      
-      h3 {
-        display: block;
-        font-size: small;
-        @include text-navigation;
-      }
-      
-      ul {
-        display: none;
-        margin: $pad 0;
-        
-        li {
-          margin-right: 0;
-          word-wrap: break-word;
-          margin-bottom: $pad/2;
-          @include link($blue);
-        }
-      }
-    }
-    
-    &.active {
-      nav {
-        h3 {
-          font-weight: bold;
-        }
-        ul {
-          display: block;
-          @include list-normal;
-        }
-      }
-    }
-  }
 }
 
 
 /* Footer
 */
 @mixin footer {
-  margin: $pad 0;
   padding: $pad 0;
   border-top: $border;
-  @include text-navigation;
+  @include font(navigation);
   
   ul {
-    @include list-inline;
+    @include list-inline($pad);
     
     li {
+      &#usaid {
+        position: relative;
+        top: -$pad/2;
+      }
+      
       &#social {
         float: right;
+        position: relative;
+        top: -$pad*2 - $pad/4;
         
-        img {
-          max-width: 24px;
-          max-height: 24px;
+        p {
+          font-weight: bold;
+          margin-bottom: $pad;
+          text-align: right;
+          @include color(invert);
         }
       }
     }
   }
-  
-  
 }
+
+
+
+
+
+
+/* Typography
+--------------------------------------------------------------------------------
+*/
+
+
 
 
 
@@ -416,18 +667,96 @@
   - like typography, links, colors, etc
 */
 @mixin default-settings {
-  background: $background;
-  color: $color;
-  
-  @include link;
-  
+  @include color;
   @include fluid-image;
-  
-  @include font-body;
-  font-size: $font-size;
-  line-height: $line-height;
+  @include font;
 }
 
+
+
+/* Vertical spacing of all typographic elements
+*/
+@mixin vertical-rhythm {
+  /* Padding of individual elements
+  */
+  ul, ol, dl, table, figure, form, q, blockquote, pre, code {
+    margin: $pad 0;
+  }
+  
+  figure {
+    margin-top: $pad*2;
+  }
+  
+  
+  /* Padding of consecutive elements
+  */
+  dd + dt {
+    margin-top: $pad;
+  }
+  
+  p + p {
+    margin-top: $pad;
+  }
+  
+  h1 + h2, h2 + h3 {
+    padding-top: 0;
+  }
+  
+  
+  h1 + ul, h2 + ul, h3 + ul,
+  h1 + ol, h2 + ol, h3 + ol,
+  h1 + figure, h2 + figure, h3 + figure,
+  h1 + nav {
+    margin-top: 0;
+  }
+  
+  
+  li ul, li ol {
+    margin-top: 0;
+  }
+  
+}
+
+
+/* Settings for long text content like articles, blog posts
+*/
+@mixin body-text {
+  max-width: $body-text-width; 
+  @include line-height(text);
+  
+  @include headings(padding);
+  
+  
+  @include ul;
+  @include ol;
+  @include dl;
+  @include table;
+  @include figure;
+  @include form;
+  @include q;
+  @include code;
+  @include hr;
+  @include em;
+  @include strong;
+  @include small;
+  @include strikethrough;
+  @include cite;
+  @include q;
+  @include dfn;
+  @include abbr;
+  @include time;
+  @include var;
+  @include samp;
+  @include sup;
+  @include mark;
+  @include del;
+  @include address;
+  @include select;
+  @include checkbox;
+  
+  
+  @include vertical-rhythm;
+}
 
 
 
