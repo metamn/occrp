@@ -216,7 +216,7 @@
     @include border-thin;
     
     &:before {
-      content: url(/assets/download.png);
+      content: url(http://metamn.github.io/occrp/assets/download.png);
       margin-right: $pad/2;
       position: relative;
       top: $pad/4;
