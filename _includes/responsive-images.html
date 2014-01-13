@@ -14,6 +14,9 @@
   {% endcapture %}
 {% endif %}
 
+{% assign normal = 'http://lorempixel.com/700/500/people' %}
+{% assign mobile = 'http://lorempixel.com/700/500/people' %}
+
 
 <figure>
   {% if link != "" %}
@@ -21,10 +24,10 @@
   {% endif %}
 
   <div data-picture data-alt="{{ title }}">
-    <div data-src="{{ site.url }}{{ normal }}"></div>
-    <div data-src="{{ site.url }}{{ mobile }}" data-media="(max-width: 768px)"></div>
+    <div data-src="{{ normal }}"></div>
+    <div data-src="{{ mobile }}" data-media="(max-width: 768px)"></div>
     <noscript>
-      <img src="{{ site.url }}{{ normal }}" alt="{{ title }}">
+      <img src="{{ normal }}" alt="{{ title }}">
     </noscript>
   </div>
     

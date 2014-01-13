@@ -1,6 +1,7 @@
 
 $(document).ready(function() {
 
+  
 
   // Mark first item in category navigation active
   $('#navigation ol li').first().addClass('active');
@@ -43,6 +44,14 @@ $(document).ready(function() {
   // The window onload script
   // - here we put all scripts which must run after the page is completelly loaded
   $(window).load(function(){
+    
+    // Generate random pictures
+    $('article figure img').each(function() {
+      var url = $(this).attr('src');
+      var rnd =  Math.floor((Math.random()*10)+1); 
+      $(this).attr('src', url + '/' + rnd);
+    });
+  
     // Initialize isotope filter plugin
     // Set options
     
