@@ -46,7 +46,11 @@ $(document).ready(function() {
   $(window).load(function(){
     
     // Generate random pictures
-    
+    $('article figure img').each(function() {
+      var url = $(this).attr('src');
+      var rnd =  Math.floor((Math.random()*10)+1); 
+      $(this).attr('src', url + '/' + rnd);
+    });
   
     // Initialize isotope filter plugin
     // Set options
