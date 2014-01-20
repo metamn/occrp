@@ -252,6 +252,22 @@
 }
 
 
+/* Social icons
+*/
+@mixin social-icons {
+  float: right;
+  position: relative;
+  top: -$pad*2 - $pad/4;
+  
+  p {
+    font-weight: bold;
+    margin-bottom: $pad;
+    text-align: right;
+    @include color(invert);
+  }
+}
+
+
 
 
 /* Images

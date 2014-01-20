@@ -1,0 +1,31 @@
+{% if include.color == '-white' %}
+  {% assign color = include.color %}
+{% else %}
+  {% assign color = '' %}
+{% endif %}
+
+<li id="social">
+  <p>Follow us</p>
+  <ul>
+    <li>
+      <a href="http://www.facebook.com/OCCRP.org" title="Facebook">
+        <img src="{{ site.url }}/assets/facebook{{ color }}.png" alt="Facebook"/>
+      </a>
+    </li>
+    <li>
+      <a href="http://www.twitter.com/OCCRP" title="Twitter">
+        <img src="{{ site.url }}/assets/twitter{{ color }}.png" alt="Twitter" />
+      </a>
+    </li>
+    <li>
+      <a href="http://www.youtube.com/channel/UCAdFen-6WQOxmDHK3saMD8A?feature=watch" title="Youtube">
+        <img src="{{ site.url }}/assets/youtube{{ color }}.png" alt="Youtube" />
+      </a>
+    </li>
+    <li>
+      <a href="https://plus.google.com/u/0/b/106731751199751777418/106731751199751777418/about" title="Google Plus">
+        <img src="{{ site.url }}/assets/google_plus{{ color }}.png" alt="Google Plus" />
+      </a>
+    </li>
+  </ul>
+</li>

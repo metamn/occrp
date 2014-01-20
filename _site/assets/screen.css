@@ -114,6 +114,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 */
 /* Navigation
 */
+/* Social icons
+*/
 /* Images
 --------------------------------------------------------------------------------
 */
@@ -258,7 +260,6 @@ html body .container #header nav { text-transform: uppercase; letter-spacing: 1.
   html body .container #header nav:nth-of-type(9) { margin-right: 0; }
   html body .container #header nav:nth-of-type(10) { margin-right: 2.5%; } }
 html body .container #header nav.mobile { display: none; }
-html body .container #header nav ul { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
 html body .container #header nav ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body .container #header nav ul li:last-of-type { margin-right: 0; }
 html body .container #header nav ul li a { padding: 0.625em 0.3125em; display: inline; }
@@ -271,6 +272,12 @@ html body .container #header nav ul li#english { display: none; }
 html body .container #header nav#tags { width: 100%; max-width: 100%; float: left; margin-top: 0.625em; background: #231f20; color: white; /* To fit the hover on tags we add a border-top */ border-top: 1px solid; border-color: #231f20; }
 html body .container #header nav#tags a { color: white; text-decoration: none; }
 html body .container #header nav#tags a:hover { color: white; }
+html body .container #header nav#tags ul:nth-of-type(2) { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
+html body .container #header nav#tags ul:last-of-type { float: right; }
+html body .container #header nav#tags ul:last-of-type li#social p { display: none; }
+html body .container #header nav#tags ul:last-of-type li#social img { width: 50%; }
+html body .container #header nav#tags ul:last-of-type li#social ul li { margin-right: 0; }
+html body .container #header nav#tags ul:last-of-type li#social ul li a { padding: 0; }
 html body .container #footer { margin: 3.75em 0 0; padding: 1.25em 0; border-top: 0.3125em solid; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; }
 html body .container #footer ul li { display: inline-block; float: left; margin-right: 1.25em; }
 html body .container #footer ul li:last-of-type { margin-right: 0; }

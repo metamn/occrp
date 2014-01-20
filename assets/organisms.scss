@@ -564,6 +564,7 @@
 /* The header
 */
 @mixin header {
+
   hgroup {
     @include responsive-grid(3);
     
@@ -588,7 +589,6 @@
     
     ul {
       @include list-inline;
-      @include list-centered;
       @include list-menu;
       
       li {
@@ -615,7 +615,41 @@
       /* To fit the hover on tags we add a border-top */
       border-top: $border-thin;
       border-color: $color;
+      
+      ul {
+        &:first-of-type {
+        }
+        
+        &:nth-of-type(2) {
+          @include list-centered;
+        }
+        
+        &:last-of-type {
+          float: right;
+          li {
+            &#social {
+              p {
+                display: none;
+              }
+              
+              img {
+                width: 50%;
+              }
+              
+              ul {
+                li {
+                  margin-right: 0;
+                  a {
+                    padding: 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
+    
   }
   
 }
@@ -638,16 +672,7 @@
       }
       
       &#social {
-        float: right;
-        position: relative;
-        top: -$pad*2 - $pad/4;
-        
-        p {
-          font-weight: bold;
-          margin-bottom: $pad;
-          text-align: right;
-          @include color(invert);
-        }
+        @include social-icons;
       }
     }
   }
