@@ -1,6 +1,13 @@
 
 $(document).ready(function() {
 
+
+  // Show search input in the header
+  $('#header #search').click(function() {
+    $(this).find('#icon').hide();
+    $(this).find('#text').hide();
+    $(this).find('#input').show();
+  });
   
 
   // Mark first item in category navigation active

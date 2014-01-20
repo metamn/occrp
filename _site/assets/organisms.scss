@@ -612,20 +612,42 @@
       margin-top: $pad/2;
       @include color(invert);
       
-      /* To fit the hover on tags we add a border-top */
-      border-top: $border-thin;
-      border-color: $color;
+      
       
       ul {
-        &:first-of-type {
+        &#search {
+          margin-left: $pad/4;
+          
+          li {
+            cursor: pointer;
+            
+            &:first-of-type {
+              margin-top: $pad/4;
+              img {
+                width: 50%;
+              }
+            }
+            
+            &:nth-of-type(2) {
+              display: none;
+            }
+            
+            &:nth-of-type(3) {
+              margin-top: $pad/4;
+              position: relative;
+              left: -$pad;
+            }
+          }
         }
         
-        &:nth-of-type(2) {
+        &#tag-list {
           @include list-centered;
+          margin-top: $pad/4;
         }
         
-        &:last-of-type {
+        &#social {
           float: right;
+          
           li {
             &#social {
               p {
@@ -639,8 +661,14 @@
               ul {
                 li {
                   margin-right: 0;
+                  
                   a {
                     padding: 0;
+                    background: $color;
+                    
+                    &:hover {
+                      background: $color;
+                    }
                   }
                 }
               }
