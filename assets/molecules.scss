@@ -106,13 +106,21 @@
 /* Returns the width of a column in a grid
 */
 @function col-width($how-many) {
-  @return 90% / $how-many;
+  @if ($how-many == 3) {
+    @return 31.5%;
+  } @else {
+    @return 90% / $how-many;
+  }
 }
 
 /* Returns the margin of a column in a grid
 */
 @function col-gutter($how-many) {
-  @return 10% / ($how-many - 1);
+  @if ($how-many == 3) {
+    @return 2.5%;
+  } @else {
+    @return 10% / ($how-many - 1);
+  }
 }
 
 

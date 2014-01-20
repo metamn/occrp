@@ -168,7 +168,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 */
 /* The news
 */
-/* Positioning slider elements
+/* Positioning slider elements to enable sliding
 */
 /* The slider on the frontpage
 */
@@ -224,16 +224,16 @@ html body .container #header hgroup { text-align: center; }
   html body .container #header hgroup:nth-of-type(8) { margin-right: 0; }
   html body .container #header hgroup:nth-of-type(9) { margin-right: 10%; }
   html body .container #header hgroup:nth-of-type(10) { margin-right: 0; } }
-@media only screen and (min-width: 80em) { html body .container #header hgroup { width: 30%; margin-right: 5%; float: left; }
-  html body .container #header hgroup:nth-of-type(2) { margin-right: 5%; }
+@media only screen and (min-width: 80em) { html body .container #header hgroup { width: 31.5%; margin-right: 2.5%; float: left; }
+  html body .container #header hgroup:nth-of-type(2) { margin-right: 2.5%; }
   html body .container #header hgroup:nth-of-type(3) { margin-right: 0; }
-  html body .container #header hgroup:nth-of-type(4) { margin-right: 5%; }
-  html body .container #header hgroup:nth-of-type(5) { margin-right: 5%; }
+  html body .container #header hgroup:nth-of-type(4) { margin-right: 2.5%; }
+  html body .container #header hgroup:nth-of-type(5) { margin-right: 2.5%; }
   html body .container #header hgroup:nth-of-type(6) { margin-right: 0; }
-  html body .container #header hgroup:nth-of-type(7) { margin-right: 5%; }
-  html body .container #header hgroup:nth-of-type(8) { margin-right: 5%; }
+  html body .container #header hgroup:nth-of-type(7) { margin-right: 2.5%; }
+  html body .container #header hgroup:nth-of-type(8) { margin-right: 2.5%; }
   html body .container #header hgroup:nth-of-type(9) { margin-right: 0; }
-  html body .container #header hgroup:nth-of-type(10) { margin-right: 5%; } }
+  html body .container #header hgroup:nth-of-type(10) { margin-right: 2.5%; } }
 html body .container #header hgroup h1, html body .container #header hgroup figure figcaption { display: none; }
 html body .container #header nav { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; border-bottom: 1px solid #231f20; padding: 0.625em 0; margin-top: 2.5em; }
 @media only screen and (max-width: 48em) { html body .container #header nav { width: 100%; margin-right: 0; float: left; } }
@@ -247,16 +247,16 @@ html body .container #header nav { text-transform: uppercase; letter-spacing: 1.
   html body .container #header nav:nth-of-type(8) { margin-right: 0; }
   html body .container #header nav:nth-of-type(9) { margin-right: 10%; }
   html body .container #header nav:nth-of-type(10) { margin-right: 0; } }
-@media only screen and (min-width: 80em) { html body .container #header nav { width: 30%; margin-right: 5%; float: left; }
-  html body .container #header nav:nth-of-type(2) { margin-right: 5%; }
+@media only screen and (min-width: 80em) { html body .container #header nav { width: 31.5%; margin-right: 2.5%; float: left; }
+  html body .container #header nav:nth-of-type(2) { margin-right: 2.5%; }
   html body .container #header nav:nth-of-type(3) { margin-right: 0; }
-  html body .container #header nav:nth-of-type(4) { margin-right: 5%; }
-  html body .container #header nav:nth-of-type(5) { margin-right: 5%; }
+  html body .container #header nav:nth-of-type(4) { margin-right: 2.5%; }
+  html body .container #header nav:nth-of-type(5) { margin-right: 2.5%; }
   html body .container #header nav:nth-of-type(6) { margin-right: 0; }
-  html body .container #header nav:nth-of-type(7) { margin-right: 5%; }
-  html body .container #header nav:nth-of-type(8) { margin-right: 5%; }
+  html body .container #header nav:nth-of-type(7) { margin-right: 2.5%; }
+  html body .container #header nav:nth-of-type(8) { margin-right: 2.5%; }
   html body .container #header nav:nth-of-type(9) { margin-right: 0; }
-  html body .container #header nav:nth-of-type(10) { margin-right: 5%; } }
+  html body .container #header nav:nth-of-type(10) { margin-right: 2.5%; } }
 html body .container #header nav.mobile { display: none; }
 html body .container #header nav ul { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
 html body .container #header nav ul li { display: inline-block; float: left; margin-right: 0.625em; }
@@ -287,10 +287,10 @@ html body.sticky .container #header #logo figure img { max-width: 10em; position
 html body.sticky .container #header #tags { display: none; }
 html body.sticky .container main, html body.sticky .container #footer { position: relative; top: 7.5em; }
 html body.frontpage .container main #intro { margin-bottom: 1.25em; }
-html body.frontpage .container main #intro #slider { width: 65%; margin-right: 5%; float: left; padding: 1.25em; width: calc(65% - 2.5em); background: #f1f1f1; position: relative; height: 23em; }
-@media only screen and (min-width: 80em) and (max-width: 89.999em) { html body.frontpage .container main #intro #slider { height: 20em; } }
+html body.frontpage .container main #intro #slider { width: 65.5%; margin-right: 2.5%; float: left; padding: 1.25em; width: calc(65.5% - 2.5em); background: #f1f1f1; position: relative; height: 19em; }
+@media only screen and (min-width: 80em) and (max-width: 89.999em) { html body.frontpage .container main #intro #slider { height: 16em; } }
 html body.frontpage .container main #intro #slider article { position: absolute; top: 1.25em; }
-html body.frontpage .container main #intro #slider nav { position: absolute; bottom: 1.25em; }
+html body.frontpage .container main #intro #slider nav { width: calc(49% - 1.25em); float: left; left: 51%; position: absolute; bottom: 1.25em; }
 html body.frontpage .container main #intro #slider article { margin-bottom: 3%; width: 100%; max-width: 100%; float: left; margin-bottom: 0; }
 html body.frontpage .container main #intro #slider article figure { display: block; }
 html body.frontpage .container main #intro #slider article figcaption { display: none; }
@@ -315,8 +315,8 @@ html body.frontpage .container main #intro #slider article #meta #authors ul li:
 html body.frontpage .container main #intro #slider article #meta #authors ul li:first-of-type:after, html body.frontpage .container main #intro #slider article #meta #authors ul li:last-of-type:after { content: ''; }
 html body.frontpage .container main #intro #slider article #content a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #intro #slider article #content a:hover { color: #982022; }
-html body.frontpage .container main #intro #slider article figure { width: 44%; margin-right: 7%; float: left; }
-html body.frontpage .container main #intro #slider article h1, html body.frontpage .container main #intro #slider article #excerpt { width: calc(49% - 2.5em); float: left; }
+html body.frontpage .container main #intro #slider article figure { width: 45%; margin-right: 4%; float: left; }
+html body.frontpage .container main #intro #slider article h1, html body.frontpage .container main #intro #slider article #excerpt { width: calc(49% - 1.25em); float: left; }
 html body.frontpage .container main #intro #slider article #excerpt { margin-top: 1.25em; }
 html body.frontpage .container main #intro #slider nav { margin-top: 1.25em; }
 html body.frontpage .container main #intro #slider nav > h3 { display: none; }
@@ -375,16 +375,16 @@ html body.frontpage .container main #investigations article { margin-bottom: 3%;
   html body.frontpage .container main #investigations article:nth-of-type(8) { margin-right: 0; }
   html body.frontpage .container main #investigations article:nth-of-type(9) { margin-right: 10%; }
   html body.frontpage .container main #investigations article:nth-of-type(10) { margin-right: 0; } }
-@media only screen and (min-width: 80em) { html body.frontpage .container main #investigations article { width: 30%; margin-right: 5%; float: left; }
-  html body.frontpage .container main #investigations article:nth-of-type(2) { margin-right: 5%; }
+@media only screen and (min-width: 80em) { html body.frontpage .container main #investigations article { width: 31.5%; margin-right: 2.5%; float: left; }
+  html body.frontpage .container main #investigations article:nth-of-type(2) { margin-right: 2.5%; }
   html body.frontpage .container main #investigations article:nth-of-type(3) { margin-right: 0; }
-  html body.frontpage .container main #investigations article:nth-of-type(4) { margin-right: 5%; }
-  html body.frontpage .container main #investigations article:nth-of-type(5) { margin-right: 5%; }
+  html body.frontpage .container main #investigations article:nth-of-type(4) { margin-right: 2.5%; }
+  html body.frontpage .container main #investigations article:nth-of-type(5) { margin-right: 2.5%; }
   html body.frontpage .container main #investigations article:nth-of-type(6) { margin-right: 0; }
-  html body.frontpage .container main #investigations article:nth-of-type(7) { margin-right: 5%; }
-  html body.frontpage .container main #investigations article:nth-of-type(8) { margin-right: 5%; }
+  html body.frontpage .container main #investigations article:nth-of-type(7) { margin-right: 2.5%; }
+  html body.frontpage .container main #investigations article:nth-of-type(8) { margin-right: 2.5%; }
   html body.frontpage .container main #investigations article:nth-of-type(9) { margin-right: 0; }
-  html body.frontpage .container main #investigations article:nth-of-type(10) { margin-right: 5%; } }
+  html body.frontpage .container main #investigations article:nth-of-type(10) { margin-right: 2.5%; } }
 html body.frontpage .container main #investigations article figure { display: block; }
 html body.frontpage .container main #investigations article figcaption { display: none; }
 html body.frontpage .container main #investigations article #content { display: none; }
@@ -553,16 +553,16 @@ html body.frontpage .container main #most-read aside { counter-reset: counter; }
   html body.frontpage .container main #most-read aside:nth-of-type(8) { margin-right: 0; }
   html body.frontpage .container main #most-read aside:nth-of-type(9) { margin-right: 10%; }
   html body.frontpage .container main #most-read aside:nth-of-type(10) { margin-right: 0; } }
-@media only screen and (min-width: 80em) { html body.frontpage .container main #most-read aside { width: 30%; margin-right: 5%; float: left; }
-  html body.frontpage .container main #most-read aside:nth-of-type(2) { margin-right: 5%; }
+@media only screen and (min-width: 80em) { html body.frontpage .container main #most-read aside { width: 31.5%; margin-right: 2.5%; float: left; }
+  html body.frontpage .container main #most-read aside:nth-of-type(2) { margin-right: 2.5%; }
   html body.frontpage .container main #most-read aside:nth-of-type(3) { margin-right: 0; }
-  html body.frontpage .container main #most-read aside:nth-of-type(4) { margin-right: 5%; }
-  html body.frontpage .container main #most-read aside:nth-of-type(5) { margin-right: 5%; }
+  html body.frontpage .container main #most-read aside:nth-of-type(4) { margin-right: 2.5%; }
+  html body.frontpage .container main #most-read aside:nth-of-type(5) { margin-right: 2.5%; }
   html body.frontpage .container main #most-read aside:nth-of-type(6) { margin-right: 0; }
-  html body.frontpage .container main #most-read aside:nth-of-type(7) { margin-right: 5%; }
-  html body.frontpage .container main #most-read aside:nth-of-type(8) { margin-right: 5%; }
+  html body.frontpage .container main #most-read aside:nth-of-type(7) { margin-right: 2.5%; }
+  html body.frontpage .container main #most-read aside:nth-of-type(8) { margin-right: 2.5%; }
   html body.frontpage .container main #most-read aside:nth-of-type(9) { margin-right: 0; }
-  html body.frontpage .container main #most-read aside:nth-of-type(10) { margin-right: 5%; } }
+  html body.frontpage .container main #most-read aside:nth-of-type(10) { margin-right: 2.5%; } }
 html body.frontpage .container main #most-read aside h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; margin-bottom: 0.625em; }
 html body.frontpage .container main #most-read aside h3 a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #most-read aside h3 a:hover { color: #231f20; }
@@ -649,26 +649,26 @@ html body.category main #articles article #content a:hover { color: #982022; }
   html body.category main #articles article:nth-of-type(18) { margin-right: 0; }
   html body.category main #articles article:nth-of-type(19) { margin-right: 10%; }
   html body.category main #articles article:nth-of-type(20) { margin-right: 0; } }
-@media only screen and (min-width: 80em) { html body.category main #articles article { width: 30%; margin-right: 5%; float: left; }
-  html body.category main #articles article:nth-of-type(2) { margin-right: 5%; }
+@media only screen and (min-width: 80em) { html body.category main #articles article { width: 31.5%; margin-right: 2.5%; float: left; }
+  html body.category main #articles article:nth-of-type(2) { margin-right: 2.5%; }
   html body.category main #articles article:nth-of-type(3) { margin-right: 0; }
-  html body.category main #articles article:nth-of-type(4) { margin-right: 5%; }
-  html body.category main #articles article:nth-of-type(5) { margin-right: 5%; }
+  html body.category main #articles article:nth-of-type(4) { margin-right: 2.5%; }
+  html body.category main #articles article:nth-of-type(5) { margin-right: 2.5%; }
   html body.category main #articles article:nth-of-type(6) { margin-right: 0; }
-  html body.category main #articles article:nth-of-type(7) { margin-right: 5%; }
-  html body.category main #articles article:nth-of-type(8) { margin-right: 5%; }
+  html body.category main #articles article:nth-of-type(7) { margin-right: 2.5%; }
+  html body.category main #articles article:nth-of-type(8) { margin-right: 2.5%; }
   html body.category main #articles article:nth-of-type(9) { margin-right: 0; }
-  html body.category main #articles article:nth-of-type(10) { margin-right: 5%; }
-  html body.category main #articles article:nth-of-type(11) { margin-right: 5%; }
+  html body.category main #articles article:nth-of-type(10) { margin-right: 2.5%; }
+  html body.category main #articles article:nth-of-type(11) { margin-right: 2.5%; }
   html body.category main #articles article:nth-of-type(12) { margin-right: 0; }
-  html body.category main #articles article:nth-of-type(13) { margin-right: 5%; }
-  html body.category main #articles article:nth-of-type(14) { margin-right: 5%; }
+  html body.category main #articles article:nth-of-type(13) { margin-right: 2.5%; }
+  html body.category main #articles article:nth-of-type(14) { margin-right: 2.5%; }
   html body.category main #articles article:nth-of-type(15) { margin-right: 0; }
-  html body.category main #articles article:nth-of-type(16) { margin-right: 5%; }
-  html body.category main #articles article:nth-of-type(17) { margin-right: 5%; }
+  html body.category main #articles article:nth-of-type(16) { margin-right: 2.5%; }
+  html body.category main #articles article:nth-of-type(17) { margin-right: 2.5%; }
   html body.category main #articles article:nth-of-type(18) { margin-right: 0; }
-  html body.category main #articles article:nth-of-type(19) { margin-right: 5%; }
-  html body.category main #articles article:nth-of-type(20) { margin-right: 5%; } }
+  html body.category main #articles article:nth-of-type(19) { margin-right: 2.5%; }
+  html body.category main #articles article:nth-of-type(20) { margin-right: 2.5%; } }
 html body.category main #articles article h1 { font-size: medium; }
 html body.category main #articles nav { margin-top: 1.25em; }
 html body.category main #articles nav > h3 { display: none; }
@@ -792,26 +792,26 @@ html body.tag main #articles article #content a:hover { color: #982022; }
   html body.tag main #articles article:nth-of-type(18) { margin-right: 0; }
   html body.tag main #articles article:nth-of-type(19) { margin-right: 10%; }
   html body.tag main #articles article:nth-of-type(20) { margin-right: 0; } }
-@media only screen and (min-width: 80em) { html body.tag main #articles article { width: 30%; margin-right: 5%; float: left; }
-  html body.tag main #articles article:nth-of-type(2) { margin-right: 5%; }
+@media only screen and (min-width: 80em) { html body.tag main #articles article { width: 31.5%; margin-right: 2.5%; float: left; }
+  html body.tag main #articles article:nth-of-type(2) { margin-right: 2.5%; }
   html body.tag main #articles article:nth-of-type(3) { margin-right: 0; }
-  html body.tag main #articles article:nth-of-type(4) { margin-right: 5%; }
-  html body.tag main #articles article:nth-of-type(5) { margin-right: 5%; }
+  html body.tag main #articles article:nth-of-type(4) { margin-right: 2.5%; }
+  html body.tag main #articles article:nth-of-type(5) { margin-right: 2.5%; }
   html body.tag main #articles article:nth-of-type(6) { margin-right: 0; }
-  html body.tag main #articles article:nth-of-type(7) { margin-right: 5%; }
-  html body.tag main #articles article:nth-of-type(8) { margin-right: 5%; }
+  html body.tag main #articles article:nth-of-type(7) { margin-right: 2.5%; }
+  html body.tag main #articles article:nth-of-type(8) { margin-right: 2.5%; }
   html body.tag main #articles article:nth-of-type(9) { margin-right: 0; }
-  html body.tag main #articles article:nth-of-type(10) { margin-right: 5%; }
-  html body.tag main #articles article:nth-of-type(11) { margin-right: 5%; }
+  html body.tag main #articles article:nth-of-type(10) { margin-right: 2.5%; }
+  html body.tag main #articles article:nth-of-type(11) { margin-right: 2.5%; }
   html body.tag main #articles article:nth-of-type(12) { margin-right: 0; }
-  html body.tag main #articles article:nth-of-type(13) { margin-right: 5%; }
-  html body.tag main #articles article:nth-of-type(14) { margin-right: 5%; }
+  html body.tag main #articles article:nth-of-type(13) { margin-right: 2.5%; }
+  html body.tag main #articles article:nth-of-type(14) { margin-right: 2.5%; }
   html body.tag main #articles article:nth-of-type(15) { margin-right: 0; }
-  html body.tag main #articles article:nth-of-type(16) { margin-right: 5%; }
-  html body.tag main #articles article:nth-of-type(17) { margin-right: 5%; }
+  html body.tag main #articles article:nth-of-type(16) { margin-right: 2.5%; }
+  html body.tag main #articles article:nth-of-type(17) { margin-right: 2.5%; }
   html body.tag main #articles article:nth-of-type(18) { margin-right: 0; }
-  html body.tag main #articles article:nth-of-type(19) { margin-right: 5%; }
-  html body.tag main #articles article:nth-of-type(20) { margin-right: 5%; } }
+  html body.tag main #articles article:nth-of-type(19) { margin-right: 2.5%; }
+  html body.tag main #articles article:nth-of-type(20) { margin-right: 2.5%; } }
 html body.tag main #articles article h1 { font-size: medium; }
 html body.tag main #articles nav { margin-top: 1.25em; }
 html body.tag main #articles nav > h3 { display: none; }
@@ -1332,16 +1332,16 @@ html body.article main #article #related-graphics ul li, html body.article main 
   html body.article main #article #related-graphics ul li:nth-of-type(8), html body.article main #article #related-person ul li:nth-of-type(8), html body.article main #article #videos ul li:nth-of-type(8) { margin-right: 0; }
   html body.article main #article #related-graphics ul li:nth-of-type(9), html body.article main #article #related-person ul li:nth-of-type(9), html body.article main #article #videos ul li:nth-of-type(9) { margin-right: 10%; }
   html body.article main #article #related-graphics ul li:nth-of-type(10), html body.article main #article #related-person ul li:nth-of-type(10), html body.article main #article #videos ul li:nth-of-type(10) { margin-right: 0; } }
-@media only screen and (min-width: 80em) { html body.article main #article #related-graphics ul li, html body.article main #article #related-person ul li, html body.article main #article #videos ul li { width: 30%; margin-right: 5%; float: left; }
-  html body.article main #article #related-graphics ul li:nth-of-type(2), html body.article main #article #related-person ul li:nth-of-type(2), html body.article main #article #videos ul li:nth-of-type(2) { margin-right: 5%; }
+@media only screen and (min-width: 80em) { html body.article main #article #related-graphics ul li, html body.article main #article #related-person ul li, html body.article main #article #videos ul li { width: 31.5%; margin-right: 2.5%; float: left; }
+  html body.article main #article #related-graphics ul li:nth-of-type(2), html body.article main #article #related-person ul li:nth-of-type(2), html body.article main #article #videos ul li:nth-of-type(2) { margin-right: 2.5%; }
   html body.article main #article #related-graphics ul li:nth-of-type(3), html body.article main #article #related-person ul li:nth-of-type(3), html body.article main #article #videos ul li:nth-of-type(3) { margin-right: 0; }
-  html body.article main #article #related-graphics ul li:nth-of-type(4), html body.article main #article #related-person ul li:nth-of-type(4), html body.article main #article #videos ul li:nth-of-type(4) { margin-right: 5%; }
-  html body.article main #article #related-graphics ul li:nth-of-type(5), html body.article main #article #related-person ul li:nth-of-type(5), html body.article main #article #videos ul li:nth-of-type(5) { margin-right: 5%; }
+  html body.article main #article #related-graphics ul li:nth-of-type(4), html body.article main #article #related-person ul li:nth-of-type(4), html body.article main #article #videos ul li:nth-of-type(4) { margin-right: 2.5%; }
+  html body.article main #article #related-graphics ul li:nth-of-type(5), html body.article main #article #related-person ul li:nth-of-type(5), html body.article main #article #videos ul li:nth-of-type(5) { margin-right: 2.5%; }
   html body.article main #article #related-graphics ul li:nth-of-type(6), html body.article main #article #related-person ul li:nth-of-type(6), html body.article main #article #videos ul li:nth-of-type(6) { margin-right: 0; }
-  html body.article main #article #related-graphics ul li:nth-of-type(7), html body.article main #article #related-person ul li:nth-of-type(7), html body.article main #article #videos ul li:nth-of-type(7) { margin-right: 5%; }
-  html body.article main #article #related-graphics ul li:nth-of-type(8), html body.article main #article #related-person ul li:nth-of-type(8), html body.article main #article #videos ul li:nth-of-type(8) { margin-right: 5%; }
+  html body.article main #article #related-graphics ul li:nth-of-type(7), html body.article main #article #related-person ul li:nth-of-type(7), html body.article main #article #videos ul li:nth-of-type(7) { margin-right: 2.5%; }
+  html body.article main #article #related-graphics ul li:nth-of-type(8), html body.article main #article #related-person ul li:nth-of-type(8), html body.article main #article #videos ul li:nth-of-type(8) { margin-right: 2.5%; }
   html body.article main #article #related-graphics ul li:nth-of-type(9), html body.article main #article #related-person ul li:nth-of-type(9), html body.article main #article #videos ul li:nth-of-type(9) { margin-right: 0; }
-  html body.article main #article #related-graphics ul li:nth-of-type(10), html body.article main #article #related-person ul li:nth-of-type(10), html body.article main #article #videos ul li:nth-of-type(10) { margin-right: 5%; } }
+  html body.article main #article #related-graphics ul li:nth-of-type(10), html body.article main #article #related-person ul li:nth-of-type(10), html body.article main #article #videos ul li:nth-of-type(10) { margin-right: 2.5%; } }
 html body.article main #article #related-articles article { margin-bottom: 3%; }
 @media only screen and (max-width: 48em) { html body.article main #article #related-articles article { width: 100%; margin-right: 0; float: left; } }
 @media only screen and (min-width: 48em) and (max-width: 79.999em) { html body.article main #article #related-articles article { width: 45%; margin-right: 10%; float: left; }
@@ -1354,16 +1354,16 @@ html body.article main #article #related-articles article { margin-bottom: 3%; }
   html body.article main #article #related-articles article:nth-of-type(8) { margin-right: 0; }
   html body.article main #article #related-articles article:nth-of-type(9) { margin-right: 10%; }
   html body.article main #article #related-articles article:nth-of-type(10) { margin-right: 0; } }
-@media only screen and (min-width: 80em) { html body.article main #article #related-articles article { width: 30%; margin-right: 5%; float: left; }
-  html body.article main #article #related-articles article:nth-of-type(2) { margin-right: 5%; }
+@media only screen and (min-width: 80em) { html body.article main #article #related-articles article { width: 31.5%; margin-right: 2.5%; float: left; }
+  html body.article main #article #related-articles article:nth-of-type(2) { margin-right: 2.5%; }
   html body.article main #article #related-articles article:nth-of-type(3) { margin-right: 0; }
-  html body.article main #article #related-articles article:nth-of-type(4) { margin-right: 5%; }
-  html body.article main #article #related-articles article:nth-of-type(5) { margin-right: 5%; }
+  html body.article main #article #related-articles article:nth-of-type(4) { margin-right: 2.5%; }
+  html body.article main #article #related-articles article:nth-of-type(5) { margin-right: 2.5%; }
   html body.article main #article #related-articles article:nth-of-type(6) { margin-right: 0; }
-  html body.article main #article #related-articles article:nth-of-type(7) { margin-right: 5%; }
-  html body.article main #article #related-articles article:nth-of-type(8) { margin-right: 5%; }
+  html body.article main #article #related-articles article:nth-of-type(7) { margin-right: 2.5%; }
+  html body.article main #article #related-articles article:nth-of-type(8) { margin-right: 2.5%; }
   html body.article main #article #related-articles article:nth-of-type(9) { margin-right: 0; }
-  html body.article main #article #related-articles article:nth-of-type(10) { margin-right: 5%; } }
+  html body.article main #article #related-articles article:nth-of-type(10) { margin-right: 2.5%; } }
 html body.article main #article #related-articles article figure { display: block; }
 html body.article main #article #related-articles article figcaption { display: none; }
 html body.article main #article #related-articles article #excerpt { display: none; }

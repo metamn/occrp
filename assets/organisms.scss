@@ -459,14 +459,14 @@
 
 
 
-/* Positioning slider elements
+/* Positioning slider elements to enable sliding
 */
 @mixin slider-elements {
   position: relative;
-  height: 23em;
+  height: 19em;
   
   @include normal-screen {
-    height: 20em;
+    height: 16em;
   }
   
   article {
@@ -475,6 +475,9 @@
   }
   
   nav {
+    @include grid-resize(49%, $pad);
+    float: left;
+    left: 51%;
     position: absolute;
     bottom: $pad;
   }
@@ -484,8 +487,8 @@
 /* The slider on the frontpage
 */
 @mixin slider {
-  @include col(65%, 5%);
-  @include padding(65%);
+  @include col(65.5%, 2.5%);
+  @include padding(65.5%);
   background: $light-grey;
   
   @include slider-elements;
@@ -496,11 +499,11 @@
     margin-bottom: 0;
     
     figure {
-      @include col(44%, 7%);
+      @include col(45%, 4%);
     }
     
     h1, #excerpt {
-      @include grid-resize(49%, $pad*2);
+      @include grid-resize(49%, $pad);
       float: left;
     }
     
@@ -508,7 +511,7 @@
       margin-top: $pad;
     }
   }
-  
+
   @include navigation;
 }
 
