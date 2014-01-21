@@ -52,10 +52,11 @@ html {
               @include slider;
             }
             
-            #news {
+            #news, #announcements {
               @include news;
             }
           }
+          
           
           #investigations {
             @include investigations;

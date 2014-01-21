@@ -277,7 +277,7 @@ html body .container #header nav#tags ul#search li { cursor: pointer; }
 html body .container #header nav#tags ul#search li:first-of-type { margin-top: 0.3125em; }
 html body .container #header nav#tags ul#search li:first-of-type img { width: 50%; }
 html body .container #header nav#tags ul#search li:nth-of-type(2) { display: none; }
-html body .container #header nav#tags ul#search li:nth-of-type(3) { margin-top: 0.3125em; position: relative; left: -1.25em; }
+html body .container #header nav#tags ul#search li:nth-of-type(3) { margin-top: 0.3125em; position: relative; left: -1.40625em; }
 html body .container #header nav#tags ul#tag-list { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; margin-top: 0.3125em; }
 html body .container #header nav#tags ul#social { float: right; }
 html body .container #header nav#tags ul#social li#social p { display: none; }
@@ -343,37 +343,37 @@ html body.frontpage .container main #intro #slider nav ol li.active a a:hover, h
 html body.frontpage .container main #intro #slider nav ol li { background: white; color: #231f20; }
 html body.frontpage .container main #intro #slider nav ol li a { color: #231f20; text-decoration: none; }
 html body.frontpage .container main #intro #slider nav ol li a:hover { color: white; }
-html body.frontpage .container main #intro #news { width: 30%; margin-right: 0; float: left; }
-html body.frontpage .container main #intro #news h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; }
-html body.frontpage .container main #intro #news h3 a { color: #982022; text-decoration: none; }
-html body.frontpage .container main #intro #news h3 a:hover { color: #231f20; }
-html body.frontpage .container main #intro #news article { margin-bottom: 3%; border-bottom: 1px solid #f1f1f1; padding-bottom: 3%; }
-html body.frontpage .container main #intro #news article figure { display: none; }
-html body.frontpage .container main #intro #news article figcaption { display: none; }
-html body.frontpage .container main #intro #news article #excerpt { display: none; }
-html body.frontpage .container main #intro #news article #content { display: none; }
-html body.frontpage .container main #intro #news article #meta #category { display: none; }
-html body.frontpage .container main #intro #news article #meta #date { display: none; }
-html body.frontpage .container main #intro #news article #meta { display: none; }
-html body.frontpage .container main #intro #news article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; }
-html body.frontpage .container main #intro #news article #meta { margin-top: 0.625em; }
-html body.frontpage .container main #intro #news article #meta ul { margin: 0; }
-html body.frontpage .container main #intro #news article #meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.frontpage .container main #intro #news article #meta ul li:before { content: ''; }
-html body.frontpage .container main #intro #news article #meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
-html body.frontpage .container main #intro #news article #meta ul li:last-of-type { margin-right: 0; }
-html body.frontpage .container main #intro #news article #meta #date { font-size: small; color: #74676a; }
-html body.frontpage .container main #intro #news article #meta #category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
-html body.frontpage .container main #intro #news article #meta #category a { color: #982022; text-decoration: none; }
-html body.frontpage .container main #intro #news article #meta #category a:hover { color: #231f20; }
-html body.frontpage .container main #intro #news article #meta #authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; }
-html body.frontpage .container main #intro #news article #meta #authors ul li:after { content: ','; }
-html body.frontpage .container main #intro #news article #meta #authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
-html body.frontpage .container main #intro #news article #meta #authors ul li:first-of-type:after, html body.frontpage .container main #intro #news article #meta #authors ul li:last-of-type:after { content: ''; }
-html body.frontpage .container main #intro #news article #content a { color: #982022; text-decoration: none; }
-html body.frontpage .container main #intro #news article #content a:hover { color: #982022; }
-html body.frontpage .container main #intro #news article h1 { font-size: medium; }
-@media only screen and (max-width: 48em) { html body.frontpage .container main #intro #news { width: 100%; max-width: 100%; float: left; } }
+html body.frontpage .container main #intro #news, html body.frontpage .container main #intro #announcements { width: 30%; margin-right: 0; float: left; }
+html body.frontpage .container main #intro #news h3, html body.frontpage .container main #intro #announcements h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; }
+html body.frontpage .container main #intro #news h3 a, html body.frontpage .container main #intro #announcements h3 a { color: #982022; text-decoration: none; }
+html body.frontpage .container main #intro #news h3 a:hover, html body.frontpage .container main #intro #announcements h3 a:hover { color: #231f20; }
+html body.frontpage .container main #intro #news article, html body.frontpage .container main #intro #announcements article { margin-bottom: 3%; border-bottom: 1px solid #f1f1f1; padding-bottom: 3%; }
+html body.frontpage .container main #intro #news article figure, html body.frontpage .container main #intro #announcements article figure { display: none; }
+html body.frontpage .container main #intro #news article figcaption, html body.frontpage .container main #intro #announcements article figcaption { display: none; }
+html body.frontpage .container main #intro #news article #excerpt, html body.frontpage .container main #intro #announcements article #excerpt { display: none; }
+html body.frontpage .container main #intro #news article #content, html body.frontpage .container main #intro #announcements article #content { display: none; }
+html body.frontpage .container main #intro #news article #meta #category, html body.frontpage .container main #intro #announcements article #meta #category { display: none; }
+html body.frontpage .container main #intro #news article #meta #date, html body.frontpage .container main #intro #announcements article #meta #date { display: none; }
+html body.frontpage .container main #intro #news article #meta, html body.frontpage .container main #intro #announcements article #meta { display: none; }
+html body.frontpage .container main #intro #news article #excerpt, html body.frontpage .container main #intro #announcements article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; }
+html body.frontpage .container main #intro #news article #meta, html body.frontpage .container main #intro #announcements article #meta { margin-top: 0.625em; }
+html body.frontpage .container main #intro #news article #meta ul, html body.frontpage .container main #intro #announcements article #meta ul { margin: 0; }
+html body.frontpage .container main #intro #news article #meta ul li, html body.frontpage .container main #intro #announcements article #meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
+html body.frontpage .container main #intro #news article #meta ul li:before, html body.frontpage .container main #intro #announcements article #meta ul li:before { content: ''; }
+html body.frontpage .container main #intro #news article #meta ul li, html body.frontpage .container main #intro #announcements article #meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
+html body.frontpage .container main #intro #news article #meta ul li:last-of-type, html body.frontpage .container main #intro #announcements article #meta ul li:last-of-type { margin-right: 0; }
+html body.frontpage .container main #intro #news article #meta #date, html body.frontpage .container main #intro #announcements article #meta #date { font-size: small; color: #74676a; }
+html body.frontpage .container main #intro #news article #meta #category, html body.frontpage .container main #intro #announcements article #meta #category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
+html body.frontpage .container main #intro #news article #meta #category a, html body.frontpage .container main #intro #announcements article #meta #category a { color: #982022; text-decoration: none; }
+html body.frontpage .container main #intro #news article #meta #category a:hover, html body.frontpage .container main #intro #announcements article #meta #category a:hover { color: #231f20; }
+html body.frontpage .container main #intro #news article #meta #authors, html body.frontpage .container main #intro #announcements article #meta #authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; }
+html body.frontpage .container main #intro #news article #meta #authors ul li:after, html body.frontpage .container main #intro #announcements article #meta #authors ul li:after { content: ','; }
+html body.frontpage .container main #intro #news article #meta #authors ul li:first-of-type, html body.frontpage .container main #intro #announcements article #meta #authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+html body.frontpage .container main #intro #news article #meta #authors ul li:first-of-type:after, html body.frontpage .container main #intro #news article #meta #authors ul li:last-of-type:after, html body.frontpage .container main #intro #announcements article #meta #authors ul li:first-of-type:after, html body.frontpage .container main #intro #announcements article #meta #authors ul li:last-of-type:after { content: ''; }
+html body.frontpage .container main #intro #news article #content a, html body.frontpage .container main #intro #announcements article #content a { color: #982022; text-decoration: none; }
+html body.frontpage .container main #intro #news article #content a:hover, html body.frontpage .container main #intro #announcements article #content a:hover { color: #982022; }
+html body.frontpage .container main #intro #news article h1, html body.frontpage .container main #intro #announcements article h1 { font-size: medium; }
+@media only screen and (max-width: 48em) { html body.frontpage .container main #intro #news, html body.frontpage .container main #intro #announcements { width: 100%; max-width: 100%; float: left; } }
 html body.frontpage .container main #investigations h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; }
 html body.frontpage .container main #investigations h3 a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #investigations h3 a:hover { color: #231f20; }
@@ -422,8 +422,10 @@ html body.frontpage .container main #investigations article #content a { color: 
 html body.frontpage .container main #investigations article #content a:hover { color: #982022; }
 @media only screen and (min-width: 80em) and (max-width: 89.999em) { html body.frontpage .container main #investigations article { height: 27em; } }
 html body.frontpage .container main #investigations article #excerpt { margin-top: 0.625em; }
-html body.frontpage .container main #products { border-top: 0.3125em solid; padding-top: 1.25em; }
-html body.frontpage .container main #products article { margin-bottom: 3%; }
+html body.frontpage .container main #products { padding: 1.25em; width: calc(100% - 2.5em); background: #231f20; color: white; margin-bottom: 3%; }
+html body.frontpage .container main #products a { color: white; text-decoration: none; }
+html body.frontpage .container main #products a:hover { color: white; }
+html body.frontpage .container main #products article { margin-bottom: 3%; margin: 1.5% 0; }
 html body.frontpage .container main #products article figure { display: block; }
 html body.frontpage .container main #products article figcaption { display: none; }
 html body.frontpage .container main #products article #excerpt { display: none; }
@@ -555,7 +557,6 @@ html body.frontpage .container main #projects nav ol li a:hover, html body.front
   html body.frontpage .container main #videos article:nth-of-type(8) { margin-right: 2%; }
   html body.frontpage .container main #videos article:nth-of-type(9) { margin-right: 2%; }
   html body.frontpage .container main #videos article:nth-of-type(10) { margin-right: 2%; } }
-html body.frontpage .container main #most-read aside { counter-reset: counter; }
 @media only screen and (max-width: 48em) { html body.frontpage .container main #most-read aside { width: 100%; margin-right: 0; float: left; } }
 @media only screen and (min-width: 48em) and (max-width: 79.999em) { html body.frontpage .container main #most-read aside { width: 45%; margin-right: 10%; float: left; }
   html body.frontpage .container main #most-read aside:nth-of-type(2) { margin-right: 0; }
@@ -577,9 +578,6 @@ html body.frontpage .container main #most-read aside { counter-reset: counter; }
   html body.frontpage .container main #most-read aside:nth-of-type(8) { margin-right: 2.5%; }
   html body.frontpage .container main #most-read aside:nth-of-type(9) { margin-right: 0; }
   html body.frontpage .container main #most-read aside:nth-of-type(10) { margin-right: 2.5%; } }
-html body.frontpage .container main #most-read aside h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; margin-bottom: 0.625em; }
-html body.frontpage .container main #most-read aside h3 a { color: #982022; text-decoration: none; }
-html body.frontpage .container main #most-read aside h3 a:hover { color: #231f20; }
 html body.frontpage .container main #most-read aside h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; }
 html body.frontpage .container main #most-read aside h3 a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #most-read aside h3 a:hover { color: #231f20; }
@@ -609,10 +607,9 @@ html body.frontpage .container main #most-read aside article #meta #authors ul l
 html body.frontpage .container main #most-read aside article #content a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #most-read aside article #content a:hover { color: #982022; }
 html body.frontpage .container main #most-read aside article h1 { font-size: medium; }
-html body.frontpage .container main #most-read aside article:before { content: counter(counter); counter-increment: counter; background: #231f20; color: white; padding: 0.3125em 0.625em; display: inline-block; margin-right: 0.625em; float: left; }
-html body.frontpage .container main #most-read aside article:before a { color: white; text-decoration: none; }
-html body.frontpage .container main #most-read aside article:before a:hover { color: white; }
-html body.frontpage .container main #most-read aside:last-of-type article:before { display: none; }
+html body.frontpage .container main #most-read aside h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; margin-bottom: 0.625em; }
+html body.frontpage .container main #most-read aside h3 a { color: #982022; text-decoration: none; }
+html body.frontpage .container main #most-read aside h3 a:hover { color: #231f20; }
 html body.category main #articles { width: 64%; margin-right: 3%; float: left; }
 html body.category main #articles .title { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; padding: 1.45833em 0; }
 html body.category main #articles .title a { color: #982022; text-decoration: none; }

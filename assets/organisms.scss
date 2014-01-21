@@ -325,33 +325,11 @@
 @mixin most-read {
   aside {
     @include responsive-grid(3);
+    @include article-news;
     
     h3 {
       @include font(section-title);
       margin-bottom: $pad/2;
-    }
-    
-    counter-reset: counter;
-    @include article-news;
-    
-    article {
-      &:before {
-        content: counter(counter);
-        counter-increment: counter;
-        @include color(invert);
-        padding: $pad/4 $pad/2;
-        display: inline-block;
-        margin-right: $pad/2;
-        float: left;
-      }
-    }
-    
-    &:last-of-type {
-      article {
-        &:before {
-          display: none;
-        }
-      }
     }
   }
 }
@@ -386,12 +364,14 @@
 /* Products
 */
 @mixin products {
-  border-top: $border;
-  padding-top: $pad;
+  @include padding;
+  @include color(invert);
+  margin-bottom: $flexible-grid-margin;
   
   article {
     @include article(null, null, title, figure);
     @include responsive-grid(4);
+    margin: $flexible-grid-margin/2 0;
     
     h1 {
       @include font(thumb-title);
@@ -635,7 +615,7 @@
             &:nth-of-type(3) {
               margin-top: $pad/4;
               position: relative;
-              left: -$pad;
+              left: -$pad - $pad/8;
             }
           }
         }
