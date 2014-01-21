@@ -268,12 +268,41 @@
   
   article {
     @include article(null, null, title, figure);
-    @include responsive-grid(3, 20);
     
     h1 {
       @include font(thumb-title);
     }
+    
+    &.thumb {
+      @include responsive-grid(3, 20);
+      height: 16em;
+    }
   }
+  
+  aside {
+    @include block;
+    
+    article {
+      @include block;
+      
+      figure {
+        @include col(45%, 4%);
+      }
+      
+      h1, #excerpt {
+        @include grid-resize(49%, $pad);
+        float: left;
+      }
+      
+      #excerpt {
+        display: block;
+        margin-top: $pad;
+        padding-bottom: $pad;
+        border-bottom: $border;
+      }
+    }
+  }
+  
   
   @include navigation(navigation);
 }
@@ -283,10 +312,11 @@
 */
 @mixin category-aside {
   @include col(33%, 0);
-  @include padding(33%);
-  background: $light-grey;
   
   section {
+    
+  @include padding;
+  background: $light-grey;
     @include article-news; 
     margin-bottom: $pad*2;
     
