@@ -557,6 +557,7 @@ html body.frontpage .container main #projects nav ol li a:hover, html body.front
   html body.frontpage .container main #videos article:nth-of-type(8) { margin-right: 2%; }
   html body.frontpage .container main #videos article:nth-of-type(9) { margin-right: 2%; }
   html body.frontpage .container main #videos article:nth-of-type(10) { margin-right: 2%; } }
+html body.frontpage .container main #most-read aside { background: #f1f1f1; }
 @media only screen and (max-width: 48em) { html body.frontpage .container main #most-read aside { width: 100%; margin-right: 0; float: left; } }
 @media only screen and (min-width: 48em) and (max-width: 79.999em) { html body.frontpage .container main #most-read aside { width: 45%; margin-right: 10%; float: left; }
   html body.frontpage .container main #most-read aside:nth-of-type(2) { margin-right: 0; }
@@ -607,9 +608,11 @@ html body.frontpage .container main #most-read aside article #meta #authors ul l
 html body.frontpage .container main #most-read aside article #content a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #most-read aside article #content a:hover { color: #982022; }
 html body.frontpage .container main #most-read aside article h1 { font-size: medium; }
-html body.frontpage .container main #most-read aside h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; margin-bottom: 0.625em; }
+html body.frontpage .container main #most-read aside h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; border-bottom: 0.625em solid white; }
 html body.frontpage .container main #most-read aside h3 a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #most-read aside h3 a:hover { color: #231f20; }
+html body.frontpage .container main #most-read aside article { padding: 0 0.625em 0.625em; border-color: white; }
+html body.frontpage .container main #most-read aside article:last-of-type { border-bottom: 0; margin-bottom: 0; }
 html body.category main #articles { width: 64%; margin-right: 3%; float: left; }
 html body.category main #articles .title { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; padding: 1.45833em 0; }
 html body.category main #articles .title a { color: #982022; text-decoration: none; }

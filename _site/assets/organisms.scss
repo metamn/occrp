@@ -314,9 +314,9 @@
   @include col(33%, 0);
   
   section {
+    @include padding;
+    background: $light-grey;
     
-  @include padding;
-  background: $light-grey;
     @include article-news; 
     margin-bottom: $pad*2;
     
@@ -355,11 +355,22 @@
 @mixin most-read {
   aside {
     @include responsive-grid(3);
+    background: $light-grey;
     @include article-news;
     
     h3 {
       @include font(section-title);
-      margin-bottom: $pad/2;
+      border-bottom: $pad/2 solid $background;
+    }
+    
+    article {
+      padding: 0 $pad/2 $pad/2;
+      border-color: $background;
+      
+      &:last-of-type {
+        border-bottom: 0;
+        margin-bottom: 0;
+      }
     }
   }
 }
