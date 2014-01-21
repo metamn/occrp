@@ -60,6 +60,7 @@ $(document).ready(function() {
       var rnd =  Math.floor((Math.random()*10)+1); 
       $(this).attr('src', url + '/' + rnd);
     });
+    
   
     // Initialize isotope filter plugin
     // Set options

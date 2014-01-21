@@ -393,9 +393,10 @@
     font-style: italic;
     font-family: font-headings;
     text-transform: none;
-  
-  } @elseif ($type == archive-article-title) {
-    padding-top: 0;
+    
+  } @elseif ($type == single-article-title) {
+    @include font-size($h1-title); 
+    padding: 0;
   }
 }
 
@@ -813,6 +814,18 @@
       }
       
       font-size: smaller;
+    }
+    
+    &.left {
+      display: inline-block;
+      float: left;
+      margin: $pad $pad*2 $pad 0;
+    }
+    
+    &.right {
+      display: inline-block;
+      float: right;
+      margin: $pad 0 $pad $pad*2;
     }
   }
 }

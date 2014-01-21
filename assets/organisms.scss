@@ -66,6 +66,7 @@
   #excerpt {
     @include font(excerpt);
     color: lighten($color, 15%);
+    text-align: justify;
   }
   
   #meta {
@@ -129,7 +130,7 @@
     
     h1 {
       &:first-of-type {
-        @include font(archive-article-title);
+        @include font(single-article-title);
       }
     }
       
@@ -269,13 +270,14 @@
   article {
     @include article(null, null, title, figure);
     
-    h1 {
-      @include font(thumb-title);
-    }
-    
     &.thumb {
       @include responsive-grid(3, 20);
       height: 16em;
+      
+      h1 {
+        @include font(thumb-title);
+      }
+    
     }
   }
   
@@ -298,7 +300,7 @@
         display: block;
         margin-top: $pad;
         padding-bottom: $pad;
-        border-bottom: $border;
+        @include border-thin;
       }
     }
   }
@@ -615,10 +617,12 @@
       li {
         &#russian, &#english {
           height: $pad; /* Because of the icon */
+          position: relative;
+          top: -1px;
           
           img {
             position: relative;
-            top: 1px;
+            top: 2px;
           }
         }
         

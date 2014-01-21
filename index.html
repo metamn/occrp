@@ -94,7 +94,7 @@ class: frontpage
       <a href="{{ site.url }}/products" title="Products">Most Shared</a>
     </h3>
     
-    {% for post in site.categories.slider limit:5 %}
+    {% for post in site.categories.daily limit:5 %}
       {% include article.html %}
     {% endfor %}
   </aside>
@@ -104,7 +104,7 @@ class: frontpage
       <a href="{{ site.url }}/products" title="Products">From Our Members</a>
     </h3>
     
-    {% for post in site.categories.projects limit:5 %}
+    {% for post in site.categories.daily limit:5 %}
       {% include article.html %}
     {% endfor %}
   </aside>
