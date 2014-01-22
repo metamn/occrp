@@ -45,10 +45,59 @@ $(document).ready(function() {
   document.onscroll = scroll;
 
 
+  
+  // Share buttons
+  $('#share #twitter').sharrre({
+    share: {
+      twitter: true
+    },
+    enableHover: false,
+    enableTracking: true,
+    buttons: { twitter: {via: 'OCCRP'}},
+    click: function(api, options){
+      api.simulateClick();
+      api.openPopup('twitter');
+    }
+  });
+  
+  $('#share #facebook').sharrre({
+    share: {
+      facebook: true
+    },
+    enableHover: false,
+    enableTracking: true,
+    click: function(api, options){
+      api.simulateClick();
+      api.openPopup('facebook');
+    }
+  });
+  
+  $('#share #google-plus').sharrre({
+    share: {
+      facebook: true
+    },
+    enableHover: false,
+    enableTracking: true,
+    click: function(api, options){
+      api.simulateClick();
+      api.openPopup('googlePlus');
+    }
+  });
+  
+  $('#share #linkedin').sharrre({
+    share: {
+      facebook: true
+    },
+    enableHover: false,
+    enableTracking: true,
+    click: function(api, options){
+      api.simulateClick();
+      api.openPopup('linkedIn');
+    }
+  });
 
 
-  // jQuery Isotope 
-  var $container = $('#investigationssssssssssssss'); 
+
     
   // The window onload script
   // - here we put all scripts which must run after the page is completelly loaded
@@ -60,22 +109,7 @@ $(document).ready(function() {
       var rnd =  Math.floor((Math.random()*10)+1); 
       $(this).attr('src', url + '/' + rnd);
     });
-    
-  
-    // Initialize isotope filter plugin
-    // Set options
-    
-    $container.isotope({
-      itemSelector : 'article',
-      // The CSS animation was too fancy, we've switched to a simpler one
-      animationEngine: 'jquery',
-      animationOptions: {
-        duration: 750,
-        easing: 'linear',
-        queue: false
-      }
-    });
-    
+   
   }); 
  
 });

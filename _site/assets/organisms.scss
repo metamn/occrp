@@ -111,6 +111,28 @@
     }
   }
   
+  #share {
+    ul {
+      @include list-normal;
+      @include list-inline($pad);
+      
+      li {
+        .box {
+          .count {
+            float: right;
+            @include color(invert);
+          }
+          
+          .share {
+            img {
+              max-width: 70%;
+            }
+          }
+        }
+      }
+    }
+  }
+  
   
   #content {
     @include link($highlight);
@@ -139,47 +161,9 @@
       @include border-thin;
       margin-bottom: $pad;
     }
-  }
-  
-  #related-documents, #related-graphics, #related-person, #videos, #related-articles {
-    @include block;
     
-    h3 {
-      @include font(section-title);
-    }
   }
   
-  #related-documents {
-    margin-bottom: 3%;
-    
-    ul {
-      @include list-download;
-    }
-  }
-  
-  #related-graphics, #related-person, #videos {
-    ul {
-      li {
-        @include responsive-grid(3);
-        margin-bottom: 3%;
-      }
-    }
-  }
-  
-  #related-articles {
-    article {
-      @include responsive-grid(3);
-      @include article(null, null, title, figure);
-      
-      figure {
-        margin-top: 0;
-      }
-      
-      h1 {
-        @include font(thumb-title);
-      }
-    }
-  }
 }
 
 
@@ -411,7 +395,7 @@
   }
   
   article {
-    @include article(null, null, title, figure);
+    @include article(null, null, title, figure, null, excerpt);
     @include responsive-grid(5);
     
     h1 {
