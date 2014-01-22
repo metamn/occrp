@@ -158,6 +158,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 */
 /* Category aside
 */
+/* Fixed sidebar
+*/
 /* Most read
 */
 /* Projects
@@ -314,6 +316,7 @@ html body.frontpage .container main #intro #slider article #meta #date { display
 html body.frontpage .container main #intro #slider article #meta { display: none; }
 html body.frontpage .container main #intro #slider article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; text-align: justify; }
 html body.frontpage .container main #intro #slider article #meta { margin-top: 0.625em; }
+html body.frontpage .container main #intro #slider article #meta > h3 { display: none; }
 html body.frontpage .container main #intro #slider article #meta ul { margin: 0; }
 html body.frontpage .container main #intro #slider article #meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.frontpage .container main #intro #slider article #meta ul li:before { content: ''; }
@@ -357,6 +360,7 @@ html body.frontpage .container main #intro #news article #meta #date, html body.
 html body.frontpage .container main #intro #news article #meta, html body.frontpage .container main #intro #announcements article #meta { display: none; }
 html body.frontpage .container main #intro #news article #excerpt, html body.frontpage .container main #intro #announcements article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; text-align: justify; }
 html body.frontpage .container main #intro #news article #meta, html body.frontpage .container main #intro #announcements article #meta { margin-top: 0.625em; }
+html body.frontpage .container main #intro #news article #meta > h3, html body.frontpage .container main #intro #announcements article #meta > h3 { display: none; }
 html body.frontpage .container main #intro #news article #meta ul, html body.frontpage .container main #intro #announcements article #meta ul { margin: 0; }
 html body.frontpage .container main #intro #news article #meta ul li, html body.frontpage .container main #intro #announcements article #meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.frontpage .container main #intro #news article #meta ul li:before, html body.frontpage .container main #intro #announcements article #meta ul li:before { content: ''; }
@@ -405,6 +409,7 @@ html body.frontpage .container main #investigations article #content { display: 
 html body.frontpage .container main #investigations article #meta #category { display: none; }
 html body.frontpage .container main #investigations article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; text-align: justify; }
 html body.frontpage .container main #investigations article #meta { margin-top: 0.625em; }
+html body.frontpage .container main #investigations article #meta > h3 { display: none; }
 html body.frontpage .container main #investigations article #meta ul { margin: 0; }
 html body.frontpage .container main #investigations article #meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.frontpage .container main #investigations article #meta ul li:before { content: ''; }
@@ -435,6 +440,7 @@ html body.frontpage .container main #products article #meta #date { display: non
 html body.frontpage .container main #products article #meta { display: none; }
 html body.frontpage .container main #products article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; text-align: justify; }
 html body.frontpage .container main #products article #meta { margin-top: 0.625em; }
+html body.frontpage .container main #products article #meta > h3 { display: none; }
 html body.frontpage .container main #products article #meta ul { margin: 0; }
 html body.frontpage .container main #products article #meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.frontpage .container main #products article #meta ul li:before { content: ''; }
@@ -488,6 +494,7 @@ html body.frontpage .container main #projects article #meta #date, html body.fro
 html body.frontpage .container main #projects article #meta, html body.frontpage .container main #videos article #meta { display: none; }
 html body.frontpage .container main #projects article #excerpt, html body.frontpage .container main #videos article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; text-align: justify; }
 html body.frontpage .container main #projects article #meta, html body.frontpage .container main #videos article #meta { margin-top: 0.625em; }
+html body.frontpage .container main #projects article #meta > h3, html body.frontpage .container main #videos article #meta > h3 { display: none; }
 html body.frontpage .container main #projects article #meta ul, html body.frontpage .container main #videos article #meta ul { margin: 0; }
 html body.frontpage .container main #projects article #meta ul li, html body.frontpage .container main #videos article #meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.frontpage .container main #projects article #meta ul li:before, html body.frontpage .container main #videos article #meta ul li:before { content: ''; }
@@ -592,6 +599,7 @@ html body.frontpage .container main #most-read aside article #meta #date { displ
 html body.frontpage .container main #most-read aside article #meta { display: none; }
 html body.frontpage .container main #most-read aside article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; text-align: justify; }
 html body.frontpage .container main #most-read aside article #meta { margin-top: 0.625em; }
+html body.frontpage .container main #most-read aside article #meta > h3 { display: none; }
 html body.frontpage .container main #most-read aside article #meta ul { margin: 0; }
 html body.frontpage .container main #most-read aside article #meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.frontpage .container main #most-read aside article #meta ul li:before { content: ''; }
@@ -613,6 +621,9 @@ html body.frontpage .container main #most-read aside h3 a { color: #982022; text
 html body.frontpage .container main #most-read aside h3 a:hover { color: #231f20; }
 html body.frontpage .container main #most-read aside article { padding: 0 0.625em 0.625em; border-color: white; }
 html body.frontpage .container main #most-read aside article:last-of-type { border-bottom: 0; margin-bottom: 0; }
+html body.category main { overflow: hidden; }
+html body.category main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; position: relative; top: -2.5em; /* This is the margin between sidebar elements ... */ }
+html body.category main aside #spacer > h3 { display: none; }
 html body.category main #articles { width: 64%; margin-right: 3%; float: left; }
 html body.category main #articles .title { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; padding: 1.45833em 0; }
 html body.category main #articles .title a { color: #982022; text-decoration: none; }
@@ -627,6 +638,7 @@ html body.category main #articles article #meta #date { display: none; }
 html body.category main #articles article #meta { display: none; }
 html body.category main #articles article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; text-align: justify; }
 html body.category main #articles article #meta { margin-top: 0.625em; }
+html body.category main #articles article #meta > h3 { display: none; }
 html body.category main #articles article #meta ul { margin: 0; }
 html body.category main #articles article #meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.category main #articles article #meta ul li:before { content: ''; }
@@ -716,6 +728,7 @@ html body.category main aside section article #meta #date { display: none; }
 html body.category main aside section article #meta { display: none; }
 html body.category main aside section article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; text-align: justify; }
 html body.category main aside section article #meta { margin-top: 0.625em; }
+html body.category main aside section article #meta > h3 { display: none; }
 html body.category main aside section article #meta ul { margin: 0; }
 html body.category main aside section article #meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.category main aside section article #meta ul li:before { content: ''; }
@@ -745,6 +758,7 @@ html body.category main aside section#projects article #meta #date { display: no
 html body.category main aside section#projects article #meta { display: none; }
 html body.category main aside section#projects article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; text-align: justify; }
 html body.category main aside section#projects article #meta { margin-top: 0.625em; }
+html body.category main aside section#projects article #meta > h3 { display: none; }
 html body.category main aside section#projects article #meta ul { margin: 0; }
 html body.category main aside section#projects article #meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.category main aside section#projects article #meta ul li:before { content: ''; }
@@ -761,6 +775,9 @@ html body.category main aside section#projects article #meta #authors ul li:firs
 html body.category main aside section#projects article #content a { color: #982022; text-decoration: none; }
 html body.category main aside section#projects article #content a:hover { color: #982022; }
 html body.category main aside section#projects article figure { width: 50%; float: left; margin-right: 1.25em; }
+html body.tag main { overflow: hidden; }
+html body.tag main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; position: relative; top: -2.5em; /* This is the margin between sidebar elements ... */ }
+html body.tag main aside #spacer > h3 { display: none; }
 html body.tag main #banner { margin-bottom: 1.25em; }
 html body.tag main #articles { width: 64%; margin-right: 3%; float: left; }
 html body.tag main #articles .title { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; padding: 1.45833em 0; }
@@ -776,6 +793,7 @@ html body.tag main #articles article #meta #date { display: none; }
 html body.tag main #articles article #meta { display: none; }
 html body.tag main #articles article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; text-align: justify; }
 html body.tag main #articles article #meta { margin-top: 0.625em; }
+html body.tag main #articles article #meta > h3 { display: none; }
 html body.tag main #articles article #meta ul { margin: 0; }
 html body.tag main #articles article #meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.tag main #articles article #meta ul li:before { content: ''; }
@@ -865,6 +883,7 @@ html body.tag main aside section article #meta #date { display: none; }
 html body.tag main aside section article #meta { display: none; }
 html body.tag main aside section article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; text-align: justify; }
 html body.tag main aside section article #meta { margin-top: 0.625em; }
+html body.tag main aside section article #meta > h3 { display: none; }
 html body.tag main aside section article #meta ul { margin: 0; }
 html body.tag main aside section article #meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.tag main aside section article #meta ul li:before { content: ''; }
@@ -894,6 +913,7 @@ html body.tag main aside section#projects article #meta #date { display: none; }
 html body.tag main aside section#projects article #meta { display: none; }
 html body.tag main aside section#projects article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; text-align: justify; }
 html body.tag main aside section#projects article #meta { margin-top: 0.625em; }
+html body.tag main aside section#projects article #meta > h3 { display: none; }
 html body.tag main aside section#projects article #meta ul { margin: 0; }
 html body.tag main aside section#projects article #meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.tag main aside section#projects article #meta ul li:before { content: ''; }
@@ -926,6 +946,7 @@ html body.projects main #articles article #meta #date { display: none; }
 html body.projects main #articles article #meta { display: none; }
 html body.projects main #articles article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; text-align: justify; }
 html body.projects main #articles article #meta { margin-top: 0.625em; }
+html body.projects main #articles article #meta > h3 { display: none; }
 html body.projects main #articles article #meta ul { margin: 0; }
 html body.projects main #articles article #meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.projects main #articles article #meta ul li:before { content: ''; }
@@ -1004,11 +1025,15 @@ html body.jobs main #articles article table thead a:hover { color: white; }
 html body.jobs main #articles article table thead th, html body.jobs main #articles article table tbody td { padding: 0.625em; padding-left: 0; }
 html body.jobs main #articles article table thead th:first-of-type, html body.jobs main #articles article table tbody td:first-of-type { padding-left: 1px; }
 html body.jobs main #articles article table tbody td { border-bottom: 1px solid #74676a; }
+html body.jobs main #articles article figure { /* Fit figcpation to image width
+*/ display: table; }
 html body.jobs main #articles article figure img { -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; width: auto; }
 html body.jobs main #articles article figure figcaption { font-size: smaller; }
 html body.jobs main #articles article figure figcaption h1, html body.jobs main #articles article figure figcaption h2, html body.jobs main #articles article figure figcaption h3, html body.jobs main #articles article figure figcaption h4, html body.jobs main #articles article figure figcaption h5, html body.jobs main #articles article figure figcaption h6 { margin: 0; padding: 0; }
-html body.jobs main #articles article figure.left { display: inline-block; float: left; margin: 1.25em 2.5em 1.25em 0; }
-html body.jobs main #articles article figure.right { display: inline-block; float: right; margin: 1.25em 0 1.25em 2.5em; }
+html body.jobs main #articles article figure img { display: block; max-width: 100%; }
+html body.jobs main #articles article figure figcaption { display: table-caption; caption-side: bottom; margin-top: 0.3125em; text-align: justify; }
+html body.jobs main #articles article figure.left { float: left; margin: 1.25em 2.5em 1.25em 0; }
+html body.jobs main #articles article figure.right { float: right; margin: 1.25em 0 1.25em 2.5em; }
 html body.jobs main #articles article form { /* Reset */ /* Stretching and padding */ /* Text */ /* Button */ /* Label
 */ }
 html body.jobs main #articles article form input, html body.jobs main #articles article form textarea, html body.jobs main #articles article form select { border: none; outline: 0; background: white; appearance: none; -webkit-appearance: none; -moz-appearance: none; }
@@ -1092,6 +1117,7 @@ html body.resource-center main #article article #content #handbook article #meta
 html body.resource-center main #article article #content #handbook article #meta, html body.resource-center main #article article #content #reports article #meta, html body.resource-center main #article article #content #academic-studies article #meta { display: none; }
 html body.resource-center main #article article #content #handbook article #excerpt, html body.resource-center main #article article #content #reports article #excerpt, html body.resource-center main #article article #content #academic-studies article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; text-align: justify; }
 html body.resource-center main #article article #content #handbook article #meta, html body.resource-center main #article article #content #reports article #meta, html body.resource-center main #article article #content #academic-studies article #meta { margin-top: 0.625em; }
+html body.resource-center main #article article #content #handbook article #meta > h3, html body.resource-center main #article article #content #reports article #meta > h3, html body.resource-center main #article article #content #academic-studies article #meta > h3 { display: none; }
 html body.resource-center main #article article #content #handbook article #meta ul, html body.resource-center main #article article #content #reports article #meta ul, html body.resource-center main #article article #content #academic-studies article #meta ul { margin: 0; }
 html body.resource-center main #article article #content #handbook article #meta ul li, html body.resource-center main #article article #content #reports article #meta ul li, html body.resource-center main #article article #content #academic-studies article #meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.resource-center main #article article #content #handbook article #meta ul li:before, html body.resource-center main #article article #content #reports article #meta ul li:before, html body.resource-center main #article article #content #academic-studies article #meta ul li:before { content: ''; }
@@ -1140,11 +1166,15 @@ html body.resource-center main #article article #content #handbook article #exce
 html body.resource-center main #article article #content #handbook article #excerpt table thead th, html body.resource-center main #article article #content #handbook article #excerpt table tbody td, html body.resource-center main #article article #content #reports article #excerpt table thead th, html body.resource-center main #article article #content #reports article #excerpt table tbody td, html body.resource-center main #article article #content #academic-studies article #excerpt table thead th, html body.resource-center main #article article #content #academic-studies article #excerpt table tbody td { padding: 0.625em; padding-left: 0; }
 html body.resource-center main #article article #content #handbook article #excerpt table thead th:first-of-type, html body.resource-center main #article article #content #handbook article #excerpt table tbody td:first-of-type, html body.resource-center main #article article #content #reports article #excerpt table thead th:first-of-type, html body.resource-center main #article article #content #reports article #excerpt table tbody td:first-of-type, html body.resource-center main #article article #content #academic-studies article #excerpt table thead th:first-of-type, html body.resource-center main #article article #content #academic-studies article #excerpt table tbody td:first-of-type { padding-left: 1px; }
 html body.resource-center main #article article #content #handbook article #excerpt table tbody td, html body.resource-center main #article article #content #reports article #excerpt table tbody td, html body.resource-center main #article article #content #academic-studies article #excerpt table tbody td { border-bottom: 1px solid #74676a; }
+html body.resource-center main #article article #content #handbook article #excerpt figure, html body.resource-center main #article article #content #reports article #excerpt figure, html body.resource-center main #article article #content #academic-studies article #excerpt figure { /* Fit figcpation to image width
+*/ display: table; }
 html body.resource-center main #article article #content #handbook article #excerpt figure img, html body.resource-center main #article article #content #reports article #excerpt figure img, html body.resource-center main #article article #content #academic-studies article #excerpt figure img { -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; width: auto; }
 html body.resource-center main #article article #content #handbook article #excerpt figure figcaption, html body.resource-center main #article article #content #reports article #excerpt figure figcaption, html body.resource-center main #article article #content #academic-studies article #excerpt figure figcaption { font-size: smaller; }
 html body.resource-center main #article article #content #handbook article #excerpt figure figcaption h1, html body.resource-center main #article article #content #handbook article #excerpt figure figcaption h2, html body.resource-center main #article article #content #handbook article #excerpt figure figcaption h3, html body.resource-center main #article article #content #handbook article #excerpt figure figcaption h4, html body.resource-center main #article article #content #handbook article #excerpt figure figcaption h5, html body.resource-center main #article article #content #handbook article #excerpt figure figcaption h6, html body.resource-center main #article article #content #reports article #excerpt figure figcaption h1, html body.resource-center main #article article #content #reports article #excerpt figure figcaption h2, html body.resource-center main #article article #content #reports article #excerpt figure figcaption h3, html body.resource-center main #article article #content #reports article #excerpt figure figcaption h4, html body.resource-center main #article article #content #reports article #excerpt figure figcaption h5, html body.resource-center main #article article #content #reports article #excerpt figure figcaption h6, html body.resource-center main #article article #content #academic-studies article #excerpt figure figcaption h1, html body.resource-center main #article article #content #academic-studies article #excerpt figure figcaption h2, html body.resource-center main #article article #content #academic-studies article #excerpt figure figcaption h3, html body.resource-center main #article article #content #academic-studies article #excerpt figure figcaption h4, html body.resource-center main #article article #content #academic-studies article #excerpt figure figcaption h5, html body.resource-center main #article article #content #academic-studies article #excerpt figure figcaption h6 { margin: 0; padding: 0; }
-html body.resource-center main #article article #content #handbook article #excerpt figure.left, html body.resource-center main #article article #content #reports article #excerpt figure.left, html body.resource-center main #article article #content #academic-studies article #excerpt figure.left { display: inline-block; float: left; margin: 1.25em 2.5em 1.25em 0; }
-html body.resource-center main #article article #content #handbook article #excerpt figure.right, html body.resource-center main #article article #content #reports article #excerpt figure.right, html body.resource-center main #article article #content #academic-studies article #excerpt figure.right { display: inline-block; float: right; margin: 1.25em 0 1.25em 2.5em; }
+html body.resource-center main #article article #content #handbook article #excerpt figure img, html body.resource-center main #article article #content #reports article #excerpt figure img, html body.resource-center main #article article #content #academic-studies article #excerpt figure img { display: block; max-width: 100%; }
+html body.resource-center main #article article #content #handbook article #excerpt figure figcaption, html body.resource-center main #article article #content #reports article #excerpt figure figcaption, html body.resource-center main #article article #content #academic-studies article #excerpt figure figcaption { display: table-caption; caption-side: bottom; margin-top: 0.3125em; text-align: justify; }
+html body.resource-center main #article article #content #handbook article #excerpt figure.left, html body.resource-center main #article article #content #reports article #excerpt figure.left, html body.resource-center main #article article #content #academic-studies article #excerpt figure.left { float: left; margin: 1.25em 2.5em 1.25em 0; }
+html body.resource-center main #article article #content #handbook article #excerpt figure.right, html body.resource-center main #article article #content #reports article #excerpt figure.right, html body.resource-center main #article article #content #academic-studies article #excerpt figure.right { float: right; margin: 1.25em 0 1.25em 2.5em; }
 html body.resource-center main #article article #content #handbook article #excerpt form, html body.resource-center main #article article #content #reports article #excerpt form, html body.resource-center main #article article #content #academic-studies article #excerpt form { /* Reset */ /* Stretching and padding */ /* Text */ /* Button */ /* Label
 */ }
 html body.resource-center main #article article #content #handbook article #excerpt form input, html body.resource-center main #article article #content #handbook article #excerpt form textarea, html body.resource-center main #article article #content #handbook article #excerpt form select, html body.resource-center main #article article #content #reports article #excerpt form input, html body.resource-center main #article article #content #reports article #excerpt form textarea, html body.resource-center main #article article #content #reports article #excerpt form select, html body.resource-center main #article article #content #academic-studies article #excerpt form input, html body.resource-center main #article article #content #academic-studies article #excerpt form textarea, html body.resource-center main #article article #content #academic-studies article #excerpt form select { border: none; outline: 0; background: white; appearance: none; -webkit-appearance: none; -moz-appearance: none; }
@@ -1217,6 +1247,9 @@ html body.resource-center main #article article #content #handbook article #exce
 html body.resource-center main #article article #content #handbook article #excerpt li ul, html body.resource-center main #article article #content #handbook article #excerpt li ol, html body.resource-center main #article article #content #reports article #excerpt li ul, html body.resource-center main #article article #content #reports article #excerpt li ol, html body.resource-center main #article article #content #academic-studies article #excerpt li ul, html body.resource-center main #article article #content #academic-studies article #excerpt li ol { margin-top: 0; }
 html body.resource-center main #article article #content #handbook #documents ul li, html body.resource-center main #article article #content #reports #documents ul li, html body.resource-center main #article article #content #academic-studies #documents ul li { border-bottom: 1px solid #f1f1f1; }
 html body.resource-center main #article article #content #handbook #documents ul li:before, html body.resource-center main #article article #content #reports #documents ul li:before, html body.resource-center main #article article #content #academic-studies #documents ul li:before { content: url(http://metamn.github.io/occrp/assets/download.png); margin-right: 0.625em; position: relative; top: 0.3125em; }
+html body.article main { overflow: hidden; }
+html body.article main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; position: relative; top: -2.5em; /* This is the margin between sidebar elements ... */ }
+html body.article main aside #spacer > h3 { display: none; }
 html body.article main #article { width: 100%; max-width: 100%; float: left; width: 64%; margin-right: 3%; float: left; }
 html body.article main #article article { margin-bottom: 3%; max-width: 43.75em; line-height: 1.75; /* Padding of individual elements
 */ /* Padding of consecutive elements
@@ -1225,6 +1258,7 @@ html body.article main #article article figure { display: block; }
 html body.article main #article article #excerpt { display: none; }
 html body.article main #article article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; text-align: justify; }
 html body.article main #article article #meta { margin-top: 0.625em; }
+html body.article main #article article #meta > h3 { display: none; }
 html body.article main #article article #meta ul { margin: 0; }
 html body.article main #article article #meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.article main #article article #meta ul li:before { content: ''; }
@@ -1267,11 +1301,15 @@ html body.article main #article article table thead a:hover { color: white; }
 html body.article main #article article table thead th, html body.article main #article article table tbody td { padding: 0.625em; padding-left: 0; }
 html body.article main #article article table thead th:first-of-type, html body.article main #article article table tbody td:first-of-type { padding-left: 1px; }
 html body.article main #article article table tbody td { border-bottom: 1px solid #74676a; }
+html body.article main #article article figure { /* Fit figcpation to image width
+*/ display: table; }
 html body.article main #article article figure img { -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; width: auto; }
 html body.article main #article article figure figcaption { font-size: smaller; }
 html body.article main #article article figure figcaption h1, html body.article main #article article figure figcaption h2, html body.article main #article article figure figcaption h3, html body.article main #article article figure figcaption h4, html body.article main #article article figure figcaption h5, html body.article main #article article figure figcaption h6 { margin: 0; padding: 0; }
-html body.article main #article article figure.left { display: inline-block; float: left; margin: 1.25em 2.5em 1.25em 0; }
-html body.article main #article article figure.right { display: inline-block; float: right; margin: 1.25em 0 1.25em 2.5em; }
+html body.article main #article article figure img { display: block; max-width: 100%; }
+html body.article main #article article figure figcaption { display: table-caption; caption-side: bottom; margin-top: 0.3125em; text-align: justify; }
+html body.article main #article article figure.left { float: left; margin: 1.25em 2.5em 1.25em 0; }
+html body.article main #article article figure.right { float: right; margin: 1.25em 0 1.25em 2.5em; }
 html body.article main #article article form { /* Reset */ /* Stretching and padding */ /* Text */ /* Button */ /* Label
 */ }
 html body.article main #article article form input, html body.article main #article article form textarea, html body.article main #article article form select { border: none; outline: 0; background: white; appearance: none; -webkit-appearance: none; -moz-appearance: none; }
@@ -1404,6 +1442,7 @@ html body.article main #article #related-articles article #meta #date { display:
 html body.article main #article #related-articles article #meta { display: none; }
 html body.article main #article #related-articles article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; text-align: justify; }
 html body.article main #article #related-articles article #meta { margin-top: 0.625em; }
+html body.article main #article #related-articles article #meta > h3 { display: none; }
 html body.article main #article #related-articles article #meta ul { margin: 0; }
 html body.article main #article #related-articles article #meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.article main #article #related-articles article #meta ul li:before { content: ''; }
@@ -1436,6 +1475,7 @@ html body.article main aside section article #meta #date { display: none; }
 html body.article main aside section article #meta { display: none; }
 html body.article main aside section article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; text-align: justify; }
 html body.article main aside section article #meta { margin-top: 0.625em; }
+html body.article main aside section article #meta > h3 { display: none; }
 html body.article main aside section article #meta ul { margin: 0; }
 html body.article main aside section article #meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.article main aside section article #meta ul li:before { content: ''; }
@@ -1465,6 +1505,7 @@ html body.article main aside section#projects article #meta #date { display: non
 html body.article main aside section#projects article #meta { display: none; }
 html body.article main aside section#projects article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; text-align: justify; }
 html body.article main aside section#projects article #meta { margin-top: 0.625em; }
+html body.article main aside section#projects article #meta > h3 { display: none; }
 html body.article main aside section#projects article #meta ul { margin: 0; }
 html body.article main aside section#projects article #meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.article main aside section#projects article #meta ul li:before { content: ''; }
@@ -1484,11 +1525,15 @@ html body.article main aside section#projects article figure { width: 50%; float
 
 html body { /* Highlighting active menu items
 */ }
+html body .container article figure { /* Fit figcpation to image width
+*/ display: table; }
 html body .container article figure img { -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; width: auto; }
 html body .container article figure figcaption { font-size: smaller; }
 html body .container article figure figcaption h1, html body .container article figure figcaption h2, html body .container article figure figcaption h3, html body .container article figure figcaption h4, html body .container article figure figcaption h5, html body .container article figure figcaption h6 { margin: 0; padding: 0; }
-html body .container article figure.left { display: inline-block; float: left; margin: 1.25em 2.5em 1.25em 0; }
-html body .container article figure.right { display: inline-block; float: right; margin: 1.25em 0 1.25em 2.5em; }
+html body .container article figure img { display: block; max-width: 100%; }
+html body .container article figure figcaption { display: table-caption; caption-side: bottom; margin-top: 0.3125em; text-align: justify; }
+html body .container article figure.left { float: left; margin: 1.25em 2.5em 1.25em 0; }
+html body .container article figure.right { float: right; margin: 1.25em 0 1.25em 2.5em; }
 html body .container article figure + h1 { margin-top: 0.3125em; }
 html body.frontpage #header nav ul li.frontpage a { background: #982022; color: white; }
 html body.frontpage #header nav ul li.frontpage a a { color: white; text-decoration: none; }

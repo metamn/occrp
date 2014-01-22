@@ -88,6 +88,8 @@ html {
     */
     &.category {
       main {
+        @include fixed-sidebar;
+        
         #articles {
           @include category-articles;
         }
@@ -103,6 +105,8 @@ html {
     */
     &.tag {
       main {
+        @include fixed-sidebar;
+        
         #banner {
           margin-bottom: $pad;
         }
@@ -163,6 +167,8 @@ html {
     */
     &.article {
       main {
+        @include fixed-sidebar;
+        
         #article {
           @include single-article;
         }

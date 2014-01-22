@@ -71,6 +71,7 @@
   
   #meta {
     margin-top: $pad/2;
+    @include hide-title;
     
     ul {
       @include list-normal;
@@ -350,6 +351,23 @@
 }
 
 
+
+/* Fixed sidebar
+*/
+@mixin fixed-sidebar {
+  overflow: hidden;
+  
+  aside {
+    #spacer {
+      @include hide-title;
+      margin-bottom: -$pad*2000;
+      padding-bottom: $pad*2000;
+      
+      position: relative;
+      top: -$pad*2; /* This is the margin between sidebar elements ... */
+    }
+  }
+}
 
 
 
