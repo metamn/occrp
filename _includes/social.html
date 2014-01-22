@@ -1,30 +1,29 @@
-{% if include.color == '-white' %}
-  {% assign color = include.color %}
-{% else %}
-  {% assign color = '' %}
-{% endif %}
 
-<li id="social">
+<li id="social-icons">
   <p>Follow us</p>
   <ul>
     <li>
       <a href="http://www.facebook.com/OCCRP.org" title="Facebook">
-        <img src="{{ site.url }}/assets/facebook{{ color }}.png" alt="Facebook"/>
+        <img src="{{ site.url }}/assets/facebook{{ include.color }}.png" alt="Facebook"/>
+        <img src="{{ site.url }}/assets/facebook{{ include.highlight }}.png" alt="Facebook"/>
       </a>
     </li>
     <li>
       <a href="http://www.twitter.com/OCCRP" title="Twitter">
-        <img src="{{ site.url }}/assets/twitter{{ color }}.png" alt="Twitter" />
+        <img src="{{ site.url }}/assets/twitter{{ include.color }}.png" alt="Twitter" />
+        <img src="{{ site.url }}/assets/twitter{{ include.highlight }}.png" alt="Twitter" />
       </a>
     </li>
     <li>
       <a href="http://www.youtube.com/channel/UCAdFen-6WQOxmDHK3saMD8A?feature=watch" title="Youtube">
-        <img src="{{ site.url }}/assets/youtube{{ color }}.png" alt="Youtube" />
+        <img src="{{ site.url }}/assets/youtube{{ include.color }}.png" alt="Youtube" />
+        <img src="{{ site.url }}/assets/youtube{{ include.highlight }}.png" alt="Youtube" />
       </a>
     </li>
     <li>
       <a href="https://plus.google.com/u/0/b/106731751199751777418/106731751199751777418/about" title="Google Plus">
-        <img src="{{ site.url }}/assets/google_plus{{ color }}.png" alt="Google Plus" />
+        <img src="{{ site.url }}/assets/google_plus{{ include.color }}.png" alt="Google Plus" />
+        <img src="{{ site.url }}/assets/google_plus{{ include.highlight }}.png" alt="Google Plus" />
       </a>
     </li>
   </ul>

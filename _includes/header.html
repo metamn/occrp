@@ -121,12 +121,13 @@
     <ul id="search">
       <li id="icon">
         <img src="{{ site.url }}/assets/magnifying_glass.png" alt="Search"/>
+        <img src="{{ site.url }}/assets/magnifying_glass-red.png" alt="Search"/>
       </li>
       <li id="input">
         <input type="text" id="search" placeholder="Search">
       </li>
       <li id="text">
-        Search
+        <a href="" title="Serach">Search</a>
       </li>
     </ul>
     
@@ -163,7 +164,7 @@
     </ul>
     
     <ul id="social">
-      {% include social.html color = '-white' %}
+      {% include social.html color='-white' highlight='-white' %}
     </ul>
   </nav>
   

@@ -119,6 +119,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* Images
 --------------------------------------------------------------------------------
 */
+/* On hover shows a different image - the two images must be siblings in a container - this mixin is added to the container
+*/
 /* Decorations, colors, etc.
 --------------------------------------------------------------------------------
 */
@@ -277,24 +279,29 @@ html body .container #header nav#tags a:hover { color: white; }
 html body .container #header nav#tags ul#search { margin-left: 0.3125em; }
 html body .container #header nav#tags ul#search li { cursor: pointer; }
 html body .container #header nav#tags ul#search li:first-of-type { margin-top: 0.3125em; }
+html body .container #header nav#tags ul#search li:first-of-type img:last-of-type { display: none; position: relative; top: 0; }
+html body .container #header nav#tags ul#search li:first-of-type:hover img:first-of-type { display: none; }
+html body .container #header nav#tags ul#search li:first-of-type:hover img:last-of-type { display: block; }
 html body .container #header nav#tags ul#search li:first-of-type img { width: 50%; }
 html body .container #header nav#tags ul#search li:nth-of-type(2) { display: none; }
 html body .container #header nav#tags ul#search li:nth-of-type(3) { margin-top: 0.3125em; position: relative; left: -1.40625em; }
 html body .container #header nav#tags ul#tag-list { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; margin-top: 0.3125em; }
 html body .container #header nav#tags ul#social { float: right; }
-html body .container #header nav#tags ul#social li#social p { display: none; }
-html body .container #header nav#tags ul#social li#social img { width: 50%; }
-html body .container #header nav#tags ul#social li#social ul li { margin-right: 0; }
-html body .container #header nav#tags ul#social li#social ul li a { padding: 0; background: #231f20; }
-html body .container #header nav#tags ul#social li#social ul li a:hover { background: #231f20; }
+html body .container #header nav#tags ul#social li#social-icons p { display: none; }
+html body .container #header nav#tags ul#social li#social-icons ul li { margin-right: 0; position: relative; top: -5px; }
+html body .container #header nav#tags ul#social li#social-icons ul li a img { width: 50%; position: relative; top: 5px; }
+html body .container #header nav#tags ul#social li#social-icons ul li a img:last-of-type { display: none !important; }
 html body .container #footer { margin: 3.75em 0 0; padding: 1.25em 0; border-top: 0.3125em solid; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; }
 html body .container #footer ul li { display: inline-block; float: left; margin-right: 1.25em; }
 html body .container #footer ul li:last-of-type { margin-right: 0; }
 html body .container #footer ul li#usaid { position: relative; top: -0.625em; }
-html body .container #footer ul li#social { float: right; position: relative; top: -2.8125em; }
-html body .container #footer ul li#social p { font-weight: bold; margin-bottom: 1.25em; text-align: right; background: #231f20; color: white; }
-html body .container #footer ul li#social p a { color: white; text-decoration: none; }
-html body .container #footer ul li#social p a:hover { color: white; }
+html body .container #footer ul li#social-icons { float: right; position: relative; top: -2.8125em; }
+html body .container #footer ul li#social-icons p { font-weight: bold; margin-bottom: 1.25em; text-align: right; background: #231f20; color: white; }
+html body .container #footer ul li#social-icons p a { color: white; text-decoration: none; }
+html body .container #footer ul li#social-icons p a:hover { color: white; }
+html body .container #footer ul li#social-icons ul li img:last-of-type { display: none; position: relative; top: 0; }
+html body .container #footer ul li#social-icons ul li:hover img:first-of-type { display: none; }
+html body .container #footer ul li#social-icons ul li:hover img:last-of-type { display: block; }
 html body.sticky .container #header { position: fixed; width: 90%; margin: 0 5%; border-bottom: 1px solid; margin: 0 0 2.5em !important; padding-top: 1.25em; top: 0; height: 2.5em; background: white; z-index: 1; }
 @media only screen and (min-width: 90.001em) { html body.sticky .container #header { width: 75%; margin: 0 12.5%; } }
 html body.sticky .container #header nav { margin-top: 0; border: none; }

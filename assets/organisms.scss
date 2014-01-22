@@ -640,8 +640,6 @@
       margin-top: $pad/2;
       @include color(invert);
       
-      
-      
       ul {
         &#search {
           margin-left: $pad/4;
@@ -651,6 +649,8 @@
             
             &:first-of-type {
               margin-top: $pad/4;
+              @include image-change-on-hover;
+              
               img {
                 width: 50%;
               }
@@ -677,26 +677,29 @@
           float: right;
           
           li {
-            &#social {
+            &#social-icons {
               p {
                 display: none;
-              }
-              
-              img {
-                width: 50%;
               }
               
               ul {
                 li {
                   margin-right: 0;
+                  position: relative;
+                  top: -5px;
                   
                   a {
-                    padding: 0;
-                    background: $color;
                     
-                    &:hover {
-                      background: $color;
+                    img {
+                      width: 50%;
+                      position: relative;
+                      top: 5px;
+                      
+                      &:last-of-type {
+                        display: none !important;
+                      }
                     }
+                    
                   }
                 }
               }
@@ -727,7 +730,7 @@
         top: -$pad/2;
       }
       
-      &#social {
+      &#social-icons {
         @include social-icons;
       }
     }

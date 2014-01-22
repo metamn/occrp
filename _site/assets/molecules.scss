@@ -263,7 +263,14 @@
     font-weight: bold;
     margin-bottom: $pad;
     text-align: right;
+    
     @include color(invert);
+  }
+  
+  ul {
+    li {
+      @include image-change-on-hover; 
+    }
   }
 }
 
@@ -274,11 +281,38 @@
 --------------------------------------------------------------------------------
 */
 
-@mixin fluid-image{
+@mixin fluid-image {
   img {
     width: auto;
     height: auto;
     max-width: 100%;
+  }
+}
+
+
+/* On hover shows a different image
+  - the two images must be siblings in a container
+  - this mixin is added to the container
+*/
+@mixin image-change-on-hover {
+  img {
+    &:last-of-type {
+      display: none;
+      position: relative;
+      top: 0;
+    }
+  }
+  
+  &:hover {
+    img {
+      &:first-of-type {
+        display: none;
+      }
+      
+      &:last-of-type {
+        display: block;
+      }
+    }
   }
 }
 
