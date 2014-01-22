@@ -358,7 +358,7 @@ html body.frontpage .container main #intro #slider nav ol li a { padding: 0.625e
 html body.frontpage .container main #intro #slider nav ol li.active a, html body.frontpage .container main #intro #slider nav ol li:hover a { background: #982022; color: white; }
 html body.frontpage .container main #intro #slider nav ol li.active a a, html body.frontpage .container main #intro #slider nav ol li:hover a a { color: white; text-decoration: none; }
 html body.frontpage .container main #intro #slider nav ol li.active a a:hover, html body.frontpage .container main #intro #slider nav ol li:hover a a:hover { color: white; }
-html body.frontpage .container main #intro #slider nav ol li { background: white; color: #231f20; }
+html body.frontpage .container main #intro #slider nav ol li { background: white; color: #231f20; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; }
 html body.frontpage .container main #intro #slider nav ol li a { color: #231f20; text-decoration: none; }
 html body.frontpage .container main #intro #slider nav ol li a:hover { color: white; }
 html body.frontpage .container main #intro #news, html body.frontpage .container main #intro #announcements { width: 30%; margin-right: 0; float: left; }
@@ -458,9 +458,7 @@ html body.frontpage .container main #investigations article #content a { color: 
 html body.frontpage .container main #investigations article #content a:hover { color: #982022; }
 @media only screen and (min-width: 80em) and (max-width: 89.999em) { html body.frontpage .container main #investigations article { height: 27em; } }
 html body.frontpage .container main #investigations article #excerpt { margin-top: 0.625em; }
-html body.frontpage .container main #products { padding: 1.25em; width: calc(100% - 2.5em); background: #231f20; color: white; margin-bottom: 3%; }
-html body.frontpage .container main #products a { color: white; text-decoration: none; }
-html body.frontpage .container main #products a:hover { color: white; }
+html body.frontpage .container main #products { padding: 1.25em; width: calc(100% - 2.5em); background: #f1f1f1; border-top: 0.3125em solid; border-bottom: 0.3125em solid; margin-bottom: 3%; }
 html body.frontpage .container main #products article { margin-bottom: 3%; margin: 1.5% 0; }
 html body.frontpage .container main #products article figure { display: block; }
 html body.frontpage .container main #products article figcaption { display: none; }
@@ -516,7 +514,10 @@ html body.frontpage .container main #products article #content a:hover { color: 
   html body.frontpage .container main #products article:nth-of-type(8) { margin-right: 0; }
   html body.frontpage .container main #products article:nth-of-type(9) { margin-right: 3.33333%; }
   html body.frontpage .container main #products article:nth-of-type(10) { margin-right: 3.33333%; } }
-html body.frontpage .container main #products article h1 { font-size: medium; }
+html body.frontpage .container main #products article h1 { background: #982022; color: white; }
+html body.frontpage .container main #products article h1 a { color: white; text-decoration: none; }
+html body.frontpage .container main #products article h1 a:hover { color: white; }
+html body.frontpage .container main #products article h1 a { display: inline-block; padding: 0.3125em; }
 html body.frontpage .container main #projects h3, html body.frontpage .container main #videos h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; }
 html body.frontpage .container main #projects h3 a, html body.frontpage .container main #videos h3 a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #projects h3 a:hover, html body.frontpage .container main #videos h3 a:hover { color: #231f20; }
@@ -586,9 +587,10 @@ html body.frontpage .container main #projects nav ol li a, html body.frontpage .
 html body.frontpage .container main #projects nav ol li.active a, html body.frontpage .container main #projects nav ol li:hover a, html body.frontpage .container main #videos nav ol li.active a, html body.frontpage .container main #videos nav ol li:hover a { background: #982022; color: white; }
 html body.frontpage .container main #projects nav ol li.active a a, html body.frontpage .container main #projects nav ol li:hover a a, html body.frontpage .container main #videos nav ol li.active a a, html body.frontpage .container main #videos nav ol li:hover a a { color: white; text-decoration: none; }
 html body.frontpage .container main #projects nav ol li.active a a:hover, html body.frontpage .container main #projects nav ol li:hover a a:hover, html body.frontpage .container main #videos nav ol li.active a a:hover, html body.frontpage .container main #videos nav ol li:hover a a:hover { color: white; }
-html body.frontpage .container main #projects nav ol li, html body.frontpage .container main #videos nav ol li { background: #f1f1f1; color: #231f20; }
+html body.frontpage .container main #projects nav ol li, html body.frontpage .container main #videos nav ol li { background: #f1f1f1; color: #231f20; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; }
 html body.frontpage .container main #projects nav ol li a, html body.frontpage .container main #videos nav ol li a { color: #231f20; text-decoration: none; }
 html body.frontpage .container main #projects nav ol li a:hover, html body.frontpage .container main #videos nav ol li a:hover { color: white; }
+html body.frontpage .container main #videos { margin-top: 3%; }
 @media only screen and (max-width: 48em) { html body.frontpage .container main #videos article { width: 100%; margin-right: 0; float: left; } }
 @media only screen and (min-width: 48em) and (max-width: 79.999em) { html body.frontpage .container main #videos article { width: 45%; margin-right: 10%; float: left; }
   html body.frontpage .container main #videos article:nth-of-type(2) { margin-right: 0; }
@@ -772,7 +774,7 @@ html body.category main #articles nav ol li a { padding: 0.625em 0.9375em; displ
 html body.category main #articles nav ol li.active a, html body.category main #articles nav ol li:hover a { background: #982022; color: white; }
 html body.category main #articles nav ol li.active a a, html body.category main #articles nav ol li:hover a a { color: white; text-decoration: none; }
 html body.category main #articles nav ol li.active a a:hover, html body.category main #articles nav ol li:hover a a:hover { color: white; }
-html body.category main #articles nav ol li { background: #f1f1f1; color: #231f20; }
+html body.category main #articles nav ol li { background: #f1f1f1; color: #231f20; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; }
 html body.category main #articles nav ol li a { color: #231f20; text-decoration: none; }
 html body.category main #articles nav ol li a:hover { color: white; }
 html body.category main aside { width: 33%; margin-right: 0; float: left; }
@@ -951,7 +953,7 @@ html body.tag main #articles nav ol li a { padding: 0.625em 0.9375em; display: b
 html body.tag main #articles nav ol li.active a, html body.tag main #articles nav ol li:hover a { background: #982022; color: white; }
 html body.tag main #articles nav ol li.active a a, html body.tag main #articles nav ol li:hover a a { color: white; text-decoration: none; }
 html body.tag main #articles nav ol li.active a a:hover, html body.tag main #articles nav ol li:hover a a:hover { color: white; }
-html body.tag main #articles nav ol li { background: #f1f1f1; color: #231f20; }
+html body.tag main #articles nav ol li { background: #f1f1f1; color: #231f20; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; }
 html body.tag main #articles nav ol li a { color: #231f20; text-decoration: none; }
 html body.tag main #articles nav ol li a:hover { color: white; }
 html body.tag main aside { width: 33%; margin-right: 0; float: left; }
@@ -1101,7 +1103,7 @@ html body.projects main #articles nav ol li a { padding: 0.625em 0.9375em; displ
 html body.projects main #articles nav ol li.active a, html body.projects main #articles nav ol li:hover a { background: #982022; color: white; }
 html body.projects main #articles nav ol li.active a a, html body.projects main #articles nav ol li:hover a a { color: white; text-decoration: none; }
 html body.projects main #articles nav ol li.active a a:hover, html body.projects main #articles nav ol li:hover a a:hover { color: white; }
-html body.projects main #articles nav ol li { background: #f1f1f1; color: #231f20; }
+html body.projects main #articles nav ol li { background: #f1f1f1; color: #231f20; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; }
 html body.projects main #articles nav ol li a { color: #231f20; text-decoration: none; }
 html body.projects main #articles nav ol li a:hover { color: white; }
 html body.jobs main #articles article { width: 100%; max-width: 100%; float: left; max-width: 43.75em; line-height: 1.75; /* Padding of individual elements
@@ -1597,7 +1599,7 @@ html body .container article figure img { display: block; max-width: 100%; }
 html body .container article figure figcaption { display: table-caption; caption-side: bottom; margin-top: 0.3125em; text-align: justify; }
 html body .container article figure.left { float: left; margin: 1.25em 2.5em 1.25em 0; }
 html body .container article figure.right { float: right; margin: 1.25em 0 1.25em 2.5em; }
-html body .container article figure + h1 { margin-top: 0.3125em; }
+html body .container article figure + h1 { margin-top: 0.625em; }
 html body.frontpage #header nav ul li.frontpage a { background: #982022; color: white; }
 html body.frontpage #header nav ul li.frontpage a a { color: white; text-decoration: none; }
 html body.frontpage #header nav ul li.frontpage a a:hover { color: white; }

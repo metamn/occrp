@@ -246,6 +246,7 @@
       
       li {
         @include color($color-scheme);
+        @include border-radius($pad);
       }
     }
   }
@@ -357,6 +358,7 @@
     background: $light-grey;
     color: $color;
     @include link($color, $background);
+  
   }
 }
 

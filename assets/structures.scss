@@ -70,6 +70,7 @@ html {
           }
           
           #videos {
+            margin-top: 3%;
             article {
               @include responsive-grid(6);
             }

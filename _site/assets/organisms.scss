@@ -411,7 +411,10 @@
 */
 @mixin products {
   @include padding;
-  @include color(invert);
+  background: $light-grey;
+  border-top: $border;
+  border-bottom: $border;
+  
   margin-bottom: $flexible-grid-margin;
   
   article {
@@ -420,7 +423,11 @@
     margin: $flexible-grid-margin/2 0;
     
     h1 {
-      @include font(thumb-title);
+      @include color(menu);
+      a {
+        display: inline-block;
+        padding: $pad/4;
+      }
     }
   }
 }
