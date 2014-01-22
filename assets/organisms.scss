@@ -315,6 +315,7 @@
 @mixin category-aside {
   @include col(33%, 0);
   
+  
   section {
     @include padding;
     background: $light-grey;
