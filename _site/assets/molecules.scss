@@ -582,11 +582,6 @@
   }
 }
 
-@mixin q {
-  q {
-    quotes: "“" "”" "‘" "’";
-  }
-}
 
 @mixin dfn {
   dfn {
@@ -658,10 +653,15 @@
   }
 }
 
-@mixin q {
+@mixin blockquote {
   blockquote {
     border-top: 1px solid;
     border-bottom: 1px solid;
+    
+    font-size: large;
+    line-height: 1.5;
+    font-style: italic;
+    color: lighten($color, 5%);
     
     /* Making room to the " sign 
     */
@@ -684,14 +684,33 @@
     
     &:before {
       content: '\201C';
-      font-size: 1200%;
+      font-size: 900%;
       
       position: absolute;
-      top: -$pad/4;
+      top: -$pad/10;
       left: 0;
     }
   }
 }
+
+@mixin q {
+  q {
+    background: $light-grey;
+    padding: $pad/8;
+    border-bottom: 1px solid darken($light-grey, 5%);
+    
+    &:before {
+      content: '\201C';
+      margin-right: $pad/4;
+    }
+    
+    &:after {
+      content: '\201D';
+      margin-left: $pad/4;
+    }
+  }
+}
+
 
 /* Select box
   - put <select> inside a <label class="select">
@@ -854,26 +873,34 @@
     
     /* Fit figcpation to image width
     */
-    display: table;
-    img {
-      display: block;
-      max-width: 100%;
-    }
-    figcaption {
-      display: table-caption;
-      caption-side: bottom;
-      margin-top: $pad/4;
-      text-align: justify;
+    &.left, &.right, &.person, &.document {
+      display: table;
+      
+      img {
+        display: block;
+        max-width: 100%;
+      }
+      
+      figcaption {
+        display: table-caption;
+        caption-side: bottom;
+        margin-top: $pad/4;
+        text-align: justify;
+      }
+      
+      + p {
+        margin-top: $pad;
+      }
     }
     
     &.left {
       float: left;
-      margin: $pad $pad*2 $pad 0;
+      margin: $pad/2 $pad*2 $pad 0;
     }
     
     &.right {
       float: right;
-      margin: $pad 0 $pad $pad*2;
+      margin: $pad/2 0 $pad $pad*2;
     }
   }
 }

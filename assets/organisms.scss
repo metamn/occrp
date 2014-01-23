@@ -121,11 +121,13 @@
           .count {
             float: right;
             @include color(invert);
+            font-size: small;
+            padding: 0 $pad/4
           }
           
           .share {
             img {
-              max-width: 70%;
+              width: 30%;
             }
           }
         }
@@ -162,6 +164,31 @@
       margin-bottom: $pad;
     }
     
+    #share {
+      margin: $pad 0;
+    }
+    
+    #content {
+      figure {
+        figcaption {
+          @include border-thin;
+          padding-bottom: $pad;  
+          @include link($grey, $highlight);
+        }
+        
+        &.person {
+          background: $light-grey;
+          
+          img {
+            padding: $pad;
+          }
+          
+          figcaption {
+            text-align: center;
+          }
+        }
+      }
+    }
   }
   
 }
@@ -426,6 +453,7 @@
       padding-bottom: $pad/2;
       border-bottom: $border;
     }
+    
   }
 }
 
@@ -825,6 +853,7 @@
   @include figure;
   @include form;
   @include q;
+  @include blockquote;
   @include code;
   @include hr;
   @include em;
