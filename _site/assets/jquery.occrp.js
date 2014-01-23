@@ -3,10 +3,12 @@ $(document).ready(function() {
 
 
   // Show search input in the header
-  $('#header #search').click(function() {
+  $('#header #search').click(function(event) {
     $(this).find('#icon').hide();
     $(this).find('#text').hide();
     $(this).find('#input').show();
+    
+    return false;
   });
   
 

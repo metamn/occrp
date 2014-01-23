@@ -751,6 +751,10 @@
         
         &#input {
           display: none;
+          
+          input {
+            margin: $pad/4;
+          }
         }
       }
     }
