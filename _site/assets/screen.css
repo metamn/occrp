@@ -114,12 +114,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 */
 /* Navigation
 */
-/* Social icons
-*/
 /* Images
 --------------------------------------------------------------------------------
 */
+/* Social icons
+*/
 /* On hover shows a different image - the two images must be siblings in a container - this mixin is added to the container
+*/
+/* Icon with text - the image size (height) must be fixed otherwise it will be taller than other elements - first used with the language selector in a menu - if the height was not set this menu item was taller than all others
 */
 /* Decorations, colors, etc.
 --------------------------------------------------------------------------------
@@ -180,6 +182,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 */
 /* Teh fixed header
 */
+/* The Header
+*/
+/* A menu - an inline list of items, with different hover and active states - it's parent is usually a <nav> element
+*/
+/* The logo - it' inside a <hgroup>
+*/
+/* The language selector
+*/
 /* The header
 */
 /* Footer
@@ -218,79 +228,42 @@ html body .container { width: 90%; margin: 0 5%; }
 html body .container #header, html body .container main, html body .container section, html body .container nav, html body .container #footer { width: 100%; max-width: 100%; float: left; }
 html body .container #header > h3, html body .container main > h3, html body .container section > h3, html body .container nav > h3, html body .container #footer > h3 { display: none; }
 html body .container #header, html body .container main { margin: 1.25em 0 0; }
-html body .container #header hgroup { text-align: center; }
-@media only screen and (max-width: 48em) { html body .container #header hgroup { width: 100%; margin-right: 0; float: left; } }
-@media only screen and (min-width: 48em) and (max-width: 79.999em) { html body .container #header hgroup { width: 45%; margin-right: 10%; float: left; }
-  html body .container #header hgroup:nth-of-type(2) { margin-right: 0; }
-  html body .container #header hgroup:nth-of-type(3) { margin-right: 10%; }
-  html body .container #header hgroup:nth-of-type(4) { margin-right: 0; }
-  html body .container #header hgroup:nth-of-type(5) { margin-right: 10%; }
-  html body .container #header hgroup:nth-of-type(6) { margin-right: 0; }
-  html body .container #header hgroup:nth-of-type(7) { margin-right: 10%; }
-  html body .container #header hgroup:nth-of-type(8) { margin-right: 0; }
-  html body .container #header hgroup:nth-of-type(9) { margin-right: 10%; }
-  html body .container #header hgroup:nth-of-type(10) { margin-right: 0; } }
-@media only screen and (min-width: 80em) { html body .container #header hgroup { width: 31.5%; margin-right: 2.5%; float: left; }
-  html body .container #header hgroup:nth-of-type(2) { margin-right: 2.5%; }
-  html body .container #header hgroup:nth-of-type(3) { margin-right: 0; }
-  html body .container #header hgroup:nth-of-type(4) { margin-right: 2.5%; }
-  html body .container #header hgroup:nth-of-type(5) { margin-right: 2.5%; }
-  html body .container #header hgroup:nth-of-type(6) { margin-right: 0; }
-  html body .container #header hgroup:nth-of-type(7) { margin-right: 2.5%; }
-  html body .container #header hgroup:nth-of-type(8) { margin-right: 2.5%; }
-  html body .container #header hgroup:nth-of-type(9) { margin-right: 0; }
-  html body .container #header hgroup:nth-of-type(10) { margin-right: 2.5%; } }
-html body .container #header hgroup h1, html body .container #header hgroup figure figcaption { display: none; }
-html body .container #header nav { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; border-bottom: 1px solid #231f20; padding: 0.625em 0; margin-top: 2.5em; }
-@media only screen and (max-width: 48em) { html body .container #header nav { width: 100%; margin-right: 0; float: left; } }
-@media only screen and (min-width: 48em) and (max-width: 79.999em) { html body .container #header nav { width: 45%; margin-right: 10%; float: left; }
-  html body .container #header nav:nth-of-type(2) { margin-right: 0; }
-  html body .container #header nav:nth-of-type(3) { margin-right: 10%; }
-  html body .container #header nav:nth-of-type(4) { margin-right: 0; }
-  html body .container #header nav:nth-of-type(5) { margin-right: 10%; }
-  html body .container #header nav:nth-of-type(6) { margin-right: 0; }
-  html body .container #header nav:nth-of-type(7) { margin-right: 10%; }
-  html body .container #header nav:nth-of-type(8) { margin-right: 0; }
-  html body .container #header nav:nth-of-type(9) { margin-right: 10%; }
-  html body .container #header nav:nth-of-type(10) { margin-right: 0; } }
-@media only screen and (min-width: 80em) { html body .container #header nav { width: 31.5%; margin-right: 2.5%; float: left; }
-  html body .container #header nav:nth-of-type(2) { margin-right: 2.5%; }
-  html body .container #header nav:nth-of-type(3) { margin-right: 0; }
-  html body .container #header nav:nth-of-type(4) { margin-right: 2.5%; }
-  html body .container #header nav:nth-of-type(5) { margin-right: 2.5%; }
-  html body .container #header nav:nth-of-type(6) { margin-right: 0; }
-  html body .container #header nav:nth-of-type(7) { margin-right: 2.5%; }
-  html body .container #header nav:nth-of-type(8) { margin-right: 2.5%; }
-  html body .container #header nav:nth-of-type(9) { margin-right: 0; }
-  html body .container #header nav:nth-of-type(10) { margin-right: 2.5%; } }
-html body .container #header nav.mobile { display: none; }
+html body .container #header { /* Positioning the main elements
+*/ }
+@media only screen and (max-width: 48em) { html body .container #header nav, html body .container #header hgroup { width: 100%; margin-right: 0; float: left; } }
+@media only screen and (min-width: 48em) and (max-width: 79.999em) { html body .container #header nav, html body .container #header hgroup { width: 45%; margin-right: 10%; float: left; }
+  html body .container #header nav:nth-of-type(2), html body .container #header hgroup:nth-of-type(2) { margin-right: 0; }
+  html body .container #header nav:nth-of-type(3), html body .container #header hgroup:nth-of-type(3) { margin-right: 10%; }
+  html body .container #header nav:nth-of-type(4), html body .container #header hgroup:nth-of-type(4) { margin-right: 0; }
+  html body .container #header nav:nth-of-type(5), html body .container #header hgroup:nth-of-type(5) { margin-right: 10%; }
+  html body .container #header nav:nth-of-type(6), html body .container #header hgroup:nth-of-type(6) { margin-right: 0; }
+  html body .container #header nav:nth-of-type(7), html body .container #header hgroup:nth-of-type(7) { margin-right: 10%; }
+  html body .container #header nav:nth-of-type(8), html body .container #header hgroup:nth-of-type(8) { margin-right: 0; }
+  html body .container #header nav:nth-of-type(9), html body .container #header hgroup:nth-of-type(9) { margin-right: 10%; }
+  html body .container #header nav:nth-of-type(10), html body .container #header hgroup:nth-of-type(10) { margin-right: 0; } }
+@media only screen and (min-width: 80em) { html body .container #header nav, html body .container #header hgroup { width: 31.5%; margin-right: 2.5%; float: left; }
+  html body .container #header nav:nth-of-type(2), html body .container #header hgroup:nth-of-type(2) { margin-right: 2.5%; }
+  html body .container #header nav:nth-of-type(3), html body .container #header hgroup:nth-of-type(3) { margin-right: 0; }
+  html body .container #header nav:nth-of-type(4), html body .container #header hgroup:nth-of-type(4) { margin-right: 2.5%; }
+  html body .container #header nav:nth-of-type(5), html body .container #header hgroup:nth-of-type(5) { margin-right: 2.5%; }
+  html body .container #header nav:nth-of-type(6), html body .container #header hgroup:nth-of-type(6) { margin-right: 0; }
+  html body .container #header nav:nth-of-type(7), html body .container #header hgroup:nth-of-type(7) { margin-right: 2.5%; }
+  html body .container #header nav:nth-of-type(8), html body .container #header hgroup:nth-of-type(8) { margin-right: 2.5%; }
+  html body .container #header nav:nth-of-type(9), html body .container #header hgroup:nth-of-type(9) { margin-right: 0; }
+  html body .container #header nav:nth-of-type(10), html body .container #header hgroup:nth-of-type(10) { margin-right: 2.5%; } }
+html body .container #header nav#secondary { margin-right: 0; }
+html body .container #header nav#tags { width: 100%; max-width: 100%; float: left; }
+html body .container #header nav { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; }
 html body .container #header nav ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body .container #header nav ul li:last-of-type { margin-right: 0; }
-html body .container #header nav ul li a { padding: 0.625em 0.3125em; display: inline; }
+html body .container #header nav ul li a { padding: 0.625em 0.3125em; display: inline-block; }
 html body .container #header nav ul li.active a, html body .container #header nav ul li:hover a { background: #982022; color: white; }
 html body .container #header nav ul li.active a a, html body .container #header nav ul li:hover a a { color: white; text-decoration: none; }
 html body .container #header nav ul li.active a a:hover, html body .container #header nav ul li:hover a a:hover { color: white; }
-html body .container #header nav ul li#russian, html body .container #header nav ul li#english { height: 1.25em; /* Because of the icon */ position: relative; top: -1px; }
-html body .container #header nav ul li#russian img, html body .container #header nav ul li#english img { position: relative; top: 2px; }
-html body .container #header nav ul li#english { display: none; }
-html body .container #header nav#tags { width: 100%; max-width: 100%; float: left; margin-top: 0.625em; background: #231f20; color: white; }
-html body .container #header nav#tags a { color: white; text-decoration: none; }
-html body .container #header nav#tags a:hover { color: white; }
-html body .container #header nav#tags ul#search { margin-left: 0.3125em; }
-html body .container #header nav#tags ul#search li { cursor: pointer; }
-html body .container #header nav#tags ul#search li:first-of-type { margin-top: 0.3125em; }
-html body .container #header nav#tags ul#search li:first-of-type img:last-of-type { display: none; position: relative; top: 0; }
-html body .container #header nav#tags ul#search li:first-of-type:hover img:first-of-type { display: none; }
-html body .container #header nav#tags ul#search li:first-of-type:hover img:last-of-type { display: block; }
-html body .container #header nav#tags ul#search li:first-of-type img { width: 50%; }
-html body .container #header nav#tags ul#search li:nth-of-type(2) { display: none; }
-html body .container #header nav#tags ul#search li:nth-of-type(3) { margin-top: 0.3125em; position: relative; left: -1.40625em; }
-html body .container #header nav#tags ul#tag-list { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; margin-top: 0.3125em; }
-html body .container #header nav#tags ul#social { float: right; }
-html body .container #header nav#tags ul#social li#social-icons p { display: none; }
-html body .container #header nav#tags ul#social li#social-icons ul li { margin-right: 0; position: relative; top: -5px; }
-html body .container #header nav#tags ul#social li#social-icons ul li a img { width: 50%; position: relative; top: 5px; }
-html body .container #header nav#tags ul#social li#social-icons ul li a img:last-of-type { display: none !important; }
+html body .container #header nav#secondary ul li.language img { height: 12px; position: relative; top: 1px; }
+html body .container #header nav#secondary ul li#english { display: none; }
+html body .container #header hgroup { text-align: center; }
+html body .container #header hgroup h1, html body .container #header hgroup figure figcaption { display: none; }
 html body .container #footer { margin: 3.75em 0 0; padding: 1.25em 0; border-top: 0.3125em solid; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; }
 html body .container #footer ul li { display: inline-block; float: left; margin-right: 1.25em; }
 html body .container #footer ul li:last-of-type { margin-right: 0; }
@@ -1652,6 +1625,9 @@ html body.article main aside section#projects article figure { width: 50%; float
 
 html body { /* Highlighting active menu items
 */ }
+html body .container { /* Header
+*/ }
+html body .container #header nav { margin-top: 2.5em; border-bottom: 1px solid #231f20; }
 html body .container article figure { /* Fit figcpation to image width
 */ }
 html body .container article figure img { width: auto; }
@@ -1664,21 +1640,21 @@ html body .container article figure.left + p, html body .container article figur
 html body .container article figure.left { float: left; margin: 0.625em 2.5em 1.25em 0; }
 html body .container article figure.right { float: right; margin: 0.625em 0 1.25em 2.5em; }
 html body .container article figure + h1 { margin-top: 0.625em; }
-html body.frontpage #header nav ul li.frontpage a { background: #982022; color: white; }
-html body.frontpage #header nav ul li.frontpage a a { color: white; text-decoration: none; }
-html body.frontpage #header nav ul li.frontpage a a:hover { color: white; }
-html body.investigations #header nav ul li.investigations a { background: #982022; color: white; }
-html body.investigations #header nav ul li.investigations a a { color: white; text-decoration: none; }
-html body.investigations #header nav ul li.investigations a a:hover { color: white; }
-html body.resource-center #header nav ul li.resource-center a { background: #982022; color: white; }
-html body.resource-center #header nav ul li.resource-center a a { color: white; text-decoration: none; }
-html body.resource-center #header nav ul li.resource-center a a:hover { color: white; }
-html body.about-us #header nav ul li.about-us a { background: #982022; color: white; }
-html body.about-us #header nav ul li.about-us a a { color: white; text-decoration: none; }
-html body.about-us #header nav ul li.about-us a a:hover { color: white; }
-html body.contact-us #header nav ul li.contact-us a { background: #982022; color: white; }
-html body.contact-us #header nav ul li.contact-us a a { color: white; text-decoration: none; }
-html body.contact-us #header nav ul li.contact-us a a:hover { color: white; }
-html body.russia #header #tags ul li.russia a { background: #982022; color: white; }
-html body.russia #header #tags ul li.russia a a { color: white; text-decoration: none; }
-html body.russia #header #tags ul li.russia a a:hover { color: white; }
+html body.frontpage #header nav ul li#frontpage a { background: #982022; color: white; }
+html body.frontpage #header nav ul li#frontpage a a { color: white; text-decoration: none; }
+html body.frontpage #header nav ul li#frontpage a a:hover { color: white; }
+html body.investigations #header nav ul li#investigations a { background: #982022; color: white; }
+html body.investigations #header nav ul li#investigations a a { color: white; text-decoration: none; }
+html body.investigations #header nav ul li#investigations a a:hover { color: white; }
+html body.resource-center #header nav ul li#resource-center a { background: #982022; color: white; }
+html body.resource-center #header nav ul li#resource-center a a { color: white; text-decoration: none; }
+html body.resource-center #header nav ul li#resource-center a a:hover { color: white; }
+html body.about-us #header nav ul li#about-us a { background: #982022; color: white; }
+html body.about-us #header nav ul li#about-us a a { color: white; text-decoration: none; }
+html body.about-us #header nav ul li#about-us a a:hover { color: white; }
+html body.contact-us #header nav ul li#contact-us a { background: #982022; color: white; }
+html body.contact-us #header nav ul li#contact-us a a { color: white; text-decoration: none; }
+html body.contact-us #header nav ul li#contact-us a a:hover { color: white; }
+html body.russia #header #tags ul li#russia a { background: #982022; color: white; }
+html body.russia #header #tags ul li#russia a a { color: white; text-decoration: none; }
+html body.russia #header #tags ul li#russia a a:hover { color: white; }

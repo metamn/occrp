@@ -624,28 +624,97 @@
 
 
 
-
-/* The header
+/* The Header
 */
 @mixin header {
-
-  hgroup {
+  nav, hgroup {
     @include responsive-grid(3);
+  }
+  
+  /* Positioning the main elements
+  */
+  nav {
+    &#secondary {
+      margin-right: 0;
+    }
     
-    text-align: center;
-    h1, figure figcaption {
-      display: none;
+    &#tags {
+      @include block;
     }
   }
   
   nav {
-    @include responsive-grid(3);
+    @include menu;
     
+    &#secondary {
+      @include language-selector;
+    }
+  }
+  
+  hgroup {
+    @include logo;
+  }
+}
+
+
+
+
+/* A menu
+  - an inline list of items, with different hover and active states
+  - it's parent is usually a <nav> element
+*/
+@mixin menu {
+  @include font(navigation);
+  
+  ul {
+    @include list-inline;
+    @include list-menu;
+  }  
+}
+
+
+
+
+/* The logo
+  - it' inside a <hgroup>
+*/
+@mixin logo {
+  text-align: center;
+  
+  h1, figure figcaption {
+    display: none;
+  }
+}
+
+
+
+/* The language selector
+*/
+@mixin language-selector {
+  ul {
+    li {
+      &.language {
+        @include text-with-icon;
+      }
+      
+      &#english {
+        display: none;
+      }
+    }
+  }
+}
+
+
+
+/* The header
+*/
+@mixin header2 {
+  
+  
+  nav {
+    @include responsive-grid(3);
     @include font(navigation);
     @include border-thin($color);
-    
-    padding: $pad/2 0;
-    margin-top: $pad*2;
     
     &.mobile {
       display: none;

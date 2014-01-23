@@ -203,7 +203,7 @@
 
 /* Highlights an active item in a list / menu
 */
-@mixin list-menu($display: inline, $top : $pad/2, $left: $pad/4)  {
+@mixin list-menu($display: inline-block, $top : $pad/2, $left: $pad/4)  {
   li {
     a {
       padding: $top $left;
@@ -253,6 +253,21 @@
 }
 
 
+
+
+/* Images
+--------------------------------------------------------------------------------
+*/
+
+@mixin fluid-image {
+  img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+
 /* Social icons
 */
 @mixin social-icons {
@@ -277,18 +292,6 @@
 
 
 
-
-/* Images
---------------------------------------------------------------------------------
-*/
-
-@mixin fluid-image {
-  img {
-    width: auto;
-    height: auto;
-    max-width: 100%;
-  }
-}
 
 
 /* On hover shows a different image
@@ -316,6 +319,22 @@
     }
   }
 }
+
+
+/* Icon with text
+  - the image size (height) must be fixed otherwise it will be taller than other elements
+  - first used with the language selector in a menu
+  - if the height was not set this menu item was taller than all others
+*/
+@mixin text-with-icon {
+  img {
+    height: 12px;
+    position: relative;
+    top: 1px;
+  }
+  
+}
+
 
 
 
@@ -373,7 +392,6 @@
     text-decoration: none;
   }
 }
-
 
 
 

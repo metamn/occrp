@@ -1,27 +1,27 @@
 <header id="header">
 
   <nav id="main">
-    <h3>Sections</h3>
+    <h3>Main Navigation, Left Side</h3>
     <ul>
-      <li class="frontpage">
+      <li id="frontpage">
         <a href="{{ site.url }}/" title="Home">
           Home
         </a>
       </li>
       
-      <li class="daily">
+      <li id="daily">
         <a href="{{ site.url }}/daily" title="Daily">
           Daily
         </a>
       </li>
       
-      <li class="investigations">
+      <li id="investigations">
         <a href="{{ site.url }}/investigations" title="Investigations">
           Investigations
         </a>
       </li>
       
-      <li class="resource-center">
+      <li id="resource-center">
         <a href="{{ site.url }}/resource-center" title="Resources">
           Resources
         </a>
@@ -50,74 +50,47 @@
   </hgroup>
   
   
-  <nav id="main" class="mobile">
-    <h3>Sections</h3>
-    <ul>
-      <li class="frontpage">
-        <a href="{{ site.url }}/" title="Home">
-          Home
-        </a>
-      </li>
-      
-      <li class="daily">
-        <a href="{{ site.url }}/daily" title="Daily">
-          Daily
-        </a>
-      </li>
-      
-      <li class="investigations">
-        <a href="{{ site.url }}/investigations" title="Investigations">
-          Investigations
-        </a>
-      </li>
-      
-      <li class="resource-center">
-        <a href="{{ site.url }}/resource-center" title="Resources">
-          Resources
-        </a>
-      </li>
-    </ul>
-  </nav>
-  
   <nav id="secondary">
-    <h3>About us</h3>
+    <h3>Main navigation, Right Side</h3>
     <ul>
-      <li class="about-us">
+      <li id="about-us">
         <a href="{{ site.url }}/about-us" title="About Us">
           About Us
         </a>
       </li>
       
-      <li class="get-involved">
+      <li id="get-involved">
         <a href="{{ site.url }}/donated" title="Donated">
           Donated
         </a>
       </li>
       
-      <li class="contact-us">
+      <li id="contact-us">
         <a href="{{ site.url }}/contact-us" title="Contact">
           Contact
         </a>
       </li>
       
-      <li id="russian">
+      <li id="russian" class="language">
         <a href="{{ site.url }}/ru" title="Russian">
           <img src="{{ site.url }}/assets/ru.gif" title="Russian" />
           <span>Russian</span>
         </a>
       </li>
       
-      <li id="english">
+      <li id="english" class="language">
         <a href="{{ site.url }}/en" title="English">
-          <img src="{{ site.url }}/assets/en.gif" title="English" /> 
+          <img src="{{ site.url }}/assets/en.gif" title="English" />
           <span>English</span>
         </a>
       </li>
+      
     </ul>
   </nav>
 
   <nav id="tags">
     <h3>Search, Tags, Social Media icons</h3>
+    
     <ul id="search">
       <li id="icon">
         <img src="{{ site.url }}/assets/magnifying_glass.png" alt="Search"/>
@@ -127,12 +100,12 @@
         <input type="text" id="search" placeholder="Search">
       </li>
       <li id="text">
-        <a href="" title="Serach">Search</a>
+        <a href="" title="Search">Search</a>
       </li>
     </ul>
     
     <ul id="tag-list">
-      <li class="russia">
+      <li id="russia">
         <a href="{{ site.url }}/russia" title="About Us">
           #Russia
         </a>
