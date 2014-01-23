@@ -58,9 +58,9 @@
 /* Adds padding around a grid element
   - the width of the element must be recalculated
 */
-@mixin padding($width: 100%) {
-  padding: $pad;
-  @include grid-resize($width, $pad*2);
+@mixin padding($width: 100%, $padding: $pad) {
+  padding: $padding;
+  @include grid-resize($width, $padding*2);
 }
 
 
@@ -289,8 +289,6 @@
     }
   }
 }
-
-
 
 
 

@@ -186,11 +186,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 */
 /* A menu - an inline list of items, with different hover and active states - it's parent is usually a <nav> element
 */
+/* Floats the secondary menu right
+*/
 /* The logo - it' inside a <hgroup>
 */
 /* The language selector
 */
-/* The header
+/* The tag bar
+*/
+/* Make icons taller than the default size in the header - this is kinda manual pixel pushing
 */
 /* Footer
 */
@@ -252,7 +256,7 @@ html body .container #header { /* Positioning the main elements
   html body .container #header nav:nth-of-type(9), html body .container #header hgroup:nth-of-type(9) { margin-right: 0; }
   html body .container #header nav:nth-of-type(10), html body .container #header hgroup:nth-of-type(10) { margin-right: 2.5%; } }
 html body .container #header nav#secondary { margin-right: 0; }
-html body .container #header nav#tags { width: 100%; max-width: 100%; float: left; }
+html body .container #header nav#tags { width: 100%; max-width: 100%; float: left; margin-top: 0.625em; }
 html body .container #header nav { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; }
 html body .container #header nav ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body .container #header nav ul li:last-of-type { margin-right: 0; }
@@ -260,8 +264,27 @@ html body .container #header nav ul li a { padding: 0.625em 0.3125em; display: i
 html body .container #header nav ul li.active a, html body .container #header nav ul li:hover a { background: #982022; color: white; }
 html body .container #header nav ul li.active a a, html body .container #header nav ul li:hover a a { color: white; text-decoration: none; }
 html body .container #header nav ul li.active a a:hover, html body .container #header nav ul li:hover a a:hover { color: white; }
+html body .container #header nav#main, html body .container #header nav#secondary { margin-top: 2.5em; border-bottom: 1px solid #231f20; }
 html body .container #header nav#secondary ul li.language img { height: 12px; position: relative; top: 1px; }
 html body .container #header nav#secondary ul li#english { display: none; }
+html body .container #header nav#secondary ul { float: right; }
+html body .container #header nav#secondary ul li.language { margin-right: 0; }
+html body .container #header nav#tags { background: #231f20; color: white; /* Since <a> has padding on the last social icon we must reduce the tagbar width
+*/ padding: 0.3125em; width: calc(100% - 0.625em); padding: 0; }
+html body .container #header nav#tags a { color: white; text-decoration: none; }
+html body .container #header nav#tags a:hover { color: white; }
+html body .container #header nav#tags ul#search li#text img { height: 12px; position: relative; top: 1px; }
+html body .container #header nav#tags ul#search li#input { display: none; }
+html body .container #header nav#tags ul#tag-list { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
+html body .container #header nav#tags ul#social { float: right; }
+html body .container #header nav#tags ul#social li { /* We are not replacing social icons on hover - so the second image must not be displayed - also the icon should be taller, the maximum possible
+*/ }
+html body .container #header nav#tags ul#social li img { height: 12px; position: relative; top: 1px; }
+html body .container #header nav#tags ul#social li a img { height: 13px; }
+html body .container #header nav#tags ul#social li a img:last-of-type { display: none; }
+html body .container #header nav#tags ul#search, html body .container #header nav#tags ul#tag-list { margin-top: 0.3125em; }
+html body .container #header nav#tags ul#social li a { margin-bottom: 0.3125em; height: 1.25em; }
+html body .container #header nav#tags ul#social li a img { height: 1.25em; }
 html body .container #header hgroup { text-align: center; }
 html body .container #header hgroup h1, html body .container #header hgroup figure figcaption { display: none; }
 html body .container #footer { margin: 3.75em 0 0; padding: 1.25em 0; border-top: 0.3125em solid; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; }
@@ -277,10 +300,10 @@ html body .container #footer ul li#social-icons ul li:hover img:first-of-type { 
 html body .container #footer ul li#social-icons ul li:hover img:last-of-type { display: block; }
 html body.sticky .container #header { position: fixed; width: 90%; margin: 0 5%; border-bottom: 1px solid; margin: 0 0 2.5em !important; padding-top: 1.25em; top: 0; height: 2.5em; background: white; z-index: 1; }
 @media only screen and (min-width: 90.001em) { html body.sticky .container #header { width: 75%; margin: 0 12.5%; } }
-html body.sticky .container #header nav { margin-top: 0; border: none; }
+html body.sticky .container #header nav#main, html body.sticky .container #header nav#secondary { margin-top: 0; border: none; }
+html body.sticky .container #header nav#tags { display: none; }
 html body.sticky .container #header #logo { height: 2.03125em; }
 html body.sticky .container #header #logo figure img { max-width: 10em; position: relative; top: -0.3125em; }
-html body.sticky .container #header #tags { display: none; }
 html body.sticky .container main, html body.sticky .container #footer { position: relative; top: 7.5em; }
 html body.frontpage .container main #intro { margin-bottom: 1.25em; }
 html body.frontpage .container main #intro #slider { width: 65.5%; margin-right: 2.5%; float: left; padding: 1.25em; width: calc(65.5% - 2.5em); background: #f1f1f1; position: relative; height: 19em; }
@@ -1625,9 +1648,6 @@ html body.article main aside section#projects article figure { width: 50%; float
 
 html body { /* Highlighting active menu items
 */ }
-html body .container { /* Header
-*/ }
-html body .container #header nav { margin-top: 2.5em; border-bottom: 1px solid #231f20; }
 html body .container article figure { /* Fit figcpation to image width
 */ }
 html body .container article figure img { width: auto; }

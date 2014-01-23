@@ -38,11 +38,15 @@
 */
 /* A menu - an inline list of items, with different hover and active states - it's parent is usually a <nav> element
 */
+/* Floats the secondary menu right
+*/
 /* The logo - it' inside a <hgroup>
 */
 /* The language selector
 */
-/* The header
+/* The tag bar
+*/
+/* Make icons taller than the default size in the header - this is kinda manual pixel pushing
 */
 /* Footer
 */

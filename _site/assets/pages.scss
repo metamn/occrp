@@ -2,14 +2,7 @@ html {
   body {
     .container {
       
-      /* Header
-      */
-      #header {
-        nav {
-          margin-top: $pad*2;
-          @include border-thin($color);
-        }
-      }
+      
     
       article {
         @include figure;
