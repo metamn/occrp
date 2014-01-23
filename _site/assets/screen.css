@@ -1516,6 +1516,61 @@ html body.article main #article article #content figure figcaption a:hover { col
 html body.article main #article article #content figure.person { background: #f1f1f1; }
 html body.article main #article article #content figure.person img { padding: 1.25em; }
 html body.article main #article article #content figure.person figcaption { text-align: center; }
+@media only screen and (max-width: 48em) { html body.article main #article #most-read, html body.article main #article #most-recent { width: 100%; margin-right: 0; float: left; } }
+@media only screen and (min-width: 48em) and (max-width: 79.999em) { html body.article main #article #most-read, html body.article main #article #most-recent { width: 45%; margin-right: 10%; float: left; }
+  html body.article main #article #most-read:nth-of-type(2), html body.article main #article #most-recent:nth-of-type(2) { margin-right: 0; }
+  html body.article main #article #most-read:nth-of-type(3), html body.article main #article #most-recent:nth-of-type(3) { margin-right: 10%; }
+  html body.article main #article #most-read:nth-of-type(4), html body.article main #article #most-recent:nth-of-type(4) { margin-right: 0; }
+  html body.article main #article #most-read:nth-of-type(5), html body.article main #article #most-recent:nth-of-type(5) { margin-right: 10%; }
+  html body.article main #article #most-read:nth-of-type(6), html body.article main #article #most-recent:nth-of-type(6) { margin-right: 0; }
+  html body.article main #article #most-read:nth-of-type(7), html body.article main #article #most-recent:nth-of-type(7) { margin-right: 10%; }
+  html body.article main #article #most-read:nth-of-type(8), html body.article main #article #most-recent:nth-of-type(8) { margin-right: 0; }
+  html body.article main #article #most-read:nth-of-type(9), html body.article main #article #most-recent:nth-of-type(9) { margin-right: 10%; }
+  html body.article main #article #most-read:nth-of-type(10), html body.article main #article #most-recent:nth-of-type(10) { margin-right: 0; } }
+@media only screen and (min-width: 80em) { html body.article main #article #most-read, html body.article main #article #most-recent { width: 45%; margin-right: 10%; float: left; }
+  html body.article main #article #most-read:nth-of-type(2), html body.article main #article #most-recent:nth-of-type(2) { margin-right: 0; }
+  html body.article main #article #most-read:nth-of-type(3), html body.article main #article #most-recent:nth-of-type(3) { margin-right: 10%; }
+  html body.article main #article #most-read:nth-of-type(4), html body.article main #article #most-recent:nth-of-type(4) { margin-right: 0; }
+  html body.article main #article #most-read:nth-of-type(5), html body.article main #article #most-recent:nth-of-type(5) { margin-right: 10%; }
+  html body.article main #article #most-read:nth-of-type(6), html body.article main #article #most-recent:nth-of-type(6) { margin-right: 0; }
+  html body.article main #article #most-read:nth-of-type(7), html body.article main #article #most-recent:nth-of-type(7) { margin-right: 10%; }
+  html body.article main #article #most-read:nth-of-type(8), html body.article main #article #most-recent:nth-of-type(8) { margin-right: 0; }
+  html body.article main #article #most-read:nth-of-type(9), html body.article main #article #most-recent:nth-of-type(9) { margin-right: 10%; }
+  html body.article main #article #most-read:nth-of-type(10), html body.article main #article #most-recent:nth-of-type(10) { margin-right: 0; } }
+html body.article main #article #most-read article, html body.article main #article #most-recent article { margin-bottom: 3%; }
+html body.article main #article #most-read article figure, html body.article main #article #most-recent article figure { display: block; }
+html body.article main #article #most-read article figcaption, html body.article main #article #most-recent article figcaption { display: none; }
+html body.article main #article #most-read article #excerpt, html body.article main #article #most-recent article #excerpt { display: none; }
+html body.article main #article #most-read article #content, html body.article main #article #most-recent article #content { display: none; }
+html body.article main #article #most-read article #meta #category, html body.article main #article #most-recent article #meta #category { display: none; }
+html body.article main #article #most-read article #meta #date, html body.article main #article #most-recent article #meta #date { display: none; }
+html body.article main #article #most-read article #meta, html body.article main #article #most-recent article #meta { display: none; }
+html body.article main #article #most-read article #excerpt, html body.article main #article #most-recent article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; text-align: justify; }
+html body.article main #article #most-read article #meta, html body.article main #article #most-recent article #meta { margin-top: 0.625em; }
+html body.article main #article #most-read article #meta > h3, html body.article main #article #most-recent article #meta > h3 { display: none; }
+html body.article main #article #most-read article #meta ul, html body.article main #article #most-recent article #meta ul { margin: 0; }
+html body.article main #article #most-read article #meta ul li, html body.article main #article #most-recent article #meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
+html body.article main #article #most-read article #meta ul li:before, html body.article main #article #most-recent article #meta ul li:before { content: ''; }
+html body.article main #article #most-read article #meta ul li, html body.article main #article #most-recent article #meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
+html body.article main #article #most-read article #meta ul li:last-of-type, html body.article main #article #most-recent article #meta ul li:last-of-type { margin-right: 0; }
+html body.article main #article #most-read article #meta #date, html body.article main #article #most-recent article #meta #date { font-size: small; color: #74676a; }
+html body.article main #article #most-read article #meta #category, html body.article main #article #most-recent article #meta #category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
+html body.article main #article #most-read article #meta #category a, html body.article main #article #most-recent article #meta #category a { color: #982022; text-decoration: none; }
+html body.article main #article #most-read article #meta #category a:hover, html body.article main #article #most-recent article #meta #category a:hover { color: #231f20; }
+html body.article main #article #most-read article #meta #authors, html body.article main #article #most-recent article #meta #authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; }
+html body.article main #article #most-read article #meta #authors ul li:after, html body.article main #article #most-recent article #meta #authors ul li:after { content: ','; }
+html body.article main #article #most-read article #meta #authors ul li:first-of-type, html body.article main #article #most-recent article #meta #authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+html body.article main #article #most-read article #meta #authors ul li:first-of-type:after, html body.article main #article #most-read article #meta #authors ul li:last-of-type:after, html body.article main #article #most-recent article #meta #authors ul li:first-of-type:after, html body.article main #article #most-recent article #meta #authors ul li:last-of-type:after { content: ''; }
+html body.article main #article #most-read article #share ul li, html body.article main #article #most-recent article #share ul li { display: block; margin-right: none; float: none; padding-left: 0; }
+html body.article main #article #most-read article #share ul li:before, html body.article main #article #most-recent article #share ul li:before { content: ''; }
+html body.article main #article #most-read article #share ul li, html body.article main #article #most-recent article #share ul li { display: inline-block; float: left; margin-right: 1.25em; }
+html body.article main #article #most-read article #share ul li:last-of-type, html body.article main #article #most-recent article #share ul li:last-of-type { margin-right: 0; }
+html body.article main #article #most-read article #share ul li .box .count, html body.article main #article #most-recent article #share ul li .box .count { float: right; background: #231f20; color: white; font-size: small; padding: 0 0.3125em; }
+html body.article main #article #most-read article #share ul li .box .count a, html body.article main #article #most-recent article #share ul li .box .count a { color: white; text-decoration: none; }
+html body.article main #article #most-read article #share ul li .box .count a:hover, html body.article main #article #most-recent article #share ul li .box .count a:hover { color: white; }
+html body.article main #article #most-read article #share ul li .box .share img, html body.article main #article #most-recent article #share ul li .box .share img { width: 30%; }
+html body.article main #article #most-read article #content a, html body.article main #article #most-recent article #content a { color: #982022; text-decoration: none; }
+html body.article main #article #most-read article #content a:hover, html body.article main #article #most-recent article #content a:hover { color: #982022; }
 html body.article main aside { width: 33%; margin-right: 0; float: left; }
 html body.article main aside section { padding: 1.25em; width: calc(100% - 2.5em); background: #f1f1f1; margin-bottom: 2.5em; }
 html body.article main aside section h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; }

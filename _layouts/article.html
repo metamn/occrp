@@ -8,15 +8,15 @@
     {% include article.html klass = 'single' %}
     
     <div id="most-read">
-      <h3>Most read in this category</h3>
+      <h3>Most recent</h3>
       {% for post in site.categories.investigations limit:5 %}
         {% include article.html klass = 'thumb' %}
       {% endfor %}
     </div>
     
     <div id="most-recent">
-      <h3>Most recent</h3>
-      {% for post in site.categories.daily limit:5 %}
+      <h3>Most read</h3>
+      {% for post in site.categories.slider limit:5 %}
         {% include article.html klass = 'thumb' %}
       {% endfor %}
     </div>
@@ -25,14 +25,12 @@
   
   
   <aside>
-    {% if post.related-articles.size > 0 %}
-      <section id="related-articles">
-        <h3>Related articles</h3>
-        {% for post in site.categories.investigations limit:5 %}
-          {% include article.html klass = 'thumb' %}
-        {% endfor %}
-      </section>
-    {% endif %}
+    <section id="related-articles">
+      <h3>Related articles</h3>
+      {% for post in site.categories.investigations limit:5 %}
+        {% include article.html klass = 'thumb' %}
+      {% endfor %}
+    </section>
     
     <section id="projects">
       <h3>Projects</h3>
