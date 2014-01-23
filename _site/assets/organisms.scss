@@ -411,9 +411,8 @@
 */
 @mixin products {
   @include padding;
-  background: $light-grey;
-  border-top: $border;
-  border-bottom: $border;
+  background: $light-grey url(/assets/stripe.png);
+  
   
   margin-bottom: $flexible-grid-margin;
   
@@ -423,11 +422,9 @@
     margin: $flexible-grid-margin/2 0;
     
     h1 {
-      @include color(menu);
-      a {
-        display: inline-block;
-        padding: $pad/4;
-      }
+      margin-top: $pad;
+      padding-bottom: $pad/2;
+      border-bottom: $border;
     }
   }
 }

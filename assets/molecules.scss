@@ -839,7 +839,7 @@
 @mixin figure($width: auto) {
   figure {
     img {
-      @include box-shadow($shadow);
+      //@include box-shadow($shadow);
       width: $width;
     }
     
