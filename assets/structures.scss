@@ -67,7 +67,7 @@ html {
           }
           
           #projects {
-            @include projects;
+            @include frontpage-projects;
           }
           
           #most-read {

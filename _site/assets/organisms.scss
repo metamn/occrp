@@ -326,25 +326,36 @@
 */
 @mixin jobs {
   article {
-    @include block;
+    @include article-style(news);
     @include body-text;
     
-    #meta, #meta #date, #excerpt {
-      display: block !important;
+    #excerpt {
+      display: block;
     }
-    
-    h1 {
-      @include font(archive-article-title);
-    }
-    
-    @include border-thin;
   }
 }
 
 
+/* Projects archive
+*/
+@mixin projects {
+  .title {
+    @include font(section-title);
+    @include font(category-title);
+  }
+  
+  article {
+    @include responsive-grid(5);
+    @include article-style(investigations);
+    height: 20em;
+  }
+  
+  @include navigation(navigation);
+}
 
 
-/* Category articles
+
+/* Category archives
 */
 @mixin category-articles {
   @include col-nm(2, 3);
@@ -358,6 +369,13 @@
     @include block;
     @include article-style(slider);
     margin-bottom: $flexible-grid-margin;
+    
+    article {
+      #excerpt {
+        @include border-thin;
+        padding-bottom: $pad;
+      }
+    }
   }
   
   article {
@@ -463,9 +481,9 @@
 
 
 
-/* Projects
+/* Projects on frontpage
 */
-@mixin projects {
+@mixin frontpage-projects {
   h3 {
     @include font(section-title);
   }
