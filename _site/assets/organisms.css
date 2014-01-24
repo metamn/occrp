@@ -1,6 +1,8 @@
 /* Organisms of the Atomic web design - groups of molecules joined together to form a relatively complex, distinct section of an interface.
 */
-/* An article - displays mostly article thumbs
+/* Styling article thumbs - controls how an article thumb is displayed
+*/
+/* An article - displays mostly article thumbs - this mixin controls what is diplayed in an article
 */
 /* Single article
 */
@@ -16,6 +18,8 @@
 */
 /* Fixed sidebar
 */
+/* Videos
+*/
 /* Most read
 */
 /* Projects
@@ -23,8 +27,6 @@
 /* Products
 */
 /* Investigations
-*/
-/* A list of articles with title only
 */
 /* The news
 */

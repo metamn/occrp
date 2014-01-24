@@ -4,9 +4,56 @@
 */
 
 
+/* Styling article thumbs
+  - controls how an article thumb is displayed
+*/
+@mixin article-style($style) {
+  @if ($style == news) {
+    @include article(null, null, title);
+    @include border-thin;
+    padding-bottom: $flexible-grid-margin;
+    
+    h1 {
+      @include font(thumb-title);
+    }
+  
+  } @elseif ($style == investigations) {
+    @include article(null, date, title, figure, null, excerpt, null);
+    border-top: $border;
+    padding-top: $pad;
+    height: 28em;
+    
+    @include normal-screen {
+      height: 27em;
+    }
+    
+    #excerpt {
+      margin-top: $pad/2;
+    }
+  
+  } @elseif ($style == products) {
+    @include article(null, null, title, figure);
+    margin: $flexible-grid-margin/2 0;
+    
+    h1 {
+      margin-top: $pad;
+      padding-bottom: $pad/2;
+      border-bottom: $border;
+    }
+  
+  } @elseif ($style == projects) {
+    @include article(null, null, title, figure, null, null);
+    
+    h1 {
+      @include font(thumb-title);
+    }
+  }
+}
+
 
 /* An article
   - displays mostly article thumbs
+  - this mixin controls what is diplayed in an article
 */
 @mixin article($category, $date, $title, $figure: null, $figcaption: null, $excerpt: null, $body: null) {
   margin-bottom: $flexible-grid-margin;
@@ -338,7 +385,7 @@
     @include padding;
     background: $light-grey;
     
-    @include article-news; 
+    @include article-style(news); 
     margin-bottom: $pad*2;
     
     h3 {
@@ -388,26 +435,38 @@
 
 
 
+/* Videos
+*/
+@mixin videos {
+  h3 {
+    @include font(section-title);
+  }
+  
+  article {
+    @include responsive-grid(6);
+    @include article-style(projects);
+  }
+}
+
+
+
 /* Most read
 */
 @mixin most-read {
-  aside {
-    @include responsive-grid(3);
-    background: $light-grey;
-    @include article-news;
+  margin-bottom: $flexible-grid-margin / 2;
+  
+  section {
+    @include news;
     
-    h3 {
-      @include font(section-title);
-      border-bottom: $pad/2 solid $background;
-    }
+    background: $light-grey;
     
     article {
-      padding: 0 $pad/2 $pad/2;
+      padding-left: $pad/2;
+      padding-right: $pad/2;
       border-color: $background;
       
       &:last-of-type {
-        border-bottom: 0;
-        margin-bottom: 0;
+        border: none;
       }
     }
   }
@@ -422,21 +481,11 @@
     @include font(section-title);
   }
   
-  .title {
-    @include font(section-title);
-    @include font(category-title);
-  }
-  
   article {
-    @include article(null, null, title, figure, null, excerpt);
     @include responsive-grid(5);
-    
-    h1 {
-      @include font(thumb-title);
-    }
+    @include article-style(projects);
+    margin-bottom: $flexible-grid-margin / 2;
   }
-  
-  @include navigation(navigation);
 }
 
 
@@ -445,21 +494,11 @@
 @mixin products {
   @include padding;
   background: $light-grey url(/assets/stripe.png);
-  
-  
-  margin-bottom: $flexible-grid-margin;
+  margin-bottom: $flexible-grid-margin / 2;
   
   article {
-    @include article(null, null, title, figure);
     @include responsive-grid(4);
-    margin: $flexible-grid-margin/2 0;
-    
-    h1 {
-      margin-top: $pad;
-      padding-bottom: $pad/2;
-      border-bottom: $border;
-    }
-    
+    @include article-style(products);
   }
 }
 
@@ -473,50 +512,22 @@
   
   article {
     @include responsive-grid(3);
-    @include article(null, date, title, figure, null, excerpt, null);
-    border-top: $border;
-    padding-top: $pad;
-    height: 28em;
-    
-    @include normal-screen {
-      height: 27em;
-    }
-    
-    #excerpt {
-      margin-top: $pad/2;
-    }
+    @include article-style(investigations);
   }
 }
-
-
-/* A list of articles with title only
-*/
-@mixin article-news {
-  h3 {
-    @include font(section-title);
-  }
-  
-  article {
-    @include article(null, null, title);
-    @include border-thin;
-    padding-bottom: $flexible-grid-margin;
-    
-    h1 {
-      @include font(thumb-title);
-    }
-  }
-}
-
 
 
 /* The news
 */
 @mixin news {
-  @include col(30%, 0);
-  @include article-news;
+  @include responsive-grid(3);
   
-  @include below-and-tablet {
-    @include block;
+  h3 {
+    @include font(section-title);
+  }
+  
+  article {
+    @include article-style(news);
   }
 }
 

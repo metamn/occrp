@@ -156,7 +156,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 */
 /* Organisms of the Atomic web design - groups of molecules joined together to form a relatively complex, distinct section of an interface.
 */
-/* An article - displays mostly article thumbs
+/* Styling article thumbs - controls how an article thumb is displayed
+*/
+/* An article - displays mostly article thumbs - this mixin controls what is diplayed in an article
 */
 /* Single article
 */
@@ -172,6 +174,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 */
 /* Fixed sidebar
 */
+/* Videos
+*/
 /* Most read
 */
 /* Projects
@@ -179,8 +183,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* Products
 */
 /* Investigations
-*/
-/* A list of articles with title only
 */
 /* The news
 */
@@ -235,8 +237,8 @@ html body h3 { font-size: 20px; font-size: 1.25rem; font-weight: normal; }
 html body h4 { font-size: larger; font-weight: normal; }
 html body .container { width: 90%; margin: 0 5%; }
 @media only screen and (min-width: 90.001em) { html body .container { width: 75%; margin: 0 12.5%; } }
-html body .container #header, html body .container main, html body .container section, html body .container nav, html body .container #footer { width: 100%; max-width: 100%; float: left; }
-html body .container #header > h3, html body .container main > h3, html body .container section > h3, html body .container nav > h3, html body .container #footer > h3 { display: none; }
+html body .container #header, html body .container main, html body .container section, html body .container nav, html body .container aside, html body .container #footer { width: 100%; max-width: 100%; float: left; }
+html body .container #header > h3, html body .container main > h3, html body .container section > h3, html body .container nav > h3, html body .container aside > h3, html body .container #footer > h3 { display: none; }
 html body .container #header, html body .container main { margin: 1.25em 0 0; }
 html body .container #header { /* Positioning the main elements
 */ }
@@ -366,7 +368,28 @@ html body.frontpage .container main #intro #slider nav ol li.active a a:hover, h
 html body.frontpage .container main #intro #slider nav ol li { background: white; color: #231f20; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; }
 html body.frontpage .container main #intro #slider nav ol li a { color: #231f20; text-decoration: none; }
 html body.frontpage .container main #intro #slider nav ol li a:hover { color: white; }
-html body.frontpage .container main #intro #news, html body.frontpage .container main #intro #announcements { width: 30%; margin-right: 0; float: left; }
+html body.frontpage .container main #intro #news, html body.frontpage .container main #intro #announcements { margin-right: 0 !important; }
+@media only screen and (max-width: 48em) { html body.frontpage .container main #intro #news, html body.frontpage .container main #intro #announcements { width: 100%; margin-right: 0; float: left; } }
+@media only screen and (min-width: 48em) and (max-width: 79.999em) { html body.frontpage .container main #intro #news, html body.frontpage .container main #intro #announcements { width: 45%; margin-right: 10%; float: left; }
+  html body.frontpage .container main #intro #news:nth-of-type(2), html body.frontpage .container main #intro #announcements:nth-of-type(2) { margin-right: 0; }
+  html body.frontpage .container main #intro #news:nth-of-type(3), html body.frontpage .container main #intro #announcements:nth-of-type(3) { margin-right: 10%; }
+  html body.frontpage .container main #intro #news:nth-of-type(4), html body.frontpage .container main #intro #announcements:nth-of-type(4) { margin-right: 0; }
+  html body.frontpage .container main #intro #news:nth-of-type(5), html body.frontpage .container main #intro #announcements:nth-of-type(5) { margin-right: 10%; }
+  html body.frontpage .container main #intro #news:nth-of-type(6), html body.frontpage .container main #intro #announcements:nth-of-type(6) { margin-right: 0; }
+  html body.frontpage .container main #intro #news:nth-of-type(7), html body.frontpage .container main #intro #announcements:nth-of-type(7) { margin-right: 10%; }
+  html body.frontpage .container main #intro #news:nth-of-type(8), html body.frontpage .container main #intro #announcements:nth-of-type(8) { margin-right: 0; }
+  html body.frontpage .container main #intro #news:nth-of-type(9), html body.frontpage .container main #intro #announcements:nth-of-type(9) { margin-right: 10%; }
+  html body.frontpage .container main #intro #news:nth-of-type(10), html body.frontpage .container main #intro #announcements:nth-of-type(10) { margin-right: 0; } }
+@media only screen and (min-width: 80em) { html body.frontpage .container main #intro #news, html body.frontpage .container main #intro #announcements { width: 31.5%; margin-right: 2.5%; float: left; }
+  html body.frontpage .container main #intro #news:nth-of-type(2), html body.frontpage .container main #intro #announcements:nth-of-type(2) { margin-right: 2.5%; }
+  html body.frontpage .container main #intro #news:nth-of-type(3), html body.frontpage .container main #intro #announcements:nth-of-type(3) { margin-right: 0; }
+  html body.frontpage .container main #intro #news:nth-of-type(4), html body.frontpage .container main #intro #announcements:nth-of-type(4) { margin-right: 2.5%; }
+  html body.frontpage .container main #intro #news:nth-of-type(5), html body.frontpage .container main #intro #announcements:nth-of-type(5) { margin-right: 2.5%; }
+  html body.frontpage .container main #intro #news:nth-of-type(6), html body.frontpage .container main #intro #announcements:nth-of-type(6) { margin-right: 0; }
+  html body.frontpage .container main #intro #news:nth-of-type(7), html body.frontpage .container main #intro #announcements:nth-of-type(7) { margin-right: 2.5%; }
+  html body.frontpage .container main #intro #news:nth-of-type(8), html body.frontpage .container main #intro #announcements:nth-of-type(8) { margin-right: 2.5%; }
+  html body.frontpage .container main #intro #news:nth-of-type(9), html body.frontpage .container main #intro #announcements:nth-of-type(9) { margin-right: 0; }
+  html body.frontpage .container main #intro #news:nth-of-type(10), html body.frontpage .container main #intro #announcements:nth-of-type(10) { margin-right: 2.5%; } }
 html body.frontpage .container main #intro #news h3, html body.frontpage .container main #intro #announcements h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; }
 html body.frontpage .container main #intro #news h3 a, html body.frontpage .container main #intro #announcements h3 a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #intro #news h3 a:hover, html body.frontpage .container main #intro #announcements h3 a:hover { color: #231f20; }
@@ -405,7 +428,6 @@ html body.frontpage .container main #intro #news article #share ul li .box .shar
 html body.frontpage .container main #intro #news article #content a, html body.frontpage .container main #intro #announcements article #content a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #intro #news article #content a:hover, html body.frontpage .container main #intro #announcements article #content a:hover { color: #982022; }
 html body.frontpage .container main #intro #news article h1, html body.frontpage .container main #intro #announcements article h1 { font-size: medium; }
-@media only screen and (max-width: 48em) { html body.frontpage .container main #intro #news, html body.frontpage .container main #intro #announcements { width: 100%; max-width: 100%; float: left; } }
 html body.frontpage .container main #investigations h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; }
 html body.frontpage .container main #investigations h3 a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #investigations h3 a:hover { color: #231f20; }
@@ -463,8 +485,29 @@ html body.frontpage .container main #investigations article #content a { color: 
 html body.frontpage .container main #investigations article #content a:hover { color: #982022; }
 @media only screen and (min-width: 80em) and (max-width: 89.999em) { html body.frontpage .container main #investigations article { height: 27em; } }
 html body.frontpage .container main #investigations article #excerpt { margin-top: 0.625em; }
-html body.frontpage .container main #products { padding: 1.25em; width: calc(100% - 2.5em); background: #f1f1f1 url(/assets/stripe.png); margin-bottom: 3%; }
+html body.frontpage .container main #products { padding: 1.25em; width: calc(100% - 2.5em); background: #f1f1f1 url(/assets/stripe.png); margin-bottom: 1.5%; }
 html body.frontpage .container main #products article { margin-bottom: 3%; margin: 1.5% 0; }
+@media only screen and (max-width: 48em) { html body.frontpage .container main #products article { width: 100%; margin-right: 0; float: left; } }
+@media only screen and (min-width: 48em) and (max-width: 79.999em) { html body.frontpage .container main #products article { width: 45%; margin-right: 10%; float: left; }
+  html body.frontpage .container main #products article:nth-of-type(2) { margin-right: 0; }
+  html body.frontpage .container main #products article:nth-of-type(3) { margin-right: 10%; }
+  html body.frontpage .container main #products article:nth-of-type(4) { margin-right: 0; }
+  html body.frontpage .container main #products article:nth-of-type(5) { margin-right: 10%; }
+  html body.frontpage .container main #products article:nth-of-type(6) { margin-right: 0; }
+  html body.frontpage .container main #products article:nth-of-type(7) { margin-right: 10%; }
+  html body.frontpage .container main #products article:nth-of-type(8) { margin-right: 0; }
+  html body.frontpage .container main #products article:nth-of-type(9) { margin-right: 10%; }
+  html body.frontpage .container main #products article:nth-of-type(10) { margin-right: 0; } }
+@media only screen and (min-width: 80em) { html body.frontpage .container main #products article { width: 22.5%; margin-right: 3.33333%; float: left; }
+  html body.frontpage .container main #products article:nth-of-type(2) { margin-right: 3.33333%; }
+  html body.frontpage .container main #products article:nth-of-type(3) { margin-right: 3.33333%; }
+  html body.frontpage .container main #products article:nth-of-type(4) { margin-right: 0; }
+  html body.frontpage .container main #products article:nth-of-type(5) { margin-right: 3.33333%; }
+  html body.frontpage .container main #products article:nth-of-type(6) { margin-right: 3.33333%; }
+  html body.frontpage .container main #products article:nth-of-type(7) { margin-right: 3.33333%; }
+  html body.frontpage .container main #products article:nth-of-type(8) { margin-right: 0; }
+  html body.frontpage .container main #products article:nth-of-type(9) { margin-right: 3.33333%; }
+  html body.frontpage .container main #products article:nth-of-type(10) { margin-right: 3.33333%; } }
 html body.frontpage .container main #products article figure { display: block; }
 html body.frontpage .container main #products article figcaption { display: none; }
 html body.frontpage .container main #products article #excerpt { display: none; }
@@ -498,101 +541,133 @@ html body.frontpage .container main #products article #share ul li .box .count a
 html body.frontpage .container main #products article #share ul li .box .share img { width: 30%; }
 html body.frontpage .container main #products article #content a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #products article #content a:hover { color: #982022; }
-@media only screen and (max-width: 48em) { html body.frontpage .container main #products article { width: 100%; margin-right: 0; float: left; } }
-@media only screen and (min-width: 48em) and (max-width: 79.999em) { html body.frontpage .container main #products article { width: 45%; margin-right: 10%; float: left; }
-  html body.frontpage .container main #products article:nth-of-type(2) { margin-right: 0; }
-  html body.frontpage .container main #products article:nth-of-type(3) { margin-right: 10%; }
-  html body.frontpage .container main #products article:nth-of-type(4) { margin-right: 0; }
-  html body.frontpage .container main #products article:nth-of-type(5) { margin-right: 10%; }
-  html body.frontpage .container main #products article:nth-of-type(6) { margin-right: 0; }
-  html body.frontpage .container main #products article:nth-of-type(7) { margin-right: 10%; }
-  html body.frontpage .container main #products article:nth-of-type(8) { margin-right: 0; }
-  html body.frontpage .container main #products article:nth-of-type(9) { margin-right: 10%; }
-  html body.frontpage .container main #products article:nth-of-type(10) { margin-right: 0; } }
-@media only screen and (min-width: 80em) { html body.frontpage .container main #products article { width: 22.5%; margin-right: 3.33333%; float: left; }
-  html body.frontpage .container main #products article:nth-of-type(2) { margin-right: 3.33333%; }
-  html body.frontpage .container main #products article:nth-of-type(3) { margin-right: 3.33333%; }
-  html body.frontpage .container main #products article:nth-of-type(4) { margin-right: 0; }
-  html body.frontpage .container main #products article:nth-of-type(5) { margin-right: 3.33333%; }
-  html body.frontpage .container main #products article:nth-of-type(6) { margin-right: 3.33333%; }
-  html body.frontpage .container main #products article:nth-of-type(7) { margin-right: 3.33333%; }
-  html body.frontpage .container main #products article:nth-of-type(8) { margin-right: 0; }
-  html body.frontpage .container main #products article:nth-of-type(9) { margin-right: 3.33333%; }
-  html body.frontpage .container main #products article:nth-of-type(10) { margin-right: 3.33333%; } }
 html body.frontpage .container main #products article h1 { margin-top: 1.25em; padding-bottom: 0.625em; border-bottom: 0.3125em solid; }
-html body.frontpage .container main #projects h3, html body.frontpage .container main #videos h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; }
-html body.frontpage .container main #projects h3 a, html body.frontpage .container main #videos h3 a { color: #982022; text-decoration: none; }
-html body.frontpage .container main #projects h3 a:hover, html body.frontpage .container main #videos h3 a:hover { color: #231f20; }
-html body.frontpage .container main #projects .title, html body.frontpage .container main #videos .title { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; padding: 1.45833em 0; }
-html body.frontpage .container main #projects .title a, html body.frontpage .container main #videos .title a { color: #982022; text-decoration: none; }
-html body.frontpage .container main #projects .title a:hover, html body.frontpage .container main #videos .title a:hover { color: #231f20; }
-html body.frontpage .container main #projects article, html body.frontpage .container main #videos article { margin-bottom: 3%; }
-html body.frontpage .container main #projects article figure, html body.frontpage .container main #videos article figure { display: block; }
-html body.frontpage .container main #projects article figcaption, html body.frontpage .container main #videos article figcaption { display: none; }
-html body.frontpage .container main #projects article #content, html body.frontpage .container main #videos article #content { display: none; }
-html body.frontpage .container main #projects article #meta #category, html body.frontpage .container main #videos article #meta #category { display: none; }
-html body.frontpage .container main #projects article #meta #date, html body.frontpage .container main #videos article #meta #date { display: none; }
-html body.frontpage .container main #projects article #meta, html body.frontpage .container main #videos article #meta { display: none; }
-html body.frontpage .container main #projects article #excerpt, html body.frontpage .container main #videos article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; text-align: justify; }
-html body.frontpage .container main #projects article #meta, html body.frontpage .container main #videos article #meta { margin-top: 0.625em; }
-html body.frontpage .container main #projects article #meta > h3, html body.frontpage .container main #videos article #meta > h3 { display: none; }
-html body.frontpage .container main #projects article #meta ul, html body.frontpage .container main #videos article #meta ul { margin: 0; }
-html body.frontpage .container main #projects article #meta ul li, html body.frontpage .container main #videos article #meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.frontpage .container main #projects article #meta ul li:before, html body.frontpage .container main #videos article #meta ul li:before { content: ''; }
-html body.frontpage .container main #projects article #meta ul li, html body.frontpage .container main #videos article #meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
-html body.frontpage .container main #projects article #meta ul li:last-of-type, html body.frontpage .container main #videos article #meta ul li:last-of-type { margin-right: 0; }
-html body.frontpage .container main #projects article #meta #date, html body.frontpage .container main #videos article #meta #date { font-size: small; color: #74676a; }
-html body.frontpage .container main #projects article #meta #category, html body.frontpage .container main #videos article #meta #category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
-html body.frontpage .container main #projects article #meta #category a, html body.frontpage .container main #videos article #meta #category a { color: #982022; text-decoration: none; }
-html body.frontpage .container main #projects article #meta #category a:hover, html body.frontpage .container main #videos article #meta #category a:hover { color: #231f20; }
-html body.frontpage .container main #projects article #meta #authors, html body.frontpage .container main #videos article #meta #authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; }
-html body.frontpage .container main #projects article #meta #authors ul li:after, html body.frontpage .container main #videos article #meta #authors ul li:after { content: ','; }
-html body.frontpage .container main #projects article #meta #authors ul li:first-of-type, html body.frontpage .container main #videos article #meta #authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
-html body.frontpage .container main #projects article #meta #authors ul li:first-of-type:after, html body.frontpage .container main #projects article #meta #authors ul li:last-of-type:after, html body.frontpage .container main #videos article #meta #authors ul li:first-of-type:after, html body.frontpage .container main #videos article #meta #authors ul li:last-of-type:after { content: ''; }
-html body.frontpage .container main #projects article #share ul li, html body.frontpage .container main #videos article #share ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.frontpage .container main #projects article #share ul li:before, html body.frontpage .container main #videos article #share ul li:before { content: ''; }
-html body.frontpage .container main #projects article #share ul li, html body.frontpage .container main #videos article #share ul li { display: inline-block; float: left; margin-right: 1.25em; }
-html body.frontpage .container main #projects article #share ul li:last-of-type, html body.frontpage .container main #videos article #share ul li:last-of-type { margin-right: 0; }
-html body.frontpage .container main #projects article #share ul li .box .count, html body.frontpage .container main #videos article #share ul li .box .count { float: right; background: #231f20; color: white; font-size: small; padding: 0 0.3125em; }
-html body.frontpage .container main #projects article #share ul li .box .count a, html body.frontpage .container main #videos article #share ul li .box .count a { color: white; text-decoration: none; }
-html body.frontpage .container main #projects article #share ul li .box .count a:hover, html body.frontpage .container main #videos article #share ul li .box .count a:hover { color: white; }
-html body.frontpage .container main #projects article #share ul li .box .share img, html body.frontpage .container main #videos article #share ul li .box .share img { width: 30%; }
-html body.frontpage .container main #projects article #content a, html body.frontpage .container main #videos article #content a { color: #982022; text-decoration: none; }
-html body.frontpage .container main #projects article #content a:hover, html body.frontpage .container main #videos article #content a:hover { color: #982022; }
-@media only screen and (max-width: 48em) { html body.frontpage .container main #projects article, html body.frontpage .container main #videos article { width: 100%; margin-right: 0; float: left; } }
-@media only screen and (min-width: 48em) and (max-width: 79.999em) { html body.frontpage .container main #projects article, html body.frontpage .container main #videos article { width: 45%; margin-right: 10%; float: left; }
-  html body.frontpage .container main #projects article:nth-of-type(2), html body.frontpage .container main #videos article:nth-of-type(2) { margin-right: 0; }
-  html body.frontpage .container main #projects article:nth-of-type(3), html body.frontpage .container main #videos article:nth-of-type(3) { margin-right: 10%; }
-  html body.frontpage .container main #projects article:nth-of-type(4), html body.frontpage .container main #videos article:nth-of-type(4) { margin-right: 0; }
-  html body.frontpage .container main #projects article:nth-of-type(5), html body.frontpage .container main #videos article:nth-of-type(5) { margin-right: 10%; }
-  html body.frontpage .container main #projects article:nth-of-type(6), html body.frontpage .container main #videos article:nth-of-type(6) { margin-right: 0; }
-  html body.frontpage .container main #projects article:nth-of-type(7), html body.frontpage .container main #videos article:nth-of-type(7) { margin-right: 10%; }
-  html body.frontpage .container main #projects article:nth-of-type(8), html body.frontpage .container main #videos article:nth-of-type(8) { margin-right: 0; }
-  html body.frontpage .container main #projects article:nth-of-type(9), html body.frontpage .container main #videos article:nth-of-type(9) { margin-right: 10%; }
-  html body.frontpage .container main #projects article:nth-of-type(10), html body.frontpage .container main #videos article:nth-of-type(10) { margin-right: 0; } }
-@media only screen and (min-width: 80em) { html body.frontpage .container main #projects article, html body.frontpage .container main #videos article { width: 18%; margin-right: 2.5%; float: left; }
-  html body.frontpage .container main #projects article:nth-of-type(2), html body.frontpage .container main #videos article:nth-of-type(2) { margin-right: 2.5%; }
-  html body.frontpage .container main #projects article:nth-of-type(3), html body.frontpage .container main #videos article:nth-of-type(3) { margin-right: 2.5%; }
-  html body.frontpage .container main #projects article:nth-of-type(4), html body.frontpage .container main #videos article:nth-of-type(4) { margin-right: 2.5%; }
-  html body.frontpage .container main #projects article:nth-of-type(5), html body.frontpage .container main #videos article:nth-of-type(5) { margin-right: 0; }
-  html body.frontpage .container main #projects article:nth-of-type(6), html body.frontpage .container main #videos article:nth-of-type(6) { margin-right: 2.5%; }
-  html body.frontpage .container main #projects article:nth-of-type(7), html body.frontpage .container main #videos article:nth-of-type(7) { margin-right: 2.5%; }
-  html body.frontpage .container main #projects article:nth-of-type(8), html body.frontpage .container main #videos article:nth-of-type(8) { margin-right: 2.5%; }
-  html body.frontpage .container main #projects article:nth-of-type(9), html body.frontpage .container main #videos article:nth-of-type(9) { margin-right: 2.5%; }
-  html body.frontpage .container main #projects article:nth-of-type(10), html body.frontpage .container main #videos article:nth-of-type(10) { margin-right: 0; } }
-html body.frontpage .container main #projects article h1, html body.frontpage .container main #videos article h1 { font-size: medium; }
-html body.frontpage .container main #projects nav, html body.frontpage .container main #videos nav { margin-top: 1.25em; }
-html body.frontpage .container main #projects nav > h3, html body.frontpage .container main #videos nav > h3 { display: none; }
-html body.frontpage .container main #projects nav ol li, html body.frontpage .container main #videos nav ol li { display: inline-block; float: left; margin-right: 0.625em; }
-html body.frontpage .container main #projects nav ol li:last-of-type, html body.frontpage .container main #videos nav ol li:last-of-type { margin-right: 0; }
-html body.frontpage .container main #projects nav ol li a, html body.frontpage .container main #videos nav ol li a { padding: 0.625em 0.9375em; display: block; }
-html body.frontpage .container main #projects nav ol li.active a, html body.frontpage .container main #projects nav ol li:hover a, html body.frontpage .container main #videos nav ol li.active a, html body.frontpage .container main #videos nav ol li:hover a { background: #982022; color: white; }
-html body.frontpage .container main #projects nav ol li.active a a, html body.frontpage .container main #projects nav ol li:hover a a, html body.frontpage .container main #videos nav ol li.active a a, html body.frontpage .container main #videos nav ol li:hover a a { color: white; text-decoration: none; }
-html body.frontpage .container main #projects nav ol li.active a a:hover, html body.frontpage .container main #projects nav ol li:hover a a:hover, html body.frontpage .container main #videos nav ol li.active a a:hover, html body.frontpage .container main #videos nav ol li:hover a a:hover { color: white; }
-html body.frontpage .container main #projects nav ol li, html body.frontpage .container main #videos nav ol li { background: #f1f1f1; color: #231f20; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; }
-html body.frontpage .container main #projects nav ol li a, html body.frontpage .container main #videos nav ol li a { color: #231f20; text-decoration: none; }
-html body.frontpage .container main #projects nav ol li a:hover, html body.frontpage .container main #videos nav ol li a:hover { color: white; }
-html body.frontpage .container main #videos { margin-top: 3%; }
+html body.frontpage .container main #projects h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; }
+html body.frontpage .container main #projects h3 a { color: #982022; text-decoration: none; }
+html body.frontpage .container main #projects h3 a:hover { color: #231f20; }
+html body.frontpage .container main #projects article { margin-bottom: 3%; margin-bottom: 1.5%; }
+@media only screen and (max-width: 48em) { html body.frontpage .container main #projects article { width: 100%; margin-right: 0; float: left; } }
+@media only screen and (min-width: 48em) and (max-width: 79.999em) { html body.frontpage .container main #projects article { width: 45%; margin-right: 10%; float: left; }
+  html body.frontpage .container main #projects article:nth-of-type(2) { margin-right: 0; }
+  html body.frontpage .container main #projects article:nth-of-type(3) { margin-right: 10%; }
+  html body.frontpage .container main #projects article:nth-of-type(4) { margin-right: 0; }
+  html body.frontpage .container main #projects article:nth-of-type(5) { margin-right: 10%; }
+  html body.frontpage .container main #projects article:nth-of-type(6) { margin-right: 0; }
+  html body.frontpage .container main #projects article:nth-of-type(7) { margin-right: 10%; }
+  html body.frontpage .container main #projects article:nth-of-type(8) { margin-right: 0; }
+  html body.frontpage .container main #projects article:nth-of-type(9) { margin-right: 10%; }
+  html body.frontpage .container main #projects article:nth-of-type(10) { margin-right: 0; } }
+@media only screen and (min-width: 80em) { html body.frontpage .container main #projects article { width: 18%; margin-right: 2.5%; float: left; }
+  html body.frontpage .container main #projects article:nth-of-type(2) { margin-right: 2.5%; }
+  html body.frontpage .container main #projects article:nth-of-type(3) { margin-right: 2.5%; }
+  html body.frontpage .container main #projects article:nth-of-type(4) { margin-right: 2.5%; }
+  html body.frontpage .container main #projects article:nth-of-type(5) { margin-right: 0; }
+  html body.frontpage .container main #projects article:nth-of-type(6) { margin-right: 2.5%; }
+  html body.frontpage .container main #projects article:nth-of-type(7) { margin-right: 2.5%; }
+  html body.frontpage .container main #projects article:nth-of-type(8) { margin-right: 2.5%; }
+  html body.frontpage .container main #projects article:nth-of-type(9) { margin-right: 2.5%; }
+  html body.frontpage .container main #projects article:nth-of-type(10) { margin-right: 0; } }
+html body.frontpage .container main #projects article figure { display: block; }
+html body.frontpage .container main #projects article figcaption { display: none; }
+html body.frontpage .container main #projects article #excerpt { display: none; }
+html body.frontpage .container main #projects article #content { display: none; }
+html body.frontpage .container main #projects article #meta #category { display: none; }
+html body.frontpage .container main #projects article #meta #date { display: none; }
+html body.frontpage .container main #projects article #meta { display: none; }
+html body.frontpage .container main #projects article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; text-align: justify; }
+html body.frontpage .container main #projects article #meta { margin-top: 0.625em; }
+html body.frontpage .container main #projects article #meta > h3 { display: none; }
+html body.frontpage .container main #projects article #meta ul { margin: 0; }
+html body.frontpage .container main #projects article #meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
+html body.frontpage .container main #projects article #meta ul li:before { content: ''; }
+html body.frontpage .container main #projects article #meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
+html body.frontpage .container main #projects article #meta ul li:last-of-type { margin-right: 0; }
+html body.frontpage .container main #projects article #meta #date { font-size: small; color: #74676a; }
+html body.frontpage .container main #projects article #meta #category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
+html body.frontpage .container main #projects article #meta #category a { color: #982022; text-decoration: none; }
+html body.frontpage .container main #projects article #meta #category a:hover { color: #231f20; }
+html body.frontpage .container main #projects article #meta #authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; }
+html body.frontpage .container main #projects article #meta #authors ul li:after { content: ','; }
+html body.frontpage .container main #projects article #meta #authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+html body.frontpage .container main #projects article #meta #authors ul li:first-of-type:after, html body.frontpage .container main #projects article #meta #authors ul li:last-of-type:after { content: ''; }
+html body.frontpage .container main #projects article #share ul li { display: block; margin-right: none; float: none; padding-left: 0; }
+html body.frontpage .container main #projects article #share ul li:before { content: ''; }
+html body.frontpage .container main #projects article #share ul li { display: inline-block; float: left; margin-right: 1.25em; }
+html body.frontpage .container main #projects article #share ul li:last-of-type { margin-right: 0; }
+html body.frontpage .container main #projects article #share ul li .box .count { float: right; background: #231f20; color: white; font-size: small; padding: 0 0.3125em; }
+html body.frontpage .container main #projects article #share ul li .box .count a { color: white; text-decoration: none; }
+html body.frontpage .container main #projects article #share ul li .box .count a:hover { color: white; }
+html body.frontpage .container main #projects article #share ul li .box .share img { width: 30%; }
+html body.frontpage .container main #projects article #content a { color: #982022; text-decoration: none; }
+html body.frontpage .container main #projects article #content a:hover { color: #982022; }
+html body.frontpage .container main #projects article h1 { font-size: medium; }
+html body.frontpage .container main #most-read { margin-bottom: 1.5%; }
+html body.frontpage .container main #most-read section { background: #f1f1f1; }
+@media only screen and (max-width: 48em) { html body.frontpage .container main #most-read section { width: 100%; margin-right: 0; float: left; } }
+@media only screen and (min-width: 48em) and (max-width: 79.999em) { html body.frontpage .container main #most-read section { width: 45%; margin-right: 10%; float: left; }
+  html body.frontpage .container main #most-read section:nth-of-type(2) { margin-right: 0; }
+  html body.frontpage .container main #most-read section:nth-of-type(3) { margin-right: 10%; }
+  html body.frontpage .container main #most-read section:nth-of-type(4) { margin-right: 0; }
+  html body.frontpage .container main #most-read section:nth-of-type(5) { margin-right: 10%; }
+  html body.frontpage .container main #most-read section:nth-of-type(6) { margin-right: 0; }
+  html body.frontpage .container main #most-read section:nth-of-type(7) { margin-right: 10%; }
+  html body.frontpage .container main #most-read section:nth-of-type(8) { margin-right: 0; }
+  html body.frontpage .container main #most-read section:nth-of-type(9) { margin-right: 10%; }
+  html body.frontpage .container main #most-read section:nth-of-type(10) { margin-right: 0; } }
+@media only screen and (min-width: 80em) { html body.frontpage .container main #most-read section { width: 31.5%; margin-right: 2.5%; float: left; }
+  html body.frontpage .container main #most-read section:nth-of-type(2) { margin-right: 2.5%; }
+  html body.frontpage .container main #most-read section:nth-of-type(3) { margin-right: 0; }
+  html body.frontpage .container main #most-read section:nth-of-type(4) { margin-right: 2.5%; }
+  html body.frontpage .container main #most-read section:nth-of-type(5) { margin-right: 2.5%; }
+  html body.frontpage .container main #most-read section:nth-of-type(6) { margin-right: 0; }
+  html body.frontpage .container main #most-read section:nth-of-type(7) { margin-right: 2.5%; }
+  html body.frontpage .container main #most-read section:nth-of-type(8) { margin-right: 2.5%; }
+  html body.frontpage .container main #most-read section:nth-of-type(9) { margin-right: 0; }
+  html body.frontpage .container main #most-read section:nth-of-type(10) { margin-right: 2.5%; } }
+html body.frontpage .container main #most-read section h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; }
+html body.frontpage .container main #most-read section h3 a { color: #982022; text-decoration: none; }
+html body.frontpage .container main #most-read section h3 a:hover { color: #231f20; }
+html body.frontpage .container main #most-read section article { margin-bottom: 3%; border-bottom: 1px solid #f1f1f1; padding-bottom: 3%; }
+html body.frontpage .container main #most-read section article figure { display: none; }
+html body.frontpage .container main #most-read section article figcaption { display: none; }
+html body.frontpage .container main #most-read section article #excerpt { display: none; }
+html body.frontpage .container main #most-read section article #content { display: none; }
+html body.frontpage .container main #most-read section article #meta #category { display: none; }
+html body.frontpage .container main #most-read section article #meta #date { display: none; }
+html body.frontpage .container main #most-read section article #meta { display: none; }
+html body.frontpage .container main #most-read section article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; text-align: justify; }
+html body.frontpage .container main #most-read section article #meta { margin-top: 0.625em; }
+html body.frontpage .container main #most-read section article #meta > h3 { display: none; }
+html body.frontpage .container main #most-read section article #meta ul { margin: 0; }
+html body.frontpage .container main #most-read section article #meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
+html body.frontpage .container main #most-read section article #meta ul li:before { content: ''; }
+html body.frontpage .container main #most-read section article #meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
+html body.frontpage .container main #most-read section article #meta ul li:last-of-type { margin-right: 0; }
+html body.frontpage .container main #most-read section article #meta #date { font-size: small; color: #74676a; }
+html body.frontpage .container main #most-read section article #meta #category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
+html body.frontpage .container main #most-read section article #meta #category a { color: #982022; text-decoration: none; }
+html body.frontpage .container main #most-read section article #meta #category a:hover { color: #231f20; }
+html body.frontpage .container main #most-read section article #meta #authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; }
+html body.frontpage .container main #most-read section article #meta #authors ul li:after { content: ','; }
+html body.frontpage .container main #most-read section article #meta #authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+html body.frontpage .container main #most-read section article #meta #authors ul li:first-of-type:after, html body.frontpage .container main #most-read section article #meta #authors ul li:last-of-type:after { content: ''; }
+html body.frontpage .container main #most-read section article #share ul li { display: block; margin-right: none; float: none; padding-left: 0; }
+html body.frontpage .container main #most-read section article #share ul li:before { content: ''; }
+html body.frontpage .container main #most-read section article #share ul li { display: inline-block; float: left; margin-right: 1.25em; }
+html body.frontpage .container main #most-read section article #share ul li:last-of-type { margin-right: 0; }
+html body.frontpage .container main #most-read section article #share ul li .box .count { float: right; background: #231f20; color: white; font-size: small; padding: 0 0.3125em; }
+html body.frontpage .container main #most-read section article #share ul li .box .count a { color: white; text-decoration: none; }
+html body.frontpage .container main #most-read section article #share ul li .box .count a:hover { color: white; }
+html body.frontpage .container main #most-read section article #share ul li .box .share img { width: 30%; }
+html body.frontpage .container main #most-read section article #content a { color: #982022; text-decoration: none; }
+html body.frontpage .container main #most-read section article #content a:hover { color: #982022; }
+html body.frontpage .container main #most-read section article h1 { font-size: medium; }
+html body.frontpage .container main #most-read section article { padding-left: 0.625em; padding-right: 0.625em; border-color: white; }
+html body.frontpage .container main #most-read section article:last-of-type { border: none; }
+html body.frontpage .container main #videos h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; }
+html body.frontpage .container main #videos h3 a { color: #982022; text-decoration: none; }
+html body.frontpage .container main #videos h3 a:hover { color: #231f20; }
+html body.frontpage .container main #videos article { margin-bottom: 3%; }
 @media only screen and (max-width: 48em) { html body.frontpage .container main #videos article { width: 100%; margin-right: 0; float: left; } }
 @media only screen and (min-width: 48em) and (max-width: 79.999em) { html body.frontpage .container main #videos article { width: 45%; margin-right: 10%; float: left; }
   html body.frontpage .container main #videos article:nth-of-type(2) { margin-right: 0; }
@@ -614,71 +689,40 @@ html body.frontpage .container main #videos { margin-top: 3%; }
   html body.frontpage .container main #videos article:nth-of-type(8) { margin-right: 2%; }
   html body.frontpage .container main #videos article:nth-of-type(9) { margin-right: 2%; }
   html body.frontpage .container main #videos article:nth-of-type(10) { margin-right: 2%; } }
-html body.frontpage .container main #most-read aside { background: #f1f1f1; }
-@media only screen and (max-width: 48em) { html body.frontpage .container main #most-read aside { width: 100%; margin-right: 0; float: left; } }
-@media only screen and (min-width: 48em) and (max-width: 79.999em) { html body.frontpage .container main #most-read aside { width: 45%; margin-right: 10%; float: left; }
-  html body.frontpage .container main #most-read aside:nth-of-type(2) { margin-right: 0; }
-  html body.frontpage .container main #most-read aside:nth-of-type(3) { margin-right: 10%; }
-  html body.frontpage .container main #most-read aside:nth-of-type(4) { margin-right: 0; }
-  html body.frontpage .container main #most-read aside:nth-of-type(5) { margin-right: 10%; }
-  html body.frontpage .container main #most-read aside:nth-of-type(6) { margin-right: 0; }
-  html body.frontpage .container main #most-read aside:nth-of-type(7) { margin-right: 10%; }
-  html body.frontpage .container main #most-read aside:nth-of-type(8) { margin-right: 0; }
-  html body.frontpage .container main #most-read aside:nth-of-type(9) { margin-right: 10%; }
-  html body.frontpage .container main #most-read aside:nth-of-type(10) { margin-right: 0; } }
-@media only screen and (min-width: 80em) { html body.frontpage .container main #most-read aside { width: 31.5%; margin-right: 2.5%; float: left; }
-  html body.frontpage .container main #most-read aside:nth-of-type(2) { margin-right: 2.5%; }
-  html body.frontpage .container main #most-read aside:nth-of-type(3) { margin-right: 0; }
-  html body.frontpage .container main #most-read aside:nth-of-type(4) { margin-right: 2.5%; }
-  html body.frontpage .container main #most-read aside:nth-of-type(5) { margin-right: 2.5%; }
-  html body.frontpage .container main #most-read aside:nth-of-type(6) { margin-right: 0; }
-  html body.frontpage .container main #most-read aside:nth-of-type(7) { margin-right: 2.5%; }
-  html body.frontpage .container main #most-read aside:nth-of-type(8) { margin-right: 2.5%; }
-  html body.frontpage .container main #most-read aside:nth-of-type(9) { margin-right: 0; }
-  html body.frontpage .container main #most-read aside:nth-of-type(10) { margin-right: 2.5%; } }
-html body.frontpage .container main #most-read aside h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; }
-html body.frontpage .container main #most-read aside h3 a { color: #982022; text-decoration: none; }
-html body.frontpage .container main #most-read aside h3 a:hover { color: #231f20; }
-html body.frontpage .container main #most-read aside article { margin-bottom: 3%; border-bottom: 1px solid #f1f1f1; padding-bottom: 3%; }
-html body.frontpage .container main #most-read aside article figure { display: none; }
-html body.frontpage .container main #most-read aside article figcaption { display: none; }
-html body.frontpage .container main #most-read aside article #excerpt { display: none; }
-html body.frontpage .container main #most-read aside article #content { display: none; }
-html body.frontpage .container main #most-read aside article #meta #category { display: none; }
-html body.frontpage .container main #most-read aside article #meta #date { display: none; }
-html body.frontpage .container main #most-read aside article #meta { display: none; }
-html body.frontpage .container main #most-read aside article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; text-align: justify; }
-html body.frontpage .container main #most-read aside article #meta { margin-top: 0.625em; }
-html body.frontpage .container main #most-read aside article #meta > h3 { display: none; }
-html body.frontpage .container main #most-read aside article #meta ul { margin: 0; }
-html body.frontpage .container main #most-read aside article #meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.frontpage .container main #most-read aside article #meta ul li:before { content: ''; }
-html body.frontpage .container main #most-read aside article #meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
-html body.frontpage .container main #most-read aside article #meta ul li:last-of-type { margin-right: 0; }
-html body.frontpage .container main #most-read aside article #meta #date { font-size: small; color: #74676a; }
-html body.frontpage .container main #most-read aside article #meta #category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
-html body.frontpage .container main #most-read aside article #meta #category a { color: #982022; text-decoration: none; }
-html body.frontpage .container main #most-read aside article #meta #category a:hover { color: #231f20; }
-html body.frontpage .container main #most-read aside article #meta #authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; }
-html body.frontpage .container main #most-read aside article #meta #authors ul li:after { content: ','; }
-html body.frontpage .container main #most-read aside article #meta #authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
-html body.frontpage .container main #most-read aside article #meta #authors ul li:first-of-type:after, html body.frontpage .container main #most-read aside article #meta #authors ul li:last-of-type:after { content: ''; }
-html body.frontpage .container main #most-read aside article #share ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.frontpage .container main #most-read aside article #share ul li:before { content: ''; }
-html body.frontpage .container main #most-read aside article #share ul li { display: inline-block; float: left; margin-right: 1.25em; }
-html body.frontpage .container main #most-read aside article #share ul li:last-of-type { margin-right: 0; }
-html body.frontpage .container main #most-read aside article #share ul li .box .count { float: right; background: #231f20; color: white; font-size: small; padding: 0 0.3125em; }
-html body.frontpage .container main #most-read aside article #share ul li .box .count a { color: white; text-decoration: none; }
-html body.frontpage .container main #most-read aside article #share ul li .box .count a:hover { color: white; }
-html body.frontpage .container main #most-read aside article #share ul li .box .share img { width: 30%; }
-html body.frontpage .container main #most-read aside article #content a { color: #982022; text-decoration: none; }
-html body.frontpage .container main #most-read aside article #content a:hover { color: #982022; }
-html body.frontpage .container main #most-read aside article h1 { font-size: medium; }
-html body.frontpage .container main #most-read aside h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; border-bottom: 0.625em solid white; }
-html body.frontpage .container main #most-read aside h3 a { color: #982022; text-decoration: none; }
-html body.frontpage .container main #most-read aside h3 a:hover { color: #231f20; }
-html body.frontpage .container main #most-read aside article { padding: 0 0.625em 0.625em; border-color: white; }
-html body.frontpage .container main #most-read aside article:last-of-type { border-bottom: 0; margin-bottom: 0; }
+html body.frontpage .container main #videos article figure { display: block; }
+html body.frontpage .container main #videos article figcaption { display: none; }
+html body.frontpage .container main #videos article #excerpt { display: none; }
+html body.frontpage .container main #videos article #content { display: none; }
+html body.frontpage .container main #videos article #meta #category { display: none; }
+html body.frontpage .container main #videos article #meta #date { display: none; }
+html body.frontpage .container main #videos article #meta { display: none; }
+html body.frontpage .container main #videos article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; text-align: justify; }
+html body.frontpage .container main #videos article #meta { margin-top: 0.625em; }
+html body.frontpage .container main #videos article #meta > h3 { display: none; }
+html body.frontpage .container main #videos article #meta ul { margin: 0; }
+html body.frontpage .container main #videos article #meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
+html body.frontpage .container main #videos article #meta ul li:before { content: ''; }
+html body.frontpage .container main #videos article #meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
+html body.frontpage .container main #videos article #meta ul li:last-of-type { margin-right: 0; }
+html body.frontpage .container main #videos article #meta #date { font-size: small; color: #74676a; }
+html body.frontpage .container main #videos article #meta #category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
+html body.frontpage .container main #videos article #meta #category a { color: #982022; text-decoration: none; }
+html body.frontpage .container main #videos article #meta #category a:hover { color: #231f20; }
+html body.frontpage .container main #videos article #meta #authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; }
+html body.frontpage .container main #videos article #meta #authors ul li:after { content: ','; }
+html body.frontpage .container main #videos article #meta #authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+html body.frontpage .container main #videos article #meta #authors ul li:first-of-type:after, html body.frontpage .container main #videos article #meta #authors ul li:last-of-type:after { content: ''; }
+html body.frontpage .container main #videos article #share ul li { display: block; margin-right: none; float: none; padding-left: 0; }
+html body.frontpage .container main #videos article #share ul li:before { content: ''; }
+html body.frontpage .container main #videos article #share ul li { display: inline-block; float: left; margin-right: 1.25em; }
+html body.frontpage .container main #videos article #share ul li:last-of-type { margin-right: 0; }
+html body.frontpage .container main #videos article #share ul li .box .count { float: right; background: #231f20; color: white; font-size: small; padding: 0 0.3125em; }
+html body.frontpage .container main #videos article #share ul li .box .count a { color: white; text-decoration: none; }
+html body.frontpage .container main #videos article #share ul li .box .count a:hover { color: white; }
+html body.frontpage .container main #videos article #share ul li .box .share img { width: 30%; }
+html body.frontpage .container main #videos article #content a { color: #982022; text-decoration: none; }
+html body.frontpage .container main #videos article #content a:hover { color: #982022; }
+html body.frontpage .container main #videos article h1 { font-size: medium; }
 html body.category main { overflow: hidden; }
 html body.category main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; position: relative; top: -2.5em; /* This is the margin between sidebar elements ... */ }
 html body.category main aside #spacer > h3 { display: none; }
@@ -780,45 +824,41 @@ html body.category main #articles nav ol li { background: #f1f1f1; color: #231f2
 html body.category main #articles nav ol li a { color: #231f20; text-decoration: none; }
 html body.category main #articles nav ol li a:hover { color: white; }
 html body.category main aside { width: 33%; margin-right: 0; float: left; }
-html body.category main aside section { padding: 1.25em; width: calc(100% - 2.5em); background: #f1f1f1; margin-bottom: 2.5em; }
-html body.category main aside section h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; }
-html body.category main aside section h3 a { color: #982022; text-decoration: none; }
-html body.category main aside section h3 a:hover { color: #231f20; }
-html body.category main aside section article { margin-bottom: 3%; border-bottom: 1px solid #f1f1f1; padding-bottom: 3%; }
-html body.category main aside section article figure { display: none; }
-html body.category main aside section article figcaption { display: none; }
-html body.category main aside section article #excerpt { display: none; }
-html body.category main aside section article #content { display: none; }
-html body.category main aside section article #meta #category { display: none; }
-html body.category main aside section article #meta #date { display: none; }
-html body.category main aside section article #meta { display: none; }
-html body.category main aside section article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; text-align: justify; }
-html body.category main aside section article #meta { margin-top: 0.625em; }
-html body.category main aside section article #meta > h3 { display: none; }
-html body.category main aside section article #meta ul { margin: 0; }
-html body.category main aside section article #meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.category main aside section article #meta ul li:before { content: ''; }
-html body.category main aside section article #meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
-html body.category main aside section article #meta ul li:last-of-type { margin-right: 0; }
-html body.category main aside section article #meta #date { font-size: small; color: #74676a; }
-html body.category main aside section article #meta #category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
-html body.category main aside section article #meta #category a { color: #982022; text-decoration: none; }
-html body.category main aside section article #meta #category a:hover { color: #231f20; }
-html body.category main aside section article #meta #authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; }
-html body.category main aside section article #meta #authors ul li:after { content: ','; }
-html body.category main aside section article #meta #authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
-html body.category main aside section article #meta #authors ul li:first-of-type:after, html body.category main aside section article #meta #authors ul li:last-of-type:after { content: ''; }
-html body.category main aside section article #share ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.category main aside section article #share ul li:before { content: ''; }
-html body.category main aside section article #share ul li { display: inline-block; float: left; margin-right: 1.25em; }
-html body.category main aside section article #share ul li:last-of-type { margin-right: 0; }
-html body.category main aside section article #share ul li .box .count { float: right; background: #231f20; color: white; font-size: small; padding: 0 0.3125em; }
-html body.category main aside section article #share ul li .box .count a { color: white; text-decoration: none; }
-html body.category main aside section article #share ul li .box .count a:hover { color: white; }
-html body.category main aside section article #share ul li .box .share img { width: 30%; }
-html body.category main aside section article #content a { color: #982022; text-decoration: none; }
-html body.category main aside section article #content a:hover { color: #982022; }
-html body.category main aside section article h1 { font-size: medium; }
+html body.category main aside section { padding: 1.25em; width: calc(100% - 2.5em); background: #f1f1f1; margin-bottom: 3%; border-bottom: 1px solid #f1f1f1; padding-bottom: 3%; margin-bottom: 2.5em; }
+html body.category main aside section figure { display: none; }
+html body.category main aside section figcaption { display: none; }
+html body.category main aside section #excerpt { display: none; }
+html body.category main aside section #content { display: none; }
+html body.category main aside section #meta #category { display: none; }
+html body.category main aside section #meta #date { display: none; }
+html body.category main aside section #meta { display: none; }
+html body.category main aside section #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; text-align: justify; }
+html body.category main aside section #meta { margin-top: 0.625em; }
+html body.category main aside section #meta > h3 { display: none; }
+html body.category main aside section #meta ul { margin: 0; }
+html body.category main aside section #meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
+html body.category main aside section #meta ul li:before { content: ''; }
+html body.category main aside section #meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
+html body.category main aside section #meta ul li:last-of-type { margin-right: 0; }
+html body.category main aside section #meta #date { font-size: small; color: #74676a; }
+html body.category main aside section #meta #category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
+html body.category main aside section #meta #category a { color: #982022; text-decoration: none; }
+html body.category main aside section #meta #category a:hover { color: #231f20; }
+html body.category main aside section #meta #authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; }
+html body.category main aside section #meta #authors ul li:after { content: ','; }
+html body.category main aside section #meta #authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+html body.category main aside section #meta #authors ul li:first-of-type:after, html body.category main aside section #meta #authors ul li:last-of-type:after { content: ''; }
+html body.category main aside section #share ul li { display: block; margin-right: none; float: none; padding-left: 0; }
+html body.category main aside section #share ul li:before { content: ''; }
+html body.category main aside section #share ul li { display: inline-block; float: left; margin-right: 1.25em; }
+html body.category main aside section #share ul li:last-of-type { margin-right: 0; }
+html body.category main aside section #share ul li .box .count { float: right; background: #231f20; color: white; font-size: small; padding: 0 0.3125em; }
+html body.category main aside section #share ul li .box .count a { color: white; text-decoration: none; }
+html body.category main aside section #share ul li .box .count a:hover { color: white; }
+html body.category main aside section #share ul li .box .share img { width: 30%; }
+html body.category main aside section #content a { color: #982022; text-decoration: none; }
+html body.category main aside section #content a:hover { color: #982022; }
+html body.category main aside section h1 { font-size: medium; }
 html body.category main aside section h3 { background: #f1f1f1; }
 html body.category main aside section article { border-color: white; }
 html body.category main aside section article h1 { font-weight: normal; }
@@ -959,45 +999,41 @@ html body.tag main #articles nav ol li { background: #f1f1f1; color: #231f20; -w
 html body.tag main #articles nav ol li a { color: #231f20; text-decoration: none; }
 html body.tag main #articles nav ol li a:hover { color: white; }
 html body.tag main aside { width: 33%; margin-right: 0; float: left; }
-html body.tag main aside section { padding: 1.25em; width: calc(100% - 2.5em); background: #f1f1f1; margin-bottom: 2.5em; }
-html body.tag main aside section h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; }
-html body.tag main aside section h3 a { color: #982022; text-decoration: none; }
-html body.tag main aside section h3 a:hover { color: #231f20; }
-html body.tag main aside section article { margin-bottom: 3%; border-bottom: 1px solid #f1f1f1; padding-bottom: 3%; }
-html body.tag main aside section article figure { display: none; }
-html body.tag main aside section article figcaption { display: none; }
-html body.tag main aside section article #excerpt { display: none; }
-html body.tag main aside section article #content { display: none; }
-html body.tag main aside section article #meta #category { display: none; }
-html body.tag main aside section article #meta #date { display: none; }
-html body.tag main aside section article #meta { display: none; }
-html body.tag main aside section article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; text-align: justify; }
-html body.tag main aside section article #meta { margin-top: 0.625em; }
-html body.tag main aside section article #meta > h3 { display: none; }
-html body.tag main aside section article #meta ul { margin: 0; }
-html body.tag main aside section article #meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.tag main aside section article #meta ul li:before { content: ''; }
-html body.tag main aside section article #meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
-html body.tag main aside section article #meta ul li:last-of-type { margin-right: 0; }
-html body.tag main aside section article #meta #date { font-size: small; color: #74676a; }
-html body.tag main aside section article #meta #category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
-html body.tag main aside section article #meta #category a { color: #982022; text-decoration: none; }
-html body.tag main aside section article #meta #category a:hover { color: #231f20; }
-html body.tag main aside section article #meta #authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; }
-html body.tag main aside section article #meta #authors ul li:after { content: ','; }
-html body.tag main aside section article #meta #authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
-html body.tag main aside section article #meta #authors ul li:first-of-type:after, html body.tag main aside section article #meta #authors ul li:last-of-type:after { content: ''; }
-html body.tag main aside section article #share ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.tag main aside section article #share ul li:before { content: ''; }
-html body.tag main aside section article #share ul li { display: inline-block; float: left; margin-right: 1.25em; }
-html body.tag main aside section article #share ul li:last-of-type { margin-right: 0; }
-html body.tag main aside section article #share ul li .box .count { float: right; background: #231f20; color: white; font-size: small; padding: 0 0.3125em; }
-html body.tag main aside section article #share ul li .box .count a { color: white; text-decoration: none; }
-html body.tag main aside section article #share ul li .box .count a:hover { color: white; }
-html body.tag main aside section article #share ul li .box .share img { width: 30%; }
-html body.tag main aside section article #content a { color: #982022; text-decoration: none; }
-html body.tag main aside section article #content a:hover { color: #982022; }
-html body.tag main aside section article h1 { font-size: medium; }
+html body.tag main aside section { padding: 1.25em; width: calc(100% - 2.5em); background: #f1f1f1; margin-bottom: 3%; border-bottom: 1px solid #f1f1f1; padding-bottom: 3%; margin-bottom: 2.5em; }
+html body.tag main aside section figure { display: none; }
+html body.tag main aside section figcaption { display: none; }
+html body.tag main aside section #excerpt { display: none; }
+html body.tag main aside section #content { display: none; }
+html body.tag main aside section #meta #category { display: none; }
+html body.tag main aside section #meta #date { display: none; }
+html body.tag main aside section #meta { display: none; }
+html body.tag main aside section #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; text-align: justify; }
+html body.tag main aside section #meta { margin-top: 0.625em; }
+html body.tag main aside section #meta > h3 { display: none; }
+html body.tag main aside section #meta ul { margin: 0; }
+html body.tag main aside section #meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
+html body.tag main aside section #meta ul li:before { content: ''; }
+html body.tag main aside section #meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
+html body.tag main aside section #meta ul li:last-of-type { margin-right: 0; }
+html body.tag main aside section #meta #date { font-size: small; color: #74676a; }
+html body.tag main aside section #meta #category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
+html body.tag main aside section #meta #category a { color: #982022; text-decoration: none; }
+html body.tag main aside section #meta #category a:hover { color: #231f20; }
+html body.tag main aside section #meta #authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; }
+html body.tag main aside section #meta #authors ul li:after { content: ','; }
+html body.tag main aside section #meta #authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+html body.tag main aside section #meta #authors ul li:first-of-type:after, html body.tag main aside section #meta #authors ul li:last-of-type:after { content: ''; }
+html body.tag main aside section #share ul li { display: block; margin-right: none; float: none; padding-left: 0; }
+html body.tag main aside section #share ul li:before { content: ''; }
+html body.tag main aside section #share ul li { display: inline-block; float: left; margin-right: 1.25em; }
+html body.tag main aside section #share ul li:last-of-type { margin-right: 0; }
+html body.tag main aside section #share ul li .box .count { float: right; background: #231f20; color: white; font-size: small; padding: 0 0.3125em; }
+html body.tag main aside section #share ul li .box .count a { color: white; text-decoration: none; }
+html body.tag main aside section #share ul li .box .count a:hover { color: white; }
+html body.tag main aside section #share ul li .box .share img { width: 30%; }
+html body.tag main aside section #content a { color: #982022; text-decoration: none; }
+html body.tag main aside section #content a:hover { color: #982022; }
+html body.tag main aside section h1 { font-size: medium; }
 html body.tag main aside section h3 { background: #f1f1f1; }
 html body.tag main aside section article { border-color: white; }
 html body.tag main aside section article h1 { font-weight: normal; }
@@ -1039,12 +1075,31 @@ html body.tag main aside section#projects article figure { width: 50%; float: le
 html body.projects main #articles h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; }
 html body.projects main #articles h3 a { color: #982022; text-decoration: none; }
 html body.projects main #articles h3 a:hover { color: #231f20; }
-html body.projects main #articles .title { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; padding: 1.45833em 0; }
-html body.projects main #articles .title a { color: #982022; text-decoration: none; }
-html body.projects main #articles .title a:hover { color: #231f20; }
-html body.projects main #articles article { margin-bottom: 3%; }
+html body.projects main #articles article { margin-bottom: 3%; margin-bottom: 1.5%; }
+@media only screen and (max-width: 48em) { html body.projects main #articles article { width: 100%; margin-right: 0; float: left; } }
+@media only screen and (min-width: 48em) and (max-width: 79.999em) { html body.projects main #articles article { width: 45%; margin-right: 10%; float: left; }
+  html body.projects main #articles article:nth-of-type(2) { margin-right: 0; }
+  html body.projects main #articles article:nth-of-type(3) { margin-right: 10%; }
+  html body.projects main #articles article:nth-of-type(4) { margin-right: 0; }
+  html body.projects main #articles article:nth-of-type(5) { margin-right: 10%; }
+  html body.projects main #articles article:nth-of-type(6) { margin-right: 0; }
+  html body.projects main #articles article:nth-of-type(7) { margin-right: 10%; }
+  html body.projects main #articles article:nth-of-type(8) { margin-right: 0; }
+  html body.projects main #articles article:nth-of-type(9) { margin-right: 10%; }
+  html body.projects main #articles article:nth-of-type(10) { margin-right: 0; } }
+@media only screen and (min-width: 80em) { html body.projects main #articles article { width: 18%; margin-right: 2.5%; float: left; }
+  html body.projects main #articles article:nth-of-type(2) { margin-right: 2.5%; }
+  html body.projects main #articles article:nth-of-type(3) { margin-right: 2.5%; }
+  html body.projects main #articles article:nth-of-type(4) { margin-right: 2.5%; }
+  html body.projects main #articles article:nth-of-type(5) { margin-right: 0; }
+  html body.projects main #articles article:nth-of-type(6) { margin-right: 2.5%; }
+  html body.projects main #articles article:nth-of-type(7) { margin-right: 2.5%; }
+  html body.projects main #articles article:nth-of-type(8) { margin-right: 2.5%; }
+  html body.projects main #articles article:nth-of-type(9) { margin-right: 2.5%; }
+  html body.projects main #articles article:nth-of-type(10) { margin-right: 0; } }
 html body.projects main #articles article figure { display: block; }
 html body.projects main #articles article figcaption { display: none; }
+html body.projects main #articles article #excerpt { display: none; }
 html body.projects main #articles article #content { display: none; }
 html body.projects main #articles article #meta #category { display: none; }
 html body.projects main #articles article #meta #date { display: none; }
@@ -1075,39 +1130,7 @@ html body.projects main #articles article #share ul li .box .count a:hover { col
 html body.projects main #articles article #share ul li .box .share img { width: 30%; }
 html body.projects main #articles article #content a { color: #982022; text-decoration: none; }
 html body.projects main #articles article #content a:hover { color: #982022; }
-@media only screen and (max-width: 48em) { html body.projects main #articles article { width: 100%; margin-right: 0; float: left; } }
-@media only screen and (min-width: 48em) and (max-width: 79.999em) { html body.projects main #articles article { width: 45%; margin-right: 10%; float: left; }
-  html body.projects main #articles article:nth-of-type(2) { margin-right: 0; }
-  html body.projects main #articles article:nth-of-type(3) { margin-right: 10%; }
-  html body.projects main #articles article:nth-of-type(4) { margin-right: 0; }
-  html body.projects main #articles article:nth-of-type(5) { margin-right: 10%; }
-  html body.projects main #articles article:nth-of-type(6) { margin-right: 0; }
-  html body.projects main #articles article:nth-of-type(7) { margin-right: 10%; }
-  html body.projects main #articles article:nth-of-type(8) { margin-right: 0; }
-  html body.projects main #articles article:nth-of-type(9) { margin-right: 10%; }
-  html body.projects main #articles article:nth-of-type(10) { margin-right: 0; } }
-@media only screen and (min-width: 80em) { html body.projects main #articles article { width: 18%; margin-right: 2.5%; float: left; }
-  html body.projects main #articles article:nth-of-type(2) { margin-right: 2.5%; }
-  html body.projects main #articles article:nth-of-type(3) { margin-right: 2.5%; }
-  html body.projects main #articles article:nth-of-type(4) { margin-right: 2.5%; }
-  html body.projects main #articles article:nth-of-type(5) { margin-right: 0; }
-  html body.projects main #articles article:nth-of-type(6) { margin-right: 2.5%; }
-  html body.projects main #articles article:nth-of-type(7) { margin-right: 2.5%; }
-  html body.projects main #articles article:nth-of-type(8) { margin-right: 2.5%; }
-  html body.projects main #articles article:nth-of-type(9) { margin-right: 2.5%; }
-  html body.projects main #articles article:nth-of-type(10) { margin-right: 0; } }
 html body.projects main #articles article h1 { font-size: medium; }
-html body.projects main #articles nav { margin-top: 1.25em; }
-html body.projects main #articles nav > h3 { display: none; }
-html body.projects main #articles nav ol li { display: inline-block; float: left; margin-right: 0.625em; }
-html body.projects main #articles nav ol li:last-of-type { margin-right: 0; }
-html body.projects main #articles nav ol li a { padding: 0.625em 0.9375em; display: block; }
-html body.projects main #articles nav ol li.active a, html body.projects main #articles nav ol li:hover a { background: #982022; color: white; }
-html body.projects main #articles nav ol li.active a a, html body.projects main #articles nav ol li:hover a a { color: white; text-decoration: none; }
-html body.projects main #articles nav ol li.active a a:hover, html body.projects main #articles nav ol li:hover a a:hover { color: white; }
-html body.projects main #articles nav ol li { background: #f1f1f1; color: #231f20; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; }
-html body.projects main #articles nav ol li a { color: #231f20; text-decoration: none; }
-html body.projects main #articles nav ol li a:hover { color: white; }
 html body.jobs main #articles article { width: 100%; max-width: 100%; float: left; max-width: 43.75em; line-height: 1.75; /* Padding of individual elements
 */ /* Padding of consecutive elements
 */ border-bottom: 1px solid #f1f1f1; }
@@ -1577,45 +1600,41 @@ html body.article main #article #most-read article #share ul li .box .share img,
 html body.article main #article #most-read article #content a, html body.article main #article #most-recent article #content a { color: #982022; text-decoration: none; }
 html body.article main #article #most-read article #content a:hover, html body.article main #article #most-recent article #content a:hover { color: #982022; }
 html body.article main aside { width: 33%; margin-right: 0; float: left; }
-html body.article main aside section { padding: 1.25em; width: calc(100% - 2.5em); background: #f1f1f1; margin-bottom: 2.5em; }
-html body.article main aside section h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; }
-html body.article main aside section h3 a { color: #982022; text-decoration: none; }
-html body.article main aside section h3 a:hover { color: #231f20; }
-html body.article main aside section article { margin-bottom: 3%; border-bottom: 1px solid #f1f1f1; padding-bottom: 3%; }
-html body.article main aside section article figure { display: none; }
-html body.article main aside section article figcaption { display: none; }
-html body.article main aside section article #excerpt { display: none; }
-html body.article main aside section article #content { display: none; }
-html body.article main aside section article #meta #category { display: none; }
-html body.article main aside section article #meta #date { display: none; }
-html body.article main aside section article #meta { display: none; }
-html body.article main aside section article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; text-align: justify; }
-html body.article main aside section article #meta { margin-top: 0.625em; }
-html body.article main aside section article #meta > h3 { display: none; }
-html body.article main aside section article #meta ul { margin: 0; }
-html body.article main aside section article #meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.article main aside section article #meta ul li:before { content: ''; }
-html body.article main aside section article #meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
-html body.article main aside section article #meta ul li:last-of-type { margin-right: 0; }
-html body.article main aside section article #meta #date { font-size: small; color: #74676a; }
-html body.article main aside section article #meta #category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
-html body.article main aside section article #meta #category a { color: #982022; text-decoration: none; }
-html body.article main aside section article #meta #category a:hover { color: #231f20; }
-html body.article main aside section article #meta #authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; }
-html body.article main aside section article #meta #authors ul li:after { content: ','; }
-html body.article main aside section article #meta #authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
-html body.article main aside section article #meta #authors ul li:first-of-type:after, html body.article main aside section article #meta #authors ul li:last-of-type:after { content: ''; }
-html body.article main aside section article #share ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.article main aside section article #share ul li:before { content: ''; }
-html body.article main aside section article #share ul li { display: inline-block; float: left; margin-right: 1.25em; }
-html body.article main aside section article #share ul li:last-of-type { margin-right: 0; }
-html body.article main aside section article #share ul li .box .count { float: right; background: #231f20; color: white; font-size: small; padding: 0 0.3125em; }
-html body.article main aside section article #share ul li .box .count a { color: white; text-decoration: none; }
-html body.article main aside section article #share ul li .box .count a:hover { color: white; }
-html body.article main aside section article #share ul li .box .share img { width: 30%; }
-html body.article main aside section article #content a { color: #982022; text-decoration: none; }
-html body.article main aside section article #content a:hover { color: #982022; }
-html body.article main aside section article h1 { font-size: medium; }
+html body.article main aside section { padding: 1.25em; width: calc(100% - 2.5em); background: #f1f1f1; margin-bottom: 3%; border-bottom: 1px solid #f1f1f1; padding-bottom: 3%; margin-bottom: 2.5em; }
+html body.article main aside section figure { display: none; }
+html body.article main aside section figcaption { display: none; }
+html body.article main aside section #excerpt { display: none; }
+html body.article main aside section #content { display: none; }
+html body.article main aside section #meta #category { display: none; }
+html body.article main aside section #meta #date { display: none; }
+html body.article main aside section #meta { display: none; }
+html body.article main aside section #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; text-align: justify; }
+html body.article main aside section #meta { margin-top: 0.625em; }
+html body.article main aside section #meta > h3 { display: none; }
+html body.article main aside section #meta ul { margin: 0; }
+html body.article main aside section #meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
+html body.article main aside section #meta ul li:before { content: ''; }
+html body.article main aside section #meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
+html body.article main aside section #meta ul li:last-of-type { margin-right: 0; }
+html body.article main aside section #meta #date { font-size: small; color: #74676a; }
+html body.article main aside section #meta #category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
+html body.article main aside section #meta #category a { color: #982022; text-decoration: none; }
+html body.article main aside section #meta #category a:hover { color: #231f20; }
+html body.article main aside section #meta #authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; }
+html body.article main aside section #meta #authors ul li:after { content: ','; }
+html body.article main aside section #meta #authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+html body.article main aside section #meta #authors ul li:first-of-type:after, html body.article main aside section #meta #authors ul li:last-of-type:after { content: ''; }
+html body.article main aside section #share ul li { display: block; margin-right: none; float: none; padding-left: 0; }
+html body.article main aside section #share ul li:before { content: ''; }
+html body.article main aside section #share ul li { display: inline-block; float: left; margin-right: 1.25em; }
+html body.article main aside section #share ul li:last-of-type { margin-right: 0; }
+html body.article main aside section #share ul li .box .count { float: right; background: #231f20; color: white; font-size: small; padding: 0 0.3125em; }
+html body.article main aside section #share ul li .box .count a { color: white; text-decoration: none; }
+html body.article main aside section #share ul li .box .count a:hover { color: white; }
+html body.article main aside section #share ul li .box .share img { width: 30%; }
+html body.article main aside section #content a { color: #982022; text-decoration: none; }
+html body.article main aside section #content a:hover { color: #982022; }
+html body.article main aside section h1 { font-size: medium; }
 html body.article main aside section h3 { background: #f1f1f1; }
 html body.article main aside section article { border-color: white; }
 html body.article main aside section article h1 { font-weight: normal; }

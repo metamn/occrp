@@ -12,7 +12,7 @@ html {
     .container {
       @include container;
       
-      #header, main, section, nav, #footer {
+      #header, main, section, nav, aside, #footer {
         @include block;
         @include hide-title;
       }
@@ -54,6 +54,7 @@ html {
             
             #news, #announcements {
               @include news;
+              margin-right: 0 !important;
             }
           }
           
@@ -65,20 +66,19 @@ html {
             @include products;
           }
           
-          #projects, #videos {
+          #projects {
             @include projects;
-          }
-          
-          #videos {
-            margin-top: 3%;
-            article {
-              @include responsive-grid(6);
-            }
           }
           
           #most-read {
             @include most-read;
           }
+          
+          #videos {
+            @include videos;
+          }
+          
+          
         }
       }
     }  
