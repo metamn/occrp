@@ -68,6 +68,27 @@
       padding-left: 0;
     }
   
+  } @elseif ($style == title-right) {
+    article {
+      @include block;
+      @include article(null, null, title, figure, null, null);
+    }
+    
+    $col-gutter: col-gutter(3);
+    $col-width: col-by-gutter-width(2, $col-gutter);
+    
+    article figure, article h1  {
+      @include col-by-gutter(2, $col-gutter);
+    }
+    
+    article h1 {
+      margin-right: 0;
+      @include padding($col-width, $pad/2);
+      padding-left: 0;
+      padding-top: 0;
+      
+      @include font(thumb-title);
+    }
   }
 }
 
@@ -203,7 +224,6 @@
     }
   }
   
-  
   #content {
     @include link($highlight);
   }
@@ -215,9 +235,9 @@
 */
 @mixin single-article {
   @include block;
-  @include col(64%, 3%);
+  @include col-nm(2, 3);
   
-  article {
+  article.single {
     @include article(category, date, title, figure, figcaption, null, body);
     @include body-text;
     
@@ -260,10 +280,17 @@
   }
   
   #most-read, #most-recent {
+    h3 {
+      @include font(section-title);
+    }
+    
     @include responsive-grid(2);
+    @include article-style(title-right);
     
     article {
-      @include article(null, null, title, figure);
+      #excerpt {
+        display: none;
+      }
     }
   }
 }
@@ -306,19 +333,19 @@
 */
 @mixin members {
   #google-maps {
-  position: relative;
-  padding-bottom: 45%; // This is the aspect ratio
-  height: 0;
-  overflow: hidden;
-  
-  iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100% !important;
-    height: 100% !important;
+    position: relative;
+    padding-bottom: 45%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+    
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100% !important;
+      height: 100% !important;
+    }
   }
-}
 }
 
 
@@ -401,7 +428,7 @@
     margin-bottom: $flexible-grid-margin;
     
     &#projects {
-      @include article-style(slider);
+      @include article-style(title-right);
     }
   }
 }
