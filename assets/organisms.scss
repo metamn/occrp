@@ -11,7 +11,8 @@
   @if ($style == news) {
     @include article(null, null, title);
     @include border-thin;
-    padding-bottom: $flexible-grid-margin;
+    padding-bottom: $flexible-grid-margin/2;
+    margin-bottom: $flexible-grid-margin/2;
     
     h1 {
       @include font(thumb-title);
@@ -39,6 +40,10 @@
       margin-top: $pad;
       padding-bottom: $pad/2;
       border-bottom: $border;
+      
+      @include normal-screen {
+        @include font(thumb-title);
+      }
     }
   
   } @elseif ($style == projects) {
@@ -404,7 +409,7 @@
     article {
       #excerpt {
         @include border-thin;
-        padding-bottom: $pad;
+        padding-bottom: $pad*2;
       }
     }
   }
@@ -506,6 +511,10 @@
       &:last-of-type {
         border: none;
       }
+      
+      h1 {
+        font-weight: normal;
+      }
     }
   }
 }
@@ -559,6 +568,7 @@
 */
 @mixin news {
   @include responsive-grid(3);
+  margin-top: $pad/2;
   
   h3 {
     @include font(section-title);
@@ -587,13 +597,17 @@
   position: relative;
   height: 20.4em;
   
+  @include normal-screen {
+    height: 17.3em;
+  }
+  
   article {
     position: absolute;
   }
   
   nav {
     position: absolute;
-    bottom: $pad;
+    bottom: $pad/2;
     left: $col-width + $col-gutter;
   }
   
