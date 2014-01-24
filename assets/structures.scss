@@ -77,8 +77,6 @@ html {
           #videos {
             @include videos;
           }
-          
-          
         }
       }
     }  
@@ -89,15 +87,7 @@ html {
     */
     &.category {
       main {
-        @include fixed-sidebar;
-        
-        #articles {
-          @include category-articles;
-        }
-        
-        aside {
-          @include category-aside;
-        }
+        @include archive;
       }
     }
     
@@ -106,18 +96,10 @@ html {
     */
     &.tag {
       main {
-        @include fixed-sidebar;
+        @include archive;
         
         #banner {
           margin-bottom: $pad;
-        }
-        
-        #articles {
-          @include category-articles;
-        }
-        
-        aside {
-          @include category-aside;
         }
       }
     }
