@@ -22,32 +22,13 @@
         </ul>
       </li>
       
-      
-      <li id="social">
+      <li id="social-icons">
         <p>Follow us</p>
         <ul>
-          <li>
-            <a href="http://www.facebook.com/OCCRP.org" title="Facebook">
-              <img src="{{ site.url }}/assets/facebook.png" alt="Facebook"/>
-            </a>
-          </li>
-          <li>
-            <a href="http://www.twitter.com/OCCRP" title="Twitter">
-              <img src="{{ site.url }}/assets/twitter.png" alt="Twitter" />
-            </a>
-          </li>
-          <li>
-            <a href="http://www.youtube.com/channel/UCAdFen-6WQOxmDHK3saMD8A?feature=watch" title="Youtube">
-              <img src="{{ site.url }}/assets/youtube.png" alt="Youtube" />
-            </a>
-          </li>
-          <li>
-            <a href="https://plus.google.com/u/0/b/106731751199751777418/106731751199751777418/about" title="Google Plus">
-              <img src="{{ site.url }}/assets/google_plus.png" alt="Google Plus" />
-            </a>
-          </li>
+          {% include social.html color='' highlight='-red' %}
         </ul>
       </li>
+      
       
     </ul>
   </nav>
@@ -60,8 +41,9 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('/assets/jquery-1.10.2.min.js">\x3C/script>')</script>
 
-<!-- jQuery Isotope plugin -->
-<script src="{{ site.url }}/assets/jquery.isotope.min.js"></script>
+<!-- Share button script -->
+<script type="text/javascript" src="{{ site.url }}/assets/jquery.sharrre.min.js"></script>
+
 
 <!-- Site specific scripts built on jQuery -->
 <script src="{{ site.url }}/assets/jquery.occrp.js?20140113a"></script>

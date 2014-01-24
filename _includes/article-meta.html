@@ -1,0 +1,23 @@
+<nav id="meta">
+  <h3>Article Meta Information</h3>
+  <ul>
+    <li id="category">
+      <a href="{{ site.url }}/{{ post.categories.first }}" title="{{ post.categories.first | capitalize }}">{{ post.categories.first | capitalize }}</a>
+    </li>
+    
+    <li id="date">
+      {{ post.date | date: "%-d %B %Y" }}
+    </li>
+    
+    {% if post.authors.size > 0 %}
+      <li id="authors">
+        <ul>
+          <li>by</li>
+          {% for author in post.authors %}
+            <li><a href="{{ author.url }}" title="{{ author.name }}" >{{ author.name }}</a></li>
+          {% endfor %}
+        </ul>
+      </li>
+    {% endif %}
+  </ul>
+</nav>

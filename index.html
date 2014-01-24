@@ -23,7 +23,17 @@ class: frontpage
       <a href="{{ site.url }}/daily" title="Daily News">Daily News</a>
     </h3>
     
-    {% for post in site.categories.daily %}
+    {% for post in site.categories.daily limit:3 %}
+      {% include article.html klass = 'thumb' %}
+    {% endfor %}
+  </section>
+  
+  <section id="announcements">
+    <h3>
+      <a href="{{ site.url }}/announcements" title="Announcements">Announcements</a>
+    </h3>
+
+    {% for post in site.categories.daily limit:1 offset:0 %}
       {% include article.html klass = 'thumb' %}
     {% endfor %}
   </section>
@@ -64,6 +74,42 @@ class: frontpage
 </section>
 
 
+<aside id="most-read">
+  <h3>Most Read</h3>
+  
+  <section>
+    <h3>
+      <a href="{{ site.url }}/products" title="Products">Most Read</a>
+    </h3>
+    
+    {% for post in site.categories.daily limit:5 %}
+      {% include article.html %}
+    {% endfor %}
+  </section>
+  
+  <section>
+    <h3>
+      <a href="{{ site.url }}/products" title="Products">Most Shared</a>
+    </h3>
+    
+    {% for post in site.categories.daily limit:5 %}
+      {% include article.html %}
+    {% endfor %}
+  </section>
+  
+  <section>
+    <h3>
+      <a href="{{ site.url }}/products" title="Products">From Our Members</a>
+    </h3>
+    
+    {% for post in site.categories.daily limit:5 %}
+      {% include article.html %}
+    {% endfor %}
+  </section>
+</aside>
+
+
+
 <section id="videos">
   <h3>
     <a href="{{ site.url }}/videos" title="Videos">Videos</a>
@@ -75,40 +121,4 @@ class: frontpage
 </section>
 
 
-
-<section id="most-read">
-  <h3>
-    Most Read
-  </h3>
-  
-  <aside>
-    <h3>
-      <a href="{{ site.url }}/products" title="Products">Most Read</a>
-    </h3>
-    
-    {% for post in site.categories.daily limit:5 %}
-      {% include article.html %}
-    {% endfor %}
-  </aside>
-  
-  <aside>
-    <h3>
-      <a href="{{ site.url }}/products" title="Products">Most Shared</a>
-    </h3>
-    
-    {% for post in site.categories.slider limit:5 %}
-      {% include article.html %}
-    {% endfor %}
-  </aside>
-  
-  <aside>
-    <h3>
-      <a href="{{ site.url }}/products" title="Products">From Our Members</a>
-    </h3>
-    
-    {% for post in site.categories.projects limit:5 %}
-      {% include article.html %}
-    {% endfor %}
-  </aside>
-</section>
 

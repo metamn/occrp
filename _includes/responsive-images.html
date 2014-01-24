@@ -15,11 +15,13 @@
 {% endif %}
 
 
-{% assign normal = 'http://lorempixel.com/700/500/people' %}
-{% assign mobile = 'http://lorempixel.com/700/500/people' %}
+{% if include.type != 'not-demo' %}
+  {% assign normal = 'http://lorempixel.com/700/500/people' %}
+  {% assign mobile = 'http://lorempixel.com/700/500/people' %}
+{% endif %}
 
 
-<figure>
+<figure class="{{ include.klass }}">
   {% if link != "" %}
     <a href="{{ site.url }}{{ link }}" title="{{ title }}">
   {% endif %}

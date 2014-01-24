@@ -4,12 +4,18 @@ title: Russia
 class: tag
 ---
 
-{% for post in site.categories.investigations %}
-  {% include article.html %}
+<aside>
+  {% for post in site.categories.investigations limit:1 %}
+    {% include article.html klass = 'category-first' %}
+  {% endfor %}
+</aside>
+
+{% for post in site.categories.investigations offset:1 %}
+  {% include article.html klass = 'thumb' %}
 {% endfor %}
 
 {% for post in site.categories.slider %}
-  {% include article.html %}
+  {% include article.html klass = 'thumb' %}
 {% endfor %}
 
 

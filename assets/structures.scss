@@ -12,7 +12,7 @@ html {
     .container {
       @include container;
       
-      #header, main, section, nav, #footer {
+      #header, main, section, nav, aside, #footer {
         @include block;
         @include hide-title;
       }
@@ -52,8 +52,9 @@ html {
               @include slider;
             }
             
-            #news {
+            #news, #announcements {
               @include news;
+              margin-right: 0 !important;
             }
           }
           
@@ -65,18 +66,16 @@ html {
             @include products;
           }
           
-          #projects, #videos {
-            @include projects;
-          }
-          
-          #videos {
-            article {
-              @include responsive-grid(6);
-            }
+          #projects {
+            @include frontpage-projects;
           }
           
           #most-read {
             @include most-read;
+          }
+          
+          #videos {
+            @include videos;
           }
         }
       }
@@ -88,13 +87,7 @@ html {
     */
     &.category {
       main {
-        #articles {
-          @include category-articles;
-        }
-        
-        aside {
-          @include category-aside;
-        }
+        @include archive;
       }
     }
     
@@ -103,16 +96,10 @@ html {
     */
     &.tag {
       main {
+        @include archive;
+        
         #banner {
           margin-bottom: $pad;
-        }
-        
-        #articles {
-          @include category-articles;
-        }
-        
-        aside {
-          @include category-aside;
         }
       }
     }
@@ -163,6 +150,8 @@ html {
     */
     &.article {
       main {
+        @include fixed-sidebar;
+        
         #article {
           @include single-article;
         }

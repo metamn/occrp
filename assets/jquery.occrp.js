@@ -1,6 +1,15 @@
 
 $(document).ready(function() {
 
+
+  // Show search input in the header
+  $('#header #search').click(function(event) {
+    $(this).find('#icon').hide();
+    $(this).find('#text').hide();
+    $(this).find('#input').show();
+    
+    return false;
+  });
   
 
   // Mark first item in category navigation active
@@ -38,8 +47,59 @@ $(document).ready(function() {
   document.onscroll = scroll;
 
 
-  // jQuery Isotope 
-  var $container = $('#investigationssssssssssssss'); 
+  
+  // Share buttons
+  $('#share #twitter').sharrre({
+    share: {
+      twitter: true
+    },
+    enableHover: false,
+    enableTracking: true,
+    buttons: { twitter: {via: 'OCCRP'}},
+    click: function(api, options){
+      api.simulateClick();
+      api.openPopup('twitter');
+    }
+  });
+  
+  $('#share #facebook').sharrre({
+    share: {
+      facebook: true
+    },
+    enableHover: false,
+    enableTracking: true,
+    click: function(api, options){
+      api.simulateClick();
+      api.openPopup('facebook');
+    }
+  });
+  
+  $('#share #google-plus').sharrre({
+    share: {
+      facebook: true
+    },
+    enableHover: false,
+    enableTracking: true,
+    click: function(api, options){
+      api.simulateClick();
+      api.openPopup('googlePlus');
+    }
+  });
+  
+  $('#share #linkedin').sharrre({
+    share: {
+      facebook: true
+    },
+    enableHover: false,
+    enableTracking: true,
+    click: function(api, options){
+      api.simulateClick();
+      api.openPopup('linkedIn');
+    }
+  });
+
+
+
     
   // The window onload script
   // - here we put all scripts which must run after the page is completelly loaded
@@ -48,24 +108,12 @@ $(document).ready(function() {
     // Generate random pictures
     $('article figure img').each(function() {
       var url = $(this).attr('src');
-      var rnd =  Math.floor((Math.random()*10)+1); 
-      $(this).attr('src', url + '/' + rnd);
-    });
-  
-    // Initialize isotope filter plugin
-    // Set options
-    
-    $container.isotope({
-      itemSelector : 'article',
-      // The CSS animation was too fancy, we've switched to a simpler one
-      animationEngine: 'jquery',
-      animationOptions: {
-        duration: 750,
-        easing: 'linear',
-        queue: false
+      if (url.indexOf('lorempixel') > 0 ) {
+        var rnd =  Math.floor((Math.random()*10)+1); 
+        $(this).attr('src', url + '/' + rnd);
       }
     });
-    
+   
   }); 
  
 });

@@ -54,13 +54,54 @@
 
 
 
+/* Column N of M
+  - creates a grid column on N cols from M total columns
+*/
+@mixin col-nm($n: 2, $m: 3) {
+  $gutter: col-gutter($m);
+  
+  @include col(col-nm-width($n, $m), $gutter);
+}
+
+/* A function to calculate the width of the column for col-n-of-m
+  - this is used usually in padding();
+*/
+@function col-nm-width($n, $m) {
+  $gutter: col-gutter($m);
+  $width: col-width($m);
+  @return ($n * $width + ($n - 1) * $gutter);
+}
+
+
+
+/* Columns defined by gutter
+  - Sometimes the width of a column is defined inversely, by the gutter size
+  - For example, when a col-nm(2,3) is divided into two subcolumns the gutter size is fixed to col-gutter(3)
+  - Ie, instead haveing two cols of 45% and margin 10% we have a fixed margin of 2.5% and the rest of the columns colaculated accordingly
+*/
+@mixin col-by-gutter($how-many, $gutter) {
+  $width: col-by-gutter-width($how-many, $gutter);
+  @include col($width, $gutter);
+}
+
+
+/* A function to calculate the width of the column for col-by-gutter
+  - this is used usually in padding();
+*/
+@function col-by-gutter-width($how-many, $gutter) {
+  $available-space: 100% - ($how-many - 1) * $gutter;
+  @return $available-space / $how-many;
+}
+
+
+
 
 /* Adds padding around a grid element
   - the width of the element must be recalculated
 */
-@mixin padding($width: 100%) {
-  padding: $pad;
-  @include grid-resize($width, $pad*2);
+@mixin padding($width: 100%, $padding: $pad) {
+  padding: $padding;
+  @include grid-resize($width, $padding*2);
 }
 
 
@@ -69,6 +110,7 @@
 @mixin grid-resize($width, $resize) {
   width: calc(#{$width} - #{$resize})
 }
+
 
 
 
@@ -106,13 +148,21 @@
 /* Returns the width of a column in a grid
 */
 @function col-width($how-many) {
-  @return 90% / $how-many;
+  @if ($how-many == 3) {
+    @return 31.5%;
+  } @else {
+    @return 90% / $how-many;
+  }
 }
 
 /* Returns the margin of a column in a grid
 */
 @function col-gutter($how-many) {
-  @return 10% / ($how-many - 1);
+  @if ($how-many == 3) {
+    @return 2.5%;
+  } @else {
+    @return 10% / ($how-many - 1);
+  }
 }
 
 
@@ -195,7 +245,7 @@
 
 /* Highlights an active item in a list / menu
 */
-@mixin list-menu($display: inline, $top : $pad/2, $left: $pad/4)  {
+@mixin list-menu($display: inline-block, $top : $pad/2, $left: $pad/4)  {
   li {
     a {
       padding: $top $left;
@@ -238,6 +288,7 @@
       
       li {
         @include color($color-scheme);
+        @include border-radius($pad);
       }
     }
   }
@@ -250,13 +301,80 @@
 --------------------------------------------------------------------------------
 */
 
-@mixin fluid-image{
+@mixin fluid-image {
   img {
     width: auto;
     height: auto;
     max-width: 100%;
   }
 }
+
+
+/* Social icons
+*/
+@mixin social-icons {
+  float: right;
+  position: relative;
+  top: -$pad*2 - $pad/4;
+  
+  p {
+    font-weight: bold;
+    margin-bottom: $pad;
+    text-align: right;
+    
+    @include color(invert);
+  }
+  
+  ul {
+    li {
+      @include image-change-on-hover; 
+    }
+  }
+}
+
+
+
+/* On hover shows a different image
+  - the two images must be siblings in a container
+  - this mixin is added to the container
+*/
+@mixin image-change-on-hover {
+  img {
+    &:last-of-type {
+      display: none;
+      position: relative;
+      top: 0;
+    }
+  }
+  
+  &:hover {
+    img {
+      &:first-of-type {
+        display: none;
+      }
+      
+      &:last-of-type {
+        display: block;
+      }
+    }
+  }
+}
+
+
+/* Icon with text
+  - the image size (height) must be fixed otherwise it will be taller than other elements
+  - first used with the language selector in a menu
+  - if the height was not set this menu item was taller than all others
+*/
+@mixin text-with-icon {
+  img {
+    height: 12px;
+    position: relative;
+    top: 1px;
+  }
+  
+}
+
 
 
 
@@ -299,6 +417,7 @@
     background: $light-grey;
     color: $color;
     @include link($color, $background);
+  
   }
 }
 
@@ -313,7 +432,6 @@
     text-decoration: none;
   }
 }
-
 
 
 
@@ -369,9 +487,10 @@
     font-style: italic;
     font-family: font-headings;
     text-transform: none;
-  
-  } @elseif ($type == archive-article-title) {
-    padding-top: 0;
+    
+  } @elseif ($type == single-article-title) {
+    @include font-size($h1-title); 
+    padding: 0;
   }
 }
 
@@ -521,11 +640,6 @@
   }
 }
 
-@mixin q {
-  q {
-    quotes: "“" "”" "‘" "’";
-  }
-}
 
 @mixin dfn {
   dfn {
@@ -597,10 +711,15 @@
   }
 }
 
-@mixin q {
+@mixin blockquote {
   blockquote {
     border-top: 1px solid;
     border-bottom: 1px solid;
+    
+    font-size: large;
+    line-height: 1.5;
+    font-style: italic;
+    color: lighten($color, 5%);
     
     /* Making room to the " sign 
     */
@@ -623,14 +742,33 @@
     
     &:before {
       content: '\201C';
-      font-size: 1200%;
+      font-size: 900%;
       
       position: absolute;
-      top: -$pad/4;
+      top: -$pad/10;
       left: 0;
     }
   }
 }
+
+@mixin q {
+  q {
+    background: $light-grey;
+    padding: $pad/8;
+    border-bottom: 1px solid darken($light-grey, 5%);
+    
+    &:before {
+      content: '\201C';
+      margin-right: $pad/4;
+    }
+    
+    &:after {
+      content: '\201D';
+      margin-left: $pad/4;
+    }
+  }
+}
+
 
 /* Select box
   - put <select> inside a <label class="select">
@@ -778,7 +916,7 @@
 @mixin figure($width: auto) {
   figure {
     img {
-      @include box-shadow($shadow);
+      //@include box-shadow($shadow);
       width: $width;
     }
     
@@ -789,6 +927,38 @@
       }
       
       font-size: smaller;
+    }
+    
+    /* Fit figcpation to image width
+    */
+    &.left, &.right, &.person, &.document {
+      display: table;
+      
+      img {
+        display: block;
+        max-width: 100%;
+      }
+      
+      figcaption {
+        display: table-caption;
+        caption-side: bottom;
+        margin-top: $pad/4;
+        text-align: justify;
+      }
+      
+      + p {
+        margin-top: $pad;
+      }
+    }
+    
+    &.left {
+      float: left;
+      margin: $pad/2 $pad*2 $pad 0;
+    }
+    
+    &.right {
+      float: right;
+      margin: $pad/2 0 $pad $pad*2;
     }
   }
 }
