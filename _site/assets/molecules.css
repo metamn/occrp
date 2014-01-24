@@ -9,6 +9,14 @@
 */
 /* Flexible grid - all items are aligned left with an uniform margin - this grid can be dynamically positioned by Isotope
 */
+/* Column N of M - creates a grid column on N cols from M total columns
+*/
+/* A function to calculate the width of the column for col-n-of-m - this is used usually in padding();
+*/
+/* Columns defined by gutter - Sometimes the width of a column is defined inversely, by the gutter size - For example, when a col-nm(2,3) is divided into two subcolumns the gutter size is fixed to col-gutter(3) - Ie, instead haveing two cols of 45% and margin 10% we have a fixed margin of 2.5% and the rest of the columns colaculated accordingly
+*/
+/* A function to calculate the width of the column for col-by-gutter - this is used usually in padding();
+*/
 /* Adds padding around a grid element - the width of the element must be recalculated
 */
 /* Resize a grid column 

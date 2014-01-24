@@ -523,61 +523,59 @@
 
 
 
-/* Positioning slider elements to enable sliding
-*/
-@mixin slider-elements {
-  position: relative;
-  height: 19em;
-  
-  @include normal-screen {
-    height: 16em;
-  }
-  
-  article {
-    position: absolute;
-    top: $pad;
-  }
-  
-  nav {
-    @include grid-resize(49%, $pad);
-    float: left;
-    left: 51%;
-    position: absolute;
-    bottom: $pad;
-  }
-}
-
-
 /* The slider on the frontpage
 */
 @mixin slider {
-  @include col(65.5%, 2.5%);
-  @include padding(65.5%);
-  background: $light-grey;
-  
-  @include slider-elements;
+  /* The grid
+  */
+  @include col-nm(2, 3);
   
   article {
-    @include article(null, null, title, figure, null, excerpt);
     @include block;
+  }
+  
+  $col-gutter: col-gutter(3);
+  
+  article figure, article h1, article #excerpt, nav {
+    @include col-by-gutter(2, $col-gutter);
+  }
+  
+  $col-width: col-by-gutter-width(2, $col-gutter);
+  
+  article h1, article #excerpt, nav {
+    margin-right: 0;
+    @include padding($col-width, $pad/2);
+    padding-left: 0;
+  }
+  
+  
+  /* The slider
+  */
+  position: relative;
+  height: 20.4em;
+  
+  article {
+    position: absolute;
+  }
+  
+  nav {
+    position: absolute;
+    bottom: $pad;
+    left: $col-width + $col-gutter;
+  }
+  
+  
+  /* The styling
+  */  
+  background: $light-grey;
+  article {
+    @include article(null, null, title, figure, null, excerpt);
     margin-bottom: 0;
-    
-    figure {
-      @include col(45%, 4%);
-    }
-    
-    h1, #excerpt {
-      @include grid-resize(49%, $pad);
-      float: left;
-    }
-    
-    #excerpt {
-      margin-top: $pad;
-    }
   }
 
   @include navigation;
 }
+
 
 
 /* Teh fixed header
@@ -730,6 +728,7 @@
     }
   }
 }
+
 
 
 /* The tag bar
