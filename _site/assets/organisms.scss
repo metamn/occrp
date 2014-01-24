@@ -282,6 +282,10 @@
   #most-read, #most-recent {
     h3 {
       @include font(section-title);
+      color: $color;
+      padding-top: $pad;
+      margin-top: $pad;
+      border-top: $border;
     }
     
     @include responsive-grid(2);

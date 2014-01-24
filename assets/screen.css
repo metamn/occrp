@@ -1664,7 +1664,7 @@ html body.article main #article article.single #content figure figcaption a:hove
 html body.article main #article article.single #content figure.person { background: #f1f1f1; }
 html body.article main #article article.single #content figure.person img { padding: 1.25em; }
 html body.article main #article article.single #content figure.person figcaption { text-align: center; }
-html body.article main #article #most-read h3, html body.article main #article #most-recent h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; }
+html body.article main #article #most-read h3, html body.article main #article #most-recent h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; color: #231f20; padding-top: 1.25em; margin-top: 1.25em; border-top: 0.3125em solid; }
 html body.article main #article #most-read h3 a, html body.article main #article #most-recent h3 a { color: #982022; text-decoration: none; }
 html body.article main #article #most-read h3 a:hover, html body.article main #article #most-recent h3 a:hover { color: #231f20; }
 @media only screen and (max-width: 48em) { html body.article main #article #most-read, html body.article main #article #most-recent { width: 100%; margin-right: 0; float: left; } }
