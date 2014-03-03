@@ -361,14 +361,29 @@
 /* Jobs
 */
 @mixin jobs {
-  article {
-    @include article-style(news);
-    @include body-text;
-    
-    #excerpt {
-      display: block;
+  #content {
+    article {
+      @include article-style(news);
+      @include body-text;
+      
+      #excerpt {
+        display: block;
+      }
     }
   }
+}
+
+/* Announcements
+*/
+@mixin announcements {
+  article {
+    &.thumb {
+      @include responsive-grid(3);
+      @include article-style(projects);
+    }
+  }
+
+  @include navigation(navigation);
 }
 
 

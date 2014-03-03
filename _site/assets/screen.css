@@ -168,6 +168,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 */
 /* Jobs
 */
+/* Announcements
+*/
 /* Projects archive
 */
 /* Category archives
@@ -226,10 +228,11 @@ html body { background: white; color: #231f20; font-size: 100%; line-height: 1.2
 */ /* Category
 */ /* Tag
 */ /* Projects
-*/ /* Jobs
 */ /* Members with Google Maps
 */ /* Resource Center
 */ /* Single Article, About Us
+*/ /* Jobs
+*/ /* Announcements
 */ }
 html body a { color: #231f20; text-decoration: none; }
 html body a:hover { color: #982022; }
@@ -1228,151 +1231,6 @@ html body.projects main #articles nav ol li.active a a:hover, html body.projects
 html body.projects main #articles nav ol li { background: #f1f1f1; color: #231f20; -moz-border-radius: 1.25em; -webkit-border-radius: 1.25em; border-radius: 1.25em; }
 html body.projects main #articles nav ol li a { color: #231f20; text-decoration: none; }
 html body.projects main #articles nav ol li a:hover { color: white; }
-html body.jobs main #articles article { margin-bottom: 3%; border-bottom: 1px solid #f1f1f1; padding-bottom: 1.5%; margin-bottom: 1.5%; max-width: 43.75em; line-height: 1.75; /* Padding of individual elements
-*/ /* Padding of consecutive elements
-*/ }
-html body.jobs main #articles article figure { display: none; }
-html body.jobs main #articles article figcaption { display: none; }
-html body.jobs main #articles article #excerpt { display: none; }
-html body.jobs main #articles article #content { display: none; }
-html body.jobs main #articles article #meta #category { display: none; }
-html body.jobs main #articles article #meta #date { display: none; }
-html body.jobs main #articles article #meta { display: none; }
-html body.jobs main #articles article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; text-align: justify; }
-html body.jobs main #articles article #meta { margin-top: 0.625em; }
-html body.jobs main #articles article #meta > h3 { display: none; }
-html body.jobs main #articles article #meta ul { margin: 0; }
-html body.jobs main #articles article #meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.jobs main #articles article #meta ul li:before { content: ''; }
-html body.jobs main #articles article #meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
-html body.jobs main #articles article #meta ul li:last-of-type { margin-right: 0; }
-html body.jobs main #articles article #meta #date { font-size: small; color: #74676a; }
-html body.jobs main #articles article #meta #category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
-html body.jobs main #articles article #meta #category a { color: #982022; text-decoration: none; }
-html body.jobs main #articles article #meta #category a:hover { color: #231f20; }
-html body.jobs main #articles article #meta #authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; }
-html body.jobs main #articles article #meta #authors ul li:after { content: ','; }
-html body.jobs main #articles article #meta #authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
-html body.jobs main #articles article #meta #authors ul li:first-of-type:after, html body.jobs main #articles article #meta #authors ul li:last-of-type:after { content: ''; }
-html body.jobs main #articles article #share ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.jobs main #articles article #share ul li:before { content: ''; }
-html body.jobs main #articles article #share ul li { display: inline-block; float: left; margin-right: 1.25em; }
-html body.jobs main #articles article #share ul li:last-of-type { margin-right: 0; }
-html body.jobs main #articles article #share ul li .box .count { float: right; background: #231f20; color: white; font-size: small; padding: 0 0.3125em; }
-html body.jobs main #articles article #share ul li .box .count a { color: white; text-decoration: none; }
-html body.jobs main #articles article #share ul li .box .count a:hover { color: white; }
-html body.jobs main #articles article #share ul li .box .share img { width: 30%; }
-html body.jobs main #articles article #content a { color: #982022; text-decoration: none; }
-html body.jobs main #articles article #content a:hover { color: #982022; }
-html body.jobs main #articles article h1 { font-size: medium; }
-html body.jobs main #articles article h1, html body.jobs main #articles article h2, html body.jobs main #articles article h3, html body.jobs main #articles article h4, html body.jobs main #articles article h5, html body.jobs main #articles article h6 { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; line-height: 1.25; padding: 0; }
-html body.jobs main #articles article h1 { font-size: 20px; font-size: 1.25rem; font-weight: bold; }
-html body.jobs main #articles article h2 { font-size: 20px; font-size: 1.25rem; font-weight: normal; text-transform: uppercase; letter-spacing: 1.1px; }
-html body.jobs main #articles article h3 { font-size: 20px; font-size: 1.25rem; font-weight: normal; }
-html body.jobs main #articles article h4 { font-size: larger; font-weight: normal; }
-html body.jobs main #articles article h1, html body.jobs main #articles article h2, html body.jobs main #articles article h3, html body.jobs main #articles article h4, html body.jobs main #articles article h5, html body.jobs main #articles article h6 { margin-top: 0; margin-bottom: 0; padding: 1.45833em 0; }
-html body.jobs main #articles article ul { list-style: none outside; }
-html body.jobs main #articles article ul li { /* When parent positioned to 'relative' the children (:before) can be positioned to 'absolute' - this way we can perfectly align the bullets / numbering to the list content
-*/ position: relative; padding-left: 1.25em; }
-html body.jobs main #articles article ul li:before { content: "\2610"; /* making the content of the list perfectly align with numbering - <li> is relatively positioned - :the numbering (:before) is aboslutely positioned within <li> and fixed to left - the the <li> content has a padding-left to not overlap the numbering
-*/ position: absolute; left: 0; font-weight: bold; }
-html body.jobs main #articles article ol { list-style: none outside; counter-reset: ol-counter; }
-html body.jobs main #articles article ol li { /* When parent positioned to 'relative' the children (:before) can be positioned to 'absolute' - this way we can perfectly align the bullets / numbering to the list content
-*/ position: relative; padding-left: 1.25em; }
-html body.jobs main #articles article ol li:before { /* making the content of the list perfectly align with numbering - <li> is relatively positioned - :the numbering (:before) is aboslutely positioned within <li> and fixed to left - the the <li> content has a padding-left to not overlap the numbering
-*/ position: absolute; left: 0; font-weight: bold; }
-html body.jobs main #articles article ol li { counter-increment: ol-counter; }
-html body.jobs main #articles article ol li:before { content: counter(ol-counter,decimal) "."; }
-html body.jobs main #articles article dl dt { font-size: 20px; font-size: 1.25rem; font-weight: normal; text-transform: uppercase; letter-spacing: 1.1px; }
-html body.jobs main #articles article table { width: 100%; display: table !important; }
-html body.jobs main #articles article table caption { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; margin-bottom: 0.3125em; }
-html body.jobs main #articles article table thead { background: #231f20; color: white; }
-html body.jobs main #articles article table thead a { color: white; text-decoration: none; }
-html body.jobs main #articles article table thead a:hover { color: white; }
-html body.jobs main #articles article table thead th, html body.jobs main #articles article table tbody td { padding: 0.625em; padding-left: 0; }
-html body.jobs main #articles article table thead th:first-of-type, html body.jobs main #articles article table tbody td:first-of-type { padding-left: 1px; }
-html body.jobs main #articles article table tbody td { border-bottom: 1px solid #74676a; }
-html body.jobs main #articles article figure { /* Fit figcpation to image width
-*/ }
-html body.jobs main #articles article figure img { width: auto; }
-html body.jobs main #articles article figure figcaption { font-size: smaller; }
-html body.jobs main #articles article figure figcaption h1, html body.jobs main #articles article figure figcaption h2, html body.jobs main #articles article figure figcaption h3, html body.jobs main #articles article figure figcaption h4, html body.jobs main #articles article figure figcaption h5, html body.jobs main #articles article figure figcaption h6 { margin: 0; padding: 0; }
-html body.jobs main #articles article figure.left, html body.jobs main #articles article figure.right, html body.jobs main #articles article figure.person, html body.jobs main #articles article figure.document { display: table; }
-html body.jobs main #articles article figure.left img, html body.jobs main #articles article figure.right img, html body.jobs main #articles article figure.person img, html body.jobs main #articles article figure.document img { display: block; max-width: 100%; }
-html body.jobs main #articles article figure.left figcaption, html body.jobs main #articles article figure.right figcaption, html body.jobs main #articles article figure.person figcaption, html body.jobs main #articles article figure.document figcaption { display: table-caption; caption-side: bottom; margin-top: 0.3125em; text-align: justify; }
-html body.jobs main #articles article figure.left + p, html body.jobs main #articles article figure.right + p, html body.jobs main #articles article figure.person + p, html body.jobs main #articles article figure.document + p { margin-top: 1.25em; }
-html body.jobs main #articles article figure.left { float: left; margin: 0.625em 2.5em 1.25em 0; }
-html body.jobs main #articles article figure.right { float: right; margin: 0.625em 0 1.25em 2.5em; }
-html body.jobs main #articles article form { /* Reset */ /* Stretching and padding */ /* Text */ /* Button */ /* Label
-*/ }
-html body.jobs main #articles article form input, html body.jobs main #articles article form textarea, html body.jobs main #articles article form select { border: none; outline: 0; background: white; appearance: none; -webkit-appearance: none; -moz-appearance: none; }
-html body.jobs main #articles article form input, html body.jobs main #articles article form textarea { width: 100%; max-width: 100%; float: left; }
-html body.jobs main #articles article form input, html body.jobs main #articles article form textarea { padding: 0.625em; width: calc(100% - 1.25em); margin-bottom: 0.625em; }
-html body.jobs main #articles article form input[type='text'], html body.jobs main #articles article form input[type='email'], html body.jobs main #articles article form input[type='password'], html body.jobs main #articles article form input[type='url'], html body.jobs main #articles article form input[type='search'], html body.jobs main #articles article form textarea { border: 1px solid #231f20; font-style: italic; }
-html body.jobs main #articles article form input[type='submit'] { text-transform: uppercase; letter-spacing: 1.1px; border: 1px solid #231f20; background: #231f20; color: white; cursor: pointer; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; }
-html body.jobs main #articles article form input[type='submit'] a { color: white; text-decoration: none; }
-html body.jobs main #articles article form input[type='submit'] a:hover { color: white; }
-html body.jobs main #articles article form input[type='submit']:hover { background: white; color: #231f20; }
-html body.jobs main #articles article form input[type='submit']:hover a { color: #231f20; text-decoration: none; }
-html body.jobs main #articles article form input[type='submit']:hover a:hover { color: #982022; }
-html body.jobs main #articles article form label { text-transform: uppercase; letter-spacing: 1.1px; }
-html body.jobs main #articles article q { background: #f1f1f1; padding: 0.15625em; border-bottom: 1px solid #e4e4e4; }
-html body.jobs main #articles article q:before { content: '\201C'; margin-right: 0.3125em; }
-html body.jobs main #articles article q:after { content: '\201D'; margin-left: 0.3125em; }
-html body.jobs main #articles article blockquote { border-top: 1px solid; border-bottom: 1px solid; font-size: large; line-height: 1.5; font-style: italic; color: #312b2c; /* Making room to the " sign 
-*/ position: relative; float: left; padding: 5em 0 2.5em 5em; /* Fill the parent block
-*/ width: 100%; max-width: 100%; float: left; text-align: right; width: calc(43.75em - 5em); /*
-@include below-and-small-screen { width: calc(100% - 5em);
-}
-*/ }
-html body.jobs main #articles article blockquote:before { content: '\201C'; font-size: 900%; position: absolute; top: -0.125em; left: 0; }
-html body.jobs main #articles article code, html body.jobs main #articles article pre { background: #f1f1f1; color: #231f20; padding: 0.3125em; font-family: "Lucida Console", "Lucida Sans Typewriter", Monaco, "Bitstream Vera Sans Mono", monospace; }
-html body.jobs main #articles article code a, html body.jobs main #articles article pre a { color: #231f20; text-decoration: none; }
-html body.jobs main #articles article code a:hover, html body.jobs main #articles article pre a:hover { color: white; }
-html body.jobs main #articles article pre { white-space: pre-line; padding: 1.25em; }
-html body.jobs main #articles article hr { margin: 1.25em 0; }
-html body.jobs main #articles article em, html body.jobs main #articles article i { font-style: italic; }
-html body.jobs main #articles article strong, html body.jobs main #articles article b { font-weight: bold; }
-html body.jobs main #articles article small { font-size: small; }
-html body.jobs main #articles article s { text-decoration: line-through; }
-html body.jobs main #articles article cite { font-style: italic; }
-html body.jobs main #articles article q { background: #f1f1f1; padding: 0.15625em; border-bottom: 1px solid #e4e4e4; }
-html body.jobs main #articles article q:before { content: '\201C'; margin-right: 0.3125em; }
-html body.jobs main #articles article q:after { content: '\201D'; margin-left: 0.3125em; }
-html body.jobs main #articles article dfn { border-bottom: 1px solid #f1f1f1; }
-html body.jobs main #articles article abbr { font-variant: small-caps; }
-html body.jobs main #articles article time { font-size: small; color: #74676a; }
-html body.jobs main #articles article var { font-style: italic; }
-html body.jobs main #articles article samp, html body.jobs main #articles article kbd { font-family: "Lucida Console", "Lucida Sans Typewriter", Monaco, "Bitstream Vera Sans Mono", monospace; font-weight: bold; font-size: small; }
-html body.jobs main #articles article sup { vertical-align: super; font-size: small; }
-html body.jobs main #articles article sub { vertical-align: sub; font-size: small; }
-html body.jobs main #articles article mark { background: #231f20; color: white; padding: 0.3125em; }
-html body.jobs main #articles article mark a { color: white; text-decoration: none; }
-html body.jobs main #articles article mark a:hover { color: white; }
-html body.jobs main #articles article del { text-decoration: line-through; }
-html body.jobs main #articles article ins { background: #f1f1f1; color: #231f20; padding: 0.3125em; }
-html body.jobs main #articles article ins a { color: #231f20; text-decoration: none; }
-html body.jobs main #articles article ins a:hover { color: white; }
-html body.jobs main #articles article address { font-size: small; color: #74676a; max-width: 21.875em; }
-html body.jobs main #articles article label.select { width: 100%; max-width: 100%; float: left; }
-html body.jobs main #articles article label.select:after { content: "\2794"; -moz-transform: rotate(90deg); -ms-transform: rotate(90deg); -o-transform: rotate(90deg); -webkit-transform: rotate(90deg); transform: rotate(90deg); float: right; display: inline-block; position: relative; padding: 0; left: -0.3125em; background: white; font-size: 150%; top: -1.5em; margin-right: 0.3125em; pointer-events: none; /* this is a must */ cursor: pointer; }
-html body.jobs main #articles article label.select select { border: none; outline: 0; background: white; appearance: none; -webkit-appearance: none; -moz-appearance: none; border: 1px solid; cursor: pointer; width: 100%; padding: 0.3125em; }
-html body.jobs main #articles article input[type='radio'], html body.jobs main #articles article input[type='checkbox'] { display: none; }
-html body.jobs main #articles article input[type='radio'] + label, html body.jobs main #articles article input[type='checkbox'] + label { display: inline-block; }
-html body.jobs main #articles article input[type='radio'] + label:after { content: "\2610"; margin-right: 0.625em; }
-html body.jobs main #articles article input[type='radio']:checked + label:after { content: "\25a3"; }
-html body.jobs main #articles article input[type='checkbox'] + label:after { content: "\2610"; margin-right: 0.3125em; font-size: 150%; position: relative; top: 0.15625em; }
-html body.jobs main #articles article input[type='checkbox']:checked + label:after { content: "\2611"; }
-html body.jobs main #articles article ul.checkbox li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.jobs main #articles article ul.checkbox li:before { content: ''; }
-html body.jobs main #articles article ul, html body.jobs main #articles article ol, html body.jobs main #articles article dl, html body.jobs main #articles article table, html body.jobs main #articles article figure, html body.jobs main #articles article form, html body.jobs main #articles article q, html body.jobs main #articles article blockquote, html body.jobs main #articles article pre, html body.jobs main #articles article code { margin: 1.25em 0; }
-html body.jobs main #articles article figure { margin-top: 2.5em; }
-html body.jobs main #articles article dd + dt { margin-top: 1.25em; }
-html body.jobs main #articles article p + p { margin-top: 1.25em; }
-html body.jobs main #articles article h1 + h2, html body.jobs main #articles article h2 + h3 { padding-top: 0; }
-html body.jobs main #articles article h1 + ul, html body.jobs main #articles article h2 + ul, html body.jobs main #articles article h3 + ul, html body.jobs main #articles article h1 + ol, html body.jobs main #articles article h2 + ol, html body.jobs main #articles article h3 + ol, html body.jobs main #articles article h1 + figure, html body.jobs main #articles article h2 + figure, html body.jobs main #articles article h3 + figure, html body.jobs main #articles article h1 + nav { margin-top: 0; }
-html body.jobs main #articles article li ul, html body.jobs main #articles article li ol { margin-top: 0; }
-html body.jobs main #articles article #excerpt { display: block; }
 html body.members main #google-maps { position: relative; padding-bottom: 45%; height: 0; overflow: hidden; }
 html body.members main #google-maps iframe { position: absolute; top: 0; left: 0; width: 100% !important; height: 100% !important; }
 html body.resource-center main #article article #content #handbook, html body.resource-center main #article article #content #reports, html body.resource-center main #article article #content #academic-studies { width: 100%; max-width: 100%; float: left; }
@@ -1840,6 +1698,218 @@ html body.article main aside section#projects article #content a, html body.abou
 html body.article main aside section#projects article #content a:hover, html body.about main aside section#projects article #content a:hover { color: #982022; }
 html body.article main aside section#projects article figure, html body.article main aside section#projects article h1, html body.about main aside section#projects article figure, html body.about main aside section#projects article h1 { width: 48.75%; margin-right: 2.5%; float: left; }
 html body.article main aside section#projects article h1, html body.about main aside section#projects article h1 { margin-right: 0; padding: 0.625em; width: calc(48.75% - 1.25em); padding-left: 0; padding-top: 0; font-size: medium; }
+html body.jobs main #article #content article { margin-bottom: 3%; border-bottom: 1px solid #f1f1f1; padding-bottom: 1.5%; margin-bottom: 1.5%; max-width: 43.75em; line-height: 1.75; /* Padding of individual elements
+*/ /* Padding of consecutive elements
+*/ }
+html body.jobs main #article #content article figure { display: none; }
+html body.jobs main #article #content article figcaption { display: none; }
+html body.jobs main #article #content article #excerpt { display: none; }
+html body.jobs main #article #content article #content { display: none; }
+html body.jobs main #article #content article #meta #category { display: none; }
+html body.jobs main #article #content article #meta #date { display: none; }
+html body.jobs main #article #content article #meta { display: none; }
+html body.jobs main #article #content article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; text-align: justify; }
+html body.jobs main #article #content article #meta { margin-top: 0.625em; }
+html body.jobs main #article #content article #meta > h3 { display: none; }
+html body.jobs main #article #content article #meta ul { margin: 0; }
+html body.jobs main #article #content article #meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
+html body.jobs main #article #content article #meta ul li:before { content: ''; }
+html body.jobs main #article #content article #meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
+html body.jobs main #article #content article #meta ul li:last-of-type { margin-right: 0; }
+html body.jobs main #article #content article #meta #date { font-size: small; color: #74676a; }
+html body.jobs main #article #content article #meta #category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
+html body.jobs main #article #content article #meta #category a { color: #982022; text-decoration: none; }
+html body.jobs main #article #content article #meta #category a:hover { color: #231f20; }
+html body.jobs main #article #content article #meta #authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; }
+html body.jobs main #article #content article #meta #authors ul li:after { content: ','; }
+html body.jobs main #article #content article #meta #authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+html body.jobs main #article #content article #meta #authors ul li:first-of-type:after, html body.jobs main #article #content article #meta #authors ul li:last-of-type:after { content: ''; }
+html body.jobs main #article #content article #share ul li { display: block; margin-right: none; float: none; padding-left: 0; }
+html body.jobs main #article #content article #share ul li:before { content: ''; }
+html body.jobs main #article #content article #share ul li { display: inline-block; float: left; margin-right: 1.25em; }
+html body.jobs main #article #content article #share ul li:last-of-type { margin-right: 0; }
+html body.jobs main #article #content article #share ul li .box .count { float: right; background: #231f20; color: white; font-size: small; padding: 0 0.3125em; }
+html body.jobs main #article #content article #share ul li .box .count a { color: white; text-decoration: none; }
+html body.jobs main #article #content article #share ul li .box .count a:hover { color: white; }
+html body.jobs main #article #content article #share ul li .box .share img { width: 30%; }
+html body.jobs main #article #content article #content a { color: #982022; text-decoration: none; }
+html body.jobs main #article #content article #content a:hover { color: #982022; }
+html body.jobs main #article #content article h1 { font-size: medium; }
+html body.jobs main #article #content article h1, html body.jobs main #article #content article h2, html body.jobs main #article #content article h3, html body.jobs main #article #content article h4, html body.jobs main #article #content article h5, html body.jobs main #article #content article h6 { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; line-height: 1.25; padding: 0; }
+html body.jobs main #article #content article h1 { font-size: 20px; font-size: 1.25rem; font-weight: bold; }
+html body.jobs main #article #content article h2 { font-size: 20px; font-size: 1.25rem; font-weight: normal; text-transform: uppercase; letter-spacing: 1.1px; }
+html body.jobs main #article #content article h3 { font-size: 20px; font-size: 1.25rem; font-weight: normal; }
+html body.jobs main #article #content article h4 { font-size: larger; font-weight: normal; }
+html body.jobs main #article #content article h1, html body.jobs main #article #content article h2, html body.jobs main #article #content article h3, html body.jobs main #article #content article h4, html body.jobs main #article #content article h5, html body.jobs main #article #content article h6 { margin-top: 0; margin-bottom: 0; padding: 1.45833em 0; }
+html body.jobs main #article #content article ul { list-style: none outside; }
+html body.jobs main #article #content article ul li { /* When parent positioned to 'relative' the children (:before) can be positioned to 'absolute' - this way we can perfectly align the bullets / numbering to the list content
+*/ position: relative; padding-left: 1.25em; }
+html body.jobs main #article #content article ul li:before { content: "\2610"; /* making the content of the list perfectly align with numbering - <li> is relatively positioned - :the numbering (:before) is aboslutely positioned within <li> and fixed to left - the the <li> content has a padding-left to not overlap the numbering
+*/ position: absolute; left: 0; font-weight: bold; }
+html body.jobs main #article #content article ol { list-style: none outside; counter-reset: ol-counter; }
+html body.jobs main #article #content article ol li { /* When parent positioned to 'relative' the children (:before) can be positioned to 'absolute' - this way we can perfectly align the bullets / numbering to the list content
+*/ position: relative; padding-left: 1.25em; }
+html body.jobs main #article #content article ol li:before { /* making the content of the list perfectly align with numbering - <li> is relatively positioned - :the numbering (:before) is aboslutely positioned within <li> and fixed to left - the the <li> content has a padding-left to not overlap the numbering
+*/ position: absolute; left: 0; font-weight: bold; }
+html body.jobs main #article #content article ol li { counter-increment: ol-counter; }
+html body.jobs main #article #content article ol li:before { content: counter(ol-counter,decimal) "."; }
+html body.jobs main #article #content article dl dt { font-size: 20px; font-size: 1.25rem; font-weight: normal; text-transform: uppercase; letter-spacing: 1.1px; }
+html body.jobs main #article #content article table { width: 100%; display: table !important; }
+html body.jobs main #article #content article table caption { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; margin-bottom: 0.3125em; }
+html body.jobs main #article #content article table thead { background: #231f20; color: white; }
+html body.jobs main #article #content article table thead a { color: white; text-decoration: none; }
+html body.jobs main #article #content article table thead a:hover { color: white; }
+html body.jobs main #article #content article table thead th, html body.jobs main #article #content article table tbody td { padding: 0.625em; padding-left: 0; }
+html body.jobs main #article #content article table thead th:first-of-type, html body.jobs main #article #content article table tbody td:first-of-type { padding-left: 1px; }
+html body.jobs main #article #content article table tbody td { border-bottom: 1px solid #74676a; }
+html body.jobs main #article #content article figure { /* Fit figcpation to image width
+*/ }
+html body.jobs main #article #content article figure img { width: auto; }
+html body.jobs main #article #content article figure figcaption { font-size: smaller; }
+html body.jobs main #article #content article figure figcaption h1, html body.jobs main #article #content article figure figcaption h2, html body.jobs main #article #content article figure figcaption h3, html body.jobs main #article #content article figure figcaption h4, html body.jobs main #article #content article figure figcaption h5, html body.jobs main #article #content article figure figcaption h6 { margin: 0; padding: 0; }
+html body.jobs main #article #content article figure.left, html body.jobs main #article #content article figure.right, html body.jobs main #article #content article figure.person, html body.jobs main #article #content article figure.document { display: table; }
+html body.jobs main #article #content article figure.left img, html body.jobs main #article #content article figure.right img, html body.jobs main #article #content article figure.person img, html body.jobs main #article #content article figure.document img { display: block; max-width: 100%; }
+html body.jobs main #article #content article figure.left figcaption, html body.jobs main #article #content article figure.right figcaption, html body.jobs main #article #content article figure.person figcaption, html body.jobs main #article #content article figure.document figcaption { display: table-caption; caption-side: bottom; margin-top: 0.3125em; text-align: justify; }
+html body.jobs main #article #content article figure.left + p, html body.jobs main #article #content article figure.right + p, html body.jobs main #article #content article figure.person + p, html body.jobs main #article #content article figure.document + p { margin-top: 1.25em; }
+html body.jobs main #article #content article figure.left { float: left; margin: 0.625em 2.5em 1.25em 0; }
+html body.jobs main #article #content article figure.right { float: right; margin: 0.625em 0 1.25em 2.5em; }
+html body.jobs main #article #content article form { /* Reset */ /* Stretching and padding */ /* Text */ /* Button */ /* Label
+*/ }
+html body.jobs main #article #content article form input, html body.jobs main #article #content article form textarea, html body.jobs main #article #content article form select { border: none; outline: 0; background: white; appearance: none; -webkit-appearance: none; -moz-appearance: none; }
+html body.jobs main #article #content article form input, html body.jobs main #article #content article form textarea { width: 100%; max-width: 100%; float: left; }
+html body.jobs main #article #content article form input, html body.jobs main #article #content article form textarea { padding: 0.625em; width: calc(100% - 1.25em); margin-bottom: 0.625em; }
+html body.jobs main #article #content article form input[type='text'], html body.jobs main #article #content article form input[type='email'], html body.jobs main #article #content article form input[type='password'], html body.jobs main #article #content article form input[type='url'], html body.jobs main #article #content article form input[type='search'], html body.jobs main #article #content article form textarea { border: 1px solid #231f20; font-style: italic; }
+html body.jobs main #article #content article form input[type='submit'] { text-transform: uppercase; letter-spacing: 1.1px; border: 1px solid #231f20; background: #231f20; color: white; cursor: pointer; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; }
+html body.jobs main #article #content article form input[type='submit'] a { color: white; text-decoration: none; }
+html body.jobs main #article #content article form input[type='submit'] a:hover { color: white; }
+html body.jobs main #article #content article form input[type='submit']:hover { background: white; color: #231f20; }
+html body.jobs main #article #content article form input[type='submit']:hover a { color: #231f20; text-decoration: none; }
+html body.jobs main #article #content article form input[type='submit']:hover a:hover { color: #982022; }
+html body.jobs main #article #content article form label { text-transform: uppercase; letter-spacing: 1.1px; }
+html body.jobs main #article #content article q { background: #f1f1f1; padding: 0.15625em; border-bottom: 1px solid #e4e4e4; }
+html body.jobs main #article #content article q:before { content: '\201C'; margin-right: 0.3125em; }
+html body.jobs main #article #content article q:after { content: '\201D'; margin-left: 0.3125em; }
+html body.jobs main #article #content article blockquote { border-top: 1px solid; border-bottom: 1px solid; font-size: large; line-height: 1.5; font-style: italic; color: #312b2c; /* Making room to the " sign 
+*/ position: relative; float: left; padding: 5em 0 2.5em 5em; /* Fill the parent block
+*/ width: 100%; max-width: 100%; float: left; text-align: right; width: calc(43.75em - 5em); /*
+@include below-and-small-screen { width: calc(100% - 5em);
+}
+*/ }
+html body.jobs main #article #content article blockquote:before { content: '\201C'; font-size: 900%; position: absolute; top: -0.125em; left: 0; }
+html body.jobs main #article #content article code, html body.jobs main #article #content article pre { background: #f1f1f1; color: #231f20; padding: 0.3125em; font-family: "Lucida Console", "Lucida Sans Typewriter", Monaco, "Bitstream Vera Sans Mono", monospace; }
+html body.jobs main #article #content article code a, html body.jobs main #article #content article pre a { color: #231f20; text-decoration: none; }
+html body.jobs main #article #content article code a:hover, html body.jobs main #article #content article pre a:hover { color: white; }
+html body.jobs main #article #content article pre { white-space: pre-line; padding: 1.25em; }
+html body.jobs main #article #content article hr { margin: 1.25em 0; }
+html body.jobs main #article #content article em, html body.jobs main #article #content article i { font-style: italic; }
+html body.jobs main #article #content article strong, html body.jobs main #article #content article b { font-weight: bold; }
+html body.jobs main #article #content article small { font-size: small; }
+html body.jobs main #article #content article s { text-decoration: line-through; }
+html body.jobs main #article #content article cite { font-style: italic; }
+html body.jobs main #article #content article q { background: #f1f1f1; padding: 0.15625em; border-bottom: 1px solid #e4e4e4; }
+html body.jobs main #article #content article q:before { content: '\201C'; margin-right: 0.3125em; }
+html body.jobs main #article #content article q:after { content: '\201D'; margin-left: 0.3125em; }
+html body.jobs main #article #content article dfn { border-bottom: 1px solid #f1f1f1; }
+html body.jobs main #article #content article abbr { font-variant: small-caps; }
+html body.jobs main #article #content article time { font-size: small; color: #74676a; }
+html body.jobs main #article #content article var { font-style: italic; }
+html body.jobs main #article #content article samp, html body.jobs main #article #content article kbd { font-family: "Lucida Console", "Lucida Sans Typewriter", Monaco, "Bitstream Vera Sans Mono", monospace; font-weight: bold; font-size: small; }
+html body.jobs main #article #content article sup { vertical-align: super; font-size: small; }
+html body.jobs main #article #content article sub { vertical-align: sub; font-size: small; }
+html body.jobs main #article #content article mark { background: #231f20; color: white; padding: 0.3125em; }
+html body.jobs main #article #content article mark a { color: white; text-decoration: none; }
+html body.jobs main #article #content article mark a:hover { color: white; }
+html body.jobs main #article #content article del { text-decoration: line-through; }
+html body.jobs main #article #content article ins { background: #f1f1f1; color: #231f20; padding: 0.3125em; }
+html body.jobs main #article #content article ins a { color: #231f20; text-decoration: none; }
+html body.jobs main #article #content article ins a:hover { color: white; }
+html body.jobs main #article #content article address { font-size: small; color: #74676a; max-width: 21.875em; }
+html body.jobs main #article #content article label.select { width: 100%; max-width: 100%; float: left; }
+html body.jobs main #article #content article label.select:after { content: "\2794"; -moz-transform: rotate(90deg); -ms-transform: rotate(90deg); -o-transform: rotate(90deg); -webkit-transform: rotate(90deg); transform: rotate(90deg); float: right; display: inline-block; position: relative; padding: 0; left: -0.3125em; background: white; font-size: 150%; top: -1.5em; margin-right: 0.3125em; pointer-events: none; /* this is a must */ cursor: pointer; }
+html body.jobs main #article #content article label.select select { border: none; outline: 0; background: white; appearance: none; -webkit-appearance: none; -moz-appearance: none; border: 1px solid; cursor: pointer; width: 100%; padding: 0.3125em; }
+html body.jobs main #article #content article input[type='radio'], html body.jobs main #article #content article input[type='checkbox'] { display: none; }
+html body.jobs main #article #content article input[type='radio'] + label, html body.jobs main #article #content article input[type='checkbox'] + label { display: inline-block; }
+html body.jobs main #article #content article input[type='radio'] + label:after { content: "\2610"; margin-right: 0.625em; }
+html body.jobs main #article #content article input[type='radio']:checked + label:after { content: "\25a3"; }
+html body.jobs main #article #content article input[type='checkbox'] + label:after { content: "\2610"; margin-right: 0.3125em; font-size: 150%; position: relative; top: 0.15625em; }
+html body.jobs main #article #content article input[type='checkbox']:checked + label:after { content: "\2611"; }
+html body.jobs main #article #content article ul.checkbox li { display: block; margin-right: none; float: none; padding-left: 0; }
+html body.jobs main #article #content article ul.checkbox li:before { content: ''; }
+html body.jobs main #article #content article ul, html body.jobs main #article #content article ol, html body.jobs main #article #content article dl, html body.jobs main #article #content article table, html body.jobs main #article #content article figure, html body.jobs main #article #content article form, html body.jobs main #article #content article q, html body.jobs main #article #content article blockquote, html body.jobs main #article #content article pre, html body.jobs main #article #content article code { margin: 1.25em 0; }
+html body.jobs main #article #content article figure { margin-top: 2.5em; }
+html body.jobs main #article #content article dd + dt { margin-top: 1.25em; }
+html body.jobs main #article #content article p + p { margin-top: 1.25em; }
+html body.jobs main #article #content article h1 + h2, html body.jobs main #article #content article h2 + h3 { padding-top: 0; }
+html body.jobs main #article #content article h1 + ul, html body.jobs main #article #content article h2 + ul, html body.jobs main #article #content article h3 + ul, html body.jobs main #article #content article h1 + ol, html body.jobs main #article #content article h2 + ol, html body.jobs main #article #content article h3 + ol, html body.jobs main #article #content article h1 + figure, html body.jobs main #article #content article h2 + figure, html body.jobs main #article #content article h3 + figure, html body.jobs main #article #content article h1 + nav { margin-top: 0; }
+html body.jobs main #article #content article li ul, html body.jobs main #article #content article li ol { margin-top: 0; }
+html body.jobs main #article #content article #excerpt { display: block; }
+html body.announcements main #article article.thumb { margin-bottom: 3%; }
+@media only screen and (max-width: 48em) { html body.announcements main #article article.thumb { width: 100%; margin-right: 0; float: left; } }
+@media only screen and (min-width: 48em) and (max-width: 79.999em) { html body.announcements main #article article.thumb { width: 45%; margin-right: 10%; float: left; }
+  html body.announcements main #article article.thumb:nth-of-type(2) { margin-right: 0; }
+  html body.announcements main #article article.thumb:nth-of-type(3) { margin-right: 10%; }
+  html body.announcements main #article article.thumb:nth-of-type(4) { margin-right: 0; }
+  html body.announcements main #article article.thumb:nth-of-type(5) { margin-right: 10%; }
+  html body.announcements main #article article.thumb:nth-of-type(6) { margin-right: 0; }
+  html body.announcements main #article article.thumb:nth-of-type(7) { margin-right: 10%; }
+  html body.announcements main #article article.thumb:nth-of-type(8) { margin-right: 0; }
+  html body.announcements main #article article.thumb:nth-of-type(9) { margin-right: 10%; }
+  html body.announcements main #article article.thumb:nth-of-type(10) { margin-right: 0; } }
+@media only screen and (min-width: 80em) { html body.announcements main #article article.thumb { width: 31.5%; margin-right: 2.5%; float: left; }
+  html body.announcements main #article article.thumb:nth-of-type(2) { margin-right: 2.5%; }
+  html body.announcements main #article article.thumb:nth-of-type(3) { margin-right: 0; }
+  html body.announcements main #article article.thumb:nth-of-type(4) { margin-right: 2.5%; }
+  html body.announcements main #article article.thumb:nth-of-type(5) { margin-right: 2.5%; }
+  html body.announcements main #article article.thumb:nth-of-type(6) { margin-right: 0; }
+  html body.announcements main #article article.thumb:nth-of-type(7) { margin-right: 2.5%; }
+  html body.announcements main #article article.thumb:nth-of-type(8) { margin-right: 2.5%; }
+  html body.announcements main #article article.thumb:nth-of-type(9) { margin-right: 0; }
+  html body.announcements main #article article.thumb:nth-of-type(10) { margin-right: 2.5%; } }
+html body.announcements main #article article.thumb figure { display: block; }
+html body.announcements main #article article.thumb figcaption { display: none; }
+html body.announcements main #article article.thumb #excerpt { display: none; }
+html body.announcements main #article article.thumb #content { display: none; }
+html body.announcements main #article article.thumb #meta #category { display: none; }
+html body.announcements main #article article.thumb #meta #date { display: none; }
+html body.announcements main #article article.thumb #meta { display: none; }
+html body.announcements main #article article.thumb #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; text-align: justify; }
+html body.announcements main #article article.thumb #meta { margin-top: 0.625em; }
+html body.announcements main #article article.thumb #meta > h3 { display: none; }
+html body.announcements main #article article.thumb #meta ul { margin: 0; }
+html body.announcements main #article article.thumb #meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
+html body.announcements main #article article.thumb #meta ul li:before { content: ''; }
+html body.announcements main #article article.thumb #meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
+html body.announcements main #article article.thumb #meta ul li:last-of-type { margin-right: 0; }
+html body.announcements main #article article.thumb #meta #date { font-size: small; color: #74676a; }
+html body.announcements main #article article.thumb #meta #category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
+html body.announcements main #article article.thumb #meta #category a { color: #982022; text-decoration: none; }
+html body.announcements main #article article.thumb #meta #category a:hover { color: #231f20; }
+html body.announcements main #article article.thumb #meta #authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; }
+html body.announcements main #article article.thumb #meta #authors ul li:after { content: ','; }
+html body.announcements main #article article.thumb #meta #authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+html body.announcements main #article article.thumb #meta #authors ul li:first-of-type:after, html body.announcements main #article article.thumb #meta #authors ul li:last-of-type:after { content: ''; }
+html body.announcements main #article article.thumb #share ul li { display: block; margin-right: none; float: none; padding-left: 0; }
+html body.announcements main #article article.thumb #share ul li:before { content: ''; }
+html body.announcements main #article article.thumb #share ul li { display: inline-block; float: left; margin-right: 1.25em; }
+html body.announcements main #article article.thumb #share ul li:last-of-type { margin-right: 0; }
+html body.announcements main #article article.thumb #share ul li .box .count { float: right; background: #231f20; color: white; font-size: small; padding: 0 0.3125em; }
+html body.announcements main #article article.thumb #share ul li .box .count a { color: white; text-decoration: none; }
+html body.announcements main #article article.thumb #share ul li .box .count a:hover { color: white; }
+html body.announcements main #article article.thumb #share ul li .box .share img { width: 30%; }
+html body.announcements main #article article.thumb #content a { color: #982022; text-decoration: none; }
+html body.announcements main #article article.thumb #content a:hover { color: #982022; }
+html body.announcements main #article article.thumb h1 { font-size: medium; }
+html body.announcements main #article nav { margin-top: 1.25em; }
+html body.announcements main #article nav > h3 { display: none; }
+html body.announcements main #article nav ol li { display: inline-block; float: left; margin-right: 0.625em; }
+html body.announcements main #article nav ol li:last-of-type { margin-right: 0; }
+html body.announcements main #article nav ol li a { padding: 0.625em 0.9375em; display: block; }
+html body.announcements main #article nav ol li.active a, html body.announcements main #article nav ol li:hover a { background: #982022; color: white; }
+html body.announcements main #article nav ol li.active a a, html body.announcements main #article nav ol li:hover a a { color: white; text-decoration: none; }
+html body.announcements main #article nav ol li.active a a:hover, html body.announcements main #article nav ol li:hover a a:hover { color: white; }
+html body.announcements main #article nav ol li { background: #f1f1f1; color: #231f20; -moz-border-radius: 1.25em; -webkit-border-radius: 1.25em; border-radius: 1.25em; }
+html body.announcements main #article nav ol li a { color: #231f20; text-decoration: none; }
+html body.announcements main #article nav ol li a:hover { color: white; }
 
 html body { /* Highlighting active menu items
 */ }

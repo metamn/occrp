@@ -116,16 +116,7 @@ html {
     }
     
     
-    /* Jobs
-    */
-    &.jobs {
-      main {
-        #articles {
-          @include jobs;
-        }
-      }
-    }
-    
+   
     
     
     /* Members with Google Maps
@@ -161,7 +152,26 @@ html {
         }
       }
     }
-   
+    
+    /* Jobs
+    */
+    &.jobs {
+      main {
+        #article {
+          @include jobs;
+        }
+      }
+    }
+    
+    /* Announcements
+    */
+    &.announcements {
+      main {
+        #article {
+          @include announcements;
+        }
+      }
+    }
   }
   
 }
