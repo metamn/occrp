@@ -308,28 +308,10 @@
 /* Resource Center
 */
 @mixin resource-center {
-  #article article #content {
-    #handbook, #reports, #academic-studies {
-      @include block;
-      
-      article {
-        @include article(null, null, title, null, null, excerpt, null);
-        
-        h1 {
-          @include link;
-          padding: $pad 0;
-        }
-        
-        #excerpt {
-          display: block;
-          @include body-text;
-        }
-      }
-      
-      #documents {
-        ul {
-          @include list-download;
-        }
+  section {
+    #documents {
+      ul {
+        @include list-download;
       }
     }
   }
