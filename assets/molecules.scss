@@ -294,6 +294,16 @@
   }
 }
 
+@mixin list-with-border {
+  @include font(navigation);
+  
+  li {
+    padding: $pad/2;
+    border-bottom: 1px solid $background;
+  }
+}
+
+
 
 
 

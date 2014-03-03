@@ -432,6 +432,15 @@
   margin-right: 0;
   
   @include most-read;
+  
+  nav {
+    @include hide-title;
+    
+    ul {
+      @include list-with-border;
+    }
+  }
+  
   section {
     @include block;
     margin-bottom: $flexible-grid-margin;

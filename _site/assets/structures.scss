@@ -146,9 +146,9 @@ html {
     }
     
     
-    /* Article
+    /* Single Article, About Us
     */
-    &.article {
+    &.article, &.about {
       main {
         @include fixed-sidebar;
         
