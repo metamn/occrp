@@ -546,7 +546,7 @@
 */
 @mixin products {
   @include padding;
-  background: $light-grey url(/assets/stripe.png);
+  background: $light-grey;
   margin-bottom: $flexible-grid-margin / 2;
   
   article {
