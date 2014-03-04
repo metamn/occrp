@@ -34,6 +34,14 @@
   }
 }
 
+/* Show a section title
+*/
+@mixin show-title {
+  > h3 {
+    display: block;
+  }
+}
+
 
 
 /* Flexible grid
@@ -263,13 +271,16 @@
 
 @mixin list-download {
   li {
+    margin-bottom: $pad/2;
+    
     @include border-thin;
     
     &:before {
-      content: url(http://metamn.github.io/occrp/assets/download.png);
-      margin-right: $pad/2;
-      position: relative;
-      top: $pad/4;
+      content: url(http://metamn.github.io/occrp/assets/download.png) !important;
+    }
+    
+    a {
+      margin-left: $pad;
     }
   }
 }
@@ -1052,7 +1063,7 @@
 
 @mixin ul {
   ul {
-    @include ol-ul('\2610');
+    @include ol-ul('\25C6');
   }
 }
 

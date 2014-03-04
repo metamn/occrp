@@ -313,10 +313,16 @@
 */
 @mixin resource-center {
   section {
+    @include show-title;
+    
     #documents {
       ul {
         @include list-download;
       }
+    }
+    
+    &#tools {
+      @include article-style(title-right);
     }
   }
 }

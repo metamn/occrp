@@ -5,6 +5,14 @@ category: page
 ---
 
 
+<section id="tools">
+  <h3>Tools</h3>
+  
+  {% for post in site.categories.projects limit:5 offset:5 %}
+    {% include article.html %}
+  {% endfor %}
+</section>
+
 
 <section>
   <h3>Documents</h3>

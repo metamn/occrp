@@ -116,18 +116,6 @@ html {
     }
     
     
-   
-    
-    
-    /* Members with Google Maps
-    */
-    &.members {
-      main {
-        @include members;
-      }
-    }
-    
-    
     /* Resource Center
     */
     &.resources {

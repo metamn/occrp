@@ -83,6 +83,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 */
 /* Hide a section title
 */
+/* Show a section title
+*/
 /* Flexible grid - all items are aligned left with an uniform margin - this grid can be dynamically positioned by Isotope
 */
 /* Column N of M - creates a grid column on N cols from M total columns
@@ -228,7 +230,6 @@ html body { background: white; color: #231f20; font-size: 100%; line-height: 1.2
 */ /* Category
 */ /* Tag
 */ /* Projects
-*/ /* Members with Google Maps
 */ /* Resource Center
 */ /* Single Article, About Us
 */ /* Jobs
@@ -1230,10 +1231,46 @@ html body.projects main #articles nav ol li.active a a:hover, html body.projects
 html body.projects main #articles nav ol li { background: #f1f1f1; color: #231f20; -moz-border-radius: 1.25em; -webkit-border-radius: 1.25em; border-radius: 1.25em; }
 html body.projects main #articles nav ol li a { color: #231f20; text-decoration: none; }
 html body.projects main #articles nav ol li a:hover { color: white; }
-html body.members main #google-maps { position: relative; padding-bottom: 45%; height: 0; overflow: hidden; }
-html body.members main #google-maps iframe { position: absolute; top: 0; left: 0; width: 100% !important; height: 100% !important; }
-html body.resources main section #documents ul li { border-bottom: 1px solid #f1f1f1; }
-html body.resources main section #documents ul li:before { content: url(http://metamn.github.io/occrp/assets/download.png); margin-right: 0.625em; position: relative; top: 0.3125em; }
+html body.resources main section > h3 { display: block; }
+html body.resources main section #documents ul li { margin-bottom: 0.625em; border-bottom: 1px solid #f1f1f1; }
+html body.resources main section #documents ul li:before { content: url(http://metamn.github.io/occrp/assets/download.png) !important; }
+html body.resources main section #documents ul li a { margin-left: 1.25em; }
+html body.resources main section#tools article { width: 100%; max-width: 100%; float: left; margin-bottom: 3%; }
+html body.resources main section#tools article figure { display: block; }
+html body.resources main section#tools article figcaption { display: none; }
+html body.resources main section#tools article #excerpt { display: none; }
+html body.resources main section#tools article #content { display: none; }
+html body.resources main section#tools article #meta #category { display: none; }
+html body.resources main section#tools article #meta #date { display: none; }
+html body.resources main section#tools article #meta { display: none; }
+html body.resources main section#tools article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; text-align: justify; }
+html body.resources main section#tools article #meta { margin-top: 0.625em; }
+html body.resources main section#tools article #meta > h3 { display: none; }
+html body.resources main section#tools article #meta ul { margin: 0; }
+html body.resources main section#tools article #meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
+html body.resources main section#tools article #meta ul li:before { content: ''; }
+html body.resources main section#tools article #meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
+html body.resources main section#tools article #meta ul li:last-of-type { margin-right: 0; }
+html body.resources main section#tools article #meta #date { font-size: small; color: #74676a; }
+html body.resources main section#tools article #meta #category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
+html body.resources main section#tools article #meta #category a { color: #982022; text-decoration: none; }
+html body.resources main section#tools article #meta #category a:hover { color: #231f20; }
+html body.resources main section#tools article #meta #authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; }
+html body.resources main section#tools article #meta #authors ul li:after { content: ','; }
+html body.resources main section#tools article #meta #authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+html body.resources main section#tools article #meta #authors ul li:first-of-type:after, html body.resources main section#tools article #meta #authors ul li:last-of-type:after { content: ''; }
+html body.resources main section#tools article #share ul li { display: block; margin-right: none; float: none; padding-left: 0; }
+html body.resources main section#tools article #share ul li:before { content: ''; }
+html body.resources main section#tools article #share ul li { display: inline-block; float: left; margin-right: 1.25em; }
+html body.resources main section#tools article #share ul li:last-of-type { margin-right: 0; }
+html body.resources main section#tools article #share ul li .box .count { float: right; background: #231f20; color: white; font-size: small; padding: 0 0.3125em; }
+html body.resources main section#tools article #share ul li .box .count a { color: white; text-decoration: none; }
+html body.resources main section#tools article #share ul li .box .count a:hover { color: white; }
+html body.resources main section#tools article #share ul li .box .share img { width: 30%; }
+html body.resources main section#tools article #content a { color: #982022; text-decoration: none; }
+html body.resources main section#tools article #content a:hover { color: #982022; }
+html body.resources main section#tools article figure, html body.resources main section#tools article h1 { width: 48.75%; margin-right: 2.5%; float: left; }
+html body.resources main section#tools article h1 { margin-right: 0; padding: 0.625em; width: calc(48.75% - 1.25em); padding-left: 0; padding-top: 0; font-size: medium; }
 html body.article main, html body.about main { overflow: hidden; }
 html body.article main aside #spacer, html body.about main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; position: relative; top: -2.5em; /* This is the margin between sidebar elements ... */ }
 html body.article main aside #spacer > h3, html body.about main aside #spacer > h3 { display: none; }
@@ -1278,7 +1315,7 @@ html body.article main #article article.single h1, html body.article main #artic
 html body.article main #article article.single ul, html body.about main #article article.single ul { list-style: none outside; }
 html body.article main #article article.single ul li, html body.about main #article article.single ul li { /* When parent positioned to 'relative' the children (:before) can be positioned to 'absolute' - this way we can perfectly align the bullets / numbering to the list content
 */ position: relative; padding-left: 1.25em; }
-html body.article main #article article.single ul li:before, html body.about main #article article.single ul li:before { content: "\2610"; /* making the content of the list perfectly align with numbering - <li> is relatively positioned - :the numbering (:before) is aboslutely positioned within <li> and fixed to left - the the <li> content has a padding-left to not overlap the numbering
+html body.article main #article article.single ul li:before, html body.about main #article article.single ul li:before { content: "\25C6"; /* making the content of the list perfectly align with numbering - <li> is relatively positioned - :the numbering (:before) is aboslutely positioned within <li> and fixed to left - the the <li> content has a padding-left to not overlap the numbering
 */ position: absolute; left: 0; font-weight: bold; }
 html body.article main #article article.single ol, html body.about main #article article.single ol { list-style: none outside; counter-reset: ol-counter; }
 html body.article main #article article.single ol li, html body.about main #article article.single ol li { /* When parent positioned to 'relative' the children (:before) can be positioned to 'absolute' - this way we can perfectly align the bullets / numbering to the list content
@@ -1607,7 +1644,7 @@ html body.jobs main #article #content article h1, html body.jobs main #article #
 html body.jobs main #article #content article ul, html body.announcements main #article #content article ul { list-style: none outside; }
 html body.jobs main #article #content article ul li, html body.announcements main #article #content article ul li { /* When parent positioned to 'relative' the children (:before) can be positioned to 'absolute' - this way we can perfectly align the bullets / numbering to the list content
 */ position: relative; padding-left: 1.25em; }
-html body.jobs main #article #content article ul li:before, html body.announcements main #article #content article ul li:before { content: "\2610"; /* making the content of the list perfectly align with numbering - <li> is relatively positioned - :the numbering (:before) is aboslutely positioned within <li> and fixed to left - the the <li> content has a padding-left to not overlap the numbering
+html body.jobs main #article #content article ul li:before, html body.announcements main #article #content article ul li:before { content: "\25C6"; /* making the content of the list perfectly align with numbering - <li> is relatively positioned - :the numbering (:before) is aboslutely positioned within <li> and fixed to left - the the <li> content has a padding-left to not overlap the numbering
 */ position: absolute; left: 0; font-weight: bold; }
 html body.jobs main #article #content article ol, html body.announcements main #article #content article ol { list-style: none outside; counter-reset: ol-counter; }
 html body.jobs main #article #content article ol li, html body.announcements main #article #content article ol li { /* When parent positioned to 'relative' the children (:before) can be positioned to 'absolute' - this way we can perfectly align the bullets / numbering to the list content
