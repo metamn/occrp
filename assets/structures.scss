@@ -153,9 +153,57 @@ html {
       }
     }
     
+    &.about {
+      main {
+        aside {
+          section {
+            h3 {
+              margin-bottom: 0;
+            }
+            
+            nav {
+              ul {
+                @include list-menu;
+                
+                li {
+                  @include block;
+                  @include grid-resize(100%, $pad/2);
+                  
+                  a {
+                    @include block;
+                    @include grid-resize(100%, $pad/2);
+                  }
+                }
+              }
+            }
+          }
+          
+          #spacer {
+            top: -$pad - $pad/4;
+          }
+        }
+      }
+    }
+    
+    &.board-directors {
+      main {
+        #article {
+          p {
+            @include border-thin;
+            font-weight: bold;
+          }
+          
+          dl + p {
+            margin-top: $pad*2 !important;
+          }
+        }
+      }
+    }
+    
+    
     /* Jobs
     */
-    &.jobs {
+    &.jobs, &.announcements {
       main {
         #article {
           @include jobs;
@@ -163,15 +211,7 @@ html {
       }
     }
     
-    /* Announcements
-    */
-    &.announcements {
-      main {
-        #article {
-          @include announcements;
-        }
-      }
-    }
+    
   }
   
 }

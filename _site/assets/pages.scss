@@ -61,5 +61,66 @@ html {
         }
       }
     }
+    
+    
+    
+    /* Highlighting active menu items in the sidebar, About pages
+    */
+    &.history {
+      aside #subpages nav li#history {
+        a {
+          @include color(menu);
+        }
+      }
+    }
+    
+    &.members {
+      aside #subpages nav li#members {
+        a {
+          @include color(menu);
+        }
+      }
+    }
+    
+    &.staff {
+      aside #subpages nav li#staff {
+        a {
+          @include color(menu);
+        }
+      }
+    }
+    
+    &.board-directors {  
+      aside #subpages nav li#board-directors {
+        a {
+          @include color(menu);
+        }
+      }
+    }
+    
+    &.jobs {  
+      aside #subpages nav li#jobs {
+        a {
+          @include color(menu);
+        }
+      }
+    }
+    
+    &.awards {  
+      aside #subpages nav li#awards {
+        a {
+          @include color(menu);
+        }
+      }
+    }
+    
+    &.announcements {  
+      aside #subpages nav li#announcements {
+        a {
+          @include color(menu);
+        }
+      }
+    }
+    
   }
 }

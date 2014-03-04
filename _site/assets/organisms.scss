@@ -251,6 +251,10 @@
         @include font(single-article-title);
       }
     }
+    
+    #meta, #share, #content {
+      @include block;
+    }
       
     #meta {
       @include border-thin;
@@ -628,7 +632,7 @@
 
 
 
-/* Teh fixed header
+/* The fixed header
 */
 @mixin fixed-header {
   #header {

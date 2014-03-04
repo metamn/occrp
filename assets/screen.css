@@ -89,7 +89,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 */
 /* A function to calculate the width of the column for col-n-of-m - this is used usually in padding();
 */
-/* Columns defined by gutter - Sometimes the width of a column is defined inversely, by the gutter size - For example, when a col-nm(2,3) is divided into two subcolumns the gutter size is fixed to col-gutter(3) - Ie, instead haveing two cols of 45% and margin 10% we have a fixed margin of 2.5% and the rest of the columns colaculated accordingly
+/* Columns defined by gutter - Sometimes the width of a column is defined inversely, by the gutter size - For example, when a col-nm(2,3) is divided into two subcolumns the gutter size is fixed to col-gutter(3) - Ie, instead having two cols of 45% and margin 10% we have a fixed margin of 2.5% and the rest of the columns calaculated accordingly
 */
 /* A function to calculate the width of the column for col-by-gutter - this is used usually in padding();
 */
@@ -194,7 +194,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 */
 /* The slider on the frontpage
 */
-/* Teh fixed header
+/* The fixed header
 */
 /* The Header
 */
@@ -232,7 +232,6 @@ html body { background: white; color: #231f20; font-size: 100%; line-height: 1.2
 */ /* Resource Center
 */ /* Single Article, About Us
 */ /* Jobs
-*/ /* Announcements
 */ }
 html body a { color: #231f20; text-decoration: none; }
 html body a:hover { color: #982022; }
@@ -1378,6 +1377,7 @@ html body.article main #article article.single h1 + h2, html body.article main #
 html body.article main #article article.single h1 + ul, html body.article main #article article.single h2 + ul, html body.article main #article article.single h3 + ul, html body.article main #article article.single h1 + ol, html body.article main #article article.single h2 + ol, html body.article main #article article.single h3 + ol, html body.article main #article article.single h1 + figure, html body.article main #article article.single h2 + figure, html body.article main #article article.single h3 + figure, html body.article main #article article.single h1 + nav, html body.about main #article article.single h1 + ul, html body.about main #article article.single h2 + ul, html body.about main #article article.single h3 + ul, html body.about main #article article.single h1 + ol, html body.about main #article article.single h2 + ol, html body.about main #article article.single h3 + ol, html body.about main #article article.single h1 + figure, html body.about main #article article.single h2 + figure, html body.about main #article article.single h3 + figure, html body.about main #article article.single h1 + nav { margin-top: 0; }
 html body.article main #article article.single li ul, html body.article main #article article.single li ol, html body.about main #article article.single li ul, html body.about main #article article.single li ol { margin-top: 0; }
 html body.article main #article article.single h1:first-of-type, html body.about main #article article.single h1:first-of-type { font-size: 24px; font-size: 1.5rem; padding: 0; }
+html body.article main #article article.single #meta, html body.article main #article article.single #share, html body.article main #article article.single #content, html body.about main #article article.single #meta, html body.about main #article article.single #share, html body.about main #article article.single #content { width: 100%; max-width: 100%; float: left; }
 html body.article main #article article.single #meta, html body.about main #article article.single #meta { border-bottom: 1px solid #f1f1f1; margin-bottom: 1.25em; }
 html body.article main #article article.single #share, html body.about main #article article.single #share { margin: 1.25em 0; }
 html body.article main #article article.single #content figure figcaption, html body.about main #article article.single #content figure figcaption { border-bottom: 1px solid #f1f1f1; padding-bottom: 1.25em; }
@@ -1551,220 +1551,164 @@ html body.article main aside section#projects article #content a, html body.abou
 html body.article main aside section#projects article #content a:hover, html body.about main aside section#projects article #content a:hover { color: #982022; }
 html body.article main aside section#projects article figure, html body.article main aside section#projects article h1, html body.about main aside section#projects article figure, html body.about main aside section#projects article h1 { width: 48.75%; margin-right: 2.5%; float: left; }
 html body.article main aside section#projects article h1, html body.about main aside section#projects article h1 { margin-right: 0; padding: 0.625em; width: calc(48.75% - 1.25em); padding-left: 0; padding-top: 0; font-size: medium; }
-html body.jobs main #article #content article { margin-bottom: 3%; border-bottom: 1px solid #f1f1f1; padding-bottom: 1.5%; margin-bottom: 1.5%; max-width: 43.75em; line-height: 1.75; /* Padding of individual elements
+html body.about main aside section h3 { margin-bottom: 0; }
+html body.about main aside section nav ul li a { padding: 0.625em 0.3125em; display: inline-block; }
+html body.about main aside section nav ul li.active a, html body.about main aside section nav ul li:hover a { background: #982022; color: white; }
+html body.about main aside section nav ul li.active a a, html body.about main aside section nav ul li:hover a a { color: white; text-decoration: none; }
+html body.about main aside section nav ul li.active a a:hover, html body.about main aside section nav ul li:hover a a:hover { color: white; }
+html body.about main aside section nav ul li { width: 100%; max-width: 100%; float: left; width: calc(100% - 0.625em); }
+html body.about main aside section nav ul li a { width: 100%; max-width: 100%; float: left; width: calc(100% - 0.625em); }
+html body.about main aside #spacer { top: -1.5625em; }
+html body.board-directors main #article p { border-bottom: 1px solid #f1f1f1; font-weight: bold; }
+html body.board-directors main #article dl + p { margin-top: 2.5em !important; }
+html body.jobs main #article #content article, html body.announcements main #article #content article { margin-bottom: 3%; border-bottom: 1px solid #f1f1f1; padding-bottom: 1.5%; margin-bottom: 1.5%; max-width: 43.75em; line-height: 1.75; /* Padding of individual elements
 */ /* Padding of consecutive elements
 */ }
-html body.jobs main #article #content article figure { display: none; }
-html body.jobs main #article #content article figcaption { display: none; }
-html body.jobs main #article #content article #excerpt { display: none; }
-html body.jobs main #article #content article #content { display: none; }
-html body.jobs main #article #content article #meta #category { display: none; }
-html body.jobs main #article #content article #meta #date { display: none; }
-html body.jobs main #article #content article #meta { display: none; }
-html body.jobs main #article #content article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; text-align: justify; }
-html body.jobs main #article #content article #meta { margin-top: 0.625em; }
-html body.jobs main #article #content article #meta > h3 { display: none; }
-html body.jobs main #article #content article #meta ul { margin: 0; }
-html body.jobs main #article #content article #meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.jobs main #article #content article #meta ul li:before { content: ''; }
-html body.jobs main #article #content article #meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
-html body.jobs main #article #content article #meta ul li:last-of-type { margin-right: 0; }
-html body.jobs main #article #content article #meta #date { font-size: small; color: #74676a; }
-html body.jobs main #article #content article #meta #category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
-html body.jobs main #article #content article #meta #category a { color: #982022; text-decoration: none; }
-html body.jobs main #article #content article #meta #category a:hover { color: #231f20; }
-html body.jobs main #article #content article #meta #authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; }
-html body.jobs main #article #content article #meta #authors ul li:after { content: ','; }
-html body.jobs main #article #content article #meta #authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
-html body.jobs main #article #content article #meta #authors ul li:first-of-type:after, html body.jobs main #article #content article #meta #authors ul li:last-of-type:after { content: ''; }
-html body.jobs main #article #content article #share ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.jobs main #article #content article #share ul li:before { content: ''; }
-html body.jobs main #article #content article #share ul li { display: inline-block; float: left; margin-right: 1.25em; }
-html body.jobs main #article #content article #share ul li:last-of-type { margin-right: 0; }
-html body.jobs main #article #content article #share ul li .box .count { float: right; background: #231f20; color: white; font-size: small; padding: 0 0.3125em; }
-html body.jobs main #article #content article #share ul li .box .count a { color: white; text-decoration: none; }
-html body.jobs main #article #content article #share ul li .box .count a:hover { color: white; }
-html body.jobs main #article #content article #share ul li .box .share img { width: 30%; }
-html body.jobs main #article #content article #content a { color: #982022; text-decoration: none; }
-html body.jobs main #article #content article #content a:hover { color: #982022; }
-html body.jobs main #article #content article h1 { font-size: medium; }
-html body.jobs main #article #content article h1, html body.jobs main #article #content article h2, html body.jobs main #article #content article h3, html body.jobs main #article #content article h4, html body.jobs main #article #content article h5, html body.jobs main #article #content article h6 { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; line-height: 1.25; padding: 0; }
-html body.jobs main #article #content article h1 { font-size: 20px; font-size: 1.25rem; font-weight: bold; }
-html body.jobs main #article #content article h2 { font-size: 20px; font-size: 1.25rem; font-weight: normal; text-transform: uppercase; letter-spacing: 1.1px; }
-html body.jobs main #article #content article h3 { font-size: 20px; font-size: 1.25rem; font-weight: normal; }
-html body.jobs main #article #content article h4 { font-size: larger; font-weight: normal; }
-html body.jobs main #article #content article h1, html body.jobs main #article #content article h2, html body.jobs main #article #content article h3, html body.jobs main #article #content article h4, html body.jobs main #article #content article h5, html body.jobs main #article #content article h6 { margin-top: 0; margin-bottom: 0; padding: 1.45833em 0; }
-html body.jobs main #article #content article ul { list-style: none outside; }
-html body.jobs main #article #content article ul li { /* When parent positioned to 'relative' the children (:before) can be positioned to 'absolute' - this way we can perfectly align the bullets / numbering to the list content
+html body.jobs main #article #content article figure, html body.announcements main #article #content article figure { display: none; }
+html body.jobs main #article #content article figcaption, html body.announcements main #article #content article figcaption { display: none; }
+html body.jobs main #article #content article #excerpt, html body.announcements main #article #content article #excerpt { display: none; }
+html body.jobs main #article #content article #content, html body.announcements main #article #content article #content { display: none; }
+html body.jobs main #article #content article #meta #category, html body.announcements main #article #content article #meta #category { display: none; }
+html body.jobs main #article #content article #meta #date, html body.announcements main #article #content article #meta #date { display: none; }
+html body.jobs main #article #content article #meta, html body.announcements main #article #content article #meta { display: none; }
+html body.jobs main #article #content article #excerpt, html body.announcements main #article #content article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; text-align: justify; }
+html body.jobs main #article #content article #meta, html body.announcements main #article #content article #meta { margin-top: 0.625em; }
+html body.jobs main #article #content article #meta > h3, html body.announcements main #article #content article #meta > h3 { display: none; }
+html body.jobs main #article #content article #meta ul, html body.announcements main #article #content article #meta ul { margin: 0; }
+html body.jobs main #article #content article #meta ul li, html body.announcements main #article #content article #meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
+html body.jobs main #article #content article #meta ul li:before, html body.announcements main #article #content article #meta ul li:before { content: ''; }
+html body.jobs main #article #content article #meta ul li, html body.announcements main #article #content article #meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
+html body.jobs main #article #content article #meta ul li:last-of-type, html body.announcements main #article #content article #meta ul li:last-of-type { margin-right: 0; }
+html body.jobs main #article #content article #meta #date, html body.announcements main #article #content article #meta #date { font-size: small; color: #74676a; }
+html body.jobs main #article #content article #meta #category, html body.announcements main #article #content article #meta #category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
+html body.jobs main #article #content article #meta #category a, html body.announcements main #article #content article #meta #category a { color: #982022; text-decoration: none; }
+html body.jobs main #article #content article #meta #category a:hover, html body.announcements main #article #content article #meta #category a:hover { color: #231f20; }
+html body.jobs main #article #content article #meta #authors, html body.announcements main #article #content article #meta #authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; }
+html body.jobs main #article #content article #meta #authors ul li:after, html body.announcements main #article #content article #meta #authors ul li:after { content: ','; }
+html body.jobs main #article #content article #meta #authors ul li:first-of-type, html body.announcements main #article #content article #meta #authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+html body.jobs main #article #content article #meta #authors ul li:first-of-type:after, html body.jobs main #article #content article #meta #authors ul li:last-of-type:after, html body.announcements main #article #content article #meta #authors ul li:first-of-type:after, html body.announcements main #article #content article #meta #authors ul li:last-of-type:after { content: ''; }
+html body.jobs main #article #content article #share ul li, html body.announcements main #article #content article #share ul li { display: block; margin-right: none; float: none; padding-left: 0; }
+html body.jobs main #article #content article #share ul li:before, html body.announcements main #article #content article #share ul li:before { content: ''; }
+html body.jobs main #article #content article #share ul li, html body.announcements main #article #content article #share ul li { display: inline-block; float: left; margin-right: 1.25em; }
+html body.jobs main #article #content article #share ul li:last-of-type, html body.announcements main #article #content article #share ul li:last-of-type { margin-right: 0; }
+html body.jobs main #article #content article #share ul li .box .count, html body.announcements main #article #content article #share ul li .box .count { float: right; background: #231f20; color: white; font-size: small; padding: 0 0.3125em; }
+html body.jobs main #article #content article #share ul li .box .count a, html body.announcements main #article #content article #share ul li .box .count a { color: white; text-decoration: none; }
+html body.jobs main #article #content article #share ul li .box .count a:hover, html body.announcements main #article #content article #share ul li .box .count a:hover { color: white; }
+html body.jobs main #article #content article #share ul li .box .share img, html body.announcements main #article #content article #share ul li .box .share img { width: 30%; }
+html body.jobs main #article #content article #content a, html body.announcements main #article #content article #content a { color: #982022; text-decoration: none; }
+html body.jobs main #article #content article #content a:hover, html body.announcements main #article #content article #content a:hover { color: #982022; }
+html body.jobs main #article #content article h1, html body.announcements main #article #content article h1 { font-size: medium; }
+html body.jobs main #article #content article h1, html body.jobs main #article #content article h2, html body.jobs main #article #content article h3, html body.jobs main #article #content article h4, html body.jobs main #article #content article h5, html body.jobs main #article #content article h6, html body.announcements main #article #content article h1, html body.announcements main #article #content article h2, html body.announcements main #article #content article h3, html body.announcements main #article #content article h4, html body.announcements main #article #content article h5, html body.announcements main #article #content article h6 { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; line-height: 1.25; padding: 0; }
+html body.jobs main #article #content article h1, html body.announcements main #article #content article h1 { font-size: 20px; font-size: 1.25rem; font-weight: bold; }
+html body.jobs main #article #content article h2, html body.announcements main #article #content article h2 { font-size: 20px; font-size: 1.25rem; font-weight: normal; text-transform: uppercase; letter-spacing: 1.1px; }
+html body.jobs main #article #content article h3, html body.announcements main #article #content article h3 { font-size: 20px; font-size: 1.25rem; font-weight: normal; }
+html body.jobs main #article #content article h4, html body.announcements main #article #content article h4 { font-size: larger; font-weight: normal; }
+html body.jobs main #article #content article h1, html body.jobs main #article #content article h2, html body.jobs main #article #content article h3, html body.jobs main #article #content article h4, html body.jobs main #article #content article h5, html body.jobs main #article #content article h6, html body.announcements main #article #content article h1, html body.announcements main #article #content article h2, html body.announcements main #article #content article h3, html body.announcements main #article #content article h4, html body.announcements main #article #content article h5, html body.announcements main #article #content article h6 { margin-top: 0; margin-bottom: 0; padding: 1.45833em 0; }
+html body.jobs main #article #content article ul, html body.announcements main #article #content article ul { list-style: none outside; }
+html body.jobs main #article #content article ul li, html body.announcements main #article #content article ul li { /* When parent positioned to 'relative' the children (:before) can be positioned to 'absolute' - this way we can perfectly align the bullets / numbering to the list content
 */ position: relative; padding-left: 1.25em; }
-html body.jobs main #article #content article ul li:before { content: "\2610"; /* making the content of the list perfectly align with numbering - <li> is relatively positioned - :the numbering (:before) is aboslutely positioned within <li> and fixed to left - the the <li> content has a padding-left to not overlap the numbering
+html body.jobs main #article #content article ul li:before, html body.announcements main #article #content article ul li:before { content: "\2610"; /* making the content of the list perfectly align with numbering - <li> is relatively positioned - :the numbering (:before) is aboslutely positioned within <li> and fixed to left - the the <li> content has a padding-left to not overlap the numbering
 */ position: absolute; left: 0; font-weight: bold; }
-html body.jobs main #article #content article ol { list-style: none outside; counter-reset: ol-counter; }
-html body.jobs main #article #content article ol li { /* When parent positioned to 'relative' the children (:before) can be positioned to 'absolute' - this way we can perfectly align the bullets / numbering to the list content
+html body.jobs main #article #content article ol, html body.announcements main #article #content article ol { list-style: none outside; counter-reset: ol-counter; }
+html body.jobs main #article #content article ol li, html body.announcements main #article #content article ol li { /* When parent positioned to 'relative' the children (:before) can be positioned to 'absolute' - this way we can perfectly align the bullets / numbering to the list content
 */ position: relative; padding-left: 1.25em; }
-html body.jobs main #article #content article ol li:before { /* making the content of the list perfectly align with numbering - <li> is relatively positioned - :the numbering (:before) is aboslutely positioned within <li> and fixed to left - the the <li> content has a padding-left to not overlap the numbering
+html body.jobs main #article #content article ol li:before, html body.announcements main #article #content article ol li:before { /* making the content of the list perfectly align with numbering - <li> is relatively positioned - :the numbering (:before) is aboslutely positioned within <li> and fixed to left - the the <li> content has a padding-left to not overlap the numbering
 */ position: absolute; left: 0; font-weight: bold; }
-html body.jobs main #article #content article ol li { counter-increment: ol-counter; }
-html body.jobs main #article #content article ol li:before { content: counter(ol-counter,decimal) "."; }
-html body.jobs main #article #content article dl dt { font-size: 20px; font-size: 1.25rem; font-weight: normal; text-transform: uppercase; letter-spacing: 1.1px; }
-html body.jobs main #article #content article table { width: 100%; display: table !important; }
-html body.jobs main #article #content article table caption { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; margin-bottom: 0.3125em; }
-html body.jobs main #article #content article table thead { background: #231f20; color: white; }
-html body.jobs main #article #content article table thead a { color: white; text-decoration: none; }
-html body.jobs main #article #content article table thead a:hover { color: white; }
-html body.jobs main #article #content article table thead th, html body.jobs main #article #content article table tbody td { padding: 0.625em; padding-left: 0; }
-html body.jobs main #article #content article table thead th:first-of-type, html body.jobs main #article #content article table tbody td:first-of-type { padding-left: 1px; }
-html body.jobs main #article #content article table tbody td { border-bottom: 1px solid #74676a; }
-html body.jobs main #article #content article figure { /* Fit figcpation to image width
+html body.jobs main #article #content article ol li, html body.announcements main #article #content article ol li { counter-increment: ol-counter; }
+html body.jobs main #article #content article ol li:before, html body.announcements main #article #content article ol li:before { content: counter(ol-counter,decimal) "."; }
+html body.jobs main #article #content article dl dt, html body.announcements main #article #content article dl dt { font-size: 20px; font-size: 1.25rem; font-weight: normal; text-transform: uppercase; letter-spacing: 1.1px; }
+html body.jobs main #article #content article table, html body.announcements main #article #content article table { width: 100%; display: table !important; }
+html body.jobs main #article #content article table caption, html body.announcements main #article #content article table caption { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; margin-bottom: 0.3125em; }
+html body.jobs main #article #content article table thead, html body.announcements main #article #content article table thead { background: #231f20; color: white; }
+html body.jobs main #article #content article table thead a, html body.announcements main #article #content article table thead a { color: white; text-decoration: none; }
+html body.jobs main #article #content article table thead a:hover, html body.announcements main #article #content article table thead a:hover { color: white; }
+html body.jobs main #article #content article table thead th, html body.jobs main #article #content article table tbody td, html body.announcements main #article #content article table thead th, html body.announcements main #article #content article table tbody td { padding: 0.625em; padding-left: 0; }
+html body.jobs main #article #content article table thead th:first-of-type, html body.jobs main #article #content article table tbody td:first-of-type, html body.announcements main #article #content article table thead th:first-of-type, html body.announcements main #article #content article table tbody td:first-of-type { padding-left: 1px; }
+html body.jobs main #article #content article table tbody td, html body.announcements main #article #content article table tbody td { border-bottom: 1px solid #74676a; }
+html body.jobs main #article #content article figure, html body.announcements main #article #content article figure { /* Fit figcpation to image width
 */ }
-html body.jobs main #article #content article figure img { width: auto; }
-html body.jobs main #article #content article figure figcaption { font-size: smaller; }
-html body.jobs main #article #content article figure figcaption h1, html body.jobs main #article #content article figure figcaption h2, html body.jobs main #article #content article figure figcaption h3, html body.jobs main #article #content article figure figcaption h4, html body.jobs main #article #content article figure figcaption h5, html body.jobs main #article #content article figure figcaption h6 { margin: 0; padding: 0; }
-html body.jobs main #article #content article figure.left, html body.jobs main #article #content article figure.right, html body.jobs main #article #content article figure.person, html body.jobs main #article #content article figure.document { display: table; }
-html body.jobs main #article #content article figure.left img, html body.jobs main #article #content article figure.right img, html body.jobs main #article #content article figure.person img, html body.jobs main #article #content article figure.document img { display: block; max-width: 100%; }
-html body.jobs main #article #content article figure.left figcaption, html body.jobs main #article #content article figure.right figcaption, html body.jobs main #article #content article figure.person figcaption, html body.jobs main #article #content article figure.document figcaption { display: table-caption; caption-side: bottom; margin-top: 0.3125em; text-align: justify; }
-html body.jobs main #article #content article figure.left + p, html body.jobs main #article #content article figure.right + p, html body.jobs main #article #content article figure.person + p, html body.jobs main #article #content article figure.document + p { margin-top: 1.25em; }
-html body.jobs main #article #content article figure.left { float: left; margin: 0.625em 2.5em 1.25em 0; }
-html body.jobs main #article #content article figure.right { float: right; margin: 0.625em 0 1.25em 2.5em; }
-html body.jobs main #article #content article form { /* Reset */ /* Stretching and padding */ /* Text */ /* Button */ /* Label
+html body.jobs main #article #content article figure img, html body.announcements main #article #content article figure img { width: auto; }
+html body.jobs main #article #content article figure figcaption, html body.announcements main #article #content article figure figcaption { font-size: smaller; }
+html body.jobs main #article #content article figure figcaption h1, html body.jobs main #article #content article figure figcaption h2, html body.jobs main #article #content article figure figcaption h3, html body.jobs main #article #content article figure figcaption h4, html body.jobs main #article #content article figure figcaption h5, html body.jobs main #article #content article figure figcaption h6, html body.announcements main #article #content article figure figcaption h1, html body.announcements main #article #content article figure figcaption h2, html body.announcements main #article #content article figure figcaption h3, html body.announcements main #article #content article figure figcaption h4, html body.announcements main #article #content article figure figcaption h5, html body.announcements main #article #content article figure figcaption h6 { margin: 0; padding: 0; }
+html body.jobs main #article #content article figure.left, html body.jobs main #article #content article figure.right, html body.jobs main #article #content article figure.person, html body.jobs main #article #content article figure.document, html body.announcements main #article #content article figure.left, html body.announcements main #article #content article figure.right, html body.announcements main #article #content article figure.person, html body.announcements main #article #content article figure.document { display: table; }
+html body.jobs main #article #content article figure.left img, html body.jobs main #article #content article figure.right img, html body.jobs main #article #content article figure.person img, html body.jobs main #article #content article figure.document img, html body.announcements main #article #content article figure.left img, html body.announcements main #article #content article figure.right img, html body.announcements main #article #content article figure.person img, html body.announcements main #article #content article figure.document img { display: block; max-width: 100%; }
+html body.jobs main #article #content article figure.left figcaption, html body.jobs main #article #content article figure.right figcaption, html body.jobs main #article #content article figure.person figcaption, html body.jobs main #article #content article figure.document figcaption, html body.announcements main #article #content article figure.left figcaption, html body.announcements main #article #content article figure.right figcaption, html body.announcements main #article #content article figure.person figcaption, html body.announcements main #article #content article figure.document figcaption { display: table-caption; caption-side: bottom; margin-top: 0.3125em; text-align: justify; }
+html body.jobs main #article #content article figure.left + p, html body.jobs main #article #content article figure.right + p, html body.jobs main #article #content article figure.person + p, html body.jobs main #article #content article figure.document + p, html body.announcements main #article #content article figure.left + p, html body.announcements main #article #content article figure.right + p, html body.announcements main #article #content article figure.person + p, html body.announcements main #article #content article figure.document + p { margin-top: 1.25em; }
+html body.jobs main #article #content article figure.left, html body.announcements main #article #content article figure.left { float: left; margin: 0.625em 2.5em 1.25em 0; }
+html body.jobs main #article #content article figure.right, html body.announcements main #article #content article figure.right { float: right; margin: 0.625em 0 1.25em 2.5em; }
+html body.jobs main #article #content article form, html body.announcements main #article #content article form { /* Reset */ /* Stretching and padding */ /* Text */ /* Button */ /* Label
 */ }
-html body.jobs main #article #content article form input, html body.jobs main #article #content article form textarea, html body.jobs main #article #content article form select { border: none; outline: 0; background: white; appearance: none; -webkit-appearance: none; -moz-appearance: none; }
-html body.jobs main #article #content article form input, html body.jobs main #article #content article form textarea { width: 100%; max-width: 100%; float: left; }
-html body.jobs main #article #content article form input, html body.jobs main #article #content article form textarea { padding: 0.625em; width: calc(100% - 1.25em); margin-bottom: 0.625em; }
-html body.jobs main #article #content article form input[type='text'], html body.jobs main #article #content article form input[type='email'], html body.jobs main #article #content article form input[type='password'], html body.jobs main #article #content article form input[type='url'], html body.jobs main #article #content article form input[type='search'], html body.jobs main #article #content article form textarea { border: 1px solid #231f20; font-style: italic; }
-html body.jobs main #article #content article form input[type='submit'] { text-transform: uppercase; letter-spacing: 1.1px; border: 1px solid #231f20; background: #231f20; color: white; cursor: pointer; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; }
-html body.jobs main #article #content article form input[type='submit'] a { color: white; text-decoration: none; }
-html body.jobs main #article #content article form input[type='submit'] a:hover { color: white; }
-html body.jobs main #article #content article form input[type='submit']:hover { background: white; color: #231f20; }
-html body.jobs main #article #content article form input[type='submit']:hover a { color: #231f20; text-decoration: none; }
-html body.jobs main #article #content article form input[type='submit']:hover a:hover { color: #982022; }
-html body.jobs main #article #content article form label { text-transform: uppercase; letter-spacing: 1.1px; }
-html body.jobs main #article #content article q { background: #f1f1f1; padding: 0.15625em; border-bottom: 1px solid #e4e4e4; }
-html body.jobs main #article #content article q:before { content: '\201C'; margin-right: 0.3125em; }
-html body.jobs main #article #content article q:after { content: '\201D'; margin-left: 0.3125em; }
-html body.jobs main #article #content article blockquote { border-top: 1px solid; border-bottom: 1px solid; font-size: large; line-height: 1.5; font-style: italic; color: #312b2c; /* Making room to the " sign 
+html body.jobs main #article #content article form input, html body.jobs main #article #content article form textarea, html body.jobs main #article #content article form select, html body.announcements main #article #content article form input, html body.announcements main #article #content article form textarea, html body.announcements main #article #content article form select { border: none; outline: 0; background: white; appearance: none; -webkit-appearance: none; -moz-appearance: none; }
+html body.jobs main #article #content article form input, html body.jobs main #article #content article form textarea, html body.announcements main #article #content article form input, html body.announcements main #article #content article form textarea { width: 100%; max-width: 100%; float: left; }
+html body.jobs main #article #content article form input, html body.jobs main #article #content article form textarea, html body.announcements main #article #content article form input, html body.announcements main #article #content article form textarea { padding: 0.625em; width: calc(100% - 1.25em); margin-bottom: 0.625em; }
+html body.jobs main #article #content article form input[type='text'], html body.jobs main #article #content article form input[type='email'], html body.jobs main #article #content article form input[type='password'], html body.jobs main #article #content article form input[type='url'], html body.jobs main #article #content article form input[type='search'], html body.jobs main #article #content article form textarea, html body.announcements main #article #content article form input[type='text'], html body.announcements main #article #content article form input[type='email'], html body.announcements main #article #content article form input[type='password'], html body.announcements main #article #content article form input[type='url'], html body.announcements main #article #content article form input[type='search'], html body.announcements main #article #content article form textarea { border: 1px solid #231f20; font-style: italic; }
+html body.jobs main #article #content article form input[type='submit'], html body.announcements main #article #content article form input[type='submit'] { text-transform: uppercase; letter-spacing: 1.1px; border: 1px solid #231f20; background: #231f20; color: white; cursor: pointer; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; }
+html body.jobs main #article #content article form input[type='submit'] a, html body.announcements main #article #content article form input[type='submit'] a { color: white; text-decoration: none; }
+html body.jobs main #article #content article form input[type='submit'] a:hover, html body.announcements main #article #content article form input[type='submit'] a:hover { color: white; }
+html body.jobs main #article #content article form input[type='submit']:hover, html body.announcements main #article #content article form input[type='submit']:hover { background: white; color: #231f20; }
+html body.jobs main #article #content article form input[type='submit']:hover a, html body.announcements main #article #content article form input[type='submit']:hover a { color: #231f20; text-decoration: none; }
+html body.jobs main #article #content article form input[type='submit']:hover a:hover, html body.announcements main #article #content article form input[type='submit']:hover a:hover { color: #982022; }
+html body.jobs main #article #content article form label, html body.announcements main #article #content article form label { text-transform: uppercase; letter-spacing: 1.1px; }
+html body.jobs main #article #content article q, html body.announcements main #article #content article q { background: #f1f1f1; padding: 0.15625em; border-bottom: 1px solid #e4e4e4; }
+html body.jobs main #article #content article q:before, html body.announcements main #article #content article q:before { content: '\201C'; margin-right: 0.3125em; }
+html body.jobs main #article #content article q:after, html body.announcements main #article #content article q:after { content: '\201D'; margin-left: 0.3125em; }
+html body.jobs main #article #content article blockquote, html body.announcements main #article #content article blockquote { border-top: 1px solid; border-bottom: 1px solid; font-size: large; line-height: 1.5; font-style: italic; color: #312b2c; /* Making room to the " sign 
 */ position: relative; float: left; padding: 5em 0 2.5em 5em; /* Fill the parent block
 */ width: 100%; max-width: 100%; float: left; text-align: right; width: calc(43.75em - 5em); /*
 @include below-and-small-screen { width: calc(100% - 5em);
 }
 */ }
-html body.jobs main #article #content article blockquote:before { content: '\201C'; font-size: 900%; position: absolute; top: -0.125em; left: 0; }
-html body.jobs main #article #content article code, html body.jobs main #article #content article pre { background: #f1f1f1; color: #231f20; padding: 0.3125em; font-family: "Lucida Console", "Lucida Sans Typewriter", Monaco, "Bitstream Vera Sans Mono", monospace; }
-html body.jobs main #article #content article code a, html body.jobs main #article #content article pre a { color: #231f20; text-decoration: none; }
-html body.jobs main #article #content article code a:hover, html body.jobs main #article #content article pre a:hover { color: white; }
-html body.jobs main #article #content article pre { white-space: pre-line; padding: 1.25em; }
-html body.jobs main #article #content article hr { margin: 1.25em 0; }
-html body.jobs main #article #content article em, html body.jobs main #article #content article i { font-style: italic; }
-html body.jobs main #article #content article strong, html body.jobs main #article #content article b { font-weight: bold; }
-html body.jobs main #article #content article small { font-size: small; }
-html body.jobs main #article #content article s { text-decoration: line-through; }
-html body.jobs main #article #content article cite { font-style: italic; }
-html body.jobs main #article #content article q { background: #f1f1f1; padding: 0.15625em; border-bottom: 1px solid #e4e4e4; }
-html body.jobs main #article #content article q:before { content: '\201C'; margin-right: 0.3125em; }
-html body.jobs main #article #content article q:after { content: '\201D'; margin-left: 0.3125em; }
-html body.jobs main #article #content article dfn { border-bottom: 1px solid #f1f1f1; }
-html body.jobs main #article #content article abbr { font-variant: small-caps; }
-html body.jobs main #article #content article time { font-size: small; color: #74676a; }
-html body.jobs main #article #content article var { font-style: italic; }
-html body.jobs main #article #content article samp, html body.jobs main #article #content article kbd { font-family: "Lucida Console", "Lucida Sans Typewriter", Monaco, "Bitstream Vera Sans Mono", monospace; font-weight: bold; font-size: small; }
-html body.jobs main #article #content article sup { vertical-align: super; font-size: small; }
-html body.jobs main #article #content article sub { vertical-align: sub; font-size: small; }
-html body.jobs main #article #content article mark { background: #231f20; color: white; padding: 0.3125em; }
-html body.jobs main #article #content article mark a { color: white; text-decoration: none; }
-html body.jobs main #article #content article mark a:hover { color: white; }
-html body.jobs main #article #content article del { text-decoration: line-through; }
-html body.jobs main #article #content article ins { background: #f1f1f1; color: #231f20; padding: 0.3125em; }
-html body.jobs main #article #content article ins a { color: #231f20; text-decoration: none; }
-html body.jobs main #article #content article ins a:hover { color: white; }
-html body.jobs main #article #content article address { font-size: small; color: #74676a; max-width: 21.875em; }
-html body.jobs main #article #content article label.select { width: 100%; max-width: 100%; float: left; }
-html body.jobs main #article #content article label.select:after { content: "\2794"; -moz-transform: rotate(90deg); -ms-transform: rotate(90deg); -o-transform: rotate(90deg); -webkit-transform: rotate(90deg); transform: rotate(90deg); float: right; display: inline-block; position: relative; padding: 0; left: -0.3125em; background: white; font-size: 150%; top: -1.5em; margin-right: 0.3125em; pointer-events: none; /* this is a must */ cursor: pointer; }
-html body.jobs main #article #content article label.select select { border: none; outline: 0; background: white; appearance: none; -webkit-appearance: none; -moz-appearance: none; border: 1px solid; cursor: pointer; width: 100%; padding: 0.3125em; }
-html body.jobs main #article #content article input[type='radio'], html body.jobs main #article #content article input[type='checkbox'] { display: none; }
-html body.jobs main #article #content article input[type='radio'] + label, html body.jobs main #article #content article input[type='checkbox'] + label { display: inline-block; }
-html body.jobs main #article #content article input[type='radio'] + label:after { content: "\2610"; margin-right: 0.625em; }
-html body.jobs main #article #content article input[type='radio']:checked + label:after { content: "\25a3"; }
-html body.jobs main #article #content article input[type='checkbox'] + label:after { content: "\2610"; margin-right: 0.3125em; font-size: 150%; position: relative; top: 0.15625em; }
-html body.jobs main #article #content article input[type='checkbox']:checked + label:after { content: "\2611"; }
-html body.jobs main #article #content article ul.checkbox li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.jobs main #article #content article ul.checkbox li:before { content: ''; }
-html body.jobs main #article #content article ul, html body.jobs main #article #content article ol, html body.jobs main #article #content article dl, html body.jobs main #article #content article table, html body.jobs main #article #content article figure, html body.jobs main #article #content article form, html body.jobs main #article #content article q, html body.jobs main #article #content article blockquote, html body.jobs main #article #content article pre, html body.jobs main #article #content article code { margin: 1.25em 0; }
-html body.jobs main #article #content article figure { margin-top: 2.5em; }
-html body.jobs main #article #content article dd + dt { margin-top: 1.25em; }
-html body.jobs main #article #content article p + p { margin-top: 1.25em; }
-html body.jobs main #article #content article h1 + h2, html body.jobs main #article #content article h2 + h3 { padding-top: 0; }
-html body.jobs main #article #content article h1 + ul, html body.jobs main #article #content article h2 + ul, html body.jobs main #article #content article h3 + ul, html body.jobs main #article #content article h1 + ol, html body.jobs main #article #content article h2 + ol, html body.jobs main #article #content article h3 + ol, html body.jobs main #article #content article h1 + figure, html body.jobs main #article #content article h2 + figure, html body.jobs main #article #content article h3 + figure, html body.jobs main #article #content article h1 + nav { margin-top: 0; }
-html body.jobs main #article #content article li ul, html body.jobs main #article #content article li ol { margin-top: 0; }
-html body.jobs main #article #content article #excerpt { display: block; }
-html body.announcements main #article article.thumb { margin-bottom: 3%; }
-@media only screen and (max-width: 48em) { html body.announcements main #article article.thumb { width: 100%; margin-right: 0; float: left; } }
-@media only screen and (min-width: 48em) and (max-width: 79.999em) { html body.announcements main #article article.thumb { width: 45%; margin-right: 10%; float: left; }
-  html body.announcements main #article article.thumb:nth-of-type(2) { margin-right: 0; }
-  html body.announcements main #article article.thumb:nth-of-type(3) { margin-right: 10%; }
-  html body.announcements main #article article.thumb:nth-of-type(4) { margin-right: 0; }
-  html body.announcements main #article article.thumb:nth-of-type(5) { margin-right: 10%; }
-  html body.announcements main #article article.thumb:nth-of-type(6) { margin-right: 0; }
-  html body.announcements main #article article.thumb:nth-of-type(7) { margin-right: 10%; }
-  html body.announcements main #article article.thumb:nth-of-type(8) { margin-right: 0; }
-  html body.announcements main #article article.thumb:nth-of-type(9) { margin-right: 10%; }
-  html body.announcements main #article article.thumb:nth-of-type(10) { margin-right: 0; } }
-@media only screen and (min-width: 80em) { html body.announcements main #article article.thumb { width: 31.5%; margin-right: 2.5%; float: left; }
-  html body.announcements main #article article.thumb:nth-of-type(2) { margin-right: 2.5%; }
-  html body.announcements main #article article.thumb:nth-of-type(3) { margin-right: 0; }
-  html body.announcements main #article article.thumb:nth-of-type(4) { margin-right: 2.5%; }
-  html body.announcements main #article article.thumb:nth-of-type(5) { margin-right: 2.5%; }
-  html body.announcements main #article article.thumb:nth-of-type(6) { margin-right: 0; }
-  html body.announcements main #article article.thumb:nth-of-type(7) { margin-right: 2.5%; }
-  html body.announcements main #article article.thumb:nth-of-type(8) { margin-right: 2.5%; }
-  html body.announcements main #article article.thumb:nth-of-type(9) { margin-right: 0; }
-  html body.announcements main #article article.thumb:nth-of-type(10) { margin-right: 2.5%; } }
-html body.announcements main #article article.thumb figure { display: block; }
-html body.announcements main #article article.thumb figcaption { display: none; }
-html body.announcements main #article article.thumb #excerpt { display: none; }
-html body.announcements main #article article.thumb #content { display: none; }
-html body.announcements main #article article.thumb #meta #category { display: none; }
-html body.announcements main #article article.thumb #meta #date { display: none; }
-html body.announcements main #article article.thumb #meta { display: none; }
-html body.announcements main #article article.thumb #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; text-align: justify; }
-html body.announcements main #article article.thumb #meta { margin-top: 0.625em; }
-html body.announcements main #article article.thumb #meta > h3 { display: none; }
-html body.announcements main #article article.thumb #meta ul { margin: 0; }
-html body.announcements main #article article.thumb #meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.announcements main #article article.thumb #meta ul li:before { content: ''; }
-html body.announcements main #article article.thumb #meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
-html body.announcements main #article article.thumb #meta ul li:last-of-type { margin-right: 0; }
-html body.announcements main #article article.thumb #meta #date { font-size: small; color: #74676a; }
-html body.announcements main #article article.thumb #meta #category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
-html body.announcements main #article article.thumb #meta #category a { color: #982022; text-decoration: none; }
-html body.announcements main #article article.thumb #meta #category a:hover { color: #231f20; }
-html body.announcements main #article article.thumb #meta #authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; }
-html body.announcements main #article article.thumb #meta #authors ul li:after { content: ','; }
-html body.announcements main #article article.thumb #meta #authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
-html body.announcements main #article article.thumb #meta #authors ul li:first-of-type:after, html body.announcements main #article article.thumb #meta #authors ul li:last-of-type:after { content: ''; }
-html body.announcements main #article article.thumb #share ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.announcements main #article article.thumb #share ul li:before { content: ''; }
-html body.announcements main #article article.thumb #share ul li { display: inline-block; float: left; margin-right: 1.25em; }
-html body.announcements main #article article.thumb #share ul li:last-of-type { margin-right: 0; }
-html body.announcements main #article article.thumb #share ul li .box .count { float: right; background: #231f20; color: white; font-size: small; padding: 0 0.3125em; }
-html body.announcements main #article article.thumb #share ul li .box .count a { color: white; text-decoration: none; }
-html body.announcements main #article article.thumb #share ul li .box .count a:hover { color: white; }
-html body.announcements main #article article.thumb #share ul li .box .share img { width: 30%; }
-html body.announcements main #article article.thumb #content a { color: #982022; text-decoration: none; }
-html body.announcements main #article article.thumb #content a:hover { color: #982022; }
-html body.announcements main #article article.thumb h1 { font-size: medium; }
-html body.announcements main #article nav { margin-top: 1.25em; }
-html body.announcements main #article nav > h3 { display: none; }
-html body.announcements main #article nav ol li { display: inline-block; float: left; margin-right: 0.625em; }
-html body.announcements main #article nav ol li:last-of-type { margin-right: 0; }
-html body.announcements main #article nav ol li a { padding: 0.625em 0.9375em; display: block; }
-html body.announcements main #article nav ol li.active a, html body.announcements main #article nav ol li:hover a { background: #982022; color: white; }
-html body.announcements main #article nav ol li.active a a, html body.announcements main #article nav ol li:hover a a { color: white; text-decoration: none; }
-html body.announcements main #article nav ol li.active a a:hover, html body.announcements main #article nav ol li:hover a a:hover { color: white; }
-html body.announcements main #article nav ol li { background: #f1f1f1; color: #231f20; -moz-border-radius: 1.25em; -webkit-border-radius: 1.25em; border-radius: 1.25em; }
-html body.announcements main #article nav ol li a { color: #231f20; text-decoration: none; }
-html body.announcements main #article nav ol li a:hover { color: white; }
+html body.jobs main #article #content article blockquote:before, html body.announcements main #article #content article blockquote:before { content: '\201C'; font-size: 900%; position: absolute; top: -0.125em; left: 0; }
+html body.jobs main #article #content article code, html body.jobs main #article #content article pre, html body.announcements main #article #content article code, html body.announcements main #article #content article pre { background: #f1f1f1; color: #231f20; padding: 0.3125em; font-family: "Lucida Console", "Lucida Sans Typewriter", Monaco, "Bitstream Vera Sans Mono", monospace; }
+html body.jobs main #article #content article code a, html body.jobs main #article #content article pre a, html body.announcements main #article #content article code a, html body.announcements main #article #content article pre a { color: #231f20; text-decoration: none; }
+html body.jobs main #article #content article code a:hover, html body.jobs main #article #content article pre a:hover, html body.announcements main #article #content article code a:hover, html body.announcements main #article #content article pre a:hover { color: white; }
+html body.jobs main #article #content article pre, html body.announcements main #article #content article pre { white-space: pre-line; padding: 1.25em; }
+html body.jobs main #article #content article hr, html body.announcements main #article #content article hr { margin: 1.25em 0; }
+html body.jobs main #article #content article em, html body.jobs main #article #content article i, html body.announcements main #article #content article em, html body.announcements main #article #content article i { font-style: italic; }
+html body.jobs main #article #content article strong, html body.jobs main #article #content article b, html body.announcements main #article #content article strong, html body.announcements main #article #content article b { font-weight: bold; }
+html body.jobs main #article #content article small, html body.announcements main #article #content article small { font-size: small; }
+html body.jobs main #article #content article s, html body.announcements main #article #content article s { text-decoration: line-through; }
+html body.jobs main #article #content article cite, html body.announcements main #article #content article cite { font-style: italic; }
+html body.jobs main #article #content article q, html body.announcements main #article #content article q { background: #f1f1f1; padding: 0.15625em; border-bottom: 1px solid #e4e4e4; }
+html body.jobs main #article #content article q:before, html body.announcements main #article #content article q:before { content: '\201C'; margin-right: 0.3125em; }
+html body.jobs main #article #content article q:after, html body.announcements main #article #content article q:after { content: '\201D'; margin-left: 0.3125em; }
+html body.jobs main #article #content article dfn, html body.announcements main #article #content article dfn { border-bottom: 1px solid #f1f1f1; }
+html body.jobs main #article #content article abbr, html body.announcements main #article #content article abbr { font-variant: small-caps; }
+html body.jobs main #article #content article time, html body.announcements main #article #content article time { font-size: small; color: #74676a; }
+html body.jobs main #article #content article var, html body.announcements main #article #content article var { font-style: italic; }
+html body.jobs main #article #content article samp, html body.jobs main #article #content article kbd, html body.announcements main #article #content article samp, html body.announcements main #article #content article kbd { font-family: "Lucida Console", "Lucida Sans Typewriter", Monaco, "Bitstream Vera Sans Mono", monospace; font-weight: bold; font-size: small; }
+html body.jobs main #article #content article sup, html body.announcements main #article #content article sup { vertical-align: super; font-size: small; }
+html body.jobs main #article #content article sub, html body.announcements main #article #content article sub { vertical-align: sub; font-size: small; }
+html body.jobs main #article #content article mark, html body.announcements main #article #content article mark { background: #231f20; color: white; padding: 0.3125em; }
+html body.jobs main #article #content article mark a, html body.announcements main #article #content article mark a { color: white; text-decoration: none; }
+html body.jobs main #article #content article mark a:hover, html body.announcements main #article #content article mark a:hover { color: white; }
+html body.jobs main #article #content article del, html body.announcements main #article #content article del { text-decoration: line-through; }
+html body.jobs main #article #content article ins, html body.announcements main #article #content article ins { background: #f1f1f1; color: #231f20; padding: 0.3125em; }
+html body.jobs main #article #content article ins a, html body.announcements main #article #content article ins a { color: #231f20; text-decoration: none; }
+html body.jobs main #article #content article ins a:hover, html body.announcements main #article #content article ins a:hover { color: white; }
+html body.jobs main #article #content article address, html body.announcements main #article #content article address { font-size: small; color: #74676a; max-width: 21.875em; }
+html body.jobs main #article #content article label.select, html body.announcements main #article #content article label.select { width: 100%; max-width: 100%; float: left; }
+html body.jobs main #article #content article label.select:after, html body.announcements main #article #content article label.select:after { content: "\2794"; -moz-transform: rotate(90deg); -ms-transform: rotate(90deg); -o-transform: rotate(90deg); -webkit-transform: rotate(90deg); transform: rotate(90deg); float: right; display: inline-block; position: relative; padding: 0; left: -0.3125em; background: white; font-size: 150%; top: -1.5em; margin-right: 0.3125em; pointer-events: none; /* this is a must */ cursor: pointer; }
+html body.jobs main #article #content article label.select select, html body.announcements main #article #content article label.select select { border: none; outline: 0; background: white; appearance: none; -webkit-appearance: none; -moz-appearance: none; border: 1px solid; cursor: pointer; width: 100%; padding: 0.3125em; }
+html body.jobs main #article #content article input[type='radio'], html body.jobs main #article #content article input[type='checkbox'], html body.announcements main #article #content article input[type='radio'], html body.announcements main #article #content article input[type='checkbox'] { display: none; }
+html body.jobs main #article #content article input[type='radio'] + label, html body.jobs main #article #content article input[type='checkbox'] + label, html body.announcements main #article #content article input[type='radio'] + label, html body.announcements main #article #content article input[type='checkbox'] + label { display: inline-block; }
+html body.jobs main #article #content article input[type='radio'] + label:after, html body.announcements main #article #content article input[type='radio'] + label:after { content: "\2610"; margin-right: 0.625em; }
+html body.jobs main #article #content article input[type='radio']:checked + label:after, html body.announcements main #article #content article input[type='radio']:checked + label:after { content: "\25a3"; }
+html body.jobs main #article #content article input[type='checkbox'] + label:after, html body.announcements main #article #content article input[type='checkbox'] + label:after { content: "\2610"; margin-right: 0.3125em; font-size: 150%; position: relative; top: 0.15625em; }
+html body.jobs main #article #content article input[type='checkbox']:checked + label:after, html body.announcements main #article #content article input[type='checkbox']:checked + label:after { content: "\2611"; }
+html body.jobs main #article #content article ul.checkbox li, html body.announcements main #article #content article ul.checkbox li { display: block; margin-right: none; float: none; padding-left: 0; }
+html body.jobs main #article #content article ul.checkbox li:before, html body.announcements main #article #content article ul.checkbox li:before { content: ''; }
+html body.jobs main #article #content article ul, html body.jobs main #article #content article ol, html body.jobs main #article #content article dl, html body.jobs main #article #content article table, html body.jobs main #article #content article figure, html body.jobs main #article #content article form, html body.jobs main #article #content article q, html body.jobs main #article #content article blockquote, html body.jobs main #article #content article pre, html body.jobs main #article #content article code, html body.announcements main #article #content article ul, html body.announcements main #article #content article ol, html body.announcements main #article #content article dl, html body.announcements main #article #content article table, html body.announcements main #article #content article figure, html body.announcements main #article #content article form, html body.announcements main #article #content article q, html body.announcements main #article #content article blockquote, html body.announcements main #article #content article pre, html body.announcements main #article #content article code { margin: 1.25em 0; }
+html body.jobs main #article #content article figure, html body.announcements main #article #content article figure { margin-top: 2.5em; }
+html body.jobs main #article #content article dd + dt, html body.announcements main #article #content article dd + dt { margin-top: 1.25em; }
+html body.jobs main #article #content article p + p, html body.announcements main #article #content article p + p { margin-top: 1.25em; }
+html body.jobs main #article #content article h1 + h2, html body.jobs main #article #content article h2 + h3, html body.announcements main #article #content article h1 + h2, html body.announcements main #article #content article h2 + h3 { padding-top: 0; }
+html body.jobs main #article #content article h1 + ul, html body.jobs main #article #content article h2 + ul, html body.jobs main #article #content article h3 + ul, html body.jobs main #article #content article h1 + ol, html body.jobs main #article #content article h2 + ol, html body.jobs main #article #content article h3 + ol, html body.jobs main #article #content article h1 + figure, html body.jobs main #article #content article h2 + figure, html body.jobs main #article #content article h3 + figure, html body.jobs main #article #content article h1 + nav, html body.announcements main #article #content article h1 + ul, html body.announcements main #article #content article h2 + ul, html body.announcements main #article #content article h3 + ul, html body.announcements main #article #content article h1 + ol, html body.announcements main #article #content article h2 + ol, html body.announcements main #article #content article h3 + ol, html body.announcements main #article #content article h1 + figure, html body.announcements main #article #content article h2 + figure, html body.announcements main #article #content article h3 + figure, html body.announcements main #article #content article h1 + nav { margin-top: 0; }
+html body.jobs main #article #content article li ul, html body.jobs main #article #content article li ol, html body.announcements main #article #content article li ul, html body.announcements main #article #content article li ol { margin-top: 0; }
+html body.jobs main #article #content article #excerpt, html body.announcements main #article #content article #excerpt { display: block; }
 
 html body { /* Highlighting active menu items
+*/ /* Highlighting active menu items in the sidebar, About pages
 */ }
 html body .container article figure { /* Fit figcpation to image width
 */ }
@@ -1796,3 +1740,24 @@ html body.contact-us #header nav ul li#contact-us a a:hover { color: white; }
 html body.russia #header #tags ul li#russia a { background: #982022; color: white; }
 html body.russia #header #tags ul li#russia a a { color: white; text-decoration: none; }
 html body.russia #header #tags ul li#russia a a:hover { color: white; }
+html body.history aside #subpages nav li#history a { background: #982022; color: white; }
+html body.history aside #subpages nav li#history a a { color: white; text-decoration: none; }
+html body.history aside #subpages nav li#history a a:hover { color: white; }
+html body.members aside #subpages nav li#members a { background: #982022; color: white; }
+html body.members aside #subpages nav li#members a a { color: white; text-decoration: none; }
+html body.members aside #subpages nav li#members a a:hover { color: white; }
+html body.staff aside #subpages nav li#staff a { background: #982022; color: white; }
+html body.staff aside #subpages nav li#staff a a { color: white; text-decoration: none; }
+html body.staff aside #subpages nav li#staff a a:hover { color: white; }
+html body.board-directors aside #subpages nav li#board-directors a { background: #982022; color: white; }
+html body.board-directors aside #subpages nav li#board-directors a a { color: white; text-decoration: none; }
+html body.board-directors aside #subpages nav li#board-directors a a:hover { color: white; }
+html body.jobs aside #subpages nav li#jobs a { background: #982022; color: white; }
+html body.jobs aside #subpages nav li#jobs a a { color: white; text-decoration: none; }
+html body.jobs aside #subpages nav li#jobs a a:hover { color: white; }
+html body.awards aside #subpages nav li#awards a { background: #982022; color: white; }
+html body.awards aside #subpages nav li#awards a a { color: white; text-decoration: none; }
+html body.awards aside #subpages nav li#awards a a:hover { color: white; }
+html body.announcements aside #subpages nav li#announcements a { background: #982022; color: white; }
+html body.announcements aside #subpages nav li#announcements a a { color: white; text-decoration: none; }
+html body.announcements aside #subpages nav li#announcements a a:hover { color: white; }

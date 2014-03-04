@@ -13,7 +13,7 @@
 */
 /* A function to calculate the width of the column for col-n-of-m - this is used usually in padding();
 */
-/* Columns defined by gutter - Sometimes the width of a column is defined inversely, by the gutter size - For example, when a col-nm(2,3) is divided into two subcolumns the gutter size is fixed to col-gutter(3) - Ie, instead haveing two cols of 45% and margin 10% we have a fixed margin of 2.5% and the rest of the columns colaculated accordingly
+/* Columns defined by gutter - Sometimes the width of a column is defined inversely, by the gutter size - For example, when a col-nm(2,3) is divided into two subcolumns the gutter size is fixed to col-gutter(3) - Ie, instead having two cols of 45% and margin 10% we have a fixed margin of 2.5% and the rest of the columns calaculated accordingly
 */
 /* A function to calculate the width of the column for col-by-gutter - this is used usually in padding();
 */
