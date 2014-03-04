@@ -309,21 +309,15 @@
 }
 
 
-/* Resource Center
+/* Resources / Documents
 */
-@mixin resource-center {
-  section {
-    @include show-title;
+@mixin documents {
+  @include show-title;
+  
+  ul {
+    margin-top: $pad;
     
-    #documents {
-      ul {
-        @include list-download;
-      }
-    }
-    
-    &#tools {
-      @include article-style(title-right);
-    }
+    @include list-download;
   }
 }
 

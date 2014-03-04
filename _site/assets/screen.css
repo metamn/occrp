@@ -164,7 +164,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 */
 /* Single article
 */
-/* Resource Center
+/* Resources / Documents
 */
 /* Members
 */
@@ -1231,46 +1231,79 @@ html body.projects main #articles nav ol li.active a a:hover, html body.projects
 html body.projects main #articles nav ol li { background: #f1f1f1; color: #231f20; -moz-border-radius: 1.25em; -webkit-border-radius: 1.25em; border-radius: 1.25em; }
 html body.projects main #articles nav ol li a { color: #231f20; text-decoration: none; }
 html body.projects main #articles nav ol li a:hover { color: white; }
-html body.resources main section > h3 { display: block; }
-html body.resources main section #documents ul li { margin-bottom: 0.625em; border-bottom: 1px solid #f1f1f1; }
-html body.resources main section #documents ul li:before { content: url(http://metamn.github.io/occrp/assets/download.png) !important; }
-html body.resources main section #documents ul li a { margin-left: 1.25em; }
-html body.resources main section#tools article { width: 100%; max-width: 100%; float: left; margin-bottom: 3%; }
-html body.resources main section#tools article figure { display: block; }
-html body.resources main section#tools article figcaption { display: none; }
-html body.resources main section#tools article #excerpt { display: none; }
-html body.resources main section#tools article #content { display: none; }
-html body.resources main section#tools article #meta #category { display: none; }
-html body.resources main section#tools article #meta #date { display: none; }
-html body.resources main section#tools article #meta { display: none; }
-html body.resources main section#tools article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; text-align: justify; }
-html body.resources main section#tools article #meta { margin-top: 0.625em; }
-html body.resources main section#tools article #meta > h3 { display: none; }
-html body.resources main section#tools article #meta ul { margin: 0; }
-html body.resources main section#tools article #meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.resources main section#tools article #meta ul li:before { content: ''; }
-html body.resources main section#tools article #meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
-html body.resources main section#tools article #meta ul li:last-of-type { margin-right: 0; }
-html body.resources main section#tools article #meta #date { font-size: small; color: #74676a; }
-html body.resources main section#tools article #meta #category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
-html body.resources main section#tools article #meta #category a { color: #982022; text-decoration: none; }
-html body.resources main section#tools article #meta #category a:hover { color: #231f20; }
-html body.resources main section#tools article #meta #authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; }
-html body.resources main section#tools article #meta #authors ul li:after { content: ','; }
-html body.resources main section#tools article #meta #authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
-html body.resources main section#tools article #meta #authors ul li:first-of-type:after, html body.resources main section#tools article #meta #authors ul li:last-of-type:after { content: ''; }
-html body.resources main section#tools article #share ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.resources main section#tools article #share ul li:before { content: ''; }
-html body.resources main section#tools article #share ul li { display: inline-block; float: left; margin-right: 1.25em; }
-html body.resources main section#tools article #share ul li:last-of-type { margin-right: 0; }
-html body.resources main section#tools article #share ul li .box .count { float: right; background: #231f20; color: white; font-size: small; padding: 0 0.3125em; }
-html body.resources main section#tools article #share ul li .box .count a { color: white; text-decoration: none; }
-html body.resources main section#tools article #share ul li .box .count a:hover { color: white; }
-html body.resources main section#tools article #share ul li .box .share img { width: 30%; }
-html body.resources main section#tools article #content a { color: #982022; text-decoration: none; }
-html body.resources main section#tools article #content a:hover { color: #982022; }
-html body.resources main section#tools article figure, html body.resources main section#tools article h1 { width: 48.75%; margin-right: 2.5%; float: left; }
-html body.resources main section#tools article h1 { margin-right: 0; padding: 0.625em; width: calc(48.75% - 1.25em); padding-left: 0; padding-top: 0; font-size: medium; }
+html body.resources main #articles .title { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; padding: 1.45833em 0; }
+html body.resources main #articles .title a { color: #982022; text-decoration: none; }
+html body.resources main #articles .title a:hover { color: #231f20; }
+html body.resources main #articles article { margin-bottom: 3%; border-top: 0.3125em solid; padding-top: 1.25em; height: 28em; height: 20em; }
+@media only screen and (max-width: 48em) { html body.resources main #articles article { width: 100%; margin-right: 0; float: left; } }
+@media only screen and (min-width: 48em) and (max-width: 79.999em) { html body.resources main #articles article { width: 45%; margin-right: 10%; float: left; }
+  html body.resources main #articles article:nth-of-type(2) { margin-right: 0; }
+  html body.resources main #articles article:nth-of-type(3) { margin-right: 10%; }
+  html body.resources main #articles article:nth-of-type(4) { margin-right: 0; }
+  html body.resources main #articles article:nth-of-type(5) { margin-right: 10%; }
+  html body.resources main #articles article:nth-of-type(6) { margin-right: 0; }
+  html body.resources main #articles article:nth-of-type(7) { margin-right: 10%; }
+  html body.resources main #articles article:nth-of-type(8) { margin-right: 0; }
+  html body.resources main #articles article:nth-of-type(9) { margin-right: 10%; }
+  html body.resources main #articles article:nth-of-type(10) { margin-right: 0; } }
+@media only screen and (min-width: 80em) { html body.resources main #articles article { width: 18%; margin-right: 2.5%; float: left; }
+  html body.resources main #articles article:nth-of-type(2) { margin-right: 2.5%; }
+  html body.resources main #articles article:nth-of-type(3) { margin-right: 2.5%; }
+  html body.resources main #articles article:nth-of-type(4) { margin-right: 2.5%; }
+  html body.resources main #articles article:nth-of-type(5) { margin-right: 0; }
+  html body.resources main #articles article:nth-of-type(6) { margin-right: 2.5%; }
+  html body.resources main #articles article:nth-of-type(7) { margin-right: 2.5%; }
+  html body.resources main #articles article:nth-of-type(8) { margin-right: 2.5%; }
+  html body.resources main #articles article:nth-of-type(9) { margin-right: 2.5%; }
+  html body.resources main #articles article:nth-of-type(10) { margin-right: 0; } }
+html body.resources main #articles article figure { display: block; }
+html body.resources main #articles article figcaption { display: none; }
+html body.resources main #articles article #content { display: none; }
+html body.resources main #articles article #meta #category { display: none; }
+html body.resources main #articles article #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; text-align: justify; }
+html body.resources main #articles article #meta { margin-top: 0.625em; }
+html body.resources main #articles article #meta > h3 { display: none; }
+html body.resources main #articles article #meta ul { margin: 0; }
+html body.resources main #articles article #meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
+html body.resources main #articles article #meta ul li:before { content: ''; }
+html body.resources main #articles article #meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
+html body.resources main #articles article #meta ul li:last-of-type { margin-right: 0; }
+html body.resources main #articles article #meta #date { font-size: small; color: #74676a; }
+html body.resources main #articles article #meta #category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
+html body.resources main #articles article #meta #category a { color: #982022; text-decoration: none; }
+html body.resources main #articles article #meta #category a:hover { color: #231f20; }
+html body.resources main #articles article #meta #authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; }
+html body.resources main #articles article #meta #authors ul li:after { content: ','; }
+html body.resources main #articles article #meta #authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+html body.resources main #articles article #meta #authors ul li:first-of-type:after, html body.resources main #articles article #meta #authors ul li:last-of-type:after { content: ''; }
+html body.resources main #articles article #share ul li { display: block; margin-right: none; float: none; padding-left: 0; }
+html body.resources main #articles article #share ul li:before { content: ''; }
+html body.resources main #articles article #share ul li { display: inline-block; float: left; margin-right: 1.25em; }
+html body.resources main #articles article #share ul li:last-of-type { margin-right: 0; }
+html body.resources main #articles article #share ul li .box .count { float: right; background: #231f20; color: white; font-size: small; padding: 0 0.3125em; }
+html body.resources main #articles article #share ul li .box .count a { color: white; text-decoration: none; }
+html body.resources main #articles article #share ul li .box .count a:hover { color: white; }
+html body.resources main #articles article #share ul li .box .share img { width: 30%; }
+html body.resources main #articles article #content a { color: #982022; text-decoration: none; }
+html body.resources main #articles article #content a:hover { color: #982022; }
+@media only screen and (min-width: 80em) and (max-width: 89.999em) { html body.resources main #articles article { height: 27em; } }
+html body.resources main #articles article #excerpt { margin-top: 0.625em; }
+html body.resources main #articles nav { margin-top: 1.25em; }
+html body.resources main #articles nav > h3 { display: none; }
+html body.resources main #articles nav ol li { display: inline-block; float: left; margin-right: 0.625em; }
+html body.resources main #articles nav ol li:last-of-type { margin-right: 0; }
+html body.resources main #articles nav ol li a { padding: 0.625em 0.9375em; display: block; }
+html body.resources main #articles nav ol li.active a, html body.resources main #articles nav ol li:hover a { background: #982022; color: white; }
+html body.resources main #articles nav ol li.active a a, html body.resources main #articles nav ol li:hover a a { color: white; text-decoration: none; }
+html body.resources main #articles nav ol li.active a a:hover, html body.resources main #articles nav ol li:hover a a:hover { color: white; }
+html body.resources main #articles nav ol li { background: #f1f1f1; color: #231f20; -moz-border-radius: 1.25em; -webkit-border-radius: 1.25em; border-radius: 1.25em; }
+html body.resources main #articles nav ol li a { color: #231f20; text-decoration: none; }
+html body.resources main #articles nav ol li a:hover { color: white; }
+html body.resources main #documents > h3 { display: block; }
+html body.resources main #documents ul { margin-top: 1.25em; }
+html body.resources main #documents ul li { margin-bottom: 0.625em; border-bottom: 1px solid #f1f1f1; }
+html body.resources main #documents ul li:before { content: url(http://metamn.github.io/occrp/assets/download.png) !important; }
+html body.resources main #documents ul li a { margin-left: 1.25em; }
 html body.article main, html body.about main { overflow: hidden; }
 html body.article main aside #spacer, html body.about main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; position: relative; top: -2.5em; /* This is the margin between sidebar elements ... */ }
 html body.article main aside #spacer > h3, html body.about main aside #spacer > h3 { display: none; }
@@ -1765,9 +1798,9 @@ html body.frontpage #header nav ul li#frontpage a a:hover { color: white; }
 html body.investigations #header nav ul li#investigations a { background: #982022; color: white; }
 html body.investigations #header nav ul li#investigations a a { color: white; text-decoration: none; }
 html body.investigations #header nav ul li#investigations a a:hover { color: white; }
-html body.resource-center #header nav ul li#resource-center a { background: #982022; color: white; }
-html body.resource-center #header nav ul li#resource-center a a { color: white; text-decoration: none; }
-html body.resource-center #header nav ul li#resource-center a a:hover { color: white; }
+html body.resources #header nav ul li#resources a { background: #982022; color: white; }
+html body.resources #header nav ul li#resources a a { color: white; text-decoration: none; }
+html body.resources #header nav ul li#resources a a:hover { color: white; }
 html body.about-us #header nav ul li#about-us a { background: #982022; color: white; }
 html body.about-us #header nav ul li#about-us a a { color: white; text-decoration: none; }
 html body.about-us #header nav ul li#about-us a a:hover { color: white; }

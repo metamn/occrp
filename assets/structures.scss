@@ -120,7 +120,13 @@ html {
     */
     &.resources {
       main {
-        @include resource-center;
+        #articles {
+          @include projects;
+        }
+        
+        #documents {
+          @include documents;
+        }
       }
     }
     

@@ -30,8 +30,8 @@ html {
       }
     }
     
-    &.resource-center {
-      #header nav ul li#resource-center {
+    &.resources {
+      #header nav ul li#resources {
         a {
           @include color(menu);
         }
