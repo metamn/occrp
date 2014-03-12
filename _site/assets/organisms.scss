@@ -309,6 +309,9 @@
 }
 
 
+
+
+
 /* Resources / Documents
 */
 @mixin documents {
@@ -344,6 +347,7 @@
 }
 
 
+
 /* Jobs
 */
 @mixin jobs {
@@ -359,6 +363,8 @@
   }
 }
 
+
+
 /* Announcements
 */
 @mixin announcements {
@@ -371,6 +377,8 @@
 
   @include navigation(navigation);
 }
+
+
 
 
 /* Projects archive
@@ -426,6 +434,8 @@
 }
 
 
+
+
 /* Category aside
 */
 @mixin category-aside {
@@ -470,6 +480,8 @@
     }
   }
 }
+
+
 
 
 /* Archives
@@ -526,6 +538,27 @@
         font-weight: normal;
       }
     }
+  }
+}
+
+
+/* Blog on the frontpage
+*/
+@mixin frontpage-blog {
+  border-bottom: $border-thin;
+  
+  h3 {
+    @include font(section-title);
+    border-bottom: $border-thin;
+    border-color: $color;
+    margin-bottom: 0;
+  }
+  
+  @include article-style(title-right);
+  article {
+    @include responsive-grid(3);
+    margin-bottom: $flexible-grid-margin / 2;
+    margin-top: $flexible-grid-margin / 2;
   }
 }
 

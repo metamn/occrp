@@ -70,6 +70,10 @@ html {
             @include frontpage-projects;
           }
           
+          #blog {
+            @include frontpage-blog;
+          }
+          
           #most-read {
             @include most-read;
           }
