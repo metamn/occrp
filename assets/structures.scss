@@ -134,6 +134,16 @@ html {
       }
     }
     
+    /* Blog Archive
+    */
+    &.blog {
+      main {
+        #articles {
+          @include blog;
+        }
+      }
+    }
+    
     
     /* Single Article, About Us
     */

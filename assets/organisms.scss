@@ -542,6 +542,25 @@
 }
 
 
+/* Blog archives
+*/
+@mixin blog {
+  @include article-style(slider);
+  margin-bottom: $flexible-grid-margin;
+  
+  article.thumb {
+    @include block;
+    
+    #excerpt {
+      display: block;
+      @include border-thin;
+      padding-bottom: $pad*2;
+    }
+  }
+}
+
+
+
 /* Blog on the frontpage
 */
 @mixin frontpage-blog {
