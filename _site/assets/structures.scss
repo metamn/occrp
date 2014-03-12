@@ -1,0 +1,227 @@
+/*
+  Structures / Templates of the Atomic web design
+  - the layout, the grid, the wireframe
+  - groups of organisms stitched together to form pages 
+*/
+
+
+html {
+  body {
+    @include default-settings;
+    
+    .container {
+      @include container;
+      
+      #header, main, section, nav, aside, #footer {
+        @include block;
+        @include hide-title;
+      }
+      
+      #header, main {
+        margin: $pad 0 0; 
+      }
+      
+      #header {
+        @include header;
+      }
+      
+      #footer {
+        margin: $pad*3 0 0;
+        @include footer;
+      }
+    }
+    
+    /* Sticky header
+    */
+    &.sticky {
+      .container {
+        @include fixed-header;
+      }
+    }
+    
+    
+    /* Frontpage
+    */
+    &.frontpage {
+      .container {  
+        main {
+          #intro {
+            margin-bottom: $pad;
+          
+            #slider {
+              @include slider;
+            }
+            
+            #news, #announcements {
+              @include news;
+              margin-right: 0 !important;
+            }
+          }
+          
+          #investigations {
+            @include investigations;
+          }
+          
+          #products {
+            @include products;
+          }
+          
+          #projects {
+            @include frontpage-projects;
+          }
+          
+          #blog {
+            @include frontpage-blog;
+          }
+          
+          #most-read {
+            @include most-read;
+          }
+          
+          #videos {
+            @include videos;
+          }
+        }
+      }
+    }  
+    
+    
+    
+    /* Category
+    */
+    &.category {
+      main {
+        @include archive;
+      }
+    }
+    
+    
+    /* Tag
+    */
+    &.tag {
+      main {
+        @include archive;
+        
+        #banner {
+          margin-bottom: $pad;
+        }
+      }
+    }
+    
+    
+    /* Projects
+    */
+    &.projects {
+      main {
+        #articles {
+          @include projects;
+        }
+      }
+    }
+    
+    
+    /* Resource Center
+    */
+    &.resources {
+      main {
+        #articles {
+          @include projects;
+        }
+        
+        #documents {
+          @include documents;
+        }
+      }
+    }
+    
+    /* Blog Archive
+    */
+    &.blog {
+      main {
+        #articles {
+          @include blog;
+        }
+      }
+    }
+    
+    
+    /* Single Article, About Us
+    */
+    &.article, &.about {
+      main {
+        @include fixed-sidebar;
+        
+        #article {
+          @include single-article;
+        }
+        
+        aside {
+          @include category-aside;
+        }
+      }
+    }
+    
+    &.about {
+      main {
+        aside {
+          section {
+            h3 {
+              margin-bottom: 0;
+            }
+            
+            nav {
+              ul {
+                @include list-menu;
+                
+                li {
+                  @include block;
+                  @include grid-resize(100%, $pad/2);
+                  
+                  a {
+                    @include block;
+                    @include grid-resize(100%, $pad/2);
+                  }
+                }
+              }
+            }
+          }
+          
+          #spacer {
+            top: -$pad - $pad/4;
+          }
+        }
+      }
+    }
+    
+    &.board-directors {
+      main {
+        #article {
+          p {
+            @include border-thin;
+            font-weight: bold;
+          }
+          
+          dl + p {
+            margin-top: $pad*2 !important;
+          }
+        }
+      }
+    }
+    
+    
+    /* Jobs
+    */
+    &.jobs, &.announcements {
+      main {
+        #article {
+          @include jobs;
+        }
+      }
+    }
+    
+    
+  }
+  
+}
+
+
