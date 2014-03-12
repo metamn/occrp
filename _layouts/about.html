@@ -1,0 +1,36 @@
+{% include head.html %}
+{% include header.html %}
+
+<main id="main">
+
+  <section id="article">
+    {% assign post = page %}
+    {% include article.html klass = 'single' %}
+  </section>
+  
+  <aside>
+    <section id="subpages">
+      <h3>Related pages</h3>
+      <nav>
+        <h3>Subpage links</h3>
+        <ul>
+          <li id="history"><a href="{{ site.url }}/about-us/history" title="History">History</a></li>
+          <li id="members"><a href="{{ site.url }}/about-us/members" title="Members">Members</a></li>
+          <li id="staff"><a href="{{ site.url }}/about-us/staff" title="Staff">Staff</a></li>
+          <li id="board-directors"><a href="{{ site.url }}/about-us/board-directors" title="Board Directors">Board Directors</a></li>
+          <li id="jobs"><a href="{{ site.url }}/about-us/jobs" title="Jobs">Jobs</a></li>
+          <li id="awards"><a href="{{ site.url }}/about-us/awards" title="Awards">Awards</a></li>
+          <li id="announcements"><a href="{{ site.url }}/about-us/announcements" title="Announcements">Announcements</a></li>
+        </ul>
+      </nav>
+    </section>
+    
+    <section id="spacer">
+      <h3>Fixed sidebar spacer</h3>
+    </section>
+  </aside>
+</main>
+
+{% include footer.html %}
+</body>
+</html>

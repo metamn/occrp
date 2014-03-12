@@ -1,0 +1,30 @@
+---
+layout: projects
+title: Resources
+category: page
+---
+
+
+<section id="tools">
+  <h3>Tools</h3>
+  {% for post in site.categories.projects limit:5 offset:5 %}
+    {% include article.html %}
+  {% endfor %}
+</section>
+
+
+<section id="documents">
+  <h3>Documents</h3>
+  {% for post in site.categories.handbook %}
+    {% if post.documents.size > 0 %}
+      <ul>
+        {% for document in post.documents %}
+          <li>
+            <a href="{{ site.url }}/{{ document.url }}" title="{{ document.name }}">{{ document.name }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  {% endfor %}
+</section>
+

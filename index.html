@@ -74,6 +74,17 @@ class: frontpage
 </section>
 
 
+<section id="blog">
+  <h3>
+    <a href="{{ site.url }}/blog" title="Blog">Blog</a>
+  </h3>
+  
+  {% for post in site.categories.slider limit:3 offset:2 %}
+    {% include article.html %}
+  {% endfor %}
+</section>
+
+
 <aside id="most-read">
   <h3>Most Read</h3>
   

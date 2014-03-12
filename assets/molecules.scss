@@ -34,6 +34,14 @@
   }
 }
 
+/* Show a section title
+*/
+@mixin show-title {
+  > h3 {
+    display: block;
+  }
+}
+
 
 
 /* Flexible grid
@@ -77,7 +85,7 @@
 /* Columns defined by gutter
   - Sometimes the width of a column is defined inversely, by the gutter size
   - For example, when a col-nm(2,3) is divided into two subcolumns the gutter size is fixed to col-gutter(3)
-  - Ie, instead haveing two cols of 45% and margin 10% we have a fixed margin of 2.5% and the rest of the columns colaculated accordingly
+  - Ie, instead having two cols of 45% and margin 10% we have a fixed margin of 2.5% and the rest of the columns calaculated accordingly
 */
 @mixin col-by-gutter($how-many, $gutter) {
   $width: col-by-gutter-width($how-many, $gutter);
@@ -263,13 +271,16 @@
 
 @mixin list-download {
   li {
+    margin-bottom: $pad/2;
+    
     @include border-thin;
     
     &:before {
-      content: url(http://metamn.github.io/occrp/assets/download.png);
-      margin-right: $pad/2;
-      position: relative;
-      top: $pad/4;
+      content: url(http://metamn.github.io/occrp/assets/download.png) !important;
+    }
+    
+    a {
+      margin-left: $pad;
     }
   }
 }
@@ -293,6 +304,16 @@
     }
   }
 }
+
+@mixin list-with-border {
+  @include font(navigation);
+  
+  li {
+    padding: $pad/2;
+    border-bottom: 1px solid $background;
+  }
+}
+
 
 
 
@@ -1042,7 +1063,7 @@
 
 @mixin ul {
   ul {
-    @include ol-ul('\2610');
+    @include ol-ul('\25C6');
   }
 }
 

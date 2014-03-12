@@ -1,0 +1,9 @@
+---
+layout: blog
+title: Blog
+class: category
+---
+
+{% for post in site.categories.investigations %}
+  {% include article.html klass = 'thumb' %}
+{% endfor %}

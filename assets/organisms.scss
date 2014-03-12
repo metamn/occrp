@@ -251,6 +251,10 @@
         @include font(single-article-title);
       }
     }
+    
+    #meta, #share, #content {
+      @include block;
+    }
       
     #meta {
       @include border-thin;
@@ -305,33 +309,18 @@
 }
 
 
-/* Resource Center
+
+
+
+/* Resources / Documents
 */
-@mixin resource-center {
-  #article article #content {
-    #handbook, #reports, #academic-studies {
-      @include block;
-      
-      article {
-        @include article(null, null, title, null, null, excerpt, null);
-        
-        h1 {
-          @include link;
-          padding: $pad 0;
-        }
-        
-        #excerpt {
-          display: block;
-          @include body-text;
-        }
-      }
-      
-      #documents {
-        ul {
-          @include list-download;
-        }
-      }
-    }
+@mixin documents {
+  @include show-title;
+  
+  ul {
+    margin-top: $pad;
+    
+    @include list-download;
   }
 }
 
@@ -358,18 +347,38 @@
 }
 
 
+
 /* Jobs
 */
 @mixin jobs {
-  article {
-    @include article-style(news);
-    @include body-text;
-    
-    #excerpt {
-      display: block;
+  #content {
+    article {
+      @include article-style(news);
+      @include body-text;
+      
+      #excerpt {
+        display: block;
+      }
     }
   }
 }
+
+
+
+/* Announcements
+*/
+@mixin announcements {
+  article {
+    &.thumb {
+      @include responsive-grid(3);
+      @include article-style(projects);
+    }
+  }
+
+  @include navigation(navigation);
+}
+
+
 
 
 /* Projects archive
@@ -425,6 +434,8 @@
 }
 
 
+
+
 /* Category aside
 */
 @mixin category-aside {
@@ -432,6 +443,15 @@
   margin-right: 0;
   
   @include most-read;
+  
+  nav {
+    @include hide-title;
+    
+    ul {
+      @include list-with-border;
+    }
+  }
+  
   section {
     @include block;
     margin-bottom: $flexible-grid-margin;
@@ -460,6 +480,8 @@
     }
   }
 }
+
+
 
 
 /* Archives
@@ -520,6 +542,46 @@
 }
 
 
+/* Blog archives
+*/
+@mixin blog {
+  @include article-style(slider);
+  margin-bottom: $flexible-grid-margin;
+  
+  article.thumb {
+    @include block;
+    
+    #excerpt {
+      display: block;
+      @include border-thin;
+      padding-bottom: $pad*2;
+    }
+  }
+}
+
+
+
+/* Blog on the frontpage
+*/
+@mixin frontpage-blog {
+  border-bottom: $border-thin;
+  
+  h3 {
+    @include font(section-title);
+    border-bottom: $border-thin;
+    border-color: $color;
+    margin-bottom: 0;
+  }
+  
+  @include article-style(title-right);
+  article {
+    @include responsive-grid(3);
+    margin-bottom: $flexible-grid-margin / 2;
+    margin-top: $flexible-grid-margin / 2;
+  }
+}
+
+
 
 /* Projects on frontpage
 */
@@ -540,7 +602,7 @@
 */
 @mixin products {
   @include padding;
-  background: $light-grey url(/assets/stripe.png);
+  background: $light-grey;
   margin-bottom: $flexible-grid-margin / 2;
   
   article {
@@ -622,7 +684,7 @@
 
 
 
-/* Teh fixed header
+/* The fixed header
 */
 @mixin fixed-header {
   #header {
