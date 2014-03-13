@@ -1,0 +1,59 @@
+/* Atoms of the Atomic web design - basic constants, definitions and declarations - they cannot be divided further - they are reused across molecules, organisms and up
+*/
+/* Responsiveness
+--------------------------------------------------------------------------------
+*/
+/* 384px, Android Nexus 4 */
+/* 640px, iPhone 5 */
+/* 768px */
+/* 1024px */
+/* 1280px */
+/* 1440px */
+/* Grid
+--------------------------------------------------------------------------------
+*/
+/* Default unit for horizontal and vertical spacing - combined from $font-size and $line-height - used for margin and padding
+*/
+/* Long texts cannot span the entire screen, they have to be organized into lines containing 50-80 characters only - See http://www.kaikkonendesign.fi/typography/#section/3 - Depends on $font-size
+*/
+/* 700px / 16px */
+/* The width of the content
+*/
+/* The golden ratio
+*/
+/* Flexible grid
+*/
+/* Strech content to fill parent width
+*/
+/* Typography
+--------------------------------------------------------------------------------
+*/
+/* The basic body font size - See http://lamb.cc/typograph/
+*/
+/* 16px, 1em */
+/* 20px, 1.25em */
+/* This is to convert em to rem - it depends on font-size - font-size: 100% => this value is 1, font-size: 65% => this value is .65
+*/
+/* Line heights for headers and body text - See http://www.kaikkonendesign.fi/typography/#section/4
+*/
+/* Letter spacing for uppercase
+*/
+/* Font families
+*/
+/* Font sizing for headers - We employ modern typography where headers differ by design not by font size - We size fonts by REM instead of EM - We use Traditional / em scaling from http://lamb.cc/typograph/
+*/
+/* Colors
+--------------------------------------------------------------------------------
+*/
+/* Background */
+/* for better monitors e5e5e5 suits better, for poor displays f9f9f9 is better */
+/* Font, black */
+/* Link, OCCRP red */
+/* From Kuler, based on $highlight */
+/* From Kuler, based on $highlight */
+/* From Kuler, based on $highlight */
+/* Decorations
+--------------------------------------------------------------------------------
+*/
+/* in :before and :after usually the font size is larger for better visibility
+*/
