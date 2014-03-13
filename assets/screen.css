@@ -162,6 +162,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 */
 /* An article - displays mostly article thumbs - this mixin controls what is diplayed in an article
 */
+/* Typography
+--------------------------------------------------------------------------------
+*/
+/* Default settings for this theme - like typography, links, colors, etc
+*/
+/* Vertical spacing of all typographic elements
+*/
+/* Settings for long text content like articles, blog posts
+*/
+/* Structures / Templates of the Atomic web design - the layout, the grid, the wireframe - groups of organisms stitched together to form pages 
+*/
 /* Single article
 */
 /* Resources / Documents
@@ -218,17 +229,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 */
 /* Footer
 */
-/* Typography
---------------------------------------------------------------------------------
-*/
-/* Default settings for this theme - like typography, links, colors, etc
-*/
-/* Vertical spacing of all typographic elements
-*/
-/* Settings for long text content like articles, blog posts
-*/
-/* Structures / Templates of the Atomic web design - the layout, the grid, the wireframe - groups of organisms stitched together to form pages 
-*/
 html body { background: white; color: #231f20; font-size: 100%; line-height: 1.25; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; /* Sticky header
 */ /* Frontpage
 */ /* Category
@@ -237,7 +237,11 @@ html body { background: white; color: #231f20; font-size: 100%; line-height: 1.2
 */ /* Resource Center
 */ /* Blog Archive
 */ /* Single Article, About Us
+*/ /* About Us
+*/ /* Board Directors
 */ /* Jobs
+*/ /* Highlighting active menu items
+*/ /* Highlighting active menu items in the sidebar, About pages
 */ }
 html body a { color: #231f20; text-decoration: none; }
 html body a:hover { color: #982022; }
@@ -332,6 +336,18 @@ html body.frontpage .container main #intro #slider { /* The grid
 */ position: relative; height: 20.4em; /* The styling
 */ background: #f1f1f1; }
 html body.frontpage .container main #intro #slider article { width: 100%; max-width: 100%; float: left; margin-bottom: 3%; margin-bottom: 0; }
+html body.frontpage .container main #intro #slider article figure { /* Fit figcpation to image width
+*/ }
+html body.frontpage .container main #intro #slider article figure img { width: auto; }
+html body.frontpage .container main #intro #slider article figure figcaption { font-size: smaller; }
+html body.frontpage .container main #intro #slider article figure figcaption h1, html body.frontpage .container main #intro #slider article figure figcaption h2, html body.frontpage .container main #intro #slider article figure figcaption h3, html body.frontpage .container main #intro #slider article figure figcaption h4, html body.frontpage .container main #intro #slider article figure figcaption h5, html body.frontpage .container main #intro #slider article figure figcaption h6 { margin: 0; padding: 0; }
+html body.frontpage .container main #intro #slider article figure.left, html body.frontpage .container main #intro #slider article figure.right, html body.frontpage .container main #intro #slider article figure.person, html body.frontpage .container main #intro #slider article figure.document { display: table; }
+html body.frontpage .container main #intro #slider article figure.left img, html body.frontpage .container main #intro #slider article figure.right img, html body.frontpage .container main #intro #slider article figure.person img, html body.frontpage .container main #intro #slider article figure.document img { display: block; max-width: 100%; }
+html body.frontpage .container main #intro #slider article figure.left figcaption, html body.frontpage .container main #intro #slider article figure.right figcaption, html body.frontpage .container main #intro #slider article figure.person figcaption, html body.frontpage .container main #intro #slider article figure.document figcaption { display: table-caption; caption-side: bottom; margin-top: 0.3125em; text-align: justify; }
+html body.frontpage .container main #intro #slider article figure.left + p, html body.frontpage .container main #intro #slider article figure.right + p, html body.frontpage .container main #intro #slider article figure.person + p, html body.frontpage .container main #intro #slider article figure.document + p { margin-top: 1.25em; }
+html body.frontpage .container main #intro #slider article figure.left { float: left; margin: 0.625em 2.5em 1.25em 0; }
+html body.frontpage .container main #intro #slider article figure.right { float: right; margin: 0.625em 0 1.25em 2.5em; }
+html body.frontpage .container main #intro #slider article figure + h1 { margin-top: 0.625em; }
 html body.frontpage .container main #intro #slider article figure { display: block; }
 html body.frontpage .container main #intro #slider article figcaption { display: none; }
 html body.frontpage .container main #intro #slider article #content { display: none; }
@@ -406,6 +422,18 @@ html body.frontpage .container main #intro #news h3, html body.frontpage .contai
 html body.frontpage .container main #intro #news h3 a, html body.frontpage .container main #intro #announcements h3 a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #intro #news h3 a:hover, html body.frontpage .container main #intro #announcements h3 a:hover { color: #231f20; }
 html body.frontpage .container main #intro #news article, html body.frontpage .container main #intro #announcements article { margin-bottom: 3%; border-bottom: 1px solid #f1f1f1; padding-bottom: 1.5%; margin-bottom: 1.5%; }
+html body.frontpage .container main #intro #news article figure, html body.frontpage .container main #intro #announcements article figure { /* Fit figcpation to image width
+*/ }
+html body.frontpage .container main #intro #news article figure img, html body.frontpage .container main #intro #announcements article figure img { width: auto; }
+html body.frontpage .container main #intro #news article figure figcaption, html body.frontpage .container main #intro #announcements article figure figcaption { font-size: smaller; }
+html body.frontpage .container main #intro #news article figure figcaption h1, html body.frontpage .container main #intro #news article figure figcaption h2, html body.frontpage .container main #intro #news article figure figcaption h3, html body.frontpage .container main #intro #news article figure figcaption h4, html body.frontpage .container main #intro #news article figure figcaption h5, html body.frontpage .container main #intro #news article figure figcaption h6, html body.frontpage .container main #intro #announcements article figure figcaption h1, html body.frontpage .container main #intro #announcements article figure figcaption h2, html body.frontpage .container main #intro #announcements article figure figcaption h3, html body.frontpage .container main #intro #announcements article figure figcaption h4, html body.frontpage .container main #intro #announcements article figure figcaption h5, html body.frontpage .container main #intro #announcements article figure figcaption h6 { margin: 0; padding: 0; }
+html body.frontpage .container main #intro #news article figure.left, html body.frontpage .container main #intro #news article figure.right, html body.frontpage .container main #intro #news article figure.person, html body.frontpage .container main #intro #news article figure.document, html body.frontpage .container main #intro #announcements article figure.left, html body.frontpage .container main #intro #announcements article figure.right, html body.frontpage .container main #intro #announcements article figure.person, html body.frontpage .container main #intro #announcements article figure.document { display: table; }
+html body.frontpage .container main #intro #news article figure.left img, html body.frontpage .container main #intro #news article figure.right img, html body.frontpage .container main #intro #news article figure.person img, html body.frontpage .container main #intro #news article figure.document img, html body.frontpage .container main #intro #announcements article figure.left img, html body.frontpage .container main #intro #announcements article figure.right img, html body.frontpage .container main #intro #announcements article figure.person img, html body.frontpage .container main #intro #announcements article figure.document img { display: block; max-width: 100%; }
+html body.frontpage .container main #intro #news article figure.left figcaption, html body.frontpage .container main #intro #news article figure.right figcaption, html body.frontpage .container main #intro #news article figure.person figcaption, html body.frontpage .container main #intro #news article figure.document figcaption, html body.frontpage .container main #intro #announcements article figure.left figcaption, html body.frontpage .container main #intro #announcements article figure.right figcaption, html body.frontpage .container main #intro #announcements article figure.person figcaption, html body.frontpage .container main #intro #announcements article figure.document figcaption { display: table-caption; caption-side: bottom; margin-top: 0.3125em; text-align: justify; }
+html body.frontpage .container main #intro #news article figure.left + p, html body.frontpage .container main #intro #news article figure.right + p, html body.frontpage .container main #intro #news article figure.person + p, html body.frontpage .container main #intro #news article figure.document + p, html body.frontpage .container main #intro #announcements article figure.left + p, html body.frontpage .container main #intro #announcements article figure.right + p, html body.frontpage .container main #intro #announcements article figure.person + p, html body.frontpage .container main #intro #announcements article figure.document + p { margin-top: 1.25em; }
+html body.frontpage .container main #intro #news article figure.left, html body.frontpage .container main #intro #announcements article figure.left { float: left; margin: 0.625em 2.5em 1.25em 0; }
+html body.frontpage .container main #intro #news article figure.right, html body.frontpage .container main #intro #announcements article figure.right { float: right; margin: 0.625em 0 1.25em 2.5em; }
+html body.frontpage .container main #intro #news article figure + h1, html body.frontpage .container main #intro #announcements article figure + h1 { margin-top: 0.625em; }
 html body.frontpage .container main #intro #news article figure, html body.frontpage .container main #intro #announcements article figure { display: none; }
 html body.frontpage .container main #intro #news article figcaption, html body.frontpage .container main #intro #announcements article figcaption { display: none; }
 html body.frontpage .container main #intro #news article #excerpt, html body.frontpage .container main #intro #announcements article #excerpt { display: none; }
@@ -465,6 +493,18 @@ html body.frontpage .container main #investigations article { margin-bottom: 3%;
   html body.frontpage .container main #investigations article:nth-of-type(8) { margin-right: 2.5%; }
   html body.frontpage .container main #investigations article:nth-of-type(9) { margin-right: 0; }
   html body.frontpage .container main #investigations article:nth-of-type(10) { margin-right: 2.5%; } }
+html body.frontpage .container main #investigations article figure { /* Fit figcpation to image width
+*/ }
+html body.frontpage .container main #investigations article figure img { width: auto; }
+html body.frontpage .container main #investigations article figure figcaption { font-size: smaller; }
+html body.frontpage .container main #investigations article figure figcaption h1, html body.frontpage .container main #investigations article figure figcaption h2, html body.frontpage .container main #investigations article figure figcaption h3, html body.frontpage .container main #investigations article figure figcaption h4, html body.frontpage .container main #investigations article figure figcaption h5, html body.frontpage .container main #investigations article figure figcaption h6 { margin: 0; padding: 0; }
+html body.frontpage .container main #investigations article figure.left, html body.frontpage .container main #investigations article figure.right, html body.frontpage .container main #investigations article figure.person, html body.frontpage .container main #investigations article figure.document { display: table; }
+html body.frontpage .container main #investigations article figure.left img, html body.frontpage .container main #investigations article figure.right img, html body.frontpage .container main #investigations article figure.person img, html body.frontpage .container main #investigations article figure.document img { display: block; max-width: 100%; }
+html body.frontpage .container main #investigations article figure.left figcaption, html body.frontpage .container main #investigations article figure.right figcaption, html body.frontpage .container main #investigations article figure.person figcaption, html body.frontpage .container main #investigations article figure.document figcaption { display: table-caption; caption-side: bottom; margin-top: 0.3125em; text-align: justify; }
+html body.frontpage .container main #investigations article figure.left + p, html body.frontpage .container main #investigations article figure.right + p, html body.frontpage .container main #investigations article figure.person + p, html body.frontpage .container main #investigations article figure.document + p { margin-top: 1.25em; }
+html body.frontpage .container main #investigations article figure.left { float: left; margin: 0.625em 2.5em 1.25em 0; }
+html body.frontpage .container main #investigations article figure.right { float: right; margin: 0.625em 0 1.25em 2.5em; }
+html body.frontpage .container main #investigations article figure + h1 { margin-top: 0.625em; }
 html body.frontpage .container main #investigations article figure { display: block; }
 html body.frontpage .container main #investigations article figcaption { display: none; }
 html body.frontpage .container main #investigations article #content { display: none; }
@@ -520,6 +560,18 @@ html body.frontpage .container main #products article { margin-bottom: 3%; margi
   html body.frontpage .container main #products article:nth-of-type(8) { margin-right: 0; }
   html body.frontpage .container main #products article:nth-of-type(9) { margin-right: 3.33333%; }
   html body.frontpage .container main #products article:nth-of-type(10) { margin-right: 3.33333%; } }
+html body.frontpage .container main #products article figure { /* Fit figcpation to image width
+*/ }
+html body.frontpage .container main #products article figure img { width: auto; }
+html body.frontpage .container main #products article figure figcaption { font-size: smaller; }
+html body.frontpage .container main #products article figure figcaption h1, html body.frontpage .container main #products article figure figcaption h2, html body.frontpage .container main #products article figure figcaption h3, html body.frontpage .container main #products article figure figcaption h4, html body.frontpage .container main #products article figure figcaption h5, html body.frontpage .container main #products article figure figcaption h6 { margin: 0; padding: 0; }
+html body.frontpage .container main #products article figure.left, html body.frontpage .container main #products article figure.right, html body.frontpage .container main #products article figure.person, html body.frontpage .container main #products article figure.document { display: table; }
+html body.frontpage .container main #products article figure.left img, html body.frontpage .container main #products article figure.right img, html body.frontpage .container main #products article figure.person img, html body.frontpage .container main #products article figure.document img { display: block; max-width: 100%; }
+html body.frontpage .container main #products article figure.left figcaption, html body.frontpage .container main #products article figure.right figcaption, html body.frontpage .container main #products article figure.person figcaption, html body.frontpage .container main #products article figure.document figcaption { display: table-caption; caption-side: bottom; margin-top: 0.3125em; text-align: justify; }
+html body.frontpage .container main #products article figure.left + p, html body.frontpage .container main #products article figure.right + p, html body.frontpage .container main #products article figure.person + p, html body.frontpage .container main #products article figure.document + p { margin-top: 1.25em; }
+html body.frontpage .container main #products article figure.left { float: left; margin: 0.625em 2.5em 1.25em 0; }
+html body.frontpage .container main #products article figure.right { float: right; margin: 0.625em 0 1.25em 2.5em; }
+html body.frontpage .container main #products article figure + h1 { margin-top: 0.625em; }
 html body.frontpage .container main #products article figure { display: block; }
 html body.frontpage .container main #products article figcaption { display: none; }
 html body.frontpage .container main #products article #excerpt { display: none; }
@@ -580,6 +632,18 @@ html body.frontpage .container main #projects article { margin-bottom: 3%; margi
   html body.frontpage .container main #projects article:nth-of-type(8) { margin-right: 2.5%; }
   html body.frontpage .container main #projects article:nth-of-type(9) { margin-right: 2.5%; }
   html body.frontpage .container main #projects article:nth-of-type(10) { margin-right: 0; } }
+html body.frontpage .container main #projects article figure { /* Fit figcpation to image width
+*/ }
+html body.frontpage .container main #projects article figure img { width: auto; }
+html body.frontpage .container main #projects article figure figcaption { font-size: smaller; }
+html body.frontpage .container main #projects article figure figcaption h1, html body.frontpage .container main #projects article figure figcaption h2, html body.frontpage .container main #projects article figure figcaption h3, html body.frontpage .container main #projects article figure figcaption h4, html body.frontpage .container main #projects article figure figcaption h5, html body.frontpage .container main #projects article figure figcaption h6 { margin: 0; padding: 0; }
+html body.frontpage .container main #projects article figure.left, html body.frontpage .container main #projects article figure.right, html body.frontpage .container main #projects article figure.person, html body.frontpage .container main #projects article figure.document { display: table; }
+html body.frontpage .container main #projects article figure.left img, html body.frontpage .container main #projects article figure.right img, html body.frontpage .container main #projects article figure.person img, html body.frontpage .container main #projects article figure.document img { display: block; max-width: 100%; }
+html body.frontpage .container main #projects article figure.left figcaption, html body.frontpage .container main #projects article figure.right figcaption, html body.frontpage .container main #projects article figure.person figcaption, html body.frontpage .container main #projects article figure.document figcaption { display: table-caption; caption-side: bottom; margin-top: 0.3125em; text-align: justify; }
+html body.frontpage .container main #projects article figure.left + p, html body.frontpage .container main #projects article figure.right + p, html body.frontpage .container main #projects article figure.person + p, html body.frontpage .container main #projects article figure.document + p { margin-top: 1.25em; }
+html body.frontpage .container main #projects article figure.left { float: left; margin: 0.625em 2.5em 1.25em 0; }
+html body.frontpage .container main #projects article figure.right { float: right; margin: 0.625em 0 1.25em 2.5em; }
+html body.frontpage .container main #projects article figure + h1 { margin-top: 0.625em; }
 html body.frontpage .container main #projects article figure { display: block; }
 html body.frontpage .container main #projects article figcaption { display: none; }
 html body.frontpage .container main #projects article #excerpt { display: none; }
@@ -619,6 +683,18 @@ html body.frontpage .container main #blog h3 { text-transform: uppercase; letter
 html body.frontpage .container main #blog h3 a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #blog h3 a:hover { color: #231f20; }
 html body.frontpage .container main #blog article { width: 100%; max-width: 100%; float: left; margin-bottom: 3%; }
+html body.frontpage .container main #blog article figure { /* Fit figcpation to image width
+*/ }
+html body.frontpage .container main #blog article figure img { width: auto; }
+html body.frontpage .container main #blog article figure figcaption { font-size: smaller; }
+html body.frontpage .container main #blog article figure figcaption h1, html body.frontpage .container main #blog article figure figcaption h2, html body.frontpage .container main #blog article figure figcaption h3, html body.frontpage .container main #blog article figure figcaption h4, html body.frontpage .container main #blog article figure figcaption h5, html body.frontpage .container main #blog article figure figcaption h6 { margin: 0; padding: 0; }
+html body.frontpage .container main #blog article figure.left, html body.frontpage .container main #blog article figure.right, html body.frontpage .container main #blog article figure.person, html body.frontpage .container main #blog article figure.document { display: table; }
+html body.frontpage .container main #blog article figure.left img, html body.frontpage .container main #blog article figure.right img, html body.frontpage .container main #blog article figure.person img, html body.frontpage .container main #blog article figure.document img { display: block; max-width: 100%; }
+html body.frontpage .container main #blog article figure.left figcaption, html body.frontpage .container main #blog article figure.right figcaption, html body.frontpage .container main #blog article figure.person figcaption, html body.frontpage .container main #blog article figure.document figcaption { display: table-caption; caption-side: bottom; margin-top: 0.3125em; text-align: justify; }
+html body.frontpage .container main #blog article figure.left + p, html body.frontpage .container main #blog article figure.right + p, html body.frontpage .container main #blog article figure.person + p, html body.frontpage .container main #blog article figure.document + p { margin-top: 1.25em; }
+html body.frontpage .container main #blog article figure.left { float: left; margin: 0.625em 2.5em 1.25em 0; }
+html body.frontpage .container main #blog article figure.right { float: right; margin: 0.625em 0 1.25em 2.5em; }
+html body.frontpage .container main #blog article figure + h1 { margin-top: 0.625em; }
 html body.frontpage .container main #blog article figure { display: block; }
 html body.frontpage .container main #blog article figcaption { display: none; }
 html body.frontpage .container main #blog article #excerpt { display: none; }
@@ -703,6 +779,18 @@ html body.frontpage .container main #most-read section h3 { text-transform: uppe
 html body.frontpage .container main #most-read section h3 a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #most-read section h3 a:hover { color: #231f20; }
 html body.frontpage .container main #most-read section article { margin-bottom: 3%; border-bottom: 1px solid #f1f1f1; padding-bottom: 1.5%; margin-bottom: 1.5%; }
+html body.frontpage .container main #most-read section article figure { /* Fit figcpation to image width
+*/ }
+html body.frontpage .container main #most-read section article figure img { width: auto; }
+html body.frontpage .container main #most-read section article figure figcaption { font-size: smaller; }
+html body.frontpage .container main #most-read section article figure figcaption h1, html body.frontpage .container main #most-read section article figure figcaption h2, html body.frontpage .container main #most-read section article figure figcaption h3, html body.frontpage .container main #most-read section article figure figcaption h4, html body.frontpage .container main #most-read section article figure figcaption h5, html body.frontpage .container main #most-read section article figure figcaption h6 { margin: 0; padding: 0; }
+html body.frontpage .container main #most-read section article figure.left, html body.frontpage .container main #most-read section article figure.right, html body.frontpage .container main #most-read section article figure.person, html body.frontpage .container main #most-read section article figure.document { display: table; }
+html body.frontpage .container main #most-read section article figure.left img, html body.frontpage .container main #most-read section article figure.right img, html body.frontpage .container main #most-read section article figure.person img, html body.frontpage .container main #most-read section article figure.document img { display: block; max-width: 100%; }
+html body.frontpage .container main #most-read section article figure.left figcaption, html body.frontpage .container main #most-read section article figure.right figcaption, html body.frontpage .container main #most-read section article figure.person figcaption, html body.frontpage .container main #most-read section article figure.document figcaption { display: table-caption; caption-side: bottom; margin-top: 0.3125em; text-align: justify; }
+html body.frontpage .container main #most-read section article figure.left + p, html body.frontpage .container main #most-read section article figure.right + p, html body.frontpage .container main #most-read section article figure.person + p, html body.frontpage .container main #most-read section article figure.document + p { margin-top: 1.25em; }
+html body.frontpage .container main #most-read section article figure.left { float: left; margin: 0.625em 2.5em 1.25em 0; }
+html body.frontpage .container main #most-read section article figure.right { float: right; margin: 0.625em 0 1.25em 2.5em; }
+html body.frontpage .container main #most-read section article figure + h1 { margin-top: 0.625em; }
 html body.frontpage .container main #most-read section article figure { display: none; }
 html body.frontpage .container main #most-read section article figcaption { display: none; }
 html body.frontpage .container main #most-read section article #excerpt { display: none; }
@@ -765,6 +853,18 @@ html body.frontpage .container main #videos article { margin-bottom: 3%; }
   html body.frontpage .container main #videos article:nth-of-type(8) { margin-right: 2%; }
   html body.frontpage .container main #videos article:nth-of-type(9) { margin-right: 2%; }
   html body.frontpage .container main #videos article:nth-of-type(10) { margin-right: 2%; } }
+html body.frontpage .container main #videos article figure { /* Fit figcpation to image width
+*/ }
+html body.frontpage .container main #videos article figure img { width: auto; }
+html body.frontpage .container main #videos article figure figcaption { font-size: smaller; }
+html body.frontpage .container main #videos article figure figcaption h1, html body.frontpage .container main #videos article figure figcaption h2, html body.frontpage .container main #videos article figure figcaption h3, html body.frontpage .container main #videos article figure figcaption h4, html body.frontpage .container main #videos article figure figcaption h5, html body.frontpage .container main #videos article figure figcaption h6 { margin: 0; padding: 0; }
+html body.frontpage .container main #videos article figure.left, html body.frontpage .container main #videos article figure.right, html body.frontpage .container main #videos article figure.person, html body.frontpage .container main #videos article figure.document { display: table; }
+html body.frontpage .container main #videos article figure.left img, html body.frontpage .container main #videos article figure.right img, html body.frontpage .container main #videos article figure.person img, html body.frontpage .container main #videos article figure.document img { display: block; max-width: 100%; }
+html body.frontpage .container main #videos article figure.left figcaption, html body.frontpage .container main #videos article figure.right figcaption, html body.frontpage .container main #videos article figure.person figcaption, html body.frontpage .container main #videos article figure.document figcaption { display: table-caption; caption-side: bottom; margin-top: 0.3125em; text-align: justify; }
+html body.frontpage .container main #videos article figure.left + p, html body.frontpage .container main #videos article figure.right + p, html body.frontpage .container main #videos article figure.person + p, html body.frontpage .container main #videos article figure.document + p { margin-top: 1.25em; }
+html body.frontpage .container main #videos article figure.left { float: left; margin: 0.625em 2.5em 1.25em 0; }
+html body.frontpage .container main #videos article figure.right { float: right; margin: 0.625em 0 1.25em 2.5em; }
+html body.frontpage .container main #videos article figure + h1 { margin-top: 0.625em; }
 html body.frontpage .container main #videos article figure { display: block; }
 html body.frontpage .container main #videos article figcaption { display: none; }
 html body.frontpage .container main #videos article #excerpt { display: none; }
@@ -808,6 +908,18 @@ html body.category main #articles .title a { color: #982022; text-decoration: no
 html body.category main #articles .title a:hover { color: #231f20; }
 html body.category main #articles aside { width: 100%; max-width: 100%; float: left; margin-bottom: 3%; }
 html body.category main #articles aside article { width: 100%; max-width: 100%; float: left; margin-bottom: 3%; margin-bottom: 0; }
+html body.category main #articles aside article figure { /* Fit figcpation to image width
+*/ }
+html body.category main #articles aside article figure img { width: auto; }
+html body.category main #articles aside article figure figcaption { font-size: smaller; }
+html body.category main #articles aside article figure figcaption h1, html body.category main #articles aside article figure figcaption h2, html body.category main #articles aside article figure figcaption h3, html body.category main #articles aside article figure figcaption h4, html body.category main #articles aside article figure figcaption h5, html body.category main #articles aside article figure figcaption h6 { margin: 0; padding: 0; }
+html body.category main #articles aside article figure.left, html body.category main #articles aside article figure.right, html body.category main #articles aside article figure.person, html body.category main #articles aside article figure.document { display: table; }
+html body.category main #articles aside article figure.left img, html body.category main #articles aside article figure.right img, html body.category main #articles aside article figure.person img, html body.category main #articles aside article figure.document img { display: block; max-width: 100%; }
+html body.category main #articles aside article figure.left figcaption, html body.category main #articles aside article figure.right figcaption, html body.category main #articles aside article figure.person figcaption, html body.category main #articles aside article figure.document figcaption { display: table-caption; caption-side: bottom; margin-top: 0.3125em; text-align: justify; }
+html body.category main #articles aside article figure.left + p, html body.category main #articles aside article figure.right + p, html body.category main #articles aside article figure.person + p, html body.category main #articles aside article figure.document + p { margin-top: 1.25em; }
+html body.category main #articles aside article figure.left { float: left; margin: 0.625em 2.5em 1.25em 0; }
+html body.category main #articles aside article figure.right { float: right; margin: 0.625em 0 1.25em 2.5em; }
+html body.category main #articles aside article figure + h1 { margin-top: 0.625em; }
 html body.category main #articles aside article figure { display: block; }
 html body.category main #articles aside article figcaption { display: none; }
 html body.category main #articles aside article #content { display: none; }
@@ -865,6 +977,18 @@ html body.category main #articles article.thumb { margin-bottom: 3%; }
   html body.category main #articles article.thumb:nth-of-type(8) { margin-right: 2.5%; }
   html body.category main #articles article.thumb:nth-of-type(9) { margin-right: 0; }
   html body.category main #articles article.thumb:nth-of-type(10) { margin-right: 2.5%; } }
+html body.category main #articles article.thumb figure { /* Fit figcpation to image width
+*/ }
+html body.category main #articles article.thumb figure img { width: auto; }
+html body.category main #articles article.thumb figure figcaption { font-size: smaller; }
+html body.category main #articles article.thumb figure figcaption h1, html body.category main #articles article.thumb figure figcaption h2, html body.category main #articles article.thumb figure figcaption h3, html body.category main #articles article.thumb figure figcaption h4, html body.category main #articles article.thumb figure figcaption h5, html body.category main #articles article.thumb figure figcaption h6 { margin: 0; padding: 0; }
+html body.category main #articles article.thumb figure.left, html body.category main #articles article.thumb figure.right, html body.category main #articles article.thumb figure.person, html body.category main #articles article.thumb figure.document { display: table; }
+html body.category main #articles article.thumb figure.left img, html body.category main #articles article.thumb figure.right img, html body.category main #articles article.thumb figure.person img, html body.category main #articles article.thumb figure.document img { display: block; max-width: 100%; }
+html body.category main #articles article.thumb figure.left figcaption, html body.category main #articles article.thumb figure.right figcaption, html body.category main #articles article.thumb figure.person figcaption, html body.category main #articles article.thumb figure.document figcaption { display: table-caption; caption-side: bottom; margin-top: 0.3125em; text-align: justify; }
+html body.category main #articles article.thumb figure.left + p, html body.category main #articles article.thumb figure.right + p, html body.category main #articles article.thumb figure.person + p, html body.category main #articles article.thumb figure.document + p { margin-top: 1.25em; }
+html body.category main #articles article.thumb figure.left { float: left; margin: 0.625em 2.5em 1.25em 0; }
+html body.category main #articles article.thumb figure.right { float: right; margin: 0.625em 0 1.25em 2.5em; }
+html body.category main #articles article.thumb figure + h1 { margin-top: 0.625em; }
 html body.category main #articles article.thumb figure { display: block; }
 html body.category main #articles article.thumb figcaption { display: none; }
 html body.category main #articles article.thumb #excerpt { display: none; }
@@ -937,6 +1061,18 @@ html body.category main aside section h3 { text-transform: uppercase; letter-spa
 html body.category main aside section h3 a { color: #982022; text-decoration: none; }
 html body.category main aside section h3 a:hover { color: #231f20; }
 html body.category main aside section article { margin-bottom: 3%; border-bottom: 1px solid #f1f1f1; padding-bottom: 1.5%; margin-bottom: 1.5%; }
+html body.category main aside section article figure { /* Fit figcpation to image width
+*/ }
+html body.category main aside section article figure img { width: auto; }
+html body.category main aside section article figure figcaption { font-size: smaller; }
+html body.category main aside section article figure figcaption h1, html body.category main aside section article figure figcaption h2, html body.category main aside section article figure figcaption h3, html body.category main aside section article figure figcaption h4, html body.category main aside section article figure figcaption h5, html body.category main aside section article figure figcaption h6 { margin: 0; padding: 0; }
+html body.category main aside section article figure.left, html body.category main aside section article figure.right, html body.category main aside section article figure.person, html body.category main aside section article figure.document { display: table; }
+html body.category main aside section article figure.left img, html body.category main aside section article figure.right img, html body.category main aside section article figure.person img, html body.category main aside section article figure.document img { display: block; max-width: 100%; }
+html body.category main aside section article figure.left figcaption, html body.category main aside section article figure.right figcaption, html body.category main aside section article figure.person figcaption, html body.category main aside section article figure.document figcaption { display: table-caption; caption-side: bottom; margin-top: 0.3125em; text-align: justify; }
+html body.category main aside section article figure.left + p, html body.category main aside section article figure.right + p, html body.category main aside section article figure.person + p, html body.category main aside section article figure.document + p { margin-top: 1.25em; }
+html body.category main aside section article figure.left { float: left; margin: 0.625em 2.5em 1.25em 0; }
+html body.category main aside section article figure.right { float: right; margin: 0.625em 0 1.25em 2.5em; }
+html body.category main aside section article figure + h1 { margin-top: 0.625em; }
 html body.category main aside section article figure { display: none; }
 html body.category main aside section article figcaption { display: none; }
 html body.category main aside section article #excerpt { display: none; }
@@ -979,6 +1115,18 @@ html body.category main aside nav ul { text-transform: uppercase; letter-spacing
 html body.category main aside nav ul li { padding: 0.625em; border-bottom: 1px solid white; }
 html body.category main aside section { width: 100%; max-width: 100%; float: left; margin-bottom: 3%; }
 html body.category main aside section#projects article { width: 100%; max-width: 100%; float: left; margin-bottom: 3%; }
+html body.category main aside section#projects article figure { /* Fit figcpation to image width
+*/ }
+html body.category main aside section#projects article figure img { width: auto; }
+html body.category main aside section#projects article figure figcaption { font-size: smaller; }
+html body.category main aside section#projects article figure figcaption h1, html body.category main aside section#projects article figure figcaption h2, html body.category main aside section#projects article figure figcaption h3, html body.category main aside section#projects article figure figcaption h4, html body.category main aside section#projects article figure figcaption h5, html body.category main aside section#projects article figure figcaption h6 { margin: 0; padding: 0; }
+html body.category main aside section#projects article figure.left, html body.category main aside section#projects article figure.right, html body.category main aside section#projects article figure.person, html body.category main aside section#projects article figure.document { display: table; }
+html body.category main aside section#projects article figure.left img, html body.category main aside section#projects article figure.right img, html body.category main aside section#projects article figure.person img, html body.category main aside section#projects article figure.document img { display: block; max-width: 100%; }
+html body.category main aside section#projects article figure.left figcaption, html body.category main aside section#projects article figure.right figcaption, html body.category main aside section#projects article figure.person figcaption, html body.category main aside section#projects article figure.document figcaption { display: table-caption; caption-side: bottom; margin-top: 0.3125em; text-align: justify; }
+html body.category main aside section#projects article figure.left + p, html body.category main aside section#projects article figure.right + p, html body.category main aside section#projects article figure.person + p, html body.category main aside section#projects article figure.document + p { margin-top: 1.25em; }
+html body.category main aside section#projects article figure.left { float: left; margin: 0.625em 2.5em 1.25em 0; }
+html body.category main aside section#projects article figure.right { float: right; margin: 0.625em 0 1.25em 2.5em; }
+html body.category main aside section#projects article figure + h1 { margin-top: 0.625em; }
 html body.category main aside section#projects article figure { display: block; }
 html body.category main aside section#projects article figcaption { display: none; }
 html body.category main aside section#projects article #excerpt { display: none; }
@@ -1023,6 +1171,18 @@ html body.tag main #articles .title a { color: #982022; text-decoration: none; }
 html body.tag main #articles .title a:hover { color: #231f20; }
 html body.tag main #articles aside { width: 100%; max-width: 100%; float: left; margin-bottom: 3%; }
 html body.tag main #articles aside article { width: 100%; max-width: 100%; float: left; margin-bottom: 3%; margin-bottom: 0; }
+html body.tag main #articles aside article figure { /* Fit figcpation to image width
+*/ }
+html body.tag main #articles aside article figure img { width: auto; }
+html body.tag main #articles aside article figure figcaption { font-size: smaller; }
+html body.tag main #articles aside article figure figcaption h1, html body.tag main #articles aside article figure figcaption h2, html body.tag main #articles aside article figure figcaption h3, html body.tag main #articles aside article figure figcaption h4, html body.tag main #articles aside article figure figcaption h5, html body.tag main #articles aside article figure figcaption h6 { margin: 0; padding: 0; }
+html body.tag main #articles aside article figure.left, html body.tag main #articles aside article figure.right, html body.tag main #articles aside article figure.person, html body.tag main #articles aside article figure.document { display: table; }
+html body.tag main #articles aside article figure.left img, html body.tag main #articles aside article figure.right img, html body.tag main #articles aside article figure.person img, html body.tag main #articles aside article figure.document img { display: block; max-width: 100%; }
+html body.tag main #articles aside article figure.left figcaption, html body.tag main #articles aside article figure.right figcaption, html body.tag main #articles aside article figure.person figcaption, html body.tag main #articles aside article figure.document figcaption { display: table-caption; caption-side: bottom; margin-top: 0.3125em; text-align: justify; }
+html body.tag main #articles aside article figure.left + p, html body.tag main #articles aside article figure.right + p, html body.tag main #articles aside article figure.person + p, html body.tag main #articles aside article figure.document + p { margin-top: 1.25em; }
+html body.tag main #articles aside article figure.left { float: left; margin: 0.625em 2.5em 1.25em 0; }
+html body.tag main #articles aside article figure.right { float: right; margin: 0.625em 0 1.25em 2.5em; }
+html body.tag main #articles aside article figure + h1 { margin-top: 0.625em; }
 html body.tag main #articles aside article figure { display: block; }
 html body.tag main #articles aside article figcaption { display: none; }
 html body.tag main #articles aside article #content { display: none; }
@@ -1080,6 +1240,18 @@ html body.tag main #articles article.thumb { margin-bottom: 3%; }
   html body.tag main #articles article.thumb:nth-of-type(8) { margin-right: 2.5%; }
   html body.tag main #articles article.thumb:nth-of-type(9) { margin-right: 0; }
   html body.tag main #articles article.thumb:nth-of-type(10) { margin-right: 2.5%; } }
+html body.tag main #articles article.thumb figure { /* Fit figcpation to image width
+*/ }
+html body.tag main #articles article.thumb figure img { width: auto; }
+html body.tag main #articles article.thumb figure figcaption { font-size: smaller; }
+html body.tag main #articles article.thumb figure figcaption h1, html body.tag main #articles article.thumb figure figcaption h2, html body.tag main #articles article.thumb figure figcaption h3, html body.tag main #articles article.thumb figure figcaption h4, html body.tag main #articles article.thumb figure figcaption h5, html body.tag main #articles article.thumb figure figcaption h6 { margin: 0; padding: 0; }
+html body.tag main #articles article.thumb figure.left, html body.tag main #articles article.thumb figure.right, html body.tag main #articles article.thumb figure.person, html body.tag main #articles article.thumb figure.document { display: table; }
+html body.tag main #articles article.thumb figure.left img, html body.tag main #articles article.thumb figure.right img, html body.tag main #articles article.thumb figure.person img, html body.tag main #articles article.thumb figure.document img { display: block; max-width: 100%; }
+html body.tag main #articles article.thumb figure.left figcaption, html body.tag main #articles article.thumb figure.right figcaption, html body.tag main #articles article.thumb figure.person figcaption, html body.tag main #articles article.thumb figure.document figcaption { display: table-caption; caption-side: bottom; margin-top: 0.3125em; text-align: justify; }
+html body.tag main #articles article.thumb figure.left + p, html body.tag main #articles article.thumb figure.right + p, html body.tag main #articles article.thumb figure.person + p, html body.tag main #articles article.thumb figure.document + p { margin-top: 1.25em; }
+html body.tag main #articles article.thumb figure.left { float: left; margin: 0.625em 2.5em 1.25em 0; }
+html body.tag main #articles article.thumb figure.right { float: right; margin: 0.625em 0 1.25em 2.5em; }
+html body.tag main #articles article.thumb figure + h1 { margin-top: 0.625em; }
 html body.tag main #articles article.thumb figure { display: block; }
 html body.tag main #articles article.thumb figcaption { display: none; }
 html body.tag main #articles article.thumb #excerpt { display: none; }
@@ -1152,6 +1324,18 @@ html body.tag main aside section h3 { text-transform: uppercase; letter-spacing:
 html body.tag main aside section h3 a { color: #982022; text-decoration: none; }
 html body.tag main aside section h3 a:hover { color: #231f20; }
 html body.tag main aside section article { margin-bottom: 3%; border-bottom: 1px solid #f1f1f1; padding-bottom: 1.5%; margin-bottom: 1.5%; }
+html body.tag main aside section article figure { /* Fit figcpation to image width
+*/ }
+html body.tag main aside section article figure img { width: auto; }
+html body.tag main aside section article figure figcaption { font-size: smaller; }
+html body.tag main aside section article figure figcaption h1, html body.tag main aside section article figure figcaption h2, html body.tag main aside section article figure figcaption h3, html body.tag main aside section article figure figcaption h4, html body.tag main aside section article figure figcaption h5, html body.tag main aside section article figure figcaption h6 { margin: 0; padding: 0; }
+html body.tag main aside section article figure.left, html body.tag main aside section article figure.right, html body.tag main aside section article figure.person, html body.tag main aside section article figure.document { display: table; }
+html body.tag main aside section article figure.left img, html body.tag main aside section article figure.right img, html body.tag main aside section article figure.person img, html body.tag main aside section article figure.document img { display: block; max-width: 100%; }
+html body.tag main aside section article figure.left figcaption, html body.tag main aside section article figure.right figcaption, html body.tag main aside section article figure.person figcaption, html body.tag main aside section article figure.document figcaption { display: table-caption; caption-side: bottom; margin-top: 0.3125em; text-align: justify; }
+html body.tag main aside section article figure.left + p, html body.tag main aside section article figure.right + p, html body.tag main aside section article figure.person + p, html body.tag main aside section article figure.document + p { margin-top: 1.25em; }
+html body.tag main aside section article figure.left { float: left; margin: 0.625em 2.5em 1.25em 0; }
+html body.tag main aside section article figure.right { float: right; margin: 0.625em 0 1.25em 2.5em; }
+html body.tag main aside section article figure + h1 { margin-top: 0.625em; }
 html body.tag main aside section article figure { display: none; }
 html body.tag main aside section article figcaption { display: none; }
 html body.tag main aside section article #excerpt { display: none; }
@@ -1194,6 +1378,18 @@ html body.tag main aside nav ul { text-transform: uppercase; letter-spacing: 1.1
 html body.tag main aside nav ul li { padding: 0.625em; border-bottom: 1px solid white; }
 html body.tag main aside section { width: 100%; max-width: 100%; float: left; margin-bottom: 3%; }
 html body.tag main aside section#projects article { width: 100%; max-width: 100%; float: left; margin-bottom: 3%; }
+html body.tag main aside section#projects article figure { /* Fit figcpation to image width
+*/ }
+html body.tag main aside section#projects article figure img { width: auto; }
+html body.tag main aside section#projects article figure figcaption { font-size: smaller; }
+html body.tag main aside section#projects article figure figcaption h1, html body.tag main aside section#projects article figure figcaption h2, html body.tag main aside section#projects article figure figcaption h3, html body.tag main aside section#projects article figure figcaption h4, html body.tag main aside section#projects article figure figcaption h5, html body.tag main aside section#projects article figure figcaption h6 { margin: 0; padding: 0; }
+html body.tag main aside section#projects article figure.left, html body.tag main aside section#projects article figure.right, html body.tag main aside section#projects article figure.person, html body.tag main aside section#projects article figure.document { display: table; }
+html body.tag main aside section#projects article figure.left img, html body.tag main aside section#projects article figure.right img, html body.tag main aside section#projects article figure.person img, html body.tag main aside section#projects article figure.document img { display: block; max-width: 100%; }
+html body.tag main aside section#projects article figure.left figcaption, html body.tag main aside section#projects article figure.right figcaption, html body.tag main aside section#projects article figure.person figcaption, html body.tag main aside section#projects article figure.document figcaption { display: table-caption; caption-side: bottom; margin-top: 0.3125em; text-align: justify; }
+html body.tag main aside section#projects article figure.left + p, html body.tag main aside section#projects article figure.right + p, html body.tag main aside section#projects article figure.person + p, html body.tag main aside section#projects article figure.document + p { margin-top: 1.25em; }
+html body.tag main aside section#projects article figure.left { float: left; margin: 0.625em 2.5em 1.25em 0; }
+html body.tag main aside section#projects article figure.right { float: right; margin: 0.625em 0 1.25em 2.5em; }
+html body.tag main aside section#projects article figure + h1 { margin-top: 0.625em; }
 html body.tag main aside section#projects article figure { display: block; }
 html body.tag main aside section#projects article figcaption { display: none; }
 html body.tag main aside section#projects article #excerpt { display: none; }
@@ -1255,6 +1451,18 @@ html body.projects main #articles article { margin-bottom: 3%; border-top: 0.312
   html body.projects main #articles article:nth-of-type(8) { margin-right: 2.5%; }
   html body.projects main #articles article:nth-of-type(9) { margin-right: 2.5%; }
   html body.projects main #articles article:nth-of-type(10) { margin-right: 0; } }
+html body.projects main #articles article figure { /* Fit figcpation to image width
+*/ }
+html body.projects main #articles article figure img { width: auto; }
+html body.projects main #articles article figure figcaption { font-size: smaller; }
+html body.projects main #articles article figure figcaption h1, html body.projects main #articles article figure figcaption h2, html body.projects main #articles article figure figcaption h3, html body.projects main #articles article figure figcaption h4, html body.projects main #articles article figure figcaption h5, html body.projects main #articles article figure figcaption h6 { margin: 0; padding: 0; }
+html body.projects main #articles article figure.left, html body.projects main #articles article figure.right, html body.projects main #articles article figure.person, html body.projects main #articles article figure.document { display: table; }
+html body.projects main #articles article figure.left img, html body.projects main #articles article figure.right img, html body.projects main #articles article figure.person img, html body.projects main #articles article figure.document img { display: block; max-width: 100%; }
+html body.projects main #articles article figure.left figcaption, html body.projects main #articles article figure.right figcaption, html body.projects main #articles article figure.person figcaption, html body.projects main #articles article figure.document figcaption { display: table-caption; caption-side: bottom; margin-top: 0.3125em; text-align: justify; }
+html body.projects main #articles article figure.left + p, html body.projects main #articles article figure.right + p, html body.projects main #articles article figure.person + p, html body.projects main #articles article figure.document + p { margin-top: 1.25em; }
+html body.projects main #articles article figure.left { float: left; margin: 0.625em 2.5em 1.25em 0; }
+html body.projects main #articles article figure.right { float: right; margin: 0.625em 0 1.25em 2.5em; }
+html body.projects main #articles article figure + h1 { margin-top: 0.625em; }
 html body.projects main #articles article figure { display: block; }
 html body.projects main #articles article figcaption { display: none; }
 html body.projects main #articles article #content { display: none; }
@@ -1323,6 +1531,18 @@ html body.resources main #articles article { margin-bottom: 3%; border-top: 0.31
   html body.resources main #articles article:nth-of-type(8) { margin-right: 2.5%; }
   html body.resources main #articles article:nth-of-type(9) { margin-right: 2.5%; }
   html body.resources main #articles article:nth-of-type(10) { margin-right: 0; } }
+html body.resources main #articles article figure { /* Fit figcpation to image width
+*/ }
+html body.resources main #articles article figure img { width: auto; }
+html body.resources main #articles article figure figcaption { font-size: smaller; }
+html body.resources main #articles article figure figcaption h1, html body.resources main #articles article figure figcaption h2, html body.resources main #articles article figure figcaption h3, html body.resources main #articles article figure figcaption h4, html body.resources main #articles article figure figcaption h5, html body.resources main #articles article figure figcaption h6 { margin: 0; padding: 0; }
+html body.resources main #articles article figure.left, html body.resources main #articles article figure.right, html body.resources main #articles article figure.person, html body.resources main #articles article figure.document { display: table; }
+html body.resources main #articles article figure.left img, html body.resources main #articles article figure.right img, html body.resources main #articles article figure.person img, html body.resources main #articles article figure.document img { display: block; max-width: 100%; }
+html body.resources main #articles article figure.left figcaption, html body.resources main #articles article figure.right figcaption, html body.resources main #articles article figure.person figcaption, html body.resources main #articles article figure.document figcaption { display: table-caption; caption-side: bottom; margin-top: 0.3125em; text-align: justify; }
+html body.resources main #articles article figure.left + p, html body.resources main #articles article figure.right + p, html body.resources main #articles article figure.person + p, html body.resources main #articles article figure.document + p { margin-top: 1.25em; }
+html body.resources main #articles article figure.left { float: left; margin: 0.625em 2.5em 1.25em 0; }
+html body.resources main #articles article figure.right { float: right; margin: 0.625em 0 1.25em 2.5em; }
+html body.resources main #articles article figure + h1 { margin-top: 0.625em; }
 html body.resources main #articles article figure { display: block; }
 html body.resources main #articles article figcaption { display: none; }
 html body.resources main #articles article #content { display: none; }
@@ -1373,6 +1593,18 @@ html body.resources main #documents ul li:before { content: url(http://metamn.gi
 html body.resources main #documents ul li a { margin-left: 1.25em; }
 html body.blog main #articles { margin-bottom: 3%; }
 html body.blog main #articles article { width: 100%; max-width: 100%; float: left; margin-bottom: 3%; margin-bottom: 0; }
+html body.blog main #articles article figure { /* Fit figcpation to image width
+*/ }
+html body.blog main #articles article figure img { width: auto; }
+html body.blog main #articles article figure figcaption { font-size: smaller; }
+html body.blog main #articles article figure figcaption h1, html body.blog main #articles article figure figcaption h2, html body.blog main #articles article figure figcaption h3, html body.blog main #articles article figure figcaption h4, html body.blog main #articles article figure figcaption h5, html body.blog main #articles article figure figcaption h6 { margin: 0; padding: 0; }
+html body.blog main #articles article figure.left, html body.blog main #articles article figure.right, html body.blog main #articles article figure.person, html body.blog main #articles article figure.document { display: table; }
+html body.blog main #articles article figure.left img, html body.blog main #articles article figure.right img, html body.blog main #articles article figure.person img, html body.blog main #articles article figure.document img { display: block; max-width: 100%; }
+html body.blog main #articles article figure.left figcaption, html body.blog main #articles article figure.right figcaption, html body.blog main #articles article figure.person figcaption, html body.blog main #articles article figure.document figcaption { display: table-caption; caption-side: bottom; margin-top: 0.3125em; text-align: justify; }
+html body.blog main #articles article figure.left + p, html body.blog main #articles article figure.right + p, html body.blog main #articles article figure.person + p, html body.blog main #articles article figure.document + p { margin-top: 1.25em; }
+html body.blog main #articles article figure.left { float: left; margin: 0.625em 2.5em 1.25em 0; }
+html body.blog main #articles article figure.right { float: right; margin: 0.625em 0 1.25em 2.5em; }
+html body.blog main #articles article figure + h1 { margin-top: 0.625em; }
 html body.blog main #articles article figure { display: block; }
 html body.blog main #articles article figcaption { display: none; }
 html body.blog main #articles article #content { display: none; }
@@ -1416,6 +1648,18 @@ html body.article main #article, html body.about main #article { width: 100%; ma
 html body.article main #article article.single, html body.about main #article article.single { margin-bottom: 3%; max-width: 43.75em; line-height: 1.75; /* Padding of individual elements
 */ /* Padding of consecutive elements
 */ }
+html body.article main #article article.single figure, html body.about main #article article.single figure { /* Fit figcpation to image width
+*/ }
+html body.article main #article article.single figure img, html body.about main #article article.single figure img { width: auto; }
+html body.article main #article article.single figure figcaption, html body.about main #article article.single figure figcaption { font-size: smaller; }
+html body.article main #article article.single figure figcaption h1, html body.article main #article article.single figure figcaption h2, html body.article main #article article.single figure figcaption h3, html body.article main #article article.single figure figcaption h4, html body.article main #article article.single figure figcaption h5, html body.article main #article article.single figure figcaption h6, html body.about main #article article.single figure figcaption h1, html body.about main #article article.single figure figcaption h2, html body.about main #article article.single figure figcaption h3, html body.about main #article article.single figure figcaption h4, html body.about main #article article.single figure figcaption h5, html body.about main #article article.single figure figcaption h6 { margin: 0; padding: 0; }
+html body.article main #article article.single figure.left, html body.article main #article article.single figure.right, html body.article main #article article.single figure.person, html body.article main #article article.single figure.document, html body.about main #article article.single figure.left, html body.about main #article article.single figure.right, html body.about main #article article.single figure.person, html body.about main #article article.single figure.document { display: table; }
+html body.article main #article article.single figure.left img, html body.article main #article article.single figure.right img, html body.article main #article article.single figure.person img, html body.article main #article article.single figure.document img, html body.about main #article article.single figure.left img, html body.about main #article article.single figure.right img, html body.about main #article article.single figure.person img, html body.about main #article article.single figure.document img { display: block; max-width: 100%; }
+html body.article main #article article.single figure.left figcaption, html body.article main #article article.single figure.right figcaption, html body.article main #article article.single figure.person figcaption, html body.article main #article article.single figure.document figcaption, html body.about main #article article.single figure.left figcaption, html body.about main #article article.single figure.right figcaption, html body.about main #article article.single figure.person figcaption, html body.about main #article article.single figure.document figcaption { display: table-caption; caption-side: bottom; margin-top: 0.3125em; text-align: justify; }
+html body.article main #article article.single figure.left + p, html body.article main #article article.single figure.right + p, html body.article main #article article.single figure.person + p, html body.article main #article article.single figure.document + p, html body.about main #article article.single figure.left + p, html body.about main #article article.single figure.right + p, html body.about main #article article.single figure.person + p, html body.about main #article article.single figure.document + p { margin-top: 1.25em; }
+html body.article main #article article.single figure.left, html body.about main #article article.single figure.left { float: left; margin: 0.625em 2.5em 1.25em 0; }
+html body.article main #article article.single figure.right, html body.about main #article article.single figure.right { float: right; margin: 0.625em 0 1.25em 2.5em; }
+html body.article main #article article.single figure + h1, html body.about main #article article.single figure + h1 { margin-top: 0.625em; }
 html body.article main #article article.single figure, html body.about main #article article.single figure { display: block; }
 html body.article main #article article.single #excerpt, html body.about main #article article.single #excerpt { display: none; }
 html body.article main #article article.single #excerpt, html body.about main #article article.single #excerpt { line-height: 1.25; color: #74676a; color: #4c4345; text-align: justify; }
@@ -1586,6 +1830,18 @@ html body.article main #article #most-read h3 a:hover, html body.article main #a
   html body.article main #article #most-read:nth-of-type(9), html body.article main #article #most-recent:nth-of-type(9), html body.about main #article #most-read:nth-of-type(9), html body.about main #article #most-recent:nth-of-type(9) { margin-right: 10%; }
   html body.article main #article #most-read:nth-of-type(10), html body.article main #article #most-recent:nth-of-type(10), html body.about main #article #most-read:nth-of-type(10), html body.about main #article #most-recent:nth-of-type(10) { margin-right: 0; } }
 html body.article main #article #most-read article, html body.article main #article #most-recent article, html body.about main #article #most-read article, html body.about main #article #most-recent article { width: 100%; max-width: 100%; float: left; margin-bottom: 3%; }
+html body.article main #article #most-read article figure, html body.article main #article #most-recent article figure, html body.about main #article #most-read article figure, html body.about main #article #most-recent article figure { /* Fit figcpation to image width
+*/ }
+html body.article main #article #most-read article figure img, html body.article main #article #most-recent article figure img, html body.about main #article #most-read article figure img, html body.about main #article #most-recent article figure img { width: auto; }
+html body.article main #article #most-read article figure figcaption, html body.article main #article #most-recent article figure figcaption, html body.about main #article #most-read article figure figcaption, html body.about main #article #most-recent article figure figcaption { font-size: smaller; }
+html body.article main #article #most-read article figure figcaption h1, html body.article main #article #most-read article figure figcaption h2, html body.article main #article #most-read article figure figcaption h3, html body.article main #article #most-read article figure figcaption h4, html body.article main #article #most-read article figure figcaption h5, html body.article main #article #most-read article figure figcaption h6, html body.article main #article #most-recent article figure figcaption h1, html body.article main #article #most-recent article figure figcaption h2, html body.article main #article #most-recent article figure figcaption h3, html body.article main #article #most-recent article figure figcaption h4, html body.article main #article #most-recent article figure figcaption h5, html body.article main #article #most-recent article figure figcaption h6, html body.about main #article #most-read article figure figcaption h1, html body.about main #article #most-read article figure figcaption h2, html body.about main #article #most-read article figure figcaption h3, html body.about main #article #most-read article figure figcaption h4, html body.about main #article #most-read article figure figcaption h5, html body.about main #article #most-read article figure figcaption h6, html body.about main #article #most-recent article figure figcaption h1, html body.about main #article #most-recent article figure figcaption h2, html body.about main #article #most-recent article figure figcaption h3, html body.about main #article #most-recent article figure figcaption h4, html body.about main #article #most-recent article figure figcaption h5, html body.about main #article #most-recent article figure figcaption h6 { margin: 0; padding: 0; }
+html body.article main #article #most-read article figure.left, html body.article main #article #most-read article figure.right, html body.article main #article #most-read article figure.person, html body.article main #article #most-read article figure.document, html body.article main #article #most-recent article figure.left, html body.article main #article #most-recent article figure.right, html body.article main #article #most-recent article figure.person, html body.article main #article #most-recent article figure.document, html body.about main #article #most-read article figure.left, html body.about main #article #most-read article figure.right, html body.about main #article #most-read article figure.person, html body.about main #article #most-read article figure.document, html body.about main #article #most-recent article figure.left, html body.about main #article #most-recent article figure.right, html body.about main #article #most-recent article figure.person, html body.about main #article #most-recent article figure.document { display: table; }
+html body.article main #article #most-read article figure.left img, html body.article main #article #most-read article figure.right img, html body.article main #article #most-read article figure.person img, html body.article main #article #most-read article figure.document img, html body.article main #article #most-recent article figure.left img, html body.article main #article #most-recent article figure.right img, html body.article main #article #most-recent article figure.person img, html body.article main #article #most-recent article figure.document img, html body.about main #article #most-read article figure.left img, html body.about main #article #most-read article figure.right img, html body.about main #article #most-read article figure.person img, html body.about main #article #most-read article figure.document img, html body.about main #article #most-recent article figure.left img, html body.about main #article #most-recent article figure.right img, html body.about main #article #most-recent article figure.person img, html body.about main #article #most-recent article figure.document img { display: block; max-width: 100%; }
+html body.article main #article #most-read article figure.left figcaption, html body.article main #article #most-read article figure.right figcaption, html body.article main #article #most-read article figure.person figcaption, html body.article main #article #most-read article figure.document figcaption, html body.article main #article #most-recent article figure.left figcaption, html body.article main #article #most-recent article figure.right figcaption, html body.article main #article #most-recent article figure.person figcaption, html body.article main #article #most-recent article figure.document figcaption, html body.about main #article #most-read article figure.left figcaption, html body.about main #article #most-read article figure.right figcaption, html body.about main #article #most-read article figure.person figcaption, html body.about main #article #most-read article figure.document figcaption, html body.about main #article #most-recent article figure.left figcaption, html body.about main #article #most-recent article figure.right figcaption, html body.about main #article #most-recent article figure.person figcaption, html body.about main #article #most-recent article figure.document figcaption { display: table-caption; caption-side: bottom; margin-top: 0.3125em; text-align: justify; }
+html body.article main #article #most-read article figure.left + p, html body.article main #article #most-read article figure.right + p, html body.article main #article #most-read article figure.person + p, html body.article main #article #most-read article figure.document + p, html body.article main #article #most-recent article figure.left + p, html body.article main #article #most-recent article figure.right + p, html body.article main #article #most-recent article figure.person + p, html body.article main #article #most-recent article figure.document + p, html body.about main #article #most-read article figure.left + p, html body.about main #article #most-read article figure.right + p, html body.about main #article #most-read article figure.person + p, html body.about main #article #most-read article figure.document + p, html body.about main #article #most-recent article figure.left + p, html body.about main #article #most-recent article figure.right + p, html body.about main #article #most-recent article figure.person + p, html body.about main #article #most-recent article figure.document + p { margin-top: 1.25em; }
+html body.article main #article #most-read article figure.left, html body.article main #article #most-recent article figure.left, html body.about main #article #most-read article figure.left, html body.about main #article #most-recent article figure.left { float: left; margin: 0.625em 2.5em 1.25em 0; }
+html body.article main #article #most-read article figure.right, html body.article main #article #most-recent article figure.right, html body.about main #article #most-read article figure.right, html body.about main #article #most-recent article figure.right { float: right; margin: 0.625em 0 1.25em 2.5em; }
+html body.article main #article #most-read article figure + h1, html body.article main #article #most-recent article figure + h1, html body.about main #article #most-read article figure + h1, html body.about main #article #most-recent article figure + h1 { margin-top: 0.625em; }
 html body.article main #article #most-read article figure, html body.article main #article #most-recent article figure, html body.about main #article #most-read article figure, html body.about main #article #most-recent article figure { display: block; }
 html body.article main #article #most-read article figcaption, html body.article main #article #most-recent article figcaption, html body.about main #article #most-read article figcaption, html body.about main #article #most-recent article figcaption { display: none; }
 html body.article main #article #most-read article #excerpt, html body.article main #article #most-recent article #excerpt, html body.about main #article #most-read article #excerpt, html body.about main #article #most-recent article #excerpt { display: none; }
@@ -1649,6 +1905,18 @@ html body.article main aside section h3, html body.about main aside section h3 {
 html body.article main aside section h3 a, html body.about main aside section h3 a { color: #982022; text-decoration: none; }
 html body.article main aside section h3 a:hover, html body.about main aside section h3 a:hover { color: #231f20; }
 html body.article main aside section article, html body.about main aside section article { margin-bottom: 3%; border-bottom: 1px solid #f1f1f1; padding-bottom: 1.5%; margin-bottom: 1.5%; }
+html body.article main aside section article figure, html body.about main aside section article figure { /* Fit figcpation to image width
+*/ }
+html body.article main aside section article figure img, html body.about main aside section article figure img { width: auto; }
+html body.article main aside section article figure figcaption, html body.about main aside section article figure figcaption { font-size: smaller; }
+html body.article main aside section article figure figcaption h1, html body.article main aside section article figure figcaption h2, html body.article main aside section article figure figcaption h3, html body.article main aside section article figure figcaption h4, html body.article main aside section article figure figcaption h5, html body.article main aside section article figure figcaption h6, html body.about main aside section article figure figcaption h1, html body.about main aside section article figure figcaption h2, html body.about main aside section article figure figcaption h3, html body.about main aside section article figure figcaption h4, html body.about main aside section article figure figcaption h5, html body.about main aside section article figure figcaption h6 { margin: 0; padding: 0; }
+html body.article main aside section article figure.left, html body.article main aside section article figure.right, html body.article main aside section article figure.person, html body.article main aside section article figure.document, html body.about main aside section article figure.left, html body.about main aside section article figure.right, html body.about main aside section article figure.person, html body.about main aside section article figure.document { display: table; }
+html body.article main aside section article figure.left img, html body.article main aside section article figure.right img, html body.article main aside section article figure.person img, html body.article main aside section article figure.document img, html body.about main aside section article figure.left img, html body.about main aside section article figure.right img, html body.about main aside section article figure.person img, html body.about main aside section article figure.document img { display: block; max-width: 100%; }
+html body.article main aside section article figure.left figcaption, html body.article main aside section article figure.right figcaption, html body.article main aside section article figure.person figcaption, html body.article main aside section article figure.document figcaption, html body.about main aside section article figure.left figcaption, html body.about main aside section article figure.right figcaption, html body.about main aside section article figure.person figcaption, html body.about main aside section article figure.document figcaption { display: table-caption; caption-side: bottom; margin-top: 0.3125em; text-align: justify; }
+html body.article main aside section article figure.left + p, html body.article main aside section article figure.right + p, html body.article main aside section article figure.person + p, html body.article main aside section article figure.document + p, html body.about main aside section article figure.left + p, html body.about main aside section article figure.right + p, html body.about main aside section article figure.person + p, html body.about main aside section article figure.document + p { margin-top: 1.25em; }
+html body.article main aside section article figure.left, html body.about main aside section article figure.left { float: left; margin: 0.625em 2.5em 1.25em 0; }
+html body.article main aside section article figure.right, html body.about main aside section article figure.right { float: right; margin: 0.625em 0 1.25em 2.5em; }
+html body.article main aside section article figure + h1, html body.about main aside section article figure + h1 { margin-top: 0.625em; }
 html body.article main aside section article figure, html body.about main aside section article figure { display: none; }
 html body.article main aside section article figcaption, html body.about main aside section article figcaption { display: none; }
 html body.article main aside section article #excerpt, html body.about main aside section article #excerpt { display: none; }
@@ -1691,6 +1959,18 @@ html body.article main aside nav ul, html body.about main aside nav ul { text-tr
 html body.article main aside nav ul li, html body.about main aside nav ul li { padding: 0.625em; border-bottom: 1px solid white; }
 html body.article main aside section, html body.about main aside section { width: 100%; max-width: 100%; float: left; margin-bottom: 3%; }
 html body.article main aside section#projects article, html body.about main aside section#projects article { width: 100%; max-width: 100%; float: left; margin-bottom: 3%; }
+html body.article main aside section#projects article figure, html body.about main aside section#projects article figure { /* Fit figcpation to image width
+*/ }
+html body.article main aside section#projects article figure img, html body.about main aside section#projects article figure img { width: auto; }
+html body.article main aside section#projects article figure figcaption, html body.about main aside section#projects article figure figcaption { font-size: smaller; }
+html body.article main aside section#projects article figure figcaption h1, html body.article main aside section#projects article figure figcaption h2, html body.article main aside section#projects article figure figcaption h3, html body.article main aside section#projects article figure figcaption h4, html body.article main aside section#projects article figure figcaption h5, html body.article main aside section#projects article figure figcaption h6, html body.about main aside section#projects article figure figcaption h1, html body.about main aside section#projects article figure figcaption h2, html body.about main aside section#projects article figure figcaption h3, html body.about main aside section#projects article figure figcaption h4, html body.about main aside section#projects article figure figcaption h5, html body.about main aside section#projects article figure figcaption h6 { margin: 0; padding: 0; }
+html body.article main aside section#projects article figure.left, html body.article main aside section#projects article figure.right, html body.article main aside section#projects article figure.person, html body.article main aside section#projects article figure.document, html body.about main aside section#projects article figure.left, html body.about main aside section#projects article figure.right, html body.about main aside section#projects article figure.person, html body.about main aside section#projects article figure.document { display: table; }
+html body.article main aside section#projects article figure.left img, html body.article main aside section#projects article figure.right img, html body.article main aside section#projects article figure.person img, html body.article main aside section#projects article figure.document img, html body.about main aside section#projects article figure.left img, html body.about main aside section#projects article figure.right img, html body.about main aside section#projects article figure.person img, html body.about main aside section#projects article figure.document img { display: block; max-width: 100%; }
+html body.article main aside section#projects article figure.left figcaption, html body.article main aside section#projects article figure.right figcaption, html body.article main aside section#projects article figure.person figcaption, html body.article main aside section#projects article figure.document figcaption, html body.about main aside section#projects article figure.left figcaption, html body.about main aside section#projects article figure.right figcaption, html body.about main aside section#projects article figure.person figcaption, html body.about main aside section#projects article figure.document figcaption { display: table-caption; caption-side: bottom; margin-top: 0.3125em; text-align: justify; }
+html body.article main aside section#projects article figure.left + p, html body.article main aside section#projects article figure.right + p, html body.article main aside section#projects article figure.person + p, html body.article main aside section#projects article figure.document + p, html body.about main aside section#projects article figure.left + p, html body.about main aside section#projects article figure.right + p, html body.about main aside section#projects article figure.person + p, html body.about main aside section#projects article figure.document + p { margin-top: 1.25em; }
+html body.article main aside section#projects article figure.left, html body.about main aside section#projects article figure.left { float: left; margin: 0.625em 2.5em 1.25em 0; }
+html body.article main aside section#projects article figure.right, html body.about main aside section#projects article figure.right { float: right; margin: 0.625em 0 1.25em 2.5em; }
+html body.article main aside section#projects article figure + h1, html body.about main aside section#projects article figure + h1 { margin-top: 0.625em; }
 html body.article main aside section#projects article figure, html body.about main aside section#projects article figure { display: block; }
 html body.article main aside section#projects article figcaption, html body.about main aside section#projects article figcaption { display: none; }
 html body.article main aside section#projects article #excerpt, html body.about main aside section#projects article #excerpt { display: none; }
@@ -1739,6 +2019,18 @@ html body.board-directors main #article dl + p { margin-top: 2.5em !important; }
 html body.jobs main #article #content article, html body.announcements main #article #content article { margin-bottom: 3%; border-bottom: 1px solid #f1f1f1; padding-bottom: 1.5%; margin-bottom: 1.5%; max-width: 43.75em; line-height: 1.75; /* Padding of individual elements
 */ /* Padding of consecutive elements
 */ }
+html body.jobs main #article #content article figure, html body.announcements main #article #content article figure { /* Fit figcpation to image width
+*/ }
+html body.jobs main #article #content article figure img, html body.announcements main #article #content article figure img { width: auto; }
+html body.jobs main #article #content article figure figcaption, html body.announcements main #article #content article figure figcaption { font-size: smaller; }
+html body.jobs main #article #content article figure figcaption h1, html body.jobs main #article #content article figure figcaption h2, html body.jobs main #article #content article figure figcaption h3, html body.jobs main #article #content article figure figcaption h4, html body.jobs main #article #content article figure figcaption h5, html body.jobs main #article #content article figure figcaption h6, html body.announcements main #article #content article figure figcaption h1, html body.announcements main #article #content article figure figcaption h2, html body.announcements main #article #content article figure figcaption h3, html body.announcements main #article #content article figure figcaption h4, html body.announcements main #article #content article figure figcaption h5, html body.announcements main #article #content article figure figcaption h6 { margin: 0; padding: 0; }
+html body.jobs main #article #content article figure.left, html body.jobs main #article #content article figure.right, html body.jobs main #article #content article figure.person, html body.jobs main #article #content article figure.document, html body.announcements main #article #content article figure.left, html body.announcements main #article #content article figure.right, html body.announcements main #article #content article figure.person, html body.announcements main #article #content article figure.document { display: table; }
+html body.jobs main #article #content article figure.left img, html body.jobs main #article #content article figure.right img, html body.jobs main #article #content article figure.person img, html body.jobs main #article #content article figure.document img, html body.announcements main #article #content article figure.left img, html body.announcements main #article #content article figure.right img, html body.announcements main #article #content article figure.person img, html body.announcements main #article #content article figure.document img { display: block; max-width: 100%; }
+html body.jobs main #article #content article figure.left figcaption, html body.jobs main #article #content article figure.right figcaption, html body.jobs main #article #content article figure.person figcaption, html body.jobs main #article #content article figure.document figcaption, html body.announcements main #article #content article figure.left figcaption, html body.announcements main #article #content article figure.right figcaption, html body.announcements main #article #content article figure.person figcaption, html body.announcements main #article #content article figure.document figcaption { display: table-caption; caption-side: bottom; margin-top: 0.3125em; text-align: justify; }
+html body.jobs main #article #content article figure.left + p, html body.jobs main #article #content article figure.right + p, html body.jobs main #article #content article figure.person + p, html body.jobs main #article #content article figure.document + p, html body.announcements main #article #content article figure.left + p, html body.announcements main #article #content article figure.right + p, html body.announcements main #article #content article figure.person + p, html body.announcements main #article #content article figure.document + p { margin-top: 1.25em; }
+html body.jobs main #article #content article figure.left, html body.announcements main #article #content article figure.left { float: left; margin: 0.625em 2.5em 1.25em 0; }
+html body.jobs main #article #content article figure.right, html body.announcements main #article #content article figure.right { float: right; margin: 0.625em 0 1.25em 2.5em; }
+html body.jobs main #article #content article figure + h1, html body.announcements main #article #content article figure + h1 { margin-top: 0.625em; }
 html body.jobs main #article #content article figure, html body.announcements main #article #content article figure { display: none; }
 html body.jobs main #article #content article figcaption, html body.announcements main #article #content article figcaption { display: none; }
 html body.jobs main #article #content article #excerpt, html body.announcements main #article #content article #excerpt { display: none; }
@@ -1881,22 +2173,6 @@ html body.jobs main #article #content article h1 + h2, html body.jobs main #arti
 html body.jobs main #article #content article h1 + ul, html body.jobs main #article #content article h2 + ul, html body.jobs main #article #content article h3 + ul, html body.jobs main #article #content article h1 + ol, html body.jobs main #article #content article h2 + ol, html body.jobs main #article #content article h3 + ol, html body.jobs main #article #content article h1 + figure, html body.jobs main #article #content article h2 + figure, html body.jobs main #article #content article h3 + figure, html body.jobs main #article #content article h1 + nav, html body.announcements main #article #content article h1 + ul, html body.announcements main #article #content article h2 + ul, html body.announcements main #article #content article h3 + ul, html body.announcements main #article #content article h1 + ol, html body.announcements main #article #content article h2 + ol, html body.announcements main #article #content article h3 + ol, html body.announcements main #article #content article h1 + figure, html body.announcements main #article #content article h2 + figure, html body.announcements main #article #content article h3 + figure, html body.announcements main #article #content article h1 + nav { margin-top: 0; }
 html body.jobs main #article #content article li ul, html body.jobs main #article #content article li ol, html body.announcements main #article #content article li ul, html body.announcements main #article #content article li ol { margin-top: 0; }
 html body.jobs main #article #content article #excerpt, html body.announcements main #article #content article #excerpt { display: block; }
-
-html body { /* Highlighting active menu items
-*/ /* Highlighting active menu items in the sidebar, About pages
-*/ }
-html body .container article figure { /* Fit figcpation to image width
-*/ }
-html body .container article figure img { width: auto; }
-html body .container article figure figcaption { font-size: smaller; }
-html body .container article figure figcaption h1, html body .container article figure figcaption h2, html body .container article figure figcaption h3, html body .container article figure figcaption h4, html body .container article figure figcaption h5, html body .container article figure figcaption h6 { margin: 0; padding: 0; }
-html body .container article figure.left, html body .container article figure.right, html body .container article figure.person, html body .container article figure.document { display: table; }
-html body .container article figure.left img, html body .container article figure.right img, html body .container article figure.person img, html body .container article figure.document img { display: block; max-width: 100%; }
-html body .container article figure.left figcaption, html body .container article figure.right figcaption, html body .container article figure.person figcaption, html body .container article figure.document figcaption { display: table-caption; caption-side: bottom; margin-top: 0.3125em; text-align: justify; }
-html body .container article figure.left + p, html body .container article figure.right + p, html body .container article figure.person + p, html body .container article figure.document + p { margin-top: 1.25em; }
-html body .container article figure.left { float: left; margin: 0.625em 2.5em 1.25em 0; }
-html body .container article figure.right { float: right; margin: 0.625em 0 1.25em 2.5em; }
-html body .container article figure + h1 { margin-top: 0.625em; }
 html body.frontpage #header nav ul li#frontpage a { background: #982022; color: white; }
 html body.frontpage #header nav ul li#frontpage a a { color: white; text-decoration: none; }
 html body.frontpage #header nav ul li#frontpage a a:hover { color: white; }
