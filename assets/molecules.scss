@@ -331,6 +331,16 @@
 }
 
 
+/* Remove the extra padding bottom for images inside a link
+- http://stackoverflow.com/questions/3532870/extra-padding-on-linked-images-in-every-broswer
+*/
+figure {
+  a {
+    line-height: 0;
+  }
+}
+
+
 /* Social icons
 */
 @mixin social-icons {
@@ -438,7 +448,11 @@
     background: $light-grey;
     color: $color;
     @include link($color, $background);
-  
+    
+  } @elseif ($type == blog-thumb) {
+    background: $grey;
+    color: $background;
+    @include link($background, $background);
   }
 }
 

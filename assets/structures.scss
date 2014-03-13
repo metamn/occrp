@@ -5,6 +5,7 @@
 */
 
 
+
 /* Single article
 */
 @mixin single-article {
@@ -90,28 +91,6 @@
     margin-top: $pad;
     
     @include list-download;
-  }
-}
-
-
-
-
-/* Members
-*/
-@mixin members {
-  #google-maps {
-    position: relative;
-    padding-bottom: 45%; // This is the aspect ratio
-    height: 0;
-    overflow: hidden;
-    
-    iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100% !important;
-      height: 100% !important;
-    }
   }
 }
 
@@ -305,6 +284,7 @@
       
       h1 {
         font-weight: normal;
+        @include font-body;
       }
     }
   }
@@ -333,20 +313,21 @@
 /* Blog on the frontpage
 */
 @mixin frontpage-blog {
-  border-bottom: $border-thin;
-  
   h3 {
     @include font(section-title);
-    border-bottom: $border-thin;
-    border-color: $color;
-    margin-bottom: 0;
   }
   
   @include article-style(title-right);
   article {
     @include responsive-grid(3);
-    margin-bottom: $flexible-grid-margin / 2;
-    margin-top: $flexible-grid-margin / 2;
+    @include color(invert);
+    margin-bottom: $flexible-grid-margin/2;
+    
+    h1 {
+      font-weight: normal;
+      @include font-body;
+      letter-spacing: $letter-spacing-uppercase;
+    }
   }
 }
 
