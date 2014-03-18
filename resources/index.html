@@ -15,20 +15,65 @@ category: page
 
 <section id="documents">
   <h3>Documents</h3>
-  {% for post in site.posts %}
-    {% if post.documents.size > 0 %}
-      {% for document in post.documents %}
-        <article>
-          <h1>
-            <a href="{{ site.url }}/{{ post.url }}" title="{{ document.name }}">{{ document.name }}</a>
-          </h1>
-          <div id="meta">
-            <date>{{ post.date | date: "%-d %B %Y" }}</date> in 
-            <span>{{ post.title }}</span>
-          </div>
-        </article>
-      {% endfor %}
-    {% endif %}
-  {% endfor %}
+  <article>
+    <h1>
+      <a href="{{ site.url }}/investigation-8" title="Europols Serious Organized Crime and Threat Assessment">Europols Serious Organized Crime and Threat Assessment</a>
+    </h1>
+    <ul id="meta">
+      <li>
+        <date>9 January 2014</date> in 
+        <a href="{{ site.url }}/investigation-8" title="Georgian Officials Shred Sex Tapes">Georgian Officials Shred Sex Tapes</a>
+      </li>
+      <li>
+        <date>8 January 2014</date> in 
+        <a href="{{ site.url }}/investigation-6" title="Romanian Mining Company Under Investigation for Money Laundering">Romanian Mining Company Under Investigation for Money Laundering</a>
+      </li>
+    </ul>
+  </article>
+  
+  <article>
+    <h1>
+      <a href="{{ site.url }}/investigation-5" title="The Investigative Journalist Handbook">The Investigative Journalist Handbook</a>
+    </h1>
+    
+    <ul id="meta">
+      <li>
+        <date>19 December 2013</date> in 
+        <a href="{{ site.url }}/investigation-5" title="State weapons exporter caught in cross-border bribery scandal">State weapons exporter caught in cross-border bribery scandal</a>
+      </li>
+    </ul>
+  </article>
+  
+  <article>
+    <h1>
+      <a href="{{ site.url }}/investigation-10" title="The Investigative Journalist Handbook 2">The Investigative Journalist Handbook 2</a>
+    </h1>
+    <ul id="meta">
+      <li>
+        <date>29 August 2013</date> in 
+        <a href="{{ site.url }}/investigation-10" title="Brothers in Crime">Brothers in Crime</a>
+      </li>
+    </ul>
+  </article>
+  
+  <article>
+    <h1>
+      <a href="{{ site.url }}/investigation-4" title="The Investigative Journalist Handbook 3">The Investigative Journalist Handbook 3</a>
+    </h1>
+    <ul id="meta">
+      <li>
+        <date>9 January 2014</date> in 
+        <a href="{{ site.url }}/investigation-4" title="Romanians Take To Streets Against Corruption">Romanians Take To Streets Against Corruption</a>
+      </li>
+      <li>
+        <date>8 January 2014</date> in 
+        <a href="{{ site.url }}/investigation-1" title="Is Corruption Holding Afghanistan Together?">Is Corruption Holding Afghanistan Together?</a>
+      </li>
+      <li>
+        <date>8 January 2014</date> in 
+        <a href="{{ site.url }}/projects-4" title="Drug Cartel's Mistery Man">Drug Cartel's Mistery Man</a>
+      </li>
+    </ul>
+  </article>
 </section>
 
