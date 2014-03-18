@@ -88,18 +88,19 @@
   @include show-title;
   
   article {
-    h1 {
-      &:before {
-        content: url(http://metamn.github.io/occrp/assets/download.png);
-      }
+    img {
+      width: $pad*2;
     }
     
-    @include ul;
     ul {
+      @include block;
+      @include ol-ul('');
       @include font(italic);
       
       li {
         margin-bottom: $pad/2;
+        padding-left: 0;
+        
         date {
           @include font(date);
         }
