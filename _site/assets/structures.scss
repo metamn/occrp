@@ -87,10 +87,18 @@
 @mixin documents {
   @include show-title;
   
-  ul {
-    margin-top: $pad;
-    
-    @include list-download;
+  article {
+    #meta {
+      @include font(italic);
+      
+      date {
+        @include font(date);
+      }
+      
+      span {
+        @include font(author);
+      }
+    }
   }
 }
 
@@ -300,6 +308,10 @@
   article.thumb {
     @include block;
     
+    h1 {
+      @include h1;
+    }
+    
     #excerpt {
       display: block;
       @include border-thin;
@@ -327,6 +339,37 @@
       font-weight: normal;
       @include font-body;
       letter-spacing: $letter-spacing-uppercase;
+    }
+  }
+}
+
+
+/* About us Sidebar menu
+*/
+@mixin about-us {
+  aside {
+    section {
+      @include hide-title;
+      
+      nav {
+        ul {
+          @include list-menu;
+          
+          li {
+            @include block;
+            @include grid-resize(100%, $pad/2);
+            
+            a {
+              @include block;
+              @include grid-resize(100%, $pad/2);
+            }
+          }
+        }
+      }
+    }
+    
+    #spacer {
+      top: -$pad - $pad/4;
     }
   }
 }

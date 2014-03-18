@@ -15,15 +15,19 @@ category: page
 
 <section id="documents">
   <h3>Documents</h3>
-  {% for post in site.categories.handbook %}
+  {% for post in site.posts %}
     {% if post.documents.size > 0 %}
-      <ul>
-        {% for document in post.documents %}
-          <li>
-            <a href="{{ site.url }}/{{ document.url }}" title="{{ document.name }}">{{ document.name }}</a>
-          </li>
-        {% endfor %}
-      </ul>
+      {% for document in post.documents %}
+        <article>
+          <h1>
+            <a href="{{ site.url }}/{{ post.url }}" title="{{ document.name }}">{{ document.name }}</a>
+          </h1>
+          <div id="meta">
+            <date>{{ post.date | date: "%-d %B %Y" }}</date> in 
+            <span>{{ post.title }}</span>
+          </div>
+        </article>
+      {% endfor %}
     {% endif %}
   {% endfor %}
 </section>

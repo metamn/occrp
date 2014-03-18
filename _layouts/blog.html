@@ -28,11 +28,27 @@
       {% endfor %}
     </section>
     
+    <!--
     <section id="projects">
       <h3>Projects</h3>
       
       {% for post in site.categories.projects limit:5 offset:0 %}
         {% include article.html klass = 'thumb' %}
+      {% endfor %}
+    </section>
+    -->
+    
+    <section id="authors">
+      <h3>Other Authors</h3>
+      
+      {% for post in site.posts limit: 20 %}
+        {% if post.authors %}
+          {% if post.authors[0].name != '' %}
+            <article>
+              <h1><a href="{{ site.url }}/{{ post.url }}" title="{{ post.title }}">{{ post.authors[0].name }}</a></h1>
+            </article>
+          {% endif %}
+        {% endif %}
       {% endfor %}
     </section>
     
