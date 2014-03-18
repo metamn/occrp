@@ -272,7 +272,6 @@
 @mixin list-download {
   li {
     margin-bottom: $pad/2;
-    
     @include border-thin;
     
     &:before {

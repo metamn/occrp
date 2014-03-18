@@ -1594,14 +1594,13 @@ html body.resources main #articles nav ol li { background: #f1f1f1; color: #231f
 html body.resources main #articles nav ol li a { color: #231f20; text-decoration: none; }
 html body.resources main #articles nav ol li a:hover { color: white; }
 html body.resources main #documents > h3 { display: block; }
-html body.resources main #documents article h1:before { content: url(http://metamn.github.io/occrp/assets/download.png); }
-html body.resources main #documents article ul { list-style: none outside; }
+html body.resources main #documents article img { width: 2.5em; }
+html body.resources main #documents article ul { width: 100%; max-width: 100%; float: left; list-style: none outside; font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
 html body.resources main #documents article ul li { /* When parent positioned to 'relative' the children (:before) can be positioned to 'absolute' - this way we can perfectly align the bullets / numbering to the list content
 */ position: relative; padding-left: 1.25em; }
-html body.resources main #documents article ul li:before { content: "\2022"; /* making the content of the list perfectly align with numbering - <li> is relatively positioned - :the numbering (:before) is aboslutely positioned within <li> and fixed to left - the the <li> content has a padding-left to not overlap the numbering
+html body.resources main #documents article ul li:before { content: ""; /* making the content of the list perfectly align with numbering - <li> is relatively positioned - :the numbering (:before) is aboslutely positioned within <li> and fixed to left - the the <li> content has a padding-left to not overlap the numbering
 */ position: absolute; left: 0; font-weight: bold; }
-html body.resources main #documents article ul { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
-html body.resources main #documents article ul li { margin-bottom: 0.625em; }
+html body.resources main #documents article ul li { margin-bottom: 0.625em; padding-left: 0; }
 html body.resources main #documents article ul li date { font-size: small; color: #6f6e6e; font-style: normal; }
 html body.resources main #documents article ul li a { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
 html body.blog main { overflow: hidden; }
