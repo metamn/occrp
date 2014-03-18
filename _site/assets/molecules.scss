@@ -1079,7 +1079,7 @@ figure {
 
 @mixin ul {
   ul {
-    @include ol-ul('\25C6');
+    @include ol-ul('\2022');
   }
 }
 
