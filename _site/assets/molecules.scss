@@ -505,6 +505,7 @@ figure {
   } @elseif ($type == date) {
     font-size: small;
     color: $grey;
+    font-style: normal;
   
   } @elseif ($type == category-title) {
     padding: $h1-padding 0;
@@ -515,6 +516,7 @@ figure {
   } @elseif ($type == author) {
     font-size: small;
     @include uppercase;
+    font-style: normal;
     
   } @elseif ($type == italic) {
     font-size: small;

@@ -87,10 +87,18 @@
 @mixin documents {
   @include show-title;
   
-  ul {
-    margin-top: $pad;
-    
-    @include list-download;
+  article {
+    #meta {
+      @include font(italic);
+      
+      date {
+        @include font(date);
+      }
+      
+      span {
+        @include font(author);
+      }
+    }
   }
 }
 
