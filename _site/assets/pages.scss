@@ -133,6 +133,8 @@ html {
     */
     &.blog {
       main {
+        @include archive;
+        
         #articles {
           @include blog;
         }

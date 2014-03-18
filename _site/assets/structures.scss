@@ -300,6 +300,10 @@
   article.thumb {
     @include block;
     
+    h1 {
+      @include h1;
+    }
+    
     #excerpt {
       display: block;
       @include border-thin;
