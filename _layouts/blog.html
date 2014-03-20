@@ -13,33 +13,15 @@
   
   <aside>
     <section id="most-read">
-      <h3>Latest by this author</h3>
+      <h3>Latest posts</h3>
       
       {% for post in site.categories.investigations limit:5 %}
         {% include article.html klass = 'thumb' %}
       {% endfor %}
     </section>
     
-    <section id="most-recent">
-      <h3>Related Articles</h3>
-      
-      {% for post in site.categories.daily limit:5 %}
-        {% include article.html klass = 'thumb' %}
-      {% endfor %}
-    </section>
-    
-    <!--
-    <section id="projects">
-      <h3>Projects</h3>
-      
-      {% for post in site.categories.projects limit:5 offset:0 %}
-        {% include article.html klass = 'thumb' %}
-      {% endfor %}
-    </section>
-    -->
-    
     <section id="authors">
-      <h3>Other Authors</h3>
+      <h3>Authors</h3>
       
       {% for post in site.posts limit: 20 %}
         {% if post.authors %}
@@ -51,6 +33,15 @@
         {% endif %}
       {% endfor %}
     </section>
+    
+    <section id="most-recent">
+      <h3>Popular</h3>
+      
+      {% for post in site.categories.daily limit:5 %}
+        {% include article.html klass = 'thumb' %}
+      {% endfor %}
+    </section>
+    
     
     <section id="spacer">
       <h3>Fixed sidebar spacer</h3>
