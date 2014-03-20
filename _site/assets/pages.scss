@@ -142,6 +142,37 @@ html {
     &.blog {
       main {
         @include archive;
+        #articles {
+          @include blog;
+        }
+      }
+    }
+    
+    
+    /* Author Archive
+    */
+    &.author {
+      main {
+        @include archive;
+        
+        aside {
+          #bio {
+            img {
+              width: $pad*6;
+              float: left;
+              margin: 0 $pad $pad;
+            }
+            
+            div {
+              padding: 0 $pad/2;
+              
+              p + p {
+                margin-top: $pad;
+              }
+            }
+          }
+        }
+        
         
         #articles {
           @include blog;

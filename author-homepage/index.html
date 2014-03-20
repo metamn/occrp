@@ -1,0 +1,8 @@
+---
+layout: author
+title: Author Homepage
+---
+
+{% for post in site.categories.blog %}
+  {% include article.html klass = 'thumb' %}
+{% endfor %}

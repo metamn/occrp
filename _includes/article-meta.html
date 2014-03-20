@@ -14,7 +14,7 @@
         <ul>
           <li>by</li>
           {% for author in post.authors %}
-            <li><a href="{{ author.url }}" title="{{ author.name }}" >{{ author.name }}</a></li>
+            <li><a href="{{ site.url }}/author-homepage" title="{{ author.name }}" >{{ author.name }}</a></li>
           {% endfor %}
         </ul>
       </li>
