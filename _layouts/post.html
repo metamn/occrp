@@ -1,0 +1,48 @@
+{% include head.html %}
+{% include header.html %}
+
+<main id="main">
+
+  <section id="article">
+    {% assign post = page %}
+    {% include article.html klass = 'single' %}
+  </section>
+  
+  <aside>
+    <section id="latest-posts">
+      <h3>Latest posts by AUTHOR NAME</h3>
+      {% for post in site.categories.investigations limit:5 %}
+        {% include article.html klass = 'thumb' %}
+      {% endfor %}
+    </section>
+    
+    <section id="popular-posts">
+      <h3>Popular by AUTHOR NAME</h3>
+      {% for post in site.categories.projects limit:5 offset:0 %}
+        {% include article.html klass = 'thumb' %}
+      {% endfor %}
+    </section>
+    
+    <section id="authors">
+      <h3>Other Authors</h3>
+      
+      {% for post in site.posts limit: 20 %}
+        {% if post.authors %}
+          {% if post.authors[0].name != '' %}
+            <article>
+              <h1><a href="{{ site.url }}/{{ post.url }}" title="{{ post.title }}">{{ post.authors[0].name }}</a></h1>
+            </article>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </section>
+    
+    <section id="spacer">
+      <h3>Fixed sidebar spacer</h3>
+    </section>
+  </aside>
+</main>
+
+{% include footer.html %}
+</body>
+</html>
