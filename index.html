@@ -79,7 +79,7 @@ class: frontpage
     <a href="{{ site.url }}/blog" title="Blog">Blog</a>
   </h3>
   
-  {% for post in site.categories.slider limit:3 offset:2 %}
+  {% for post in site.categories.blog limit:3 offset:2 %}
     {% include article.html %}
   {% endfor %}
 </section>
