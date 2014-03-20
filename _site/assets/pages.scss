@@ -120,6 +120,14 @@ html {
       main {
         #articles {
           @include projects;
+          
+          #tools {
+            article {
+              #meta {
+                display: none;
+              }
+            }
+          }
         }
         
         #documents {
@@ -142,9 +150,9 @@ html {
     }
     
     
-    /* Single Article, About Us
+    /* Single Article, Single Post, About Us
     */
-    &.article, &.about {
+    &.article, &.about, &.post {
       main {
         @include fixed-sidebar;
         
@@ -219,6 +227,14 @@ html {
     
     &.resources {
       #header nav ul li#resources {
+        a {
+          @include color(menu);
+        }
+      }
+    }
+    
+    &.blog {
+      #header nav ul li#blog {
         a {
           @include color(menu);
         }

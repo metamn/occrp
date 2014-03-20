@@ -90,12 +90,14 @@
   article {
     img {
       width: $pad*2;
+      float: right;
+      margin: $pad/2 $pad/2 0 0;
     }
     
     ul {
       @include block;
       @include ol-ul('');
-      @include font(italic);
+      font-size: smaller;
       
       li {
         margin-bottom: $pad/2;
@@ -103,10 +105,6 @@
         
         date {
           @include font(date);
-        }
-        
-        a {
-          @include font(author);
         }
       }
     }
@@ -159,7 +157,8 @@
   article {
     @include responsive-grid(5);
     @include article-style(investigations);
-    height: 20em;
+    
+    height: 17em !important;
   }
   
   @include navigation(navigation);
@@ -589,7 +588,7 @@
   @include font(navigation);
   
   ul {
-    @include list-inline;
+    @include list-inline($pad/4);
     @include list-menu;
   }  
 }
