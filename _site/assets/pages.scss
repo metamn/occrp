@@ -142,8 +142,15 @@ html {
     &.blog {
       main {
         @include archive;
+        
         #articles {
           @include blog;
+          
+          article {
+            #meta, #date, #authors {
+              display: block !important;
+            }
+          }
         }
       }
     }
@@ -165,6 +172,8 @@ html {
             
             div {
               padding: 0 $pad/2;
+              line-height: $line-height-body-text;
+              font-size: smaller;
               
               p + p {
                 margin-top: $pad;
