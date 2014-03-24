@@ -1,20 +1,6 @@
 
 $(document).ready(function() {
 
-
-  // Show search input in the header
-  $('#header #search').click(function(event) {
-    $(this).find('#icon').hide();
-    $(this).find('#text').hide();
-    $(this).find('#input').show();
-    
-    return false;
-  });
-  
-
-  // Mark first item in category navigation active
-  $('#navigation ol li').first().addClass('active');
-
   // Slider
   $('.frontpage #slider article').hide();
   $('.frontpage #slider article').first().show();
@@ -32,23 +18,66 @@ $(document).ready(function() {
   });
   
   
+  
+  // Mark first item in pagination navigation active
+  $('#navigation ol li').first().addClass('active');
+  
+  
 
   // Sticky header
+  // - on mobile if the menu is visible it will not become sticky
   var menu = document.querySelector('#header');
   var origOffsetY = menu.offsetTop;
 
   function scroll () {
-    if ($(window).scrollTop() >= origOffsetY) {
-      $('body').addClass('sticky');
-    } else {
-      $('body').removeClass('sticky');
-    } 
+    if (!($('#header aside').is(':visible'))) {
+      if ($(window).scrollTop() >= origOffsetY) {
+        $('body').addClass('sticky');
+      } else {
+        $('body').removeClass('sticky');
+      } 
+    }
   }
   document.onscroll = scroll;
+  
+  // Click on logo on sticky header
+  // - instead loading the frontpage it will scroll top
+  // - the second click on the logo will load the frontpage
+  $('#header #logo figure a').click(function(event) {
+    if ($('body').hasClass('sticky')) {
+      event.preventDefault();
+      scrollTo($('body'));
+    }
+  });
+  
+  // Show search input in the header
+  $('#header #search').click(function(event) {
+    $(this).find('#icon').hide();
+    $(this).find('#text').hide();
+    $(this).find('#input').show();
+    
+    return false;
+  });
+  
+  
+  // Show navigation, search & co on click on mobiles
+  $('#header nav#mobile').click(function() {
+    $(this).hide();
+    $('#header aside').slideToggle();
+  });
+  
+  // Close navigation, search & co on click on mobiles
+  $('#header #close-menu').click(function() {
+    $('#header aside').hide();
+    $('#header nav#mobile').slideToggle();
+    scrollTo($('body'));
+  });
 
 
   
-  // Share buttons
+  
+  
+  // Share buttons in article body
   $('#share #twitter').sharrre({
     share: {
       twitter: true
@@ -113,7 +142,17 @@ $(document).ready(function() {
         $(this).attr('src', url + '/' + rnd);
       }
     });
-   
   }); 
+  
+  
+  
+  // Common functions
+  
+  // Scrolling to a div
+  // - if no div then scroll to top
+  function scrollTo(div) {
+    (div.length) ? $("html, body").animate({ scrollTop: $(div).offset().top }, "slow") : $("html, body").animate({ scrollTop: 0 }, "slow");
+    return false;
+  } 
  
 });

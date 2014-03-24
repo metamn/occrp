@@ -522,6 +522,30 @@
     position: relative;
     top: $pad*6;
   }
+  
+  
+  /* Mobiles and Tablets
+  */
+  @include below-and-tablet {
+    #header {
+      border-bottom: none;
+      padding-top: $pad/2;
+      
+      #logo {
+        figure {
+          img {
+            top: 0;
+          }
+        }
+      }
+      
+      nav {
+        &#mobile {
+          margin-top: 0;
+        }
+      }
+    }
+  }
 }
 
 
@@ -563,10 +587,6 @@
       @include tags;
       @include enlarge-social-icons;
     }
-    
-    &#mobile {
-      display: none;
-    }
   }
   
   hgroup {
@@ -576,7 +596,15 @@
   
   /* Mobiles and Tablets
   */
+    
+  nav#mobile, aside {
+    display: none;
+  }
+  
   @include below-and-tablet {
+    margin-top: $pad/2;
+    border-bottom: none;
+    
     nav {
       &#main, &#secondary, &#tags {
         display: none;
@@ -587,11 +615,75 @@
         @include tags;
         padding: $pad/4;
         font-size: 70%;
+        margin-top: $pad/2;
+        
+        cursor: pointer;
         
         ul {
           li {
             margin-right: $pad;
           }
+        }
+      }
+    }
+    
+    aside {
+      nav {
+        &#main, &#secondary, &#tags {
+          display: block;
+          margin-top: $pad*2;
+        }
+        
+        ul {
+          @include block;
+        }
+        
+        &#main, &#secondary {
+          ul {
+            @include list-normal;
+            text-align: left;
+          }
+        }
+        
+        &#tags {
+          ul {
+            &#search {
+              li {
+                &#text {
+                  display: none;
+                }
+                
+                &#input {
+                  display: block;
+                }
+              }
+            }
+            
+            &#tag-list {
+              margin: $pad 0;
+            }
+            
+            &#social {
+              li {
+                margin-right: $pad;
+              }
+            }
+          }
+        }
+      }
+      
+      #close-menu {
+        &:after {
+          content: '\2715';
+          @include color(invert-highlight);
+          padding: 0 $pad/4;
+          
+          position: relative;
+          top: -$pad - $pad/2;
+          right: $pad;
+          float: right;
+          
+          cursor: pointer;
         }
       }
     }
