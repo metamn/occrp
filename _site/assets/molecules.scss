@@ -26,22 +26,6 @@
 }
 
 
-/* Hide a section title
-*/
-@mixin hide-title {
-  > h3 {
-    display: none;
-  }
-}
-
-/* Show a section title
-*/
-@mixin show-title {
-  > h3 {
-    display: block;
-  }
-}
-
 
 
 /* Flexible grid
@@ -129,11 +113,7 @@
     @include col(100%, 0);
   }
   
-  @include small-screen {
-    @include grid(2, $maximum);
-  }
-  
-  @include normal-screen-and-above {
+  @include above-small-screen {
     @include grid($how-many, $maximum);
   }
 }
@@ -197,6 +177,23 @@
          margin-right: $gutter;
       }
     }
+  }
+}
+
+
+/* Hide a section title
+*/
+@mixin hide-title {
+  > h3 {
+    display: none;
+  }
+}
+
+/* Show a section title
+*/
+@mixin show-title {
+  > h3 {
+    display: block;
   }
 }
 

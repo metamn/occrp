@@ -5,6 +5,161 @@
 
 
 
+
+
+/* Menu
+--------------------------------------------------------------------------------
+*/
+
+
+
+/* A menu
+  - an inline list of items, with different hover and active states
+  - it's parent is usually a <nav> element
+*/
+@mixin menu {
+  @include font(navigation);
+  
+  ul {
+    @include list-inline($pad/4);
+    @include list-menu;
+  }  
+}
+
+
+/* Floats the secondary menu right
+*/
+@mixin menu-float-right {
+  ul {
+    float: right;
+    
+    li {
+      &.language {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+
+/* The logo
+  - it' inside a <hgroup>
+*/
+@mixin logo {
+  text-align: center;
+  
+  h1, figure figcaption {
+    display: none;
+  }
+}
+
+
+
+/* The language selector
+*/
+@mixin language-selector {
+  ul {
+    li {
+      &.language {
+        @include text-with-icon;
+      }
+      
+      &#english {
+        display: none;
+      }
+    }
+  }
+}
+
+
+
+/* The tag bar
+*/
+@mixin tags {
+  @include color(invert);
+  
+  /* Since <a> has padding on the last social icon we must reduce the tagbar width
+  */ 
+  @include padding(100%, $pad/4);
+  padding: 0;
+  
+  ul {
+    &#search {
+      li {
+        &#text {
+          @include text-with-icon;
+        }
+        
+        &#input {
+          display: none;
+          
+          input {
+            margin: $pad/4;
+          }
+        }
+      }
+    }
+    
+    &#tag-list, &#mobile-menu {
+      @include list-centered;
+    }
+    
+    &#social {
+      float: right;
+      
+      li {
+        @include text-with-icon;
+        
+        /* We are not replacing social icons on hover
+          - so the second image must not be displayed
+          - also the icon should be taller, the maximum possible
+        */
+        a {
+          img {
+            height: 13px;
+            
+            &:last-of-type {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Make icons taller than the default size in the header
+  - this is kinda manual pixel pushing
+*/
+@mixin enlarge-social-icons {
+  ul {
+    &#search, &#tag-list {
+      margin-top: $pad/4;
+    }
+    
+    &#social {
+      li {
+        a {
+          margin-bottom: $pad/4;
+          height: $pad;
+          
+          img {
+            height: $pad;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+/* Articles
+--------------------------------------------------------------------------------
+*/
+
+
+
 /* Styling article thumbs
   - controls how an article thumb is displayed
 */
@@ -25,9 +180,7 @@
     padding-top: $pad;
     height: 28em;
     
-    @include normal-screen {
-      height: 27em;
-    }
+    
     
     #excerpt {
       margin-top: $pad/2;
@@ -42,9 +195,7 @@
       padding-bottom: $pad/2;
       border-bottom: $border;
       
-      @include normal-screen {
-        @include font(thumb-title);
-      }
+      
     }
   
   } @elseif ($style == projects) {
