@@ -1,20 +1,6 @@
 
 $(document).ready(function() {
 
-
-  // Show search input in the header
-  $('#header #search').click(function(event) {
-    $(this).find('#icon').hide();
-    $(this).find('#text').hide();
-    $(this).find('#input').show();
-    
-    return false;
-  });
-  
-
-  // Mark first item in pagination navigation active
-  $('#navigation ol li').first().addClass('active');
-
   // Slider
   $('.frontpage #slider article').hide();
   $('.frontpage #slider article').first().show();
@@ -32,17 +18,25 @@ $(document).ready(function() {
   });
   
   
+  
+  // Mark first item in pagination navigation active
+  $('#navigation ol li').first().addClass('active');
+  
+  
 
   // Sticky header
+  // - on mobile if the menu is visible it will not become sticky
   var menu = document.querySelector('#header');
   var origOffsetY = menu.offsetTop;
 
   function scroll () {
-    if ($(window).scrollTop() >= origOffsetY) {
-      $('body').addClass('sticky');
-    } else {
-      $('body').removeClass('sticky');
-    } 
+    if (!($('#header aside').is(':visible'))) {
+      if ($(window).scrollTop() >= origOffsetY) {
+        $('body').addClass('sticky');
+      } else {
+        $('body').removeClass('sticky');
+      } 
+    }
   }
   document.onscroll = scroll;
   
@@ -55,10 +49,35 @@ $(document).ready(function() {
       scrollTo($('body'));
     }
   });
+  
+  // Show search input in the header
+  $('#header #search').click(function(event) {
+    $(this).find('#icon').hide();
+    $(this).find('#text').hide();
+    $(this).find('#input').show();
+    
+    return false;
+  });
+  
+  
+  // Show navigation, search & co on click on mobiles
+  $('#header nav#mobile').click(function() {
+    $(this).hide();
+    $('#header aside').slideToggle();
+  });
+  
+  // Close navigation, search & co on click on mobiles
+  $('#header #close-menu').click(function() {
+    $('#header aside').hide();
+    $('#header nav#mobile').slideToggle();
+    scrollTo($('body'));
+  });
 
 
   
-  // Share buttons
+  
+  
+  // Share buttons in article body
   $('#share #twitter').sharrre({
     share: {
       twitter: true

@@ -312,13 +312,13 @@ html body .container #header nav#tags ul#social li a img:last-of-type { display:
 html body .container #header nav#tags ul#search, html body .container #header nav#tags ul#tag-list { margin-top: 0.3125em; }
 html body .container #header nav#tags ul#social li a { margin-bottom: 0.3125em; height: 1.25em; }
 html body .container #header nav#tags ul#social li a img { height: 1.25em; }
-html body .container #header nav#mobile { display: none; }
 html body .container #header hgroup { text-align: center; }
 html body .container #header hgroup h1, html body .container #header hgroup figure figcaption { display: none; }
+html body .container #header nav#mobile, html body .container #header aside { display: none; }
 @media only screen and (max-width: 48em) { html body .container #header { margin-top: 0.625em; border-bottom: none; }
   html body .container #header nav#main, html body .container #header nav#secondary, html body .container #header nav#tags { display: none; }
   html body .container #header nav#mobile { display: block; background: #231f20; color: white; /* Since <a> has padding on the last social icon we must reduce the tagbar width
-*/ padding: 0.3125em; width: calc(100% - 0.625em); padding: 0; padding: 0.3125em; font-size: 70%; margin-top: 0.625em; }
+*/ padding: 0.3125em; width: calc(100% - 0.625em); padding: 0; padding: 0.3125em; font-size: 70%; margin-top: 0.625em; cursor: pointer; }
   html body .container #header nav#mobile a { color: white; text-decoration: none; }
   html body .container #header nav#mobile a:hover { color: white; }
   html body .container #header nav#mobile ul#search li#text img { height: 12px; position: relative; top: 1px; }
@@ -331,7 +331,19 @@ html body .container #header hgroup h1, html body .container #header hgroup figu
   html body .container #header nav#mobile ul#social li img { height: 12px; position: relative; top: 1px; }
   html body .container #header nav#mobile ul#social li a img { height: 13px; }
   html body .container #header nav#mobile ul#social li a img:last-of-type { display: none; }
-  html body .container #header nav#mobile ul li { margin-right: 1.25em; } }
+  html body .container #header nav#mobile ul li { margin-right: 1.25em; }
+  html body .container #header aside nav#main, html body .container #header aside nav#secondary, html body .container #header aside nav#tags { display: block; margin-top: 2.5em; }
+  html body .container #header aside nav ul { width: 100%; max-width: 100%; float: left; }
+  html body .container #header aside nav#main ul, html body .container #header aside nav#secondary ul { text-align: left; }
+  html body .container #header aside nav#main ul li, html body .container #header aside nav#secondary ul li { display: block; margin-right: none; float: none; padding-left: 0; }
+  html body .container #header aside nav#main ul li:before, html body .container #header aside nav#secondary ul li:before { content: ''; }
+  html body .container #header aside nav#tags ul#search li#text { display: none; }
+  html body .container #header aside nav#tags ul#search li#input { display: block; }
+  html body .container #header aside nav#tags ul#tag-list { margin: 1.25em 0; }
+  html body .container #header aside nav#tags ul#social li { margin-right: 1.25em; }
+  html body .container #header aside #close-menu:after { content: '\2715'; background: #231f20; color: #982022; padding: 0 0.3125em; position: relative; top: -1.875em; right: 1.25em; float: right; cursor: pointer; }
+  html body .container #header aside #close-menu:after a { color: white; text-decoration: none; }
+  html body .container #header aside #close-menu:after a:hover { color: white; } }
 html body .container #footer { margin: 3.75em 0 0; padding: 1.25em 0; border-top: 0.3125em solid; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; }
 html body .container #footer ul li { display: inline-block; float: left; margin-right: 1.25em; }
 html body .container #footer ul li:last-of-type { margin-right: 0; }
