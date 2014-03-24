@@ -41,9 +41,7 @@
         {{ site.title }}
       </a>
     </h1>
-    <!--
-    {% include responsive-images.html  link=site.url title=site.title normal="/assets/logo.png" mobile="/assets/logo.png" %}
-    -->
+    
     <figure>
       <a href="{{ site.url }}/" title="{{ site.title }}">
         <img src="{{ site.url }}/assets/logo.png">
@@ -53,6 +51,15 @@
       </figcaption>
     </figure>
     
+    <nav id="mobile">
+      <h3>Mobile and Tablet Navigation</h3>
+      <ul id="mobile-menu">
+        <li>Navigation</li>
+        <li>Tags</li>
+        <li>Search</li>
+        <li>Share</li>
+      </ul>
+    </nav>
   </hgroup>
   
   

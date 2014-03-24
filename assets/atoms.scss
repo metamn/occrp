@@ -16,61 +16,31 @@ $breakpoint-mobile: 24em !default; /* 384px, Android Nexus 4 */
 $breakpoint-mobile-landscape: 40em !default; /* 640px, iPhone 5 */
 $breakpoint-tablet: 48em !default; /* 768px */
 $breakpoint-small-screen: 64em !default; /* 1024px */
-$breakpoint-normal-screen: 80em !default; /* 1280px */
 $breakpoint-large-screen: 90em !default; /* 1440px */
 
-@mixin portrait {
-	@media only screen and (orientation : portrait) {
-		@content;
-	}
-}
-
-@mixin landscape {
-	@media only screen and (orientation : landscape) {
-		@content;
-	}
-}
 
 @mixin below-and-tablet {
-	@media only screen and (max-width: $breakpoint-tablet) {
-		@content;
-	}
-}
-
-@mixin below-small-screen {
-	@media only screen and (max-width: $breakpoint-small-screen - 0.001) {
-		@content;
-	}
+  @media only screen and (max-width: $breakpoint-tablet) {
+    @content;
+  }
 }
 
 @mixin small-screen {
-	@media only screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-normal-screen - 0.001) {
-		@content;
-	}
+  @media only screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-small-screen) {
+    @content;
+  }
 }
 
-@mixin normal-screen {
-	@media only screen and (min-width: $breakpoint-normal-screen) and (max-width: $breakpoint-large-screen - 0.001) {
-		@content;
-	}
-}
-
-@mixin below-normal-screen {
-	@media only screen and (max-width: $breakpoint-normal-screen - 0.001) {
-		@content;
-	}
-}
-
-@mixin normal-screen-and-above {
-	@media only screen and (min-width: $breakpoint-normal-screen) {
-		@content;
-	}
+@mixin above-small-screen {
+  @media only screen and (min-width: $breakpoint-small-screen + 0.001) {
+    @content;
+  }
 }
 
 @mixin above-large-screen {
-	@media only screen and (min-width: $breakpoint-large-screen + 0.001) {
-		@content;
-	}
+  @media only screen and (min-width: $breakpoint-large-screen + 0.001) {
+    @content;
+  }
 }
 
 
@@ -96,8 +66,8 @@ $body-text-width: 43.75em; /* 700px / 16px */
 
 /* The width of the content
 */
-$container-width: 90%;
-$container-margin: 5%;
+$container-width: 95%;
+$container-margin: 2.5%;
 
 $large-screen-container-width: 75%;
 $large-screen-container-margin: 12.5%;
