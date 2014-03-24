@@ -449,6 +449,11 @@ figure {
     background: $grey;
     color: $background;
     @include link($background, $background);
+  
+  } @elseif ($type == invert-highlight) {
+    background: $color;
+    color: $highlight;
+    @include link($background, $background);
   }
 }
 
