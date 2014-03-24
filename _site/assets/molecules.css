@@ -1,0 +1,87 @@
+/* Molecules of the Atomic web design - atoms combined together - they do one thing and do it well
+*/
+/* Grid
+--------------------------------------------------------------------------------
+*/
+/* The width of the content - the content is centered with automatic left and right margins
+*/
+/* Flexible grid - all items are aligned left with an uniform margin - this grid can be dynamically positioned by Isotope
+*/
+/* Column N of M - creates a grid column on N cols from M total columns
+*/
+/* A function to calculate the width of the column for col-n-of-m - this is used usually in padding();
+*/
+/* Columns defined by gutter - Sometimes the width of a column is defined inversely, by the gutter size - For example, when a col-nm(2,3) is divided into two subcolumns the gutter size is fixed to col-gutter(3) - Ie, instead having two cols of 45% and margin 10% we have a fixed margin of 2.5% and the rest of the columns calaculated accordingly
+*/
+/* A function to calculate the width of the column for col-by-gutter - this is used usually in padding();
+*/
+/* Adds padding around a grid element - the width of the element must be recalculated
+*/
+/* Resize a grid column 
+*/
+/* A responsive grid
+*/
+/* Generates a full grid of $how-many columns and $maximum elements - calculates automatically the columns size and margin - the right margin of the last element in a row is set to zero - $maximum sets how many articles will be displayed on a single page 
+*/
+/* Returns the width of a column in a grid
+*/
+/* Returns the margin of a column in a grid
+*/
+/* A left aligned column
+*/
+/* Remove right margin of the last element in a row of a grid - on responsive layouts we setup upd different grids - on every grid re-declaration the previous margins of last elements must be removed
+*/
+/* Hide a section title
+*/
+/* Show a section title
+*/
+/* Navigation
+--------------------------------------------------------------------------------
+*/
+/* Displays an <ul> list inline
+*/
+/* Transforms an inline list back to normal
+*/
+/* Centers an inline list
+*/
+/* Highlights an active item in a list / menu
+*/
+/* Navigation
+*/
+/* Images
+--------------------------------------------------------------------------------
+*/
+/* Remove the extra padding bottom for images inside a link
+- http://stackoverflow.com/questions/3532870/extra-padding-on-linked-images-in-every-broswer
+*/
+figure a { line-height: 0; }
+
+/* Social icons
+*/
+/* On hover shows a different image - the two images must be siblings in a container - this mixin is added to the container
+*/
+/* Icon with text - the image size (height) must be fixed otherwise it will be taller than other elements - first used with the language selector in a menu - if the height was not set this menu item was taller than all others
+*/
+/* Decorations, colors, etc.
+--------------------------------------------------------------------------------
+*/
+/* Set the background and font color - 'invert' inverts this color scheme
+*/
+/* Links
+*/
+/* Typography
+--------------------------------------------------------------------------------
+*/
+/* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback  
+	Usage: @include font-size(1, large);
+*/
+/* Set the line height - 'body' goes from non text elements, it is the default setting put in <body> - 'text' goes for long texts like blog posts, articles, etc; - 'headings' goes for <h1>, etc
+*/
+/* Select box - put <select> inside a <label class="select"> - label:after is positioned over the original selectbox arrow - label after must have a background color to hide the default arrow
+*/
+/* Cross browser compatible styling: http://www.inserthtml.com/2012/06/custom-form-radio-checkbox/ - the checkbox and radio button is not displayed - instead a label is displayed which can be styled with 'content'  - example:  <ul class="checkbox"> <li><input id="checkbox1" name="checkbox" checked="checked" type="checkbox"><label for="checkbox1"></label>Option 1</li> <li><input id="checkbox2" name="checkbox" type="checkbox"><label for="checkbox2"></label>Option 2</li> <li><input id="checkbox3" name="checkbox" type="checkbox"><label for="checkbox3"></label>Option 3</li> </ul>
+*/
+/* <dl>
+*/
+/* <ul> and <ol> lists - they display a custom bullet / number via $before - the text of the list is aligned right related to the bullet / number
+*/
