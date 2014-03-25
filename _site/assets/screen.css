@@ -303,26 +303,28 @@ html body .container #header nav.tags ul.search, html body .container #header na
 html body .container #header nav.tags ul.social li a { margin-bottom: 0.3125em; height: 1.25em; }
 html body .container #header nav.tags ul.social li a img { height: 1.25em; }
 @media only screen and (max-width: 29.999em) { html body .container #header nav.main, html body .container #header nav.secondary, html body .container #header nav.tags { display: none; }
-  html body .container #header nav.mobile { width: 100%; max-width: 100%; float: left; background: #231f20; color: white; padding: 0.3125em; width: calc(100% - 0.625em); font-size: 70%; margin-top: 0.625em; cursor: pointer; }
-  html body .container #header nav.mobile a { color: white; text-decoration: none; }
-  html body .container #header nav.mobile a:hover { color: white; }
-  html body .container #header nav.mobile ul.mobile-menu { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
-  html body .container #header nav.mobile ul.mobile-menu li { display: inline-block; float: left; margin-right: 0.625em; }
-  html body .container #header nav.mobile ul.mobile-menu li:last-of-type { margin-right: 0; }
-  html body .container #header #hamburger-menu { position: relative; padding-left: 1.25em; }
-  html body .container #header #hamburger-menu:before { content: ""; position: absolute; top: 0.25em; left: 0; width: 1em; height: 0.125em; border-top: 0.375em double #000; border-bottom: 0.125em solid #000; }
-  html body .container #header #close-menu:after { content: '\2715'; background: #231f20; color: #982022; padding: 0 0.3125em; position: relative; top: -1.875em; right: 1.25em; float: right; cursor: pointer; }
-  html body .container #header #close-menu:after a { color: white; text-decoration: none; }
-  html body .container #header #close-menu:after a:hover { color: white; }
-  html body .container #header aside nav.main, html body .container #header aside nav.secondary, html body .container #header aside nav.tags { display: block; margin-top: 2.5em; }
-  html body .container #header aside nav ul { width: 100%; max-width: 100%; float: left; }
-  html body .container #header aside nav.main ul, html body .container #header aside nav.secondary ul { text-align: left; }
-  html body .container #header aside nav.main ul li, html body .container #header aside nav.secondary ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-  html body .container #header aside nav.main ul li:before, html body .container #header aside nav.secondary ul li:before { content: ''; }
-  html body .container #header aside nav.tags ul.search li.text { display: none; }
-  html body .container #header aside nav.tags ul.search li.input { display: block; }
-  html body .container #header aside nav.tags ul.tag-list { margin: 1.25em 0; }
-  html body .container #header aside nav.tags ul.social li { margin-right: 1.25em; } }
+  html body .container #header nav.mobile-navbar { width: 100%; max-width: 100%; float: left; background: #231f20; color: white; padding: 0.3125em; width: calc(100% - 0.625em); font-size: 70%; margin-top: 0.625em; cursor: pointer; }
+  html body .container #header nav.mobile-navbar a { color: white; text-decoration: none; }
+  html body .container #header nav.mobile-navbar a:hover { color: white; }
+  html body .container #header nav.mobile-navbar ul.mobile-navbar-menu { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
+  html body .container #header nav.mobile-navbar ul.mobile-navbar-menu li { display: inline-block; float: left; margin-right: 0.625em; }
+  html body .container #header nav.mobile-navbar ul.mobile-navbar-menu li:last-of-type { margin-right: 0; }
+  html body .container #header nav.mobile-navbar ul.mobile-navbar-menu li.hamburger span { position: relative; display: block; min-width: 1.25em; top: 1px; }
+  html body .container #header nav.mobile-navbar ul.mobile-navbar-menu li.hamburger span:before { content: ""; position: absolute; top: 0.25em; left: 0; width: 1em; height: 0.125em; border-top: 0.375em double white; border-bottom: 0.125em solid white; }
+  html body .container #header #hamburger-menu { position: relative; display: block; display: none; }
+  html body .container #header #hamburger-menu:before { content: ""; position: absolute; top: 0.25em; left: 0; width: 1em; height: 0.125em; border-top: 0.375em double #231f20; border-bottom: 0.125em solid #231f20; }
+  html body .container #header #close-menu { display: none; }
+  html body .container #header #close-menu:after { content: '\2715'; color: color; padding: 0 0.3125em; position: relative; top: -1.875em; right: 1.25em; float: right; cursor: pointer; }
+  html body .container #header .mobile-menu { display: none; }
+  html body .container #header .mobile-menu nav.main, html body .container #header .mobile-menu nav.secondary, html body .container #header .mobile-menu nav.tags { display: block; margin-top: 2.5em; }
+  html body .container #header .mobile-menu nav ul { width: 100%; max-width: 100%; float: left; }
+  html body .container #header .mobile-menu nav.main ul, html body .container #header .mobile-menu nav.secondary ul { text-align: left; }
+  html body .container #header .mobile-menu nav.main ul li, html body .container #header .mobile-menu nav.secondary ul li { display: block; margin-right: none; float: none; padding-left: 0; }
+  html body .container #header .mobile-menu nav.main ul li:before, html body .container #header .mobile-menu nav.secondary ul li:before { content: ''; }
+  html body .container #header .mobile-menu nav.tags ul.search li.text { display: none; }
+  html body .container #header .mobile-menu nav.tags ul.search li.input { display: block; }
+  html body .container #header .mobile-menu nav.tags ul.tag-list { margin: 1.25em 0; }
+  html body .container #header .mobile-menu nav.tags ul.social li { margin-right: 1.25em; } }
 @media only screen and (min-width: 48.001em) { html body .container #header { /* Positioning the main elements
 */ }
   html body .container #header nav.mobile, html body .container #header aside { display: none; } }
@@ -351,8 +353,10 @@ html body .container #footer ul li#social-icons p a:hover { color: white; }
 html body .container #footer ul li#social-icons ul li img:last-of-type { display: none; position: relative; top: 0; }
 html body .container #footer ul li#social-icons ul li:hover img:first-of-type { display: none; }
 html body .container #footer ul li#social-icons ul li:hover img:last-of-type { display: block; }
-html body.sticky .container #header { position: fixed; background: white; z-index: 1; }
-@media only screen and (max-width: 29.999em) { html body.sticky .container #header .logo figure img { width: 50%; } }
+html body.sticky .container #header { position: fixed; z-index: 1; background: white; border-bottom: 1px solid #f1f1f1; }
+@media only screen and (max-width: 29.999em) { html body.sticky .container #header .logo figure img { width: 50%; }
+  html body.sticky .container #header nav.mobile-navbar { display: none; }
+  html body.sticky .container #header #hamburger-menu { display: block; top: 1.25em; } }
 html body.sticky .container main, html body.sticky .container #footer { position: relative; top: 3.75em; }
 html body.frontpage .container main #intro { margin-bottom: 1.25em; }
 html body.frontpage .container main #intro #slider { /* The grid

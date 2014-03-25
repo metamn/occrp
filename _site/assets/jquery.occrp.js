@@ -25,7 +25,7 @@ $(document).ready(function() {
   
 
   // Sticky header
-  var menu = document.querySelector('#header');
+  var menu = document.querySelector('#header figure');
   var origOffsetY = menu.offsetTop;
 
   function scroll () {
@@ -36,6 +36,7 @@ $(document).ready(function() {
     } 
   }
   document.onscroll = scroll;
+  
   
   // Click on logo on sticky header
   // - instead loading the frontpage it will scroll top

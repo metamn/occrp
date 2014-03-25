@@ -484,8 +484,10 @@
 */
 @mixin fixed-header {
   position: fixed;
-  background: $background;
   z-index: 1;
+  background: $background;
+  @include border-thin;
+  
   
   @include mobile {
     @include fixed-header-mobile;
@@ -498,6 +500,7 @@
 /* The Header
 */
 @mixin header {
+  
   /* Common styling
   */
   .logo {

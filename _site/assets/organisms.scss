@@ -23,6 +23,15 @@
       }
     }
   }
+  
+  nav.mobile-navbar {
+    display: none;
+  }
+  
+  #hamburger-menu {
+    display: block;
+    top: $pad;
+  }
 }
 
 
@@ -34,99 +43,24 @@
       display: none;
     }
     
-    &.mobile {
-      @include block;
-      @include color(invert);
-      @include padding(100%, $pad/4);
-      font-size: 70%;
-      margin-top: $pad/2;
-      
-      cursor: pointer;
-      
-      ul.mobile-menu {
-        @include list-inline;
-        @include list-centered;
-      }
+    &.mobile-navbar {
+      @include mobile-navbar;
     }
   }
   
   #hamburger-menu {
-    position: relative;
-    padding-left: 1.25em;
-    
-    &:before {
-      content: "";
-      position: absolute;
-      top: 0.25em;
-      left: 0;
-      width: 1em;
-      height: 0.125em;
-      border-top: 0.375em double #000;
-      border-bottom: 0.125em solid #000;
-    }
+    @include hamburger-menu;
+    display: none;
   }
   
   #close-menu {
-    &:after {
-      content: '\2715';
-      @include color(invert-highlight);
-      padding: 0 $pad/4;
-      
-      position: relative;
-      top: -$pad - $pad/2;
-      right: $pad;
-      float: right;
-      
-      cursor: pointer;
-    }
+    @include close-menu;
+    display: none;
   }
     
-  aside {
-    nav {
-      &.main, &.secondary, &.tags {
-        display: block;
-        margin-top: $pad*2;
-      }
-      
-      ul {
-        @include block;
-      }
-      
-      &.main, &.secondary {
-        ul {
-          @include list-normal;
-          text-align: left;
-        }
-      }
-      
-      &.tags {
-        ul {
-          &.search {
-            li {
-              &.text {
-                display: none;
-              }
-              
-              &.input {
-                display: block;
-              }
-            }
-          }
-          
-          &.tag-list {
-            margin: $pad 0;
-          }
-          
-          &.social {
-            li {
-              margin-right: $pad;
-            }
-          }
-        }
-      }
-    }
-      
-    
+  .mobile-menu {
+    @include mobile-menu;
+    display: none;
   }
 }
 

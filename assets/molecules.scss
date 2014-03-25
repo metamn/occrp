@@ -311,6 +311,109 @@
 }
 
 
+@mixin mobile-menu {
+  nav {
+    &.main, &.secondary, &.tags {
+      display: block;
+      margin-top: $pad*2;
+    }
+    
+    ul {
+      @include block;
+    }
+    
+    &.main, &.secondary {
+      ul {
+        @include list-normal;
+        text-align: left;
+      }
+    }
+    
+    &.tags {
+      ul {
+        &.search {
+          li {
+            &.text {
+              display: none;
+            }
+            
+            &.input {
+              display: block;
+            }
+          }
+        }
+        
+        &.tag-list {
+          margin: $pad 0;
+        }
+        
+        &.social {
+          li {
+            margin-right: $pad;
+          }
+        }
+      }
+    }
+  }   
+}
+
+
+@mixin mobile-navbar {
+  @include block;
+  @include color(invert);
+  @include padding(100%, $pad/4);
+  font-size: 70%;
+  margin-top: $pad/2;
+  
+  cursor: pointer;
+  
+  ul.mobile-navbar-menu {
+    @include list-inline;
+    @include list-centered;
+    
+    li {
+      &.hamburger {
+        span {
+          @include hamburger-menu($background);
+          min-width: $pad;
+          top: 1px;
+        }
+      }
+    }
+  }
+}
+
+@mixin hamburger-menu($c: $color) {
+  position: relative;
+  display: block;
+  
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0.25em;
+    left: 0;
+    width: 1em;
+    height: 0.125em;
+    border-top: 0.375em double $c;
+    border-bottom: 0.125em solid $c;
+  }
+}
+
+
+@mixin close-menu($c: color) {
+  &:after {
+    content: '\2715';
+    color: $c;
+    padding: 0 $pad/4;
+    
+    position: relative;
+    top: -$pad - $pad/2;
+    right: $pad;
+    float: right;
+    
+    cursor: pointer;
+  }
+}
 
 
 
