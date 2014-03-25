@@ -10,7 +10,7 @@ html {
         @include hide-title;
       }
       
-      #header, main {
+      main {
         margin: $pad 0 0; 
       }
       
@@ -29,7 +29,14 @@ html {
     */
     &.sticky {
       .container {
-        @include fixed-header;
+        #header {
+          @include fixed-header;
+        }
+        
+        main, #footer {
+          position: relative;
+          top: $pad*3;
+        }
       }
     }
     

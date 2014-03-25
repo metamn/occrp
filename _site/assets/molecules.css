@@ -62,6 +62,10 @@ figure a { line-height: 0; }
 */
 /* Icon with text - the image size (height) must be fixed otherwise it will be taller than other elements - first used with the language selector in a menu - if the height was not set this menu item was taller than all others
 */
+/* Make icons taller than the default size in the header - this is kinda manual pixel pushing
+*/
+/* The language selector
+*/
 /* Decorations, colors, etc.
 --------------------------------------------------------------------------------
 */

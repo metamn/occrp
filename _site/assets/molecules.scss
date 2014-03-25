@@ -403,6 +403,51 @@ figure {
 }
 
 
+/* Make icons taller than the default size in the header
+  - this is kinda manual pixel pushing
+*/
+@mixin enlarge-social-icons {
+  ul {
+    &.search, &.tag-list {
+      margin-top: $pad/4;
+    }
+    
+    &.social {
+      li {
+        a {
+          margin-bottom: $pad/4;
+          height: $pad;
+          
+          img {
+            height: $pad;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+/* The language selector
+*/
+@mixin language-selector {
+  ul {
+    li {
+      &.language {
+        @include text-with-icon;
+      }
+      
+      &.english {
+        display: none;
+      }
+    }
+  }
+}
+
+
+
+
 
 
 /* Decorations, colors, etc.

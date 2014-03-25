@@ -1,19 +1,19 @@
 /* Organisms of the Atomic web design - groups of molecules joined together to form a relatively complex, distinct section of an interface.
 */
-/* Menu
+/* The Header
 --------------------------------------------------------------------------------
+*/
+/* The fixed header for mobile
+*/
+/* The header for mobiles
+*/
+/* The logo
 */
 /* A menu - an inline list of items, with different hover and active states - it's parent is usually a <nav> element
 */
 /* Floats the secondary menu right
 */
-/* The logo - it' inside a <hgroup>
-*/
-/* The language selector
-*/
 /* The tag bar
-*/
-/* Make icons taller than the default size in the header - this is kinda manual pixel pushing
 */
 /* Articles
 --------------------------------------------------------------------------------

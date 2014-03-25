@@ -7,9 +7,147 @@
 
 
 
-/* Menu
+/* The Header
 --------------------------------------------------------------------------------
 */
+
+
+
+/* The fixed header for mobile
+*/
+@mixin fixed-header-mobile {
+  .logo {
+    figure {
+      img {
+        width: 50%;
+      }
+    }
+  }
+}
+
+
+/* The header for mobiles
+*/
+@mixin header-mobile {
+  nav {
+    &.main, &.secondary, &.tags {
+      display: none;
+    }
+    
+    &.mobile {
+      @include block;
+      @include color(invert);
+      @include padding(100%, $pad/4);
+      font-size: 70%;
+      margin-top: $pad/2;
+      
+      cursor: pointer;
+      
+      ul.mobile-menu {
+        @include list-inline;
+        @include list-centered;
+      }
+    }
+  }
+  
+  #hamburger-menu {
+    position: relative;
+    padding-left: 1.25em;
+    
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0.25em;
+      left: 0;
+      width: 1em;
+      height: 0.125em;
+      border-top: 0.375em double #000;
+      border-bottom: 0.125em solid #000;
+    }
+  }
+  
+  #close-menu {
+    &:after {
+      content: '\2715';
+      @include color(invert-highlight);
+      padding: 0 $pad/4;
+      
+      position: relative;
+      top: -$pad - $pad/2;
+      right: $pad;
+      float: right;
+      
+      cursor: pointer;
+    }
+  }
+    
+  aside {
+    nav {
+      &.main, &.secondary, &.tags {
+        display: block;
+        margin-top: $pad*2;
+      }
+      
+      ul {
+        @include block;
+      }
+      
+      &.main, &.secondary {
+        ul {
+          @include list-normal;
+          text-align: left;
+        }
+      }
+      
+      &.tags {
+        ul {
+          &.search {
+            li {
+              &.text {
+                display: none;
+              }
+              
+              &.input {
+                display: block;
+              }
+            }
+          }
+          
+          &.tag-list {
+            margin: $pad 0;
+          }
+          
+          &.social {
+            li {
+              margin-right: $pad;
+            }
+          }
+        }
+      }
+    }
+      
+    
+  }
+}
+
+
+
+
+
+
+/* The logo
+*/
+@mixin logo {
+  text-align: center;
+  
+  h1, figure figcaption {
+    display: none;
+  }
+  
+  figure {
+    margin-top: $pad/2;
+  }
+}
 
 
 
@@ -21,7 +159,6 @@
   @include font(navigation);
   
   ul {
-    @include list-inline($pad/4);
     @include list-menu;
   }  
 }
@@ -36,36 +173,6 @@
     li {
       &.language {
         margin-right: 0;
-      }
-    }
-  }
-}
-
-
-/* The logo
-  - it' inside a <hgroup>
-*/
-@mixin logo {
-  text-align: center;
-  
-  h1, figure figcaption {
-    display: none;
-  }
-}
-
-
-
-/* The language selector
-*/
-@mixin language-selector {
-  ul {
-    li {
-      &.language {
-        @include text-with-icon;
-      }
-      
-      &.english {
-        display: none;
       }
     }
   }
@@ -100,8 +207,12 @@
       }
     }
     
-    &.tag-list, &.mobile-menu {
+    &.tag-list {
       @include list-centered;
+    }
+    
+    &.tag-list, &.social {
+      @include list-inline($pad/4);
     }
     
     &.social {
@@ -128,29 +239,54 @@
   }
 }
 
-/* Make icons taller than the default size in the header
-  - this is kinda manual pixel pushing
-*/
-@mixin enlarge-social-icons {
-  ul {
-    &.search, &.tag-list {
-      margin-top: $pad/4;
+
+
+
+
+
+
+@mixin header-tablet {
+
+}
+
+
+
+@mixin header-desktop {
+  nav.mobile, aside {
+    display: none;
+  }
+  
+  
+  nav, section {
+    @include responsive-grid(3);
+  }
+  
+  /* Positioning the main elements
+  */
+  nav {
+    &.secondary {
+      margin-right: 0;
     }
     
-    &.social {
-      li {
-        a {
-          margin-bottom: $pad/4;
-          height: $pad;
-          
-          img {
-            height: $pad;
-          }
-        }
-      }
+    &.tags {
+      @include block;
+      margin-top: $pad/2;
+    }
+  }
+  
+  nav {
+    &.main, &.secondary {
+      margin-top: $pad*2;
+      @include border-thin($color);
     }
   }
 }
+
+
+
+
+
+
 
 
 

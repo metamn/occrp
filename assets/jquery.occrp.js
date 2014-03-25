@@ -25,18 +25,15 @@ $(document).ready(function() {
   
 
   // Sticky header
-  // - on mobile if the menu is visible it will not become sticky
   var menu = document.querySelector('#header');
   var origOffsetY = menu.offsetTop;
 
   function scroll () {
-    if (!($('#header aside').is(':visible'))) {
-      if ($(window).scrollTop() >= origOffsetY) {
-        $('body').addClass('sticky');
-      } else {
-        $('body').removeClass('sticky');
-      } 
-    }
+    if ($(window).scrollTop() >= origOffsetY) {
+      $('body').addClass('sticky');
+    } else {
+      $('body').removeClass('sticky');
+    } 
   }
   document.onscroll = scroll;
   
