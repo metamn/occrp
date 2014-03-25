@@ -25,7 +25,7 @@
   }
   
   nav.mobile-navbar {
-    display: none;
+    display: none !important;
   }
   
   #hamburger-menu {
@@ -53,11 +53,6 @@
     display: none;
   }
   
-  #close-menu {
-    @include close-menu;
-    display: none;
-  }
-    
   .mobile-menu {
     @include mobile-menu;
     display: none;

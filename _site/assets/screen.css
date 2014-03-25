@@ -276,7 +276,7 @@ html body .container #header { /* Common styling
 html body .container #header .logo { text-align: center; }
 html body .container #header .logo h1, html body .container #header .logo figure figcaption { display: none; }
 html body .container #header .logo figure { margin-top: 0.625em; }
-html body .container #header nav { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; }
+html body .container #header nav { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; border-bottom: 1px solid #231f20; }
 html body .container #header nav ul li a { padding: 0.625em 0.3125em; display: inline-block; }
 html body .container #header nav ul li.active a, html body .container #header nav ul li:hover a { background: #982022; color: white; }
 html body .container #header nav ul li.active a a, html body .container #header nav ul li:hover a a { color: white; text-decoration: none; }
@@ -313,8 +313,6 @@ html body .container #header nav.tags ul.social li a img { height: 1.25em; }
   html body .container #header nav.mobile-navbar ul.mobile-navbar-menu li.hamburger span:before { content: ""; position: absolute; top: 0.25em; left: 0; width: 1em; height: 0.125em; border-top: 0.375em double white; border-bottom: 0.125em solid white; }
   html body .container #header #hamburger-menu { position: relative; display: block; display: none; }
   html body .container #header #hamburger-menu:before { content: ""; position: absolute; top: 0.25em; left: 0; width: 1em; height: 0.125em; border-top: 0.375em double #231f20; border-bottom: 0.125em solid #231f20; }
-  html body .container #header #close-menu { display: none; }
-  html body .container #header #close-menu:after { content: '\2715'; color: color; padding: 0 0.3125em; position: relative; top: -1.875em; right: 1.25em; float: right; cursor: pointer; }
   html body .container #header .mobile-menu { display: none; }
   html body .container #header .mobile-menu nav.main, html body .container #header .mobile-menu nav.secondary, html body .container #header .mobile-menu nav.tags { display: block; margin-top: 2.5em; }
   html body .container #header .mobile-menu nav ul { width: 100%; max-width: 100%; float: left; }
@@ -324,7 +322,8 @@ html body .container #header nav.tags ul.social li a img { height: 1.25em; }
   html body .container #header .mobile-menu nav.tags ul.search li.text { display: none; }
   html body .container #header .mobile-menu nav.tags ul.search li.input { display: block; }
   html body .container #header .mobile-menu nav.tags ul.tag-list { margin: 1.25em 0; }
-  html body .container #header .mobile-menu nav.tags ul.social li { margin-right: 1.25em; } }
+  html body .container #header .mobile-menu nav.tags ul.social li { margin-right: 1.25em; }
+  html body .container #header .mobile-menu #close-menu:after { content: '\2715'; color: white; padding: 0 0.3125em; border-bottom: 1px solid white; position: relative; top: -1.875em; right: 1.25em; float: right; cursor: pointer; } }
 @media only screen and (min-width: 48.001em) { html body .container #header { /* Positioning the main elements
 */ }
   html body .container #header nav.mobile, html body .container #header aside { display: none; } }
@@ -355,7 +354,7 @@ html body .container #footer ul li#social-icons ul li:hover img:first-of-type { 
 html body .container #footer ul li#social-icons ul li:hover img:last-of-type { display: block; }
 html body.sticky .container #header { position: fixed; z-index: 1; background: white; border-bottom: 1px solid #f1f1f1; }
 @media only screen and (max-width: 29.999em) { html body.sticky .container #header .logo figure img { width: 50%; }
-  html body.sticky .container #header nav.mobile-navbar { display: none; }
+  html body.sticky .container #header nav.mobile-navbar { display: none !important; }
   html body.sticky .container #header #hamburger-menu { display: block; top: 1.25em; } }
 html body.sticky .container main, html body.sticky .container #footer { position: relative; top: 3.75em; }
 html body.frontpage .container main #intro { margin-bottom: 1.25em; }

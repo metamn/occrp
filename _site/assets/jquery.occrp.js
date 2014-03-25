@@ -23,17 +23,26 @@ $(document).ready(function() {
   $('#navigation ol li').first().addClass('active');
   
   
-
+  
+  
+  // The Header
+  // -------------------------------------------------
+  
   // Sticky header
+  // - the menu element must be greater than 0
+  // - an element with a top margin or padding should be choosen
   var menu = document.querySelector('#header figure');
   var origOffsetY = menu.offsetTop;
 
+  // - if the mobile menu is visible the sticky header wont be enabled
   function scroll () {
-    if ($(window).scrollTop() >= origOffsetY) {
-      $('body').addClass('sticky');
-    } else {
-      $('body').removeClass('sticky');
-    } 
+    if (!($('#header .mobile-menu').is(':visible'))) {
+      if ($(window).scrollTop() >= origOffsetY) {
+        $('body').addClass('sticky');
+      } else {
+        $('body').removeClass('sticky');
+      }
+    }
   }
   document.onscroll = scroll;
   
@@ -59,15 +68,16 @@ $(document).ready(function() {
   
   
   // Show navigation, search & co on click on mobiles
-  $('#header nav.mobile').click(function() {
+  $('#header .mobile-navbar').click(function() {
+    $('body').removeClass('sticky');
     $(this).hide();
-    $('#header aside').slideToggle();
+    $('#header .mobile-menu').slideToggle();
   });
   
   // Close navigation, search & co on click on mobiles
   $('#header #close-menu').click(function() {
-    $('#header aside').hide();
-    $('#header nav.mobile').slideToggle();
+    $('#header .mobile-menu').hide();
+    $('#header .mobile-navbar').slideToggle();
     scrollTo($('body'));
   });
 

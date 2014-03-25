@@ -354,7 +354,11 @@
         }
       }
     }
-  }   
+  }  
+  
+  #close-menu {
+    @include close-menu;
+  }
 }
 
 
@@ -400,11 +404,12 @@
 }
 
 
-@mixin close-menu($c: color) {
+@mixin close-menu($c: $background) {
   &:after {
     content: '\2715';
     color: $c;
     padding: 0 $pad/4;
+    @include border-thin($c);
     
     position: relative;
     top: -$pad - $pad/2;

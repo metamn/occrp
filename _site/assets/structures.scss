@@ -509,6 +509,7 @@
   
   nav {
     @include menu;
+    @include border-thin($color);
     
     &.secondary {
       @include language-selector;
