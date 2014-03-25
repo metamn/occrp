@@ -67,7 +67,15 @@ $(document).ready(function() {
   });
   
   
-  // Show navigation, search & co on click on mobiles
+  // Show navigation, search & co on click on mobile hamburger icon
+  $('#header #hamburger-menu').click(function() {
+    $('body').removeClass('sticky');
+    $('#header .mobile-navbar').hide();
+    $('#header .mobile-menu').slideToggle();
+    scrollTo($('body'));
+  });
+  
+  // Show navigation, search & co on click on mobile navbar
   $('#header .mobile-navbar').click(function() {
     $('body').removeClass('sticky');
     $(this).hide();
