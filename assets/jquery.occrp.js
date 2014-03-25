@@ -51,17 +51,17 @@ $(document).ready(function() {
   });
   
   // Show search input in the header
-  $('#header #search').click(function(event) {
-    $(this).find('#icon').hide();
-    $(this).find('#text').hide();
-    $(this).find('#input').show();
+  $('#header .search').click(function(event) {
+    $(this).find('.icon').hide();
+    $(this).find('.text').hide();
+    $(this).find('.input').show();
     
     return false;
   });
   
   
   // Show navigation, search & co on click on mobiles
-  $('#header nav#mobile').click(function() {
+  $('#header nav.mobile').click(function() {
     $(this).hide();
     $('#header aside').slideToggle();
   });
@@ -69,7 +69,7 @@ $(document).ready(function() {
   // Close navigation, search & co on click on mobiles
   $('#header #close-menu').click(function() {
     $('#header aside').hide();
-    $('#header nav#mobile').slideToggle();
+    $('#header nav.mobile').slideToggle();
     scrollTo($('body'));
   });
 

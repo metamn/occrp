@@ -64,7 +64,7 @@
         @include text-with-icon;
       }
       
-      &#english {
+      &.english {
         display: none;
       }
     }
@@ -84,13 +84,13 @@
   padding: 0;
   
   ul {
-    &#search {
+    &.search {
       li {
-        &#text {
+        &.text {
           @include text-with-icon;
         }
         
-        &#input {
+        &.input {
           display: none;
           
           input {
@@ -100,11 +100,11 @@
       }
     }
     
-    &#tag-list, &#mobile-menu {
+    &.tag-list, &.mobile-menu {
       @include list-centered;
     }
     
-    &#social {
+    &.social {
       float: right;
       
       li {
@@ -133,11 +133,11 @@
 */
 @mixin enlarge-social-icons {
   ul {
-    &#search, &#tag-list {
+    &.search, &.tag-list {
       margin-top: $pad/4;
     }
     
-    &#social {
+    &.social {
       li {
         a {
           margin-bottom: $pad/4;

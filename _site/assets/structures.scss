@@ -497,12 +497,12 @@
     z-index: 1;
     
     nav {
-      &#main, &#secondary {
+      &.main, &.secondary {
         margin-top: 0;
         border: none;
       }
       
-      &#tags {
+      &.tags {
         display: none;
       }
     }
@@ -540,7 +540,7 @@
       }
       
       nav {
-        &#mobile {
+        &.mobile {
           margin-top: 0;
         }
       }
@@ -553,18 +553,18 @@
 /* The Header
 */
 @mixin header {
-  nav, hgroup {
+  nav, section {
     @include responsive-grid(3);
   }
   
   /* Positioning the main elements
   */
   nav {
-    &#secondary {
+    &.secondary {
       margin-right: 0;
     }
     
-    &#tags {
+    &.tags {
       @include block;
       margin-top: $pad/2;
     }
@@ -573,23 +573,23 @@
   nav {
     @include menu;
     
-    &#main, &#secondary {
+    &.main, &.secondary {
       margin-top: $pad*2;
       @include border-thin($color);
     }
     
-    &#secondary {
+    &.secondary {
       @include language-selector;
       @include menu-float-right;
     }
     
-    &#tags {
+    &.tags {
       @include tags;
       @include enlarge-social-icons;
     }
   }
   
-  hgroup {
+  section {
     @include logo;
   }
   
@@ -597,7 +597,7 @@
   /* Mobiles and Tablets
   */
     
-  nav#mobile, aside {
+  nav.mobile, aside {
     display: none;
   }
   
@@ -606,11 +606,11 @@
     border-bottom: none;
     
     nav {
-      &#main, &#secondary, &#tags {
+      &.main, &.secondary, &.tags {
         display: none;
       }
       
-      &#mobile {
+      &.mobile {
         display: block;
         @include tags;
         padding: $pad/4;
@@ -629,7 +629,7 @@
     
     aside {
       nav {
-        &#main, &#secondary, &#tags {
+        &.main, &.secondary, &.tags {
           display: block;
           margin-top: $pad*2;
         }
@@ -638,32 +638,32 @@
           @include block;
         }
         
-        &#main, &#secondary {
+        &.main, &.secondary {
           ul {
             @include list-normal;
             text-align: left;
           }
         }
         
-        &#tags {
+        &.tags {
           ul {
-            &#search {
+            &.search {
               li {
-                &#text {
+                &.text {
                   display: none;
                 }
                 
-                &#input {
+                &.input {
                   display: block;
                 }
               }
             }
             
-            &#tag-list {
+            &.tag-list {
               margin: $pad 0;
             }
             
-            &#social {
+            &.social {
               li {
                 margin-right: $pad;
               }
