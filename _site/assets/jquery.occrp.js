@@ -23,22 +23,29 @@ $(document).ready(function() {
   $('#navigation ol li').first().addClass('active');
   
   
-
+  
+  
+  // The Header
+  // -------------------------------------------------
+  
   // Sticky header
-  // - on mobile if the menu is visible it will not become sticky
-  var menu = document.querySelector('#header');
+  // - the menu element must be greater than 0
+  // - an element with a top margin or padding should be choosen
+  var menu = document.querySelector('#header figure');
   var origOffsetY = menu.offsetTop;
 
+  // - if the mobile menu is visible the sticky header wont be enabled
   function scroll () {
-    if (!($('#header aside').is(':visible'))) {
+    if (!($('#header .mobile-menu').is(':visible'))) {
       if ($(window).scrollTop() >= origOffsetY) {
         $('body').addClass('sticky');
       } else {
         $('body').removeClass('sticky');
-      } 
+      }
     }
   }
   document.onscroll = scroll;
+  
   
   // Click on logo on sticky header
   // - instead loading the frontpage it will scroll top
@@ -51,25 +58,34 @@ $(document).ready(function() {
   });
   
   // Show search input in the header
-  $('#header #search').click(function(event) {
-    $(this).find('#icon').hide();
-    $(this).find('#text').hide();
-    $(this).find('#input').show();
+  $('#header .search').click(function(event) {
+    $(this).find('.icon').hide();
+    $(this).find('.text').hide();
+    $(this).find('.input').show();
     
     return false;
   });
   
   
-  // Show navigation, search & co on click on mobiles
-  $('#header nav#mobile').click(function() {
+  // Show navigation, search & co on click on mobile hamburger icon
+  $('#header #hamburger-menu').click(function() {
+    $('body').removeClass('sticky');
+    $('#header .mobile-navbar').hide();
+    $('#header .mobile-menu').slideToggle();
+    scrollTo($('body'));
+  });
+  
+  // Show navigation, search & co on click on mobile navbar
+  $('#header .mobile-navbar').click(function() {
+    $('body').removeClass('sticky');
     $(this).hide();
-    $('#header aside').slideToggle();
+    $('#header .mobile-menu').slideToggle();
   });
   
   // Close navigation, search & co on click on mobiles
   $('#header #close-menu').click(function() {
-    $('#header aside').hide();
-    $('#header nav#mobile').slideToggle();
+    $('#header .mobile-menu').hide();
+    $('#header .mobile-navbar').slideToggle();
     scrollTo($('body'));
   });
 

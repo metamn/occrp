@@ -12,11 +12,29 @@
 */
 
 
-$breakpoint-mobile: 24em !default; /* 384px, Android Nexus 4 */
-$breakpoint-mobile-landscape: 40em !default; /* 640px, iPhone 5 */
+$breakpoint-mobile: 30em !default; /* 480px, iPhone 3,4 landscape */
 $breakpoint-tablet: 48em !default; /* 768px */
 $breakpoint-small-screen: 64em !default; /* 1024px */
 $breakpoint-large-screen: 90em !default; /* 1440px */
+
+
+@mixin mobile {
+  @media only screen and (max-width: $breakpoint-mobile - 0.001) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (min-width: $breakpoint-mobile)and (max-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+
+@mixin tablet-and-up {
+  @media only screen and (min-width: $breakpoint-tablet + 0.001) {
+    @content;
+  }
+}
 
 
 @mixin below-and-tablet {

@@ -10,7 +10,7 @@ html {
         @include hide-title;
       }
       
-      #header, main {
+      main {
         margin: $pad 0 0; 
       }
       
@@ -29,7 +29,14 @@ html {
     */
     &.sticky {
       .container {
-        @include fixed-header;
+        #header {
+          @include fixed-header;
+        }
+        
+        main, #footer {
+          position: relative;
+          top: $pad*3;
+        }
       }
     }
     
@@ -250,7 +257,7 @@ html {
     /* Highlighting active menu items
     */
     &.frontpage {
-      #header nav ul li#frontpage {
+      #header nav ul li.frontpage {
         a {
           @include color(menu);
         }
@@ -258,7 +265,7 @@ html {
     }
     
     &.investigations {
-      #header nav ul li#investigations {
+      #header nav ul li.investigations {
         a {
           @include color(menu);
         }
@@ -266,7 +273,7 @@ html {
     }
     
     &.resources {
-      #header nav ul li#resources {
+      #header nav ul li.resources {
         a {
           @include color(menu);
         }
@@ -274,7 +281,7 @@ html {
     }
     
     &.blog {
-      #header nav ul li#blog {
+      #header nav ul li.blog {
         a {
           @include color(menu);
         }
@@ -282,7 +289,7 @@ html {
     }
     
     &.about-us {
-      #header nav ul li#about-us {
+      #header nav ul li.about-us {
         a {
           @include color(menu);
         }
@@ -290,7 +297,7 @@ html {
     }
     
     &.contact-us {
-      #header nav ul li#contact-us {
+      #header nav ul li.contact-us {
         a {
           @include color(menu);
         }
@@ -298,7 +305,7 @@ html {
     }
     
     &.russia {
-      #header #tags ul li#russia {
+      #header #tags ul li.russia {
         a {
           @include color(menu);
         }
