@@ -1,0 +1,377 @@
+html {
+  body {
+    @include default-settings;
+    
+    .container {
+      @include container;
+      
+      #header, main, section, nav, aside, #footer {
+        @include block;
+        @include hide-title;
+      }
+      
+      #header, main {
+        margin: $pad 0 0; 
+      }
+      
+      #header {
+        @include header;
+      }
+      
+      #footer {
+        margin: $pad*3 0 0;
+        @include footer;
+      }
+    }
+    
+    
+    /* Sticky header
+    */
+    &.sticky {
+      .container {
+        @include fixed-header;
+      }
+    }
+    
+    
+    /* Frontpage
+    */
+    &.frontpage {
+      .container {  
+        main {
+          #intro {
+            margin-bottom: $pad;
+          
+            #slider {
+              @include slider;
+            }
+            
+            #news, #announcements {
+              @include news;
+              margin-right: 0 !important;
+            }
+          }
+          
+          #investigations {
+            @include investigations;
+          }
+          
+          #products {
+            @include products;
+          }
+          
+          #projects {
+            @include frontpage-projects;
+          }
+          
+          #blog {
+            @include frontpage-blog;
+          }
+          
+          #most-read {
+            @include most-read;
+          }
+          
+          #videos {
+            @include videos;
+          }
+        }
+      }
+    }  
+    
+    
+    
+    /* Category
+    */
+    &.category {
+      main {
+        @include archive;
+      }
+    }
+    
+    
+    /* Tag
+    */
+    &.tag {
+      main {
+        @include archive;
+        
+        #banner {
+          margin-bottom: $pad;
+        }
+      }
+    }
+    
+    
+    /* Projects
+    */
+    &.projects {
+      main {
+        #articles {
+          @include projects;
+        }
+      }
+    }
+    
+    
+    /* Resource Center
+    */
+    &.resources {
+      main {
+        #articles {
+          @include projects;
+          
+          #tools {
+            article {
+              #meta {
+                display: none;
+              }
+            }
+          }
+        }
+        
+        #documents {
+          @include documents;
+        }
+      }
+    }
+    
+    
+    /* Blog Archive
+    */
+    &.blog {
+      main {
+        @include archive;
+        
+        #articles {
+          @include blog;
+          
+          article {
+            #meta, #date, #authors {
+              display: block !important;
+            }
+          }
+        }
+      }
+    }
+    
+    
+    /* Author Archive
+    */
+    &.author {
+      main {
+        @include archive;
+        
+        aside {
+          #bio {
+            img {
+              width: $pad*6;
+              float: left;
+              margin: 0 $pad $pad;
+            }
+            
+            div {
+              padding: 0 $pad/2;
+              line-height: $line-height-body-text;
+              font-size: smaller;
+              
+              p + p {
+                margin-top: $pad;
+              }
+            }
+          }
+        }
+        
+        
+        #articles {
+          @include blog;
+        }
+      }
+    }
+    
+    
+    /* Single Article, Single Post, About Us
+    */
+    &.article, &.about, &.post {
+      main {
+        @include fixed-sidebar;
+        
+        #article {
+          @include single-article;
+        }
+        
+        aside {
+          @include category-aside;
+        }
+      }
+    }
+    
+    
+    /* About Us
+    */
+    &.about {
+      main {
+        @include about-us;
+      }
+    }
+    
+    
+    /* Board Directors
+    */
+    &.board-directors {
+      main {
+        #article {
+          p {
+            @include border-thin;
+            font-weight: bold;
+          }
+          
+          dl + p {
+            margin-top: $pad*2 !important;
+          }
+        }
+      }
+    }
+    
+    
+    /* Jobs
+    */
+    &.jobs, &.announcements {
+      main {
+        #article {
+          @include jobs;
+        }
+      }
+    }
+    
+    
+    
+    
+    /* Highlighting active menu items
+    */
+    &.frontpage {
+      #header nav ul li#frontpage {
+        a {
+          @include color(menu);
+        }
+      }
+    }
+    
+    &.investigations {
+      #header nav ul li#investigations {
+        a {
+          @include color(menu);
+        }
+      }
+    }
+    
+    &.resources {
+      #header nav ul li#resources {
+        a {
+          @include color(menu);
+        }
+      }
+    }
+    
+    &.blog {
+      #header nav ul li#blog {
+        a {
+          @include color(menu);
+        }
+      }
+    }
+    
+    &.about-us {
+      #header nav ul li#about-us {
+        a {
+          @include color(menu);
+        }
+      }
+    }
+    
+    &.contact-us {
+      #header nav ul li#contact-us {
+        a {
+          @include color(menu);
+        }
+      }
+    }
+    
+    &.russia {
+      #header #tags ul li#russia {
+        a {
+          @include color(menu);
+        }
+      }
+    }
+    
+    
+    
+    /* Highlighting active menu items in the sidebar, About pages
+    */
+    &.about-us {
+      aside #subpages nav li#about {
+        a {
+          @include color(menu);
+        }
+      }
+    }
+    
+    &.history {
+      aside #subpages nav li#history {
+        a {
+          @include color(menu);
+        }
+      }
+    }
+    
+    &.members {
+      aside #subpages nav li#members {
+        a {
+          @include color(menu);
+        }
+      }
+    }
+    
+    &.staff {
+      aside #subpages nav li#staff {
+        a {
+          @include color(menu);
+        }
+      }
+    }
+    
+    &.board-directors {  
+      aside #subpages nav li#board-directors {
+        a {
+          @include color(menu);
+        }
+      }
+    }
+    
+    &.jobs {  
+      aside #subpages nav li#jobs {
+        a {
+          @include color(menu);
+        }
+      }
+    }
+    
+    &.awards {  
+      aside #subpages nav li#awards {
+        a {
+          @include color(menu);
+        }
+      }
+    }
+    
+    &.announcements {  
+      aside #subpages nav li#announcements {
+        a {
+          @include color(menu);
+        }
+      }
+    }
+    
+  }
+}

@@ -1,0 +1,719 @@
+/*
+  Structures / Templates of the Atomic web design
+  - the layout, the grid, the wireframe
+  - groups of organisms stitched together to form pages 
+*/
+
+
+
+/* Single article
+*/
+@mixin single-article {
+  @include block;
+  @include col-nm(2, 3);
+  
+  article.single {
+    @include article(category, date, title, figure, figcaption, null, body);
+    @include body-text;
+    
+    h1 {
+      &:first-of-type {
+        @include font(single-article-title);
+      }
+    }
+    
+    #meta, #share, #content {
+      @include block;
+    }
+      
+    #meta {
+      @include border-thin;
+      margin-bottom: $pad;
+    }
+    
+    #share {
+      margin: $pad 0;
+    }
+    
+    #content {
+      figure {
+        figcaption {
+          @include border-thin;
+          padding-bottom: $pad;  
+          @include link($grey, $highlight);
+        }
+        
+        &.person {
+          background: $light-grey;
+          
+          img {
+            padding: $pad;
+          }
+        }
+      }
+    }
+  }
+  
+  #most-read, #most-recent {
+    h3 {
+      @include font(section-title);
+      color: $color;
+      padding-top: $pad;
+      margin-top: $pad;
+      border-top: $border;
+    }
+    
+    @include responsive-grid(2);
+    @include article-style(title-right);
+    
+    article {
+      #excerpt {
+        display: none;
+      }
+    }
+  }
+}
+
+
+
+
+
+/* Resources / Documents
+*/
+@mixin documents {
+  @include show-title;
+  
+  article {
+    img {
+      width: $pad*2;
+      float: right;
+      margin: $pad/2 $pad/2 0 0;
+    }
+    
+    ul {
+      @include block;
+      @include ol-ul('');
+      font-size: smaller;
+      
+      li {
+        margin-bottom: $pad/2;
+        padding-left: 0;
+        
+        date {
+          @include font(date);
+        }
+      }
+    }
+  }
+}
+
+
+
+/* Jobs
+*/
+@mixin jobs {
+  #content {
+    article {
+      @include article-style(news);
+      @include body-text;
+      
+      #excerpt {
+        display: block;
+      }
+    }
+  }
+}
+
+
+
+/* Announcements
+*/
+@mixin announcements {
+  article {
+    &.thumb {
+      @include responsive-grid(3);
+      @include article-style(projects);
+    }
+  }
+
+  @include navigation(navigation);
+}
+
+
+
+
+/* Projects archive
+*/
+@mixin projects {
+  .title {
+    @include font(section-title);
+    @include font(category-title);
+  }
+  
+  article {
+    @include responsive-grid(5);
+    @include article-style(investigations);
+    
+    height: 17em !important;
+  }
+  
+  @include navigation(navigation);
+}
+
+
+
+/* Category archives
+*/
+@mixin category-articles {
+  @include col-nm(2, 3);
+  
+  .title {
+    @include font(section-title);
+    @include font(category-title);
+  }
+  
+  aside {
+    @include block;
+    @include article-style(slider);
+    margin-bottom: $flexible-grid-margin;
+    
+    article {
+      #excerpt {
+        @include border-thin;
+        padding-bottom: $pad*2;
+      }
+    }
+  }
+  
+  article {
+    &.thumb {
+      @include responsive-grid(3);
+      @include article-style(projects);
+    }
+  }
+  
+  @include navigation(navigation);
+}
+
+
+
+
+/* Category aside
+*/
+@mixin category-aside {
+  @include col-nm(1, 3);
+  margin-right: 0;
+  
+  @include most-read;
+  
+  nav {
+    @include hide-title;
+    
+    ul {
+      @include list-with-border;
+    }
+  }
+  
+  section {
+    @include block;
+    margin-bottom: $flexible-grid-margin;
+    
+    &#projects {
+      @include article-style(title-right);
+    }
+  }
+}
+
+
+
+/* Fixed sidebar
+*/
+@mixin fixed-sidebar {
+  overflow: hidden;
+  
+  aside {
+    #spacer {
+      @include hide-title;
+      margin-bottom: -$pad*2000;
+      padding-bottom: $pad*2000;
+      
+      position: relative;
+      top: -$pad*2; /* This is the margin between sidebar elements ... */
+    }
+  }
+}
+
+
+
+
+/* Archives
+*/
+@mixin archive {
+  @include fixed-sidebar;
+        
+  #articles {
+    @include category-articles;
+  }
+  
+  aside {
+    @include category-aside;
+  }
+}
+
+
+
+/* Videos
+*/
+@mixin videos {
+  h3 {
+    @include font(section-title);
+  }
+  
+  article {
+    @include responsive-grid(6);
+    @include article-style(projects);
+  }
+}
+
+
+
+/* Most read
+*/
+@mixin most-read {
+  margin-bottom: $flexible-grid-margin / 2;
+  
+  section {
+    @include news;
+    
+    background: $light-grey;
+    
+    article {
+      padding-left: $pad/2;
+      padding-right: $pad/2;
+      border-color: $background;
+      
+      &:last-of-type {
+        border: none;
+      }
+      
+      h1 {
+        font-weight: normal;
+        @include font-body;
+      }
+    }
+  }
+}
+
+
+/* Blog archives
+*/
+@mixin blog {
+  @include article-style(slider);
+  margin-bottom: $flexible-grid-margin;
+  
+  article.thumb {
+    @include block;
+    
+    h1 {
+      @include h1;
+    }
+    
+    #excerpt {
+      display: block;
+      @include border-thin;
+      padding-bottom: $pad*2;
+    }
+  }
+}
+
+
+
+/* Blog on the frontpage
+*/
+@mixin frontpage-blog {
+  h3 {
+    @include font(section-title);
+  }
+  
+  @include article-style(title-right);
+  article {
+    @include responsive-grid(3);
+    @include color(invert);
+    margin-bottom: $flexible-grid-margin/2;
+    
+    h1 {
+      font-weight: normal;
+      @include font-body;
+      letter-spacing: $letter-spacing-uppercase;
+    }
+  }
+}
+
+
+/* About us Sidebar menu
+*/
+@mixin about-us {
+  aside {
+    section {
+      @include hide-title;
+      
+      nav {
+        ul {
+          @include list-menu;
+          
+          li {
+            @include block;
+            @include grid-resize(100%, $pad/2);
+            
+            a {
+              @include block;
+              @include grid-resize(100%, $pad/2);
+            }
+          }
+        }
+      }
+    }
+    
+    #spacer {
+      top: -$pad - $pad/4;
+    }
+  }
+}
+
+
+
+/* Projects on frontpage
+*/
+@mixin frontpage-projects {
+  h3 {
+    @include font(section-title);
+  }
+  
+  article {
+    @include responsive-grid(5);
+    @include article-style(projects);
+    margin-bottom: $flexible-grid-margin / 2;
+  }
+}
+
+
+/* Products
+*/
+@mixin products {
+  @include padding;
+  background: $light-grey;
+  margin-bottom: $flexible-grid-margin / 2;
+  
+  article {
+    @include responsive-grid(4);
+    @include article-style(products);
+  }
+}
+
+
+/* Investigations
+*/
+@mixin investigations {
+  h3 {
+    @include font(section-title);
+  }
+  
+  article {
+    @include responsive-grid(3);
+    @include article-style(investigations);
+  }
+}
+
+
+/* The news
+*/
+@mixin news {
+  @include responsive-grid(3);
+  margin-top: $pad/2;
+  
+  h3 {
+    @include font(section-title);
+  }
+  
+  article {
+    @include article-style(news);
+  }
+}
+
+
+
+
+/* The slider on the frontpage
+*/
+@mixin slider {
+  /* The grid
+  */
+  @include col-nm(2, 3);
+  @include article-style(slider);
+  $col-gutter: col-gutter(3);
+  $col-width: col-by-gutter-width(2, $col-gutter);
+  
+  /* The slider of multiple articles
+  */
+  position: relative;
+  height: 20.4em;
+  
+  
+  article {
+    position: absolute;
+  }
+  
+  nav {
+    position: absolute;
+    bottom: $pad/2;
+    left: $col-width + $col-gutter;
+  }
+  
+  
+  /* The styling
+  */  
+  background: $light-grey;
+  
+
+  @include navigation;
+}
+
+
+
+/* The fixed header
+*/
+@mixin fixed-header {
+  #header {
+    position: fixed;
+    @include container;
+    
+    border-bottom: $border-thin;
+    margin: 0 0 $pad*2 !important;
+    padding-top: $pad;
+    top: 0;
+    height: $pad*2;
+    
+    background: $background;
+    z-index: 1;
+    
+    nav {
+      &#main, &#secondary {
+        margin-top: 0;
+        border: none;
+      }
+      
+      &#tags {
+        display: none;
+      }
+    }
+    
+    #logo {
+      height: $pad + $pad/2 + $pad/8;
+      
+      figure img {
+        max-width: 10em;
+        position: relative;
+        top: -$pad/4;
+      }
+    }
+  }
+
+  main, #footer {
+    position: relative;
+    top: $pad*6;
+  }
+  
+  
+  /* Mobiles and Tablets
+  */
+  @include below-and-tablet {
+    #header {
+      border-bottom: none;
+      padding-top: $pad/2;
+      
+      #logo {
+        figure {
+          img {
+            top: 0;
+          }
+        }
+      }
+      
+      nav {
+        &#mobile {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+
+
+
+/* The Header
+*/
+@mixin header {
+  nav, hgroup {
+    @include responsive-grid(3);
+  }
+  
+  /* Positioning the main elements
+  */
+  nav {
+    &#secondary {
+      margin-right: 0;
+    }
+    
+    &#tags {
+      @include block;
+      margin-top: $pad/2;
+    }
+  }
+  
+  nav {
+    @include menu;
+    
+    &#main, &#secondary {
+      margin-top: $pad*2;
+      @include border-thin($color);
+    }
+    
+    &#secondary {
+      @include language-selector;
+      @include menu-float-right;
+    }
+    
+    &#tags {
+      @include tags;
+      @include enlarge-social-icons;
+    }
+  }
+  
+  hgroup {
+    @include logo;
+  }
+  
+  
+  /* Mobiles and Tablets
+  */
+    
+  nav#mobile, aside {
+    display: none;
+  }
+  
+  @include below-and-tablet {
+    margin-top: $pad/2;
+    border-bottom: none;
+    
+    nav {
+      &#main, &#secondary, &#tags {
+        display: none;
+      }
+      
+      &#mobile {
+        display: block;
+        @include tags;
+        padding: $pad/4;
+        font-size: 70%;
+        margin-top: $pad/2;
+        
+        cursor: pointer;
+        
+        ul {
+          li {
+            margin-right: $pad;
+          }
+        }
+      }
+    }
+    
+    aside {
+      nav {
+        &#main, &#secondary, &#tags {
+          display: block;
+          margin-top: $pad*2;
+        }
+        
+        ul {
+          @include block;
+        }
+        
+        &#main, &#secondary {
+          ul {
+            @include list-normal;
+            text-align: left;
+          }
+        }
+        
+        &#tags {
+          ul {
+            &#search {
+              li {
+                &#text {
+                  display: none;
+                }
+                
+                &#input {
+                  display: block;
+                }
+              }
+            }
+            
+            &#tag-list {
+              margin: $pad 0;
+            }
+            
+            &#social {
+              li {
+                margin-right: $pad;
+              }
+            }
+          }
+        }
+      }
+      
+      #close-menu {
+        &:after {
+          content: '\2715';
+          @include color(invert-highlight);
+          padding: 0 $pad/4;
+          
+          position: relative;
+          top: -$pad - $pad/2;
+          right: $pad;
+          float: right;
+          
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+/* Footer
+*/
+@mixin footer {
+  padding: $pad 0;
+  border-top: $border;
+  @include font(navigation);
+  
+  ul {
+    @include list-inline($pad);
+    
+    li {
+      &#usaid {
+        position: relative;
+        top: -$pad/2;
+      }
+      
+      &#social-icons {
+        @include social-icons;
+      }
+    }
+  }
+}
