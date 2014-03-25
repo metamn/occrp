@@ -483,69 +483,16 @@
 /* The fixed header
 */
 @mixin fixed-header {
-  #header {
-    position: fixed;
-    @include container;
-    
-    border-bottom: $border-thin;
-    margin: 0 0 $pad*2 !important;
-    padding-top: $pad;
-    top: 0;
-    height: $pad*2;
-    
-    background: $background;
-    z-index: 1;
-    
-    nav {
-      &#main, &#secondary {
-        margin-top: 0;
-        border: none;
-      }
-      
-      &#tags {
-        display: none;
-      }
-    }
-    
-    #logo {
-      height: $pad + $pad/2 + $pad/8;
-      
-      figure img {
-        max-width: 10em;
-        position: relative;
-        top: -$pad/4;
-      }
-    }
-  }
-
-  main, #footer {
-    position: relative;
-    top: $pad*6;
-  }
+  position: fixed;
+  z-index: 1;
+  background: $background;
+  @include border-thin;
   
   
-  /* Mobiles and Tablets
-  */
-  @include below-and-tablet {
-    #header {
-      border-bottom: none;
-      padding-top: $pad/2;
-      
-      #logo {
-        figure {
-          img {
-            top: 0;
-          }
-        }
-      }
-      
-      nav {
-        &#mobile {
-          margin-top: 0;
-        }
-      }
-    }
+  @include mobile {
+    @include fixed-header-mobile;
   }
+  
 }
 
 
@@ -553,140 +500,40 @@
 /* The Header
 */
 @mixin header {
-  nav, hgroup {
-    @include responsive-grid(3);
-  }
   
-  /* Positioning the main elements
+  /* Common styling
   */
-  nav {
-    &#secondary {
-      margin-right: 0;
-    }
-    
-    &#tags {
-      @include block;
-      margin-top: $pad/2;
-    }
+  .logo {
+    @include logo;
   }
   
   nav {
     @include menu;
+    @include border-thin($color);
     
-    &#main, &#secondary {
-      margin-top: $pad*2;
-      @include border-thin($color);
-    }
-    
-    &#secondary {
+    &.secondary {
       @include language-selector;
-      @include menu-float-right;
     }
     
-    &#tags {
+    &.tags {
       @include tags;
       @include enlarge-social-icons;
     }
   }
   
-  hgroup {
-    @include logo;
-  }
-  
-  
-  /* Mobiles and Tablets
+ 
+  /* Responsive layouts
   */
-    
-  nav#mobile, aside {
-    display: none;
+  @include mobile {
+    @include header-mobile;
   }
   
-  @include below-and-tablet {
-    margin-top: $pad/2;
-    border-bottom: none;
-    
-    nav {
-      &#main, &#secondary, &#tags {
-        display: none;
-      }
-      
-      &#mobile {
-        display: block;
-        @include tags;
-        padding: $pad/4;
-        font-size: 70%;
-        margin-top: $pad/2;
-        
-        cursor: pointer;
-        
-        ul {
-          li {
-            margin-right: $pad;
-          }
-        }
-      }
-    }
-    
-    aside {
-      nav {
-        &#main, &#secondary, &#tags {
-          display: block;
-          margin-top: $pad*2;
-        }
-        
-        ul {
-          @include block;
-        }
-        
-        &#main, &#secondary {
-          ul {
-            @include list-normal;
-            text-align: left;
-          }
-        }
-        
-        &#tags {
-          ul {
-            &#search {
-              li {
-                &#text {
-                  display: none;
-                }
-                
-                &#input {
-                  display: block;
-                }
-              }
-            }
-            
-            &#tag-list {
-              margin: $pad 0;
-            }
-            
-            &#social {
-              li {
-                margin-right: $pad;
-              }
-            }
-          }
-        }
-      }
-      
-      #close-menu {
-        &:after {
-          content: '\2715';
-          @include color(invert-highlight);
-          padding: 0 $pad/4;
-          
-          position: relative;
-          top: -$pad - $pad/2;
-          right: $pad;
-          float: right;
-          
-          cursor: pointer;
-        }
-      }
-    }
+  @include tablet {
+    @include header-tablet;
+  }
+  
+  @include tablet-and-up {
+    @include header-desktop;
   }
 }
 

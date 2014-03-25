@@ -7,9 +7,76 @@
 
 
 
-/* Menu
+/* The Header
 --------------------------------------------------------------------------------
 */
+
+
+
+/* The fixed header for mobile
+*/
+@mixin fixed-header-mobile {
+  .logo {
+    figure {
+      img {
+        width: 50%;
+      }
+    }
+  }
+  
+  nav.mobile-navbar {
+    display: none !important;
+  }
+  
+  #hamburger-menu {
+    display: block;
+    top: $pad;
+  }
+}
+
+
+/* The header for mobiles
+*/
+@mixin header-mobile {
+  nav {
+    &.main, &.secondary, &.tags {
+      display: none;
+    }
+    
+    &.mobile-navbar {
+      @include mobile-navbar;
+    }
+  }
+  
+  #hamburger-menu {
+    @include hamburger-menu;
+    display: none;
+  }
+  
+  .mobile-menu {
+    @include mobile-menu;
+    display: none;
+  }
+}
+
+
+
+
+
+
+/* The logo
+*/
+@mixin logo {
+  text-align: center;
+  
+  h1, figure figcaption {
+    display: none;
+  }
+  
+  figure {
+    margin-top: $pad/2;
+  }
+}
 
 
 
@@ -21,7 +88,6 @@
   @include font(navigation);
   
   ul {
-    @include list-inline($pad/4);
     @include list-menu;
   }  
 }
@@ -42,36 +108,6 @@
 }
 
 
-/* The logo
-  - it' inside a <hgroup>
-*/
-@mixin logo {
-  text-align: center;
-  
-  h1, figure figcaption {
-    display: none;
-  }
-}
-
-
-
-/* The language selector
-*/
-@mixin language-selector {
-  ul {
-    li {
-      &.language {
-        @include text-with-icon;
-      }
-      
-      &#english {
-        display: none;
-      }
-    }
-  }
-}
-
-
 
 /* The tag bar
 */
@@ -84,13 +120,13 @@
   padding: 0;
   
   ul {
-    &#search {
+    &.search {
       li {
-        &#text {
+        &.text {
           @include text-with-icon;
         }
         
-        &#input {
+        &.input {
           display: none;
           
           input {
@@ -100,11 +136,15 @@
       }
     }
     
-    &#tag-list, &#mobile-menu {
+    &.tag-list {
       @include list-centered;
     }
     
-    &#social {
+    &.tag-list, &.social {
+      @include list-inline($pad/4);
+    }
+    
+    &.social {
       float: right;
       
       li {
@@ -128,29 +168,54 @@
   }
 }
 
-/* Make icons taller than the default size in the header
-  - this is kinda manual pixel pushing
-*/
-@mixin enlarge-social-icons {
-  ul {
-    &#search, &#tag-list {
-      margin-top: $pad/4;
+
+
+
+
+
+
+@mixin header-tablet {
+
+}
+
+
+
+@mixin header-desktop {
+  nav.mobile, aside {
+    display: none;
+  }
+  
+  
+  nav, section {
+    @include responsive-grid(3);
+  }
+  
+  /* Positioning the main elements
+  */
+  nav {
+    &.secondary {
+      margin-right: 0;
     }
     
-    &#social {
-      li {
-        a {
-          margin-bottom: $pad/4;
-          height: $pad;
-          
-          img {
-            height: $pad;
-          }
-        }
-      }
+    &.tags {
+      @include block;
+      margin-top: $pad/2;
+    }
+  }
+  
+  nav {
+    &.main, &.secondary {
+      margin-top: $pad*2;
+      @include border-thin($color);
     }
   }
 }
+
+
+
+
+
+
 
 
 

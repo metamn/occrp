@@ -20,8 +20,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* Responsiveness
 --------------------------------------------------------------------------------
 */
-/* 384px, Android Nexus 4 */
-/* 640px, iPhone 5 */
+/* 480px, iPhone 3,4 landscape */
 /* 768px */
 /* 1024px */
 /* 1440px */
@@ -137,6 +136,10 @@ figure a { line-height: 0; }
 */
 /* Icon with text - the image size (height) must be fixed otherwise it will be taller than other elements - first used with the language selector in a menu - if the height was not set this menu item was taller than all others
 */
+/* Make icons taller than the default size in the header - this is kinda manual pixel pushing
+*/
+/* The language selector
+*/
 /* Decorations, colors, etc.
 --------------------------------------------------------------------------------
 */
@@ -162,20 +165,20 @@ figure a { line-height: 0; }
 */
 /* Organisms of the Atomic web design - groups of molecules joined together to form a relatively complex, distinct section of an interface.
 */
-/* Menu
+/* The Header
 --------------------------------------------------------------------------------
+*/
+/* The fixed header for mobile
+*/
+/* The header for mobiles
+*/
+/* The logo
 */
 /* A menu - an inline list of items, with different hover and active states - it's parent is usually a <nav> element
 */
 /* Floats the secondary menu right
 */
-/* The logo - it' inside a <hgroup>
-*/
-/* The language selector
-*/
 /* The tag bar
-*/
-/* Make icons taller than the default size in the header - this is kinda manual pixel pushing
 */
 /* Articles
 --------------------------------------------------------------------------------
@@ -266,84 +269,78 @@ html body .container { width: 95%; margin: 0 2.5%; }
 @media only screen and (min-width: 90.001em) { html body .container { width: 75%; margin: 0 12.5%; } }
 html body .container #header, html body .container main, html body .container section, html body .container nav, html body .container aside, html body .container #footer { width: 100%; max-width: 100%; float: left; }
 html body .container #header > h3, html body .container main > h3, html body .container section > h3, html body .container nav > h3, html body .container aside > h3, html body .container #footer > h3 { display: none; }
-html body .container #header, html body .container main { margin: 1.25em 0 0; }
-html body .container #header { /* Positioning the main elements
-*/ /* Mobiles and Tablets
+html body .container main { margin: 1.25em 0 0; }
+html body .container #header { /* Common styling
+*/ /* Responsive layouts
 */ }
-@media only screen and (max-width: 48em) { html body .container #header nav, html body .container #header hgroup { width: 100%; margin-right: 0; float: left; } }
-@media only screen and (min-width: 64.001em) { html body .container #header nav, html body .container #header hgroup { width: 31.5%; margin-right: 2.5%; float: left; }
-  html body .container #header nav:nth-of-type(2), html body .container #header hgroup:nth-of-type(2) { margin-right: 2.5%; }
-  html body .container #header nav:nth-of-type(3), html body .container #header hgroup:nth-of-type(3) { margin-right: 0; }
-  html body .container #header nav:nth-of-type(4), html body .container #header hgroup:nth-of-type(4) { margin-right: 2.5%; }
-  html body .container #header nav:nth-of-type(5), html body .container #header hgroup:nth-of-type(5) { margin-right: 2.5%; }
-  html body .container #header nav:nth-of-type(6), html body .container #header hgroup:nth-of-type(6) { margin-right: 0; }
-  html body .container #header nav:nth-of-type(7), html body .container #header hgroup:nth-of-type(7) { margin-right: 2.5%; }
-  html body .container #header nav:nth-of-type(8), html body .container #header hgroup:nth-of-type(8) { margin-right: 2.5%; }
-  html body .container #header nav:nth-of-type(9), html body .container #header hgroup:nth-of-type(9) { margin-right: 0; }
-  html body .container #header nav:nth-of-type(10), html body .container #header hgroup:nth-of-type(10) { margin-right: 2.5%; } }
-html body .container #header nav#secondary { margin-right: 0; }
-html body .container #header nav#tags { width: 100%; max-width: 100%; float: left; margin-top: 0.625em; }
-html body .container #header nav { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; }
-html body .container #header nav ul li { display: inline-block; float: left; margin-right: 0.3125em; }
-html body .container #header nav ul li:last-of-type { margin-right: 0; }
+html body .container #header .logo { text-align: center; }
+html body .container #header .logo h1, html body .container #header .logo figure figcaption { display: none; }
+html body .container #header .logo figure { margin-top: 0.625em; }
+html body .container #header nav { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; border-bottom: 1px solid #231f20; }
 html body .container #header nav ul li a { padding: 0.625em 0.3125em; display: inline-block; }
 html body .container #header nav ul li.active a, html body .container #header nav ul li:hover a { background: #982022; color: white; }
 html body .container #header nav ul li.active a a, html body .container #header nav ul li:hover a a { color: white; text-decoration: none; }
 html body .container #header nav ul li.active a a:hover, html body .container #header nav ul li:hover a a:hover { color: white; }
-html body .container #header nav#main, html body .container #header nav#secondary { margin-top: 2.5em; border-bottom: 1px solid #231f20; }
-html body .container #header nav#secondary ul li.language img { height: 12px; position: relative; top: 1px; }
-html body .container #header nav#secondary ul li#english { display: none; }
-html body .container #header nav#secondary ul { float: right; }
-html body .container #header nav#secondary ul li.language { margin-right: 0; }
-html body .container #header nav#tags { background: #231f20; color: white; /* Since <a> has padding on the last social icon we must reduce the tagbar width
+html body .container #header nav.secondary ul li.language img { height: 12px; position: relative; top: 1px; }
+html body .container #header nav.secondary ul li.english { display: none; }
+html body .container #header nav.tags { background: #231f20; color: white; /* Since <a> has padding on the last social icon we must reduce the tagbar width
 */ padding: 0.3125em; width: calc(100% - 0.625em); padding: 0; }
-html body .container #header nav#tags a { color: white; text-decoration: none; }
-html body .container #header nav#tags a:hover { color: white; }
-html body .container #header nav#tags ul#search li#text img { height: 12px; position: relative; top: 1px; }
-html body .container #header nav#tags ul#search li#input { display: none; }
-html body .container #header nav#tags ul#search li#input input { margin: 0.3125em; }
-html body .container #header nav#tags ul#tag-list, html body .container #header nav#tags ul#mobile-menu { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
-html body .container #header nav#tags ul#social { float: right; }
-html body .container #header nav#tags ul#social li { /* We are not replacing social icons on hover - so the second image must not be displayed - also the icon should be taller, the maximum possible
+html body .container #header nav.tags a { color: white; text-decoration: none; }
+html body .container #header nav.tags a:hover { color: white; }
+html body .container #header nav.tags ul.search li.text img { height: 12px; position: relative; top: 1px; }
+html body .container #header nav.tags ul.search li.input { display: none; }
+html body .container #header nav.tags ul.search li.input input { margin: 0.3125em; }
+html body .container #header nav.tags ul.tag-list { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
+html body .container #header nav.tags ul.tag-list li, html body .container #header nav.tags ul.social li { display: inline-block; float: left; margin-right: 0.3125em; }
+html body .container #header nav.tags ul.tag-list li:last-of-type, html body .container #header nav.tags ul.social li:last-of-type { margin-right: 0; }
+html body .container #header nav.tags ul.social { float: right; }
+html body .container #header nav.tags ul.social li { /* We are not replacing social icons on hover - so the second image must not be displayed - also the icon should be taller, the maximum possible
 */ }
-html body .container #header nav#tags ul#social li img { height: 12px; position: relative; top: 1px; }
-html body .container #header nav#tags ul#social li a img { height: 13px; }
-html body .container #header nav#tags ul#social li a img:last-of-type { display: none; }
-html body .container #header nav#tags ul#search, html body .container #header nav#tags ul#tag-list { margin-top: 0.3125em; }
-html body .container #header nav#tags ul#social li a { margin-bottom: 0.3125em; height: 1.25em; }
-html body .container #header nav#tags ul#social li a img { height: 1.25em; }
-html body .container #header hgroup { text-align: center; }
-html body .container #header hgroup h1, html body .container #header hgroup figure figcaption { display: none; }
-html body .container #header nav#mobile, html body .container #header aside { display: none; }
-@media only screen and (max-width: 48em) { html body .container #header { margin-top: 0.625em; border-bottom: none; }
-  html body .container #header nav#main, html body .container #header nav#secondary, html body .container #header nav#tags { display: none; }
-  html body .container #header nav#mobile { display: block; background: #231f20; color: white; /* Since <a> has padding on the last social icon we must reduce the tagbar width
-*/ padding: 0.3125em; width: calc(100% - 0.625em); padding: 0; padding: 0.3125em; font-size: 70%; margin-top: 0.625em; cursor: pointer; }
-  html body .container #header nav#mobile a { color: white; text-decoration: none; }
-  html body .container #header nav#mobile a:hover { color: white; }
-  html body .container #header nav#mobile ul#search li#text img { height: 12px; position: relative; top: 1px; }
-  html body .container #header nav#mobile ul#search li#input { display: none; }
-  html body .container #header nav#mobile ul#search li#input input { margin: 0.3125em; }
-  html body .container #header nav#mobile ul#tag-list, html body .container #header nav#mobile ul#mobile-menu { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
-  html body .container #header nav#mobile ul#social { float: right; }
-  html body .container #header nav#mobile ul#social li { /* We are not replacing social icons on hover - so the second image must not be displayed - also the icon should be taller, the maximum possible
+html body .container #header nav.tags ul.social li img { height: 12px; position: relative; top: 1px; }
+html body .container #header nav.tags ul.social li a img { height: 13px; }
+html body .container #header nav.tags ul.social li a img:last-of-type { display: none; }
+html body .container #header nav.tags ul.search, html body .container #header nav.tags ul.tag-list { margin-top: 0.3125em; }
+html body .container #header nav.tags ul.social li a { margin-bottom: 0.3125em; height: 1.25em; }
+html body .container #header nav.tags ul.social li a img { height: 1.25em; }
+@media only screen and (max-width: 29.999em) { html body .container #header nav.main, html body .container #header nav.secondary, html body .container #header nav.tags { display: none; }
+  html body .container #header nav.mobile-navbar { width: 100%; max-width: 100%; float: left; background: #231f20; color: white; padding: 0.3125em; width: calc(100% - 0.625em); font-size: 70%; margin-top: 0.625em; cursor: pointer; }
+  html body .container #header nav.mobile-navbar a { color: white; text-decoration: none; }
+  html body .container #header nav.mobile-navbar a:hover { color: white; }
+  html body .container #header nav.mobile-navbar ul.mobile-navbar-menu { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
+  html body .container #header nav.mobile-navbar ul.mobile-navbar-menu li { display: inline-block; float: left; margin-right: 0.625em; }
+  html body .container #header nav.mobile-navbar ul.mobile-navbar-menu li:last-of-type { margin-right: 0; }
+  html body .container #header nav.mobile-navbar ul.mobile-navbar-menu li.hamburger span { position: relative; display: block; min-width: 1.25em; top: 1px; }
+  html body .container #header nav.mobile-navbar ul.mobile-navbar-menu li.hamburger span:before { content: ""; position: absolute; top: 0.25em; left: 0; width: 1em; height: 0.125em; border-top: 0.375em double white; border-bottom: 0.125em solid white; }
+  html body .container #header #hamburger-menu { position: relative; display: block; display: none; }
+  html body .container #header #hamburger-menu:before { content: ""; position: absolute; top: 0.25em; left: 0; width: 1em; height: 0.125em; border-top: 0.375em double #231f20; border-bottom: 0.125em solid #231f20; }
+  html body .container #header .mobile-menu { display: none; }
+  html body .container #header .mobile-menu nav.main, html body .container #header .mobile-menu nav.secondary, html body .container #header .mobile-menu nav.tags { display: block; margin-top: 2.5em; }
+  html body .container #header .mobile-menu nav ul { width: 100%; max-width: 100%; float: left; }
+  html body .container #header .mobile-menu nav.main ul, html body .container #header .mobile-menu nav.secondary ul { text-align: left; }
+  html body .container #header .mobile-menu nav.main ul li, html body .container #header .mobile-menu nav.secondary ul li { display: block; margin-right: none; float: none; padding-left: 0; }
+  html body .container #header .mobile-menu nav.main ul li:before, html body .container #header .mobile-menu nav.secondary ul li:before { content: ''; }
+  html body .container #header .mobile-menu nav.tags ul.search li.text { display: none; }
+  html body .container #header .mobile-menu nav.tags ul.search li.input { display: block; }
+  html body .container #header .mobile-menu nav.tags ul.tag-list { margin: 1.25em 0; }
+  html body .container #header .mobile-menu nav.tags ul.social li { margin-right: 1.25em; }
+  html body .container #header .mobile-menu #close-menu:after { content: '\2715'; color: white; padding: 0 0.3125em; border-bottom: 1px solid white; position: relative; top: -1.875em; right: 1.25em; float: right; cursor: pointer; } }
+@media only screen and (min-width: 48.001em) { html body .container #header { /* Positioning the main elements
 */ }
-  html body .container #header nav#mobile ul#social li img { height: 12px; position: relative; top: 1px; }
-  html body .container #header nav#mobile ul#social li a img { height: 13px; }
-  html body .container #header nav#mobile ul#social li a img:last-of-type { display: none; }
-  html body .container #header nav#mobile ul li { margin-right: 1.25em; }
-  html body .container #header aside nav#main, html body .container #header aside nav#secondary, html body .container #header aside nav#tags { display: block; margin-top: 2.5em; }
-  html body .container #header aside nav ul { width: 100%; max-width: 100%; float: left; }
-  html body .container #header aside nav#main ul, html body .container #header aside nav#secondary ul { text-align: left; }
-  html body .container #header aside nav#main ul li, html body .container #header aside nav#secondary ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-  html body .container #header aside nav#main ul li:before, html body .container #header aside nav#secondary ul li:before { content: ''; }
-  html body .container #header aside nav#tags ul#search li#text { display: none; }
-  html body .container #header aside nav#tags ul#search li#input { display: block; }
-  html body .container #header aside nav#tags ul#tag-list { margin: 1.25em 0; }
-  html body .container #header aside nav#tags ul#social li { margin-right: 1.25em; }
-  html body .container #header aside #close-menu:after { content: '\2715'; background: #231f20; color: #982022; padding: 0 0.3125em; position: relative; top: -1.875em; right: 1.25em; float: right; cursor: pointer; }
-  html body .container #header aside #close-menu:after a { color: white; text-decoration: none; }
-  html body .container #header aside #close-menu:after a:hover { color: white; } }
+  html body .container #header nav.mobile, html body .container #header aside { display: none; } }
+@media only screen and (min-width: 48.001em) and (max-width: 48em) { html body .container #header nav, html body .container #header section { width: 100%; margin-right: 0; float: left; } }
+@media only screen and (min-width: 48.001em) and (min-width: 64.001em) { html body .container #header nav, html body .container #header section { width: 31.5%; margin-right: 2.5%; float: left; }
+  html body .container #header nav:nth-of-type(2), html body .container #header section:nth-of-type(2) { margin-right: 2.5%; }
+  html body .container #header nav:nth-of-type(3), html body .container #header section:nth-of-type(3) { margin-right: 0; }
+  html body .container #header nav:nth-of-type(4), html body .container #header section:nth-of-type(4) { margin-right: 2.5%; }
+  html body .container #header nav:nth-of-type(5), html body .container #header section:nth-of-type(5) { margin-right: 2.5%; }
+  html body .container #header nav:nth-of-type(6), html body .container #header section:nth-of-type(6) { margin-right: 0; }
+  html body .container #header nav:nth-of-type(7), html body .container #header section:nth-of-type(7) { margin-right: 2.5%; }
+  html body .container #header nav:nth-of-type(8), html body .container #header section:nth-of-type(8) { margin-right: 2.5%; }
+  html body .container #header nav:nth-of-type(9), html body .container #header section:nth-of-type(9) { margin-right: 0; }
+  html body .container #header nav:nth-of-type(10), html body .container #header section:nth-of-type(10) { margin-right: 2.5%; } }
+@media only screen and (min-width: 48.001em) { html body .container #header nav.secondary { margin-right: 0; }
+  html body .container #header nav.tags { width: 100%; max-width: 100%; float: left; margin-top: 0.625em; }
+  html body .container #header nav.main, html body .container #header nav.secondary { margin-top: 2.5em; border-bottom: 1px solid #231f20; } }
 html body .container #footer { margin: 3.75em 0 0; padding: 1.25em 0; border-top: 0.3125em solid; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; }
 html body .container #footer ul li { display: inline-block; float: left; margin-right: 1.25em; }
 html body .container #footer ul li:last-of-type { margin-right: 0; }
@@ -355,18 +352,11 @@ html body .container #footer ul li#social-icons p a:hover { color: white; }
 html body .container #footer ul li#social-icons ul li img:last-of-type { display: none; position: relative; top: 0; }
 html body .container #footer ul li#social-icons ul li:hover img:first-of-type { display: none; }
 html body .container #footer ul li#social-icons ul li:hover img:last-of-type { display: block; }
-html body.sticky .container { /* Mobiles and Tablets
-*/ }
-html body.sticky .container #header { position: fixed; width: 95%; margin: 0 2.5%; border-bottom: 1px solid; margin: 0 0 2.5em !important; padding-top: 1.25em; top: 0; height: 2.5em; background: white; z-index: 1; }
-@media only screen and (min-width: 90.001em) { html body.sticky .container #header { width: 75%; margin: 0 12.5%; } }
-html body.sticky .container #header nav#main, html body.sticky .container #header nav#secondary { margin-top: 0; border: none; }
-html body.sticky .container #header nav#tags { display: none; }
-html body.sticky .container #header #logo { height: 2.03125em; }
-html body.sticky .container #header #logo figure img { max-width: 10em; position: relative; top: -0.3125em; }
-html body.sticky .container main, html body.sticky .container #footer { position: relative; top: 7.5em; }
-@media only screen and (max-width: 48em) { html body.sticky .container #header { border-bottom: none; padding-top: 0.625em; }
-  html body.sticky .container #header #logo figure img { top: 0; }
-  html body.sticky .container #header nav#mobile { margin-top: 0; } }
+html body.sticky .container #header { position: fixed; z-index: 1; background: white; border-bottom: 1px solid #f1f1f1; }
+@media only screen and (max-width: 29.999em) { html body.sticky .container #header .logo figure img { width: 50%; }
+  html body.sticky .container #header nav.mobile-navbar { display: none !important; }
+  html body.sticky .container #header #hamburger-menu { display: block; top: 1.25em; } }
+html body.sticky .container main, html body.sticky .container #footer { position: relative; top: 3.75em; }
 html body.frontpage .container main #intro { margin-bottom: 1.25em; }
 html body.frontpage .container main #intro #slider { /* The grid
 */ width: 65.5%; margin-right: 2.5%; float: left; /* The slider of multiple articles
@@ -2603,27 +2593,27 @@ html body.jobs main #article #content article h1 + h2, html body.jobs main #arti
 html body.jobs main #article #content article h1 + ul, html body.jobs main #article #content article h2 + ul, html body.jobs main #article #content article h3 + ul, html body.jobs main #article #content article h1 + ol, html body.jobs main #article #content article h2 + ol, html body.jobs main #article #content article h3 + ol, html body.jobs main #article #content article h1 + figure, html body.jobs main #article #content article h2 + figure, html body.jobs main #article #content article h3 + figure, html body.jobs main #article #content article h1 + nav, html body.announcements main #article #content article h1 + ul, html body.announcements main #article #content article h2 + ul, html body.announcements main #article #content article h3 + ul, html body.announcements main #article #content article h1 + ol, html body.announcements main #article #content article h2 + ol, html body.announcements main #article #content article h3 + ol, html body.announcements main #article #content article h1 + figure, html body.announcements main #article #content article h2 + figure, html body.announcements main #article #content article h3 + figure, html body.announcements main #article #content article h1 + nav { margin-top: 0; }
 html body.jobs main #article #content article li ul, html body.jobs main #article #content article li ol, html body.announcements main #article #content article li ul, html body.announcements main #article #content article li ol { margin-top: 0; }
 html body.jobs main #article #content article #excerpt, html body.announcements main #article #content article #excerpt { display: block; }
-html body.frontpage #header nav ul li#frontpage a { background: #982022; color: white; }
-html body.frontpage #header nav ul li#frontpage a a { color: white; text-decoration: none; }
-html body.frontpage #header nav ul li#frontpage a a:hover { color: white; }
-html body.investigations #header nav ul li#investigations a { background: #982022; color: white; }
-html body.investigations #header nav ul li#investigations a a { color: white; text-decoration: none; }
-html body.investigations #header nav ul li#investigations a a:hover { color: white; }
-html body.resources #header nav ul li#resources a { background: #982022; color: white; }
-html body.resources #header nav ul li#resources a a { color: white; text-decoration: none; }
-html body.resources #header nav ul li#resources a a:hover { color: white; }
-html body.blog #header nav ul li#blog a { background: #982022; color: white; }
-html body.blog #header nav ul li#blog a a { color: white; text-decoration: none; }
-html body.blog #header nav ul li#blog a a:hover { color: white; }
-html body.about-us #header nav ul li#about-us a { background: #982022; color: white; }
-html body.about-us #header nav ul li#about-us a a { color: white; text-decoration: none; }
-html body.about-us #header nav ul li#about-us a a:hover { color: white; }
-html body.contact-us #header nav ul li#contact-us a { background: #982022; color: white; }
-html body.contact-us #header nav ul li#contact-us a a { color: white; text-decoration: none; }
-html body.contact-us #header nav ul li#contact-us a a:hover { color: white; }
-html body.russia #header #tags ul li#russia a { background: #982022; color: white; }
-html body.russia #header #tags ul li#russia a a { color: white; text-decoration: none; }
-html body.russia #header #tags ul li#russia a a:hover { color: white; }
+html body.frontpage #header nav ul li.frontpage a { background: #982022; color: white; }
+html body.frontpage #header nav ul li.frontpage a a { color: white; text-decoration: none; }
+html body.frontpage #header nav ul li.frontpage a a:hover { color: white; }
+html body.investigations #header nav ul li.investigations a { background: #982022; color: white; }
+html body.investigations #header nav ul li.investigations a a { color: white; text-decoration: none; }
+html body.investigations #header nav ul li.investigations a a:hover { color: white; }
+html body.resources #header nav ul li.resources a { background: #982022; color: white; }
+html body.resources #header nav ul li.resources a a { color: white; text-decoration: none; }
+html body.resources #header nav ul li.resources a a:hover { color: white; }
+html body.blog #header nav ul li.blog a { background: #982022; color: white; }
+html body.blog #header nav ul li.blog a a { color: white; text-decoration: none; }
+html body.blog #header nav ul li.blog a a:hover { color: white; }
+html body.about-us #header nav ul li.about-us a { background: #982022; color: white; }
+html body.about-us #header nav ul li.about-us a a { color: white; text-decoration: none; }
+html body.about-us #header nav ul li.about-us a a:hover { color: white; }
+html body.contact-us #header nav ul li.contact-us a { background: #982022; color: white; }
+html body.contact-us #header nav ul li.contact-us a a { color: white; text-decoration: none; }
+html body.contact-us #header nav ul li.contact-us a a:hover { color: white; }
+html body.russia #header #tags ul li.russia a { background: #982022; color: white; }
+html body.russia #header #tags ul li.russia a a { color: white; text-decoration: none; }
+html body.russia #header #tags ul li.russia a a:hover { color: white; }
 html body.about-us aside #subpages nav li#about a { background: #982022; color: white; }
 html body.about-us aside #subpages nav li#about a a { color: white; text-decoration: none; }
 html body.about-us aside #subpages nav li#about a a:hover { color: white; }
