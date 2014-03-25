@@ -526,7 +526,7 @@
   
   /* Mobiles and Tablets
   */
-  @include below-and-tablet {
+  @include mobile {
     #header {
       border-bottom: none;
       padding-top: $pad/2;
@@ -601,7 +601,7 @@
     display: none;
   }
   
-  @include below-and-tablet {
+  @include mobile {
     margin-top: $pad/2;
     border-bottom: none;
     
