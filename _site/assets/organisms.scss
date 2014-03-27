@@ -58,6 +58,36 @@
   }
 }
 
+@mixin fixed-header-desktop {
+  @include container;
+  
+  margin: 0 0 $pad*2 !important;
+  padding-top: $pad;
+  top: 0;
+  height: $pad*2;
+  
+  nav {
+    &.main, &.secondary {
+      margin-top: 0;
+      border: none;
+    }
+    
+    &.tags {
+      display: none;
+    }
+  }
+  
+  .logo {
+    height: $pad + $pad/2 + $pad/8;
+    
+    figure img {
+      max-width: 10em;
+      position: relative;
+      top: -$pad/4;
+    }
+  }
+}
+
 
 /* The header for mobiles
 */
@@ -97,9 +127,6 @@
     @include responsive-grid(3);
   }
   
-  
-    background: red;
-  
   /* Positioning the main elements
   */
   nav {
@@ -111,6 +138,7 @@
     }
     
     &.main, &.secondary {
+      @include list-inline($pad/4);
       margin-top: $pad*2;
     }
     
@@ -175,7 +203,7 @@
       @include list-centered;
     }
     
-    &.tag-list, &.social {
+    &.tag-list, &.social, &.search {
       @include list-inline($pad/4);
     }
     

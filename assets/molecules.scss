@@ -109,7 +109,7 @@
 /* A responsive grid
 */
 @mixin responsive-grid($how-many, $maximum : 10) {
-  @include below-and-tablet {
+  @include below-tablet {
     @include col(100%, 0);
   }
   
