@@ -50,7 +50,7 @@ $(document).ready(function() {
   // Click on logo on sticky header
   // - instead loading the frontpage it will scroll top
   // - the second click on the logo will load the frontpage
-  $('#header #logo figure a').click(function(event) {
+  $('#header .logo figure a').click(function(event) {
     if ($('body').hasClass('sticky')) {
       event.preventDefault();
       scrollTo($('body'));

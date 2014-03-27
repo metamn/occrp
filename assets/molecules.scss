@@ -327,6 +327,10 @@
         @include list-normal;
         text-align: left;
       }
+      
+      @include tablet {
+        @include grid(2, 2);
+      }
     }
     
     &.tags {
@@ -339,6 +343,10 @@
             
             &.input {
               display: block;
+              
+              input {
+                width: 95%;
+              }
             }
           }
         }
@@ -409,7 +417,7 @@
     content: '\2715';
     color: $c;
     padding: 0 $pad/4;
-    @include border-thin($c);
+    border: $border-thin;
     
     position: relative;
     top: -$pad - $pad/2;
