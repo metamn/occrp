@@ -493,6 +493,9 @@
     @include fixed-header-mobile;
   }
   
+  @include tablet {
+    @include fixed-header-tablet;
+  }
 }
 
 
@@ -524,12 +527,8 @@
  
   /* Responsive layouts
   */
-  @include mobile {
+  @include below-and-tablet {
     @include header-mobile;
-  }
-  
-  @include tablet {
-    @include header-tablet;
   }
   
   @include tablet-and-up {

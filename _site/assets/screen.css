@@ -170,6 +170,8 @@ figure a { line-height: 0; }
 */
 /* The fixed header for mobile
 */
+/* The fixed header for tablets
+*/
 /* The header for mobiles
 */
 /* The logo
@@ -302,7 +304,7 @@ html body .container #header nav.tags ul.social li a img:last-of-type { display:
 html body .container #header nav.tags ul.search, html body .container #header nav.tags ul.tag-list { margin-top: 0.3125em; }
 html body .container #header nav.tags ul.social li a { margin-bottom: 0.3125em; height: 1.25em; }
 html body .container #header nav.tags ul.social li a img { height: 1.25em; }
-@media only screen and (max-width: 29.999em) { html body .container #header nav.main, html body .container #header nav.secondary, html body .container #header nav.tags { display: none; }
+@media only screen and (max-width: 48em) { html body .container #header nav.main, html body .container #header nav.secondary, html body .container #header nav.tags { display: none; }
   html body .container #header nav.mobile-navbar { width: 100%; max-width: 100%; float: left; background: #231f20; color: white; padding: 0.3125em; width: calc(100% - 0.625em); font-size: 70%; margin-top: 0.625em; cursor: pointer; }
   html body .container #header nav.mobile-navbar a { color: white; text-decoration: none; }
   html body .container #header nav.mobile-navbar a:hover { color: white; }
@@ -318,9 +320,12 @@ html body .container #header nav.tags ul.social li a img { height: 1.25em; }
   html body .container #header .mobile-menu nav ul { width: 100%; max-width: 100%; float: left; }
   html body .container #header .mobile-menu nav.main ul, html body .container #header .mobile-menu nav.secondary ul { text-align: left; }
   html body .container #header .mobile-menu nav.main ul li, html body .container #header .mobile-menu nav.secondary ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-  html body .container #header .mobile-menu nav.main ul li:before, html body .container #header .mobile-menu nav.secondary ul li:before { content: ''; }
-  html body .container #header .mobile-menu nav.tags ul.search li.text { display: none; }
+  html body .container #header .mobile-menu nav.main ul li:before, html body .container #header .mobile-menu nav.secondary ul li:before { content: ''; } }
+@media only screen and (max-width: 48em) and (min-width: 30em) and (max-width: 48em) { html body .container #header .mobile-menu nav.main, html body .container #header .mobile-menu nav.secondary { width: 45%; margin-right: 10%; float: left; }
+  html body .container #header .mobile-menu nav.main:nth-of-type(2), html body .container #header .mobile-menu nav.secondary:nth-of-type(2) { margin-right: 0; } }
+@media only screen and (max-width: 48em) { html body .container #header .mobile-menu nav.tags ul.search li.text { display: none; }
   html body .container #header .mobile-menu nav.tags ul.search li.input { display: block; }
+  html body .container #header .mobile-menu nav.tags ul.search li.input input { width: 95%; }
   html body .container #header .mobile-menu nav.tags ul.tag-list { margin: 1.25em 0; }
   html body .container #header .mobile-menu nav.tags ul.social li { margin-right: 1.25em; }
   html body .container #header .mobile-menu #close-menu:after { content: '\2715'; color: white; padding: 0 0.3125em; border: 1px solid; position: relative; top: -1.875em; right: 1.25em; float: right; cursor: pointer; } }
@@ -356,6 +361,13 @@ html body.sticky .container #header { position: fixed; z-index: 1; background: w
 @media only screen and (max-width: 29.999em) { html body.sticky .container #header #hamburger-menu { display: block; }
   html body.sticky .container #header .logo figure img { width: 50%; }
   html body.sticky .container #header nav.mobile-navbar { display: none !important; } }
+@media only screen and (min-width: 30em) and (max-width: 48em) { html body.sticky .container #header .logo { width: 35%; float: left; }
+  html body.sticky .container #header .mobile-navbar { width: calc(65% - 2.5em); float: left; background: white; color: #231f20; border: none; margin-top: 5%; }
+  html body.sticky .container #header .mobile-navbar a { color: #231f20; text-decoration: none; }
+  html body.sticky .container #header .mobile-navbar a:hover { color: #982022; }
+  html body.sticky .container #header .mobile-navbar ul { float: right; }
+  html body.sticky .container #header .mobile-navbar ul li { display: inline-block; float: left; margin-right: 0.625em; }
+  html body.sticky .container #header .mobile-navbar ul li:last-of-type { margin-right: 0; } }
 html body.sticky .container main, html body.sticky .container #footer { position: relative; top: 3.75em; }
 html body.frontpage .container main #intro { margin-bottom: 1.25em; }
 html body.frontpage .container main #intro #slider { /* The grid

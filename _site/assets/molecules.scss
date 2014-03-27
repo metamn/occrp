@@ -327,6 +327,10 @@
         @include list-normal;
         text-align: left;
       }
+      
+      @include tablet {
+        @include grid(2, 2);
+      }
     }
     
     &.tags {
@@ -339,6 +343,10 @@
             
             &.input {
               display: block;
+              
+              input {
+                width: 95%;
+              }
             }
           }
         }

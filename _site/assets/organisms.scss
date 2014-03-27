@@ -34,6 +34,31 @@
 }
 
 
+/* The fixed header for tablets
+*/
+@mixin fixed-header-tablet {
+  .logo {
+    width: 35%;
+    float: left;
+  }
+  
+  .mobile-navbar {
+    @include grid-resize(65%, $pad*2);
+    float: left;
+    
+    @include color;
+    border: none;
+    
+    margin-top: 5%;
+    
+    ul {
+      @include list-inline;
+      float: right;
+    }
+  }
+}
+
+
 /* The header for mobiles
 */
 @mixin header-mobile {
@@ -61,9 +86,6 @@
     display: none;
   }
 }
-
-
-
 
 
 
@@ -177,9 +199,6 @@
 
 
 
-@mixin header-tablet {
-
-}
 
 
 
