@@ -16,6 +16,10 @@
 /* The fixed header for mobile
 */
 @mixin fixed-header-mobile {
+  #hamburger-menu {
+    display: block;
+  }
+  
   .logo {
     figure {
       img {
@@ -27,10 +31,30 @@
   nav.mobile-navbar {
     display: none !important;
   }
+}
+
+
+/* The fixed header for tablets
+*/
+@mixin fixed-header-tablet {
+  .logo {
+    width: 35%;
+    float: left;
+  }
   
-  #hamburger-menu {
-    display: block;
-    top: $pad;
+  .mobile-navbar {
+    @include grid-resize(65%, $pad*2);
+    float: left;
+    
+    @include color;
+    border: none;
+    
+    margin-top: 5%;
+    
+    ul {
+      @include list-inline;
+      float: right;
+    }
   }
 }
 
@@ -50,6 +74,10 @@
   
   #hamburger-menu {
     @include hamburger-menu;
+    top: $pad;
+    cursor: pointer;
+    z-index: 3;
+    
     display: none;
   }
   
@@ -58,9 +86,6 @@
     display: none;
   }
 }
-
-
-
 
 
 
@@ -174,9 +199,6 @@
 
 
 
-@mixin header-tablet {
-
-}
 
 
 
