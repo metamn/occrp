@@ -18,6 +18,12 @@ $breakpoint-small-screen: 64em !default; /* 1024px */
 $breakpoint-large-screen: 90em !default; /* 1440px */
 
 
+@mixin landscape {
+  @media only screen and (orientation: landscape) {
+    @content;
+  }
+}
+
 @mixin mobile {
   @media only screen and (max-width: $breakpoint-mobile - 0.001) {
     @content;
@@ -48,6 +54,12 @@ $breakpoint-large-screen: 90em !default; /* 1440px */
   }
 }
 
+
+@mixin below-and-small-screen {
+  @media only screen and (max-width: $breakpoint-small-screen) {
+    @content;
+  }
+}
 
 
 @mixin small-screen {

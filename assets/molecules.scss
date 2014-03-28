@@ -297,6 +297,10 @@
         @include color($color-scheme);
         @include border-radius($pad);
       }
+      
+      @include below-and-tablet {
+        font-size: small;
+      }
     }
   }
 }
