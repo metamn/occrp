@@ -6,241 +6,6 @@
 
 
 
-
-/* The Header
---------------------------------------------------------------------------------
-*/
-
-
-
-/* The fixed header for mobile
-*/
-@mixin fixed-header-mobile {
-  #hamburger-menu {
-    display: block;
-  }
-  
-  .logo {
-    figure {
-      img {
-        width: 50%;
-      }
-    }
-  }
-  
-  nav.mobile-navbar {
-    display: none !important;
-  }
-}
-
-
-/* The fixed header for tablets
-*/
-@mixin fixed-header-tablet {
-  .logo {
-    width: 35%;
-    float: left;
-  }
-  
-  .mobile-navbar {
-    @include grid-resize(65%, $pad*2);
-    float: left;
-    
-    @include color;
-    border: none;
-    
-    margin-top: 5%;
-    
-    ul {
-      @include list-inline;
-      float: right;
-    }
-  }
-}
-
-
-/* The header for mobiles
-*/
-@mixin header-mobile {
-  nav {
-    &.main, &.secondary, &.tags {
-      display: none;
-    }
-    
-    &.mobile-navbar {
-      @include mobile-navbar;
-    }
-  }
-  
-  #hamburger-menu {
-    @include hamburger-menu;
-    top: $pad;
-    cursor: pointer;
-    z-index: 3;
-    
-    display: none;
-  }
-  
-  .mobile-menu {
-    @include mobile-menu;
-    display: none;
-  }
-}
-
-
-
-/* The logo
-*/
-@mixin logo {
-  text-align: center;
-  
-  h1, figure figcaption {
-    display: none;
-  }
-  
-  figure {
-    margin-top: $pad/2;
-  }
-}
-
-
-
-/* A menu
-  - an inline list of items, with different hover and active states
-  - it's parent is usually a <nav> element
-*/
-@mixin menu {
-  @include font(navigation);
-  
-  ul {
-    @include list-menu;
-  }  
-}
-
-
-/* Floats the secondary menu right
-*/
-@mixin menu-float-right {
-  ul {
-    float: right;
-    
-    li {
-      &.language {
-        margin-right: 0;
-      }
-    }
-  }
-}
-
-
-
-/* The tag bar
-*/
-@mixin tags {
-  @include color(invert);
-  
-  /* Since <a> has padding on the last social icon we must reduce the tagbar width
-  */ 
-  @include padding(100%, $pad/4);
-  padding: 0;
-  
-  ul {
-    &.search {
-      li {
-        &.text {
-          @include text-with-icon;
-        }
-        
-        &.input {
-          display: none;
-          
-          input {
-            margin: $pad/4;
-          }
-        }
-      }
-    }
-    
-    &.tag-list {
-      @include list-centered;
-    }
-    
-    &.tag-list, &.social {
-      @include list-inline($pad/4);
-    }
-    
-    &.social {
-      float: right;
-      
-      li {
-        @include text-with-icon;
-        
-        /* We are not replacing social icons on hover
-          - so the second image must not be displayed
-          - also the icon should be taller, the maximum possible
-        */
-        a {
-          img {
-            height: 13px;
-            
-            &:last-of-type {
-              display: none;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-
-
-
-
-
-
-
-
-
-@mixin header-desktop {
-  nav.mobile, aside {
-    display: none;
-  }
-  
-  
-  nav, section {
-    @include responsive-grid(3);
-  }
-  
-  /* Positioning the main elements
-  */
-  nav {
-    &.secondary {
-      margin-right: 0;
-    }
-    
-    &.tags {
-      @include block;
-      margin-top: $pad/2;
-    }
-  }
-  
-  nav {
-    &.main, &.secondary {
-      margin-top: $pad*2;
-      @include border-thin($color);
-    }
-  }
-}
-
-
-
-
-
-
-
-
-
 /* Articles
 --------------------------------------------------------------------------------
 */
@@ -311,6 +76,20 @@
       @include padding($col-width, $pad/2);
       padding-left: 0;
     }
+    
+    nav {
+      left: $col-width + $col-gutter;
+    }
+    
+    
+    @include below-tablet {
+      article figure, article h1, article #excerpt, nav {
+        @include block;
+      }
+    }
+    
+    
+    
   
   } @elseif ($style == title-right) {
     article {
@@ -480,6 +259,240 @@
   }
   
 }
+
+
+
+
+
+
+
+
+/* The Header
+--------------------------------------------------------------------------------
+*/
+
+
+
+/* The fixed header for mobile
+*/
+@mixin fixed-header-mobile {
+  #hamburger-menu {
+    display: block;
+  }
+  
+  .logo {
+    figure {
+      img {
+        width: 50%;
+      }
+    }
+  }
+  
+  nav.mobile-navbar {
+    display: none !important;
+  }
+}
+
+
+/* The fixed header for tablets
+*/
+@mixin fixed-header-tablet {
+  .logo {
+    width: 35%;
+    float: left;
+  }
+  
+  .mobile-navbar {
+    @include grid-resize(65%, $pad*2);
+    float: left;
+    
+    @include color;
+    border: none;
+    
+    margin-top: 5%;
+    
+    ul {
+      @include list-inline;
+      float: right;
+    }
+  }
+}
+
+@mixin fixed-header-desktop {
+  @include container;
+  
+  margin: 0 0 $pad*2 !important;
+  padding-top: $pad;
+  top: 0;
+  height: $pad*2;
+  
+  nav {
+    &.main, &.secondary {
+      margin-top: 0;
+      border: none;
+    }
+    
+    &.tags {
+      display: none;
+    }
+  }
+  
+  .logo {
+    height: $pad + $pad/2 + $pad/8;
+    
+    figure img {
+      max-width: 10em;
+      position: relative;
+      top: -$pad/4;
+    }
+  }
+}
+
+
+/* The header for mobiles
+*/
+@mixin header-mobile {
+  nav {
+    &.main, &.secondary, &.tags {
+      display: none;
+    }
+    
+    &.mobile-navbar {
+      @include mobile-navbar;
+    }
+  }
+  
+  #hamburger-menu {
+    @include hamburger-menu;
+    top: $pad;
+    cursor: pointer;
+    z-index: 3;
+    
+    display: none;
+  }
+  
+  .mobile-menu {
+    @include mobile-menu;
+    display: none;
+  }
+}
+
+
+@mixin header-desktop {
+  .mobile-menu, .mobile-navbar {
+    display: none;
+  }
+  
+  nav, section {
+    @include responsive-grid(3);
+  }
+  
+  /* Positioning the main elements
+  */
+  nav {
+    @include menu;
+    
+    &.secondary {
+      margin-right: 0;
+      @include menu-float-right;
+    }
+    
+    &.main, &.secondary {
+      @include list-inline($pad/4);
+      margin-top: $pad*2;
+    }
+    
+    &.tags {
+      @include block;
+      margin-top: $pad/2;
+    }
+  }
+}
+
+
+
+
+
+/* The logo
+*/
+@mixin logo {
+  text-align: center;
+  
+  h1, figure figcaption {
+    display: none;
+  }
+  
+  figure {
+    margin-top: $pad/2;
+  }
+}
+
+
+
+
+
+
+/* The tag bar
+*/
+@mixin tags {
+  @include color(invert);
+  
+  /* Since <a> has padding on the last social icon we must reduce the tagbar width
+  */ 
+  @include padding(100%, $pad/4);
+  padding: 0;
+  
+  ul {
+    &.search {
+      li {
+        &.text {
+          @include text-with-icon;
+        }
+        
+        &.input {
+          display: none;
+          
+          input {
+            margin: $pad/4;
+          }
+        }
+      }
+    }
+    
+    &.tag-list {
+      @include list-centered;
+    }
+    
+    &.tag-list, &.social, &.search {
+      @include list-inline($pad/4);
+    }
+    
+    &.social {
+      float: right;
+      
+      li {
+        @include text-with-icon;
+        
+        /* We are not replacing social icons on hover
+          - so the second image must not be displayed
+          - also the icon should be taller, the maximum possible
+        */
+        a {
+          img {
+            height: 13px;
+            
+            &:last-of-type {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
 
 
 

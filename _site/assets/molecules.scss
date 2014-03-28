@@ -109,7 +109,7 @@
 /* A responsive grid
 */
 @mixin responsive-grid($how-many, $maximum : 10) {
-  @include below-and-tablet {
+  @include below-tablet {
     @include col(100%, 0);
   }
   
@@ -297,6 +297,10 @@
         @include color($color-scheme);
         @include border-radius($pad);
       }
+      
+      @include below-and-tablet {
+        font-size: small;
+      }
     }
   }
 }
@@ -425,6 +429,35 @@
     float: right;
     
     cursor: pointer;
+  }
+}
+
+
+
+/* A menu
+  - an inline list of items, with different hover and active states
+  - it's parent is usually a <nav> element
+*/
+@mixin menu {
+  @include font(navigation);
+  
+  ul {
+    @include list-menu;
+  }  
+}
+
+
+/* Floats the secondary menu right
+*/
+@mixin menu-float-right {
+  ul {
+    float: right;
+    
+    li {
+      &.language {
+        margin-right: 0;
+      }
+    }
   }
 }
 
