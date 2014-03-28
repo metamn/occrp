@@ -1,5 +1,12 @@
 /* Organisms of the Atomic web design - groups of molecules joined together to form a relatively complex, distinct section of an interface.
 */
+/* Articles
+--------------------------------------------------------------------------------
+*/
+/* Styling article thumbs - controls how an article thumb is displayed
+*/
+/* An article - displays mostly article thumbs - this mixin controls what is diplayed in an article
+*/
 /* The Header
 --------------------------------------------------------------------------------
 */
@@ -11,18 +18,7 @@
 */
 /* The logo
 */
-/* A menu - an inline list of items, with different hover and active states - it's parent is usually a <nav> element
-*/
-/* Floats the secondary menu right
-*/
 /* The tag bar
-*/
-/* Articles
---------------------------------------------------------------------------------
-*/
-/* Styling article thumbs - controls how an article thumb is displayed
-*/
-/* An article - displays mostly article thumbs - this mixin controls what is diplayed in an article
 */
 /* Typography
 --------------------------------------------------------------------------------

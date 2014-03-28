@@ -449,15 +449,18 @@
   /* The grid
   */
   @include col-nm(2, 3);
+  
+  @include below-and-small-screen {
+    @include block;
+  }
+  
   @include article-style(slider);
-  $col-gutter: col-gutter(3);
-  $col-width: col-by-gutter-width(2, $col-gutter);
+  
   
   /* The slider of multiple articles
   */
   position: relative;
   height: 20.4em;
-  
   
   article {
     position: absolute;
@@ -466,7 +469,34 @@
   nav {
     position: absolute;
     bottom: $pad/2;
-    left: $col-width + $col-gutter;
+  }
+  
+  @include below-tablet {
+    height: auto;
+    
+    article {
+      position: relative;
+    }
+    
+    nav {
+      left: 0;
+      top: 10.3em;
+      margin-top: 0 !important;
+      
+      ol {
+        li {
+          opacity: .7;
+        }
+      }
+      
+      @include landscape {
+        top: $pad*13;
+      }
+    }
+  }
+  
+  @include tablet {
+    height: 15.6em;
   }
   
   
@@ -496,6 +526,10 @@
   @include tablet {
     @include fixed-header-tablet;
   }
+  
+  @include tablet-and-up {
+    @include fixed-header-desktop;
+  }
 }
 
 
@@ -511,7 +545,6 @@
   }
   
   nav {
-    @include menu;
     @include border-thin($color);
     
     &.secondary {
