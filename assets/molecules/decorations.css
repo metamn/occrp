@@ -1,8 +1,3 @@
-/* Remove the extra padding bottom for images inside a link
-- http://stackoverflow.com/questions/3532870/extra-padding-on-linked-images-in-every-broswer
-*/
-figure a { line-height: 0; }
-
 /* Social icons
 */
 /* On hover shows a different image - the two images must be siblings in a container - this mixin is added to the container
@@ -13,12 +8,11 @@ figure a { line-height: 0; }
 */
 /* The language selector
 */
-/* Decorations, colors, etc.
---------------------------------------------------------------------------------
-*/
-/* Set the background and font color - 'invert' inverts this color scheme
-*/
-/* Links
-*/
 /* Borders
 */
+/* Common
+*/
+/* Remove the extra padding bottom for images inside a link
+- http://stackoverflow.com/questions/3532870/extra-padding-on-linked-images-in-every-broswer
+*/
+figure a { line-height: 0; }

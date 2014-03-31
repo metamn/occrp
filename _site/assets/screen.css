@@ -79,11 +79,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 */
 /* Font sizing for headers - We employ modern typography where headers differ by design not by font size - We size fonts by REM instead of EM - We use Traditional / em scaling from http://lamb.cc/typograph/
 */
-/* Remove the extra padding bottom for images inside a link
-- http://stackoverflow.com/questions/3532870/extra-padding-on-linked-images-in-every-broswer
+/* Set the background and font color - 'invert' inverts this color scheme
 */
-figure a { line-height: 0; }
-
+/* Links
+*/
 /* Social icons
 */
 /* On hover shows a different image - the two images must be siblings in a container - this mixin is added to the container
@@ -94,15 +93,15 @@ figure a { line-height: 0; }
 */
 /* The language selector
 */
-/* Decorations, colors, etc.
---------------------------------------------------------------------------------
-*/
-/* Set the background and font color - 'invert' inverts this color scheme
-*/
-/* Links
-*/
 /* Borders
 */
+/* Common
+*/
+/* Remove the extra padding bottom for images inside a link
+- http://stackoverflow.com/questions/3532870/extra-padding-on-linked-images-in-every-broswer
+*/
+figure a { line-height: 0; }
+
 /* The width of the content - the content is centered with automatic left and right margins
 */
 /* Flexible grid - all items are aligned left with an uniform margin - this grid can be dynamically positioned by Isotope

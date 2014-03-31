@@ -1,21 +1,3 @@
-@mixin fluid-image {
-  img {
-    width: auto;
-    height: auto;
-    max-width: 100%;
-  }
-}
-
-
-/* Remove the extra padding bottom for images inside a link
-- http://stackoverflow.com/questions/3532870/extra-padding-on-linked-images-in-every-broswer
-*/
-figure {
-  a {
-    line-height: 0;
-  }
-}
-
 
 /* Social icons
 */
@@ -128,76 +110,34 @@ figure {
 
 
 
-
-
-/* Decorations, colors, etc.
---------------------------------------------------------------------------------
-*/
-
-
-
-/* Set the background and font color
-  - 'invert' inverts this color scheme
-*/
-@mixin color($type : normal) {
-  @if ($type == normal) {
-    background: $background;
-    color: $color;
-    @include link;
-    
-  } @elseif ($type == invert) {
-    background: $color;
-    color: $background;
-    @include link($background, $background);
-  
-  } @elseif ($type == highlight) {
-    background: $background;
-    color: $highlight;
-    @include link($highlight, $color);
-    
-  } @elseif ($type == menu) {
-    background: $highlight;
-    color: $background;
-    @include link($background, $background);
-
-  } @elseif ($type == slider) {
-    background: $background;
-    color: $color;
-    @include link($color, $background);
-  
-  } @elseif ($type == navigation) {
-    background: $light-grey;
-    color: $color;
-    @include link($color, $background);
-    
-  } @elseif ($type == blog-thumb) {
-    background: $grey;
-    color: $background;
-    @include link($background, $background);
-  
-  } @elseif ($type == invert-highlight) {
-    background: $color;
-    color: $highlight;
-    @include link($background, $background);
-  }
-}
-
-
-/* Links
-*/
-
-@import "compass/typography/links/link-colors";
-@mixin link($c: $color, $h: $highlight) {
-  a {
-    @include link-colors($c, $h);
-    text-decoration: none;
-  }
-}
-
-
 /* Borders
 */
 
 @mixin border-thin($c: $light-grey) {
   border-bottom: 1px solid $c;
 }
+
+
+
+/* Common
+*/
+
+@mixin fluid-image {
+  img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+
+/* Remove the extra padding bottom for images inside a link
+- http://stackoverflow.com/questions/3532870/extra-padding-on-linked-images-in-every-broswer
+*/
+figure {
+  a {
+    line-height: 0;
+  }
+}
+
+
