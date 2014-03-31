@@ -167,6 +167,9 @@
 }
 
 
+
+
+
 /* Hide a section title
 */
 @mixin hide-title {
@@ -182,3 +185,12 @@
     display: block;
   }
 }
+
+/* Strech content to fill parent width
+*/
+@mixin block {
+  width: 100%;
+  max-width: 100%;
+  float: left;
+}
+

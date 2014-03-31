@@ -33,11 +33,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* 700px / 16px */
 /* The width of the content
 */
-/* The golden ratio
-*/
 /* Flexible grid
-*/
-/* Strech content to fill parent width
 */
 /* Background */
 /* for better monitors e5e5e5 suits better, for poor displays f9f9f9 is better */
@@ -59,11 +55,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* 700px / 16px */
 /* The width of the content
 */
-/* The golden ratio
-*/
 /* Flexible grid
 */
-/* Strech content to fill parent width
+/* Displays an <ul> list inline
+*/
+/* Transforms an inline list back to normal
+*/
+/* Centers an inline list
+*/
+/* Highlights an active item in a list / menu
 */
 /* The basic body font size - See http://lamb.cc/typograph/
 */
@@ -101,6 +101,8 @@ figure a { line-height: 0; }
 */
 /* Links
 */
+/* Borders
+*/
 /* The width of the content - the content is centered with automatic left and right margins
 */
 /* Flexible grid - all items are aligned left with an uniform margin - this grid can be dynamically positioned by Isotope
@@ -133,13 +135,7 @@ figure a { line-height: 0; }
 */
 /* Show a section title
 */
-/* Displays an <ul> list inline
-*/
-/* Transforms an inline list back to normal
-*/
-/* Centers an inline list
-*/
-/* Highlights an active item in a list / menu
+/* Strech content to fill parent width
 */
 /* Navigation
 */

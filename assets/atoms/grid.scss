@@ -1,3 +1,4 @@
+
 $breakpoint-mobile: 30em !default; /* 480px, iPhone 3,4 landscape */
 $breakpoint-tablet: 48em !default; /* 768px */
 $breakpoint-small-screen: 64em !default; /* 1024px */
@@ -90,10 +91,6 @@ $container-margin: 2.5%;
 $large-screen-container-width: 75%;
 $large-screen-container-margin: 12.5%;
 
-/* The golden ratio
-*/
-$major: 61.8%;
-$minor: 38.2%;
 
 
 /* Flexible grid
@@ -103,10 +100,3 @@ $flexible-grid-margin: 3%;
 
 
 
-/* Strech content to fill parent width
-*/
-@mixin block {
-  width: 100%;
-  max-width: 100%;
-  float: left;
-}

@@ -194,3 +194,10 @@ figure {
   }
 }
 
+
+/* Borders
+*/
+
+@mixin border-thin($c: $light-grey) {
+  border-bottom: 1px solid $c;
+}

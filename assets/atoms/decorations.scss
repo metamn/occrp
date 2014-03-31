@@ -1,11 +1,6 @@
 $border: $pad/4 solid;
 $border-thin: 1px solid;
 
-@mixin border-thin($c: $light-grey) {
-  border-bottom: 1px solid $c;
-}
-
-
 $easing: all 0.5s ease-in-out;
 $shadow: 15px 20px 25px -10px rgba(0, 0, 0, 0.698), 0 1px rgba(0, 0, 0, 0.1), 0 0 4px rgba(0, 0, 0, 0.1) inset;
 $shadow-remove: 0px 0px 0px 0px transparent;
