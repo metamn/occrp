@@ -136,11 +136,13 @@ figure a { line-height: 0; }
 */
 /* Strech content to fill parent width
 */
-/* Navigation
-*/
 /* A menu - an inline list of items, with different hover and active states - it's parent is usually a <nav> element
 */
 /* Floats the secondary menu right
+*/
+/* The tag bar
+*/
+/* The logo
 */
 /* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback  
 	Usage: @include font-size(1, large);
@@ -159,15 +161,7 @@ figure a { line-height: 0; }
 */
 /* An article - displays mostly article thumbs - this mixin controls what is diplayed in an article
 */
-/* The fixed header for mobile
-*/
-/* The fixed header for tablets
-*/
-/* The header for mobiles
-*/
-/* The logo
-*/
-/* The tag bar
+/* The navigation bar in the header
 */
 /* Default settings for this theme - like typography, links, colors, etc
 */
@@ -249,12 +243,23 @@ html body .container { width: 95%; margin: 0 2.5%; }
 html body .container #header, html body .container main, html body .container section, html body .container nav, html body .container aside, html body .container #footer { width: 100%; max-width: 100%; float: left; }
 html body .container #header > h3, html body .container main > h3, html body .container section > h3, html body .container nav > h3, html body .container aside > h3, html body .container #footer > h3 { display: none; }
 html body .container main { margin: 1.25em 0 0; }
-html body .container #header { /* Common styling
-*/ /* Responsive layouts
+html body .container #header { /* Responsive layouts
 */ }
 html body .container #header .logo { text-align: center; }
 html body .container #header .logo h1, html body .container #header .logo figure figcaption { display: none; }
 html body .container #header .logo figure { margin-top: 0.625em; }
+@media only screen and (min-width: 48.001em) and (max-width: 47.999em) { html body .container #header .logo { width: 100%; margin-right: 0; float: left; } }
+@media only screen and (min-width: 48.001em) and (min-width: 64.001em) { html body .container #header .logo { width: 31.5%; margin-right: 2.5%; float: left; }
+  html body .container #header .logo:nth-of-type(2) { margin-right: 2.5%; }
+  html body .container #header .logo:nth-of-type(3) { margin-right: 0; }
+  html body .container #header .logo:nth-of-type(4) { margin-right: 2.5%; }
+  html body .container #header .logo:nth-of-type(5) { margin-right: 2.5%; }
+  html body .container #header .logo:nth-of-type(6) { margin-right: 0; }
+  html body .container #header .logo:nth-of-type(7) { margin-right: 2.5%; }
+  html body .container #header .logo:nth-of-type(8) { margin-right: 2.5%; }
+  html body .container #header .logo:nth-of-type(9) { margin-right: 0; }
+  html body .container #header .logo:nth-of-type(10) { margin-right: 2.5%; } }
+
 html body .container #header nav { border-bottom: 1px solid #231f20; }
 html body .container #header nav.secondary ul li.language img { height: 12px; position: relative; top: 1px; }
 html body .container #header nav.secondary ul li.english { display: none; }
@@ -285,8 +290,31 @@ html body .container #header nav.tags ul.social li a img { height: 1.25em; }
   html body .container #header nav.mobile-navbar ul.mobile-navbar-menu li { display: inline-block; float: left; margin-right: 0.625em; }
   html body .container #header nav.mobile-navbar ul.mobile-navbar-menu li:last-of-type { margin-right: 0; }
   html body .container #header nav.mobile-navbar ul.mobile-navbar-menu li.hamburger span { position: relative; display: block; min-width: 1.25em; top: 1px; }
-  html body .container #header nav.mobile-navbar ul.mobile-navbar-menu li.hamburger span:before { content: ""; position: absolute; top: 0.25em; left: 0; width: 1em; height: 0.125em; border-top: 0.375em double white; border-bottom: 0.125em solid white; }
-  html body .container #header #hamburger-menu { position: relative; display: block; top: 1.25em; cursor: pointer; z-index: 3; display: none; }
+  html body .container #header nav.mobile-navbar ul.mobile-navbar-menu li.hamburger span:before { content: ""; position: absolute; top: 0.25em; left: 0; width: 1em; height: 0.125em; border-top: 0.375em double white; border-bottom: 0.125em solid white; } }
+@media only screen and (min-width: 48.001em) { html body .container #header nav { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; } }
+@media only screen and (min-width: 48.001em) and (max-width: 47.999em) { html body .container #header nav { width: 100%; margin-right: 0; float: left; } }
+@media only screen and (min-width: 48.001em) and (min-width: 64.001em) { html body .container #header nav { width: 31.5%; margin-right: 2.5%; float: left; }
+  html body .container #header nav:nth-of-type(2) { margin-right: 2.5%; }
+  html body .container #header nav:nth-of-type(3) { margin-right: 0; }
+  html body .container #header nav:nth-of-type(4) { margin-right: 2.5%; }
+  html body .container #header nav:nth-of-type(5) { margin-right: 2.5%; }
+  html body .container #header nav:nth-of-type(6) { margin-right: 0; }
+  html body .container #header nav:nth-of-type(7) { margin-right: 2.5%; }
+  html body .container #header nav:nth-of-type(8) { margin-right: 2.5%; }
+  html body .container #header nav:nth-of-type(9) { margin-right: 0; }
+  html body .container #header nav:nth-of-type(10) { margin-right: 2.5%; } }
+@media only screen and (min-width: 48.001em) { html body .container #header nav ul li a { padding: 0.625em 0.3125em; display: inline-block; }
+  html body .container #header nav ul li.active a, html body .container #header nav ul li:hover a { background: #982022; color: white; }
+  html body .container #header nav ul li.active a a, html body .container #header nav ul li:hover a a { color: white; text-decoration: none; }
+  html body .container #header nav ul li.active a a:hover, html body .container #header nav ul li:hover a a:hover { color: white; }
+  html body .container #header nav.secondary { margin-right: 0; }
+  html body .container #header nav.secondary ul { float: right; }
+  html body .container #header nav.secondary ul li.language { margin-right: 0; }
+  html body .container #header nav.main, html body .container #header nav.secondary { margin-top: 2.5em; }
+  html body .container #header nav.main li, html body .container #header nav.secondary li { display: inline-block; float: left; margin-right: 0.3125em; }
+  html body .container #header nav.main li:last-of-type, html body .container #header nav.secondary li:last-of-type { margin-right: 0; }
+  html body .container #header nav.tags { width: 100%; max-width: 100%; float: left; margin-top: 0.625em; } }
+@media only screen and (max-width: 48em) { html body .container #header #hamburger-menu { position: relative; display: block; top: 1.25em; cursor: pointer; z-index: 3; display: none; }
   html body .container #header #hamburger-menu:before { content: ""; position: absolute; top: 0.25em; left: 0; width: 1em; height: 0.125em; border-top: 0.375em double #231f20; border-bottom: 0.125em solid #231f20; }
   html body .container #header .mobile-menu { display: none; }
   html body .container #header .mobile-menu nav.main, html body .container #header .mobile-menu nav.secondary, html body .container #header .mobile-menu nav.tags { display: block; margin-top: 2.5em; }
@@ -302,32 +330,7 @@ html body .container #header nav.tags ul.social li a img { height: 1.25em; }
   html body .container #header .mobile-menu nav.tags ul.tag-list { margin: 1.25em 0; }
   html body .container #header .mobile-menu nav.tags ul.social li { margin-right: 1.25em; }
   html body .container #header .mobile-menu #close-menu:after { content: '\2715'; color: white; padding: 0 0.3125em; border: 1px solid; position: relative; top: -1.875em; right: 1.25em; float: right; cursor: pointer; } }
-@media only screen and (min-width: 48.001em) { html body .container #header { /* Positioning the main elements
-*/ }
-  html body .container #header .mobile-menu, html body .container #header .mobile-navbar { display: none; } }
-@media only screen and (min-width: 48.001em) and (max-width: 47.999em) { html body .container #header nav, html body .container #header section { width: 100%; margin-right: 0; float: left; } }
-@media only screen and (min-width: 48.001em) and (min-width: 64.001em) { html body .container #header nav, html body .container #header section { width: 31.5%; margin-right: 2.5%; float: left; }
-  html body .container #header nav:nth-of-type(2), html body .container #header section:nth-of-type(2) { margin-right: 2.5%; }
-  html body .container #header nav:nth-of-type(3), html body .container #header section:nth-of-type(3) { margin-right: 0; }
-  html body .container #header nav:nth-of-type(4), html body .container #header section:nth-of-type(4) { margin-right: 2.5%; }
-  html body .container #header nav:nth-of-type(5), html body .container #header section:nth-of-type(5) { margin-right: 2.5%; }
-  html body .container #header nav:nth-of-type(6), html body .container #header section:nth-of-type(6) { margin-right: 0; }
-  html body .container #header nav:nth-of-type(7), html body .container #header section:nth-of-type(7) { margin-right: 2.5%; }
-  html body .container #header nav:nth-of-type(8), html body .container #header section:nth-of-type(8) { margin-right: 2.5%; }
-  html body .container #header nav:nth-of-type(9), html body .container #header section:nth-of-type(9) { margin-right: 0; }
-  html body .container #header nav:nth-of-type(10), html body .container #header section:nth-of-type(10) { margin-right: 2.5%; } }
-@media only screen and (min-width: 48.001em) { html body .container #header nav { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; }
-  html body .container #header nav ul li a { padding: 0.625em 0.3125em; display: inline-block; }
-  html body .container #header nav ul li.active a, html body .container #header nav ul li:hover a { background: #982022; color: white; }
-  html body .container #header nav ul li.active a a, html body .container #header nav ul li:hover a a { color: white; text-decoration: none; }
-  html body .container #header nav ul li.active a a:hover, html body .container #header nav ul li:hover a a:hover { color: white; }
-  html body .container #header nav.secondary { margin-right: 0; }
-  html body .container #header nav.secondary ul { float: right; }
-  html body .container #header nav.secondary ul li.language { margin-right: 0; }
-  html body .container #header nav.main, html body .container #header nav.secondary { margin-top: 2.5em; }
-  html body .container #header nav.main li, html body .container #header nav.secondary li { display: inline-block; float: left; margin-right: 0.3125em; }
-  html body .container #header nav.main li:last-of-type, html body .container #header nav.secondary li:last-of-type { margin-right: 0; }
-  html body .container #header nav.tags { width: 100%; max-width: 100%; float: left; margin-top: 0.625em; } }
+@media only screen and (min-width: 48.001em) { html body .container #header .mobile-menu, html body .container #header .mobile-navbar { display: none; } }
 html body .container #footer { margin: 3.75em 0 0; padding: 1.25em 0; border-top: 0.3125em solid; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; }
 html body .container #footer ul li { display: inline-block; float: left; margin-right: 1.25em; }
 html body .container #footer ul li:last-of-type { margin-right: 0; }
@@ -339,11 +342,139 @@ html body .container #footer ul li#social-icons p a:hover { color: white; }
 html body .container #footer ul li#social-icons ul li img:last-of-type { display: none; position: relative; top: 0; }
 html body .container #footer ul li#social-icons ul li:hover img:first-of-type { display: none; }
 html body .container #footer ul li#social-icons ul li:hover img:last-of-type { display: block; }
-html body.sticky .container #header { position: fixed; z-index: 1; background: white; border-bottom: 1px solid #f1f1f1; }
+html body.sticky .container #header { position: fixed; z-index: 1; background: white; border-bottom: 1px solid #f1f1f1; /* Responsive layouts
+*/ }
+html body.sticky .container #header .logo { text-align: center; }
+html body.sticky .container #header .logo h1, html body.sticky .container #header .logo figure figcaption { display: none; }
+html body.sticky .container #header .logo figure { margin-top: 0.625em; }
+@media only screen and (min-width: 48.001em) and (max-width: 47.999em) { html body.sticky .container #header .logo { width: 100%; margin-right: 0; float: left; } }
+@media only screen and (min-width: 48.001em) and (min-width: 64.001em) { html body.sticky .container #header .logo { width: 31.5%; margin-right: 2.5%; float: left; }
+  html body.sticky .container #header .logo:nth-of-type(2) { margin-right: 2.5%; }
+  html body.sticky .container #header .logo:nth-of-type(3) { margin-right: 0; }
+  html body.sticky .container #header .logo:nth-of-type(4) { margin-right: 2.5%; }
+  html body.sticky .container #header .logo:nth-of-type(5) { margin-right: 2.5%; }
+  html body.sticky .container #header .logo:nth-of-type(6) { margin-right: 0; }
+  html body.sticky .container #header .logo:nth-of-type(7) { margin-right: 2.5%; }
+  html body.sticky .container #header .logo:nth-of-type(8) { margin-right: 2.5%; }
+  html body.sticky .container #header .logo:nth-of-type(9) { margin-right: 0; }
+  html body.sticky .container #header .logo:nth-of-type(10) { margin-right: 2.5%; } }
+
+html body.sticky .container #header nav { border-bottom: 1px solid #231f20; }
+html body.sticky .container #header nav.secondary ul li.language img { height: 12px; position: relative; top: 1px; }
+html body.sticky .container #header nav.secondary ul li.english { display: none; }
+html body.sticky .container #header nav.tags { background: #231f20; color: white; /* Since <a> has padding on the last social icon we must reduce the tagbar width
+*/ padding: 0.3125em; width: calc(100% - 0.625em); padding: 0; }
+html body.sticky .container #header nav.tags a { color: white; text-decoration: none; }
+html body.sticky .container #header nav.tags a:hover { color: white; }
+html body.sticky .container #header nav.tags ul.search li.text img { height: 12px; position: relative; top: 1px; }
+html body.sticky .container #header nav.tags ul.search li.input { display: none; }
+html body.sticky .container #header nav.tags ul.search li.input input { margin: 0.3125em; }
+html body.sticky .container #header nav.tags ul.tag-list { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
+html body.sticky .container #header nav.tags ul.tag-list li, html body.sticky .container #header nav.tags ul.social li, html body.sticky .container #header nav.tags ul.search li { display: inline-block; float: left; margin-right: 0.3125em; }
+html body.sticky .container #header nav.tags ul.tag-list li:last-of-type, html body.sticky .container #header nav.tags ul.social li:last-of-type, html body.sticky .container #header nav.tags ul.search li:last-of-type { margin-right: 0; }
+html body.sticky .container #header nav.tags ul.social { float: right; }
+html body.sticky .container #header nav.tags ul.social li { /* We are not replacing social icons on hover - so the second image must not be displayed - also the icon should be taller, the maximum possible
+*/ }
+html body.sticky .container #header nav.tags ul.social li img { height: 12px; position: relative; top: 1px; }
+html body.sticky .container #header nav.tags ul.social li a img { height: 13px; }
+html body.sticky .container #header nav.tags ul.social li a img:last-of-type { display: none; }
+html body.sticky .container #header nav.tags ul.search, html body.sticky .container #header nav.tags ul.tag-list { margin-top: 0.3125em; }
+html body.sticky .container #header nav.tags ul.social li a { margin-bottom: 0.3125em; height: 1.25em; }
+html body.sticky .container #header nav.tags ul.social li a img { height: 1.25em; }
+@media only screen and (max-width: 48em) { html body.sticky .container #header nav.main, html body.sticky .container #header nav.secondary, html body.sticky .container #header nav.tags { display: none; }
+  html body.sticky .container #header nav.mobile-navbar { width: 100%; max-width: 100%; float: left; background: #231f20; color: white; padding: 0.3125em; width: calc(100% - 0.625em); font-size: 70%; margin-top: 0.625em; cursor: pointer; }
+  html body.sticky .container #header nav.mobile-navbar a { color: white; text-decoration: none; }
+  html body.sticky .container #header nav.mobile-navbar a:hover { color: white; }
+  html body.sticky .container #header nav.mobile-navbar ul.mobile-navbar-menu { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
+  html body.sticky .container #header nav.mobile-navbar ul.mobile-navbar-menu li { display: inline-block; float: left; margin-right: 0.625em; }
+  html body.sticky .container #header nav.mobile-navbar ul.mobile-navbar-menu li:last-of-type { margin-right: 0; }
+  html body.sticky .container #header nav.mobile-navbar ul.mobile-navbar-menu li.hamburger span { position: relative; display: block; min-width: 1.25em; top: 1px; }
+  html body.sticky .container #header nav.mobile-navbar ul.mobile-navbar-menu li.hamburger span:before { content: ""; position: absolute; top: 0.25em; left: 0; width: 1em; height: 0.125em; border-top: 0.375em double white; border-bottom: 0.125em solid white; } }
+@media only screen and (min-width: 48.001em) { html body.sticky .container #header nav { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; } }
+@media only screen and (min-width: 48.001em) and (max-width: 47.999em) { html body.sticky .container #header nav { width: 100%; margin-right: 0; float: left; } }
+@media only screen and (min-width: 48.001em) and (min-width: 64.001em) { html body.sticky .container #header nav { width: 31.5%; margin-right: 2.5%; float: left; }
+  html body.sticky .container #header nav:nth-of-type(2) { margin-right: 2.5%; }
+  html body.sticky .container #header nav:nth-of-type(3) { margin-right: 0; }
+  html body.sticky .container #header nav:nth-of-type(4) { margin-right: 2.5%; }
+  html body.sticky .container #header nav:nth-of-type(5) { margin-right: 2.5%; }
+  html body.sticky .container #header nav:nth-of-type(6) { margin-right: 0; }
+  html body.sticky .container #header nav:nth-of-type(7) { margin-right: 2.5%; }
+  html body.sticky .container #header nav:nth-of-type(8) { margin-right: 2.5%; }
+  html body.sticky .container #header nav:nth-of-type(9) { margin-right: 0; }
+  html body.sticky .container #header nav:nth-of-type(10) { margin-right: 2.5%; } }
+@media only screen and (min-width: 48.001em) { html body.sticky .container #header nav ul li a { padding: 0.625em 0.3125em; display: inline-block; }
+  html body.sticky .container #header nav ul li.active a, html body.sticky .container #header nav ul li:hover a { background: #982022; color: white; }
+  html body.sticky .container #header nav ul li.active a a, html body.sticky .container #header nav ul li:hover a a { color: white; text-decoration: none; }
+  html body.sticky .container #header nav ul li.active a a:hover, html body.sticky .container #header nav ul li:hover a a:hover { color: white; }
+  html body.sticky .container #header nav.secondary { margin-right: 0; }
+  html body.sticky .container #header nav.secondary ul { float: right; }
+  html body.sticky .container #header nav.secondary ul li.language { margin-right: 0; }
+  html body.sticky .container #header nav.main, html body.sticky .container #header nav.secondary { margin-top: 2.5em; }
+  html body.sticky .container #header nav.main li, html body.sticky .container #header nav.secondary li { display: inline-block; float: left; margin-right: 0.3125em; }
+  html body.sticky .container #header nav.main li:last-of-type, html body.sticky .container #header nav.secondary li:last-of-type { margin-right: 0; }
+  html body.sticky .container #header nav.tags { width: 100%; max-width: 100%; float: left; margin-top: 0.625em; } }
 @media only screen and (max-width: 29.999em) { html body.sticky .container #header #hamburger-menu { display: block; }
+  html body.sticky .container #header .logo h1, html body.sticky .container #header .logo figure figcaption { display: none; }
   html body.sticky .container #header .logo figure img { width: 50%; }
+  html body.sticky .container #header nav { border-bottom: 1px solid #231f20; }
+  html body.sticky .container #header nav.secondary ul li.language img { height: 12px; position: relative; top: 1px; }
+  html body.sticky .container #header nav.secondary ul li.english { display: none; }
+  html body.sticky .container #header nav.tags { background: #231f20; color: white; /* Since <a> has padding on the last social icon we must reduce the tagbar width
+*/ padding: 0.3125em; width: calc(100% - 0.625em); padding: 0; }
+  html body.sticky .container #header nav.tags a { color: white; text-decoration: none; }
+  html body.sticky .container #header nav.tags a:hover { color: white; }
+  html body.sticky .container #header nav.tags ul.search li.text img { height: 12px; position: relative; top: 1px; }
+  html body.sticky .container #header nav.tags ul.search li.input { display: none; }
+  html body.sticky .container #header nav.tags ul.search li.input input { margin: 0.3125em; }
+  html body.sticky .container #header nav.tags ul.tag-list { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
+  html body.sticky .container #header nav.tags ul.tag-list li, html body.sticky .container #header nav.tags ul.social li, html body.sticky .container #header nav.tags ul.search li { display: inline-block; float: left; margin-right: 0.3125em; }
+  html body.sticky .container #header nav.tags ul.tag-list li:last-of-type, html body.sticky .container #header nav.tags ul.social li:last-of-type, html body.sticky .container #header nav.tags ul.search li:last-of-type { margin-right: 0; }
+  html body.sticky .container #header nav.tags ul.social { float: right; }
+  html body.sticky .container #header nav.tags ul.social li { /* We are not replacing social icons on hover - so the second image must not be displayed - also the icon should be taller, the maximum possible
+*/ }
+  html body.sticky .container #header nav.tags ul.social li img { height: 12px; position: relative; top: 1px; }
+  html body.sticky .container #header nav.tags ul.social li a img { height: 13px; }
+  html body.sticky .container #header nav.tags ul.social li a img:last-of-type { display: none; }
+  html body.sticky .container #header nav.tags ul.search, html body.sticky .container #header nav.tags ul.tag-list { margin-top: 0.3125em; }
+  html body.sticky .container #header nav.tags ul.social li a { margin-bottom: 0.3125em; height: 1.25em; }
+  html body.sticky .container #header nav.tags ul.social li a img { height: 1.25em; } }
+@media only screen and (max-width: 29.999em) and (max-width: 48em) { html body.sticky .container #header nav.main, html body.sticky .container #header nav.secondary, html body.sticky .container #header nav.tags { display: none; }
+  html body.sticky .container #header nav.mobile-navbar { width: 100%; max-width: 100%; float: left; background: #231f20; color: white; padding: 0.3125em; width: calc(100% - 0.625em); font-size: 70%; margin-top: 0.625em; cursor: pointer; }
+  html body.sticky .container #header nav.mobile-navbar a { color: white; text-decoration: none; }
+  html body.sticky .container #header nav.mobile-navbar a:hover { color: white; }
+  html body.sticky .container #header nav.mobile-navbar ul.mobile-navbar-menu { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
+  html body.sticky .container #header nav.mobile-navbar ul.mobile-navbar-menu li { display: inline-block; float: left; margin-right: 0.625em; }
+  html body.sticky .container #header nav.mobile-navbar ul.mobile-navbar-menu li:last-of-type { margin-right: 0; }
+  html body.sticky .container #header nav.mobile-navbar ul.mobile-navbar-menu li.hamburger span { position: relative; display: block; min-width: 1.25em; top: 1px; }
+  html body.sticky .container #header nav.mobile-navbar ul.mobile-navbar-menu li.hamburger span:before { content: ""; position: absolute; top: 0.25em; left: 0; width: 1em; height: 0.125em; border-top: 0.375em double white; border-bottom: 0.125em solid white; }
   html body.sticky .container #header nav.mobile-navbar { display: none !important; } }
+@media only screen and (max-width: 29.999em) and (min-width: 48.001em) { html body.sticky .container #header nav { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; } }
+
+@media only screen and (max-width: 29.999em) and (min-width: 48.001em) and (max-width: 47.999em) { html body.sticky .container #header nav { width: 100%; margin-right: 0; float: left; } }
+@media only screen and (max-width: 29.999em) and (min-width: 48.001em) and (min-width: 64.001em) { html body.sticky .container #header nav { width: 31.5%; margin-right: 2.5%; float: left; }
+  html body.sticky .container #header nav:nth-of-type(2) { margin-right: 2.5%; }
+  html body.sticky .container #header nav:nth-of-type(3) { margin-right: 0; }
+  html body.sticky .container #header nav:nth-of-type(4) { margin-right: 2.5%; }
+  html body.sticky .container #header nav:nth-of-type(5) { margin-right: 2.5%; }
+  html body.sticky .container #header nav:nth-of-type(6) { margin-right: 0; }
+  html body.sticky .container #header nav:nth-of-type(7) { margin-right: 2.5%; }
+  html body.sticky .container #header nav:nth-of-type(8) { margin-right: 2.5%; }
+  html body.sticky .container #header nav:nth-of-type(9) { margin-right: 0; }
+  html body.sticky .container #header nav:nth-of-type(10) { margin-right: 2.5%; } }
+@media only screen and (max-width: 29.999em) and (min-width: 48.001em) { html body.sticky .container #header nav ul li a { padding: 0.625em 0.3125em; display: inline-block; }
+  html body.sticky .container #header nav ul li.active a, html body.sticky .container #header nav ul li:hover a { background: #982022; color: white; }
+  html body.sticky .container #header nav ul li.active a a, html body.sticky .container #header nav ul li:hover a a { color: white; text-decoration: none; }
+  html body.sticky .container #header nav ul li.active a a:hover, html body.sticky .container #header nav ul li:hover a a:hover { color: white; }
+  html body.sticky .container #header nav.secondary { margin-right: 0; }
+  html body.sticky .container #header nav.secondary ul { float: right; }
+  html body.sticky .container #header nav.secondary ul li.language { margin-right: 0; }
+  html body.sticky .container #header nav.main, html body.sticky .container #header nav.secondary { margin-top: 2.5em; }
+  html body.sticky .container #header nav.main li, html body.sticky .container #header nav.secondary li { display: inline-block; float: left; margin-right: 0.3125em; }
+  html body.sticky .container #header nav.main li:last-of-type, html body.sticky .container #header nav.secondary li:last-of-type { margin-right: 0; }
+  html body.sticky .container #header nav.tags { width: 100%; max-width: 100%; float: left; margin-top: 0.625em; } }
+
 @media only screen and (min-width: 30em) and (max-width: 48em) { html body.sticky .container #header .logo { width: 35%; float: left; }
+  html body.sticky .container #header .logo h1, html body.sticky .container #header .logo figure figcaption { display: none; }
   html body.sticky .container #header .mobile-navbar { width: calc(65% - 2.5em); float: left; background: white; color: #231f20; border: none; margin-top: 5%; }
   html body.sticky .container #header .mobile-navbar a { color: #231f20; text-decoration: none; }
   html body.sticky .container #header .mobile-navbar a:hover { color: #982022; }
@@ -352,10 +483,83 @@ html body.sticky .container #header { position: fixed; z-index: 1; background: w
   html body.sticky .container #header .mobile-navbar ul li:last-of-type { margin-right: 0; } }
 @media only screen and (min-width: 48.001em) { html body.sticky .container #header { width: 95%; margin: 0 2.5%; margin: 0 0 2.5em !important; padding-top: 1.25em; top: 0; height: 2.5em; } }
 @media only screen and (min-width: 48.001em) and (min-width: 90.001em) { html body.sticky .container #header { width: 75%; margin: 0 12.5%; } }
-@media only screen and (min-width: 48.001em) { html body.sticky .container #header nav.main, html body.sticky .container #header nav.secondary { margin-top: 0; border: none; }
-  html body.sticky .container #header nav.tags { display: none; }
-  html body.sticky .container #header .logo { height: 2.03125em; }
+@media only screen and (min-width: 48.001em) { html body.sticky .container #header nav { border-bottom: 1px solid #231f20; }
+  html body.sticky .container #header nav.secondary ul li.language img { height: 12px; position: relative; top: 1px; }
+  html body.sticky .container #header nav.secondary ul li.english { display: none; }
+  html body.sticky .container #header nav.tags { background: #231f20; color: white; /* Since <a> has padding on the last social icon we must reduce the tagbar width
+*/ padding: 0.3125em; width: calc(100% - 0.625em); padding: 0; }
+  html body.sticky .container #header nav.tags a { color: white; text-decoration: none; }
+  html body.sticky .container #header nav.tags a:hover { color: white; }
+  html body.sticky .container #header nav.tags ul.search li.text img { height: 12px; position: relative; top: 1px; }
+  html body.sticky .container #header nav.tags ul.search li.input { display: none; }
+  html body.sticky .container #header nav.tags ul.search li.input input { margin: 0.3125em; }
+  html body.sticky .container #header nav.tags ul.tag-list { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
+  html body.sticky .container #header nav.tags ul.tag-list li, html body.sticky .container #header nav.tags ul.social li, html body.sticky .container #header nav.tags ul.search li { display: inline-block; float: left; margin-right: 0.3125em; }
+  html body.sticky .container #header nav.tags ul.tag-list li:last-of-type, html body.sticky .container #header nav.tags ul.social li:last-of-type, html body.sticky .container #header nav.tags ul.search li:last-of-type { margin-right: 0; }
+  html body.sticky .container #header nav.tags ul.social { float: right; }
+  html body.sticky .container #header nav.tags ul.social li { /* We are not replacing social icons on hover - so the second image must not be displayed - also the icon should be taller, the maximum possible
+*/ }
+  html body.sticky .container #header nav.tags ul.social li img { height: 12px; position: relative; top: 1px; }
+  html body.sticky .container #header nav.tags ul.social li a img { height: 13px; }
+  html body.sticky .container #header nav.tags ul.social li a img:last-of-type { display: none; }
+  html body.sticky .container #header nav.tags ul.search, html body.sticky .container #header nav.tags ul.tag-list { margin-top: 0.3125em; }
+  html body.sticky .container #header nav.tags ul.social li a { margin-bottom: 0.3125em; height: 1.25em; }
+  html body.sticky .container #header nav.tags ul.social li a img { height: 1.25em; } }
+@media only screen and (min-width: 48.001em) and (max-width: 48em) { html body.sticky .container #header nav.main, html body.sticky .container #header nav.secondary, html body.sticky .container #header nav.tags { display: none; }
+  html body.sticky .container #header nav.mobile-navbar { width: 100%; max-width: 100%; float: left; background: #231f20; color: white; padding: 0.3125em; width: calc(100% - 0.625em); font-size: 70%; margin-top: 0.625em; cursor: pointer; }
+  html body.sticky .container #header nav.mobile-navbar a { color: white; text-decoration: none; }
+  html body.sticky .container #header nav.mobile-navbar a:hover { color: white; }
+  html body.sticky .container #header nav.mobile-navbar ul.mobile-navbar-menu { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
+  html body.sticky .container #header nav.mobile-navbar ul.mobile-navbar-menu li { display: inline-block; float: left; margin-right: 0.625em; }
+  html body.sticky .container #header nav.mobile-navbar ul.mobile-navbar-menu li:last-of-type { margin-right: 0; }
+  html body.sticky .container #header nav.mobile-navbar ul.mobile-navbar-menu li.hamburger span { position: relative; display: block; min-width: 1.25em; top: 1px; }
+  html body.sticky .container #header nav.mobile-navbar ul.mobile-navbar-menu li.hamburger span:before { content: ""; position: absolute; top: 0.25em; left: 0; width: 1em; height: 0.125em; border-top: 0.375em double white; border-bottom: 0.125em solid white; } }
+@media only screen and (min-width: 48.001em) and (min-width: 48.001em) { html body.sticky .container #header nav { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; } }
+@media only screen and (min-width: 48.001em) and (min-width: 48.001em) and (max-width: 47.999em) { html body.sticky .container #header nav { width: 100%; margin-right: 0; float: left; } }
+@media only screen and (min-width: 48.001em) and (min-width: 48.001em) and (min-width: 64.001em) { html body.sticky .container #header nav { width: 31.5%; margin-right: 2.5%; float: left; }
+  html body.sticky .container #header nav:nth-of-type(2) { margin-right: 2.5%; }
+  html body.sticky .container #header nav:nth-of-type(3) { margin-right: 0; }
+  html body.sticky .container #header nav:nth-of-type(4) { margin-right: 2.5%; }
+  html body.sticky .container #header nav:nth-of-type(5) { margin-right: 2.5%; }
+  html body.sticky .container #header nav:nth-of-type(6) { margin-right: 0; }
+  html body.sticky .container #header nav:nth-of-type(7) { margin-right: 2.5%; }
+  html body.sticky .container #header nav:nth-of-type(8) { margin-right: 2.5%; }
+  html body.sticky .container #header nav:nth-of-type(9) { margin-right: 0; }
+  html body.sticky .container #header nav:nth-of-type(10) { margin-right: 2.5%; } }
+@media only screen and (min-width: 48.001em) and (min-width: 48.001em) { html body.sticky .container #header nav ul li a { padding: 0.625em 0.3125em; display: inline-block; }
+  html body.sticky .container #header nav ul li.active a, html body.sticky .container #header nav ul li:hover a { background: #982022; color: white; }
+  html body.sticky .container #header nav ul li.active a a, html body.sticky .container #header nav ul li:hover a a { color: white; text-decoration: none; }
+  html body.sticky .container #header nav ul li.active a a:hover, html body.sticky .container #header nav ul li:hover a a:hover { color: white; }
+  html body.sticky .container #header nav.secondary { margin-right: 0; }
+  html body.sticky .container #header nav.secondary ul { float: right; }
+  html body.sticky .container #header nav.secondary ul li.language { margin-right: 0; }
+  html body.sticky .container #header nav.main, html body.sticky .container #header nav.secondary { margin-top: 2.5em; }
+  html body.sticky .container #header nav.main li, html body.sticky .container #header nav.secondary li { display: inline-block; float: left; margin-right: 0.3125em; }
+  html body.sticky .container #header nav.main li:last-of-type, html body.sticky .container #header nav.secondary li:last-of-type { margin-right: 0; }
+  html body.sticky .container #header nav.tags { width: 100%; max-width: 100%; float: left; margin-top: 0.625em; }
+  html body.sticky .container #header nav.main, html body.sticky .container #header nav.secondary { margin-top: 0; border: none; }
+  html body.sticky .container #header nav.tags { display: none; } }
+@media only screen and (min-width: 48.001em) { html body.sticky .container #header .logo { height: 2.03125em; }
+  html body.sticky .container #header .logo h1, html body.sticky .container #header .logo figure figcaption { display: none; }
+  html body.sticky .container #header .logo figure { margin-top: 0; }
   html body.sticky .container #header .logo figure img { max-width: 10em; position: relative; top: -0.3125em; } }
+@media only screen and (max-width: 48em) { html body.sticky .container #header #hamburger-menu { position: relative; display: block; top: 1.25em; cursor: pointer; z-index: 3; display: none; }
+  html body.sticky .container #header #hamburger-menu:before { content: ""; position: absolute; top: 0.25em; left: 0; width: 1em; height: 0.125em; border-top: 0.375em double #231f20; border-bottom: 0.125em solid #231f20; }
+  html body.sticky .container #header .mobile-menu { display: none; }
+  html body.sticky .container #header .mobile-menu nav.main, html body.sticky .container #header .mobile-menu nav.secondary, html body.sticky .container #header .mobile-menu nav.tags { display: block; margin-top: 2.5em; }
+  html body.sticky .container #header .mobile-menu nav ul { width: 100%; max-width: 100%; float: left; }
+  html body.sticky .container #header .mobile-menu nav.main ul, html body.sticky .container #header .mobile-menu nav.secondary ul { text-align: left; }
+  html body.sticky .container #header .mobile-menu nav.main ul li, html body.sticky .container #header .mobile-menu nav.secondary ul li { display: block; margin-right: none; float: none; padding-left: 0; }
+  html body.sticky .container #header .mobile-menu nav.main ul li:before, html body.sticky .container #header .mobile-menu nav.secondary ul li:before { content: ''; } }
+@media only screen and (max-width: 48em) and (min-width: 30em) and (max-width: 48em) { html body.sticky .container #header .mobile-menu nav.main, html body.sticky .container #header .mobile-menu nav.secondary { width: 45%; margin-right: 10%; float: left; }
+  html body.sticky .container #header .mobile-menu nav.main:nth-of-type(2), html body.sticky .container #header .mobile-menu nav.secondary:nth-of-type(2) { margin-right: 0; } }
+@media only screen and (max-width: 48em) { html body.sticky .container #header .mobile-menu nav.tags ul.search li.text { display: none; }
+  html body.sticky .container #header .mobile-menu nav.tags ul.search li.input { display: block; }
+  html body.sticky .container #header .mobile-menu nav.tags ul.search li.input input { width: 95%; }
+  html body.sticky .container #header .mobile-menu nav.tags ul.tag-list { margin: 1.25em 0; }
+  html body.sticky .container #header .mobile-menu nav.tags ul.social li { margin-right: 1.25em; }
+  html body.sticky .container #header .mobile-menu #close-menu:after { content: '\2715'; color: white; padding: 0 0.3125em; border: 1px solid; position: relative; top: -1.875em; right: 1.25em; float: right; cursor: pointer; } }
+@media only screen and (min-width: 48.001em) { html body.sticky .container #header .mobile-menu, html body.sticky .container #header .mobile-navbar { display: none; } }
 html body.sticky .container main, html body.sticky .container #footer { position: relative; top: 3.75em; }
 html body.frontpage .container main #intro { margin-bottom: 1.25em; }
 html body.frontpage .container main #intro #slider { width: 65.5%; margin-right: 2.5%; float: left; background: #f1f1f1; /* Desktop

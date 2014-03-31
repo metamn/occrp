@@ -522,6 +522,8 @@
 
 
 
+
+
 /* The fixed header
 */
 @mixin fixed-header {
@@ -532,15 +534,55 @@
   
   
   @include mobile {
-    @include fixed-header-mobile;
+    #hamburger-menu {
+      display: block;
+    }
+    
+    .logo {
+      @include logo(mobile-fixed);
+    }
+    
+    nav {
+      @include navbar(mobile-fixed);
+    }
   }
   
   @include tablet {
-    @include fixed-header-tablet;
+    .logo {
+      @include logo(tablet-fixed);
+    }
+    
+    .mobile-navbar {
+      @include grid-resize(65%, $pad*2);
+      float: left;
+      
+      @include color;
+      border: none;
+      
+      margin-top: 5%;
+      
+      ul {
+        @include list-inline;
+        float: right;
+      }
+    }
   }
   
   @include tablet-and-up {
-    @include fixed-header-desktop;
+    @include container;
+  
+    margin: 0 0 $pad*2 !important;
+    padding-top: $pad;
+    top: 0;
+    height: $pad*2;
+    
+    nav {
+      @include navbar(desktop-fixed);
+    }
+    
+    .logo {
+      @include logo(desktop-fixed);
+    }
   }
 }
 
@@ -548,36 +590,41 @@
 
 /* The Header
 */
-@mixin header {
-  
-  /* Common styling
-  */
+@mixin header($type: normal) {
   .logo {
     @include logo;
   }
   
   nav {
-    @include border-thin($color);
-    
-    &.secondary {
-      @include language-selector;
-    }
-    
-    &.tags {
-      @include tags;
-      @include enlarge-social-icons;
-    }
+    @include navbar;
   }
   
+  @if ($type == fixed) {
+    @include fixed-header;
+  }
  
   /* Responsive layouts
   */
   @include below-and-tablet {
-    @include header-mobile;
+    #hamburger-menu {
+      @include hamburger-menu;
+      top: $pad;
+      cursor: pointer;
+      z-index: 3;
+      
+      display: none;
+    }
+    
+    .mobile-menu {
+      @include mobile-menu;
+      display: none;
+    }
   }
   
   @include tablet-and-up {
-    @include header-desktop;
+    .mobile-menu, .mobile-navbar {
+      display: none;
+    }
   }
 }
 

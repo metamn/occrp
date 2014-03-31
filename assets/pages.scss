@@ -30,7 +30,7 @@ html {
     &.sticky {
       .container {
         #header {
-          @include fixed-header;
+          @include header(fixed);
         }
         
         main, #footer {

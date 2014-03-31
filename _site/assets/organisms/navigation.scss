@@ -1,83 +1,24 @@
-/* The fixed header for mobile
+
+
+
+
+
+/* The navigation bar in the header
 */
-@mixin fixed-header-mobile {
-  #hamburger-menu {
-    display: block;
-  }
-  
-  .logo {
-    figure {
-      img {
-        width: 50%;
-      }
-    }
-  }
-  
-  nav.mobile-navbar {
-    display: none !important;
-  }
-}
-
-
-/* The fixed header for tablets
-*/
-@mixin fixed-header-tablet {
-  .logo {
-    width: 35%;
-    float: left;
-  }
-  
-  .mobile-navbar {
-    @include grid-resize(65%, $pad*2);
-    float: left;
+@mixin navbar($type: desktop) {
+  @include border-thin($color);
     
-    @include color;
-    border: none;
-    
-    margin-top: 5%;
-    
-    ul {
-      @include list-inline;
-      float: right;
-    }
-  }
-}
-
-@mixin fixed-header-desktop {
-  @include container;
-  
-  margin: 0 0 $pad*2 !important;
-  padding-top: $pad;
-  top: 0;
-  height: $pad*2;
-  
-  nav {
-    &.main, &.secondary {
-      margin-top: 0;
-      border: none;
-    }
-    
-    &.tags {
-      display: none;
-    }
+  &.secondary {
+    @include language-selector;
   }
   
-  .logo {
-    height: $pad + $pad/2 + $pad/8;
-    
-    figure img {
-      max-width: 10em;
-      position: relative;
-      top: -$pad/4;
-    }
+  &.tags {
+    @include tags;
+    @include enlarge-social-icons;
   }
-}
-
-
-/* The header for mobiles
-*/
-@mixin header-mobile {
-  nav {
+  
+  
+  @include below-and-tablet {
     &.main, &.secondary, &.tags {
       display: none;
     }
@@ -85,36 +26,17 @@
     &.mobile-navbar {
       @include mobile-navbar;
     }
-  }
-  
-  #hamburger-menu {
-    @include hamburger-menu;
-    top: $pad;
-    cursor: pointer;
-    z-index: 3;
     
-    display: none;
+    @if ($type == mobile-fixed) {
+      &.mobile-navbar {
+        display: none !important;
+      }
+    }
   }
   
-  .mobile-menu {
-    @include mobile-menu;
-    display: none;
-  }
-}
-
-
-@mixin header-desktop {
-  .mobile-menu, .mobile-navbar {
-    display: none;
-  }
   
-  nav, section {
+  @include tablet-and-up {
     @include responsive-grid(3);
-  }
-  
-  /* Positioning the main elements
-  */
-  nav {
     @include menu;
     
     &.secondary {
@@ -131,87 +53,18 @@
       @include block;
       margin-top: $pad/2;
     }
-  }
-}
-
-
-
-
-
-/* The logo
-*/
-@mixin logo {
-  text-align: center;
-  
-  h1, figure figcaption {
-    display: none;
-  }
-  
-  figure {
-    margin-top: $pad/2;
-  }
-}
-
-
-
-
-
-
-/* The tag bar
-*/
-@mixin tags {
-  @include color(invert);
-  
-  /* Since <a> has padding on the last social icon we must reduce the tagbar width
-  */ 
-  @include padding(100%, $pad/4);
-  padding: 0;
-  
-  ul {
-    &.search {
-      li {
-        &.text {
-          @include text-with-icon;
-        }
-        
-        &.input {
-          display: none;
-          
-          input {
-            margin: $pad/4;
-          }
-        }
+    
+    @if ($type == desktop-fixed) {
+      &.main, &.secondary {
+        margin-top: 0;
+        border: none;
       }
-    }
-    
-    &.tag-list {
-      @include list-centered;
-    }
-    
-    &.tag-list, &.social, &.search {
-      @include list-inline($pad/4);
-    }
-    
-    &.social {
-      float: right;
       
-      li {
-        @include text-with-icon;
-        
-        /* We are not replacing social icons on hover
-          - so the second image must not be displayed
-          - also the icon should be taller, the maximum possible
-        */
-        a {
-          img {
-            height: 13px;
-            
-            &:last-of-type {
-              display: none;
-            }
-          }
-        }
+      &.tags {
+        display: none;
       }
-    }
+    }  
   }
+
 }
+

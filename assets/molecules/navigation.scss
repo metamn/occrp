@@ -1,8 +1,5 @@
 
 
-
-/* Navigation
-*/
 @mixin navigation($color-scheme : slider) {
   nav {
     @include hide-title;
@@ -24,14 +21,6 @@
   }
 }
 
-@mixin list-with-border {
-  @include font(navigation);
-  
-  li {
-    padding: $pad/2;
-    border-bottom: 1px solid $background;
-  }
-}
 
 
 @mixin mobile-menu {
@@ -147,3 +136,120 @@
     }
   }
 }
+
+
+
+
+
+/* The tag bar
+*/
+@mixin tags {
+  @include color(invert);
+  
+  /* Since <a> has padding on the last social icon we must reduce the tagbar width
+  */ 
+  @include padding(100%, $pad/4);
+  padding: 0;
+  
+  ul {
+    &.search {
+      li {
+        &.text {
+          @include text-with-icon;
+        }
+        
+        &.input {
+          display: none;
+          
+          input {
+            margin: $pad/4;
+          }
+        }
+      }
+    }
+    
+    &.tag-list {
+      @include list-centered;
+    }
+    
+    &.tag-list, &.social, &.search {
+      @include list-inline($pad/4);
+    }
+    
+    &.social {
+      float: right;
+      
+      li {
+        @include text-with-icon;
+        
+        /* We are not replacing social icons on hover
+          - so the second image must not be displayed
+          - also the icon should be taller, the maximum possible
+        */
+        a {
+          img {
+            height: 13px;
+            
+            &:last-of-type {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+/* The logo
+*/
+@mixin logo($type: desktop) {
+  
+  h1, figure figcaption {
+    display: none;
+  }
+    
+  
+  @if ($type == desktop) {
+    text-align: center;
+  
+    figure {
+      margin-top: $pad/2;
+    }
+    
+    @include tablet-and-up {
+      @include responsive-grid(3);
+    }
+    
+    
+  } @elseif ($type == desktop-fixed) {
+    height: $pad + $pad/2 + $pad/8;
+    
+    figure {
+      margin-top: 0;
+      
+      img {
+        max-width: 10em;
+        position: relative;
+        top: -$pad/4;
+      }
+    }
+  
+  
+  } @elseif ($type == tablet-fixed) {
+    width: 35%;
+    float: left;
+  
+  
+  } @elseif ($type == mobile-fixed) {
+    figure {
+      img {
+        width: 50%;
+      }
+    }
+  }
+  
+}
+
