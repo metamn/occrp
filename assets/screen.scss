@@ -3,9 +3,12 @@
 @import "compass/css3";
 @import "compass/utilities";
 
-@import "atoms";
-@import "molecules";
-@import "organisms";
+@import "atoms/colors";
+@import "atoms/grid";
+@import "atoms/*";
+@import "molecules/*";
+@import "organisms/*";
+
 @import "structures";
 @import "pages";
 

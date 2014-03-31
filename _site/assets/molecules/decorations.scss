@@ -1,0 +1,196 @@
+@mixin fluid-image {
+  img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+
+/* Remove the extra padding bottom for images inside a link
+- http://stackoverflow.com/questions/3532870/extra-padding-on-linked-images-in-every-broswer
+*/
+figure {
+  a {
+    line-height: 0;
+  }
+}
+
+
+/* Social icons
+*/
+@mixin social-icons {
+  float: right;
+  position: relative;
+  top: -$pad*2 - $pad/4;
+  
+  p {
+    font-weight: bold;
+    margin-bottom: $pad;
+    text-align: right;
+    
+    @include color(invert);
+  }
+  
+  ul {
+    li {
+      @include image-change-on-hover; 
+    }
+  }
+}
+
+
+
+/* On hover shows a different image
+  - the two images must be siblings in a container
+  - this mixin is added to the container
+*/
+@mixin image-change-on-hover {
+  img {
+    &:last-of-type {
+      display: none;
+      position: relative;
+      top: 0;
+    }
+  }
+  
+  &:hover {
+    img {
+      &:first-of-type {
+        display: none;
+      }
+      
+      &:last-of-type {
+        display: block;
+      }
+    }
+  }
+}
+
+
+/* Icon with text
+  - the image size (height) must be fixed otherwise it will be taller than other elements
+  - first used with the language selector in a menu
+  - if the height was not set this menu item was taller than all others
+*/
+@mixin text-with-icon {
+  img {
+    height: 12px;
+    position: relative;
+    top: 1px;
+  }
+  
+}
+
+
+/* Make icons taller than the default size in the header
+  - this is kinda manual pixel pushing
+*/
+@mixin enlarge-social-icons {
+  ul {
+    &.search, &.tag-list {
+      margin-top: $pad/4;
+    }
+    
+    &.social {
+      li {
+        a {
+          margin-bottom: $pad/4;
+          height: $pad;
+          
+          img {
+            height: $pad;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+/* The language selector
+*/
+@mixin language-selector {
+  ul {
+    li {
+      &.language {
+        @include text-with-icon;
+      }
+      
+      &.english {
+        display: none;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+/* Decorations, colors, etc.
+--------------------------------------------------------------------------------
+*/
+
+
+
+/* Set the background and font color
+  - 'invert' inverts this color scheme
+*/
+@mixin color($type : normal) {
+  @if ($type == normal) {
+    background: $background;
+    color: $color;
+    @include link;
+    
+  } @elseif ($type == invert) {
+    background: $color;
+    color: $background;
+    @include link($background, $background);
+  
+  } @elseif ($type == highlight) {
+    background: $background;
+    color: $highlight;
+    @include link($highlight, $color);
+    
+  } @elseif ($type == menu) {
+    background: $highlight;
+    color: $background;
+    @include link($background, $background);
+
+  } @elseif ($type == slider) {
+    background: $background;
+    color: $color;
+    @include link($color, $background);
+  
+  } @elseif ($type == navigation) {
+    background: $light-grey;
+    color: $color;
+    @include link($color, $background);
+    
+  } @elseif ($type == blog-thumb) {
+    background: $grey;
+    color: $background;
+    @include link($background, $background);
+  
+  } @elseif ($type == invert-highlight) {
+    background: $color;
+    color: $highlight;
+    @include link($background, $background);
+  }
+}
+
+
+/* Links
+*/
+
+@import "compass/typography/links/link-colors";
+@mixin link($c: $color, $h: $highlight) {
+  a {
+    @include link-colors($c, $h);
+    text-decoration: none;
+  }
+}
+
