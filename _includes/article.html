@@ -8,7 +8,7 @@
     {% include article-meta.html %}
     {% include article-share.html %}
     
-    <div id="content">
+    <div class="content">
       {{ content }}
     </div>
   {% endif %} 
@@ -21,11 +21,16 @@
       {% include responsive-images.html type='from post'  %}
     {% endif %}
   
+    {% if include.type == 'slider' %}
+      {% assign items = 7 %}
+      {% include navigation.html klass = 'mobile' %}
+    {% endif %}
+  
     <h1>
       <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </h1>
     
-    <div id="excerpt">
+    <div class="excerpt">
       {{ post.excerpt }}
     </div>
     

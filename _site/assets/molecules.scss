@@ -1,0 +1,1296 @@
+/*
+  Molecules of the Atomic web design
+  - atoms combined together
+  - they do one thing and do it well
+*/
+
+
+
+
+
+/* Grid
+--------------------------------------------------------------------------------
+*/
+
+/* The width of the content
+  - the content is centered with automatic left and right margins
+*/
+@mixin container {
+  width: $container-width;
+  margin: 0 $container-margin;
+  
+  @include above-large-screen {
+    width: $large-screen-container-width;
+    margin: 0 $large-screen-container-margin;
+  }
+}
+
+
+
+
+/* Flexible grid
+  - all items are aligned left with an uniform margin
+  - this grid can be dynamically positioned by Isotope
+*/
+@mixin flexible-grid($max-width: $flexible-grid-width, $margin: $flexible-grid-margin) {
+  width: auto;
+  float: left;
+  
+  max-width: $max-width;
+  margin: $margin/2 $margin 0 0;
+  
+  @include below-and-tablet {
+    @include block;
+  }
+}
+
+
+
+/* Column N of M
+  - creates a grid column on N cols from M total columns
+*/
+@mixin col-nm($n: 2, $m: 3) {
+  $gutter: col-gutter($m);
+  
+  @include col(col-nm-width($n, $m), $gutter);
+}
+
+/* A function to calculate the width of the column for col-n-of-m
+  - this is used usually in padding();
+*/
+@function col-nm-width($n, $m) {
+  $gutter: col-gutter($m);
+  $width: col-width($m);
+  @return ($n * $width + ($n - 1) * $gutter);
+}
+
+
+
+/* Columns defined by gutter
+  - Sometimes the width of a column is defined inversely, by the gutter size
+  - For example, when a col-nm(2,3) is divided into two subcolumns the gutter size is fixed to col-gutter(3)
+  - Ie, instead having two cols of 45% and margin 10% we have a fixed margin of 2.5% and the rest of the columns calaculated accordingly
+*/
+@mixin col-by-gutter($how-many, $gutter) {
+  $width: col-by-gutter-width($how-many, $gutter);
+  @include col($width, $gutter);
+}
+
+
+/* A function to calculate the width of the column for col-by-gutter
+  - this is used usually in padding();
+*/
+@function col-by-gutter-width($how-many, $gutter) {
+  $available-space: 100% - ($how-many - 1) * $gutter;
+  @return $available-space / $how-many;
+}
+
+
+
+
+/* Adds padding around a grid element
+  - the width of the element must be recalculated
+*/
+@mixin padding($width: 100%, $padding: $pad) {
+  padding: $padding;
+  @include grid-resize($width, $padding*2);
+}
+
+
+/* Resize a grid column 
+*/
+@mixin grid-resize($width, $resize) {
+  width: calc(#{$width} - #{$resize})
+}
+
+
+
+
+/* A responsive grid
+*/
+@mixin responsive-grid($how-many, $maximum : 10) {
+  @include below-tablet {
+    @include col(100%, 0);
+  }
+  
+  @include above-small-screen {
+    @include grid($how-many, $maximum);
+  }
+}
+
+
+/* Generates a full grid of $how-many columns and $maximum elements
+  - calculates automatically the columns size and margin
+  - the right margin of the last element in a row is set to zero
+  - $maximum sets how many articles will be displayed on a single page 
+*/
+@mixin grid($how-many, $maximum) {
+  $gutter: col-gutter($how-many);
+  $width: col-width($how-many);
+  
+  @include col($width, $gutter);
+  @include col-right-margin($how-many, $gutter, $maximum);
+}
+
+
+/* Returns the width of a column in a grid
+*/
+@function col-width($how-many) {
+  @if ($how-many == 3) {
+    @return 31.5%;
+  } @else {
+    @return 90% / $how-many;
+  }
+}
+
+/* Returns the margin of a column in a grid
+*/
+@function col-gutter($how-many) {
+  @if ($how-many == 3) {
+    @return 2.5%;
+  } @else {
+    @return 10% / ($how-many - 1);
+  }
+}
+
+
+/* A left aligned column
+*/
+@mixin col($width, $margin: 0) {
+  width: $width;
+  margin-right: $margin;
+  float: left;
+}
+
+/* Remove right margin of the last element in a row of a grid
+  - on responsive layouts we setup upd different grids
+  - on every grid re-declaration the previous margins of last elements must be removed
+*/
+@mixin col-right-margin($how-many, $gutter, $maximum) {
+  @for $i from 2 through $maximum {
+    @if (($how-many != 0) and (($i % $how-many) == 0)) {
+      &:nth-of-type(#{$i}) {
+         margin-right: 0;
+      }
+    } @else {
+      &:nth-of-type(#{$i}) {
+         margin-right: $gutter;
+      }
+    }
+  }
+}
+
+
+/* Hide a section title
+*/
+@mixin hide-title {
+  > h3 {
+    display: none;
+  }
+}
+
+/* Show a section title
+*/
+@mixin show-title {
+  > h3 {
+    display: block;
+  }
+}
+
+
+
+
+
+
+/* Navigation
+--------------------------------------------------------------------------------
+*/
+
+/* Displays an <ul> list inline
+*/
+@mixin list-inline($margin-right: $pad/2) {
+  li {
+    display: inline-block;
+    float: left;
+    margin-right: $margin-right;
+    
+    &:last-of-type {
+      margin-right: 0;
+    }  
+  }
+}
+
+/* Transforms an inline list back to normal
+*/
+@mixin list-normal {
+  li {
+    display: block;
+    margin-right: none;
+    float: none;
+    padding-left: 0;
+    
+    &:before {
+      content: '';
+    }
+  }
+}
+
+
+/* Centers an inline list
+*/
+@mixin list-centered {
+  text-align: center;
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+
+
+/* Highlights an active item in a list / menu
+*/
+@mixin list-menu($display: inline-block, $top : $pad/2, $left: $pad/4)  {
+  li {
+    a {
+      padding: $top $left;
+      display: $display;
+    }
+    
+    &.active, &:hover {
+      a {
+        @include color(menu);
+      }
+    }
+  }
+}
+
+
+@mixin list-download {
+  li {
+    margin-bottom: $pad/2;
+    @include border-thin;
+    
+    &:before {
+      content: url(http://metamn.github.io/occrp/assets/download.png) !important;
+    }
+    
+    a {
+      margin-left: $pad;
+    }
+  }
+}
+
+
+/* Navigation
+*/
+@mixin navigation($color-scheme : slider) {
+  nav {
+    @include hide-title;
+    margin-top: $pad;
+    
+    ol {
+      @include list-inline;
+      @include list-menu(block, $pad/2, $pad/2 + $pad/4);
+      
+      li {
+        @include color($color-scheme);
+        @include border-radius($pad);
+      }
+      
+      @include below-and-tablet {
+        font-size: small;
+      }
+    }
+  }
+}
+
+@mixin list-with-border {
+  @include font(navigation);
+  
+  li {
+    padding: $pad/2;
+    border-bottom: 1px solid $background;
+  }
+}
+
+
+@mixin mobile-menu {
+  nav {
+    &.main, &.secondary, &.tags {
+      display: block;
+      margin-top: $pad*2;
+    }
+    
+    ul {
+      @include block;
+    }
+    
+    &.main, &.secondary {
+      ul {
+        @include list-normal;
+        text-align: left;
+      }
+      
+      @include tablet {
+        @include grid(2, 2);
+      }
+    }
+    
+    &.tags {
+      ul {
+        &.search {
+          li {
+            &.text {
+              display: none;
+            }
+            
+            &.input {
+              display: block;
+              
+              input {
+                width: 95%;
+              }
+            }
+          }
+        }
+        
+        &.tag-list {
+          margin: $pad 0;
+        }
+        
+        &.social {
+          li {
+            margin-right: $pad;
+          }
+        }
+      }
+    }
+  }  
+  
+  #close-menu {
+    @include close-menu;
+  }
+}
+
+
+@mixin mobile-navbar {
+  @include block;
+  @include color(invert);
+  @include padding(100%, $pad/4);
+  font-size: 70%;
+  margin-top: $pad/2;
+  
+  cursor: pointer;
+  
+  ul.mobile-navbar-menu {
+    @include list-inline;
+    @include list-centered;
+    
+    li {
+      &.hamburger {
+        span {
+          @include hamburger-menu($background);
+          min-width: $pad;
+          top: 1px;
+        }
+      }
+    }
+  }
+}
+
+@mixin hamburger-menu($c: $color) {
+  position: relative;
+  display: block;
+  
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0.25em;
+    left: 0;
+    width: 1em;
+    height: 0.125em;
+    border-top: 0.375em double $c;
+    border-bottom: 0.125em solid $c;
+  }
+}
+
+
+@mixin close-menu($c: $background) {
+  &:after {
+    content: '\2715';
+    color: $c;
+    padding: 0 $pad/4;
+    border: $border-thin;
+    
+    position: relative;
+    top: -$pad - $pad/2;
+    right: $pad;
+    float: right;
+    
+    cursor: pointer;
+  }
+}
+
+
+
+/* A menu
+  - an inline list of items, with different hover and active states
+  - it's parent is usually a <nav> element
+*/
+@mixin menu {
+  @include font(navigation);
+  
+  ul {
+    @include list-menu;
+  }  
+}
+
+
+/* Floats the secondary menu right
+*/
+@mixin menu-float-right {
+  ul {
+    float: right;
+    
+    li {
+      &.language {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+
+
+/* Images
+--------------------------------------------------------------------------------
+*/
+
+@mixin fluid-image {
+  img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+
+/* Remove the extra padding bottom for images inside a link
+- http://stackoverflow.com/questions/3532870/extra-padding-on-linked-images-in-every-broswer
+*/
+figure {
+  a {
+    line-height: 0;
+  }
+}
+
+
+/* Social icons
+*/
+@mixin social-icons {
+  float: right;
+  position: relative;
+  top: -$pad*2 - $pad/4;
+  
+  p {
+    font-weight: bold;
+    margin-bottom: $pad;
+    text-align: right;
+    
+    @include color(invert);
+  }
+  
+  ul {
+    li {
+      @include image-change-on-hover; 
+    }
+  }
+}
+
+
+
+/* On hover shows a different image
+  - the two images must be siblings in a container
+  - this mixin is added to the container
+*/
+@mixin image-change-on-hover {
+  img {
+    &:last-of-type {
+      display: none;
+      position: relative;
+      top: 0;
+    }
+  }
+  
+  &:hover {
+    img {
+      &:first-of-type {
+        display: none;
+      }
+      
+      &:last-of-type {
+        display: block;
+      }
+    }
+  }
+}
+
+
+/* Icon with text
+  - the image size (height) must be fixed otherwise it will be taller than other elements
+  - first used with the language selector in a menu
+  - if the height was not set this menu item was taller than all others
+*/
+@mixin text-with-icon {
+  img {
+    height: 12px;
+    position: relative;
+    top: 1px;
+  }
+  
+}
+
+
+/* Make icons taller than the default size in the header
+  - this is kinda manual pixel pushing
+*/
+@mixin enlarge-social-icons {
+  ul {
+    &.search, &.tag-list {
+      margin-top: $pad/4;
+    }
+    
+    &.social {
+      li {
+        a {
+          margin-bottom: $pad/4;
+          height: $pad;
+          
+          img {
+            height: $pad;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+/* The language selector
+*/
+@mixin language-selector {
+  ul {
+    li {
+      &.language {
+        @include text-with-icon;
+      }
+      
+      &.english {
+        display: none;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+/* Decorations, colors, etc.
+--------------------------------------------------------------------------------
+*/
+
+
+
+/* Set the background and font color
+  - 'invert' inverts this color scheme
+*/
+@mixin color($type : normal) {
+  @if ($type == normal) {
+    background: $background;
+    color: $color;
+    @include link;
+    
+  } @elseif ($type == invert) {
+    background: $color;
+    color: $background;
+    @include link($background, $background);
+  
+  } @elseif ($type == highlight) {
+    background: $background;
+    color: $highlight;
+    @include link($highlight, $color);
+    
+  } @elseif ($type == menu) {
+    background: $highlight;
+    color: $background;
+    @include link($background, $background);
+
+  } @elseif ($type == slider) {
+    background: $background;
+    color: $color;
+    @include link($color, $background);
+  
+  } @elseif ($type == navigation) {
+    background: $light-grey;
+    color: $color;
+    @include link($color, $background);
+    
+  } @elseif ($type == blog-thumb) {
+    background: $grey;
+    color: $background;
+    @include link($background, $background);
+  
+  } @elseif ($type == invert-highlight) {
+    background: $color;
+    color: $highlight;
+    @include link($background, $background);
+  }
+}
+
+
+/* Links
+*/
+
+@import "compass/typography/links/link-colors";
+@mixin link($c: $color, $h: $highlight) {
+  a {
+    @include link-colors($c, $h);
+    text-decoration: none;
+  }
+}
+
+
+
+
+
+/* Typography
+--------------------------------------------------------------------------------
+*/
+
+
+@mixin font($type : default) {
+  @if ($type == default) {
+    font-size: $font-size;
+    @include line-height(body);
+    @include font-body;
+    @include headings;
+    
+  } @elseif ($type == excerpt) {
+    @include line-height(body);
+    color: $grey;
+  
+  } @elseif ($type == navigation) {
+    @include uppercase;
+    font-size: small;
+    @include font-body;
+  
+  } @elseif ($type == section-title) {
+    @include uppercase;
+    font-size: small;
+    @include font-body;
+    
+    @include color(highlight);
+    display: block;
+    margin-bottom: $pad/2;
+  
+  } @elseif ($type == date) {
+    font-size: small;
+    color: $grey;
+    font-style: normal;
+  
+  } @elseif ($type == category-title) {
+    padding: $h1-padding 0;
+  
+  } @elseif ($type == thumb-title) {
+    font-size: medium;
+  
+  } @elseif ($type == author) {
+    font-size: small;
+    @include uppercase;
+    font-style: normal;
+    
+  } @elseif ($type == italic) {
+    font-size: small;
+    color: $color;
+    font-style: italic;
+    font-family: font-headings;
+    text-transform: none;
+    
+  } @elseif ($type == single-article-title) {
+    @include font-size($h1-title); 
+    padding: 0;
+  }
+}
+
+
+@mixin headings($padding: false) {
+  h1, h2, h3, h4, h5, h6 {
+    @include font-headings;
+    @include line-height(headings);
+    padding: 0;
+  }
+  
+  h1 {
+    @include h1;
+  }
+  
+  h2 {
+    @include h2;
+  }
+  
+  h3 {
+    @include h3;
+  }
+  
+  h4 {
+    @include h4;
+  }
+  
+  @if ($padding != false) {
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding: $h1-padding 0; 
+    }
+  }
+}
+
+@mixin h1 {
+  @include font-size($h1);
+  font-weight: bold;
+}
+@mixin h2 {
+  @include font-size($h1);
+  font-weight: normal;
+  @include uppercase;
+}
+@mixin h3 {
+  @include font-size($h1);
+  font-weight: normal;
+}
+@mixin h4 {
+  @include font-size(1, larger);
+  font-weight: normal;
+}
+@mixin font-normal {
+  @include font-size(1);
+  font-weight: normal;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+
+
+
+/* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback  
+	Usage: @include font-size(1, large);
+*/
+@mixin font-size($decimal-size, $keyword: null) {
+  @if $keyword { 
+    font-size: $keyword; 
+  } @else { 
+    font-size: $decimal-size * $base-font-multiplier * 16px;
+    font-size: $decimal-size * 1rem;
+  }
+}
+
+
+/* Set the line height
+  - 'body' goes from non text elements, it is the default setting put in <body>
+  - 'text' goes for long texts like blog posts, articles, etc;
+  - 'headings' goes for <h1>, etc
+*/
+@mixin line-height($type) {
+  @if ($type == body) {
+    line-height: $line-height;
+  
+  } @elseif ($type == text) {
+    line-height: $line-height-body-text;
+  
+  } @elseif ($type == headings) {
+    line-height: $line-height-headings;
+  }
+}
+
+
+@mixin uppercase {
+  text-transform: uppercase;
+  letter-spacing: $letter-spacing-uppercase;
+}
+
+
+@mixin code {
+  code, pre {
+    @include color(navigation);
+    padding: $pad/4;
+    @include font-monospace;
+  }
+  
+  pre {
+    white-space: pre-line;
+    padding: $pad;
+  }
+}
+
+@mixin hr {
+  hr {
+    margin: $pad 0;
+  }
+}
+
+@mixin em {
+  em, i {
+    font-style: italic;
+  }
+}
+
+@mixin strong {
+  strong, b {
+    font-weight: bold;
+  }
+}
+
+@mixin small {
+  small {
+    font-size: small;
+  }
+}
+
+@mixin strikethrough {
+  s {
+    text-decoration: line-through;
+  }
+}
+
+@mixin cite {
+  cite {
+    font-style: italic;
+  }
+}
+
+
+@mixin dfn {
+  dfn {
+    @include border-thin;
+  }
+}
+
+@mixin abbr {
+  abbr {
+    font-variant: small-caps;
+  }
+}
+
+@mixin time {
+  time {
+    @include font(date);
+  }
+}
+
+@mixin var {
+  var {
+    font-style: italic;
+  }
+}
+
+@mixin samp {
+  samp, kbd {
+    @include font-monospace;
+    font-weight: bold;  
+    font-size: small;
+  }
+}
+
+@mixin sup {
+  sup {
+    vertical-align: super;
+    font-size: small;
+  }
+  
+  sub {
+    vertical-align: sub;
+    font-size: small;
+  }
+}
+
+@mixin mark {
+  mark {
+    @include color(invert);
+    padding: $pad/4;
+  }
+}
+
+@mixin del {
+  del {
+    text-decoration: line-through;
+  }
+  
+  ins {
+    @include color(navigation);
+    padding: $pad/4;
+  }
+}
+
+@mixin address {
+  address {
+    font-size: small;
+    color: $gray;
+    max-width: $body-text-width / 2;
+  }
+}
+
+@mixin blockquote {
+  blockquote {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    
+    font-size: large;
+    font-style: italic;
+    color: lighten($color, 5%);
+    
+    /* Making room to the " sign 
+    */
+    position: relative;
+    float: left;
+    padding: $pad*4 0 $pad*2 $pad*4;
+    
+    
+    /* Fill the parent block
+    */
+    @include block;
+    text-align: right;
+    width: calc(#{$body-text-width} - #{$pad*4});
+    
+    /*
+    @include below-and-small-screen {
+      width: calc(100% - #{$pad*4});
+    }
+    */
+    
+    &:before {
+      content: '\201C';
+      font-size: 900%;
+      
+      position: absolute;
+      top: -$pad/10;
+      left: 0;
+    }
+  }
+}
+
+@mixin q {
+  q {
+    background: $light-grey;
+    padding: $pad/4;
+    border-bottom: 1px solid darken($light-grey, 5%);
+    
+    &:before {
+      content: '\201C';
+    }
+    
+    &:after {
+      content: '\201D';
+    }
+  }
+}
+
+
+/* Select box
+  - put <select> inside a <label class="select">
+  - label:after is positioned over the original selectbox arrow
+  - label after must have a background color to hide the default arrow
+*/
+
+@mixin select {    
+  label.select {
+    @include block;
+    
+    &:after {
+      content: $arrow-down;
+      @include transform(rotate(90deg));
+      float: right;
+      
+      display: inline-block;
+      position: relative;
+      padding: 0;
+      left: -$pad/4;
+      background: $background;
+      font-size: $before-font-size;
+      top: -1.5em;
+      margin-right: $pad/4;
+      
+      pointer-events: none; /* this is a must */
+      cursor: pointer;
+    }
+    
+    select {
+      @include reset-form;
+      border: 1px solid;
+      cursor: pointer;
+      width: 100%;
+      padding: $pad/4;
+    }
+  }
+}
+
+/* Cross browser compatible styling: http://www.inserthtml.com/2012/06/custom-form-radio-checkbox/
+  - the checkbox and radio button is not displayed
+  - instead a label is displayed which can be styled with 'content' 
+  - example: 
+    <ul class="checkbox">
+        <li><input id="checkbox1" name="checkbox" checked="checked" type="checkbox"><label for="checkbox1"></label>Option 1</li>
+        <li><input id="checkbox2" name="checkbox" type="checkbox"><label for="checkbox2"></label>Option 2</li>
+        <li><input id="checkbox3" name="checkbox" type="checkbox"><label for="checkbox3"></label>Option 3</li>
+    </ul>
+*/
+@mixin checkbox {
+	input[type='radio'], input[type='checkbox'] {
+	  display: none;
+	}
+	input[type='radio'] + label, input[type='checkbox'] + label {
+	  display: inline-block;
+	}
+	
+	
+	input[type='radio'] + label:after {
+		content: $radio;
+		margin-right: $pad/2;
+	}
+	input[type='radio']:checked + label:after {
+		content: $radio-checked;
+	}
+	
+	
+	input[type='checkbox'] + label:after {
+		content: $checkbox;
+		margin-right: $pad/4;
+		
+		font-size: $before-font-size;
+		position: relative;
+		top: $pad/8;
+	}
+	input[type='checkbox']:checked + label:after {
+	  content: $checkbox-checked;
+	}
+	
+	ul.checkbox {
+	  @include list-normal;
+	}
+}
+
+
+@mixin reset-form {
+  border: none;
+  outline: 0;
+  background: $background;
+
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+@mixin form {
+  form {
+    /* Reset */
+    input, textarea, select {
+	    @include reset-form;
+    }
+    
+    /* Stretching and padding */
+    input, textarea {
+      @include block;
+    }
+    
+    input, textarea {
+      padding: $pad/2;
+      width: calc(100% - #{$pad});
+      margin-bottom: $pad/2;
+    }
+    
+
+    /* Text */
+    input[type='text'], input[type='email'], input[type='password'], input[type='url'], input[type='search'],   textarea {
+	    border: 1px solid $color;
+	    font-style: italic;
+    }
+    
+
+    /* Button */
+    input[type='submit'] {	
+      @include uppercase;	
+	    border: 1px solid $color;
+	    @include color(invert);
+	    cursor: pointer;
+	    
+	    @include transition($easing);
+	    &:hover {
+	      @include color(normal);
+	    }
+    }
+    
+    /* Label
+    */
+    label {
+      @include uppercase;
+    }
+    
+  }
+}
+
+
+@mixin figure($width: auto) {
+  figure {
+    img {
+      //@include box-shadow($shadow);
+      width: $width;
+    }
+    
+    figcaption {
+      h1, h2, h3, h4, h5, h6 {
+        margin: 0;
+        padding: 0;
+      }
+      
+      font-size: smaller;
+    }
+    
+    /* Fit figcpation to image width
+    */
+    &.left, &.right, &.person, &.document, &.company {
+      display: table;
+      
+      img {
+        display: block;
+        max-width: 100%;
+      }
+      
+      figcaption {
+        display: table-caption;
+        caption-side: bottom;
+        margin-top: $pad/4;
+      }
+      
+      + p {
+        margin-top: $pad;
+      }
+    }
+    
+    &.left {
+      float: left;
+      margin: $pad/2 $pad*2 $pad 0;
+    }
+    
+    &.right {
+      float: right;
+      margin: $pad/2 0 $pad $pad*2;
+    }
+  }
+}
+
+
+
+@mixin table {
+  table {
+    width: 100%;
+    display: table !important;
+    
+    caption {
+      @include font(italic);
+      margin-bottom: $pad/4;
+    }
+    
+    thead {
+      @include color(invert);
+    }
+    
+    thead th, tbody td {
+      padding: $pad/2;
+      padding-left: 0;
+      
+      &:first-of-type {
+        padding-left: 1px;
+      }
+    }
+    
+    tbody {
+      td {
+        border-bottom: 1px solid $gray;
+      }
+    }
+  }
+}
+
+
+
+/* <dl>
+*/
+@mixin dl {
+  dl {
+    dt {
+      @include h2;
+    }
+  }
+}
+
+
+
+
+/* <ul> and <ol> lists
+  - they display a custom bullet / number via $before
+  - the text of the list is aligned right related to the bullet / number
+*/
+@mixin ol-ul($before : null) {
+  list-style: none outside;
+  
+  li {
+    /* When parent positioned to 'relative' the children (:before) can be positioned to 'absolute'
+      - this way we can perfectly align the bullets / numbering to the list content
+    */
+    position: relative;
+    padding-left: $pad;
+    
+    &:before {
+      content: $before;
+      
+      /* making the content of the list perfectly align with numbering
+        - <li> is relatively positioned
+        - :the numbering (:before) is aboslutely positioned within <li> and fixed to left
+        - the the <li> content has a padding-left to not overlap the numbering
+      */
+      position: absolute;
+      left: 0;
+      font-weight: bold;
+    }
+  }
+}
+
+@mixin ul {
+  ul {
+    @include ol-ul('\2022');
+  }
+}
+
+@mixin ol {
+  ol {
+    @include ol-ul;
+    counter-reset: ol-counter;
+    
+    li {
+      counter-increment: ol-counter;
+      
+      &:before {
+        content: counter(ol-counter, decimal) ".";
+      }
+    }
+  }
+}
+
+
+
+
+
+

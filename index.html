@@ -11,7 +11,7 @@ class: frontpage
     <h3>Slideshow</h3>
     
     {% for post in site.categories.slider limit:7 %}
-      {% include article.html klass = 'thumb' %}
+      {% include article.html klass = 'thumb' type = 'slider' %}
     {% endfor %}
     
     {% assign items = 7 %}
