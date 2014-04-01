@@ -36,24 +36,10 @@
       margin-bottom: $pad;
     }
     
-    .share-buttons {
-      margin: $pad 0;
-    }
-    
     .content {
       figure {
         figcaption {
-          @include border-thin;
-          padding-bottom: $pad;  
-          @include link($grey, $highlight);
-        }
-        
-        &.person {
-          background: $light-grey;
-          
-          img {
-            padding: $pad;
-          }
+          @include link($color, $highlight);
         }
       }
     }

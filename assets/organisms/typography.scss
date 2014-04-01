@@ -20,8 +20,13 @@
   }
   
   figure {
-    margin-top: $pad*2;
+    margin-top: $pad;
   }
+  
+  figure + figure {
+    margin-top: 0;
+  }
+  
   
   
   /* Padding of consecutive elements

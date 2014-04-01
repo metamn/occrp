@@ -221,6 +221,11 @@
         }
       }
     }
+    
+    .print {
+      cursor: pointer;
+      width: $pad;
+    }
   }
   
   .share-buttons {
@@ -230,6 +235,9 @@
       
       li {
         .box {
+          @include block;
+          width: $pad*3 - $pad/2;
+          
           .count {
             float: right;
             @include color(invert);

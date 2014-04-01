@@ -1,6 +1,10 @@
 <nav class="meta">
   <h3>Article Meta Information</h3>
   <ul>
+    <li class="print">
+      <img src='{{ site.url }}/assets/images/print.png' alt='Print article'>
+    </li>
+    
     <li class="category">
       <a href="{{ site.url }}/{{ post.categories.first }}" title="{{ post.categories.first | capitalize }}">{{ post.categories.first | capitalize }}</a>
     </li>

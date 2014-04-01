@@ -289,13 +289,7 @@
     */
     @include block;
     text-align: right;
-    width: calc(#{$body-text-width} - #{$pad*4});
-    
-    /*
-    @include below-and-small-screen {
-      width: calc(100% - #{$pad*4});
-    }
-    */
+    width: calc(#{$body-text-width} - #{$pad*8});
     
     &:before {
       content: '\201C';
@@ -304,6 +298,14 @@
       position: absolute;
       top: -$pad/10;
       left: 0;
+    }
+
+    @include below-tablet {
+      padding: $pad*3 0 $pad*2 0;
+  
+      &:before {
+        font-size: 450%;
+      }
     }
   }
 }
@@ -480,40 +482,72 @@
         margin: 0;
         padding: 0;
       }
-      
+      padding: $pad/4;
       font-size: smaller;
     }
     
-    /* Fit figcpation to image width
-    */
-    &.left, &.right, &.person, &.document, &.company {
-      display: table;
-      
-      img {
-        display: block;
-        max-width: 100%;
-      }
-      
-      figcaption {
-        display: table-caption;
-        caption-side: bottom;
-        margin-top: $pad/4;
-      }
-      
-      + p {
-        margin-top: $pad;
-      }
+    @include below-tablet {
+      @include inline-figure;
     }
     
-    &.left {
+    @include tablet-and-up {
+      @include floated-figure;
+    }
+  }
+}
+
+
+/* Display a figure inline
+*/
+@mixin inline-figure {
+  &.people, &.document, &.company {
+    @include block;
+    
+    img {
       float: left;
-      margin: $pad/2 $pad*2 $pad 0;
+      width: $pad*2;
+      margin-right: $pad;
     }
     
-    &.right {
-      float: right;
-      margin: $pad/2 0 $pad $pad*2;
+    figcaption {
+      padding: 0;
     }
+  }
+}
+
+/* Figures are floated around the text, either left or right
+  - becuase of 'display:table' it's not working well on mobiles
+*/
+@mixin floated-figure {
+  /* Fit figcpation to image width
+    */
+  &.left, &.right, &.person, &.document, &.company, &.people {
+    display: table;
+    
+    img {
+      display: block;
+      max-width: 100%;
+    }
+    
+    figcaption {
+      display: table-caption;
+      caption-side: bottom;
+      margin-top: $pad/4;
+    }
+    
+    + p {
+      margin-top: $pad;
+    }
+  }
+  
+  &.left {
+    float: left;
+    margin: $pad/2 $pad*2 $pad 0;
+  }
+  
+  &.right {
+    float: right;
+    margin: $pad/2 0 $pad $pad*2;
   }
 }
 
