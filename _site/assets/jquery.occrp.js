@@ -102,7 +102,7 @@ $(document).ready(function() {
   
   
   // Share buttons in article body
-  $('.share .twitter').sharrre({
+  $('.share-buttons .twitter').sharrre({
     share: {
       twitter: true
     },
@@ -115,7 +115,7 @@ $(document).ready(function() {
     }
   });
   
-  $('.share .facebook').sharrre({
+  $('.share-buttons .facebook').sharrre({
     share: {
       facebook: true
     },
@@ -127,7 +127,7 @@ $(document).ready(function() {
     }
   });
   
-  $('.share .google-plus').sharrre({
+  $('.share-buttons .google-plus').sharrre({
     share: {
       facebook: true
     },
@@ -139,7 +139,7 @@ $(document).ready(function() {
     }
   });
   
-  $('.share .linkedin').sharrre({
+  $('.share-buttons .linkedin').sharrre({
     share: {
       facebook: true
     },

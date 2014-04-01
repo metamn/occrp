@@ -12,6 +12,11 @@
   @include block;
   @include col-nm(2, 3);
   
+  @include below-tablet {
+    @include block;
+    margin-bottom: $flexible-grid-margin;
+  }
+  
   article.single {
     @include article(category, date, title, figure, figcaption, null, body);
     @include body-text;
@@ -22,20 +27,20 @@
       }
     }
     
-    #meta, #share, #content {
+    .meta, .share-buttons, .content {
       @include block;
     }
       
-    #meta {
+    .meta {
       @include border-thin;
       margin-bottom: $pad;
     }
     
-    #share {
+    .share-buttons {
       margin: $pad 0;
     }
     
-    #content {
+    .content {
       figure {
         figcaption {
           @include border-thin;
@@ -67,7 +72,7 @@
     @include article-style(title-right);
     
     article {
-      #excerpt {
+      .excerpt {
         display: none;
       }
     }
@@ -90,7 +95,7 @@
       @include h1;
     }
     
-    #excerpt {
+    .excerpt {
       display: block;
       @include border-thin;
       padding-bottom: $pad*2;
@@ -318,15 +323,17 @@
 /* Fixed sidebar
 */
 @mixin fixed-sidebar {
-  overflow: hidden;
-  
-  aside {
-    #spacer {
-      margin-bottom: -$pad*2000;
-      padding-bottom: $pad*2000;
-      
-      position: relative;
-      top: -$pad*2; /* This is the margin between sidebar elements ... */
+  @include tablet-and-up {
+    overflow: hidden;
+    
+    aside {
+      #spacer {
+        margin-bottom: -$pad*2000;
+        padding-bottom: $pad*2000;
+        
+        position: relative;
+        top: -$pad*2; /* This is the margin between sidebar elements ... */
+      }
     }
   }
 }
@@ -335,9 +342,7 @@
 /* Archives
 */
 @mixin archive {
-  @include tablet-and-up {
-    @include fixed-sidebar;
-  }
+  @include fixed-sidebar;
   
   #articles {
     @include category-articles;
