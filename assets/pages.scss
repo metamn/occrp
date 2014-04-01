@@ -105,6 +105,12 @@ html {
         
         #banner {
           margin-bottom: $pad;
+          
+          figure {
+            figcaption {
+              display: none;
+            }
+          }
         }
       }
     }

@@ -1563,6 +1563,7 @@ html body.tag main aside section#projects article h1 { margin-right: 0; padding:
 @media only screen and (max-width: 47.999em) { html body.tag main aside section#projects article h1 { font-size: small; } }
 html body.tag main aside #spacer > h3 { display: none; }
 html body.tag main #banner { margin-bottom: 1.25em; }
+html body.tag main #banner figure figcaption { display: none; }
 html body.projects main #articles .title { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; }
 html body.projects main #articles .title a { color: #982022; text-decoration: none; }
 html body.projects main #articles .title a:hover { color: #231f20; }
