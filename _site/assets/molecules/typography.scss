@@ -29,7 +29,7 @@
     font-style: normal;
   
   } @elseif ($type == category-title) {
-    padding: $h1-padding 0;
+    
   
   } @elseif ($type == thumb-title) {
     font-size: medium;

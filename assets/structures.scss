@@ -77,6 +77,62 @@
 
 
 
+/* Blog archives
+*/
+@mixin blog {
+  @include article-style(slider);
+  margin-bottom: $flexible-grid-margin;
+  
+  article.thumb {
+    @include block;
+    
+    h1 {
+      @include h1;
+    }
+    
+    #excerpt {
+      display: block;
+      @include border-thin;
+      padding-bottom: $pad*2;
+    }
+  }
+}
+
+
+
+
+
+/* About us Sidebar menu
+*/
+@mixin about-us {
+  aside {
+    section {
+      @include hide-title;
+      
+      nav {
+        ul {
+          @include list-menu;
+          
+          li {
+            @include block;
+            @include grid-resize(100%, $pad/2);
+            
+            a {
+              @include block;
+              @include grid-resize(100%, $pad/2);
+            }
+          }
+        }
+      }
+    }
+    
+    #spacer {
+      top: -$pad - $pad/4;
+    }
+  }
+}
+
+
 
 /* Resources / Documents
 */
@@ -162,39 +218,6 @@
 
 
 
-/* Category archives
-*/
-@mixin category-articles {
-  @include col-nm(2, 3);
-  
-  .title {
-    @include font(section-title);
-    @include font(category-title);
-  }
-  
-  aside {
-    @include block;
-    @include article-style(slider);
-    margin-bottom: $flexible-grid-margin;
-    
-    article {
-      #excerpt {
-        @include border-thin;
-        padding-bottom: $pad*2;
-      }
-    }
-  }
-  
-  article {
-    &.thumb {
-      @include responsive-grid(3);
-      @include article-style(projects);
-    }
-  }
-  
-  @include navigation(navigation);
-}
-
 
 
 
@@ -203,6 +226,10 @@
 @mixin category-aside {
   @include col-nm(1, 3);
   margin-right: 0;
+  
+  @include below-tablet {
+    @include block;
+  }
   
   @include most-read;
   
@@ -222,8 +249,49 @@
       @include article-style(title-right);
     }
   }
+  
+  #spacer {
+    @include hide-title;
+  }
 }
 
+
+/* Category archives
+*/
+@mixin category-articles {
+  @include col-nm(2, 3);
+  @include below-tablet {
+    @include block;
+    margin-bottom: $flexible-grid-margin;
+  }
+  
+  .title {
+    @include font(section-title);
+    @include font(category-title);
+  }
+  
+  aside {
+    @include block;
+    @include article-style(slider);
+    margin-bottom: $flexible-grid-margin;
+    
+    article.category-first {
+      .excerpt {
+        @include border-thin;
+        padding-bottom: $pad;
+      }
+    }
+  }
+  
+  article {
+    &.thumb {
+      @include responsive-grid(3);
+      @include article-style(projects);
+    }
+  }
+  
+  @include navigation(navigation);
+}
 
 
 /* Fixed sidebar
@@ -233,7 +301,6 @@
   
   aside {
     #spacer {
-      @include hide-title;
       margin-bottom: -$pad*2000;
       padding-bottom: $pad*2000;
       
@@ -244,13 +311,13 @@
 }
 
 
-
-
 /* Archives
 */
 @mixin archive {
-  @include fixed-sidebar;
-        
+  @include tablet-and-up {
+    @include fixed-sidebar;
+  }
+  
   #articles {
     @include category-articles;
   }
@@ -263,60 +330,6 @@
 
 
 
-/* Blog archives
-*/
-@mixin blog {
-  @include article-style(slider);
-  margin-bottom: $flexible-grid-margin;
-  
-  article.thumb {
-    @include block;
-    
-    h1 {
-      @include h1;
-    }
-    
-    #excerpt {
-      display: block;
-      @include border-thin;
-      padding-bottom: $pad*2;
-    }
-  }
-}
-
-
-
-
-
-/* About us Sidebar menu
-*/
-@mixin about-us {
-  aside {
-    section {
-      @include hide-title;
-      
-      nav {
-        ul {
-          @include list-menu;
-          
-          li {
-            @include block;
-            @include grid-resize(100%, $pad/2);
-            
-            a {
-              @include block;
-              @include grid-resize(100%, $pad/2);
-            }
-          }
-        }
-      }
-    }
-    
-    #spacer {
-      top: -$pad - $pad/4;
-    }
-  }
-}
 
 
 
