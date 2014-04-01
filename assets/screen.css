@@ -1567,7 +1567,7 @@ html body.tag main #banner figure figcaption { display: none; }
 html body.projects main #articles .title { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; }
 html body.projects main #articles .title a { color: #982022; text-decoration: none; }
 html body.projects main #articles .title a:hover { color: #231f20; }
-html body.projects main #articles article { margin-bottom: 3%; border-top: 0.3125em solid; padding-top: 1.25em; height: 28em; height: 17em !important; }
+html body.projects main #articles article { margin-bottom: 3%; border-top: 0.3125em solid; padding-top: 1.25em; height: 28em; height: 17em; }
 @media only screen and (max-width: 47.999em) { html body.projects main #articles article { width: 100%; margin-right: 0; float: left; } }
 @media only screen and (min-width: 64.001em) { html body.projects main #articles article { width: 18%; margin-right: 2.5%; float: left; }
   html body.projects main #articles article:nth-of-type(2) { margin-right: 2.5%; }
@@ -1622,6 +1622,7 @@ html body.projects main #articles article .content a { color: #982022; text-deco
 html body.projects main #articles article .content a:hover { color: #982022; }
 @media only screen and (max-width: 47.999em) { html body.projects main #articles article { height: auto; } }
 html body.projects main #articles article .excerpt { margin-top: 0.625em; }
+@media only screen and (max-width: 47.999em) { html body.projects main #articles article { height: auto; } }
 html body.projects main #articles nav { margin-top: 1.25em; }
 html body.projects main #articles nav > h3 { display: none; }
 html body.projects main #articles nav ol li { display: inline-block; float: left; margin-right: 0.625em; }
@@ -1637,7 +1638,7 @@ html body.projects main #articles nav ol li a:hover { color: white; }
 html body.resources main #articles .title { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; }
 html body.resources main #articles .title a { color: #982022; text-decoration: none; }
 html body.resources main #articles .title a:hover { color: #231f20; }
-html body.resources main #articles article { margin-bottom: 3%; border-top: 0.3125em solid; padding-top: 1.25em; height: 28em; height: 17em !important; }
+html body.resources main #articles article { margin-bottom: 3%; border-top: 0.3125em solid; padding-top: 1.25em; height: 28em; height: 17em; }
 @media only screen and (max-width: 47.999em) { html body.resources main #articles article { width: 100%; margin-right: 0; float: left; } }
 @media only screen and (min-width: 64.001em) { html body.resources main #articles article { width: 18%; margin-right: 2.5%; float: left; }
   html body.resources main #articles article:nth-of-type(2) { margin-right: 2.5%; }
@@ -1692,6 +1693,7 @@ html body.resources main #articles article .content a { color: #982022; text-dec
 html body.resources main #articles article .content a:hover { color: #982022; }
 @media only screen and (max-width: 47.999em) { html body.resources main #articles article { height: auto; } }
 html body.resources main #articles article .excerpt { margin-top: 0.625em; }
+@media only screen and (max-width: 47.999em) { html body.resources main #articles article { height: auto; } }
 html body.resources main #articles nav { margin-top: 1.25em; }
 html body.resources main #articles nav > h3 { display: none; }
 html body.resources main #articles nav ol li { display: inline-block; float: left; margin-right: 0.625em; }
@@ -1706,7 +1708,9 @@ html body.resources main #articles nav ol li a:hover { color: white; }
 @media only screen and (max-width: 48em) { html body.resources main #articles nav ol { font-size: small; } }
 html body.resources main #articles #tools article #meta { display: none; }
 html body.resources main #documents > h3 { display: block; }
+html body.resources main #documents article { border-top: 1px solid; }
 html body.resources main #documents article img { width: 2.5em; float: right; margin: 0.625em 0.625em 0 0; }
+html body.resources main #documents article h1 { margin-bottom: 1.5%; }
 html body.resources main #documents article ul { width: 100%; max-width: 100%; float: left; list-style: none outside; font-size: smaller; }
 html body.resources main #documents article ul li { /* When parent positioned to 'relative' the children (:before) can be positioned to 'absolute' - this way we can perfectly align the bullets / numbering to the list content
 */ position: relative; padding-left: 1.25em; }
@@ -1714,6 +1718,9 @@ html body.resources main #documents article ul li:before { content: ""; /* makin
 */ position: absolute; left: 0; font-weight: bold; }
 html body.resources main #documents article ul li { margin-bottom: 0.625em; padding-left: 0; }
 html body.resources main #documents article ul li date { font-size: small; color: #6f6e6e; font-style: normal; }
+@media only screen and (max-width: 47.999em) { html body.resources main #documents { margin-top: 3%; }
+  html body.resources main #documents article { border-color: #f1f1f1; }
+  html body.resources main #documents article img { width: 1.875em; } }
 @media only screen and (min-width: 48.001em) { html body.blog main { overflow: hidden; }
   html body.blog main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; position: relative; top: -2.5em; /* This is the margin between sidebar elements ... */ } }
 html body.blog main #articles { width: 65.5%; margin-right: 2.5%; float: left; }

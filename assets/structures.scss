@@ -140,10 +140,16 @@
   @include show-title;
   
   article {
+    border-top: $border-thin;
+    
     img {
       width: $pad*2;
       float: right;
       margin: $pad/2 $pad/2 0 0;
+    }
+    
+    h1 {
+      margin-bottom: $flexible-grid-margin / 2;
     }
     
     ul {
@@ -158,6 +164,18 @@
         date {
           @include font(date);
         }
+      }
+    }
+  }
+  
+  @include below-tablet {
+    margin-top: $flexible-grid-margin;
+    
+    article {
+      border-color: $light-grey;
+      
+      img {
+        width: $pad + $pad/2;
       }
     }
   }
@@ -210,7 +228,10 @@
     @include responsive-grid(5);
     @include article-style(investigations);
     
-    height: 17em !important;
+    height: 17em;
+    @include below-tablet {
+      height: auto;
+    }
   }
   
   @include navigation(navigation);
