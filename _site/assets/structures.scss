@@ -262,6 +262,67 @@
 
 
 
+
+/* Blog archives
+*/
+@mixin blog {
+  @include article-style(slider);
+  margin-bottom: $flexible-grid-margin;
+  
+  article.thumb {
+    @include block;
+    
+    h1 {
+      @include h1;
+    }
+    
+    #excerpt {
+      display: block;
+      @include border-thin;
+      padding-bottom: $pad*2;
+    }
+  }
+}
+
+
+
+
+
+/* About us Sidebar menu
+*/
+@mixin about-us {
+  aside {
+    section {
+      @include hide-title;
+      
+      nav {
+        ul {
+          @include list-menu;
+          
+          li {
+            @include block;
+            @include grid-resize(100%, $pad/2);
+            
+            a {
+              @include block;
+              @include grid-resize(100%, $pad/2);
+            }
+          }
+        }
+      }
+    }
+    
+    #spacer {
+      top: -$pad - $pad/4;
+    }
+  }
+}
+
+
+
+
+
+
 /* Videos
 */
 @mixin videos {
@@ -299,29 +360,12 @@
       h1 {
         font-weight: normal;
         @include font-body;
+        
+        @include below-tablet {
+          font-size: small;
+          line-height: $line-height-headings;
+        }
       }
-    }
-  }
-}
-
-
-/* Blog archives
-*/
-@mixin blog {
-  @include article-style(slider);
-  margin-bottom: $flexible-grid-margin;
-  
-  article.thumb {
-    @include block;
-    
-    h1 {
-      @include h1;
-    }
-    
-    #excerpt {
-      display: block;
-      @include border-thin;
-      padding-bottom: $pad*2;
     }
   }
 }
@@ -350,37 +394,6 @@
 }
 
 
-/* About us Sidebar menu
-*/
-@mixin about-us {
-  aside {
-    section {
-      @include hide-title;
-      
-      nav {
-        ul {
-          @include list-menu;
-          
-          li {
-            @include block;
-            @include grid-resize(100%, $pad/2);
-            
-            a {
-              @include block;
-              @include grid-resize(100%, $pad/2);
-            }
-          }
-        }
-      }
-    }
-    
-    #spacer {
-      top: -$pad - $pad/4;
-    }
-  }
-}
-
-
 
 /* Projects on frontpage
 */
@@ -392,7 +405,6 @@
   article {
     @include responsive-grid(5);
     @include article-style(projects);
-    margin-bottom: $flexible-grid-margin / 2;
   }
 }
 
