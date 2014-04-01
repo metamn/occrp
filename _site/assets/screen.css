@@ -618,7 +618,7 @@ html body.frontpage .container main #intro #slider article .share-buttons ul li 
 html body.frontpage .container main #intro #slider article .content a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #intro #slider article .content a:hover { color: #982022; }
 html body.frontpage .container main #intro #slider article figure, html body.frontpage .container main #intro #slider article h1, html body.frontpage .container main #intro #slider article .excerpt, html body.frontpage .container main #intro #slider nav { width: 48.75%; margin-right: 2.5%; float: left; }
-html body.frontpage .container main #intro #slider article h1, html body.frontpage .container main #intro #slider article .excerpt, html body.frontpage .container main #intro #slider nav { margin-right: 0; padding: 0.625em; width: calc(48.75% - 1.25em); padding-left: 0; }
+html body.frontpage .container main #intro #slider article h1, html body.frontpage .container main #intro #slider article .excerpt, html body.frontpage .container main #intro #slider nav { margin-right: 0; padding: 0.625em; width: calc(48.75% - 1.25em); padding-left: 0; padding-right: 0; }
 html body.frontpage .container main #intro #slider nav { left: 51.25%; }
 @media only screen and (max-width: 47.999em) { html body.frontpage .container main #intro #slider article figure, html body.frontpage .container main #intro #slider article h1, html body.frontpage .container main #intro #slider article .excerpt, html body.frontpage .container main #intro #slider nav { width: 100%; max-width: 100%; float: left; } }
 html body.frontpage .container main #intro #slider nav { margin-top: 1.25em; }
@@ -1161,7 +1161,7 @@ html body.category main #articles aside article .share-buttons ul li .box .share
 html body.category main #articles aside article .content a { color: #982022; text-decoration: none; }
 html body.category main #articles aside article .content a:hover { color: #982022; }
 html body.category main #articles aside article figure, html body.category main #articles aside article h1, html body.category main #articles aside article .excerpt, html body.category main #articles aside nav { width: 48.75%; margin-right: 2.5%; float: left; }
-html body.category main #articles aside article h1, html body.category main #articles aside article .excerpt, html body.category main #articles aside nav { margin-right: 0; padding: 0.625em; width: calc(48.75% - 1.25em); padding-left: 0; }
+html body.category main #articles aside article h1, html body.category main #articles aside article .excerpt, html body.category main #articles aside nav { margin-right: 0; padding: 0.625em; width: calc(48.75% - 1.25em); padding-left: 0; padding-right: 0; }
 html body.category main #articles aside nav { left: 51.25%; }
 @media only screen and (max-width: 47.999em) { html body.category main #articles aside article figure, html body.category main #articles aside article h1, html body.category main #articles aside article .excerpt, html body.category main #articles aside nav { width: 100%; max-width: 100%; float: left; } }
 html body.category main #articles aside article.category-first .excerpt { border-bottom: 1px solid #f1f1f1; padding-bottom: 1.25em; }
@@ -1425,7 +1425,7 @@ html body.tag main #articles aside article .share-buttons ul li .box .share img 
 html body.tag main #articles aside article .content a { color: #982022; text-decoration: none; }
 html body.tag main #articles aside article .content a:hover { color: #982022; }
 html body.tag main #articles aside article figure, html body.tag main #articles aside article h1, html body.tag main #articles aside article .excerpt, html body.tag main #articles aside nav { width: 48.75%; margin-right: 2.5%; float: left; }
-html body.tag main #articles aside article h1, html body.tag main #articles aside article .excerpt, html body.tag main #articles aside nav { margin-right: 0; padding: 0.625em; width: calc(48.75% - 1.25em); padding-left: 0; }
+html body.tag main #articles aside article h1, html body.tag main #articles aside article .excerpt, html body.tag main #articles aside nav { margin-right: 0; padding: 0.625em; width: calc(48.75% - 1.25em); padding-left: 0; padding-right: 0; }
 html body.tag main #articles aside nav { left: 51.25%; }
 @media only screen and (max-width: 47.999em) { html body.tag main #articles aside article figure, html body.tag main #articles aside article h1, html body.tag main #articles aside article .excerpt, html body.tag main #articles aside nav { width: 100%; max-width: 100%; float: left; } }
 html body.tag main #articles aside article.category-first .excerpt { border-bottom: 1px solid #f1f1f1; padding-bottom: 1.25em; }
@@ -1856,7 +1856,7 @@ html body.blog main #articles aside article .share-buttons ul li .box .share img
 html body.blog main #articles aside article .content a { color: #982022; text-decoration: none; }
 html body.blog main #articles aside article .content a:hover { color: #982022; }
 html body.blog main #articles aside article figure, html body.blog main #articles aside article h1, html body.blog main #articles aside article .excerpt, html body.blog main #articles aside nav { width: 48.75%; margin-right: 2.5%; float: left; }
-html body.blog main #articles aside article h1, html body.blog main #articles aside article .excerpt, html body.blog main #articles aside nav { margin-right: 0; padding: 0.625em; width: calc(48.75% - 1.25em); padding-left: 0; }
+html body.blog main #articles aside article h1, html body.blog main #articles aside article .excerpt, html body.blog main #articles aside nav { margin-right: 0; padding: 0.625em; width: calc(48.75% - 1.25em); padding-left: 0; padding-right: 0; }
 html body.blog main #articles aside nav { left: 51.25%; }
 @media only screen and (max-width: 47.999em) { html body.blog main #articles aside article figure, html body.blog main #articles aside article h1, html body.blog main #articles aside article .excerpt, html body.blog main #articles aside nav { width: 100%; max-width: 100%; float: left; } }
 html body.blog main #articles aside article.category-first .excerpt { border-bottom: 1px solid #f1f1f1; padding-bottom: 1.25em; }
@@ -2113,7 +2113,7 @@ html body.blog main #articles article .share-buttons ul li .box .share img { wid
 html body.blog main #articles article .content a { color: #982022; text-decoration: none; }
 html body.blog main #articles article .content a:hover { color: #982022; }
 html body.blog main #articles article figure, html body.blog main #articles article h1, html body.blog main #articles article .excerpt, html body.blog main #articles nav { width: 48.75%; margin-right: 2.5%; float: left; }
-html body.blog main #articles article h1, html body.blog main #articles article .excerpt, html body.blog main #articles nav { margin-right: 0; padding: 0.625em; width: calc(48.75% - 1.25em); padding-left: 0; }
+html body.blog main #articles article h1, html body.blog main #articles article .excerpt, html body.blog main #articles nav { margin-right: 0; padding: 0.625em; width: calc(48.75% - 1.25em); padding-left: 0; padding-right: 0; }
 html body.blog main #articles nav { left: 51.25%; }
 @media only screen and (max-width: 47.999em) { html body.blog main #articles article figure, html body.blog main #articles article h1, html body.blog main #articles article .excerpt, html body.blog main #articles nav { width: 100%; max-width: 100%; float: left; } }
 html body.blog main #articles article.thumb { width: 100%; max-width: 100%; float: left; }
@@ -2177,7 +2177,7 @@ html body.author main #articles aside article .share-buttons ul li .box .share i
 html body.author main #articles aside article .content a { color: #982022; text-decoration: none; }
 html body.author main #articles aside article .content a:hover { color: #982022; }
 html body.author main #articles aside article figure, html body.author main #articles aside article h1, html body.author main #articles aside article .excerpt, html body.author main #articles aside nav { width: 48.75%; margin-right: 2.5%; float: left; }
-html body.author main #articles aside article h1, html body.author main #articles aside article .excerpt, html body.author main #articles aside nav { margin-right: 0; padding: 0.625em; width: calc(48.75% - 1.25em); padding-left: 0; }
+html body.author main #articles aside article h1, html body.author main #articles aside article .excerpt, html body.author main #articles aside nav { margin-right: 0; padding: 0.625em; width: calc(48.75% - 1.25em); padding-left: 0; padding-right: 0; }
 html body.author main #articles aside nav { left: 51.25%; }
 @media only screen and (max-width: 47.999em) { html body.author main #articles aside article figure, html body.author main #articles aside article h1, html body.author main #articles aside article .excerpt, html body.author main #articles aside nav { width: 100%; max-width: 100%; float: left; } }
 html body.author main #articles aside article.category-first .excerpt { border-bottom: 1px solid #f1f1f1; padding-bottom: 1.25em; }
@@ -2437,7 +2437,7 @@ html body.author main #articles article .share-buttons ul li .box .share img { w
 html body.author main #articles article .content a { color: #982022; text-decoration: none; }
 html body.author main #articles article .content a:hover { color: #982022; }
 html body.author main #articles article figure, html body.author main #articles article h1, html body.author main #articles article .excerpt, html body.author main #articles nav { width: 48.75%; margin-right: 2.5%; float: left; }
-html body.author main #articles article h1, html body.author main #articles article .excerpt, html body.author main #articles nav { margin-right: 0; padding: 0.625em; width: calc(48.75% - 1.25em); padding-left: 0; }
+html body.author main #articles article h1, html body.author main #articles article .excerpt, html body.author main #articles nav { margin-right: 0; padding: 0.625em; width: calc(48.75% - 1.25em); padding-left: 0; padding-right: 0; }
 html body.author main #articles nav { left: 51.25%; }
 @media only screen and (max-width: 47.999em) { html body.author main #articles article figure, html body.author main #articles article h1, html body.author main #articles article .excerpt, html body.author main #articles nav { width: 100%; max-width: 100%; float: left; } }
 html body.author main #articles article.thumb { width: 100%; max-width: 100%; float: left; }
