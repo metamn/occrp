@@ -259,6 +259,10 @@
     
     &#projects {
       @include article-style(title-right);
+      
+      article {
+        padding: 0;
+      }
     }
   }
   
