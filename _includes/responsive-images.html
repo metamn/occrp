@@ -1,8 +1,13 @@
 {% if include.type %}
   {% assign title = post.images[image_index].title %}
   {% assign link = post.url %}
-  {% assign normal = post.images[image_index].url %}
-  {% assign mobile = post.images[image_index].url %}
+  {% capture normal %}
+    {{ site.url }}{{ post.images[image_index].url }}
+  {% endcapture %}
+  {% capture mobile %}
+    {{ site.url }}{{ post.images[image_index].url }}
+  {% endcapture %}
+
 {% else %}
   {% assign title = include.title %}
   {% assign link = include.link %}
