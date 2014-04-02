@@ -57,8 +57,8 @@ class: frontpage
     <a href="{{ site.url }}/products" title="Products">Products</a>
   </h3>
   
-  {% for post in site.categories.products limit:4 %}
-    {% include article.html klass = 'thumb' %}
+  {% for post in site.categories.resources limit:4 %}
+    {% include article.html klass = 'thumb' holder='false' %}
   {% endfor %}
 </section>
 
