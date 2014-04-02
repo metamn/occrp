@@ -181,6 +181,8 @@ figure a { line-height: 0; }
 */
 /* About us Sidebar menu
 */
+/* Author with image and bio
+*/
 /* Resources / Documents
 */
 /* Jobs
@@ -2384,8 +2386,8 @@ html body.author main aside section#projects article h1 { margin-right: 0; paddi
 @media only screen and (max-width: 47.999em) { html body.author main aside section#projects article h1 { font-size: small; } }
 html body.author main aside section#projects article { padding: 0; }
 html body.author main aside #spacer > h3 { display: none; }
-html body.author main aside #bio img { width: 7.5em; float: left; margin: 0 1.25em 1.25em; }
-html body.author main aside #bio div { padding: 0 0.625em; line-height: 1.75; font-size: smaller; }
+html body.author main aside #bio img { width: 7.5em; float: left; margin: 0 1.25em 1.25em 0; }
+html body.author main aside #bio div { padding: 0 0.625em; line-height: 1.75; font-size: smaller; margin-left: calc(7.5em + 1.25em + 1.25em); }
 html body.author main aside #bio div p + p { margin-top: 1.25em; }
 html body.author main #articles { margin-bottom: 3%; }
 html body.author main #articles article { width: 100%; max-width: 100%; float: left; margin-bottom: 3%; margin-bottom: 0; }
@@ -2811,8 +2813,12 @@ html body.about main aside section nav ul li.active a a:hover, html body.about m
 html body.about main aside section nav ul li { width: 100%; max-width: 100%; float: left; width: calc(100% - 0.625em); }
 html body.about main aside section nav ul li a { width: 100%; max-width: 100%; float: left; width: calc(100% - 0.625em); }
 html body.about main aside #spacer { top: -1.5625em; }
-html body.board-directors main #article p { border-bottom: 1px solid #f1f1f1; font-weight: bold; }
-html body.board-directors main #article dl + p { margin-top: 2.5em !important; }
+html body.board-directors main #article .single .content h4 { border-bottom: 1px solid #f1f1f1; font-weight: bold; padding-bottom: 0; }
+html body.board-directors main #article .single .content dl + p { margin-top: 2.5em !important; }
+html body.board-directors main #article .single .content dd.portrait { width: 100%; max-width: 100%; float: left; margin-bottom: 1.25em; }
+html body.board-directors main #article .single .content dd.portrait img { width: 50%; float: left; margin: 0 1.25em 1.25em 0; }
+html body.board-directors main #article .single .content dd.portrait div { padding: 0 0.625em; line-height: 1.75; font-size: normal; margin-left: calc(50% + 1.25em + 1.25em); }
+html body.board-directors main #article .single .content dd.portrait div p + p { margin-top: 1.25em; }
 html body.jobs main #article #content article, html body.announcements main #article #content article { margin-bottom: 3%; border-bottom: 1px solid #f1f1f1; padding-bottom: 1.5%; margin-bottom: 1.5%; max-width: 43.75em; line-height: 1.75; /* Padding of individual elements
 */ /* Padding of consecutive elements
 */ }

@@ -125,6 +125,29 @@
 
 
 
+/* Author with image and bio
+*/
+@mixin author($image-width: $pad*6, $font-size: smaller) {
+  img {
+    width: $image-width;
+    float: left;
+    margin: 0 $pad $pad 0;
+  }
+  
+  div {
+    padding: 0 $pad/2;
+    line-height: $line-height-body-text;
+    font-size: $font-size;
+    margin-left: calc(#{$image-width} + #{$pad} + #{$pad});
+    
+    p + p {
+      margin-top: $pad;
+    }
+  }
+}
+
+
+
 /* Resources / Documents
 */
 @mixin documents {
