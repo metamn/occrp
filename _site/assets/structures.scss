@@ -34,6 +34,10 @@
     .meta {
       @include border-thin;
       margin-bottom: $pad;
+      
+      .print {
+        display: inline-block;
+      }
     }
     
     .content {

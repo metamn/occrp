@@ -607,7 +607,7 @@ html body.frontpage .container main #intro #slider article .meta .authors { font
 html body.frontpage .container main #intro #slider article .meta .authors ul li:after { content: ','; }
 html body.frontpage .container main #intro #slider article .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
 html body.frontpage .container main #intro #slider article .meta .authors ul li:first-of-type:after, html body.frontpage .container main #intro #slider article .meta .authors ul li:last-of-type:after { content: ''; }
-html body.frontpage .container main #intro #slider article .meta .print { cursor: pointer; width: 1.25em; }
+html body.frontpage .container main #intro #slider article .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.frontpage .container main #intro #slider article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.frontpage .container main #intro #slider article .share-buttons ul li:before { content: ''; }
 html body.frontpage .container main #intro #slider article .share-buttons ul li { display: inline-block; float: left; margin-right: 1.25em; }
@@ -698,7 +698,7 @@ html body.frontpage .container main #intro #news article .meta .authors, html bo
 html body.frontpage .container main #intro #news article .meta .authors ul li:after, html body.frontpage .container main #intro #announcements article .meta .authors ul li:after { content: ','; }
 html body.frontpage .container main #intro #news article .meta .authors ul li:first-of-type, html body.frontpage .container main #intro #announcements article .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
 html body.frontpage .container main #intro #news article .meta .authors ul li:first-of-type:after, html body.frontpage .container main #intro #news article .meta .authors ul li:last-of-type:after, html body.frontpage .container main #intro #announcements article .meta .authors ul li:first-of-type:after, html body.frontpage .container main #intro #announcements article .meta .authors ul li:last-of-type:after { content: ''; }
-html body.frontpage .container main #intro #news article .meta .print, html body.frontpage .container main #intro #announcements article .meta .print { cursor: pointer; width: 1.25em; }
+html body.frontpage .container main #intro #news article .meta .print, html body.frontpage .container main #intro #announcements article .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.frontpage .container main #intro #news article .share-buttons ul li, html body.frontpage .container main #intro #announcements article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.frontpage .container main #intro #news article .share-buttons ul li:before, html body.frontpage .container main #intro #announcements article .share-buttons ul li:before { content: ''; }
 html body.frontpage .container main #intro #news article .share-buttons ul li, html body.frontpage .container main #intro #announcements article .share-buttons ul li { display: inline-block; float: left; margin-right: 1.25em; }
@@ -759,7 +759,7 @@ html body.frontpage .container main #investigations article .meta .authors { fon
 html body.frontpage .container main #investigations article .meta .authors ul li:after { content: ','; }
 html body.frontpage .container main #investigations article .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
 html body.frontpage .container main #investigations article .meta .authors ul li:first-of-type:after, html body.frontpage .container main #investigations article .meta .authors ul li:last-of-type:after { content: ''; }
-html body.frontpage .container main #investigations article .meta .print { cursor: pointer; width: 1.25em; }
+html body.frontpage .container main #investigations article .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.frontpage .container main #investigations article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.frontpage .container main #investigations article .share-buttons ul li:before { content: ''; }
 html body.frontpage .container main #investigations article .share-buttons ul li { display: inline-block; float: left; margin-right: 1.25em; }
@@ -822,7 +822,7 @@ html body.frontpage .container main #products article .meta .authors { font-size
 html body.frontpage .container main #products article .meta .authors ul li:after { content: ','; }
 html body.frontpage .container main #products article .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
 html body.frontpage .container main #products article .meta .authors ul li:first-of-type:after, html body.frontpage .container main #products article .meta .authors ul li:last-of-type:after { content: ''; }
-html body.frontpage .container main #products article .meta .print { cursor: pointer; width: 1.25em; }
+html body.frontpage .container main #products article .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.frontpage .container main #products article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.frontpage .container main #products article .share-buttons ul li:before { content: ''; }
 html body.frontpage .container main #products article .share-buttons ul li { display: inline-block; float: left; margin-right: 1.25em; }
@@ -887,7 +887,7 @@ html body.frontpage .container main #projects article .meta .authors { font-size
 html body.frontpage .container main #projects article .meta .authors ul li:after { content: ','; }
 html body.frontpage .container main #projects article .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
 html body.frontpage .container main #projects article .meta .authors ul li:first-of-type:after, html body.frontpage .container main #projects article .meta .authors ul li:last-of-type:after { content: ''; }
-html body.frontpage .container main #projects article .meta .print { cursor: pointer; width: 1.25em; }
+html body.frontpage .container main #projects article .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.frontpage .container main #projects article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.frontpage .container main #projects article .share-buttons ul li:before { content: ''; }
 html body.frontpage .container main #projects article .share-buttons ul li { display: inline-block; float: left; margin-right: 1.25em; }
@@ -941,7 +941,7 @@ html body.frontpage .container main #blog article .meta .authors { font-size: sm
 html body.frontpage .container main #blog article .meta .authors ul li:after { content: ','; }
 html body.frontpage .container main #blog article .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
 html body.frontpage .container main #blog article .meta .authors ul li:first-of-type:after, html body.frontpage .container main #blog article .meta .authors ul li:last-of-type:after { content: ''; }
-html body.frontpage .container main #blog article .meta .print { cursor: pointer; width: 1.25em; }
+html body.frontpage .container main #blog article .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.frontpage .container main #blog article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.frontpage .container main #blog article .share-buttons ul li:before { content: ''; }
 html body.frontpage .container main #blog article .share-buttons ul li { display: inline-block; float: left; margin-right: 1.25em; }
@@ -1024,7 +1024,7 @@ html body.frontpage .container main #most-read section article .meta .authors { 
 html body.frontpage .container main #most-read section article .meta .authors ul li:after { content: ','; }
 html body.frontpage .container main #most-read section article .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
 html body.frontpage .container main #most-read section article .meta .authors ul li:first-of-type:after, html body.frontpage .container main #most-read section article .meta .authors ul li:last-of-type:after { content: ''; }
-html body.frontpage .container main #most-read section article .meta .print { cursor: pointer; width: 1.25em; }
+html body.frontpage .container main #most-read section article .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.frontpage .container main #most-read section article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.frontpage .container main #most-read section article .share-buttons ul li:before { content: ''; }
 html body.frontpage .container main #most-read section article .share-buttons ul li { display: inline-block; float: left; margin-right: 1.25em; }
@@ -1092,7 +1092,7 @@ html body.frontpage .container main #videos article .meta .authors { font-size: 
 html body.frontpage .container main #videos article .meta .authors ul li:after { content: ','; }
 html body.frontpage .container main #videos article .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
 html body.frontpage .container main #videos article .meta .authors ul li:first-of-type:after, html body.frontpage .container main #videos article .meta .authors ul li:last-of-type:after { content: ''; }
-html body.frontpage .container main #videos article .meta .print { cursor: pointer; width: 1.25em; }
+html body.frontpage .container main #videos article .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.frontpage .container main #videos article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.frontpage .container main #videos article .share-buttons ul li:before { content: ''; }
 html body.frontpage .container main #videos article .share-buttons ul li { display: inline-block; float: left; margin-right: 1.25em; }
@@ -1150,7 +1150,7 @@ html body.category main #articles aside article .meta .authors { font-size: smal
 html body.category main #articles aside article .meta .authors ul li:after { content: ','; }
 html body.category main #articles aside article .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
 html body.category main #articles aside article .meta .authors ul li:first-of-type:after, html body.category main #articles aside article .meta .authors ul li:last-of-type:after { content: ''; }
-html body.category main #articles aside article .meta .print { cursor: pointer; width: 1.25em; }
+html body.category main #articles aside article .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.category main #articles aside article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.category main #articles aside article .share-buttons ul li:before { content: ''; }
 html body.category main #articles aside article .share-buttons ul li { display: inline-block; float: left; margin-right: 1.25em; }
@@ -1215,7 +1215,7 @@ html body.category main #articles article.thumb .meta .authors { font-size: smal
 html body.category main #articles article.thumb .meta .authors ul li:after { content: ','; }
 html body.category main #articles article.thumb .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
 html body.category main #articles article.thumb .meta .authors ul li:first-of-type:after, html body.category main #articles article.thumb .meta .authors ul li:last-of-type:after { content: ''; }
-html body.category main #articles article.thumb .meta .print { cursor: pointer; width: 1.25em; }
+html body.category main #articles article.thumb .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.category main #articles article.thumb .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.category main #articles article.thumb .share-buttons ul li:before { content: ''; }
 html body.category main #articles article.thumb .share-buttons ul li { display: inline-block; float: left; margin-right: 1.25em; }
@@ -1295,7 +1295,7 @@ html body.category main aside section article .meta .authors { font-size: small;
 html body.category main aside section article .meta .authors ul li:after { content: ','; }
 html body.category main aside section article .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
 html body.category main aside section article .meta .authors ul li:first-of-type:after, html body.category main aside section article .meta .authors ul li:last-of-type:after { content: ''; }
-html body.category main aside section article .meta .print { cursor: pointer; width: 1.25em; }
+html body.category main aside section article .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.category main aside section article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.category main aside section article .share-buttons ul li:before { content: ''; }
 html body.category main aside section article .share-buttons ul li { display: inline-block; float: left; margin-right: 1.25em; }
@@ -1353,7 +1353,7 @@ html body.category main aside section#projects article .meta .authors { font-siz
 html body.category main aside section#projects article .meta .authors ul li:after { content: ','; }
 html body.category main aside section#projects article .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
 html body.category main aside section#projects article .meta .authors ul li:first-of-type:after, html body.category main aside section#projects article .meta .authors ul li:last-of-type:after { content: ''; }
-html body.category main aside section#projects article .meta .print { cursor: pointer; width: 1.25em; }
+html body.category main aside section#projects article .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.category main aside section#projects article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.category main aside section#projects article .share-buttons ul li:before { content: ''; }
 html body.category main aside section#projects article .share-buttons ul li { display: inline-block; float: left; margin-right: 1.25em; }
@@ -1414,7 +1414,7 @@ html body.tag main #articles aside article .meta .authors { font-size: small; te
 html body.tag main #articles aside article .meta .authors ul li:after { content: ','; }
 html body.tag main #articles aside article .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
 html body.tag main #articles aside article .meta .authors ul li:first-of-type:after, html body.tag main #articles aside article .meta .authors ul li:last-of-type:after { content: ''; }
-html body.tag main #articles aside article .meta .print { cursor: pointer; width: 1.25em; }
+html body.tag main #articles aside article .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.tag main #articles aside article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.tag main #articles aside article .share-buttons ul li:before { content: ''; }
 html body.tag main #articles aside article .share-buttons ul li { display: inline-block; float: left; margin-right: 1.25em; }
@@ -1479,7 +1479,7 @@ html body.tag main #articles article.thumb .meta .authors { font-size: small; te
 html body.tag main #articles article.thumb .meta .authors ul li:after { content: ','; }
 html body.tag main #articles article.thumb .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
 html body.tag main #articles article.thumb .meta .authors ul li:first-of-type:after, html body.tag main #articles article.thumb .meta .authors ul li:last-of-type:after { content: ''; }
-html body.tag main #articles article.thumb .meta .print { cursor: pointer; width: 1.25em; }
+html body.tag main #articles article.thumb .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.tag main #articles article.thumb .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.tag main #articles article.thumb .share-buttons ul li:before { content: ''; }
 html body.tag main #articles article.thumb .share-buttons ul li { display: inline-block; float: left; margin-right: 1.25em; }
@@ -1559,7 +1559,7 @@ html body.tag main aside section article .meta .authors { font-size: small; text
 html body.tag main aside section article .meta .authors ul li:after { content: ','; }
 html body.tag main aside section article .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
 html body.tag main aside section article .meta .authors ul li:first-of-type:after, html body.tag main aside section article .meta .authors ul li:last-of-type:after { content: ''; }
-html body.tag main aside section article .meta .print { cursor: pointer; width: 1.25em; }
+html body.tag main aside section article .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.tag main aside section article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.tag main aside section article .share-buttons ul li:before { content: ''; }
 html body.tag main aside section article .share-buttons ul li { display: inline-block; float: left; margin-right: 1.25em; }
@@ -1617,7 +1617,7 @@ html body.tag main aside section#projects article .meta .authors { font-size: sm
 html body.tag main aside section#projects article .meta .authors ul li:after { content: ','; }
 html body.tag main aside section#projects article .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
 html body.tag main aside section#projects article .meta .authors ul li:first-of-type:after, html body.tag main aside section#projects article .meta .authors ul li:last-of-type:after { content: ''; }
-html body.tag main aside section#projects article .meta .print { cursor: pointer; width: 1.25em; }
+html body.tag main aside section#projects article .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.tag main aside section#projects article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.tag main aside section#projects article .share-buttons ul li:before { content: ''; }
 html body.tag main aside section#projects article .share-buttons ul li { display: inline-block; float: left; margin-right: 1.25em; }
@@ -1684,7 +1684,7 @@ html body.projects main #articles article .meta .authors { font-size: small; tex
 html body.projects main #articles article .meta .authors ul li:after { content: ','; }
 html body.projects main #articles article .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
 html body.projects main #articles article .meta .authors ul li:first-of-type:after, html body.projects main #articles article .meta .authors ul li:last-of-type:after { content: ''; }
-html body.projects main #articles article .meta .print { cursor: pointer; width: 1.25em; }
+html body.projects main #articles article .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.projects main #articles article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.projects main #articles article .share-buttons ul li:before { content: ''; }
 html body.projects main #articles article .share-buttons ul li { display: inline-block; float: left; margin-right: 1.25em; }
@@ -1759,7 +1759,7 @@ html body.resources main #articles article .meta .authors { font-size: small; te
 html body.resources main #articles article .meta .authors ul li:after { content: ','; }
 html body.resources main #articles article .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
 html body.resources main #articles article .meta .authors ul li:first-of-type:after, html body.resources main #articles article .meta .authors ul li:last-of-type:after { content: ''; }
-html body.resources main #articles article .meta .print { cursor: pointer; width: 1.25em; }
+html body.resources main #articles article .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.resources main #articles article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.resources main #articles article .share-buttons ul li:before { content: ''; }
 html body.resources main #articles article .share-buttons ul li { display: inline-block; float: left; margin-right: 1.25em; }
@@ -1845,7 +1845,7 @@ html body.blog main #articles aside article .meta .authors { font-size: small; t
 html body.blog main #articles aside article .meta .authors ul li:after { content: ','; }
 html body.blog main #articles aside article .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
 html body.blog main #articles aside article .meta .authors ul li:first-of-type:after, html body.blog main #articles aside article .meta .authors ul li:last-of-type:after { content: ''; }
-html body.blog main #articles aside article .meta .print { cursor: pointer; width: 1.25em; }
+html body.blog main #articles aside article .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.blog main #articles aside article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.blog main #articles aside article .share-buttons ul li:before { content: ''; }
 html body.blog main #articles aside article .share-buttons ul li { display: inline-block; float: left; margin-right: 1.25em; }
@@ -1910,7 +1910,7 @@ html body.blog main #articles article.thumb .meta .authors { font-size: small; t
 html body.blog main #articles article.thumb .meta .authors ul li:after { content: ','; }
 html body.blog main #articles article.thumb .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
 html body.blog main #articles article.thumb .meta .authors ul li:first-of-type:after, html body.blog main #articles article.thumb .meta .authors ul li:last-of-type:after { content: ''; }
-html body.blog main #articles article.thumb .meta .print { cursor: pointer; width: 1.25em; }
+html body.blog main #articles article.thumb .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.blog main #articles article.thumb .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.blog main #articles article.thumb .share-buttons ul li:before { content: ''; }
 html body.blog main #articles article.thumb .share-buttons ul li { display: inline-block; float: left; margin-right: 1.25em; }
@@ -1990,7 +1990,7 @@ html body.blog main aside section article .meta .authors { font-size: small; tex
 html body.blog main aside section article .meta .authors ul li:after { content: ','; }
 html body.blog main aside section article .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
 html body.blog main aside section article .meta .authors ul li:first-of-type:after, html body.blog main aside section article .meta .authors ul li:last-of-type:after { content: ''; }
-html body.blog main aside section article .meta .print { cursor: pointer; width: 1.25em; }
+html body.blog main aside section article .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.blog main aside section article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.blog main aside section article .share-buttons ul li:before { content: ''; }
 html body.blog main aside section article .share-buttons ul li { display: inline-block; float: left; margin-right: 1.25em; }
@@ -2048,7 +2048,7 @@ html body.blog main aside section#projects article .meta .authors { font-size: s
 html body.blog main aside section#projects article .meta .authors ul li:after { content: ','; }
 html body.blog main aside section#projects article .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
 html body.blog main aside section#projects article .meta .authors ul li:first-of-type:after, html body.blog main aside section#projects article .meta .authors ul li:last-of-type:after { content: ''; }
-html body.blog main aside section#projects article .meta .print { cursor: pointer; width: 1.25em; }
+html body.blog main aside section#projects article .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.blog main aside section#projects article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.blog main aside section#projects article .share-buttons ul li:before { content: ''; }
 html body.blog main aside section#projects article .share-buttons ul li { display: inline-block; float: left; margin-right: 1.25em; }
@@ -2102,7 +2102,7 @@ html body.blog main #articles article .meta .authors { font-size: small; text-tr
 html body.blog main #articles article .meta .authors ul li:after { content: ','; }
 html body.blog main #articles article .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
 html body.blog main #articles article .meta .authors ul li:first-of-type:after, html body.blog main #articles article .meta .authors ul li:last-of-type:after { content: ''; }
-html body.blog main #articles article .meta .print { cursor: pointer; width: 1.25em; }
+html body.blog main #articles article .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.blog main #articles article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.blog main #articles article .share-buttons ul li:before { content: ''; }
 html body.blog main #articles article .share-buttons ul li { display: inline-block; float: left; margin-right: 1.25em; }
@@ -2166,7 +2166,7 @@ html body.author main #articles aside article .meta .authors { font-size: small;
 html body.author main #articles aside article .meta .authors ul li:after { content: ','; }
 html body.author main #articles aside article .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
 html body.author main #articles aside article .meta .authors ul li:first-of-type:after, html body.author main #articles aside article .meta .authors ul li:last-of-type:after { content: ''; }
-html body.author main #articles aside article .meta .print { cursor: pointer; width: 1.25em; }
+html body.author main #articles aside article .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.author main #articles aside article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.author main #articles aside article .share-buttons ul li:before { content: ''; }
 html body.author main #articles aside article .share-buttons ul li { display: inline-block; float: left; margin-right: 1.25em; }
@@ -2231,7 +2231,7 @@ html body.author main #articles article.thumb .meta .authors { font-size: small;
 html body.author main #articles article.thumb .meta .authors ul li:after { content: ','; }
 html body.author main #articles article.thumb .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
 html body.author main #articles article.thumb .meta .authors ul li:first-of-type:after, html body.author main #articles article.thumb .meta .authors ul li:last-of-type:after { content: ''; }
-html body.author main #articles article.thumb .meta .print { cursor: pointer; width: 1.25em; }
+html body.author main #articles article.thumb .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.author main #articles article.thumb .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.author main #articles article.thumb .share-buttons ul li:before { content: ''; }
 html body.author main #articles article.thumb .share-buttons ul li { display: inline-block; float: left; margin-right: 1.25em; }
@@ -2311,7 +2311,7 @@ html body.author main aside section article .meta .authors { font-size: small; t
 html body.author main aside section article .meta .authors ul li:after { content: ','; }
 html body.author main aside section article .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
 html body.author main aside section article .meta .authors ul li:first-of-type:after, html body.author main aside section article .meta .authors ul li:last-of-type:after { content: ''; }
-html body.author main aside section article .meta .print { cursor: pointer; width: 1.25em; }
+html body.author main aside section article .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.author main aside section article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.author main aside section article .share-buttons ul li:before { content: ''; }
 html body.author main aside section article .share-buttons ul li { display: inline-block; float: left; margin-right: 1.25em; }
@@ -2369,7 +2369,7 @@ html body.author main aside section#projects article .meta .authors { font-size:
 html body.author main aside section#projects article .meta .authors ul li:after { content: ','; }
 html body.author main aside section#projects article .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
 html body.author main aside section#projects article .meta .authors ul li:first-of-type:after, html body.author main aside section#projects article .meta .authors ul li:last-of-type:after { content: ''; }
-html body.author main aside section#projects article .meta .print { cursor: pointer; width: 1.25em; }
+html body.author main aside section#projects article .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.author main aside section#projects article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.author main aside section#projects article .share-buttons ul li:before { content: ''; }
 html body.author main aside section#projects article .share-buttons ul li { display: inline-block; float: left; margin-right: 1.25em; }
@@ -2426,7 +2426,7 @@ html body.author main #articles article .meta .authors { font-size: small; text-
 html body.author main #articles article .meta .authors ul li:after { content: ','; }
 html body.author main #articles article .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
 html body.author main #articles article .meta .authors ul li:first-of-type:after, html body.author main #articles article .meta .authors ul li:last-of-type:after { content: ''; }
-html body.author main #articles article .meta .print { cursor: pointer; width: 1.25em; }
+html body.author main #articles article .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.author main #articles article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.author main #articles article .share-buttons ul li:before { content: ''; }
 html body.author main #articles article .share-buttons ul li { display: inline-block; float: left; margin-right: 1.25em; }
@@ -2483,7 +2483,7 @@ html body.article main #article article.single .meta .authors, html body.about m
 html body.article main #article article.single .meta .authors ul li:after, html body.about main #article article.single .meta .authors ul li:after, html body.post main #article article.single .meta .authors ul li:after { content: ','; }
 html body.article main #article article.single .meta .authors ul li:first-of-type, html body.about main #article article.single .meta .authors ul li:first-of-type, html body.post main #article article.single .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
 html body.article main #article article.single .meta .authors ul li:first-of-type:after, html body.article main #article article.single .meta .authors ul li:last-of-type:after, html body.about main #article article.single .meta .authors ul li:first-of-type:after, html body.about main #article article.single .meta .authors ul li:last-of-type:after, html body.post main #article article.single .meta .authors ul li:first-of-type:after, html body.post main #article article.single .meta .authors ul li:last-of-type:after { content: ''; }
-html body.article main #article article.single .meta .print, html body.about main #article article.single .meta .print, html body.post main #article article.single .meta .print { cursor: pointer; width: 1.25em; }
+html body.article main #article article.single .meta .print, html body.about main #article article.single .meta .print, html body.post main #article article.single .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.article main #article article.single .share-buttons ul li, html body.about main #article article.single .share-buttons ul li, html body.post main #article article.single .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.article main #article article.single .share-buttons ul li:before, html body.about main #article article.single .share-buttons ul li:before, html body.post main #article article.single .share-buttons ul li:before { content: ''; }
 html body.article main #article article.single .share-buttons ul li, html body.about main #article article.single .share-buttons ul li, html body.post main #article article.single .share-buttons ul li { display: inline-block; float: left; margin-right: 1.25em; }
@@ -2607,6 +2607,7 @@ html body.article main #article article.single li ul, html body.article main #ar
 html body.article main #article article.single h1:first-of-type, html body.about main #article article.single h1:first-of-type, html body.post main #article article.single h1:first-of-type { font-size: 24px; font-size: 1.5rem; padding: 0; }
 html body.article main #article article.single .meta, html body.article main #article article.single .share-buttons, html body.article main #article article.single .content, html body.about main #article article.single .meta, html body.about main #article article.single .share-buttons, html body.about main #article article.single .content, html body.post main #article article.single .meta, html body.post main #article article.single .share-buttons, html body.post main #article article.single .content { width: 100%; max-width: 100%; float: left; }
 html body.article main #article article.single .meta, html body.about main #article article.single .meta, html body.post main #article article.single .meta { border-bottom: 1px solid #f1f1f1; margin-bottom: 1.25em; }
+html body.article main #article article.single .meta .print, html body.about main #article article.single .meta .print, html body.post main #article article.single .meta .print { display: inline-block; }
 html body.article main #article article.single .content figure figcaption a, html body.about main #article article.single .content figure figcaption a, html body.post main #article article.single .content figure figcaption a { color: #231f20; text-decoration: none; }
 html body.article main #article article.single .content figure figcaption a:hover, html body.about main #article article.single .content figure figcaption a:hover, html body.post main #article article.single .content figure figcaption a:hover { color: #982022; }
 html body.article main #article #most-read h3, html body.article main #article #most-recent h3, html body.about main #article #most-read h3, html body.about main #article #most-recent h3, html body.post main #article #most-read h3, html body.post main #article #most-recent h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; color: #231f20; padding-top: 1.25em; margin-top: 1.25em; border-top: 0.3125em solid; }
@@ -2660,7 +2661,7 @@ html body.article main #article #most-read article .meta .authors, html body.art
 html body.article main #article #most-read article .meta .authors ul li:after, html body.article main #article #most-recent article .meta .authors ul li:after, html body.about main #article #most-read article .meta .authors ul li:after, html body.about main #article #most-recent article .meta .authors ul li:after, html body.post main #article #most-read article .meta .authors ul li:after, html body.post main #article #most-recent article .meta .authors ul li:after { content: ','; }
 html body.article main #article #most-read article .meta .authors ul li:first-of-type, html body.article main #article #most-recent article .meta .authors ul li:first-of-type, html body.about main #article #most-read article .meta .authors ul li:first-of-type, html body.about main #article #most-recent article .meta .authors ul li:first-of-type, html body.post main #article #most-read article .meta .authors ul li:first-of-type, html body.post main #article #most-recent article .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
 html body.article main #article #most-read article .meta .authors ul li:first-of-type:after, html body.article main #article #most-read article .meta .authors ul li:last-of-type:after, html body.article main #article #most-recent article .meta .authors ul li:first-of-type:after, html body.article main #article #most-recent article .meta .authors ul li:last-of-type:after, html body.about main #article #most-read article .meta .authors ul li:first-of-type:after, html body.about main #article #most-read article .meta .authors ul li:last-of-type:after, html body.about main #article #most-recent article .meta .authors ul li:first-of-type:after, html body.about main #article #most-recent article .meta .authors ul li:last-of-type:after, html body.post main #article #most-read article .meta .authors ul li:first-of-type:after, html body.post main #article #most-read article .meta .authors ul li:last-of-type:after, html body.post main #article #most-recent article .meta .authors ul li:first-of-type:after, html body.post main #article #most-recent article .meta .authors ul li:last-of-type:after { content: ''; }
-html body.article main #article #most-read article .meta .print, html body.article main #article #most-recent article .meta .print, html body.about main #article #most-read article .meta .print, html body.about main #article #most-recent article .meta .print, html body.post main #article #most-read article .meta .print, html body.post main #article #most-recent article .meta .print { cursor: pointer; width: 1.25em; }
+html body.article main #article #most-read article .meta .print, html body.article main #article #most-recent article .meta .print, html body.about main #article #most-read article .meta .print, html body.about main #article #most-recent article .meta .print, html body.post main #article #most-read article .meta .print, html body.post main #article #most-recent article .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.article main #article #most-read article .share-buttons ul li, html body.article main #article #most-recent article .share-buttons ul li, html body.about main #article #most-read article .share-buttons ul li, html body.about main #article #most-recent article .share-buttons ul li, html body.post main #article #most-read article .share-buttons ul li, html body.post main #article #most-recent article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.article main #article #most-read article .share-buttons ul li:before, html body.article main #article #most-recent article .share-buttons ul li:before, html body.about main #article #most-read article .share-buttons ul li:before, html body.about main #article #most-recent article .share-buttons ul li:before, html body.post main #article #most-read article .share-buttons ul li:before, html body.post main #article #most-recent article .share-buttons ul li:before { content: ''; }
 html body.article main #article #most-read article .share-buttons ul li, html body.article main #article #most-recent article .share-buttons ul li, html body.about main #article #most-read article .share-buttons ul li, html body.about main #article #most-recent article .share-buttons ul li, html body.post main #article #most-read article .share-buttons ul li, html body.post main #article #most-recent article .share-buttons ul li { display: inline-block; float: left; margin-right: 1.25em; }
@@ -2730,7 +2731,7 @@ html body.article main aside section article .meta .authors, html body.about mai
 html body.article main aside section article .meta .authors ul li:after, html body.about main aside section article .meta .authors ul li:after, html body.post main aside section article .meta .authors ul li:after { content: ','; }
 html body.article main aside section article .meta .authors ul li:first-of-type, html body.about main aside section article .meta .authors ul li:first-of-type, html body.post main aside section article .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
 html body.article main aside section article .meta .authors ul li:first-of-type:after, html body.article main aside section article .meta .authors ul li:last-of-type:after, html body.about main aside section article .meta .authors ul li:first-of-type:after, html body.about main aside section article .meta .authors ul li:last-of-type:after, html body.post main aside section article .meta .authors ul li:first-of-type:after, html body.post main aside section article .meta .authors ul li:last-of-type:after { content: ''; }
-html body.article main aside section article .meta .print, html body.about main aside section article .meta .print, html body.post main aside section article .meta .print { cursor: pointer; width: 1.25em; }
+html body.article main aside section article .meta .print, html body.about main aside section article .meta .print, html body.post main aside section article .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.article main aside section article .share-buttons ul li, html body.about main aside section article .share-buttons ul li, html body.post main aside section article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.article main aside section article .share-buttons ul li:before, html body.about main aside section article .share-buttons ul li:before, html body.post main aside section article .share-buttons ul li:before { content: ''; }
 html body.article main aside section article .share-buttons ul li, html body.about main aside section article .share-buttons ul li, html body.post main aside section article .share-buttons ul li { display: inline-block; float: left; margin-right: 1.25em; }
@@ -2788,7 +2789,7 @@ html body.article main aside section#projects article .meta .authors, html body.
 html body.article main aside section#projects article .meta .authors ul li:after, html body.about main aside section#projects article .meta .authors ul li:after, html body.post main aside section#projects article .meta .authors ul li:after { content: ','; }
 html body.article main aside section#projects article .meta .authors ul li:first-of-type, html body.about main aside section#projects article .meta .authors ul li:first-of-type, html body.post main aside section#projects article .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
 html body.article main aside section#projects article .meta .authors ul li:first-of-type:after, html body.article main aside section#projects article .meta .authors ul li:last-of-type:after, html body.about main aside section#projects article .meta .authors ul li:first-of-type:after, html body.about main aside section#projects article .meta .authors ul li:last-of-type:after, html body.post main aside section#projects article .meta .authors ul li:first-of-type:after, html body.post main aside section#projects article .meta .authors ul li:last-of-type:after { content: ''; }
-html body.article main aside section#projects article .meta .print, html body.about main aside section#projects article .meta .print, html body.post main aside section#projects article .meta .print { cursor: pointer; width: 1.25em; }
+html body.article main aside section#projects article .meta .print, html body.about main aside section#projects article .meta .print, html body.post main aside section#projects article .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.article main aside section#projects article .share-buttons ul li, html body.about main aside section#projects article .share-buttons ul li, html body.post main aside section#projects article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.article main aside section#projects article .share-buttons ul li:before, html body.about main aside section#projects article .share-buttons ul li:before, html body.post main aside section#projects article .share-buttons ul li:before { content: ''; }
 html body.article main aside section#projects article .share-buttons ul li, html body.about main aside section#projects article .share-buttons ul li, html body.post main aside section#projects article .share-buttons ul li { display: inline-block; float: left; margin-right: 1.25em; }
@@ -2858,7 +2859,7 @@ html body.jobs main #article #content article .meta .authors, html body.announce
 html body.jobs main #article #content article .meta .authors ul li:after, html body.announcements main #article #content article .meta .authors ul li:after { content: ','; }
 html body.jobs main #article #content article .meta .authors ul li:first-of-type, html body.announcements main #article #content article .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
 html body.jobs main #article #content article .meta .authors ul li:first-of-type:after, html body.jobs main #article #content article .meta .authors ul li:last-of-type:after, html body.announcements main #article #content article .meta .authors ul li:first-of-type:after, html body.announcements main #article #content article .meta .authors ul li:last-of-type:after { content: ''; }
-html body.jobs main #article #content article .meta .print, html body.announcements main #article #content article .meta .print { cursor: pointer; width: 1.25em; }
+html body.jobs main #article #content article .meta .print, html body.announcements main #article #content article .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.jobs main #article #content article .share-buttons ul li, html body.announcements main #article #content article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
 html body.jobs main #article #content article .share-buttons ul li:before, html body.announcements main #article #content article .share-buttons ul li:before { content: ''; }
 html body.jobs main #article #content article .share-buttons ul li, html body.announcements main #article #content article .share-buttons ul li { display: inline-block; float: left; margin-right: 1.25em; }
