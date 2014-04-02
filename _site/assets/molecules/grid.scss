@@ -99,6 +99,10 @@
     @include col(100%, 0);
   }
   
+  @include tablet {
+    @include grid(2, $maximum);
+  }
+  
   @include above-small-screen {
     @include grid($how-many, $maximum);
   }
