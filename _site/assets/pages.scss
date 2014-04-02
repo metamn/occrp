@@ -30,7 +30,7 @@ html {
     &.sticky {
       .container {
         #header {
-          @include fixed-header;
+          @include header(fixed);
         }
         
         main, #footer {
@@ -105,6 +105,12 @@ html {
         
         #banner {
           margin-bottom: $pad;
+          
+          figure {
+            figcaption {
+              display: none;
+            }
+          }
         }
       }
     }
@@ -171,21 +177,7 @@ html {
         
         aside {
           #bio {
-            img {
-              width: $pad*6;
-              float: left;
-              margin: 0 $pad $pad;
-            }
-            
-            div {
-              padding: 0 $pad/2;
-              line-height: $line-height-body-text;
-              font-size: smaller;
-              
-              p + p {
-                margin-top: $pad;
-              }
-            }
+            @include author;
           }
         }
         
@@ -228,13 +220,24 @@ html {
     &.board-directors {
       main {
         #article {
-          p {
-            @include border-thin;
-            font-weight: bold;
-          }
-          
-          dl + p {
-            margin-top: $pad*2 !important;
+          .single {
+            .content {
+              h4 {
+                @include border-thin;
+                font-weight: bold;
+                padding-bottom: 0;
+              }
+              
+              dl + p {
+                margin-top: $pad*2 !important;
+              }
+              
+              dd.portrait {
+                @include block;
+                margin-bottom: $pad;
+                @include author(50%, normal);
+              }
+            }
           }
         }
       }

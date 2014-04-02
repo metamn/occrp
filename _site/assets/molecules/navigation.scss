@@ -1,0 +1,255 @@
+
+
+@mixin navigation($color-scheme : slider) {
+  nav {
+    @include hide-title;
+    margin-top: $pad;
+    
+    ol {
+      @include list-inline;
+      @include list-menu(block, $pad/2, $pad/2 + $pad/4);
+      
+      li {
+        @include color($color-scheme);
+        @include border-radius($pad);
+      }
+      
+      @include below-and-tablet {
+        font-size: small;
+      }
+    }
+  }
+}
+
+
+
+@mixin mobile-menu {
+  nav {
+    &.main, &.secondary, &.tags {
+      display: block;
+      margin-top: $pad*2;
+    }
+    
+    ul {
+      @include block;
+    }
+    
+    &.main, &.secondary {
+      ul {
+        @include list-normal;
+        text-align: left;
+      }
+      
+      @include tablet {
+        @include grid(2, 2);
+      }
+    }
+    
+    &.tags {
+      ul {
+        &.search {
+          li {
+            &.text {
+              display: none;
+            }
+            
+            &.input {
+              display: block;
+              
+              input {
+                width: 95%;
+              }
+            }
+          }
+        }
+        
+        &.tag-list {
+          margin: $pad 0;
+        }
+        
+        &.social {
+          li {
+            margin-right: $pad;
+          }
+        }
+      }
+    }
+  }  
+  
+  #close-menu {
+    @include close-menu;
+  }
+}
+
+
+@mixin mobile-navbar {
+  @include block;
+  @include color(invert);
+  @include padding(100%, $pad/4);
+  font-size: 70%;
+  margin-top: $pad/2;
+  
+  cursor: pointer;
+  
+  ul.mobile-navbar-menu {
+    @include list-inline;
+    @include list-centered;
+    
+    li {
+      &.hamburger {
+        span {
+          @include hamburger-menu($background);
+          min-width: $pad;
+          top: 1px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+/* A menu
+  - an inline list of items, with different hover and active states
+  - it's parent is usually a <nav> element
+*/
+@mixin menu {
+  @include font(navigation);
+  
+  ul {
+    @include list-menu;
+  }  
+}
+
+
+/* Floats the secondary menu right
+*/
+@mixin menu-float-right {
+  ul {
+    float: right;
+    
+    li {
+      &.language {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+
+
+
+
+/* The tag bar
+*/
+@mixin tags {
+  @include color(invert);
+  
+  /* Since <a> has padding on the last social icon we must reduce the tagbar width
+  */ 
+  @include padding(100%, $pad/4);
+  padding: 0;
+  
+  ul {
+    &.search {
+      li {
+        &.text {
+          @include text-with-icon;
+        }
+        
+        &.input {
+          display: none;
+          
+          input {
+            margin: $pad/4;
+          }
+        }
+      }
+    }
+    
+    &.tag-list {
+      @include list-centered;
+    }
+    
+    &.tag-list, &.social, &.search {
+      @include list-inline($pad/4);
+    }
+    
+    &.social {
+      float: right;
+      
+      li {
+        @include text-with-icon;
+        
+        /* We are not replacing social icons on hover
+          - so the second image must not be displayed
+          - also the icon should be taller, the maximum possible
+        */
+        a {
+          img {
+            height: 13px;
+            
+            &:last-of-type {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+/* The logo
+*/
+@mixin logo($type: desktop) {
+  
+  h1, figure figcaption {
+    display: none;
+  }
+    
+  
+  @if ($type == desktop) {
+    text-align: center;
+  
+    figure {
+      margin-top: $pad/2;
+    }
+    
+    @include tablet-and-up {
+      @include responsive-grid(3);
+    }
+    
+    
+  } @elseif ($type == desktop-fixed) {
+    height: $pad + $pad/2 + $pad/8;
+    
+    figure {
+      margin-top: 0;
+      
+      img {
+        max-width: 10em;
+        position: relative;
+        top: -$pad/4;
+      }
+    }
+  
+  
+  } @elseif ($type == tablet-fixed) {
+    width: 35%;
+    float: left;
+  
+  
+  } @elseif ($type == mobile-fixed) {
+    figure {
+      img {
+        width: 50%;
+      }
+    }
+  }
+  
+}
+
