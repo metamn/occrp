@@ -2,25 +2,33 @@
 $(document).ready(function() {
 
   // Slider
+  // - on mobiles the navigator / paginator is present inside every article
   $('.frontpage #slider article').hide();
   $('.frontpage #slider article').first().show();
   $('.frontpage #slider nav ol li').removeClass('active');
   $('.frontpage #slider nav ol li').first().addClass('active');
   
   $('.frontpage #slider nav ol li').click(function() {
+    var index = $(this).index();
+    var article = $('.frontpage #slider article:eq(' + index + ')');
+    $('.frontpage #slider article').fadeOut('slow');
+    article.fadeIn('slow');
+    
     $('.frontpage #slider nav ol li').removeClass('active');
     $(this).addClass('active');
+    // for mobiles
+    article.find('nav ol li:eq(' + index + ')').addClass('active');
     
-    var index = $(this).index();
-    $('.frontpage #slider article').fadeOut('slow');
-    $('.frontpage #slider article:eq(' + index + ')').fadeIn('slow');
     return false;
   });
   
   
   
   // Mark first item in pagination navigation active
-  $('#navigation ol li').first().addClass('active');
+  // $('.navigation ol li').first().addClass('active');
+  $('.navigation').each(function() {
+    $(this).find('ol li').first().addClass('active');
+  });
   
   
   
@@ -94,7 +102,7 @@ $(document).ready(function() {
   
   
   // Share buttons in article body
-  $('#share #twitter').sharrre({
+  $('.share-buttons .twitter').sharrre({
     share: {
       twitter: true
     },
@@ -107,7 +115,7 @@ $(document).ready(function() {
     }
   });
   
-  $('#share #facebook').sharrre({
+  $('.share-buttons .facebook').sharrre({
     share: {
       facebook: true
     },
@@ -119,7 +127,7 @@ $(document).ready(function() {
     }
   });
   
-  $('#share #google-plus').sharrre({
+  $('.share-buttons .google-plus').sharrre({
     share: {
       facebook: true
     },
@@ -131,7 +139,7 @@ $(document).ready(function() {
     }
   });
   
-  $('#share #linkedin').sharrre({
+  $('.share-buttons .linkedin').sharrre({
     share: {
       facebook: true
     },

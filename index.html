@@ -11,7 +11,7 @@ class: frontpage
     <h3>Slideshow</h3>
     
     {% for post in site.categories.slider limit:7 %}
-      {% include article.html klass = 'thumb' %}
+      {% include article.html klass = 'thumb' type = 'slider' %}
     {% endfor %}
     
     {% assign items = 7 %}
@@ -57,7 +57,7 @@ class: frontpage
     <a href="{{ site.url }}/products" title="Products">Products</a>
   </h3>
   
-  {% for post in site.categories.projects limit:4 offset:0 %}
+  {% for post in site.categories.products limit:4 %}
     {% include article.html klass = 'thumb' %}
   {% endfor %}
 </section>
@@ -68,8 +68,8 @@ class: frontpage
     <a href="{{ site.url }}/projects" title="Projects">Projects</a>
   </h3>
   
-  {% for post in site.categories.projects limit:5 offset:5 %}
-    {% include article.html %}
+  {% for post in site.categories.projects limit:5 offset:0 %}
+    {% include article.html klass = 'thumb' holder='false' %}
   {% endfor %}
 </section>
 
@@ -126,7 +126,7 @@ class: frontpage
     <a href="{{ site.url }}/videos" title="Videos">Videos</a>
   </h3>
   
-  {% for post in site.categories.projects limit:6 offset:5 %}
+  {% for post in site.categories.investigations limit:6 offset:0 %}
     {% include article.html %}
   {% endfor %}
 </section>
