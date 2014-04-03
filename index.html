@@ -18,25 +18,27 @@ class: frontpage
     {% include navigation.html %}
   </section>
 
-  <section id="news">
-    <h3>
-      <a href="{{ site.url }}/daily" title="Daily News">Daily News</a>
-    </h3>
+  <aside>
+    <section id="news">
+      <h3>
+        <a href="{{ site.url }}/daily" title="Daily News">Daily News</a>
+      </h3>
+      
+      {% for post in site.categories.daily limit:3 %}
+        {% include article.html klass = 'thumb' %}
+      {% endfor %}
+    </section>
     
-    {% for post in site.categories.daily limit:3 %}
-      {% include article.html klass = 'thumb' %}
-    {% endfor %}
-  </section>
+    <section id="announcements">
+      <h3>
+        <a href="{{ site.url }}/announcements" title="Announcements">Announcements</a>
+      </h3>
   
-  <section id="announcements">
-    <h3>
-      <a href="{{ site.url }}/announcements" title="Announcements">Announcements</a>
-    </h3>
-
-    {% for post in site.categories.daily limit:1 offset:0 %}
-      {% include article.html klass = 'thumb' %}
-    {% endfor %}
-  </section>
+      {% for post in site.categories.daily limit:1 offset:0 %}
+        {% include article.html klass = 'thumb' %}
+      {% endfor %}
+    </section>
+  </aside>
 </section>
 
 
