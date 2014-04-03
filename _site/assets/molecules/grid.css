@@ -1,0 +1,34 @@
+/* The width of the content - the content is centered with automatic left and right margins
+*/
+/* Flexible grid - all items are aligned left with an uniform margin - this grid can be dynamically positioned by Isotope
+*/
+/* Column N of M - creates a grid column on N cols from M total columns
+*/
+/* A function to calculate the width of the column for col-n-of-m - this is used usually in padding();
+*/
+/* Columns defined by gutter - Sometimes the width of a column is defined inversely, by the gutter size - For example, when a col-nm(2,3) is divided into two subcolumns the gutter size is fixed to col-gutter(3) - Ie, instead having two cols of 45% and margin 10% we have a fixed margin of 2.5% and the rest of the columns calaculated accordingly
+*/
+/* A function to calculate the width of the column for col-by-gutter - this is used usually in padding();
+*/
+/* Adds padding around a grid element - the width of the element must be recalculated
+*/
+/* Resize a grid column 
+*/
+/* A responsive grid
+*/
+/* Generates a full grid of $how-many columns and $maximum elements - calculates automatically the columns size and margin - the right margin of the last element in a row is set to zero - $maximum sets how many articles will be displayed on a single page 
+*/
+/* Returns the width of a column in a grid
+*/
+/* Returns the margin of a column in a grid
+*/
+/* A left aligned column
+*/
+/* Remove right margin of the last element in a row of a grid - on responsive layouts we setup upd different grids - on every grid re-declaration the previous margins of last elements must be removed
+*/
+/* Hide a section title
+*/
+/* Show a section title
+*/
+/* Strech content to fill parent width
+*/
