@@ -926,6 +926,7 @@ html body.frontpage .container main #products article .content a { color: #98202
 html body.frontpage .container main #products article .content a:hover { color: #982022; }
 @media only screen and (max-width: 47.999em) { html body.frontpage .container main #products article { margin: 3% 0; } }
 html body.frontpage .container main #products article h1 { margin-top: 1.25em; padding-bottom: 0.625em; border-bottom: 0.3125em solid; }
+html body.frontpage .container main #products article h1 { display: none; }
 html body.frontpage .container main #projects h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; }
 html body.frontpage .container main #projects h3 a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #projects h3 a:hover { color: #231f20; }
