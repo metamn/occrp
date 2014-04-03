@@ -1,3 +1,29 @@
+/* The header on desktop
+*/
+@mixin header-desktop {
+  .main, .logo, .secondary {
+    @include grid(3, 3);
+  }
+  
+  .secondary {
+    margin-right: 0 !important;
+    
+    ul {
+      @include list-floated-right;
+    }
+  }
+  
+  .tags {
+    @include tags;
+  }
+  
+  .main, .secondary {
+    margin-top: $pad*2;
+  }
+}
+
+
+
 /* The header on mobiles
 */
 @mixin header-mobile {
@@ -5,6 +31,7 @@
     display: none;
   }
 }
+
 
 
 /* The logo
@@ -18,25 +45,7 @@
   
   figure {
     figcaption {
-      @include block;
-      @include font(navigation);
-      @include color(invert);
-      padding: $pad/4 0;
-      
-      ul {
-        @include list-inline;
-        @include list-centered;
-        
-        li {
-          &.icon {
-            img {
-              width: 14px;
-            }
-          }
-        }
-      }
-      
-      cursor: pointer;
+      @include menubar-mobile;
     }
   }
   
@@ -209,64 +218,6 @@
 
 
 
-/* The tag bar
-*/
-@mixin tags {
-  @include color(invert);
-  
-  /* Since <a> has padding on the last social icon we must reduce the tagbar width
-  */ 
-  @include padding(100%, $pad/4);
-  padding: 0;
-  
-  ul {
-    &.search {
-      li {
-        &.text {
-          @include text-with-icon;
-        }
-        
-        &.input {
-          display: none;
-          
-          input {
-            margin: $pad/4;
-          }
-        }
-      }
-    }
-    
-    &.tag-list {
-      @include list-centered;
-    }
-    
-    &.tag-list, &.social, &.search {
-      @include list-inline($pad/4);
-    }
-    
-    &.social {
-      float: right;
-      
-      li {
-        @include text-with-icon;
-        
-        /* We are not replacing social icons on hover
-          - so the second image must not be displayed
-          - also the icon should be taller, the maximum possible
-        */
-        a {
-          img {
-            height: 13px;
-            
-            &:last-of-type {
-              display: none;
-            }
-          }
-        }
-      }
-    }
-  }
-}
 
 
 

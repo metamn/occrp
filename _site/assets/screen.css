@@ -55,6 +55,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 */
 /* Centers an inline list
 */
+/* List floated right
+*/
 /* The basic body font size - See http://lamb.cc/typograph/
 */
 /* 16px, 1em */
@@ -125,6 +127,10 @@ figure a { line-height: 0; }
 */
 /* Strech content to fill parent width
 */
+/* The tage bar
+*/
+/* A menubar for mobiles - it's a static bar which shows the menu on click
+*/
 /* A responsive menu  - it is usually a <nav> element
 */
 /* A menu - a list of items, with different hover and active states - it's parent is usually a <nav> element
@@ -148,6 +154,10 @@ figure a { line-height: 0; }
 */
 /* <ul> and <ol> lists - they display a custom bullet / number via $before - the text of the list is aligned right related to the bullet / number
 */
+/* The search button with text in the tag bar
+*/
+/* The social icons in the tag bar
+*/
 /* Make icons taller than the default size in the header - this is kinda manual pixel pushing
 */
 /* The language selector
@@ -156,13 +166,13 @@ figure a { line-height: 0; }
 */
 /* An article - displays mostly article thumbs - this mixin controls what is diplayed in an article
 */
+/* The header on desktop
+*/
 /* The header on mobiles
 */
 /* The logo
 */
 /* Floats the secondary menu right
-*/
-/* The tag bar
 */
 /* The navigation bar in the header
 */
@@ -265,7 +275,29 @@ html body .container #header nav ul li.active a a, html body .container #header 
 html body .container #header nav ul li.active a a:hover, html body .container #header nav ul li:hover a a:hover { color: white; }
 @media only screen and (min-width: 64.001em) { html body .container #header nav ul li { display: inline-block; float: left; margin-right: 0.625em; }
   html body .container #header nav ul li:last-of-type { margin-right: 0; } }
+html body .container #header nav.main, html body .container #header nav.secondary { border-bottom: 1px solid #231f20; }
 @media only screen and (max-width: 64em) { html body .container #header nav { display: none; } }
+@media only screen and (min-width: 64.001em) { html body .container #header .main, html body .container #header .logo, html body .container #header .secondary { width: 31.5%; margin-right: 2.5%; float: left; }
+  html body .container #header .main:nth-of-type(2), html body .container #header .logo:nth-of-type(2), html body .container #header .secondary:nth-of-type(2) { margin-right: 2.5%; }
+  html body .container #header .main:nth-of-type(3), html body .container #header .logo:nth-of-type(3), html body .container #header .secondary:nth-of-type(3) { margin-right: 0; }
+  html body .container #header .secondary { margin-right: 0 !important; }
+  html body .container #header .secondary ul { float: right; }
+  html body .container #header .tags { width: 100%; max-width: 100%; float: left; background: #231f20; color: white; }
+  html body .container #header .tags a { color: white; text-decoration: none; }
+  html body .container #header .tags a:hover { color: white; }
+  html body .container #header .tags ul.search li.text img { height: 12px; position: relative; top: 1px; }
+  html body .container #header .tags ul.search li.input { display: none; }
+  html body .container #header .tags ul.search li.input input { margin: 0.3125em; }
+  html body .container #header .tags ul.tag-list { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
+  html body .container #header .tags ul.tag-list li, html body .container #header .tags ul.social li, html body .container #header .tags ul.search li { display: inline-block; float: left; margin-right: 0.3125em; }
+  html body .container #header .tags ul.tag-list li:last-of-type, html body .container #header .tags ul.social li:last-of-type, html body .container #header .tags ul.search li:last-of-type { margin-right: 0; }
+  html body .container #header .tags ul.social { float: right; }
+  html body .container #header .tags ul.social li { /* We are not replacing social icons on hover - so the second image must not be displayed - also the icon should be taller, the maximum possible
+*/ }
+  html body .container #header .tags ul.social li img { height: 12px; position: relative; top: 1px; }
+  html body .container #header .tags ul.social li a img { height: 13px; }
+  html body .container #header .tags ul.social li a img:last-of-type { display: none; }
+  html body .container #header .main, html body .container #header .secondary { margin-top: 2.5em; } }
 html body .container #footer { margin: 3.75em 0 0; padding: 1.25em 0; border-top: 0.3125em solid; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; }
 html body .container #footer ul li { display: inline-block; float: left; margin-right: 1.25em; }
 html body .container #footer ul li:last-of-type { margin-right: 0; }
@@ -294,7 +326,29 @@ html body.sticky .container #header nav ul li.active a a, html body.sticky .cont
 html body.sticky .container #header nav ul li.active a a:hover, html body.sticky .container #header nav ul li:hover a a:hover { color: white; }
 @media only screen and (min-width: 64.001em) { html body.sticky .container #header nav ul li { display: inline-block; float: left; margin-right: 0.625em; }
   html body.sticky .container #header nav ul li:last-of-type { margin-right: 0; } }
+html body.sticky .container #header nav.main, html body.sticky .container #header nav.secondary { border-bottom: 1px solid #231f20; }
 @media only screen and (max-width: 64em) { html body.sticky .container #header nav { display: none; } }
+@media only screen and (min-width: 64.001em) { html body.sticky .container #header .main, html body.sticky .container #header .logo, html body.sticky .container #header .secondary { width: 31.5%; margin-right: 2.5%; float: left; }
+  html body.sticky .container #header .main:nth-of-type(2), html body.sticky .container #header .logo:nth-of-type(2), html body.sticky .container #header .secondary:nth-of-type(2) { margin-right: 2.5%; }
+  html body.sticky .container #header .main:nth-of-type(3), html body.sticky .container #header .logo:nth-of-type(3), html body.sticky .container #header .secondary:nth-of-type(3) { margin-right: 0; }
+  html body.sticky .container #header .secondary { margin-right: 0 !important; }
+  html body.sticky .container #header .secondary ul { float: right; }
+  html body.sticky .container #header .tags { width: 100%; max-width: 100%; float: left; background: #231f20; color: white; }
+  html body.sticky .container #header .tags a { color: white; text-decoration: none; }
+  html body.sticky .container #header .tags a:hover { color: white; }
+  html body.sticky .container #header .tags ul.search li.text img { height: 12px; position: relative; top: 1px; }
+  html body.sticky .container #header .tags ul.search li.input { display: none; }
+  html body.sticky .container #header .tags ul.search li.input input { margin: 0.3125em; }
+  html body.sticky .container #header .tags ul.tag-list { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
+  html body.sticky .container #header .tags ul.tag-list li, html body.sticky .container #header .tags ul.social li, html body.sticky .container #header .tags ul.search li { display: inline-block; float: left; margin-right: 0.3125em; }
+  html body.sticky .container #header .tags ul.tag-list li:last-of-type, html body.sticky .container #header .tags ul.social li:last-of-type, html body.sticky .container #header .tags ul.search li:last-of-type { margin-right: 0; }
+  html body.sticky .container #header .tags ul.social { float: right; }
+  html body.sticky .container #header .tags ul.social li { /* We are not replacing social icons on hover - so the second image must not be displayed - also the icon should be taller, the maximum possible
+*/ }
+  html body.sticky .container #header .tags ul.social li img { height: 12px; position: relative; top: 1px; }
+  html body.sticky .container #header .tags ul.social li a img { height: 13px; }
+  html body.sticky .container #header .tags ul.social li a img:last-of-type { display: none; }
+  html body.sticky .container #header .main, html body.sticky .container #header .secondary { margin-top: 2.5em; } }
 html body.sticky .container main, html body.sticky .container #footer { position: relative; top: 3.75em; }
 html body.frontpage .container main #intro { margin-bottom: 1.25em; }
 html body.frontpage .container main #intro #slider { width: 65.5%; margin-right: 2.5%; float: left; background: #f1f1f1; /* Desktop

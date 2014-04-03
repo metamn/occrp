@@ -1,3 +1,5 @@
+
+
 /* Displays an <ul> list inline
 */
 @mixin list-inline($margin-right: $pad/2) {
@@ -36,6 +38,13 @@
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+
+/* List floated right
+*/
+@mixin list-floated-right {
+  float: right;
 }
 
 

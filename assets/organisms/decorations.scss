@@ -1,3 +1,50 @@
+/* The search button with text in the tag bar
+*/
+@mixin search {
+  li {
+    &.text {
+      @include text-with-icon;
+    }
+    
+    &.input {
+      display: none;
+      
+      input {
+        margin: $pad/4;
+      }
+    }
+  }
+}
+
+
+/* The social icons in the tag bar
+*/
+@mixin social-icons {
+  float: right;
+      
+  li {
+    @include text-with-icon;
+    
+    /* We are not replacing social icons on hover
+      - so the second image must not be displayed
+      - also the icon should be taller, the maximum possible
+    */
+    a {
+      img {
+        height: 13px;
+        
+        &:last-of-type {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
 /* Make icons taller than the default size in the header
   - this is kinda manual pixel pushing
 */

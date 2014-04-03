@@ -665,10 +665,18 @@
   
   nav {
     @include responsive-menu;
+    
+    &.main, &.secondary {
+      @include border-thin($color);
+    }
   }
   
   @include below-and-small-screen {
     @include header-mobile;
+  }
+  
+  @include small-screen-and-up {
+    @include header-desktop;
   }
 }
 

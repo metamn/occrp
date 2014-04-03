@@ -1,3 +1,58 @@
+/* The tage bar
+*/
+@mixin tags {
+  @include block;
+  @include color(invert);
+  
+  ul {
+    &.search {
+      @include search;
+    }
+    
+    &.tag-list {
+      @include list-centered;
+    }
+    
+    &.tag-list, &.social, &.search {
+      @include list-inline($pad/4);
+    }
+    
+    &.social {
+      @include social-icons;
+    }
+  }
+}
+
+
+
+/* A menubar for mobiles
+  - it's a static bar which shows the menu on click
+*/
+@mixin menubar-mobile {
+  @include block;
+  @include font(navigation);
+  @include color(invert);
+  padding: $pad/4 0;
+  
+  ul {
+    @include list-inline;
+    @include list-centered;
+    
+    li {
+      &.icon {
+        img {
+          width: 14px;
+        }
+      }
+    }
+  }
+  
+  cursor: pointer;
+}
+
+
+
+
 /* A responsive menu 
   - it is usually a <nav> element
 */
