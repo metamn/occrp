@@ -1,5 +1,6 @@
-permalink: /:title
+markdown: kramdown
 
+permalink: /:title
 title: Organized Crime and Corruption Reporting Project
 
 #url: http://metamn.github.io/occrp
