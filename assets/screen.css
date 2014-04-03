@@ -55,8 +55,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 */
 /* Centers an inline list
 */
-/* Highlights an active item in a list / menu
-*/
 /* The basic body font size - See http://lamb.cc/typograph/
 */
 /* 16px, 1em */
@@ -77,19 +75,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 */
 /* Links
 */
-/* Social icons
-*/
 /* On hover shows a different image - the two images must be siblings in a container - this mixin is added to the container
 */
 /* Icon with text - the image size (height) must be fixed otherwise it will be taller than other elements - first used with the language selector in a menu - if the height was not set this menu item was taller than all others
 */
-/* Make icons taller than the default size in the header - this is kinda manual pixel pushing
-*/
-/* The language selector
+/* A close icon
 */
 /* Borders
 */
 /* Common
+---------------------------------------------------------
 */
 /* Remove the extra padding bottom for images inside a link
 - http://stackoverflow.com/questions/3532870/extra-padding-on-linked-images-in-every-broswer
@@ -130,13 +125,7 @@ figure a { line-height: 0; }
 */
 /* Strech content to fill parent width
 */
-/* A menu - an inline list of items, with different hover and active states - it's parent is usually a <nav> element
-*/
-/* Floats the secondary menu right
-*/
-/* The tag bar
-*/
-/* The logo
+/* Creates a list of menu items - on hover & active the menu item is highlighted
 */
 /* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback  
 	Usage: @include font-size(1, large);
@@ -155,9 +144,21 @@ figure a { line-height: 0; }
 */
 /* <ul> and <ol> lists - they display a custom bullet / number via $before - the text of the list is aligned right related to the bullet / number
 */
+/* Make icons taller than the default size in the header - this is kinda manual pixel pushing
+*/
+/* The language selector
+*/
 /* Styling article thumbs - controls how an article thumb is displayed
 */
 /* An article - displays mostly article thumbs - this mixin controls what is diplayed in an article
+*/
+/* A menu - an inline list of items, with different hover and active states - it's parent is usually a <nav> element
+*/
+/* Floats the secondary menu right
+*/
+/* The tag bar
+*/
+/* The logo
 */
 /* The navigation bar in the header
 */
@@ -299,8 +300,7 @@ html body .container #header nav.tags ul.social li a img { height: 1.25em; }
   html body .container #header nav.mobile-navbar ul.mobile-navbar-menu { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
   html body .container #header nav.mobile-navbar ul.mobile-navbar-menu li { display: inline-block; float: left; margin-right: 0.625em; }
   html body .container #header nav.mobile-navbar ul.mobile-navbar-menu li:last-of-type { margin-right: 0; }
-  html body .container #header nav.mobile-navbar ul.mobile-navbar-menu li.hamburger span { position: relative; display: block; min-width: 1.25em; top: 1px; }
-  html body .container #header nav.mobile-navbar ul.mobile-navbar-menu li.hamburger span:before { content: ""; position: absolute; top: 0.25em; left: 0; width: 1em; height: 0.125em; border-top: 0.375em double white; border-bottom: 0.125em solid white; } }
+  html body .container #header nav.mobile-navbar ul.mobile-navbar-menu li.hamburger span { min-width: 1.25em; top: 1px; } }
 @media only screen and (min-width: 48.001em) { html body .container #header nav { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; } }
 @media only screen and (min-width: 48.001em) and (max-width: 47.999em) { html body .container #header nav { width: 100%; margin-right: 0; float: left; } }
 @media only screen and (min-width: 48.001em) and (min-width: 30em) and (max-width: 48em) { html body .container #header nav { width: 45%; margin-right: 10%; float: left; }
@@ -334,8 +334,7 @@ html body .container #header nav.tags ul.social li a img { height: 1.25em; }
   html body .container #header nav.main li, html body .container #header nav.secondary li { display: inline-block; float: left; margin-right: 0.3125em; }
   html body .container #header nav.main li:last-of-type, html body .container #header nav.secondary li:last-of-type { margin-right: 0; }
   html body .container #header nav.tags { width: 100%; max-width: 100%; float: left; margin-top: 0.625em; } }
-@media only screen and (max-width: 48em) { html body .container #header #hamburger-menu { position: relative; display: block; top: 1.25em; cursor: pointer; z-index: 3; display: none; }
-  html body .container #header #hamburger-menu:before { content: ""; position: absolute; top: 0.25em; left: 0; width: 1em; height: 0.125em; border-top: 0.375em double #231f20; border-bottom: 0.125em solid #231f20; }
+@media only screen and (max-width: 48em) { html body .container #header #hamburger-menu { top: 1.25em; cursor: pointer; z-index: 3; display: none; }
   html body .container #header .mobile-menu { display: none; }
   html body .container #header .mobile-menu nav.main, html body .container #header .mobile-menu nav.secondary, html body .container #header .mobile-menu nav.tags { display: block; margin-top: 2.5em; }
   html body .container #header .mobile-menu nav ul { width: 100%; max-width: 100%; float: left; }
@@ -418,8 +417,7 @@ html body.sticky .container #header nav.tags ul.social li a img { height: 1.25em
   html body.sticky .container #header nav.mobile-navbar ul.mobile-navbar-menu { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
   html body.sticky .container #header nav.mobile-navbar ul.mobile-navbar-menu li { display: inline-block; float: left; margin-right: 0.625em; }
   html body.sticky .container #header nav.mobile-navbar ul.mobile-navbar-menu li:last-of-type { margin-right: 0; }
-  html body.sticky .container #header nav.mobile-navbar ul.mobile-navbar-menu li.hamburger span { position: relative; display: block; min-width: 1.25em; top: 1px; }
-  html body.sticky .container #header nav.mobile-navbar ul.mobile-navbar-menu li.hamburger span:before { content: ""; position: absolute; top: 0.25em; left: 0; width: 1em; height: 0.125em; border-top: 0.375em double white; border-bottom: 0.125em solid white; } }
+  html body.sticky .container #header nav.mobile-navbar ul.mobile-navbar-menu li.hamburger span { min-width: 1.25em; top: 1px; } }
 @media only screen and (min-width: 48.001em) { html body.sticky .container #header nav { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; } }
 @media only screen and (min-width: 48.001em) and (max-width: 47.999em) { html body.sticky .container #header nav { width: 100%; margin-right: 0; float: left; } }
 @media only screen and (min-width: 48.001em) and (min-width: 30em) and (max-width: 48em) { html body.sticky .container #header nav { width: 45%; margin-right: 10%; float: left; }
@@ -485,8 +483,7 @@ html body.sticky .container #header nav.tags ul.social li a img { height: 1.25em
   html body.sticky .container #header nav.mobile-navbar ul.mobile-navbar-menu { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
   html body.sticky .container #header nav.mobile-navbar ul.mobile-navbar-menu li { display: inline-block; float: left; margin-right: 0.625em; }
   html body.sticky .container #header nav.mobile-navbar ul.mobile-navbar-menu li:last-of-type { margin-right: 0; }
-  html body.sticky .container #header nav.mobile-navbar ul.mobile-navbar-menu li.hamburger span { position: relative; display: block; min-width: 1.25em; top: 1px; }
-  html body.sticky .container #header nav.mobile-navbar ul.mobile-navbar-menu li.hamburger span:before { content: ""; position: absolute; top: 0.25em; left: 0; width: 1em; height: 0.125em; border-top: 0.375em double white; border-bottom: 0.125em solid white; }
+  html body.sticky .container #header nav.mobile-navbar ul.mobile-navbar-menu li.hamburger span { min-width: 1.25em; top: 1px; }
   html body.sticky .container #header nav.mobile-navbar { display: none !important; } }
 @media only screen and (max-width: 29.999em) and (min-width: 48.001em) { html body.sticky .container #header nav { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; } }
 
@@ -562,8 +559,7 @@ html body.sticky .container #header nav.tags ul.social li a img { height: 1.25em
   html body.sticky .container #header nav.mobile-navbar ul.mobile-navbar-menu { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
   html body.sticky .container #header nav.mobile-navbar ul.mobile-navbar-menu li { display: inline-block; float: left; margin-right: 0.625em; }
   html body.sticky .container #header nav.mobile-navbar ul.mobile-navbar-menu li:last-of-type { margin-right: 0; }
-  html body.sticky .container #header nav.mobile-navbar ul.mobile-navbar-menu li.hamburger span { position: relative; display: block; min-width: 1.25em; top: 1px; }
-  html body.sticky .container #header nav.mobile-navbar ul.mobile-navbar-menu li.hamburger span:before { content: ""; position: absolute; top: 0.25em; left: 0; width: 1em; height: 0.125em; border-top: 0.375em double white; border-bottom: 0.125em solid white; } }
+  html body.sticky .container #header nav.mobile-navbar ul.mobile-navbar-menu li.hamburger span { min-width: 1.25em; top: 1px; } }
 @media only screen and (min-width: 48.001em) and (min-width: 48.001em) { html body.sticky .container #header nav { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; } }
 @media only screen and (min-width: 48.001em) and (min-width: 48.001em) and (max-width: 47.999em) { html body.sticky .container #header nav { width: 100%; margin-right: 0; float: left; } }
 @media only screen and (min-width: 48.001em) and (min-width: 48.001em) and (min-width: 30em) and (max-width: 48em) { html body.sticky .container #header nav { width: 45%; margin-right: 10%; float: left; }
@@ -603,8 +599,7 @@ html body.sticky .container #header nav.tags ul.social li a img { height: 1.25em
   html body.sticky .container #header .logo h1, html body.sticky .container #header .logo figure figcaption { display: none; }
   html body.sticky .container #header .logo figure { margin-top: 0; }
   html body.sticky .container #header .logo figure img { max-width: 10em; position: relative; top: -0.3125em; } }
-@media only screen and (max-width: 48em) { html body.sticky .container #header #hamburger-menu { position: relative; display: block; top: 1.25em; cursor: pointer; z-index: 3; display: none; }
-  html body.sticky .container #header #hamburger-menu:before { content: ""; position: absolute; top: 0.25em; left: 0; width: 1em; height: 0.125em; border-top: 0.375em double #231f20; border-bottom: 0.125em solid #231f20; }
+@media only screen and (max-width: 48em) { html body.sticky .container #header #hamburger-menu { top: 1.25em; cursor: pointer; z-index: 3; display: none; }
   html body.sticky .container #header .mobile-menu { display: none; }
   html body.sticky .container #header .mobile-menu nav.main, html body.sticky .container #header .mobile-menu nav.secondary, html body.sticky .container #header .mobile-menu nav.tags { display: block; margin-top: 2.5em; }
   html body.sticky .container #header .mobile-menu nav ul { width: 100%; max-width: 100%; float: left; }
@@ -1457,8 +1452,6 @@ html body.category main aside section article:last-of-type { border: none; }
 html body.category main aside section article h1 { font-weight: normal; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; }
 @media only screen and (max-width: 47.999em) { html body.category main aside section article h1 { font-size: small; line-height: 1.25; } }
 html body.category main aside nav > h3 { display: none; }
-html body.category main aside nav ul { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; }
-html body.category main aside nav ul li { padding: 0.625em; border-bottom: 1px solid white; }
 html body.category main aside section { width: 100%; max-width: 100%; float: left; margin-bottom: 3%; }
 html body.category main aside section#projects article { width: 100%; max-width: 100%; float: left; margin-bottom: 3%; }
 html body.category main aside section#projects article figure img { width: auto; }
@@ -1741,8 +1734,6 @@ html body.tag main aside section article:last-of-type { border: none; }
 html body.tag main aside section article h1 { font-weight: normal; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; }
 @media only screen and (max-width: 47.999em) { html body.tag main aside section article h1 { font-size: small; line-height: 1.25; } }
 html body.tag main aside nav > h3 { display: none; }
-html body.tag main aside nav ul { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; }
-html body.tag main aside nav ul li { padding: 0.625em; border-bottom: 1px solid white; }
 html body.tag main aside section { width: 100%; max-width: 100%; float: left; margin-bottom: 3%; }
 html body.tag main aside section#projects article { width: 100%; max-width: 100%; float: left; margin-bottom: 3%; }
 html body.tag main aside section#projects article figure img { width: auto; }
@@ -2212,8 +2203,6 @@ html body.blog main aside section article:last-of-type { border: none; }
 html body.blog main aside section article h1 { font-weight: normal; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; }
 @media only screen and (max-width: 47.999em) { html body.blog main aside section article h1 { font-size: small; line-height: 1.25; } }
 html body.blog main aside nav > h3 { display: none; }
-html body.blog main aside nav ul { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; }
-html body.blog main aside nav ul li { padding: 0.625em; border-bottom: 1px solid white; }
 html body.blog main aside section { width: 100%; max-width: 100%; float: left; margin-bottom: 3%; }
 html body.blog main aside section#projects article { width: 100%; max-width: 100%; float: left; margin-bottom: 3%; }
 html body.blog main aside section#projects article figure img { width: auto; }
@@ -2553,8 +2542,6 @@ html body.author main aside section article:last-of-type { border: none; }
 html body.author main aside section article h1 { font-weight: normal; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; }
 @media only screen and (max-width: 47.999em) { html body.author main aside section article h1 { font-size: small; line-height: 1.25; } }
 html body.author main aside nav > h3 { display: none; }
-html body.author main aside nav ul { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; }
-html body.author main aside nav ul li { padding: 0.625em; border-bottom: 1px solid white; }
 html body.author main aside section { width: 100%; max-width: 100%; float: left; margin-bottom: 3%; }
 html body.author main aside section#projects article { width: 100%; max-width: 100%; float: left; margin-bottom: 3%; }
 html body.author main aside section#projects article figure img { width: auto; }
@@ -2993,8 +2980,6 @@ html body.article main aside section article:last-of-type, html body.about main 
 html body.article main aside section article h1, html body.about main aside section article h1, html body.post main aside section article h1 { font-weight: normal; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; }
 @media only screen and (max-width: 47.999em) { html body.article main aside section article h1, html body.about main aside section article h1, html body.post main aside section article h1 { font-size: small; line-height: 1.25; } }
 html body.article main aside nav > h3, html body.about main aside nav > h3, html body.post main aside nav > h3 { display: none; }
-html body.article main aside nav ul, html body.about main aside nav ul, html body.post main aside nav ul { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; }
-html body.article main aside nav ul li, html body.about main aside nav ul li, html body.post main aside nav ul li { padding: 0.625em; border-bottom: 1px solid white; }
 html body.article main aside section, html body.about main aside section, html body.post main aside section { width: 100%; max-width: 100%; float: left; margin-bottom: 3%; }
 html body.article main aside section#projects article, html body.about main aside section#projects article, html body.post main aside section#projects article { width: 100%; max-width: 100%; float: left; margin-bottom: 3%; }
 html body.article main aside section#projects article figure img, html body.about main aside section#projects article figure img, html body.post main aside section#projects article figure img { width: auto; }

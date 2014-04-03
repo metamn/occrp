@@ -1,27 +1,4 @@
 
-/* Social icons
-*/
-@mixin social-icons {
-  float: right;
-  position: relative;
-  top: -$pad*2 - $pad/4;
-  
-  p {
-    font-weight: bold;
-    margin-bottom: $pad;
-    text-align: right;
-    
-    @include color(invert);
-  }
-  
-  ul {
-    li {
-      @include image-change-on-hover; 
-    }
-  }
-}
-
-
 
 /* On hover shows a different image
   - the two images must be siblings in a container
@@ -50,6 +27,7 @@
 }
 
 
+
 /* Icon with text
   - the image size (height) must be fixed otherwise it will be taller than other elements
   - first used with the language selector in a menu
@@ -65,47 +43,27 @@
 }
 
 
-/* Make icons taller than the default size in the header
-  - this is kinda manual pixel pushing
+
+
+/* A close icon
 */
-@mixin enlarge-social-icons {
-  ul {
-    &.search, &.tag-list {
-      margin-top: $pad/4;
-    }
+@mixin close-menu($c: $background) {
+  &:after {
+    content: $close;
+    color: $c;
+    padding: 0 $pad/4;
+    border: $border-thin;
     
-    &.social {
-      li {
-        a {
-          margin-bottom: $pad/4;
-          height: $pad;
-          
-          img {
-            height: $pad;
-          }
-        }
-      }
-    }
+    position: relative;
+    top: -$pad - $pad/2;
+    right: $pad;
+    float: right;
+    
+    cursor: pointer;
   }
 }
 
 
-
-/* The language selector
-*/
-@mixin language-selector {
-  ul {
-    li {
-      &.language {
-        @include text-with-icon;
-      }
-      
-      &.english {
-        display: none;
-      }
-    }
-  }
-}
 
 
 
@@ -119,7 +77,11 @@
 
 
 
+
+
+
 /* Common
+---------------------------------------------------------
 */
 
 @mixin fluid-image {

@@ -276,7 +276,7 @@
     @include hide-title;
     
     ul {
-      @include list-with-border;
+      
     }
   }
   
@@ -675,7 +675,6 @@
   */
   @include below-and-tablet {
     #hamburger-menu {
-      @include hamburger-menu;
       top: $pad;
       cursor: pointer;
       z-index: 3;
@@ -718,7 +717,23 @@
       }
       
       &#social-icons {
-        @include social-icons;
+        float: right;
+        position: relative;
+        top: -$pad*2 - $pad/4;
+        
+        p {
+          font-weight: bold;
+          margin-bottom: $pad;
+          text-align: right;
+          
+          @include color(invert);
+        }
+        
+        ul {
+          li {
+            @include image-change-on-hover; 
+          }
+        }
       }
     }
   }
