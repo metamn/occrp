@@ -1,7 +1,34 @@
-/* Creates a list of menu items
+/* A responsive menu 
+  - it is usually a <nav> element
+*/
+@mixin responsive-menu {
+  @include menu;
+  
+  @include small-screen-and-up {
+    ul {
+      @include list-inline;
+    }
+  }
+}
+
+
+/* A menu
+  - a list of items, with different hover and active states
+  - it's parent is usually a <nav> element
+*/
+@mixin menu {
+  @include font(navigation);
+  
+  ul {
+    @include menu-item;
+  }  
+}
+
+
+/* Creates a menu item
   - on hover & active the menu item is highlighted
 */
-@mixin list-menu($display: inline-block, $top : $pad/2, $left: $pad/4)  {
+@mixin menu-item($display: inline-block, $top : $pad/2, $left: $pad/4)  {
   li {
     a {
       padding: $top $left;

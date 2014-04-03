@@ -1,3 +1,79 @@
+/* The header on mobiles
+*/
+@mixin header-mobile {
+  nav {
+    display: none;
+  }
+}
+
+
+/* The logo
+*/
+@mixin logo {
+  h1 {
+    display: none;
+  }
+  
+  text-align: center;
+  
+  figure {
+    figcaption {
+      @include block;
+      @include font(navigation);
+      @include color(invert);
+      padding: $pad/4 0;
+      
+      ul {
+        @include list-inline;
+        @include list-centered;
+        
+        li {
+          &.icon {
+            img {
+              width: 14px;
+            }
+          }
+        }
+      }
+      
+      cursor: pointer;
+    }
+  }
+  
+  
+  @include small-screen-and-up {
+    figure {
+      figcaption {
+        display: none;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -10,7 +86,7 @@
     
     ol {
       @include list-inline;
-      @include list-menu(block, $pad/2, $pad/2 + $pad/4);
+      @include menu-item(block, $pad/2, $pad/2 + $pad/4);
       
       li {
         @include color($color-scheme);
@@ -112,17 +188,7 @@
 
 
 
-/* A menu
-  - an inline list of items, with different hover and active states
-  - it's parent is usually a <nav> element
-*/
-@mixin menu {
-  @include font(navigation);
-  
-  ul {
-    @include list-menu;
-  }  
-}
+
 
 
 /* Floats the secondary menu right
@@ -202,58 +268,6 @@
   }
 }
 
-
-
-
-/* The logo
-*/
-@mixin logo($type: desktop) {
-  
-  h1, figure figcaption {
-    display: none;
-  }
-    
-  
-  @if ($type == desktop) {
-    text-align: center;
-  
-    figure {
-      margin-top: $pad/2;
-    }
-    
-    @include tablet-and-up {
-      @include responsive-grid(3);
-    }
-    
-    
-  } @elseif ($type == desktop-fixed) {
-    height: $pad + $pad/2 + $pad/8;
-    
-    figure {
-      margin-top: 0;
-      
-      img {
-        max-width: 10em;
-        position: relative;
-        top: -$pad/4;
-      }
-    }
-  
-  
-  } @elseif ($type == tablet-fixed) {
-    width: 35%;
-    float: left;
-  
-  
-  } @elseif ($type == mobile-fixed) {
-    figure {
-      img {
-        width: 50%;
-      }
-    }
-  }
-  
-}
 
 
 

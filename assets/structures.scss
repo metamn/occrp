@@ -106,7 +106,7 @@
       
       nav {
         ul {
-          @include list-menu;
+          @include menu-item;
           
           li {
             @include block;
@@ -664,34 +664,11 @@
   }
   
   nav {
-    @include navbar;
+    @include responsive-menu;
   }
   
-  @if ($type == fixed) {
-    @include fixed-header;
-  }
- 
-  /* Responsive layouts
-  */
-  @include below-and-tablet {
-    #hamburger-menu {
-      top: $pad;
-      cursor: pointer;
-      z-index: 3;
-      
-      display: none;
-    }
-    
-    .mobile-menu {
-      @include mobile-menu;
-      display: none;
-    }
-  }
-  
-  @include tablet-and-up {
-    .mobile-menu, .mobile-navbar {
-      display: none;
-    }
+  @include below-and-small-screen {
+    @include header-mobile;
   }
 }
 

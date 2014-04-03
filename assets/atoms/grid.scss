@@ -55,7 +55,7 @@ $breakpoint-large-screen: 90em !default; /* 1440px */
   }
 }
 
-@mixin above-small-screen {
+@mixin small-screen-and-up {
   @media only screen and (min-width: $breakpoint-small-screen + 0.001) {
     @content;
   }

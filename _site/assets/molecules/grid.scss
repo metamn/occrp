@@ -103,7 +103,7 @@
     @include grid(2, $maximum);
   }
   
-  @include above-small-screen {
+  @include small-screen-and-up {
     @include grid($how-many, $maximum);
   }
 }

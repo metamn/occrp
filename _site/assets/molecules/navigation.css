@@ -1,2 +1,6 @@
-/* Creates a list of menu items - on hover & active the menu item is highlighted
+/* A responsive menu  - it is usually a <nav> element
+*/
+/* A menu - a list of items, with different hover and active states - it's parent is usually a <nav> element
+*/
+/* Creates a menu item - on hover & active the menu item is highlighted
 */
