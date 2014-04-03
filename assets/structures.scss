@@ -475,6 +475,10 @@
   article {
     @include responsive-grid(4);
     @include article-style(products);
+    
+    h1 {
+      display: none;
+    }
   }
 }
 
