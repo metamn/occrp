@@ -1,0 +1,14 @@
+/* The basic body font size - See http://lamb.cc/typograph/
+*/
+/* 16px, 1em */
+/* 20px, 1.25em */
+/* This is to convert em to rem - it depends on font-size - font-size: 100% => this value is 1, font-size: 65% => this value is .65
+*/
+/* Line heights for headers and body text - See http://www.kaikkonendesign.fi/typography/#section/4
+*/
+/* Letter spacing for uppercase
+*/
+/* Font families
+*/
+/* Font sizing for headers - We employ modern typography where headers differ by design not by font size - We size fonts by REM instead of EM - We use Traditional / em scaling from http://lamb.cc/typograph/
+*/

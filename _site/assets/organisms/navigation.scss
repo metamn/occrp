@@ -1,0 +1,70 @@
+
+
+
+
+
+/* The navigation bar in the header
+*/
+@mixin navbar($type: desktop) {
+  @include border-thin($color);
+    
+  &.secondary {
+    @include language-selector;
+  }
+  
+  &.tags {
+    @include tags;
+    @include enlarge-social-icons;
+  }
+  
+  
+  @include below-and-tablet {
+    &.main, &.secondary, &.tags {
+      display: none;
+    }
+    
+    &.mobile-navbar {
+      @include mobile-navbar;
+    }
+    
+    @if ($type == mobile-fixed) {
+      &.mobile-navbar {
+        display: none !important;
+      }
+    }
+  }
+  
+  
+  @include tablet-and-up {
+    @include responsive-grid(3);
+    @include menu;
+    
+    &.secondary {
+      margin-right: 0;
+      @include menu-float-right;
+    }
+    
+    &.main, &.secondary {
+      @include list-inline($pad/4);
+      margin-top: $pad*2;
+    }
+    
+    &.tags {
+      @include block;
+      margin-top: $pad/2;
+    }
+    
+    @if ($type == desktop-fixed) {
+      &.main, &.secondary {
+        margin-top: 0;
+        border: none;
+      }
+      
+      &.tags {
+        display: none;
+      }
+    }  
+  }
+
+}
+
