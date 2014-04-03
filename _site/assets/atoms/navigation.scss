@@ -89,7 +89,7 @@
 
 @mixin close-menu($c: $background) {
   &:after {
-    content: '\2715';
+    content: $close;
     color: $c;
     padding: 0 $pad/4;
     border: $border-thin;

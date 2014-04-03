@@ -36,8 +36,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* for better monitors e5e5e5 suits better, for poor displays f9f9f9 is better */
 /* Font, black */
 /* Link, OCCRP red */
-/* in :before and :after usually the font size is larger for better visibility
-*/
 /* 480px, iPhone 3,4 landscape */
 /* 768px */
 /* 1024px */
@@ -72,6 +70,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* Font families
 */
 /* Font sizing for headers - We employ modern typography where headers differ by design not by font size - We size fonts by REM instead of EM - We use Traditional / em scaling from http://lamb.cc/typograph/
+*/
+/* in :before and :after usually the font size is larger for better visibility
 */
 /* Set the background and font color - 'invert' inverts this color scheme
 */
@@ -349,7 +349,7 @@ html body .container #header nav.tags ul.social li a img { height: 1.25em; }
   html body .container #header .mobile-menu nav.tags ul.search li.input input { width: 95%; }
   html body .container #header .mobile-menu nav.tags ul.tag-list { margin: 1.25em 0; }
   html body .container #header .mobile-menu nav.tags ul.social li { margin-right: 1.25em; }
-  html body .container #header .mobile-menu #close-menu:after { content: '\2715'; color: white; padding: 0 0.3125em; border: 1px solid; position: relative; top: -1.875em; right: 1.25em; float: right; cursor: pointer; } }
+  html body .container #header .mobile-menu #close-menu:after { content: "\2715"; color: white; padding: 0 0.3125em; border: 1px solid; position: relative; top: -1.875em; right: 1.25em; float: right; cursor: pointer; } }
 @media only screen and (min-width: 48.001em) { html body .container #header .mobile-menu, html body .container #header .mobile-navbar { display: none; } }
 html body .container #footer { margin: 3.75em 0 0; padding: 1.25em 0; border-top: 0.3125em solid; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; }
 html body .container #footer ul li { display: inline-block; float: left; margin-right: 1.25em; }
@@ -618,7 +618,7 @@ html body.sticky .container #header nav.tags ul.social li a img { height: 1.25em
   html body.sticky .container #header .mobile-menu nav.tags ul.search li.input input { width: 95%; }
   html body.sticky .container #header .mobile-menu nav.tags ul.tag-list { margin: 1.25em 0; }
   html body.sticky .container #header .mobile-menu nav.tags ul.social li { margin-right: 1.25em; }
-  html body.sticky .container #header .mobile-menu #close-menu:after { content: '\2715'; color: white; padding: 0 0.3125em; border: 1px solid; position: relative; top: -1.875em; right: 1.25em; float: right; cursor: pointer; } }
+  html body.sticky .container #header .mobile-menu #close-menu:after { content: "\2715"; color: white; padding: 0 0.3125em; border: 1px solid; position: relative; top: -1.875em; right: 1.25em; float: right; cursor: pointer; } }
 @media only screen and (min-width: 48.001em) { html body.sticky .container #header .mobile-menu, html body.sticky .container #header .mobile-navbar { display: none; } }
 html body.sticky .container main, html body.sticky .container #footer { position: relative; top: 3.75em; }
 html body.frontpage .container main #intro { margin-bottom: 1.25em; }
