@@ -1,12 +1,23 @@
 {% if include.type %}
   {% assign title = post.images[image_index].title %}
   {% assign link = post.url %}
-  {% capture normal %}
-    {{ post.images[image_index].url }}
-  {% endcapture %}
-  {% capture mobile %}
-    {{ post.images[image_index].url }}
-  {% endcapture %}
+
+
+  {% if include.absolute %} 
+    {% capture normal %}
+      {{ post.images[image_index].url }}
+    {% endcapture %}
+    {% capture mobile %}
+      {{ post.images[image_index].url }}
+    {% endcapture %}
+  {% else %}
+    {% capture normal %}
+      {{ site.url }}{{ post.images[image_index].url }}
+    {% endcapture %}
+    {% capture mobile %}
+      {{ site.url }}{{ post.images[image_index].url }}
+    {% endcapture %}
+ {% endif %}
 
 {% else %}
   {% assign title = include.title %}
