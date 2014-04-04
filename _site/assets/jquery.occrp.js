@@ -75,26 +75,20 @@ $(document).ready(function() {
   });
   
   
-  // Show navigation, search & co on click on mobile hamburger icon
-  $('#header #hamburger-menu').click(function() {
-    $('body').removeClass('sticky');
-    $('#header .mobile-navbar').hide();
-    $('#header .mobile-menu').slideToggle();
-    scrollTo($('body'));
-  });
-  
   // Show navigation, search & co on click on mobile navbar
-  $('#header .mobile-navbar').click(function() {
+  $('#header .logo figure figcaption').click(function() {
     $('body').removeClass('sticky');
     $(this).hide();
-    $('#header .mobile-menu').slideToggle();
+    $('#header nav').slideToggle();
+    $("#header").addClass('active');
   });
   
   // Close navigation, search & co on click on mobiles
-  $('#header #close-menu').click(function() {
-    $('#header .mobile-menu').hide();
-    $('#header .mobile-navbar').slideToggle();
+  $('#header .close-icon').click(function() {
     scrollTo($('body'));
+    $('#header').removeClass('active');
+    $('#header .logo figure figcaption').slideToggle();  
+    $('#header nav').slideToggle();
   });
 
 

@@ -1,6 +1,8 @@
 <header id="header">
   <h3>Header</h3>
   
+  {% include nav-main.html %}
+  
   <section class="logo">
     <h3>Logo</h3>
     <h1>
@@ -24,14 +26,10 @@
       </figcaption>
     </figure>
   </section>
-
-  <section class="navigation">
-    <h3>Navigation</h3>
-    <span class="close-icon"></span>
-    {% include nav-main.html %}
-    {% include nav-secondary.html %}
-    {% include nav-tags.html %}
-  </section>
+  
+  {% include nav-secondary.html %}
+  {% include nav-tags.html %}
+  <span class="close-icon"></span>
 </header>
 
 

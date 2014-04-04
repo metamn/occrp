@@ -16,6 +16,10 @@ html {
       
       #header {
         @include header;
+        
+        &.active {
+          @include header(active);
+        }
       }
       
       #footer {

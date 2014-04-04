@@ -23,50 +23,44 @@
 
 /* The header on mobiles
 */
-@mixin header-mobile {
-  
-  
-  .navigation {
-    border-left: 1px solid;
-    border-right: 1px solid;
+@mixin header-mobile($type: normal) {
+  nav {
+    &.main, &.secondary {
+      @include border-thin($color);
+      margin-bottom: $pad;
+    }
     
-    nav {
-      &.main, &.secondary {
-        @include border-thin($color);
-        margin-bottom: $pad;
-        ul {
-          li {
-            @include border-thin;
-          }
-        }
-      }
+    &.main {
+      margin-top: $pad*5;
+    }
+    
+    &.tags {
+      @include block;
+      margin-right: 0;
+      @include enlarge-social-icons;
       
-      
-      &.tags {
+      ul {
         @include block;
-        margin-right: 0;
-        @include enlarge-social-icons;
         
-        ul {
-          @include block;
-          
-          &.search {
-            li {
-              &.text {
-                display: none;
-              }
-              
-              &.input {
-                display: block;
-              }
-            }
-          }
+        &.search {
+          @include search(active);
         }
       }
     }
+  }
     
-    .close-icon {
-      @include close-icon;
+  .close-icon {
+    @include close-icon;
+  }
+  
+  
+  @if ($type == normal) {
+    nav, .close-icon {
+      display: none;
+    }
+  } @elseif ($type == active) {
+    nav, .close-icon {
+      display: block;
     }
   }
 }
@@ -75,7 +69,7 @@
 
 /* The logo
 */
-@mixin logo {
+@mixin logo($type: normal) {
   h1 {
     display: none;
   }
@@ -87,14 +81,18 @@
       @include menubar-mobile;
     }
   }
-  
-  
+   
   @include small-screen-and-up {
     figure {
       figcaption {
         display: none;
       }
     }
+  }
+  
+  @if ($type == active) {
+    position: absolute;
+    @include container;
   }
 }
 

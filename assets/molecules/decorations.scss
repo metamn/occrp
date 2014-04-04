@@ -33,11 +33,11 @@
   - first used with the language selector in a menu
   - if the height was not set this menu item was taller than all others
 */
-@mixin text-with-icon {
+@mixin text-with-icon($size: 12px, $top: 1px) {
   img {
-    height: 12px;
+    height: $size;
     position: relative;
-    top: 1px;
+    top: $top;
   }
   
 }
@@ -50,13 +50,13 @@
 @mixin close-icon {
   &:after {
     content: $close;
+    padding: $pad/8 $pad/4;
+    border: $border-thin;
     color: $background;
-    background: $color;
-    padding: $pad/4 $pad/2;
     
     position: relative;
-    top: $pad + $pad/2;
-    right: 0;
+    top: -$pad - $pad/2;
+    right: $pad/4;
     float: right;
     
     cursor: pointer;

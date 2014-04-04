@@ -49,6 +49,10 @@
   } @elseif ($type == single-article-title) {
     @include font-size($h1-title); 
     padding: 0;
+    
+  } @elseif ($type == menubar-mobile) {
+    @include font(navigation);
+    font-size: 60%;
   }
 }
 

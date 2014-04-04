@@ -30,7 +30,7 @@
 */
 @mixin menubar-mobile {
   @include block;
-  @include font(navigation);
+  @include font(menubar-mobile);
   @include color(invert);
   padding: $pad/4 0;
   
@@ -40,9 +40,7 @@
     
     li {
       &.icon {
-        img {
-          width: 14px;
-        }
+        @include text-with-icon(9px, 1px);
       }
     }
   }

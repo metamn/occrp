@@ -1,6 +1,6 @@
 /* The search button with text in the tag bar
 */
-@mixin search {
+@mixin search($type: inactive) {
   li {
     &.text {
       @include text-with-icon;
@@ -11,6 +11,18 @@
       
       input {
         margin: $pad/4;
+      }
+    }
+  }
+  
+  @if ($type == active) {
+    li {
+      &.text {
+        display: none;
+      }
+      
+      &.input {
+        display: block;
       }
     }
   }
