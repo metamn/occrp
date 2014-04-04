@@ -292,19 +292,17 @@ html body .container #header nav.tags ul.social li { /* We are not replacing soc
 html body .container #header nav.tags ul.social li img { height: 12px; position: relative; top: 1px; }
 html body .container #header nav.tags ul.social li a img { height: 13px; }
 html body .container #header nav.tags ul.social li a img:last-of-type { display: none; }
-@media only screen and (max-width: 64em) { html body .container #header .logo { position: absolute; top: 0; border-bottom: 1px solid #f1f1f1; }
-  html body .container #header .logo figure { width: 70%; margin: 0 15%; }
-  html body .container #header .logo figure figcaption { display: none; }
-  html body .container #header nav.main, html body .container #header nav.secondary, html body .container #header nav.tags { width: 45%; margin-right: 10%; float: left; position: relative; top: 5em; }
-  html body .container #header nav.main:nth-of-type(2), html body .container #header nav.secondary:nth-of-type(2), html body .container #header nav.tags:nth-of-type(2) { margin-right: 0; }
-  html body .container #header nav.tags { width: 100%; max-width: 100%; float: left; margin-right: 0; }
-  html body .container #header nav.tags ul.search, html body .container #header nav.tags ul.tag-list { margin-top: 0.3125em; }
-  html body .container #header nav.tags ul.social li a { margin-bottom: 0.3125em; height: 1.25em; }
-  html body .container #header nav.tags ul.social li a img { height: 1.25em; }
-  html body .container #header nav.tags ul { width: 100%; max-width: 100%; float: left; }
-  html body .container #header nav.tags ul.search li.text { display: none; }
-  html body .container #header nav.tags ul.search li.input { display: block; }
-  html body .container #header .close-icon:after { content: "\2715"; color: white; padding: 0 0.3125em; border: 1px solid; position: relative; top: -1.875em; right: 0.625em; float: right; cursor: pointer; } }
+@media only screen and (max-width: 64em) { html body .container #header .navigation { border-left: 1px solid; border-right: 1px solid; }
+  html body .container #header .navigation nav.main, html body .container #header .navigation nav.secondary { border-bottom: 1px solid #231f20; margin-bottom: 1.25em; }
+  html body .container #header .navigation nav.main ul li, html body .container #header .navigation nav.secondary ul li { border-bottom: 1px solid #f1f1f1; }
+  html body .container #header .navigation nav.tags { width: 100%; max-width: 100%; float: left; margin-right: 0; }
+  html body .container #header .navigation nav.tags ul.search, html body .container #header .navigation nav.tags ul.tag-list { margin-top: 0.3125em; }
+  html body .container #header .navigation nav.tags ul.social li a { margin-bottom: 0.3125em; height: 1.25em; }
+  html body .container #header .navigation nav.tags ul.social li a img { height: 1.25em; }
+  html body .container #header .navigation nav.tags ul { width: 100%; max-width: 100%; float: left; }
+  html body .container #header .navigation nav.tags ul.search li.text { display: none; }
+  html body .container #header .navigation nav.tags ul.search li.input { display: block; }
+  html body .container #header .navigation .close-icon:after { content: "\2715"; color: white; background: #231f20; padding: 0.3125em 0.625em; position: relative; top: 1.875em; right: 0; float: right; cursor: pointer; } }
 @media only screen and (min-width: 64.001em) { html body .container #header .main, html body .container #header .logo, html body .container #header .secondary { width: 31.5%; margin-right: 2.5%; float: left; }
   html body .container #header .main:nth-of-type(2), html body .container #header .logo:nth-of-type(2), html body .container #header .secondary:nth-of-type(2) { margin-right: 2.5%; }
   html body .container #header .main:nth-of-type(3), html body .container #header .logo:nth-of-type(3), html body .container #header .secondary:nth-of-type(3) { margin-right: 0; }
@@ -356,19 +354,17 @@ html body.sticky .container #header nav.tags ul.social li { /* We are not replac
 html body.sticky .container #header nav.tags ul.social li img { height: 12px; position: relative; top: 1px; }
 html body.sticky .container #header nav.tags ul.social li a img { height: 13px; }
 html body.sticky .container #header nav.tags ul.social li a img:last-of-type { display: none; }
-@media only screen and (max-width: 64em) { html body.sticky .container #header .logo { position: absolute; top: 0; border-bottom: 1px solid #f1f1f1; }
-  html body.sticky .container #header .logo figure { width: 70%; margin: 0 15%; }
-  html body.sticky .container #header .logo figure figcaption { display: none; }
-  html body.sticky .container #header nav.main, html body.sticky .container #header nav.secondary, html body.sticky .container #header nav.tags { width: 45%; margin-right: 10%; float: left; position: relative; top: 5em; }
-  html body.sticky .container #header nav.main:nth-of-type(2), html body.sticky .container #header nav.secondary:nth-of-type(2), html body.sticky .container #header nav.tags:nth-of-type(2) { margin-right: 0; }
-  html body.sticky .container #header nav.tags { width: 100%; max-width: 100%; float: left; margin-right: 0; }
-  html body.sticky .container #header nav.tags ul.search, html body.sticky .container #header nav.tags ul.tag-list { margin-top: 0.3125em; }
-  html body.sticky .container #header nav.tags ul.social li a { margin-bottom: 0.3125em; height: 1.25em; }
-  html body.sticky .container #header nav.tags ul.social li a img { height: 1.25em; }
-  html body.sticky .container #header nav.tags ul { width: 100%; max-width: 100%; float: left; }
-  html body.sticky .container #header nav.tags ul.search li.text { display: none; }
-  html body.sticky .container #header nav.tags ul.search li.input { display: block; }
-  html body.sticky .container #header .close-icon:after { content: "\2715"; color: white; padding: 0 0.3125em; border: 1px solid; position: relative; top: -1.875em; right: 0.625em; float: right; cursor: pointer; } }
+@media only screen and (max-width: 64em) { html body.sticky .container #header .navigation { border-left: 1px solid; border-right: 1px solid; }
+  html body.sticky .container #header .navigation nav.main, html body.sticky .container #header .navigation nav.secondary { border-bottom: 1px solid #231f20; margin-bottom: 1.25em; }
+  html body.sticky .container #header .navigation nav.main ul li, html body.sticky .container #header .navigation nav.secondary ul li { border-bottom: 1px solid #f1f1f1; }
+  html body.sticky .container #header .navigation nav.tags { width: 100%; max-width: 100%; float: left; margin-right: 0; }
+  html body.sticky .container #header .navigation nav.tags ul.search, html body.sticky .container #header .navigation nav.tags ul.tag-list { margin-top: 0.3125em; }
+  html body.sticky .container #header .navigation nav.tags ul.social li a { margin-bottom: 0.3125em; height: 1.25em; }
+  html body.sticky .container #header .navigation nav.tags ul.social li a img { height: 1.25em; }
+  html body.sticky .container #header .navigation nav.tags ul { width: 100%; max-width: 100%; float: left; }
+  html body.sticky .container #header .navigation nav.tags ul.search li.text { display: none; }
+  html body.sticky .container #header .navigation nav.tags ul.search li.input { display: block; }
+  html body.sticky .container #header .navigation .close-icon:after { content: "\2715"; color: white; background: #231f20; padding: 0.3125em 0.625em; position: relative; top: 1.875em; right: 0; float: right; cursor: pointer; } }
 @media only screen and (min-width: 64.001em) { html body.sticky .container #header .main, html body.sticky .container #header .logo, html body.sticky .container #header .secondary { width: 31.5%; margin-right: 2.5%; float: left; }
   html body.sticky .container #header .main:nth-of-type(2), html body.sticky .container #header .logo:nth-of-type(2), html body.sticky .container #header .secondary:nth-of-type(2) { margin-right: 2.5%; }
   html body.sticky .container #header .main:nth-of-type(3), html body.sticky .container #header .logo:nth-of-type(3), html body.sticky .container #header .secondary:nth-of-type(3) { margin-right: 0; }
@@ -400,7 +396,7 @@ html body.frontpage .container main #intro #slider article .content { display: n
 html body.frontpage .container main #intro #slider article .meta .category { display: none; }
 html body.frontpage .container main #intro #slider article .meta .date { display: none; }
 html body.frontpage .container main #intro #slider article .meta { display: none; }
-html body.frontpage .container main #intro #slider article .excerpt { line-height: 1.25; color: #6f6e6e; color: #4c4345; text-align: justify; }
+html body.frontpage .container main #intro #slider article .excerpt { line-height: 1.25; color: #cccccc; color: #4c4345; text-align: justify; }
 html body.frontpage .container main #intro #slider article .meta { margin-top: 0.625em; }
 html body.frontpage .container main #intro #slider article .meta > h3 { display: none; }
 html body.frontpage .container main #intro #slider article .meta ul { margin: 0; }
@@ -408,7 +404,7 @@ html body.frontpage .container main #intro #slider article .meta ul li { display
 html body.frontpage .container main #intro #slider article .meta ul li:before { content: ''; }
 html body.frontpage .container main #intro #slider article .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.frontpage .container main #intro #slider article .meta ul li:last-of-type { margin-right: 0; }
-html body.frontpage .container main #intro #slider article .meta .date { font-size: small; color: #6f6e6e; font-style: normal; }
+html body.frontpage .container main #intro #slider article .meta .date { font-size: small; color: #cccccc; font-style: normal; }
 html body.frontpage .container main #intro #slider article .meta .category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
 html body.frontpage .container main #intro #slider article .meta .category a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #intro #slider article .meta .category a:hover { color: #231f20; }
@@ -501,7 +497,7 @@ html body.frontpage .container main #intro #news article .content, html body.fro
 html body.frontpage .container main #intro #news article .meta .category, html body.frontpage .container main #intro #announcements article .meta .category { display: none; }
 html body.frontpage .container main #intro #news article .meta .date, html body.frontpage .container main #intro #announcements article .meta .date { display: none; }
 html body.frontpage .container main #intro #news article .meta, html body.frontpage .container main #intro #announcements article .meta { display: none; }
-html body.frontpage .container main #intro #news article .excerpt, html body.frontpage .container main #intro #announcements article .excerpt { line-height: 1.25; color: #6f6e6e; color: #4c4345; text-align: justify; }
+html body.frontpage .container main #intro #news article .excerpt, html body.frontpage .container main #intro #announcements article .excerpt { line-height: 1.25; color: #cccccc; color: #4c4345; text-align: justify; }
 html body.frontpage .container main #intro #news article .meta, html body.frontpage .container main #intro #announcements article .meta { margin-top: 0.625em; }
 html body.frontpage .container main #intro #news article .meta > h3, html body.frontpage .container main #intro #announcements article .meta > h3 { display: none; }
 html body.frontpage .container main #intro #news article .meta ul, html body.frontpage .container main #intro #announcements article .meta ul { margin: 0; }
@@ -509,7 +505,7 @@ html body.frontpage .container main #intro #news article .meta ul li, html body.
 html body.frontpage .container main #intro #news article .meta ul li:before, html body.frontpage .container main #intro #announcements article .meta ul li:before { content: ''; }
 html body.frontpage .container main #intro #news article .meta ul li, html body.frontpage .container main #intro #announcements article .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.frontpage .container main #intro #news article .meta ul li:last-of-type, html body.frontpage .container main #intro #announcements article .meta ul li:last-of-type { margin-right: 0; }
-html body.frontpage .container main #intro #news article .meta .date, html body.frontpage .container main #intro #announcements article .meta .date { font-size: small; color: #6f6e6e; font-style: normal; }
+html body.frontpage .container main #intro #news article .meta .date, html body.frontpage .container main #intro #announcements article .meta .date { font-size: small; color: #cccccc; font-style: normal; }
 html body.frontpage .container main #intro #news article .meta .category, html body.frontpage .container main #intro #announcements article .meta .category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
 html body.frontpage .container main #intro #news article .meta .category a, html body.frontpage .container main #intro #announcements article .meta .category a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #intro #news article .meta .category a:hover, html body.frontpage .container main #intro #announcements article .meta .category a:hover { color: #231f20; }
@@ -572,7 +568,7 @@ html body.frontpage .container main #investigations article figure { display: bl
 html body.frontpage .container main #investigations article figcaption { display: none; }
 html body.frontpage .container main #investigations article .content { display: none; }
 html body.frontpage .container main #investigations article .meta .category { display: none; }
-html body.frontpage .container main #investigations article .excerpt { line-height: 1.25; color: #6f6e6e; color: #4c4345; text-align: justify; }
+html body.frontpage .container main #investigations article .excerpt { line-height: 1.25; color: #cccccc; color: #4c4345; text-align: justify; }
 html body.frontpage .container main #investigations article .meta { margin-top: 0.625em; }
 html body.frontpage .container main #investigations article .meta > h3 { display: none; }
 html body.frontpage .container main #investigations article .meta ul { margin: 0; }
@@ -580,7 +576,7 @@ html body.frontpage .container main #investigations article .meta ul li { displa
 html body.frontpage .container main #investigations article .meta ul li:before { content: ''; }
 html body.frontpage .container main #investigations article .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.frontpage .container main #investigations article .meta ul li:last-of-type { margin-right: 0; }
-html body.frontpage .container main #investigations article .meta .date { font-size: small; color: #6f6e6e; font-style: normal; }
+html body.frontpage .container main #investigations article .meta .date { font-size: small; color: #cccccc; font-style: normal; }
 html body.frontpage .container main #investigations article .meta .category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
 html body.frontpage .container main #investigations article .meta .category a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #investigations article .meta .category a:hover { color: #231f20; }
@@ -645,7 +641,7 @@ html body.frontpage .container main #products article .content { display: none; 
 html body.frontpage .container main #products article .meta .category { display: none; }
 html body.frontpage .container main #products article .meta .date { display: none; }
 html body.frontpage .container main #products article .meta { display: none; }
-html body.frontpage .container main #products article .excerpt { line-height: 1.25; color: #6f6e6e; color: #4c4345; text-align: justify; }
+html body.frontpage .container main #products article .excerpt { line-height: 1.25; color: #cccccc; color: #4c4345; text-align: justify; }
 html body.frontpage .container main #products article .meta { margin-top: 0.625em; }
 html body.frontpage .container main #products article .meta > h3 { display: none; }
 html body.frontpage .container main #products article .meta ul { margin: 0; }
@@ -653,7 +649,7 @@ html body.frontpage .container main #products article .meta ul li { display: blo
 html body.frontpage .container main #products article .meta ul li:before { content: ''; }
 html body.frontpage .container main #products article .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.frontpage .container main #products article .meta ul li:last-of-type { margin-right: 0; }
-html body.frontpage .container main #products article .meta .date { font-size: small; color: #6f6e6e; font-style: normal; }
+html body.frontpage .container main #products article .meta .date { font-size: small; color: #cccccc; font-style: normal; }
 html body.frontpage .container main #products article .meta .category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
 html body.frontpage .container main #products article .meta .category a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #products article .meta .category a:hover { color: #231f20; }
@@ -720,7 +716,7 @@ html body.frontpage .container main #projects article .content { display: none; 
 html body.frontpage .container main #projects article .meta .category { display: none; }
 html body.frontpage .container main #projects article .meta .date { display: none; }
 html body.frontpage .container main #projects article .meta { display: none; }
-html body.frontpage .container main #projects article .excerpt { line-height: 1.25; color: #6f6e6e; color: #4c4345; text-align: justify; }
+html body.frontpage .container main #projects article .excerpt { line-height: 1.25; color: #cccccc; color: #4c4345; text-align: justify; }
 html body.frontpage .container main #projects article .meta { margin-top: 0.625em; }
 html body.frontpage .container main #projects article .meta > h3 { display: none; }
 html body.frontpage .container main #projects article .meta ul { margin: 0; }
@@ -728,7 +724,7 @@ html body.frontpage .container main #projects article .meta ul li { display: blo
 html body.frontpage .container main #projects article .meta ul li:before { content: ''; }
 html body.frontpage .container main #projects article .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.frontpage .container main #projects article .meta ul li:last-of-type { margin-right: 0; }
-html body.frontpage .container main #projects article .meta .date { font-size: small; color: #6f6e6e; font-style: normal; }
+html body.frontpage .container main #projects article .meta .date { font-size: small; color: #cccccc; font-style: normal; }
 html body.frontpage .container main #projects article .meta .category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
 html body.frontpage .container main #projects article .meta .category a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #projects article .meta .category a:hover { color: #231f20; }
@@ -774,7 +770,7 @@ html body.frontpage .container main #blog article .content { display: none; }
 html body.frontpage .container main #blog article .meta .category { display: none; }
 html body.frontpage .container main #blog article .meta .date { display: none; }
 html body.frontpage .container main #blog article .meta { display: none; }
-html body.frontpage .container main #blog article .excerpt { line-height: 1.25; color: #6f6e6e; color: #4c4345; text-align: justify; }
+html body.frontpage .container main #blog article .excerpt { line-height: 1.25; color: #cccccc; color: #4c4345; text-align: justify; }
 html body.frontpage .container main #blog article .meta { margin-top: 0.625em; }
 html body.frontpage .container main #blog article .meta > h3 { display: none; }
 html body.frontpage .container main #blog article .meta ul { margin: 0; }
@@ -782,7 +778,7 @@ html body.frontpage .container main #blog article .meta ul li { display: block; 
 html body.frontpage .container main #blog article .meta ul li:before { content: ''; }
 html body.frontpage .container main #blog article .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.frontpage .container main #blog article .meta ul li:last-of-type { margin-right: 0; }
-html body.frontpage .container main #blog article .meta .date { font-size: small; color: #6f6e6e; font-style: normal; }
+html body.frontpage .container main #blog article .meta .date { font-size: small; color: #cccccc; font-style: normal; }
 html body.frontpage .container main #blog article .meta .category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
 html body.frontpage .container main #blog article .meta .category a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #blog article .meta .category a:hover { color: #231f20; }
@@ -877,7 +873,7 @@ html body.frontpage .container main #most-read section article .content { displa
 html body.frontpage .container main #most-read section article .meta .category { display: none; }
 html body.frontpage .container main #most-read section article .meta .date { display: none; }
 html body.frontpage .container main #most-read section article .meta { display: none; }
-html body.frontpage .container main #most-read section article .excerpt { line-height: 1.25; color: #6f6e6e; color: #4c4345; text-align: justify; }
+html body.frontpage .container main #most-read section article .excerpt { line-height: 1.25; color: #cccccc; color: #4c4345; text-align: justify; }
 html body.frontpage .container main #most-read section article .meta { margin-top: 0.625em; }
 html body.frontpage .container main #most-read section article .meta > h3 { display: none; }
 html body.frontpage .container main #most-read section article .meta ul { margin: 0; }
@@ -885,7 +881,7 @@ html body.frontpage .container main #most-read section article .meta ul li { dis
 html body.frontpage .container main #most-read section article .meta ul li:before { content: ''; }
 html body.frontpage .container main #most-read section article .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.frontpage .container main #most-read section article .meta ul li:last-of-type { margin-right: 0; }
-html body.frontpage .container main #most-read section article .meta .date { font-size: small; color: #6f6e6e; font-style: normal; }
+html body.frontpage .container main #most-read section article .meta .date { font-size: small; color: #cccccc; font-style: normal; }
 html body.frontpage .container main #most-read section article .meta .category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
 html body.frontpage .container main #most-read section article .meta .category a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #most-read section article .meta .category a:hover { color: #231f20; }
@@ -955,7 +951,7 @@ html body.frontpage .container main #videos article .content { display: none; }
 html body.frontpage .container main #videos article .meta .category { display: none; }
 html body.frontpage .container main #videos article .meta .date { display: none; }
 html body.frontpage .container main #videos article .meta { display: none; }
-html body.frontpage .container main #videos article .excerpt { line-height: 1.25; color: #6f6e6e; color: #4c4345; text-align: justify; }
+html body.frontpage .container main #videos article .excerpt { line-height: 1.25; color: #cccccc; color: #4c4345; text-align: justify; }
 html body.frontpage .container main #videos article .meta { margin-top: 0.625em; }
 html body.frontpage .container main #videos article .meta > h3 { display: none; }
 html body.frontpage .container main #videos article .meta ul { margin: 0; }
@@ -963,7 +959,7 @@ html body.frontpage .container main #videos article .meta ul li { display: block
 html body.frontpage .container main #videos article .meta ul li:before { content: ''; }
 html body.frontpage .container main #videos article .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.frontpage .container main #videos article .meta ul li:last-of-type { margin-right: 0; }
-html body.frontpage .container main #videos article .meta .date { font-size: small; color: #6f6e6e; font-style: normal; }
+html body.frontpage .container main #videos article .meta .date { font-size: small; color: #cccccc; font-style: normal; }
 html body.frontpage .container main #videos article .meta .category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
 html body.frontpage .container main #videos article .meta .category a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #videos article .meta .category a:hover { color: #231f20; }
@@ -1013,7 +1009,7 @@ html body.category main #articles aside article .content { display: none; }
 html body.category main #articles aside article .meta .category { display: none; }
 html body.category main #articles aside article .meta .date { display: none; }
 html body.category main #articles aside article .meta { display: none; }
-html body.category main #articles aside article .excerpt { line-height: 1.25; color: #6f6e6e; color: #4c4345; text-align: justify; }
+html body.category main #articles aside article .excerpt { line-height: 1.25; color: #cccccc; color: #4c4345; text-align: justify; }
 html body.category main #articles aside article .meta { margin-top: 0.625em; }
 html body.category main #articles aside article .meta > h3 { display: none; }
 html body.category main #articles aside article .meta ul { margin: 0; }
@@ -1021,7 +1017,7 @@ html body.category main #articles aside article .meta ul li { display: block; ma
 html body.category main #articles aside article .meta ul li:before { content: ''; }
 html body.category main #articles aside article .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.category main #articles aside article .meta ul li:last-of-type { margin-right: 0; }
-html body.category main #articles aside article .meta .date { font-size: small; color: #6f6e6e; font-style: normal; }
+html body.category main #articles aside article .meta .date { font-size: small; color: #cccccc; font-style: normal; }
 html body.category main #articles aside article .meta .category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
 html body.category main #articles aside article .meta .category a { color: #982022; text-decoration: none; }
 html body.category main #articles aside article .meta .category a:hover { color: #231f20; }
@@ -1088,7 +1084,7 @@ html body.category main #articles article.thumb .content { display: none; }
 html body.category main #articles article.thumb .meta .category { display: none; }
 html body.category main #articles article.thumb .meta .date { display: none; }
 html body.category main #articles article.thumb .meta { display: none; }
-html body.category main #articles article.thumb .excerpt { line-height: 1.25; color: #6f6e6e; color: #4c4345; text-align: justify; }
+html body.category main #articles article.thumb .excerpt { line-height: 1.25; color: #cccccc; color: #4c4345; text-align: justify; }
 html body.category main #articles article.thumb .meta { margin-top: 0.625em; }
 html body.category main #articles article.thumb .meta > h3 { display: none; }
 html body.category main #articles article.thumb .meta ul { margin: 0; }
@@ -1096,7 +1092,7 @@ html body.category main #articles article.thumb .meta ul li { display: block; ma
 html body.category main #articles article.thumb .meta ul li:before { content: ''; }
 html body.category main #articles article.thumb .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.category main #articles article.thumb .meta ul li:last-of-type { margin-right: 0; }
-html body.category main #articles article.thumb .meta .date { font-size: small; color: #6f6e6e; font-style: normal; }
+html body.category main #articles article.thumb .meta .date { font-size: small; color: #cccccc; font-style: normal; }
 html body.category main #articles article.thumb .meta .category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
 html body.category main #articles article.thumb .meta .category a { color: #982022; text-decoration: none; }
 html body.category main #articles article.thumb .meta .category a:hover { color: #231f20; }
@@ -1178,7 +1174,7 @@ html body.category main aside section article .content { display: none; }
 html body.category main aside section article .meta .category { display: none; }
 html body.category main aside section article .meta .date { display: none; }
 html body.category main aside section article .meta { display: none; }
-html body.category main aside section article .excerpt { line-height: 1.25; color: #6f6e6e; color: #4c4345; text-align: justify; }
+html body.category main aside section article .excerpt { line-height: 1.25; color: #cccccc; color: #4c4345; text-align: justify; }
 html body.category main aside section article .meta { margin-top: 0.625em; }
 html body.category main aside section article .meta > h3 { display: none; }
 html body.category main aside section article .meta ul { margin: 0; }
@@ -1186,7 +1182,7 @@ html body.category main aside section article .meta ul li { display: block; marg
 html body.category main aside section article .meta ul li:before { content: ''; }
 html body.category main aside section article .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.category main aside section article .meta ul li:last-of-type { margin-right: 0; }
-html body.category main aside section article .meta .date { font-size: small; color: #6f6e6e; font-style: normal; }
+html body.category main aside section article .meta .date { font-size: small; color: #cccccc; font-style: normal; }
 html body.category main aside section article .meta .category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
 html body.category main aside section article .meta .category a { color: #982022; text-decoration: none; }
 html body.category main aside section article .meta .category a:hover { color: #231f20; }
@@ -1234,7 +1230,7 @@ html body.category main aside section#projects article .content { display: none;
 html body.category main aside section#projects article .meta .category { display: none; }
 html body.category main aside section#projects article .meta .date { display: none; }
 html body.category main aside section#projects article .meta { display: none; }
-html body.category main aside section#projects article .excerpt { line-height: 1.25; color: #6f6e6e; color: #4c4345; text-align: justify; }
+html body.category main aside section#projects article .excerpt { line-height: 1.25; color: #cccccc; color: #4c4345; text-align: justify; }
 html body.category main aside section#projects article .meta { margin-top: 0.625em; }
 html body.category main aside section#projects article .meta > h3 { display: none; }
 html body.category main aside section#projects article .meta ul { margin: 0; }
@@ -1242,7 +1238,7 @@ html body.category main aside section#projects article .meta ul li { display: bl
 html body.category main aside section#projects article .meta ul li:before { content: ''; }
 html body.category main aside section#projects article .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.category main aside section#projects article .meta ul li:last-of-type { margin-right: 0; }
-html body.category main aside section#projects article .meta .date { font-size: small; color: #6f6e6e; font-style: normal; }
+html body.category main aside section#projects article .meta .date { font-size: small; color: #cccccc; font-style: normal; }
 html body.category main aside section#projects article .meta .category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
 html body.category main aside section#projects article .meta .category a { color: #982022; text-decoration: none; }
 html body.category main aside section#projects article .meta .category a:hover { color: #231f20; }
@@ -1295,7 +1291,7 @@ html body.tag main #articles aside article .content { display: none; }
 html body.tag main #articles aside article .meta .category { display: none; }
 html body.tag main #articles aside article .meta .date { display: none; }
 html body.tag main #articles aside article .meta { display: none; }
-html body.tag main #articles aside article .excerpt { line-height: 1.25; color: #6f6e6e; color: #4c4345; text-align: justify; }
+html body.tag main #articles aside article .excerpt { line-height: 1.25; color: #cccccc; color: #4c4345; text-align: justify; }
 html body.tag main #articles aside article .meta { margin-top: 0.625em; }
 html body.tag main #articles aside article .meta > h3 { display: none; }
 html body.tag main #articles aside article .meta ul { margin: 0; }
@@ -1303,7 +1299,7 @@ html body.tag main #articles aside article .meta ul li { display: block; margin-
 html body.tag main #articles aside article .meta ul li:before { content: ''; }
 html body.tag main #articles aside article .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.tag main #articles aside article .meta ul li:last-of-type { margin-right: 0; }
-html body.tag main #articles aside article .meta .date { font-size: small; color: #6f6e6e; font-style: normal; }
+html body.tag main #articles aside article .meta .date { font-size: small; color: #cccccc; font-style: normal; }
 html body.tag main #articles aside article .meta .category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
 html body.tag main #articles aside article .meta .category a { color: #982022; text-decoration: none; }
 html body.tag main #articles aside article .meta .category a:hover { color: #231f20; }
@@ -1370,7 +1366,7 @@ html body.tag main #articles article.thumb .content { display: none; }
 html body.tag main #articles article.thumb .meta .category { display: none; }
 html body.tag main #articles article.thumb .meta .date { display: none; }
 html body.tag main #articles article.thumb .meta { display: none; }
-html body.tag main #articles article.thumb .excerpt { line-height: 1.25; color: #6f6e6e; color: #4c4345; text-align: justify; }
+html body.tag main #articles article.thumb .excerpt { line-height: 1.25; color: #cccccc; color: #4c4345; text-align: justify; }
 html body.tag main #articles article.thumb .meta { margin-top: 0.625em; }
 html body.tag main #articles article.thumb .meta > h3 { display: none; }
 html body.tag main #articles article.thumb .meta ul { margin: 0; }
@@ -1378,7 +1374,7 @@ html body.tag main #articles article.thumb .meta ul li { display: block; margin-
 html body.tag main #articles article.thumb .meta ul li:before { content: ''; }
 html body.tag main #articles article.thumb .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.tag main #articles article.thumb .meta ul li:last-of-type { margin-right: 0; }
-html body.tag main #articles article.thumb .meta .date { font-size: small; color: #6f6e6e; font-style: normal; }
+html body.tag main #articles article.thumb .meta .date { font-size: small; color: #cccccc; font-style: normal; }
 html body.tag main #articles article.thumb .meta .category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
 html body.tag main #articles article.thumb .meta .category a { color: #982022; text-decoration: none; }
 html body.tag main #articles article.thumb .meta .category a:hover { color: #231f20; }
@@ -1460,7 +1456,7 @@ html body.tag main aside section article .content { display: none; }
 html body.tag main aside section article .meta .category { display: none; }
 html body.tag main aside section article .meta .date { display: none; }
 html body.tag main aside section article .meta { display: none; }
-html body.tag main aside section article .excerpt { line-height: 1.25; color: #6f6e6e; color: #4c4345; text-align: justify; }
+html body.tag main aside section article .excerpt { line-height: 1.25; color: #cccccc; color: #4c4345; text-align: justify; }
 html body.tag main aside section article .meta { margin-top: 0.625em; }
 html body.tag main aside section article .meta > h3 { display: none; }
 html body.tag main aside section article .meta ul { margin: 0; }
@@ -1468,7 +1464,7 @@ html body.tag main aside section article .meta ul li { display: block; margin-ri
 html body.tag main aside section article .meta ul li:before { content: ''; }
 html body.tag main aside section article .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.tag main aside section article .meta ul li:last-of-type { margin-right: 0; }
-html body.tag main aside section article .meta .date { font-size: small; color: #6f6e6e; font-style: normal; }
+html body.tag main aside section article .meta .date { font-size: small; color: #cccccc; font-style: normal; }
 html body.tag main aside section article .meta .category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
 html body.tag main aside section article .meta .category a { color: #982022; text-decoration: none; }
 html body.tag main aside section article .meta .category a:hover { color: #231f20; }
@@ -1516,7 +1512,7 @@ html body.tag main aside section#projects article .content { display: none; }
 html body.tag main aside section#projects article .meta .category { display: none; }
 html body.tag main aside section#projects article .meta .date { display: none; }
 html body.tag main aside section#projects article .meta { display: none; }
-html body.tag main aside section#projects article .excerpt { line-height: 1.25; color: #6f6e6e; color: #4c4345; text-align: justify; }
+html body.tag main aside section#projects article .excerpt { line-height: 1.25; color: #cccccc; color: #4c4345; text-align: justify; }
 html body.tag main aside section#projects article .meta { margin-top: 0.625em; }
 html body.tag main aside section#projects article .meta > h3 { display: none; }
 html body.tag main aside section#projects article .meta ul { margin: 0; }
@@ -1524,7 +1520,7 @@ html body.tag main aside section#projects article .meta ul li { display: block; 
 html body.tag main aside section#projects article .meta ul li:before { content: ''; }
 html body.tag main aside section#projects article .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.tag main aside section#projects article .meta ul li:last-of-type { margin-right: 0; }
-html body.tag main aside section#projects article .meta .date { font-size: small; color: #6f6e6e; font-style: normal; }
+html body.tag main aside section#projects article .meta .date { font-size: small; color: #cccccc; font-style: normal; }
 html body.tag main aside section#projects article .meta .category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
 html body.tag main aside section#projects article .meta .category a { color: #982022; text-decoration: none; }
 html body.tag main aside section#projects article .meta .category a:hover { color: #231f20; }
@@ -1593,7 +1589,7 @@ html body.projects main #articles article figure { display: block; }
 html body.projects main #articles article figcaption { display: none; }
 html body.projects main #articles article .content { display: none; }
 html body.projects main #articles article .meta .category { display: none; }
-html body.projects main #articles article .excerpt { line-height: 1.25; color: #6f6e6e; color: #4c4345; text-align: justify; }
+html body.projects main #articles article .excerpt { line-height: 1.25; color: #cccccc; color: #4c4345; text-align: justify; }
 html body.projects main #articles article .meta { margin-top: 0.625em; }
 html body.projects main #articles article .meta > h3 { display: none; }
 html body.projects main #articles article .meta ul { margin: 0; }
@@ -1601,7 +1597,7 @@ html body.projects main #articles article .meta ul li { display: block; margin-r
 html body.projects main #articles article .meta ul li:before { content: ''; }
 html body.projects main #articles article .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.projects main #articles article .meta ul li:last-of-type { margin-right: 0; }
-html body.projects main #articles article .meta .date { font-size: small; color: #6f6e6e; font-style: normal; }
+html body.projects main #articles article .meta .date { font-size: small; color: #cccccc; font-style: normal; }
 html body.projects main #articles article .meta .category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
 html body.projects main #articles article .meta .category a { color: #982022; text-decoration: none; }
 html body.projects main #articles article .meta .category a:hover { color: #231f20; }
@@ -1678,7 +1674,7 @@ html body.resources main #articles article figure { display: block; }
 html body.resources main #articles article figcaption { display: none; }
 html body.resources main #articles article .content { display: none; }
 html body.resources main #articles article .meta .category { display: none; }
-html body.resources main #articles article .excerpt { line-height: 1.25; color: #6f6e6e; color: #4c4345; text-align: justify; }
+html body.resources main #articles article .excerpt { line-height: 1.25; color: #cccccc; color: #4c4345; text-align: justify; }
 html body.resources main #articles article .meta { margin-top: 0.625em; }
 html body.resources main #articles article .meta > h3 { display: none; }
 html body.resources main #articles article .meta ul { margin: 0; }
@@ -1686,7 +1682,7 @@ html body.resources main #articles article .meta ul li { display: block; margin-
 html body.resources main #articles article .meta ul li:before { content: ''; }
 html body.resources main #articles article .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.resources main #articles article .meta ul li:last-of-type { margin-right: 0; }
-html body.resources main #articles article .meta .date { font-size: small; color: #6f6e6e; font-style: normal; }
+html body.resources main #articles article .meta .date { font-size: small; color: #cccccc; font-style: normal; }
 html body.resources main #articles article .meta .category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
 html body.resources main #articles article .meta .category a { color: #982022; text-decoration: none; }
 html body.resources main #articles article .meta .category a:hover { color: #231f20; }
@@ -1732,7 +1728,7 @@ html body.resources main #documents article ul li { /* When parent positioned to
 html body.resources main #documents article ul li:before { content: ""; /* making the content of the list perfectly align with numbering - <li> is relatively positioned - :the numbering (:before) is aboslutely positioned within <li> and fixed to left - the the <li> content has a padding-left to not overlap the numbering
 */ position: absolute; left: 0; font-weight: bold; }
 html body.resources main #documents article ul li { margin-bottom: 0.625em; padding-left: 0; }
-html body.resources main #documents article ul li date { font-size: small; color: #6f6e6e; font-style: normal; }
+html body.resources main #documents article ul li date { font-size: small; color: #cccccc; font-style: normal; }
 @media only screen and (max-width: 47.999em) { html body.resources main #documents { margin-top: 3%; }
   html body.resources main #documents article { border-color: #f1f1f1; }
   html body.resources main #documents article img { width: 1.875em; } }
@@ -1764,7 +1760,7 @@ html body.blog main #articles aside article .content { display: none; }
 html body.blog main #articles aside article .meta .category { display: none; }
 html body.blog main #articles aside article .meta .date { display: none; }
 html body.blog main #articles aside article .meta { display: none; }
-html body.blog main #articles aside article .excerpt { line-height: 1.25; color: #6f6e6e; color: #4c4345; text-align: justify; }
+html body.blog main #articles aside article .excerpt { line-height: 1.25; color: #cccccc; color: #4c4345; text-align: justify; }
 html body.blog main #articles aside article .meta { margin-top: 0.625em; }
 html body.blog main #articles aside article .meta > h3 { display: none; }
 html body.blog main #articles aside article .meta ul { margin: 0; }
@@ -1772,7 +1768,7 @@ html body.blog main #articles aside article .meta ul li { display: block; margin
 html body.blog main #articles aside article .meta ul li:before { content: ''; }
 html body.blog main #articles aside article .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.blog main #articles aside article .meta ul li:last-of-type { margin-right: 0; }
-html body.blog main #articles aside article .meta .date { font-size: small; color: #6f6e6e; font-style: normal; }
+html body.blog main #articles aside article .meta .date { font-size: small; color: #cccccc; font-style: normal; }
 html body.blog main #articles aside article .meta .category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
 html body.blog main #articles aside article .meta .category a { color: #982022; text-decoration: none; }
 html body.blog main #articles aside article .meta .category a:hover { color: #231f20; }
@@ -1839,7 +1835,7 @@ html body.blog main #articles article.thumb .content { display: none; }
 html body.blog main #articles article.thumb .meta .category { display: none; }
 html body.blog main #articles article.thumb .meta .date { display: none; }
 html body.blog main #articles article.thumb .meta { display: none; }
-html body.blog main #articles article.thumb .excerpt { line-height: 1.25; color: #6f6e6e; color: #4c4345; text-align: justify; }
+html body.blog main #articles article.thumb .excerpt { line-height: 1.25; color: #cccccc; color: #4c4345; text-align: justify; }
 html body.blog main #articles article.thumb .meta { margin-top: 0.625em; }
 html body.blog main #articles article.thumb .meta > h3 { display: none; }
 html body.blog main #articles article.thumb .meta ul { margin: 0; }
@@ -1847,7 +1843,7 @@ html body.blog main #articles article.thumb .meta ul li { display: block; margin
 html body.blog main #articles article.thumb .meta ul li:before { content: ''; }
 html body.blog main #articles article.thumb .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.blog main #articles article.thumb .meta ul li:last-of-type { margin-right: 0; }
-html body.blog main #articles article.thumb .meta .date { font-size: small; color: #6f6e6e; font-style: normal; }
+html body.blog main #articles article.thumb .meta .date { font-size: small; color: #cccccc; font-style: normal; }
 html body.blog main #articles article.thumb .meta .category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
 html body.blog main #articles article.thumb .meta .category a { color: #982022; text-decoration: none; }
 html body.blog main #articles article.thumb .meta .category a:hover { color: #231f20; }
@@ -1929,7 +1925,7 @@ html body.blog main aside section article .content { display: none; }
 html body.blog main aside section article .meta .category { display: none; }
 html body.blog main aside section article .meta .date { display: none; }
 html body.blog main aside section article .meta { display: none; }
-html body.blog main aside section article .excerpt { line-height: 1.25; color: #6f6e6e; color: #4c4345; text-align: justify; }
+html body.blog main aside section article .excerpt { line-height: 1.25; color: #cccccc; color: #4c4345; text-align: justify; }
 html body.blog main aside section article .meta { margin-top: 0.625em; }
 html body.blog main aside section article .meta > h3 { display: none; }
 html body.blog main aside section article .meta ul { margin: 0; }
@@ -1937,7 +1933,7 @@ html body.blog main aside section article .meta ul li { display: block; margin-r
 html body.blog main aside section article .meta ul li:before { content: ''; }
 html body.blog main aside section article .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.blog main aside section article .meta ul li:last-of-type { margin-right: 0; }
-html body.blog main aside section article .meta .date { font-size: small; color: #6f6e6e; font-style: normal; }
+html body.blog main aside section article .meta .date { font-size: small; color: #cccccc; font-style: normal; }
 html body.blog main aside section article .meta .category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
 html body.blog main aside section article .meta .category a { color: #982022; text-decoration: none; }
 html body.blog main aside section article .meta .category a:hover { color: #231f20; }
@@ -1985,7 +1981,7 @@ html body.blog main aside section#projects article .content { display: none; }
 html body.blog main aside section#projects article .meta .category { display: none; }
 html body.blog main aside section#projects article .meta .date { display: none; }
 html body.blog main aside section#projects article .meta { display: none; }
-html body.blog main aside section#projects article .excerpt { line-height: 1.25; color: #6f6e6e; color: #4c4345; text-align: justify; }
+html body.blog main aside section#projects article .excerpt { line-height: 1.25; color: #cccccc; color: #4c4345; text-align: justify; }
 html body.blog main aside section#projects article .meta { margin-top: 0.625em; }
 html body.blog main aside section#projects article .meta > h3 { display: none; }
 html body.blog main aside section#projects article .meta ul { margin: 0; }
@@ -1993,7 +1989,7 @@ html body.blog main aside section#projects article .meta ul li { display: block;
 html body.blog main aside section#projects article .meta ul li:before { content: ''; }
 html body.blog main aside section#projects article .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.blog main aside section#projects article .meta ul li:last-of-type { margin-right: 0; }
-html body.blog main aside section#projects article .meta .date { font-size: small; color: #6f6e6e; font-style: normal; }
+html body.blog main aside section#projects article .meta .date { font-size: small; color: #cccccc; font-style: normal; }
 html body.blog main aside section#projects article .meta .category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
 html body.blog main aside section#projects article .meta .category a { color: #982022; text-decoration: none; }
 html body.blog main aside section#projects article .meta .category a:hover { color: #231f20; }
@@ -2039,7 +2035,7 @@ html body.blog main #articles article .content { display: none; }
 html body.blog main #articles article .meta .category { display: none; }
 html body.blog main #articles article .meta .date { display: none; }
 html body.blog main #articles article .meta { display: none; }
-html body.blog main #articles article .excerpt { line-height: 1.25; color: #6f6e6e; color: #4c4345; text-align: justify; }
+html body.blog main #articles article .excerpt { line-height: 1.25; color: #cccccc; color: #4c4345; text-align: justify; }
 html body.blog main #articles article .meta { margin-top: 0.625em; }
 html body.blog main #articles article .meta > h3 { display: none; }
 html body.blog main #articles article .meta ul { margin: 0; }
@@ -2047,7 +2043,7 @@ html body.blog main #articles article .meta ul li { display: block; margin-right
 html body.blog main #articles article .meta ul li:before { content: ''; }
 html body.blog main #articles article .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.blog main #articles article .meta ul li:last-of-type { margin-right: 0; }
-html body.blog main #articles article .meta .date { font-size: small; color: #6f6e6e; font-style: normal; }
+html body.blog main #articles article .meta .date { font-size: small; color: #cccccc; font-style: normal; }
 html body.blog main #articles article .meta .category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
 html body.blog main #articles article .meta .category a { color: #982022; text-decoration: none; }
 html body.blog main #articles article .meta .category a:hover { color: #231f20; }
@@ -2103,7 +2099,7 @@ html body.author main #articles aside article .content { display: none; }
 html body.author main #articles aside article .meta .category { display: none; }
 html body.author main #articles aside article .meta .date { display: none; }
 html body.author main #articles aside article .meta { display: none; }
-html body.author main #articles aside article .excerpt { line-height: 1.25; color: #6f6e6e; color: #4c4345; text-align: justify; }
+html body.author main #articles aside article .excerpt { line-height: 1.25; color: #cccccc; color: #4c4345; text-align: justify; }
 html body.author main #articles aside article .meta { margin-top: 0.625em; }
 html body.author main #articles aside article .meta > h3 { display: none; }
 html body.author main #articles aside article .meta ul { margin: 0; }
@@ -2111,7 +2107,7 @@ html body.author main #articles aside article .meta ul li { display: block; marg
 html body.author main #articles aside article .meta ul li:before { content: ''; }
 html body.author main #articles aside article .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.author main #articles aside article .meta ul li:last-of-type { margin-right: 0; }
-html body.author main #articles aside article .meta .date { font-size: small; color: #6f6e6e; font-style: normal; }
+html body.author main #articles aside article .meta .date { font-size: small; color: #cccccc; font-style: normal; }
 html body.author main #articles aside article .meta .category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
 html body.author main #articles aside article .meta .category a { color: #982022; text-decoration: none; }
 html body.author main #articles aside article .meta .category a:hover { color: #231f20; }
@@ -2178,7 +2174,7 @@ html body.author main #articles article.thumb .content { display: none; }
 html body.author main #articles article.thumb .meta .category { display: none; }
 html body.author main #articles article.thumb .meta .date { display: none; }
 html body.author main #articles article.thumb .meta { display: none; }
-html body.author main #articles article.thumb .excerpt { line-height: 1.25; color: #6f6e6e; color: #4c4345; text-align: justify; }
+html body.author main #articles article.thumb .excerpt { line-height: 1.25; color: #cccccc; color: #4c4345; text-align: justify; }
 html body.author main #articles article.thumb .meta { margin-top: 0.625em; }
 html body.author main #articles article.thumb .meta > h3 { display: none; }
 html body.author main #articles article.thumb .meta ul { margin: 0; }
@@ -2186,7 +2182,7 @@ html body.author main #articles article.thumb .meta ul li { display: block; marg
 html body.author main #articles article.thumb .meta ul li:before { content: ''; }
 html body.author main #articles article.thumb .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.author main #articles article.thumb .meta ul li:last-of-type { margin-right: 0; }
-html body.author main #articles article.thumb .meta .date { font-size: small; color: #6f6e6e; font-style: normal; }
+html body.author main #articles article.thumb .meta .date { font-size: small; color: #cccccc; font-style: normal; }
 html body.author main #articles article.thumb .meta .category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
 html body.author main #articles article.thumb .meta .category a { color: #982022; text-decoration: none; }
 html body.author main #articles article.thumb .meta .category a:hover { color: #231f20; }
@@ -2268,7 +2264,7 @@ html body.author main aside section article .content { display: none; }
 html body.author main aside section article .meta .category { display: none; }
 html body.author main aside section article .meta .date { display: none; }
 html body.author main aside section article .meta { display: none; }
-html body.author main aside section article .excerpt { line-height: 1.25; color: #6f6e6e; color: #4c4345; text-align: justify; }
+html body.author main aside section article .excerpt { line-height: 1.25; color: #cccccc; color: #4c4345; text-align: justify; }
 html body.author main aside section article .meta { margin-top: 0.625em; }
 html body.author main aside section article .meta > h3 { display: none; }
 html body.author main aside section article .meta ul { margin: 0; }
@@ -2276,7 +2272,7 @@ html body.author main aside section article .meta ul li { display: block; margin
 html body.author main aside section article .meta ul li:before { content: ''; }
 html body.author main aside section article .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.author main aside section article .meta ul li:last-of-type { margin-right: 0; }
-html body.author main aside section article .meta .date { font-size: small; color: #6f6e6e; font-style: normal; }
+html body.author main aside section article .meta .date { font-size: small; color: #cccccc; font-style: normal; }
 html body.author main aside section article .meta .category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
 html body.author main aside section article .meta .category a { color: #982022; text-decoration: none; }
 html body.author main aside section article .meta .category a:hover { color: #231f20; }
@@ -2324,7 +2320,7 @@ html body.author main aside section#projects article .content { display: none; }
 html body.author main aside section#projects article .meta .category { display: none; }
 html body.author main aside section#projects article .meta .date { display: none; }
 html body.author main aside section#projects article .meta { display: none; }
-html body.author main aside section#projects article .excerpt { line-height: 1.25; color: #6f6e6e; color: #4c4345; text-align: justify; }
+html body.author main aside section#projects article .excerpt { line-height: 1.25; color: #cccccc; color: #4c4345; text-align: justify; }
 html body.author main aside section#projects article .meta { margin-top: 0.625em; }
 html body.author main aside section#projects article .meta > h3 { display: none; }
 html body.author main aside section#projects article .meta ul { margin: 0; }
@@ -2332,7 +2328,7 @@ html body.author main aside section#projects article .meta ul li { display: bloc
 html body.author main aside section#projects article .meta ul li:before { content: ''; }
 html body.author main aside section#projects article .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.author main aside section#projects article .meta ul li:last-of-type { margin-right: 0; }
-html body.author main aside section#projects article .meta .date { font-size: small; color: #6f6e6e; font-style: normal; }
+html body.author main aside section#projects article .meta .date { font-size: small; color: #cccccc; font-style: normal; }
 html body.author main aside section#projects article .meta .category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
 html body.author main aside section#projects article .meta .category a { color: #982022; text-decoration: none; }
 html body.author main aside section#projects article .meta .category a:hover { color: #231f20; }
@@ -2381,7 +2377,7 @@ html body.author main #articles article .content { display: none; }
 html body.author main #articles article .meta .category { display: none; }
 html body.author main #articles article .meta .date { display: none; }
 html body.author main #articles article .meta { display: none; }
-html body.author main #articles article .excerpt { line-height: 1.25; color: #6f6e6e; color: #4c4345; text-align: justify; }
+html body.author main #articles article .excerpt { line-height: 1.25; color: #cccccc; color: #4c4345; text-align: justify; }
 html body.author main #articles article .meta { margin-top: 0.625em; }
 html body.author main #articles article .meta > h3 { display: none; }
 html body.author main #articles article .meta ul { margin: 0; }
@@ -2389,7 +2385,7 @@ html body.author main #articles article .meta ul li { display: block; margin-rig
 html body.author main #articles article .meta ul li:before { content: ''; }
 html body.author main #articles article .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.author main #articles article .meta ul li:last-of-type { margin-right: 0; }
-html body.author main #articles article .meta .date { font-size: small; color: #6f6e6e; font-style: normal; }
+html body.author main #articles article .meta .date { font-size: small; color: #cccccc; font-style: normal; }
 html body.author main #articles article .meta .category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
 html body.author main #articles article .meta .category a { color: #982022; text-decoration: none; }
 html body.author main #articles article .meta .category a:hover { color: #231f20; }
@@ -2438,7 +2434,7 @@ html body.article main #article article.single figure figcaption h1, html body.a
   html body.article main #article article.single figure.right, html body.about main #article article.single figure.right, html body.post main #article article.single figure.right { float: right; margin: 0.625em 0 1.25em 2.5em; } }
 html body.article main #article article.single figure, html body.about main #article article.single figure, html body.post main #article article.single figure { display: block; }
 html body.article main #article article.single .excerpt, html body.about main #article article.single .excerpt, html body.post main #article article.single .excerpt { display: none; }
-html body.article main #article article.single .excerpt, html body.about main #article article.single .excerpt, html body.post main #article article.single .excerpt { line-height: 1.25; color: #6f6e6e; color: #4c4345; text-align: justify; }
+html body.article main #article article.single .excerpt, html body.about main #article article.single .excerpt, html body.post main #article article.single .excerpt { line-height: 1.25; color: #cccccc; color: #4c4345; text-align: justify; }
 html body.article main #article article.single .meta, html body.about main #article article.single .meta, html body.post main #article article.single .meta { margin-top: 0.625em; }
 html body.article main #article article.single .meta > h3, html body.about main #article article.single .meta > h3, html body.post main #article article.single .meta > h3 { display: none; }
 html body.article main #article article.single .meta ul, html body.about main #article article.single .meta ul, html body.post main #article article.single .meta ul { margin: 0; }
@@ -2446,7 +2442,7 @@ html body.article main #article article.single .meta ul li, html body.about main
 html body.article main #article article.single .meta ul li:before, html body.about main #article article.single .meta ul li:before, html body.post main #article article.single .meta ul li:before { content: ''; }
 html body.article main #article article.single .meta ul li, html body.about main #article article.single .meta ul li, html body.post main #article article.single .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.article main #article article.single .meta ul li:last-of-type, html body.about main #article article.single .meta ul li:last-of-type, html body.post main #article article.single .meta ul li:last-of-type { margin-right: 0; }
-html body.article main #article article.single .meta .date, html body.about main #article article.single .meta .date, html body.post main #article article.single .meta .date { font-size: small; color: #6f6e6e; font-style: normal; }
+html body.article main #article article.single .meta .date, html body.about main #article article.single .meta .date, html body.post main #article article.single .meta .date { font-size: small; color: #cccccc; font-style: normal; }
 html body.article main #article article.single .meta .category, html body.about main #article article.single .meta .category, html body.post main #article article.single .meta .category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
 html body.article main #article article.single .meta .category a, html body.about main #article article.single .meta .category a, html body.post main #article article.single .meta .category a { color: #982022; text-decoration: none; }
 html body.article main #article article.single .meta .category a:hover, html body.about main #article article.single .meta .category a:hover, html body.post main #article article.single .meta .category a:hover { color: #231f20; }
@@ -2492,7 +2488,7 @@ html body.article main #article article.single table thead a, html body.about ma
 html body.article main #article article.single table thead a:hover, html body.about main #article article.single table thead a:hover, html body.post main #article article.single table thead a:hover { color: white; }
 html body.article main #article article.single table thead th, html body.article main #article article.single table tbody td, html body.about main #article article.single table thead th, html body.about main #article article.single table tbody td, html body.post main #article article.single table thead th, html body.post main #article article.single table tbody td { padding: 0.625em; padding-left: 0; }
 html body.article main #article article.single table thead th:first-of-type, html body.article main #article article.single table tbody td:first-of-type, html body.about main #article article.single table thead th:first-of-type, html body.about main #article article.single table tbody td:first-of-type, html body.post main #article article.single table thead th:first-of-type, html body.post main #article article.single table tbody td:first-of-type { padding-left: 1px; }
-html body.article main #article article.single table tbody td, html body.about main #article article.single table tbody td, html body.post main #article article.single table tbody td { border-bottom: 1px solid #6f6e6e; }
+html body.article main #article article.single table tbody td, html body.about main #article article.single table tbody td, html body.post main #article article.single table tbody td { border-bottom: 1px solid #cccccc; }
 html body.article main #article article.single figure img, html body.about main #article article.single figure img, html body.post main #article article.single figure img { width: auto; }
 html body.article main #article article.single figure figcaption, html body.about main #article article.single figure figcaption, html body.post main #article article.single figure figcaption { padding: 0.3125em; font-size: smaller; }
 html body.article main #article article.single figure figcaption h1, html body.article main #article article.single figure figcaption h2, html body.article main #article article.single figure figcaption h3, html body.article main #article article.single figure figcaption h4, html body.article main #article article.single figure figcaption h5, html body.article main #article article.single figure figcaption h6, html body.about main #article article.single figure figcaption h1, html body.about main #article article.single figure figcaption h2, html body.about main #article article.single figure figcaption h3, html body.about main #article article.single figure figcaption h4, html body.about main #article article.single figure figcaption h5, html body.about main #article article.single figure figcaption h6, html body.post main #article article.single figure figcaption h1, html body.post main #article article.single figure figcaption h2, html body.post main #article article.single figure figcaption h3, html body.post main #article article.single figure figcaption h4, html body.post main #article article.single figure figcaption h5, html body.post main #article article.single figure figcaption h6 { margin: 0; padding: 0; }
@@ -2543,7 +2539,7 @@ html body.article main #article article.single q:before, html body.about main #a
 html body.article main #article article.single q:after, html body.about main #article article.single q:after, html body.post main #article article.single q:after { content: '\201D'; }
 html body.article main #article article.single dfn, html body.about main #article article.single dfn, html body.post main #article article.single dfn { border-bottom: 1px solid #f1f1f1; }
 html body.article main #article article.single abbr, html body.about main #article article.single abbr, html body.post main #article article.single abbr { font-variant: small-caps; }
-html body.article main #article article.single time, html body.about main #article article.single time, html body.post main #article article.single time { font-size: small; color: #6f6e6e; font-style: normal; }
+html body.article main #article article.single time, html body.about main #article article.single time, html body.post main #article article.single time { font-size: small; color: #cccccc; font-style: normal; }
 html body.article main #article article.single var, html body.about main #article article.single var, html body.post main #article article.single var { font-style: italic; }
 html body.article main #article article.single samp, html body.article main #article article.single kbd, html body.about main #article article.single samp, html body.about main #article article.single kbd, html body.post main #article article.single samp, html body.post main #article article.single kbd { font-family: "Lucida Console", "Lucida Sans Typewriter", Monaco, "Bitstream Vera Sans Mono", monospace; font-weight: bold; font-size: small; }
 html body.article main #article article.single sup, html body.about main #article article.single sup, html body.post main #article article.single sup { vertical-align: super; font-size: small; }
@@ -2555,7 +2551,7 @@ html body.article main #article article.single del, html body.about main #articl
 html body.article main #article article.single ins, html body.about main #article article.single ins, html body.post main #article article.single ins { background: #f1f1f1; color: #231f20; padding: 0.3125em; }
 html body.article main #article article.single ins a, html body.about main #article article.single ins a, html body.post main #article article.single ins a { color: #231f20; text-decoration: none; }
 html body.article main #article article.single ins a:hover, html body.about main #article article.single ins a:hover, html body.post main #article article.single ins a:hover { color: white; }
-html body.article main #article article.single address, html body.about main #article article.single address, html body.post main #article article.single address { font-size: small; color: #6f6e6e; max-width: 21.875em; }
+html body.article main #article article.single address, html body.about main #article article.single address, html body.post main #article article.single address { font-size: small; color: #cccccc; max-width: 21.875em; }
 html body.article main #article article.single label.select, html body.about main #article article.single label.select, html body.post main #article article.single label.select { width: 100%; max-width: 100%; float: left; }
 html body.article main #article article.single label.select:after, html body.about main #article article.single label.select:after, html body.post main #article article.single label.select:after { content: "\2794"; -moz-transform: rotate(90deg); -ms-transform: rotate(90deg); -o-transform: rotate(90deg); -webkit-transform: rotate(90deg); transform: rotate(90deg); float: right; display: inline-block; position: relative; padding: 0; left: -0.3125em; background: white; font-size: 150%; top: -1.5em; margin-right: 0.3125em; pointer-events: none; /* this is a must */ cursor: pointer; }
 html body.article main #article article.single label.select select, html body.about main #article article.single label.select select, html body.post main #article article.single label.select select { border: none; outline: 0; background: white; appearance: none; -webkit-appearance: none; -moz-appearance: none; border: 1px solid; cursor: pointer; width: 100%; padding: 0.3125em; }
@@ -2626,7 +2622,7 @@ html body.article main #article #most-read article .content, html body.article m
 html body.article main #article #most-read article .meta .category, html body.article main #article #most-recent article .meta .category, html body.about main #article #most-read article .meta .category, html body.about main #article #most-recent article .meta .category, html body.post main #article #most-read article .meta .category, html body.post main #article #most-recent article .meta .category { display: none; }
 html body.article main #article #most-read article .meta .date, html body.article main #article #most-recent article .meta .date, html body.about main #article #most-read article .meta .date, html body.about main #article #most-recent article .meta .date, html body.post main #article #most-read article .meta .date, html body.post main #article #most-recent article .meta .date { display: none; }
 html body.article main #article #most-read article .meta, html body.article main #article #most-recent article .meta, html body.about main #article #most-read article .meta, html body.about main #article #most-recent article .meta, html body.post main #article #most-read article .meta, html body.post main #article #most-recent article .meta { display: none; }
-html body.article main #article #most-read article .excerpt, html body.article main #article #most-recent article .excerpt, html body.about main #article #most-read article .excerpt, html body.about main #article #most-recent article .excerpt, html body.post main #article #most-read article .excerpt, html body.post main #article #most-recent article .excerpt { line-height: 1.25; color: #6f6e6e; color: #4c4345; text-align: justify; }
+html body.article main #article #most-read article .excerpt, html body.article main #article #most-recent article .excerpt, html body.about main #article #most-read article .excerpt, html body.about main #article #most-recent article .excerpt, html body.post main #article #most-read article .excerpt, html body.post main #article #most-recent article .excerpt { line-height: 1.25; color: #cccccc; color: #4c4345; text-align: justify; }
 html body.article main #article #most-read article .meta, html body.article main #article #most-recent article .meta, html body.about main #article #most-read article .meta, html body.about main #article #most-recent article .meta, html body.post main #article #most-read article .meta, html body.post main #article #most-recent article .meta { margin-top: 0.625em; }
 html body.article main #article #most-read article .meta > h3, html body.article main #article #most-recent article .meta > h3, html body.about main #article #most-read article .meta > h3, html body.about main #article #most-recent article .meta > h3, html body.post main #article #most-read article .meta > h3, html body.post main #article #most-recent article .meta > h3 { display: none; }
 html body.article main #article #most-read article .meta ul, html body.article main #article #most-recent article .meta ul, html body.about main #article #most-read article .meta ul, html body.about main #article #most-recent article .meta ul, html body.post main #article #most-read article .meta ul, html body.post main #article #most-recent article .meta ul { margin: 0; }
@@ -2634,7 +2630,7 @@ html body.article main #article #most-read article .meta ul li, html body.articl
 html body.article main #article #most-read article .meta ul li:before, html body.article main #article #most-recent article .meta ul li:before, html body.about main #article #most-read article .meta ul li:before, html body.about main #article #most-recent article .meta ul li:before, html body.post main #article #most-read article .meta ul li:before, html body.post main #article #most-recent article .meta ul li:before { content: ''; }
 html body.article main #article #most-read article .meta ul li, html body.article main #article #most-recent article .meta ul li, html body.about main #article #most-read article .meta ul li, html body.about main #article #most-recent article .meta ul li, html body.post main #article #most-read article .meta ul li, html body.post main #article #most-recent article .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.article main #article #most-read article .meta ul li:last-of-type, html body.article main #article #most-recent article .meta ul li:last-of-type, html body.about main #article #most-read article .meta ul li:last-of-type, html body.about main #article #most-recent article .meta ul li:last-of-type, html body.post main #article #most-read article .meta ul li:last-of-type, html body.post main #article #most-recent article .meta ul li:last-of-type { margin-right: 0; }
-html body.article main #article #most-read article .meta .date, html body.article main #article #most-recent article .meta .date, html body.about main #article #most-read article .meta .date, html body.about main #article #most-recent article .meta .date, html body.post main #article #most-read article .meta .date, html body.post main #article #most-recent article .meta .date { font-size: small; color: #6f6e6e; font-style: normal; }
+html body.article main #article #most-read article .meta .date, html body.article main #article #most-recent article .meta .date, html body.about main #article #most-read article .meta .date, html body.about main #article #most-recent article .meta .date, html body.post main #article #most-read article .meta .date, html body.post main #article #most-recent article .meta .date { font-size: small; color: #cccccc; font-style: normal; }
 html body.article main #article #most-read article .meta .category, html body.article main #article #most-recent article .meta .category, html body.about main #article #most-read article .meta .category, html body.about main #article #most-recent article .meta .category, html body.post main #article #most-read article .meta .category, html body.post main #article #most-recent article .meta .category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
 html body.article main #article #most-read article .meta .category a, html body.article main #article #most-recent article .meta .category a, html body.about main #article #most-read article .meta .category a, html body.about main #article #most-recent article .meta .category a, html body.post main #article #most-read article .meta .category a, html body.post main #article #most-recent article .meta .category a { color: #982022; text-decoration: none; }
 html body.article main #article #most-read article .meta .category a:hover, html body.article main #article #most-recent article .meta .category a:hover, html body.about main #article #most-read article .meta .category a:hover, html body.about main #article #most-recent article .meta .category a:hover, html body.post main #article #most-read article .meta .category a:hover, html body.post main #article #most-recent article .meta .category a:hover { color: #231f20; }
@@ -2706,7 +2702,7 @@ html body.article main aside section article .content, html body.about main asid
 html body.article main aside section article .meta .category, html body.about main aside section article .meta .category, html body.post main aside section article .meta .category { display: none; }
 html body.article main aside section article .meta .date, html body.about main aside section article .meta .date, html body.post main aside section article .meta .date { display: none; }
 html body.article main aside section article .meta, html body.about main aside section article .meta, html body.post main aside section article .meta { display: none; }
-html body.article main aside section article .excerpt, html body.about main aside section article .excerpt, html body.post main aside section article .excerpt { line-height: 1.25; color: #6f6e6e; color: #4c4345; text-align: justify; }
+html body.article main aside section article .excerpt, html body.about main aside section article .excerpt, html body.post main aside section article .excerpt { line-height: 1.25; color: #cccccc; color: #4c4345; text-align: justify; }
 html body.article main aside section article .meta, html body.about main aside section article .meta, html body.post main aside section article .meta { margin-top: 0.625em; }
 html body.article main aside section article .meta > h3, html body.about main aside section article .meta > h3, html body.post main aside section article .meta > h3 { display: none; }
 html body.article main aside section article .meta ul, html body.about main aside section article .meta ul, html body.post main aside section article .meta ul { margin: 0; }
@@ -2714,7 +2710,7 @@ html body.article main aside section article .meta ul li, html body.about main a
 html body.article main aside section article .meta ul li:before, html body.about main aside section article .meta ul li:before, html body.post main aside section article .meta ul li:before { content: ''; }
 html body.article main aside section article .meta ul li, html body.about main aside section article .meta ul li, html body.post main aside section article .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.article main aside section article .meta ul li:last-of-type, html body.about main aside section article .meta ul li:last-of-type, html body.post main aside section article .meta ul li:last-of-type { margin-right: 0; }
-html body.article main aside section article .meta .date, html body.about main aside section article .meta .date, html body.post main aside section article .meta .date { font-size: small; color: #6f6e6e; font-style: normal; }
+html body.article main aside section article .meta .date, html body.about main aside section article .meta .date, html body.post main aside section article .meta .date { font-size: small; color: #cccccc; font-style: normal; }
 html body.article main aside section article .meta .category, html body.about main aside section article .meta .category, html body.post main aside section article .meta .category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
 html body.article main aside section article .meta .category a, html body.about main aside section article .meta .category a, html body.post main aside section article .meta .category a { color: #982022; text-decoration: none; }
 html body.article main aside section article .meta .category a:hover, html body.about main aside section article .meta .category a:hover, html body.post main aside section article .meta .category a:hover { color: #231f20; }
@@ -2762,7 +2758,7 @@ html body.article main aside section#projects article .content, html body.about 
 html body.article main aside section#projects article .meta .category, html body.about main aside section#projects article .meta .category, html body.post main aside section#projects article .meta .category { display: none; }
 html body.article main aside section#projects article .meta .date, html body.about main aside section#projects article .meta .date, html body.post main aside section#projects article .meta .date { display: none; }
 html body.article main aside section#projects article .meta, html body.about main aside section#projects article .meta, html body.post main aside section#projects article .meta { display: none; }
-html body.article main aside section#projects article .excerpt, html body.about main aside section#projects article .excerpt, html body.post main aside section#projects article .excerpt { line-height: 1.25; color: #6f6e6e; color: #4c4345; text-align: justify; }
+html body.article main aside section#projects article .excerpt, html body.about main aside section#projects article .excerpt, html body.post main aside section#projects article .excerpt { line-height: 1.25; color: #cccccc; color: #4c4345; text-align: justify; }
 html body.article main aside section#projects article .meta, html body.about main aside section#projects article .meta, html body.post main aside section#projects article .meta { margin-top: 0.625em; }
 html body.article main aside section#projects article .meta > h3, html body.about main aside section#projects article .meta > h3, html body.post main aside section#projects article .meta > h3 { display: none; }
 html body.article main aside section#projects article .meta ul, html body.about main aside section#projects article .meta ul, html body.post main aside section#projects article .meta ul { margin: 0; }
@@ -2770,7 +2766,7 @@ html body.article main aside section#projects article .meta ul li, html body.abo
 html body.article main aside section#projects article .meta ul li:before, html body.about main aside section#projects article .meta ul li:before, html body.post main aside section#projects article .meta ul li:before { content: ''; }
 html body.article main aside section#projects article .meta ul li, html body.about main aside section#projects article .meta ul li, html body.post main aside section#projects article .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.article main aside section#projects article .meta ul li:last-of-type, html body.about main aside section#projects article .meta ul li:last-of-type, html body.post main aside section#projects article .meta ul li:last-of-type { margin-right: 0; }
-html body.article main aside section#projects article .meta .date, html body.about main aside section#projects article .meta .date, html body.post main aside section#projects article .meta .date { font-size: small; color: #6f6e6e; font-style: normal; }
+html body.article main aside section#projects article .meta .date, html body.about main aside section#projects article .meta .date, html body.post main aside section#projects article .meta .date { font-size: small; color: #cccccc; font-style: normal; }
 html body.article main aside section#projects article .meta .category, html body.about main aside section#projects article .meta .category, html body.post main aside section#projects article .meta .category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
 html body.article main aside section#projects article .meta .category a, html body.about main aside section#projects article .meta .category a, html body.post main aside section#projects article .meta .category a { color: #982022; text-decoration: none; }
 html body.article main aside section#projects article .meta .category a:hover, html body.about main aside section#projects article .meta .category a:hover, html body.post main aside section#projects article .meta .category a:hover { color: #231f20; }
@@ -2832,7 +2828,7 @@ html body.jobs main #article #content article .content, html body.announcements 
 html body.jobs main #article #content article .meta .category, html body.announcements main #article #content article .meta .category { display: none; }
 html body.jobs main #article #content article .meta .date, html body.announcements main #article #content article .meta .date { display: none; }
 html body.jobs main #article #content article .meta, html body.announcements main #article #content article .meta { display: none; }
-html body.jobs main #article #content article .excerpt, html body.announcements main #article #content article .excerpt { line-height: 1.25; color: #6f6e6e; color: #4c4345; text-align: justify; }
+html body.jobs main #article #content article .excerpt, html body.announcements main #article #content article .excerpt { line-height: 1.25; color: #cccccc; color: #4c4345; text-align: justify; }
 html body.jobs main #article #content article .meta, html body.announcements main #article #content article .meta { margin-top: 0.625em; }
 html body.jobs main #article #content article .meta > h3, html body.announcements main #article #content article .meta > h3 { display: none; }
 html body.jobs main #article #content article .meta ul, html body.announcements main #article #content article .meta ul { margin: 0; }
@@ -2840,7 +2836,7 @@ html body.jobs main #article #content article .meta ul li, html body.announcemen
 html body.jobs main #article #content article .meta ul li:before, html body.announcements main #article #content article .meta ul li:before { content: ''; }
 html body.jobs main #article #content article .meta ul li, html body.announcements main #article #content article .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.jobs main #article #content article .meta ul li:last-of-type, html body.announcements main #article #content article .meta ul li:last-of-type { margin-right: 0; }
-html body.jobs main #article #content article .meta .date, html body.announcements main #article #content article .meta .date { font-size: small; color: #6f6e6e; font-style: normal; }
+html body.jobs main #article #content article .meta .date, html body.announcements main #article #content article .meta .date { font-size: small; color: #cccccc; font-style: normal; }
 html body.jobs main #article #content article .meta .category, html body.announcements main #article #content article .meta .category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
 html body.jobs main #article #content article .meta .category a, html body.announcements main #article #content article .meta .category a { color: #982022; text-decoration: none; }
 html body.jobs main #article #content article .meta .category a:hover, html body.announcements main #article #content article .meta .category a:hover { color: #231f20; }
@@ -2887,7 +2883,7 @@ html body.jobs main #article #content article table thead a, html body.announcem
 html body.jobs main #article #content article table thead a:hover, html body.announcements main #article #content article table thead a:hover { color: white; }
 html body.jobs main #article #content article table thead th, html body.jobs main #article #content article table tbody td, html body.announcements main #article #content article table thead th, html body.announcements main #article #content article table tbody td { padding: 0.625em; padding-left: 0; }
 html body.jobs main #article #content article table thead th:first-of-type, html body.jobs main #article #content article table tbody td:first-of-type, html body.announcements main #article #content article table thead th:first-of-type, html body.announcements main #article #content article table tbody td:first-of-type { padding-left: 1px; }
-html body.jobs main #article #content article table tbody td, html body.announcements main #article #content article table tbody td { border-bottom: 1px solid #6f6e6e; }
+html body.jobs main #article #content article table tbody td, html body.announcements main #article #content article table tbody td { border-bottom: 1px solid #cccccc; }
 html body.jobs main #article #content article figure img, html body.announcements main #article #content article figure img { width: auto; }
 html body.jobs main #article #content article figure figcaption, html body.announcements main #article #content article figure figcaption { padding: 0.3125em; font-size: smaller; }
 html body.jobs main #article #content article figure figcaption h1, html body.jobs main #article #content article figure figcaption h2, html body.jobs main #article #content article figure figcaption h3, html body.jobs main #article #content article figure figcaption h4, html body.jobs main #article #content article figure figcaption h5, html body.jobs main #article #content article figure figcaption h6, html body.announcements main #article #content article figure figcaption h1, html body.announcements main #article #content article figure figcaption h2, html body.announcements main #article #content article figure figcaption h3, html body.announcements main #article #content article figure figcaption h4, html body.announcements main #article #content article figure figcaption h5, html body.announcements main #article #content article figure figcaption h6 { margin: 0; padding: 0; }
@@ -2938,7 +2934,7 @@ html body.jobs main #article #content article q:before, html body.announcements 
 html body.jobs main #article #content article q:after, html body.announcements main #article #content article q:after { content: '\201D'; }
 html body.jobs main #article #content article dfn, html body.announcements main #article #content article dfn { border-bottom: 1px solid #f1f1f1; }
 html body.jobs main #article #content article abbr, html body.announcements main #article #content article abbr { font-variant: small-caps; }
-html body.jobs main #article #content article time, html body.announcements main #article #content article time { font-size: small; color: #6f6e6e; font-style: normal; }
+html body.jobs main #article #content article time, html body.announcements main #article #content article time { font-size: small; color: #cccccc; font-style: normal; }
 html body.jobs main #article #content article var, html body.announcements main #article #content article var { font-style: italic; }
 html body.jobs main #article #content article samp, html body.jobs main #article #content article kbd, html body.announcements main #article #content article samp, html body.announcements main #article #content article kbd { font-family: "Lucida Console", "Lucida Sans Typewriter", Monaco, "Bitstream Vera Sans Mono", monospace; font-weight: bold; font-size: small; }
 html body.jobs main #article #content article sup, html body.announcements main #article #content article sup { vertical-align: super; font-size: small; }
@@ -2950,7 +2946,7 @@ html body.jobs main #article #content article del, html body.announcements main 
 html body.jobs main #article #content article ins, html body.announcements main #article #content article ins { background: #f1f1f1; color: #231f20; padding: 0.3125em; }
 html body.jobs main #article #content article ins a, html body.announcements main #article #content article ins a { color: #231f20; text-decoration: none; }
 html body.jobs main #article #content article ins a:hover, html body.announcements main #article #content article ins a:hover { color: white; }
-html body.jobs main #article #content article address, html body.announcements main #article #content article address { font-size: small; color: #6f6e6e; max-width: 21.875em; }
+html body.jobs main #article #content article address, html body.announcements main #article #content article address { font-size: small; color: #cccccc; max-width: 21.875em; }
 html body.jobs main #article #content article label.select, html body.announcements main #article #content article label.select { width: 100%; max-width: 100%; float: left; }
 html body.jobs main #article #content article label.select:after, html body.announcements main #article #content article label.select:after { content: "\2794"; -moz-transform: rotate(90deg); -ms-transform: rotate(90deg); -o-transform: rotate(90deg); -webkit-transform: rotate(90deg); transform: rotate(90deg); float: right; display: inline-block; position: relative; padding: 0; left: -0.3125em; background: white; font-size: 150%; top: -1.5em; margin-right: 0.3125em; pointer-events: none; /* this is a must */ cursor: pointer; }
 html body.jobs main #article #content article label.select select, html body.announcements main #article #content article label.select select { border: none; outline: 0; background: white; appearance: none; -webkit-appearance: none; -moz-appearance: none; border: 1px solid; cursor: pointer; width: 100%; padding: 0.3125em; }

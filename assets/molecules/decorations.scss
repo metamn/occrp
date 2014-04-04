@@ -47,16 +47,16 @@
 
 /* A close icon
 */
-@mixin close-icon($c: $background) {
+@mixin close-icon {
   &:after {
     content: $close;
-    color: $c;
-    padding: 0 $pad/4;
-    border: $border-thin;
+    color: $background;
+    background: $color;
+    padding: $pad/4 $pad/2;
     
     position: relative;
-    top: -$pad - $pad/2;
-    right: $pad/2;
+    top: $pad + $pad/2;
+    right: 0;
     float: right;
     
     cursor: pointer;

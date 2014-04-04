@@ -24,55 +24,51 @@
 /* The header on mobiles
 */
 @mixin header-mobile {
-  .logo {
-    position: absolute;
-    top: 0;
-    @include border-thin;
-    
-    figure {
-      width: 70%;
-      margin: 0 15%;
-      
-      figcaption {
-        display: none;
-      }
-    }
-  }
   
-  nav {
-    &.main, &.secondary, &.tags {
-      @include grid(2, 2);
-      position: relative;
-      top: $pad*4;
-    }
+  
+  .navigation {
+    border-left: 1px solid;
+    border-right: 1px solid;
     
-    &.tags {
-      @include block;
-      margin-right: 0;
-      @include enlarge-social-icons;
-      
-      ul {
-        @include block;
-        
-        &.search {
+    nav {
+      &.main, &.secondary {
+        @include border-thin($color);
+        margin-bottom: $pad;
+        ul {
           li {
-            &.text {
-              display: none;
-            }
-            
-            &.input {
-              display: block;
+            @include border-thin;
+          }
+        }
+      }
+      
+      
+      &.tags {
+        @include block;
+        margin-right: 0;
+        @include enlarge-social-icons;
+        
+        ul {
+          @include block;
+          
+          &.search {
+            li {
+              &.text {
+                display: none;
+              }
+              
+              &.input {
+                display: block;
+              }
             }
           }
         }
       }
     }
+    
+    .close-icon {
+      @include close-icon;
+    }
   }
-  
-  .close-icon {
-    @include close-icon;
-  }
-  
 }
 
 
