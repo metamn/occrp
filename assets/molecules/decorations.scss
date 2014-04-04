@@ -47,7 +47,7 @@
 
 /* A close icon
 */
-@mixin close-menu($c: $background) {
+@mixin close-icon($c: $background) {
   &:after {
     content: $close;
     color: $c;
@@ -56,7 +56,7 @@
     
     position: relative;
     top: -$pad - $pad/2;
-    right: $pad;
+    right: $pad/2;
     float: right;
     
     cursor: pointer;

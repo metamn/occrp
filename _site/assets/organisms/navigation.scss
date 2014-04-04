@@ -13,12 +13,9 @@
     }
   }
   
-  .tags {
-    @include tags;
-  }
-  
   .main, .secondary {
     margin-top: $pad*2;
+    @include border-thin;
   }
 }
 
@@ -27,9 +24,55 @@
 /* The header on mobiles
 */
 @mixin header-mobile {
-  nav {
-    display: none;
+  .logo {
+    position: absolute;
+    top: 0;
+    @include border-thin;
+    
+    figure {
+      width: 70%;
+      margin: 0 15%;
+      
+      figcaption {
+        display: none;
+      }
+    }
   }
+  
+  nav {
+    &.main, &.secondary, &.tags {
+      @include grid(2, 2);
+      position: relative;
+      top: $pad*4;
+    }
+    
+    &.tags {
+      @include block;
+      margin-right: 0;
+      @include enlarge-social-icons;
+      
+      ul {
+        @include block;
+        
+        &.search {
+          li {
+            &.text {
+              display: none;
+            }
+            
+            &.input {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .close-icon {
+    @include close-icon;
+  }
+  
 }
 
 

@@ -666,8 +666,12 @@
   nav {
     @include responsive-menu;
     
-    &.main, &.secondary {
-      @include border-thin($color);
+    &.secondary {
+      @include language-selector;
+    }
+    
+    &.tags {
+      @include tags;
     }
   }
   
