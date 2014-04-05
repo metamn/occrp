@@ -598,7 +598,6 @@
     @include logo($type);
   }
   
-  
   nav {
     @include responsive-menu;
     
@@ -609,6 +608,10 @@
     &.tags {
       @include tags;
     }
+  }
+  
+  .close-icon {
+    @include close-icon;
   }
   
   @include mobile {

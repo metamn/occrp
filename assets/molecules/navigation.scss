@@ -35,11 +35,40 @@
 }
 
 
+/* The menu for mobiles
+*/
+@mixin mobile-menu {
+  nav {
+    &.main, &.secondary {
+      @include border-thin($color);
+      margin-bottom: $pad;
+    }
+    
+    &.main {
+      margin-top: $pad*5;
+    }
+    
+    &.tags {
+      @include block;
+      margin-right: 0;
+      @include enlarge-social-icons;
+      
+      ul {
+        @include block;
+        
+        &.search {
+          @include search(active);
+        }
+      }
+    }
+  }
+}
+
 
 /* A menubar for mobiles
   - it's a static bar which shows the menu on click
 */
-@mixin mobile-menu($type) {
+@mixin mobile-menubar($type) {
   @include block;
   @include font(menubar-mobile);
   cursor: pointer;

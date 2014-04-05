@@ -39,7 +39,7 @@ $(document).ready(function() {
   // Sticky header
   // - if the mobile menu is visible the sticky header wont be enabled
   function scroll () {
-    if (!($('#header .mobile-menu').is(':visible'))) {
+    if ($('#header .mobile-menubar').is(':visible')) {
       if ($(window).scrollTop() >= 10) {
         $('body').addClass('sticky');
       } else {
@@ -55,7 +55,7 @@ $(document).ready(function() {
   // - the second click on the logo will load the frontpage
   $('#header .logo figure a').click(function(event) {
     if ($('body').hasClass('sticky')) {
-      event.preventDefault();
+      event.preventDefault();chrome://web-developer/content/generated/view-responsive-layouts.html
       scrollTo($('body'));
     }
   });
@@ -71,7 +71,7 @@ $(document).ready(function() {
   
   
   // Show navigation, search & co on click on mobile navbar
-  $('#header .mobile-menu').click(function() {
+  $('#header .mobile-menubar').click(function() {
     $('body').removeClass('sticky');
     $(this).hide();
     $('#header nav').slideToggle();
@@ -82,7 +82,7 @@ $(document).ready(function() {
   $('#header .close-icon').click(function() {
     scrollTo($('body'));
     $('#header').removeClass('mobile-menu-active');
-    $('#header .mobile-menu').slideToggle();  
+    $('#header .mobile-menubar').show();  
     $('#header nav').slideToggle();
   });
 

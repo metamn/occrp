@@ -18,7 +18,7 @@
     @include border-thin;
   }
   
-  .mobile-menu {
+  .mobile-menubar {
     display: none;
   }
   
@@ -50,6 +50,8 @@
 /* The header on tablets
 */
 @mixin header-tablet($type: normal) {
+  @include mobile-menu;
+  
   position: relative;
   @include border-thin;
   
@@ -59,8 +61,8 @@
     }
   }
   
-  .mobile-menu {
-    @include mobile-menu(tablet);
+  .mobile-menubar {
+    @include mobile-menubar(tablet);
     position: absolute;
     right: 0;
     bottom: .5em; /* to align to logo */
@@ -72,6 +74,10 @@
     }
     
   } @elseif ($type == active) {
+    section.logo {
+      @include block;
+    }
+    
     nav, .close-icon {
       display: block;
     }
@@ -88,33 +94,10 @@
 /* The header on mobiles
 */
 @mixin header-mobile($type: normal) {
-  nav {
-    &.main, &.secondary {
-      @include border-thin($color);
-      margin-bottom: $pad;
-    }
-    
-    &.main {
-      margin-top: $pad*5;
-    }
-    
-    &.tags {
-      @include block;
-      margin-right: 0;
-      @include enlarge-social-icons;
-      
-      ul {
-        @include block;
-        
-        &.search {
-          @include search(active);
-        }
-      }
-    }
-  }
+  @include mobile-menu;
   
-  .mobile-menu {
-    @include mobile-menu(mobile);
+  .mobile-menubar {
+    @include mobile-menubar(mobile);
   }
   
   @if ($type == normal) {
@@ -125,10 +108,6 @@
   } @elseif ($type == active) {
     nav, .close-icon {
       display: block;
-    }
-    
-    .mobile-menu {
-      display: none;
     }
     
   } @elseif ($type == fixed) {
