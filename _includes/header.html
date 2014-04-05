@@ -16,15 +16,20 @@
         <img src="{{ site.url }}/assets/images/logo.png">
       </a>
       <figcaption>
-        <ul>
-          <li class="icon"><img src="{{ site.url }}/assets/images/menu-icon.png" alt="Menu icon"></li>
-          <li>Navigation</li>
-          <li>Tags</li>
-          <li>Search</li>
-          <li>Share</li>
-        </ul>
+        {{ site.title }}
       </figcaption>
     </figure>
+  </section>
+  
+  <section class="mobile-menu">
+    <h3>Mobile menu</h3>
+    <ul>
+      <li class="icon"><img src="{{ site.url }}/assets/images/menu-icon.png" alt="Menu icon"></li>
+      <li>Navigation</li>
+      <li>Tags</li>
+      <li>Search</li>
+      <li>Share</li>
+    </ul>
   </section>
   
   {% include nav-secondary.html %}

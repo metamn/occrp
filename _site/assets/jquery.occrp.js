@@ -71,7 +71,7 @@ $(document).ready(function() {
   
   
   // Show navigation, search & co on click on mobile navbar
-  $('#header .logo figure figcaption').click(function() {
+  $('#header .mobile-menu').click(function() {
     $('body').removeClass('sticky');
     $(this).hide();
     $('#header nav').slideToggle();
@@ -82,7 +82,7 @@ $(document).ready(function() {
   $('#header .close-icon').click(function() {
     scrollTo($('body'));
     $('#header').removeClass('mobile-menu-active');
-    $('#header .logo figure figcaption').slideToggle();  
+    $('#header .mobile-menu').slideToggle();  
     $('#header nav').slideToggle();
   });
 

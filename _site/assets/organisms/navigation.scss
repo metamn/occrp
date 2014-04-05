@@ -18,6 +18,10 @@
     @include border-thin;
   }
   
+  .mobile-menu {
+    display: none;
+  }
+  
   @if ($type == fixed) {
     @include fixed-header;
     @include container;
@@ -38,6 +42,46 @@
     }
   }
 }
+
+
+
+
+
+/* The header on tablets
+*/
+@mixin header-tablet($type: normal) {
+  position: relative;
+  @include border-thin;
+  
+  section {
+    &.logo, &.mobile-menu {
+      @include grid(2, 2);
+    }
+  }
+  
+  .mobile-menu {
+    @include mobile-menu(tablet);
+    position: absolute;
+    right: 0;
+    bottom: .5em; /* to align to logo */
+  }
+  
+  @if ($type == normal) {
+    nav, .close-icon {
+      display: none;
+    }
+    
+  } @elseif ($type == active) {
+    nav, .close-icon {
+      display: block;
+    }
+    
+  } @elseif ($type == fixed) {
+    @include fixed-header;
+    
+  }
+}
+
 
 
 
@@ -68,11 +112,10 @@
       }
     }
   }
-    
-  .close-icon {
-    @include close-icon;
-  }
   
+  .mobile-menu {
+    @include mobile-menu(mobile);
+  }
   
   @if ($type == normal) {
     nav, .close-icon {
@@ -84,17 +127,19 @@
       display: block;
     }
     
+    .mobile-menu {
+      display: none;
+    }
+    
   } @elseif ($type == fixed) {
     @include fixed-header;
     
     .logo {
       margin-top: $pad/4;
-      
-      figure {
-        figcaption {
-          display: none;
-        }
-      }
+    }
+    
+    .mobile-menu {
+      display: none;
     }
   }
 }
@@ -104,25 +149,11 @@
 /* The logo
 */
 @mixin logo($type: normal) {
-  h1 {
+  h1, figure figcaption {
     display: none;
   }
   
   text-align: center;
-  
-  figure {
-    figcaption {
-      @include menubar-mobile;
-    }
-  }
-   
-  @include small-screen-and-up {
-    figure {
-      figcaption {
-        display: none;
-      }
-    }
-  }
   
   
   @if ($type == active) {
@@ -144,235 +175,3 @@
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@mixin navigation($color-scheme : slider) {
-  nav {
-    @include hide-title;
-    margin-top: $pad;
-    
-    ol {
-      @include list-inline;
-      @include menu-item(block, $pad/2, $pad/2 + $pad/4);
-      
-      li {
-        @include color($color-scheme);
-        @include border-radius($pad);
-      }
-      
-      @include below-and-tablet {
-        font-size: small;
-      }
-    }
-  }
-}
-
-
-
-@mixin mobile-menu {
-  nav {
-    &.main, &.secondary, &.tags {
-      display: block;
-      margin-top: $pad*2;
-    }
-    
-    ul {
-      @include block;
-    }
-    
-    &.main, &.secondary {
-      ul {
-        @include list-normal;
-        text-align: left;
-      }
-      
-      @include tablet {
-        @include grid(2, 2);
-      }
-    }
-    
-    &.tags {
-      ul {
-        &.search {
-          li {
-            &.text {
-              display: none;
-            }
-            
-            &.input {
-              display: block;
-              
-              input {
-                width: 95%;
-              }
-            }
-          }
-        }
-        
-        &.tag-list {
-          margin: $pad 0;
-        }
-        
-        &.social {
-          li {
-            margin-right: $pad;
-          }
-        }
-      }
-    }
-  }  
-  
-  #close-menu {
-    @include close-menu;
-  }
-}
-
-
-@mixin mobile-navbar {
-  @include block;
-  @include color(invert);
-  @include padding(100%, $pad/4);
-  font-size: 70%;
-  margin-top: $pad/2;
-  
-  cursor: pointer;
-  
-  ul.mobile-navbar-menu {
-    @include list-inline;
-    @include list-centered;
-    
-    li {
-      &.hamburger {
-        span {
-          min-width: $pad;
-          top: 1px;
-        }
-      }
-    }
-  }
-}
-
-
-
-
-
-
-
-/* Floats the secondary menu right
-*/
-@mixin menu-float-right {
-  ul {
-    float: right;
-    
-    li {
-      &.language {
-        margin-right: 0;
-      }
-    }
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/* The navigation bar in the header
-*/
-@mixin navbar($type: desktop) {
-  @include border-thin($color);
-    
-  &.secondary {
-    @include language-selector;
-  }
-  
-  &.tags {
-    @include tags;
-    @include enlarge-social-icons;
-  }
-  
-  
-  @include below-and-tablet {
-    &.main, &.secondary, &.tags {
-      display: none;
-    }
-    
-    &.mobile-navbar {
-      @include mobile-navbar;
-    }
-    
-    @if ($type == mobile-fixed) {
-      &.mobile-navbar {
-        display: none !important;
-      }
-    }
-  }
-  
-  
-  @include tablet-and-up {
-    @include responsive-grid(3);
-    @include menu;
-    
-    &.secondary {
-      margin-right: 0;
-      @include menu-float-right;
-    }
-    
-    &.main, &.secondary {
-      @include list-inline($pad/4);
-      margin-top: $pad*2;
-    }
-    
-    &.tags {
-      @include block;
-      margin-top: $pad/2;
-    }
-    
-    @if ($type == desktop-fixed) {
-      &.main, &.secondary {
-        margin-top: 0;
-        border: none;
-      }
-      
-      &.tags {
-        display: none;
-      }
-    }  
-  }
-
-}
-

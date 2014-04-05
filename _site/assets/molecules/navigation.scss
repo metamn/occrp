@@ -39,15 +39,13 @@
 /* A menubar for mobiles
   - it's a static bar which shows the menu on click
 */
-@mixin menubar-mobile {
+@mixin mobile-menu($type) {
   @include block;
   @include font(menubar-mobile);
-  @include color(invert);
-  padding: $pad/4 0;
+  cursor: pointer;
   
   ul {
     @include list-inline;
-    @include list-centered;
     
     li {
       &.icon {
@@ -56,7 +54,20 @@
     }
   }
   
-  cursor: pointer;
+  
+  @if ($type == mobile) {
+    @include color(invert);
+    padding: $pad/4 0;
+    
+    ul {
+      @include list-centered;
+    }
+    
+  } @elseif ($type == tablet) {
+    ul {
+      @include list-floated-right;
+    }
+  }
 }
 
 
@@ -109,5 +120,26 @@
 
 
 
-
+/* A pagination bar
+*/
+@mixin pagination($color-scheme : slider) {
+  nav {
+    @include hide-title;
+    margin-top: $pad;
+    
+    ol {
+      @include list-inline;
+      @include menu-item(block, $pad/2, $pad/2 + $pad/4);
+      
+      li {
+        @include color($color-scheme);
+        @include border-radius($pad);
+      }
+      
+      @include below-and-tablet {
+        font-size: small;
+      }
+    }
+  }
+}
 
