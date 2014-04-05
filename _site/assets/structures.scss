@@ -591,71 +591,6 @@
 
 
 
-
-/* The fixed header
-*/
-@mixin fixed-header {
-  position: fixed;
-  z-index: 1;
-  background: $background;
-  @include border-thin;
-  
-  
-  @include mobile {
-    #hamburger-menu {
-      display: block;
-    }
-    
-    .logo {
-      @include logo(mobile-fixed);
-    }
-    
-    nav {
-      @include navbar(mobile-fixed);
-    }
-  }
-  
-  @include tablet {
-    .logo {
-      @include logo(tablet-fixed);
-    }
-    
-    .mobile-navbar {
-      @include grid-resize(65%, $pad*2);
-      float: left;
-      
-      @include color;
-      border: none;
-      
-      margin-top: 5%;
-      
-      ul {
-        @include list-inline;
-        float: right;
-      }
-    }
-  }
-  
-  @include tablet-and-up {
-    @include container;
-  
-    margin: 0 0 $pad*2 !important;
-    padding-top: $pad;
-    top: 0;
-    height: $pad*2;
-    
-    nav {
-      @include navbar(desktop-fixed);
-    }
-    
-    .logo {
-      @include logo(desktop-fixed);
-    }
-  }
-}
-
-
-
 /* The Header
 */
 @mixin header($type: normal) {
@@ -680,7 +615,7 @@
   }
   
   @include small-screen-and-up {
-    @include header-desktop;
+    @include header-desktop($type);
   }
 }
 

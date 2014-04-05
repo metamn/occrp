@@ -17,7 +17,7 @@ html {
       #header {
         @include header;
         
-        &.active {
+        &.mobile-menu-active {
           @include header(active);
         }
       }

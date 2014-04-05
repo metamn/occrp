@@ -1,4 +1,15 @@
-/* The tage bar
+/* The fixed header
+*/
+@mixin fixed-header {
+  position: fixed;
+  z-index: 1;
+  background: $background;
+  @include border-thin;
+}
+
+
+
+/* The tag bar
 */
 @mixin tags {
   @include block;

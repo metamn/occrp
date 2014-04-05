@@ -1,6 +1,6 @@
 /* The header on desktop
 */
-@mixin header-desktop {
+@mixin header-desktop($type: normal) {
   .main, .logo, .secondary {
     @include grid(3, 3);
   }
@@ -16,6 +16,26 @@
   .main, .secondary {
     margin-top: $pad*2;
     @include border-thin;
+  }
+  
+  @if ($type == fixed) {
+    @include fixed-header;
+    @include container;
+  
+    margin: 0 0 $pad*2 !important;
+    padding-top: $pad;
+    top: 0;
+    height: $pad*2;
+    
+    .tags {
+      display: none;
+    }
+    
+    nav {
+      &.main, &.secondary {
+        margin-top: 0;
+      }
+    }
   }
 }
 
@@ -58,9 +78,23 @@
     nav, .close-icon {
       display: none;
     }
+    
   } @elseif ($type == active) {
     nav, .close-icon {
       display: block;
+    }
+    
+  } @elseif ($type == fixed) {
+    @include fixed-header;
+    
+    .logo {
+      margin-top: $pad/4;
+      
+      figure {
+        figcaption {
+          display: none;
+        }
+      }
     }
   }
 }
@@ -90,9 +124,24 @@
     }
   }
   
+  
   @if ($type == active) {
     position: absolute;
     @include container;
+  }
+  
+  @if ($type == fixed) {
+    height: $pad + $pad/2 + $pad/8;
+    
+    figure {
+      margin-top: 0;
+      
+      img {
+        max-width: 10em;
+        position: relative;
+        top: -$pad/4;
+      }
+    }
   }
 }
 
