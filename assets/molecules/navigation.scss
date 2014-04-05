@@ -165,7 +165,7 @@
         @include border-radius($pad);
       }
       
-      @include below-and-tablet {
+      @include small-screen {
         font-size: small;
       }
     }
