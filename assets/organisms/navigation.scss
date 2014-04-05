@@ -18,7 +18,7 @@
     @include border-thin;
   }
   
-  .mobile-menubar {
+  .mobile-menubar, .close-icon {
     display: none;
   }
   
@@ -84,7 +84,8 @@
     
   } @elseif ($type == fixed) {
     @include fixed-header;
-    
+    @include container;
+    margin-left: 0;
   }
 }
 
@@ -117,7 +118,7 @@
       margin-top: $pad/4;
     }
     
-    .mobile-menu {
+    .mobile-menubar {
       display: none;
     }
   }
@@ -132,8 +133,12 @@
     display: none;
   }
   
-  text-align: center;
-  
+  @include mobile {
+    text-align: center;
+  }
+  @include tablet-and-up {
+    text-align: center;
+  }
   
   @if ($type == active) {
     position: absolute;

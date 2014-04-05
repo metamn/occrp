@@ -39,7 +39,7 @@ $(document).ready(function() {
   // Sticky header
   // - if the mobile menu is visible the sticky header wont be enabled
   function scroll () {
-    if ($('#header .mobile-menubar').is(':visible')) {
+    if (!($('#header .close-icon').is(':visible'))) {
       if ($(window).scrollTop() >= 10) {
         $('body').addClass('sticky');
       } else {
