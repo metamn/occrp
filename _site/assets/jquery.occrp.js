@@ -3,6 +3,7 @@ $(document).ready(function() {
 
   // Slider
   // - on mobiles the navigator / paginator is present inside every article
+  /*
   $('.frontpage #slider article').hide();
   $('.frontpage #slider article').first().show();
   $('.frontpage #slider nav ol li').removeClass('active');
@@ -21,6 +22,7 @@ $(document).ready(function() {
     
     return false;
   });
+  */
   
   
   

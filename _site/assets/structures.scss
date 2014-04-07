@@ -499,7 +499,10 @@
 /* The news and announcements on the frontpage
 */
 @mixin news-tickers {
-  display: none;
+  clear: both;
+  section {
+    display: none;
+  }
 }
 
 
