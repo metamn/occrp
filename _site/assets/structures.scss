@@ -496,82 +496,20 @@
 
 
 
+/* The news and announcements on the frontpage
+*/
+@mixin news-tickers {
+  display: none;
+}
+
+
 
 /* The slider on the frontpage
 */
 @mixin slider {
-  @include col-nm(2, 3);
-  
-  @include small-screen {
-    @include block;
-  }
-  
   @include article-style(slider);
-  background: $light-grey;
+  @include responsive-slider;
   @include pagination;
-  
-  
-  /* Desktop
-  */
-  position: relative;
-  height: 20.4em;
-  
-  article {
-    position: absolute;
-  }
-  
-  nav {
-    position: absolute;
-    bottom: $pad/2;
-    
-    &.mobile {
-      display: none;
-    }
-  }
-  
-  @include small-screen {
-    height: auto;
-    
-    article {
-      position: relative;
-      
-      nav {
-        position: relative;
-        left: 0;
-        margin-top: 0;
-        height: 0;
-        top: -$pad*2;
-        opacity: .7;
-        
-        ol {
-          li {
-            a {
-              padding: $pad/4 $pad/2;
-            }
-          }
-        }
-      }
-      
-      h1, .excerpt {
-        position: relative;
-        top: -$pad;
-        padding-bottom: 0;
-      }
-    }
-    
-    nav {
-      display: none;
-      
-      &.mobile {
-        display: block;
-      }
-    }
-  }
-  
-  @include small-screen {
-    height: 15.6em;
-  }
-  
 }
 
 

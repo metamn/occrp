@@ -57,9 +57,8 @@ html {
               @include slider;
             }
             
-            #news, #announcements {
-              @include news;
-              margin-right: 0 !important;
+            aside {
+              @include news-tickers;
             }
           }
           

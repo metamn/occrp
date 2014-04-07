@@ -198,3 +198,25 @@
   float: left;
 }
 
+
+/* Hide / show .mobile / .dekstop elements
+*/
+@mixin hide-show-mobile-elements {
+  .mobile {
+    display: none;
+  }
+  
+  .desktop {
+    display: block;
+  }
+  
+  @include mobile {
+    .mobile {
+      display: block;
+    }
+    
+    .desktop {
+      display: none;
+    }
+  }
+}

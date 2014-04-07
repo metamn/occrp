@@ -165,24 +165,7 @@
       margin-bottom: 0;
     }
     
-    $col-gutter: col-gutter(3);
-    $col-width: col-by-gutter-width(2, $col-gutter);
     
-    article figure, article h1, article .excerpt, nav {
-      @include col-by-gutter(2, $col-gutter);
-    }
-    
-    article h1, article .excerpt, nav {
-      margin-right: 0;
-      @include padding($col-width, $pad/2);
-      padding-left: 0;
-      padding-right: 0;
-    }
-    
-    nav {
-      left: $col-width + $col-gutter;
-    }
-  
   } @elseif ($style == title-right) {
     article {
       @include block;

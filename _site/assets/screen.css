@@ -127,6 +127,8 @@ figure a { line-height: 0; }
 */
 /* Strech content to fill parent width
 */
+/* Hide / show .mobile / .dekstop elements
+*/
 /* The fixed header
 */
 /* The tag bar
@@ -142,6 +144,8 @@ figure a { line-height: 0; }
 /* Creates a menu item - on hover & active the menu item is highlighted
 */
 /* A pagination bar
+*/
+/* A slider
 */
 /* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback  
 	Usage: @include font-size(1, large);
@@ -171,6 +175,8 @@ figure a { line-height: 0; }
 /* Styling article thumbs - controls how an article thumb is displayed
 */
 /* An article - displays mostly article thumbs - this mixin controls what is diplayed in an article
+*/
+/* An article with thumb left, the rest right
 */
 /* The header on desktop
 */
@@ -225,6 +231,8 @@ figure a { line-height: 0; }
 /* Investigations
 */
 /* The news
+*/
+/* The news and announcements on the frontpage
 */
 /* The slider on the frontpage
 */
@@ -520,9 +528,8 @@ html body.sticky .container #header .close-icon:after { content: "\2715"; paddin
   html body.sticky .container #header nav.main, html body.sticky .container #header nav.secondary { margin-top: 0; } }
 html body.sticky .container main, html body.sticky .container #footer { position: relative; top: 3.75em; }
 html body.frontpage .container main #intro { margin-bottom: 1.25em; }
-html body.frontpage .container main #intro #slider { width: 65.5%; margin-right: 2.5%; float: left; background: #f1f1f1; /* Desktop
-*/ position: relative; height: 20.4em; }
-@media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.frontpage .container main #intro #slider { width: 100%; max-width: 100%; float: left; } }
+html body.frontpage .container main #intro #slider { /* Positioning
+*/ position: relative; height: 20.4em; overflow: hidden; }
 html body.frontpage .container main #intro #slider article { width: 100%; max-width: 100%; float: left; margin-bottom: 3%; margin-bottom: 0; }
 html body.frontpage .container main #intro #slider article figure img { width: auto; }
 html body.frontpage .container main #intro #slider article figure figcaption { padding: 0.3125em; font-size: smaller; }
@@ -572,8 +579,18 @@ html body.frontpage .container main #intro #slider article .share-buttons ul li 
 html body.frontpage .container main #intro #slider article .content a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #intro #slider article .content a:hover { color: #982022; }
 html body.frontpage .container main #intro #slider article figure, html body.frontpage .container main #intro #slider article h1, html body.frontpage .container main #intro #slider article .excerpt, html body.frontpage .container main #intro #slider nav { width: 48.75%; margin-right: 2.5%; float: left; }
-html body.frontpage .container main #intro #slider article h1, html body.frontpage .container main #intro #slider article .excerpt, html body.frontpage .container main #intro #slider nav { margin-right: 0; padding: 0.625em; width: calc(48.75% - 1.25em); padding-left: 0; padding-right: 0; }
+html body.frontpage .container main #intro #slider article h1, html body.frontpage .container main #intro #slider article .excerpt, html body.frontpage .container main #intro #slider nav { margin-right: 0; }
 html body.frontpage .container main #intro #slider nav { left: 51.25%; }
+@media only screen and (max-width: 29.999em) { html body.frontpage .container main #intro #slider article figure, html body.frontpage .container main #intro #slider article h1, html body.frontpage .container main #intro #slider article .excerpt, html body.frontpage .container main #intro #slider nav { width: 100%; max-width: 100%; float: left; } }
+html body.frontpage .container main #intro #slider .mobile { display: none; }
+html body.frontpage .container main #intro #slider .desktop { display: block; }
+@media only screen and (max-width: 29.999em) { html body.frontpage .container main #intro #slider .mobile { display: block; }
+  html body.frontpage .container main #intro #slider .desktop { display: none; } }
+html body.frontpage .container main #intro #slider article { position: absolute; }
+html body.frontpage .container main #intro #slider nav { position: absolute; bottom: 0.625em; }
+@media only screen and (max-width: 29.999em) { html body.frontpage .container main #intro #slider { height: auto; }
+  html body.frontpage .container main #intro #slider article { position: relative; }
+  html body.frontpage .container main #intro #slider article nav { position: relative; left: 0; margin-top: 0; height: 0; top: -2.5em; opacity: .7; } }
 html body.frontpage .container main #intro #slider nav { margin-top: 1.25em; }
 html body.frontpage .container main #intro #slider nav > h3 { display: none; }
 html body.frontpage .container main #intro #slider nav ol li { display: inline-block; float: left; margin-right: 0.625em; }
@@ -585,93 +602,8 @@ html body.frontpage .container main #intro #slider nav ol li.active a a:hover, h
 html body.frontpage .container main #intro #slider nav ol li { background: white; color: #231f20; -moz-border-radius: 1.25em; -webkit-border-radius: 1.25em; border-radius: 1.25em; }
 html body.frontpage .container main #intro #slider nav ol li a { color: #231f20; text-decoration: none; }
 html body.frontpage .container main #intro #slider nav ol li a:hover { color: white; }
-@media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.frontpage .container main #intro #slider nav ol { font-size: small; } }
-html body.frontpage .container main #intro #slider article { position: absolute; }
-html body.frontpage .container main #intro #slider nav { position: absolute; bottom: 0.625em; }
-html body.frontpage .container main #intro #slider nav.mobile { display: none; }
-@media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.frontpage .container main #intro #slider { height: auto; }
-  html body.frontpage .container main #intro #slider article { position: relative; }
-  html body.frontpage .container main #intro #slider article nav { position: relative; left: 0; margin-top: 0; height: 0; top: -2.5em; opacity: .7; }
-  html body.frontpage .container main #intro #slider article nav ol li a { padding: 0.3125em 0.625em; }
-  html body.frontpage .container main #intro #slider article h1, html body.frontpage .container main #intro #slider article .excerpt { position: relative; top: -1.25em; padding-bottom: 0; }
-  html body.frontpage .container main #intro #slider nav { display: none; }
-  html body.frontpage .container main #intro #slider nav.mobile { display: block; } }
-@media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.frontpage .container main #intro #slider { height: 15.6em; } }
-html body.frontpage .container main #intro #news, html body.frontpage .container main #intro #announcements { margin-top: 0.625em; margin-right: 0 !important; }
-@media only screen and (max-width: 29.999em) { html body.frontpage .container main #intro #news, html body.frontpage .container main #intro #announcements { width: 100%; margin-right: 0; float: left; } }
-@media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.frontpage .container main #intro #news, html body.frontpage .container main #intro #announcements { width: 45%; margin-right: 10%; float: left; }
-  html body.frontpage .container main #intro #news:nth-of-type(2), html body.frontpage .container main #intro #announcements:nth-of-type(2) { margin-right: 0; }
-  html body.frontpage .container main #intro #news:nth-of-type(3), html body.frontpage .container main #intro #announcements:nth-of-type(3) { margin-right: 10%; }
-  html body.frontpage .container main #intro #news:nth-of-type(4), html body.frontpage .container main #intro #announcements:nth-of-type(4) { margin-right: 0; }
-  html body.frontpage .container main #intro #news:nth-of-type(5), html body.frontpage .container main #intro #announcements:nth-of-type(5) { margin-right: 10%; }
-  html body.frontpage .container main #intro #news:nth-of-type(6), html body.frontpage .container main #intro #announcements:nth-of-type(6) { margin-right: 0; }
-  html body.frontpage .container main #intro #news:nth-of-type(7), html body.frontpage .container main #intro #announcements:nth-of-type(7) { margin-right: 10%; }
-  html body.frontpage .container main #intro #news:nth-of-type(8), html body.frontpage .container main #intro #announcements:nth-of-type(8) { margin-right: 0; }
-  html body.frontpage .container main #intro #news:nth-of-type(9), html body.frontpage .container main #intro #announcements:nth-of-type(9) { margin-right: 10%; }
-  html body.frontpage .container main #intro #news:nth-of-type(10), html body.frontpage .container main #intro #announcements:nth-of-type(10) { margin-right: 0; } }
-@media only screen and (min-width: 80em) { html body.frontpage .container main #intro #news, html body.frontpage .container main #intro #announcements { width: 31.5%; margin-right: 2.5%; float: left; }
-  html body.frontpage .container main #intro #news:nth-of-type(2), html body.frontpage .container main #intro #announcements:nth-of-type(2) { margin-right: 2.5%; }
-  html body.frontpage .container main #intro #news:nth-of-type(3), html body.frontpage .container main #intro #announcements:nth-of-type(3) { margin-right: 0; }
-  html body.frontpage .container main #intro #news:nth-of-type(4), html body.frontpage .container main #intro #announcements:nth-of-type(4) { margin-right: 2.5%; }
-  html body.frontpage .container main #intro #news:nth-of-type(5), html body.frontpage .container main #intro #announcements:nth-of-type(5) { margin-right: 2.5%; }
-  html body.frontpage .container main #intro #news:nth-of-type(6), html body.frontpage .container main #intro #announcements:nth-of-type(6) { margin-right: 0; }
-  html body.frontpage .container main #intro #news:nth-of-type(7), html body.frontpage .container main #intro #announcements:nth-of-type(7) { margin-right: 2.5%; }
-  html body.frontpage .container main #intro #news:nth-of-type(8), html body.frontpage .container main #intro #announcements:nth-of-type(8) { margin-right: 2.5%; }
-  html body.frontpage .container main #intro #news:nth-of-type(9), html body.frontpage .container main #intro #announcements:nth-of-type(9) { margin-right: 0; }
-  html body.frontpage .container main #intro #news:nth-of-type(10), html body.frontpage .container main #intro #announcements:nth-of-type(10) { margin-right: 2.5%; } }
-html body.frontpage .container main #intro #news h3, html body.frontpage .container main #intro #announcements h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; }
-html body.frontpage .container main #intro #news h3 a, html body.frontpage .container main #intro #announcements h3 a { color: #982022; text-decoration: none; }
-html body.frontpage .container main #intro #news h3 a:hover, html body.frontpage .container main #intro #announcements h3 a:hover { color: #231f20; }
-html body.frontpage .container main #intro #news article, html body.frontpage .container main #intro #announcements article { margin-bottom: 3%; border-bottom: 1px solid #f1f1f1; padding-bottom: 1.5%; margin-bottom: 1.5%; }
-html body.frontpage .container main #intro #news article figure img, html body.frontpage .container main #intro #announcements article figure img { width: auto; }
-html body.frontpage .container main #intro #news article figure figcaption, html body.frontpage .container main #intro #announcements article figure figcaption { padding: 0.3125em; font-size: smaller; }
-html body.frontpage .container main #intro #news article figure figcaption h1, html body.frontpage .container main #intro #news article figure figcaption h2, html body.frontpage .container main #intro #news article figure figcaption h3, html body.frontpage .container main #intro #news article figure figcaption h4, html body.frontpage .container main #intro #news article figure figcaption h5, html body.frontpage .container main #intro #news article figure figcaption h6, html body.frontpage .container main #intro #announcements article figure figcaption h1, html body.frontpage .container main #intro #announcements article figure figcaption h2, html body.frontpage .container main #intro #announcements article figure figcaption h3, html body.frontpage .container main #intro #announcements article figure figcaption h4, html body.frontpage .container main #intro #announcements article figure figcaption h5, html body.frontpage .container main #intro #announcements article figure figcaption h6 { margin: 0; padding: 0; }
-@media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.frontpage .container main #intro #news article figure.people, html body.frontpage .container main #intro #news article figure.document, html body.frontpage .container main #intro #news article figure.company, html body.frontpage .container main #intro #announcements article figure.people, html body.frontpage .container main #intro #announcements article figure.document, html body.frontpage .container main #intro #announcements article figure.company { width: 100%; max-width: 100%; float: left; }
-  html body.frontpage .container main #intro #news article figure.people img, html body.frontpage .container main #intro #news article figure.document img, html body.frontpage .container main #intro #news article figure.company img, html body.frontpage .container main #intro #announcements article figure.people img, html body.frontpage .container main #intro #announcements article figure.document img, html body.frontpage .container main #intro #announcements article figure.company img { float: left; width: 2.5em; margin-right: 1.25em; }
-  html body.frontpage .container main #intro #news article figure.people figcaption, html body.frontpage .container main #intro #news article figure.document figcaption, html body.frontpage .container main #intro #news article figure.company figcaption, html body.frontpage .container main #intro #announcements article figure.people figcaption, html body.frontpage .container main #intro #announcements article figure.document figcaption, html body.frontpage .container main #intro #announcements article figure.company figcaption { padding: 0; } }
-@media only screen and (min-width: 80em) { html body.frontpage .container main #intro #news article figure, html body.frontpage .container main #intro #announcements article figure { /* Fit figcpation to image width */ }
-  html body.frontpage .container main #intro #news article figure.left, html body.frontpage .container main #intro #news article figure.right, html body.frontpage .container main #intro #news article figure.person, html body.frontpage .container main #intro #news article figure.document, html body.frontpage .container main #intro #news article figure.company, html body.frontpage .container main #intro #news article figure.people, html body.frontpage .container main #intro #announcements article figure.left, html body.frontpage .container main #intro #announcements article figure.right, html body.frontpage .container main #intro #announcements article figure.person, html body.frontpage .container main #intro #announcements article figure.document, html body.frontpage .container main #intro #announcements article figure.company, html body.frontpage .container main #intro #announcements article figure.people { display: table; }
-  html body.frontpage .container main #intro #news article figure.left img, html body.frontpage .container main #intro #news article figure.right img, html body.frontpage .container main #intro #news article figure.person img, html body.frontpage .container main #intro #news article figure.document img, html body.frontpage .container main #intro #news article figure.company img, html body.frontpage .container main #intro #news article figure.people img, html body.frontpage .container main #intro #announcements article figure.left img, html body.frontpage .container main #intro #announcements article figure.right img, html body.frontpage .container main #intro #announcements article figure.person img, html body.frontpage .container main #intro #announcements article figure.document img, html body.frontpage .container main #intro #announcements article figure.company img, html body.frontpage .container main #intro #announcements article figure.people img { display: block; max-width: 100%; }
-  html body.frontpage .container main #intro #news article figure.left figcaption, html body.frontpage .container main #intro #news article figure.right figcaption, html body.frontpage .container main #intro #news article figure.person figcaption, html body.frontpage .container main #intro #news article figure.document figcaption, html body.frontpage .container main #intro #news article figure.company figcaption, html body.frontpage .container main #intro #news article figure.people figcaption, html body.frontpage .container main #intro #announcements article figure.left figcaption, html body.frontpage .container main #intro #announcements article figure.right figcaption, html body.frontpage .container main #intro #announcements article figure.person figcaption, html body.frontpage .container main #intro #announcements article figure.document figcaption, html body.frontpage .container main #intro #announcements article figure.company figcaption, html body.frontpage .container main #intro #announcements article figure.people figcaption { display: table-caption; caption-side: bottom; margin-top: 0.3125em; }
-  html body.frontpage .container main #intro #news article figure.left + p, html body.frontpage .container main #intro #news article figure.right + p, html body.frontpage .container main #intro #news article figure.person + p, html body.frontpage .container main #intro #news article figure.document + p, html body.frontpage .container main #intro #news article figure.company + p, html body.frontpage .container main #intro #news article figure.people + p, html body.frontpage .container main #intro #announcements article figure.left + p, html body.frontpage .container main #intro #announcements article figure.right + p, html body.frontpage .container main #intro #announcements article figure.person + p, html body.frontpage .container main #intro #announcements article figure.document + p, html body.frontpage .container main #intro #announcements article figure.company + p, html body.frontpage .container main #intro #announcements article figure.people + p { margin-top: 1.25em; }
-  html body.frontpage .container main #intro #news article figure.left, html body.frontpage .container main #intro #announcements article figure.left { float: left; margin: 0.625em 2.5em 1.25em 0; }
-  html body.frontpage .container main #intro #news article figure.right, html body.frontpage .container main #intro #announcements article figure.right { float: right; margin: 0.625em 0 1.25em 2.5em; } }
-html body.frontpage .container main #intro #news article figure, html body.frontpage .container main #intro #announcements article figure { display: none; }
-html body.frontpage .container main #intro #news article figcaption, html body.frontpage .container main #intro #announcements article figcaption { display: none; }
-html body.frontpage .container main #intro #news article .excerpt, html body.frontpage .container main #intro #announcements article .excerpt { display: none; }
-html body.frontpage .container main #intro #news article .content, html body.frontpage .container main #intro #announcements article .content { display: none; }
-html body.frontpage .container main #intro #news article .meta .category, html body.frontpage .container main #intro #announcements article .meta .category { display: none; }
-html body.frontpage .container main #intro #news article .meta .date, html body.frontpage .container main #intro #announcements article .meta .date { display: none; }
-html body.frontpage .container main #intro #news article .meta, html body.frontpage .container main #intro #announcements article .meta { display: none; }
-html body.frontpage .container main #intro #news article .excerpt, html body.frontpage .container main #intro #announcements article .excerpt { line-height: 1.25; color: #cccccc; color: #4c4345; text-align: justify; }
-html body.frontpage .container main #intro #news article .meta, html body.frontpage .container main #intro #announcements article .meta { margin-top: 0.625em; }
-html body.frontpage .container main #intro #news article .meta > h3, html body.frontpage .container main #intro #announcements article .meta > h3 { display: none; }
-html body.frontpage .container main #intro #news article .meta ul, html body.frontpage .container main #intro #announcements article .meta ul { margin: 0; }
-html body.frontpage .container main #intro #news article .meta ul li, html body.frontpage .container main #intro #announcements article .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.frontpage .container main #intro #news article .meta ul li:before, html body.frontpage .container main #intro #announcements article .meta ul li:before { content: ''; }
-html body.frontpage .container main #intro #news article .meta ul li, html body.frontpage .container main #intro #announcements article .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
-html body.frontpage .container main #intro #news article .meta ul li:last-of-type, html body.frontpage .container main #intro #announcements article .meta ul li:last-of-type { margin-right: 0; }
-html body.frontpage .container main #intro #news article .meta .date, html body.frontpage .container main #intro #announcements article .meta .date { font-size: small; color: #cccccc; font-style: normal; }
-html body.frontpage .container main #intro #news article .meta .category, html body.frontpage .container main #intro #announcements article .meta .category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
-html body.frontpage .container main #intro #news article .meta .category a, html body.frontpage .container main #intro #announcements article .meta .category a { color: #982022; text-decoration: none; }
-html body.frontpage .container main #intro #news article .meta .category a:hover, html body.frontpage .container main #intro #announcements article .meta .category a:hover { color: #231f20; }
-html body.frontpage .container main #intro #news article .meta .authors, html body.frontpage .container main #intro #announcements article .meta .authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
-html body.frontpage .container main #intro #news article .meta .authors ul li:after, html body.frontpage .container main #intro #announcements article .meta .authors ul li:after { content: ','; }
-html body.frontpage .container main #intro #news article .meta .authors ul li:first-of-type, html body.frontpage .container main #intro #announcements article .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
-html body.frontpage .container main #intro #news article .meta .authors ul li:first-of-type:after, html body.frontpage .container main #intro #news article .meta .authors ul li:last-of-type:after, html body.frontpage .container main #intro #announcements article .meta .authors ul li:first-of-type:after, html body.frontpage .container main #intro #announcements article .meta .authors ul li:last-of-type:after { content: ''; }
-html body.frontpage .container main #intro #news article .meta .print, html body.frontpage .container main #intro #announcements article .meta .print { cursor: pointer; width: 1.25em; display: none; }
-html body.frontpage .container main #intro #news article .share-buttons ul li, html body.frontpage .container main #intro #announcements article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.frontpage .container main #intro #news article .share-buttons ul li:before, html body.frontpage .container main #intro #announcements article .share-buttons ul li:before { content: ''; }
-html body.frontpage .container main #intro #news article .share-buttons ul li, html body.frontpage .container main #intro #announcements article .share-buttons ul li { display: inline-block; float: left; margin-right: 1.25em; }
-html body.frontpage .container main #intro #news article .share-buttons ul li:last-of-type, html body.frontpage .container main #intro #announcements article .share-buttons ul li:last-of-type { margin-right: 0; }
-html body.frontpage .container main #intro #news article .share-buttons ul li .box, html body.frontpage .container main #intro #announcements article .share-buttons ul li .box { width: 100%; max-width: 100%; float: left; width: 3.125em; }
-html body.frontpage .container main #intro #news article .share-buttons ul li .box .count, html body.frontpage .container main #intro #announcements article .share-buttons ul li .box .count { float: right; background: #231f20; color: white; font-size: small; padding: 0 0.3125em; }
-html body.frontpage .container main #intro #news article .share-buttons ul li .box .count a, html body.frontpage .container main #intro #announcements article .share-buttons ul li .box .count a { color: white; text-decoration: none; }
-html body.frontpage .container main #intro #news article .share-buttons ul li .box .count a:hover, html body.frontpage .container main #intro #announcements article .share-buttons ul li .box .count a:hover { color: white; }
-html body.frontpage .container main #intro #news article .share-buttons ul li .box .share img, html body.frontpage .container main #intro #announcements article .share-buttons ul li .box .share img { width: 30%; }
-html body.frontpage .container main #intro #news article .content a, html body.frontpage .container main #intro #announcements article .content a { color: #982022; text-decoration: none; }
-html body.frontpage .container main #intro #news article .content a:hover, html body.frontpage .container main #intro #announcements article .content a:hover { color: #982022; }
-html body.frontpage .container main #intro #news article h1, html body.frontpage .container main #intro #announcements article h1 { font-size: medium; }
+@media only screen and (max-width: 47.999em) { html body.frontpage .container main #intro #slider nav ol { font-size: small; } }
+html body.frontpage .container main #intro aside { display: none; }
 html body.frontpage .container main #investigations h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; }
 html body.frontpage .container main #investigations h3 a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #investigations h3 a:hover { color: #231f20; }
@@ -1176,9 +1108,6 @@ html body.category main #articles aside article .share-buttons ul li .box .count
 html body.category main #articles aside article .share-buttons ul li .box .share img { width: 30%; }
 html body.category main #articles aside article .content a { color: #982022; text-decoration: none; }
 html body.category main #articles aside article .content a:hover { color: #982022; }
-html body.category main #articles aside article figure, html body.category main #articles aside article h1, html body.category main #articles aside article .excerpt, html body.category main #articles aside nav { width: 48.75%; margin-right: 2.5%; float: left; }
-html body.category main #articles aside article h1, html body.category main #articles aside article .excerpt, html body.category main #articles aside nav { margin-right: 0; padding: 0.625em; width: calc(48.75% - 1.25em); padding-left: 0; padding-right: 0; }
-html body.category main #articles aside nav { left: 51.25%; }
 html body.category main #articles aside article.category-first .excerpt { border-bottom: 1px solid #f1f1f1; padding-bottom: 1.25em; }
 html body.category main #articles article.thumb { margin-bottom: 3%; margin-bottom: 1.5%; }
 @media only screen and (max-width: 29.999em) { html body.category main #articles article.thumb { width: 100%; margin-right: 0; float: left; } }
@@ -1262,7 +1191,7 @@ html body.category main #articles nav ol li.active a a:hover, html body.category
 html body.category main #articles nav ol li { background: #f1f1f1; color: #231f20; -moz-border-radius: 1.25em; -webkit-border-radius: 1.25em; border-radius: 1.25em; }
 html body.category main #articles nav ol li a { color: #231f20; text-decoration: none; }
 html body.category main #articles nav ol li a:hover { color: white; }
-@media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.category main #articles nav ol { font-size: small; } }
+@media only screen and (max-width: 47.999em) { html body.category main #articles nav ol { font-size: small; } }
 html body.category main aside { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; margin-bottom: 1.5%; }
 html body.category main aside section { margin-top: 0.625em; background: #f1f1f1; }
 @media only screen and (max-width: 29.999em) { html body.category main aside section { width: 100%; margin-right: 0; float: left; } }
@@ -1452,9 +1381,6 @@ html body.tag main #articles aside article .share-buttons ul li .box .count a:ho
 html body.tag main #articles aside article .share-buttons ul li .box .share img { width: 30%; }
 html body.tag main #articles aside article .content a { color: #982022; text-decoration: none; }
 html body.tag main #articles aside article .content a:hover { color: #982022; }
-html body.tag main #articles aside article figure, html body.tag main #articles aside article h1, html body.tag main #articles aside article .excerpt, html body.tag main #articles aside nav { width: 48.75%; margin-right: 2.5%; float: left; }
-html body.tag main #articles aside article h1, html body.tag main #articles aside article .excerpt, html body.tag main #articles aside nav { margin-right: 0; padding: 0.625em; width: calc(48.75% - 1.25em); padding-left: 0; padding-right: 0; }
-html body.tag main #articles aside nav { left: 51.25%; }
 html body.tag main #articles aside article.category-first .excerpt { border-bottom: 1px solid #f1f1f1; padding-bottom: 1.25em; }
 html body.tag main #articles article.thumb { margin-bottom: 3%; margin-bottom: 1.5%; }
 @media only screen and (max-width: 29.999em) { html body.tag main #articles article.thumb { width: 100%; margin-right: 0; float: left; } }
@@ -1538,7 +1464,7 @@ html body.tag main #articles nav ol li.active a a:hover, html body.tag main #art
 html body.tag main #articles nav ol li { background: #f1f1f1; color: #231f20; -moz-border-radius: 1.25em; -webkit-border-radius: 1.25em; border-radius: 1.25em; }
 html body.tag main #articles nav ol li a { color: #231f20; text-decoration: none; }
 html body.tag main #articles nav ol li a:hover { color: white; }
-@media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.tag main #articles nav ol { font-size: small; } }
+@media only screen and (max-width: 47.999em) { html body.tag main #articles nav ol { font-size: small; } }
 html body.tag main aside { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; margin-bottom: 1.5%; }
 html body.tag main aside section { margin-top: 0.625em; background: #f1f1f1; }
 @media only screen and (max-width: 29.999em) { html body.tag main aside section { width: 100%; margin-right: 0; float: left; } }
@@ -1757,7 +1683,7 @@ html body.projects main #articles nav ol li.active a a:hover, html body.projects
 html body.projects main #articles nav ol li { background: #f1f1f1; color: #231f20; -moz-border-radius: 1.25em; -webkit-border-radius: 1.25em; border-radius: 1.25em; }
 html body.projects main #articles nav ol li a { color: #231f20; text-decoration: none; }
 html body.projects main #articles nav ol li a:hover { color: white; }
-@media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.projects main #articles nav ol { font-size: small; } }
+@media only screen and (max-width: 47.999em) { html body.projects main #articles nav ol { font-size: small; } }
 html body.resources main #articles .title { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-bottom: 0.625em; }
 html body.resources main #articles .title a { color: #982022; text-decoration: none; }
 html body.resources main #articles .title a:hover { color: #231f20; }
@@ -1840,7 +1766,7 @@ html body.resources main #articles nav ol li.active a a:hover, html body.resourc
 html body.resources main #articles nav ol li { background: #f1f1f1; color: #231f20; -moz-border-radius: 1.25em; -webkit-border-radius: 1.25em; border-radius: 1.25em; }
 html body.resources main #articles nav ol li a { color: #231f20; text-decoration: none; }
 html body.resources main #articles nav ol li a:hover { color: white; }
-@media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.resources main #articles nav ol { font-size: small; } }
+@media only screen and (max-width: 47.999em) { html body.resources main #articles nav ol { font-size: small; } }
 html body.resources main #articles #tools article #meta { display: none; }
 html body.resources main #documents > h3 { display: block; }
 html body.resources main #documents article { border-top: 1px solid; }
@@ -1911,9 +1837,6 @@ html body.blog main #articles aside article .share-buttons ul li .box .count a:h
 html body.blog main #articles aside article .share-buttons ul li .box .share img { width: 30%; }
 html body.blog main #articles aside article .content a { color: #982022; text-decoration: none; }
 html body.blog main #articles aside article .content a:hover { color: #982022; }
-html body.blog main #articles aside article figure, html body.blog main #articles aside article h1, html body.blog main #articles aside article .excerpt, html body.blog main #articles aside nav { width: 48.75%; margin-right: 2.5%; float: left; }
-html body.blog main #articles aside article h1, html body.blog main #articles aside article .excerpt, html body.blog main #articles aside nav { margin-right: 0; padding: 0.625em; width: calc(48.75% - 1.25em); padding-left: 0; padding-right: 0; }
-html body.blog main #articles aside nav { left: 51.25%; }
 html body.blog main #articles aside article.category-first .excerpt { border-bottom: 1px solid #f1f1f1; padding-bottom: 1.25em; }
 html body.blog main #articles article.thumb { margin-bottom: 3%; margin-bottom: 1.5%; }
 @media only screen and (max-width: 29.999em) { html body.blog main #articles article.thumb { width: 100%; margin-right: 0; float: left; } }
@@ -1997,7 +1920,7 @@ html body.blog main #articles nav ol li.active a a:hover, html body.blog main #a
 html body.blog main #articles nav ol li { background: #f1f1f1; color: #231f20; -moz-border-radius: 1.25em; -webkit-border-radius: 1.25em; border-radius: 1.25em; }
 html body.blog main #articles nav ol li a { color: #231f20; text-decoration: none; }
 html body.blog main #articles nav ol li a:hover { color: white; }
-@media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.blog main #articles nav ol { font-size: small; } }
+@media only screen and (max-width: 47.999em) { html body.blog main #articles nav ol { font-size: small; } }
 html body.blog main aside { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; margin-bottom: 1.5%; }
 html body.blog main aside section { margin-top: 0.625em; background: #f1f1f1; }
 @media only screen and (max-width: 29.999em) { html body.blog main aside section { width: 100%; margin-right: 0; float: left; } }
@@ -2181,9 +2104,6 @@ html body.blog main #articles article .share-buttons ul li .box .count a:hover {
 html body.blog main #articles article .share-buttons ul li .box .share img { width: 30%; }
 html body.blog main #articles article .content a { color: #982022; text-decoration: none; }
 html body.blog main #articles article .content a:hover { color: #982022; }
-html body.blog main #articles article figure, html body.blog main #articles article h1, html body.blog main #articles article .excerpt, html body.blog main #articles nav { width: 48.75%; margin-right: 2.5%; float: left; }
-html body.blog main #articles article h1, html body.blog main #articles article .excerpt, html body.blog main #articles nav { margin-right: 0; padding: 0.625em; width: calc(48.75% - 1.25em); padding-left: 0; padding-right: 0; }
-html body.blog main #articles nav { left: 51.25%; }
 html body.blog main #articles article.thumb { width: 100%; max-width: 100%; float: left; }
 html body.blog main #articles article.thumb h1 { font-size: 20px; font-size: 1.25rem; font-weight: bold; }
 html body.blog main #articles article.thumb .excerpt { display: block; border-bottom: 1px solid #f1f1f1; padding-bottom: 2.5em; }
@@ -2243,9 +2163,6 @@ html body.author main #articles aside article .share-buttons ul li .box .count a
 html body.author main #articles aside article .share-buttons ul li .box .share img { width: 30%; }
 html body.author main #articles aside article .content a { color: #982022; text-decoration: none; }
 html body.author main #articles aside article .content a:hover { color: #982022; }
-html body.author main #articles aside article figure, html body.author main #articles aside article h1, html body.author main #articles aside article .excerpt, html body.author main #articles aside nav { width: 48.75%; margin-right: 2.5%; float: left; }
-html body.author main #articles aside article h1, html body.author main #articles aside article .excerpt, html body.author main #articles aside nav { margin-right: 0; padding: 0.625em; width: calc(48.75% - 1.25em); padding-left: 0; padding-right: 0; }
-html body.author main #articles aside nav { left: 51.25%; }
 html body.author main #articles aside article.category-first .excerpt { border-bottom: 1px solid #f1f1f1; padding-bottom: 1.25em; }
 html body.author main #articles article.thumb { margin-bottom: 3%; margin-bottom: 1.5%; }
 @media only screen and (max-width: 29.999em) { html body.author main #articles article.thumb { width: 100%; margin-right: 0; float: left; } }
@@ -2329,7 +2246,7 @@ html body.author main #articles nav ol li.active a a:hover, html body.author mai
 html body.author main #articles nav ol li { background: #f1f1f1; color: #231f20; -moz-border-radius: 1.25em; -webkit-border-radius: 1.25em; border-radius: 1.25em; }
 html body.author main #articles nav ol li a { color: #231f20; text-decoration: none; }
 html body.author main #articles nav ol li a:hover { color: white; }
-@media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.author main #articles nav ol { font-size: small; } }
+@media only screen and (max-width: 47.999em) { html body.author main #articles nav ol { font-size: small; } }
 html body.author main aside { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; margin-bottom: 1.5%; }
 html body.author main aside section { margin-top: 0.625em; background: #f1f1f1; }
 @media only screen and (max-width: 29.999em) { html body.author main aside section { width: 100%; margin-right: 0; float: left; } }
@@ -2516,9 +2433,6 @@ html body.author main #articles article .share-buttons ul li .box .count a:hover
 html body.author main #articles article .share-buttons ul li .box .share img { width: 30%; }
 html body.author main #articles article .content a { color: #982022; text-decoration: none; }
 html body.author main #articles article .content a:hover { color: #982022; }
-html body.author main #articles article figure, html body.author main #articles article h1, html body.author main #articles article .excerpt, html body.author main #articles nav { width: 48.75%; margin-right: 2.5%; float: left; }
-html body.author main #articles article h1, html body.author main #articles article .excerpt, html body.author main #articles nav { margin-right: 0; padding: 0.625em; width: calc(48.75% - 1.25em); padding-left: 0; padding-right: 0; }
-html body.author main #articles nav { left: 51.25%; }
 html body.author main #articles article.thumb { width: 100%; max-width: 100%; float: left; }
 html body.author main #articles article.thumb h1 { font-size: 20px; font-size: 1.25rem; font-weight: bold; }
 html body.author main #articles article.thumb .excerpt { display: block; border-bottom: 1px solid #f1f1f1; padding-bottom: 2.5em; }

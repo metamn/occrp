@@ -165,10 +165,51 @@
         @include border-radius($pad);
       }
       
-      @include small-screen {
+      @include below-tablet {
         font-size: small;
       }
     }
   }
 }
 
+
+
+/* A slider
+*/
+@mixin responsive-slider {
+  @include article-thumb-left;
+  @include hide-show-mobile-elements;
+  
+  
+  /* Positioning
+  */
+  position: relative;
+  height: 20.4em;
+  overflow: hidden;
+  
+  article {
+    position: absolute;
+  }
+  
+  nav {
+    position: absolute;
+    bottom: $pad/2;
+  }
+  
+  @include mobile {
+    height: auto;
+    
+    article {
+      position: relative;
+      
+      nav {
+        position: relative;
+        left: 0;
+        margin-top: 0;
+        height: 0;
+        top: -$pad*2;
+        opacity: .7;
+      }
+    }
+  }
+}
