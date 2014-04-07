@@ -53,6 +53,10 @@
   } @elseif ($type == menubar-mobile) {
     @include font(navigation);
     font-size: 60%;
+    
+    @include tablet {
+      font-size: small;
+    }
   }
 }
 

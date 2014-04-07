@@ -110,7 +110,7 @@
   
   @include small-screen-and-up {
     ul {
-      @include list-inline;
+      @include list-inline($pad/4);
     }
   }
 }
