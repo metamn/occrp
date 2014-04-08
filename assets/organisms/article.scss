@@ -1,0 +1,217 @@
+
+
+
+
+
+/* Styling article thumbs
+  - controls how an article thumb is displayed
+*/
+@mixin article-style($style) {
+  @if ($style == blog) {
+    @include article(null, null, title, figure, null, null);
+    @include article-thumb-left($container-margin);
+    @include color(invert);
+    
+    h1 {
+      font-weight: normal;
+      @include font-body;
+      letter-spacing: $letter-spacing-uppercase;
+    }
+  
+    
+  
+  } @elseif ($style == projects) {
+    @include article(null, null, title, figure, null, null);
+    
+    h1 {
+      @include font(thumb-title);
+    }
+    
+  
+  
+  } @elseif ($style == products) {
+    @include article(null, null, null, figure);
+    
+    
+  
+  } @elseif ($style == investigations) {
+    @include article(null, date, title, figure, null, excerpt, null);
+    @include responsive-height(30em, 30em);
+    border-top: $border;
+    padding-top: $pad;
+    
+    .excerpt {
+      margin-top: $pad/2;
+    }
+  
+  
+  } @elseif ($style == news) {
+    @include article(null, null, title);
+    @include border-thin;
+    
+    h1 {
+      @include font(thumb-title);
+    }
+
+    
+  } @elseif ($style == slider) {
+    article {
+      @include block;
+      @include article(null, null, title, figure, null, excerpt);
+    }
+  } 
+}
+
+
+
+/* An article
+  - displays mostly article thumbs
+  - this mixin controls what is diplayed in an article
+*/
+@mixin article($category, $date, $title, $figure: null, $figcaption: null, $excerpt: null, $body: null) {
+  @include figure;      
+  
+  @if ($title == null) {
+    h1 {
+      display: none ;
+    }
+  } @else {
+    h1 {
+      display: block;
+    }
+  }
+  
+  @if ($figure == null) {
+    figure {
+      display: none;
+    }
+  } @else {
+    figure {
+      display: block;
+    }
+  }
+  
+  @if ($figcaption == null) {
+    figcaption {
+      display: none;
+    }
+  }
+  
+  @if ($excerpt == null) {
+    .excerpt {
+      display: none;
+    }
+  }
+  
+  @if ($body == null) {
+    .content {
+      display: none;
+    }
+  }
+  
+  @if ($category == null) {
+    .meta .category {
+      display: none;
+    }
+  }
+  
+  @if ($date == null) {
+    .meta .date {
+      display: none;
+    }
+  }
+  
+  @if ($category == null) and ($date == null) {
+    .meta {
+      display: none;
+    }
+  }
+  
+  .excerpt {
+    @include font(excerpt);
+    color: lighten($color, 15%);
+    text-align: justify;
+  }
+  
+  .meta {
+    margin-top: $pad/2;
+    @include hide-title;
+    
+    ul {
+      @include list-normal;
+      @include list-inline($pad/2);
+      margin: 0;
+    }
+    
+    .date {
+      @include font(date);
+    }
+    
+    .category {
+      @include font(navigation);
+      @include color(highlight);
+    }
+    
+    .authors {
+      @include font(author);
+      
+      ul {
+        li {
+          &:after {
+            content: ',';
+          }
+          
+          &:first-of-type {
+            @include font(italic);
+          }
+          
+          &:first-of-type, &:last-of-type {
+            &:after {
+              content: '';
+            }
+          }
+        }
+      }
+    }
+    
+    .print {
+      cursor: pointer;
+      width: $pad;
+      display: none;
+    }
+  }
+  
+  .share-buttons {
+    ul {
+      @include list-normal;
+      @include list-inline($pad);
+      
+      li {
+        .box {
+          @include block;
+          width: $pad*3 - $pad/2;
+          
+          .count {
+            float: right;
+            @include color(invert);
+            font-size: small;
+            padding: 0 $pad/4
+          }
+          
+          .share {
+            img {
+              width: 30%;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .content {
+    @include link($highlight);
+  }
+  
+}
+
+

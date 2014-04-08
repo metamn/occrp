@@ -1,11 +1,11 @@
 /* An article with thumb left, the rest right
 */
 @mixin article-thumb-left($gutter) {
-  article figure, article h1, article .excerpt {
+  figure, h1, .excerpt {
     @include col-by-gutter(2, $gutter);
   }
   
-  article h1, article .excerpt {
+  h1, .excerpt {
     margin-right: 0;
   }
 }

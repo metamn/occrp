@@ -14,7 +14,6 @@
   
   @include small-screen {
     @include block;
-    margin-bottom: $flexible-grid-margin;
   }
   
   article.single {
@@ -76,8 +75,6 @@
 */
 @mixin blog {
   @include article-style(slider);
-  margin-bottom: $flexible-grid-margin;
-  
   article.thumb {
     @include block;
     
@@ -167,7 +164,6 @@
     }
     
     h1 {
-      margin-bottom: $flexible-grid-margin / 2;
     }
     
     ul {
@@ -187,8 +183,6 @@
   }
   
   @include small-screen {
-    margin-top: $flexible-grid-margin;
-    
     article {
       border-color: $light-grey;
       
@@ -275,7 +269,6 @@
   
   section {
     @include block;
-    margin-bottom: $flexible-grid-margin;
     
     &#projects {
       @include article-style(title-right);
@@ -306,7 +299,6 @@
   aside {
     @include block;
     @include article-style(slider);
-    margin-bottom: $flexible-grid-margin;
     
     article.category-first {
       .excerpt {
@@ -387,7 +379,6 @@
 /* Most read
 */
 @mixin most-read {
-  margin-bottom: $flexible-grid-margin / 2;
   
   section {
     @include news;
@@ -421,17 +412,9 @@
     @include font(section-title);
   }
   
-  @include article-style(title-right);
   article {
     @include responsive-grid(3);
-    @include color(invert);
-    margin-bottom: $flexible-grid-margin/2;
-    
-    h1 {
-      font-weight: normal;
-      @include font-body;
-      letter-spacing: $letter-spacing-uppercase;
-    }
+    @include article-style(blog);
   }
 }
 
@@ -454,9 +437,9 @@
 /* Products
 */
 @mixin products {
-  @include padding;
-  background: $light-grey;
-  margin-bottom: $flexible-grid-margin / 2;
+  h3 {
+    @include font(section-title);
+  }
   
   article {
     @include responsive-grid(4);
@@ -477,6 +460,7 @@
     @include article-style(investigations);
   }
 }
+
 
 
 /* The news
@@ -515,8 +499,6 @@
 }
 
 
-
-
 /* The Slider with the news on frontpage
 */
 @mixin frontpage-intro {
@@ -543,6 +525,7 @@
     }
   }
 }
+
 
 
 

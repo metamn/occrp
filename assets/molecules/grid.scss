@@ -92,6 +92,20 @@
 
 
 
+/* Responsive grids should have fixed heights to align columns left without flaw
+*/
+@mixin responsive-height($height-1, $height-2) {
+  @include small-screen {
+    height: $height-1;
+  }
+  
+  @include small-screen-and-up {
+    height: $height-2;
+  }
+}
+
+
+
 /* A responsive grid
 */
 @mixin responsive-grid($how-many, $maximum : 10) {
@@ -126,7 +140,9 @@
 /* Returns the width of a column in a grid
 */
 @function col-width($how-many) {
-  @if ($how-many == 3) {
+  @if ($how-many == 2) {
+    @return 47.5%;
+  } @elseif ($how-many == 3) {
     @return 31.5%;
   } @else {
     @return 90% / $how-many;
@@ -136,7 +152,9 @@
 /* Returns the margin of a column in a grid
 */
 @function col-gutter($how-many) {
-  @if ($how-many == 3) {
+  @if ($how-many == 2) {
+    @return 2.5%;
+  } @elseif ($how-many == 3) {
     @return 2.5%;
   } @else {
     @return 10% / ($how-many - 1);
