@@ -511,8 +511,8 @@
 */
 @mixin slider {
   @include article-style(slider);
-  @include responsive-slider;
   @include pagination;
+  @include responsive-slider;
 }
 
 

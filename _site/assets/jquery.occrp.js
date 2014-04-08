@@ -3,7 +3,6 @@ $(document).ready(function() {
 
   // Slider
   // - on mobiles the navigator / paginator is present inside every article
-  /*
   $('.frontpage #slider article').hide();
   $('.frontpage #slider article').first().show();
   $('.frontpage #slider nav ol li').removeClass('active');
@@ -12,17 +11,18 @@ $(document).ready(function() {
   $('.frontpage #slider nav ol li').click(function() {
     var index = $(this).index();
     var article = $('.frontpage #slider article:eq(' + index + ')');
-    $('.frontpage #slider article').fadeOut('slow');
-    article.fadeIn('slow');
     
     $('.frontpage #slider nav ol li').removeClass('active');
     $(this).addClass('active');
     // for mobiles
     article.find('nav ol li:eq(' + index + ')').addClass('active');
     
+    $('.frontpage #slider article').hide();
+    article.show();
+    
     return false;
   });
-  */
+  
   
   
   

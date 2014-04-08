@@ -22,3 +22,20 @@
     }
   }
 }
+
+
+/* Responsive slider positioning of elements
+*/
+@mixin responsive-slider-grid {
+  position: relative;
+  overflow: hidden;
+  
+  article {
+    position: absolute;
+  }
+  
+  nav {
+    position: absolute;
+    bottom: $pad/2;
+  }
+}
