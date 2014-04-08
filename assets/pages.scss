@@ -51,15 +51,7 @@ html {
       .container {  
         main {
           #intro {
-            margin-bottom: $pad;
-          
-            #slider {
-              @include slider;
-            }
-            
-            aside {
-              @include news-tickers;
-            }
+            @include frontpage-intro;
           }
           
           #investigations {

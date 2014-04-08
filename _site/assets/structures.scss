@@ -499,9 +499,8 @@
 /* The news and announcements on the frontpage
 */
 @mixin news-tickers {
-  clear: both;
   section {
-    display: none;
+    @include news;
   }
 }
 
@@ -515,6 +514,35 @@
   @include responsive-slider;
 }
 
+
+
+
+/* The Slider with the news on frontpage
+*/
+@mixin frontpage-intro {
+  #slider {
+    @include slider;
+  }
+  
+  aside {
+    @include news-tickers;
+  }
+  
+  @include small-screen-and-up {
+    #slider {
+      @include col-nm(2, 3);
+    }
+    
+    aside {
+      @include grid(3, 1);
+      margin-right: 0 !important;
+      
+      section {
+        @include block;
+      }
+    }
+  }
+}
 
 
 
