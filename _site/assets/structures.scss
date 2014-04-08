@@ -379,25 +379,12 @@
 /* Most read
 */
 @mixin most-read {
-  
   section {
     @include news;
     
-    background: $light-grey;
-    
     article {
-      padding-left: $pad/2;
-      padding-right: $pad/2;
-      border-color: $background;
-      
-      &:last-of-type {
-        border: none;
-      }
-      
       h1 {
         font-weight: normal;
-        @include font-body;
-        
       }
     }
   }
@@ -467,7 +454,6 @@
 */
 @mixin news {
   @include responsive-grid(3);
-  margin-top: $pad/2;
   
   h3 {
     @include font(section-title);
@@ -485,6 +471,7 @@
 @mixin news-tickers {
   section {
     @include news;
+    margin-bottom: $margin;
   }
 }
 
@@ -496,6 +483,7 @@
   @include article-style(slider);
   @include pagination;
   @include responsive-slider;
+  margin-bottom: $margin;
 }
 
 
@@ -532,6 +520,8 @@
 /* The Header
 */
 @mixin header($type: normal) {
+  margin-bottom: $margin;
+  
   .logo {
     @include logo($type);
   }

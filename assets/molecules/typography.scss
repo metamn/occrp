@@ -6,7 +6,7 @@
     @include headings;
     
   } @elseif ($type == excerpt) {
-    @include line-height(body);
+    @include line-height(excerpt);
     color: $grey;
   
   } @elseif ($type == navigation) {
@@ -21,7 +21,6 @@
     
     @include color(highlight);
     display: block;
-    margin-bottom: $pad/2;
   
   } @elseif ($type == date) {
     font-size: small;
@@ -55,6 +54,18 @@
     font-size: 60%;
     
     @include tablet {
+      font-size: small;
+    }
+  
+  
+  } @elseif ($type == blog-title) {
+    font-weight: normal;
+    font-size: medium;
+    @include font-body;
+    letter-spacing: $letter-spacing-uppercase;
+    margin-top: $margin/2;
+    
+    @include below-small-screen {
       font-size: small;
     }
   }
@@ -147,6 +158,9 @@
   
   } @elseif ($type == headings) {
     line-height: $line-height-headings;
+    
+  } @elseif ($type == excerpt) {
+    line-height: $line-height-excerpt;
   }
 }
 

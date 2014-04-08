@@ -10,10 +10,6 @@ html {
         @include hide-title;
       }
       
-      main {
-        margin: $pad 0 0; 
-      }
-      
       #header {
         @include header;
         

@@ -11,43 +11,36 @@
     @include article(null, null, title, figure, null, null);
     @include article-thumb-left($container-margin);
     @include color(invert);
+    margin-bottom: $margin/2;
     
     h1 {
-      font-weight: normal;
-      @include font-body;
-      letter-spacing: $letter-spacing-uppercase;
+      @include font(blog-title);
     }
   
-    
   
   } @elseif ($style == projects) {
     @include article(null, null, title, figure, null, null);
+    margin-bottom: $margin/2;
     
     h1 {
       @include font(thumb-title);
-    }
-    
+    }    
   
   
   } @elseif ($style == products) {
     @include article(null, null, null, figure);
-    
+    margin-bottom: $margin/2;
     
   
   } @elseif ($style == investigations) {
     @include article(null, date, title, figure, null, excerpt, null);
     @include responsive-height(30em, 30em);
-    border-top: $border;
-    padding-top: $pad;
+    @include separator(border-thick);
     
-    .excerpt {
-      margin-top: $pad/2;
-    }
-  
   
   } @elseif ($style == news) {
     @include article(null, null, title);
-    @include border-thin;
+    @include separator(border-thin);
     
     h1 {
       @include font(thumb-title);
@@ -58,6 +51,8 @@
     article {
       @include block;
       @include article(null, null, title, figure, null, excerpt);
+      
+      @include color(slider);
     }
   } 
 }
@@ -129,12 +124,10 @@
   
   .excerpt {
     @include font(excerpt);
-    color: lighten($color, 15%);
-    text-align: justify;
+    margin: $margin/2 0 $margin;
   }
   
   .meta {
-    margin-top: $pad/2;
     @include hide-title;
     
     ul {

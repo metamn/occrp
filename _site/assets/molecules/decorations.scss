@@ -1,3 +1,20 @@
+/* Separating items in a list
+*/
+@mixin separator($type) {
+  
+  @if ($type == border-thin) {
+    @include border-thin;
+    margin-bottom: $margin/2;
+    padding-bottom: $margin/2;
+  } @elseif ($type == border-thick) {
+    border-top: $border;
+    padding-top: $margin/2;
+  }
+}
+
+
+
+
 
 
 /* On hover shows a different image

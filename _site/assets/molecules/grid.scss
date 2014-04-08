@@ -95,6 +95,10 @@
 /* Responsive grids should have fixed heights to align columns left without flaw
 */
 @mixin responsive-height($height-1, $height-2) {
+  @include mobile {
+    margin-bottom: $margin;
+  }
+  
   @include small-screen {
     height: $height-1;
   }

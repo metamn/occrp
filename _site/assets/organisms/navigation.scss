@@ -1,3 +1,45 @@
+/* A responsive slider
+*/
+@mixin responsive-slider {
+  @include hide-show-mobile-elements;
+  
+  @include mobile {
+    article {
+      position: relative;
+      
+      nav {
+        position: relative;
+        left: 0;
+        margin-top: 0;
+        height: 0;
+        top: -$pad*2;
+        opacity: .7;
+      }
+    }
+  }
+  
+  @include mobile-and-up {
+    $col-gutter: col-gutter(3);
+    $col-width: col-by-gutter-width(2, $col-gutter);
+    
+    article {
+      @include article-thumb-left($col-gutter);
+    }
+    
+    nav {
+      margin-left: $col-gutter + $col-width;
+      margin-top: 0;
+      position: relative;
+      top: -$pad*2;
+      height: 0;
+    }
+  }
+}
+
+
+
+
+
 /* The header on desktop
 */
 @mixin header-desktop($type: normal) {
