@@ -1,25 +1,12 @@
 /* An article with thumb left, the rest right
 */
-@mixin article-thumb-left {
-  $col-gutter: col-gutter(3);
-  $col-width: col-by-gutter-width(2, $col-gutter);
-  
-  article figure, article h1, article .excerpt, nav {
-    @include col-by-gutter(2, $col-gutter);
+@mixin article-thumb-left($gutter) {
+  article figure, article h1, article .excerpt {
+    @include col-by-gutter(2, $gutter);
   }
   
-  article h1, article .excerpt, nav {
+  article h1, article .excerpt {
     margin-right: 0;
-  }
-  
-  nav {
-    left: $col-width + $col-gutter;
-  }
-
-  @include mobile {
-    article figure, article h1, article .excerpt, nav {
-      @include block;
-    }
   }
 }
 

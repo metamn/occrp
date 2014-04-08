@@ -18,6 +18,20 @@
       }
     }
   }
+  
+  @include mobile-and-up {
+    $col-gutter: col-gutter(3);
+    $col-width: col-by-gutter-width(2, $col-gutter);
+    
+    @include article-thumb-left($col-gutter);
+    
+    nav {
+      margin-left: $col-gutter + $col-width;
+      margin-top: 0;
+      position: relative;
+      top: -$pad*2;
+    }
+  }
 }
 
 
