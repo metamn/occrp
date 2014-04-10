@@ -7,7 +7,30 @@
   - controls how an article thumb is displayed
 */
 @mixin article-style($style) {
-  @if ($style == blog) {
+  @if ($style == thumb-left) {
+    @include block;
+    @include article(null, null, title, figure, null, null);
+    margin-bottom: $margin/2;
+    
+    figure, h1 {
+      @include flexible-grid;
+    }
+   
+    h1 {
+      @include font(blog-title);
+      max-width: calc(100% - #{$flexible-grid-width} - #{$flexible-grid-margin});
+      margin-right: 0;
+    }
+  
+  } @elseif ($style == first-article-in-archive) {
+    @include block;
+    @include article(null, null, title, figure, null, excerpt);
+    @include article-thumb-left($container-margin);
+    @include color(slider);
+    margin-bottom: $margin/2;
+  
+    
+  } @elseif ($style == blog) {
     @include article(null, null, title, figure, null, null);
     @include article-thumb-left($container-margin);
     @include color(invert);
@@ -20,6 +43,7 @@
   
   } @elseif ($style == projects) {
     @include article(null, null, title, figure, null, null);
+    @include responsive-height(17em, 17em);
     margin-bottom: $margin/2;
     
     h1 {

@@ -1,5 +1,76 @@
 
 
+/* Category aside
+*/
+@mixin category-aside {
+  section {
+    margin-bottom: $margin;
+    
+    h3 {
+      display: block;
+      @include font(section-title);
+    }
+    
+    article {
+      @include article-style(thumb-left);
+    }
+    
+  }
+  
+  #spacer {
+    @include hide-title;
+  }
+}
+
+
+/* Category archives
+*/
+@mixin category-articles {
+  .title {
+    @include font(section-title);
+    @include font(category-title);
+  }
+  
+  /* The first article
+  */
+  aside {
+    @include article-style(first-article-in-archive);
+  }
+  
+  
+  /* The rest of the articles
+  */
+  article {
+    &.thumb {
+      @include responsive-grid(3, 20);
+      @include article-style(projects);
+    }
+  }
+  
+  @include pagination(navigation);
+}
+
+
+/* Fixed sidebar
+*/
+@mixin fixed-sidebar {
+  @include small-screen-and-up {
+    overflow: hidden;
+    
+    aside {
+      #spacer {
+        margin-bottom: -$pad*2000;
+        padding-bottom: $pad*2000;
+        
+        position: relative;
+        top: -$pad*2; /* This is the margin between sidebar elements ... */
+      }
+    }
+  }
+}
+
+
+
 
 
 

@@ -48,12 +48,10 @@ html {
         main {
           #intro {
             @include frontpage-intro;
-            display: none;
           }
           
           #investigations {
             @include investigations;
-            display: none;
           }
           
           #products {
@@ -84,39 +82,21 @@ html {
     /* Category
     */
     &.category {
-      main {
-        @include archive;
-      }
+      @include page-categories;
     }
     
     
     /* Tag
     */
     &.tag {
-      main {
-        @include archive;
-        
-        #banner {
-          margin-bottom: $pad;
-          
-          figure {
-            figcaption {
-              display: none;
-            }
-          }
-        }
-      }
+      @include page-tags;
     }
     
     
     /* Projects
     */
     &.projects {
-      main {
-        #articles {
-          @include projects;
-        }
-      }
+      @include page-projects;
     }
     
     
@@ -125,7 +105,7 @@ html {
     &.resources {
       main {
         #articles {
-          @include projects;
+          @include frontpage-projects;
           
           #tools {
             article {
