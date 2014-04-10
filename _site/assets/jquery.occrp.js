@@ -1,7 +1,27 @@
 
 $(document).ready(function() {
 
-  // Slider
+  
+  // Simple slider
+  // - a list of articles is transformed into a slider
+  // - mostly on mobile displays
+  // - navigation arrows are inserted into the container
+  simpleSlider($('.frontpage #products'));
+  
+  function simpleSlider(container) {
+    container.prepend("<span class='before'></span>");
+    container.append("<span class='after'></span>");
+    
+    container.find('span').click(function() {
+      var index = container.find('article:visible').index() + 1;
+      container.find('article').hide();
+      container.find('article:eq(' + index + ')').show();
+    });
+  }
+  
+  
+  // Slider for featured content
+  // -------------------------------------------------------------------------
   // - on mobiles the navigator / paginator is present inside every article
   $('.frontpage #slider article').hide();
   $('.frontpage #slider article').first().show();
@@ -22,8 +42,6 @@ $(document).ready(function() {
     
     return false;
   });
-  
-  
   
   
   // Mark first item in pagination navigation active

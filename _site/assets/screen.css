@@ -47,7 +47,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* 700px / 16px */
 /* The width of the content
 */
-/* Navigation arrows
+/* Navigation arrows - they are inserted via jQuery into <span>
 */
 /* Displays an <ul> list inline
 */
@@ -760,6 +760,7 @@ html body.frontpage .container main #investigations article .content a:hover { c
 @media only screen and (max-width: 29.999em) { html body.frontpage .container main #investigations article { margin-bottom: 0.625em; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.frontpage .container main #investigations article { height: 30em; } }
 @media only screen and (min-width: 80em) { html body.frontpage .container main #investigations article { height: 30em; } }
+html body.frontpage .container main #products { position: relative; height: 100%; }
 html body.frontpage .container main #products h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; }
 html body.frontpage .container main #products h3 a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #products h3 a:hover { color: #231f20; }
@@ -833,14 +834,14 @@ html body.frontpage .container main #products article .share-buttons ul li .box 
 html body.frontpage .container main #products article .share-buttons ul li .box .share img { width: 30%; }
 html body.frontpage .container main #products article .content a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #products article .content a:hover { color: #982022; }
-@media only screen and (max-width: 29.999em) { html body.frontpage .container main #products { position: relative; height: 100%; }
-  html body.frontpage .container main #products:before, html body.frontpage .container main #products:after { content: "\2794"; font-size: 150%; position: absolute; top: 40%; cursor: pointer; background: #f1f1f1; color: #231f20; padding: 0.3125em; opacity: .7; }
-  html body.frontpage .container main #products:before a, html body.frontpage .container main #products:after a { color: #231f20; text-decoration: none; }
-  html body.frontpage .container main #products:before a:hover, html body.frontpage .container main #products:after a:hover { color: white; }
-  html body.frontpage .container main #products:before { -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); }
-  html body.frontpage .container main #products:after { right: 0; float: right; }
-  html body.frontpage .container main #products article { display: none; }
-  html body.frontpage .container main #products article:first-of-type { display: block; } }
+html body.frontpage .container main #products .before, html body.frontpage .container main #products .after { font-size: 150%; position: absolute; top: 40%; cursor: pointer; background: #f1f1f1; color: #231f20; padding: 0.3125em; opacity: .7; }
+html body.frontpage .container main #products .before a, html body.frontpage .container main #products .after a { color: #231f20; text-decoration: none; }
+html body.frontpage .container main #products .before a:hover, html body.frontpage .container main #products .after a:hover { color: white; }
+html body.frontpage .container main #products .before:before, html body.frontpage .container main #products .after:before { content: "\2794"; }
+html body.frontpage .container main #products .before { -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+html body.frontpage .container main #products .after { right: 0; float: right; }
+html body.frontpage .container main #products article { display: none; }
+html body.frontpage .container main #products article:first-of-type { display: block; }
 html body.frontpage .container main #projects h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; }
 html body.frontpage .container main #projects h3 a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #projects h3 a:hover { color: #231f20; }

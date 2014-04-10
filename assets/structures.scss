@@ -433,9 +433,7 @@
     @include article-style(products);
   }
   
-  @include mobile {
-    @include simple-slider;
-  }
+  @include simple-slider;
 }
 
 

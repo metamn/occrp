@@ -1,11 +1,11 @@
 /* Navigation arrows
+  - they are inserted via jQuery into <span>
 */
 @mixin navigation-arrows {
   position: relative;
   height: 100%;
   
-  &:before, &:after {
-    content: $arrow-down;
+  .before, .after {
     font-size: $before-font-size;
     
     position: absolute;
@@ -16,13 +16,17 @@
     @include color(navigation);
     padding: $pad/4;
     opacity: .7;
+    
+    &:before {
+      content: $arrow-down;
+    }
   }
   
-  &:before {
+  .before {
     @include transform(rotate(180deg));
   }
   
-  &:after {
+  .after {
     right: 0;
     float: right;
   }
