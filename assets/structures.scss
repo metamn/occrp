@@ -432,6 +432,10 @@
     @include responsive-grid(4);
     @include article-style(products);
   }
+  
+  @include mobile {
+    @include simple-slider;
+  }
 }
 
 

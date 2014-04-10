@@ -48,10 +48,12 @@ html {
         main {
           #intro {
             @include frontpage-intro;
+            display: none;
           }
           
           #investigations {
             @include investigations;
+            display: none;
           }
           
           #products {

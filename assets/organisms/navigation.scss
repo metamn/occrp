@@ -1,3 +1,20 @@
+/* Simple slider
+*/
+@mixin simple-slider {
+  @include navigation-arrows;
+  
+  article {
+    display: none;
+    
+    &:first-of-type {
+      display: block;
+    }
+  }
+}
+
+
+
+
 /* A responsive slider
 */
 @mixin responsive-slider {

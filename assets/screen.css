@@ -47,6 +47,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* 700px / 16px */
 /* The width of the content
 */
+/* Navigation arrows
+*/
 /* Displays an <ul> list inline
 */
 /* Transforms an inline list back to normal
@@ -177,6 +179,8 @@ figure a { line-height: 0; }
 /* The language selector
 */
 /* An article with thumb left, the rest right
+*/
+/* Simple slider
 */
 /* A responsive slider
 */
@@ -533,6 +537,7 @@ html body.sticky .container #header .close-icon:after { content: "\2715"; paddin
 @media only screen and (min-width: 80em) { html body.sticky .container #header .tags { display: none; }
   html body.sticky .container #header nav.main, html body.sticky .container #header nav.secondary { margin-top: 0; } }
 html body.sticky .container main, html body.sticky .container #footer { position: relative; top: 3.75em; }
+html body.frontpage .container main #intro { display: none; }
 html body.frontpage .container main #intro #slider { margin-bottom: 0.625em; }
 html body.frontpage .container main #intro #slider article { width: 100%; max-width: 100%; float: left; background: #f1f1f1; color: #231f20; }
 html body.frontpage .container main #intro #slider article figure img { width: auto; }
@@ -681,6 +686,7 @@ html body.frontpage .container main #intro aside section article h1 { font-size:
   html body.frontpage .container main #intro aside:nth-of-type(2) { margin-right: 2.5%; }
   html body.frontpage .container main #intro aside:nth-of-type(1) { margin-right: 2.5%; }
   html body.frontpage .container main #intro aside section { width: 100%; max-width: 100%; float: left; } }
+html body.frontpage .container main #investigations { display: none; }
 html body.frontpage .container main #investigations h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; }
 html body.frontpage .container main #investigations h3 a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #investigations h3 a:hover { color: #231f20; }
@@ -827,6 +833,14 @@ html body.frontpage .container main #products article .share-buttons ul li .box 
 html body.frontpage .container main #products article .share-buttons ul li .box .share img { width: 30%; }
 html body.frontpage .container main #products article .content a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #products article .content a:hover { color: #982022; }
+@media only screen and (max-width: 29.999em) { html body.frontpage .container main #products { position: relative; height: 100%; }
+  html body.frontpage .container main #products:before, html body.frontpage .container main #products:after { content: "\2794"; font-size: 150%; position: absolute; top: 40%; cursor: pointer; background: #f1f1f1; color: #231f20; padding: 0.3125em; opacity: .7; }
+  html body.frontpage .container main #products:before a, html body.frontpage .container main #products:after a { color: #231f20; text-decoration: none; }
+  html body.frontpage .container main #products:before a:hover, html body.frontpage .container main #products:after a:hover { color: white; }
+  html body.frontpage .container main #products:before { -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+  html body.frontpage .container main #products:after { right: 0; float: right; }
+  html body.frontpage .container main #products article { display: none; }
+  html body.frontpage .container main #products article:first-of-type { display: block; } }
 html body.frontpage .container main #projects h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; }
 html body.frontpage .container main #projects h3 a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #projects h3 a:hover { color: #231f20; }

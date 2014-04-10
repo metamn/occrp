@@ -1,3 +1,35 @@
+/* Navigation arrows
+*/
+@mixin navigation-arrows {
+  position: relative;
+  height: 100%;
+  
+  &:before, &:after {
+    content: $arrow-down;
+    font-size: $before-font-size;
+    
+    position: absolute;
+    top: 40%;
+    
+    cursor: pointer;
+    
+    @include color(navigation);
+    padding: $pad/4;
+    opacity: .7;
+  }
+  
+  &:before {
+    @include transform(rotate(180deg));
+  }
+  
+  &:after {
+    right: 0;
+    float: right;
+  }
+}
+
+
+
 
 
 /* Displays an <ul> list inline
