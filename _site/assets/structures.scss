@@ -372,6 +372,10 @@
     @include responsive-grid(6);
     @include article-style(projects);
   }
+  
+  @include mobile {
+    @include simple-slider;
+  }
 }
 
 
@@ -418,6 +422,10 @@
     @include responsive-grid(5);
     @include article-style(projects);
   }
+  
+  @include mobile {
+    @include simple-slider;
+  }
 }
 
 
@@ -433,7 +441,9 @@
     @include article-style(products);
   }
   
-  @include simple-slider;
+  @include mobile {
+    @include simple-slider;
+  }
 }
 
 

@@ -760,7 +760,6 @@ html body.frontpage .container main #investigations article .content a:hover { c
 @media only screen and (max-width: 29.999em) { html body.frontpage .container main #investigations article { margin-bottom: 0.625em; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.frontpage .container main #investigations article { height: 30em; } }
 @media only screen and (min-width: 80em) { html body.frontpage .container main #investigations article { height: 30em; } }
-html body.frontpage .container main #products { position: relative; height: 100%; }
 html body.frontpage .container main #products h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; }
 html body.frontpage .container main #products h3 a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #products h3 a:hover { color: #231f20; }
@@ -834,14 +833,15 @@ html body.frontpage .container main #products article .share-buttons ul li .box 
 html body.frontpage .container main #products article .share-buttons ul li .box .share img { width: 30%; }
 html body.frontpage .container main #products article .content a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #products article .content a:hover { color: #982022; }
-html body.frontpage .container main #products .before, html body.frontpage .container main #products .after { font-size: 150%; position: absolute; top: 40%; cursor: pointer; background: #f1f1f1; color: #231f20; padding: 0.3125em; opacity: .7; }
-html body.frontpage .container main #products .before a, html body.frontpage .container main #products .after a { color: #231f20; text-decoration: none; }
-html body.frontpage .container main #products .before a:hover, html body.frontpage .container main #products .after a:hover { color: white; }
-html body.frontpage .container main #products .before:before, html body.frontpage .container main #products .after:before { content: "\2794"; }
-html body.frontpage .container main #products .before { -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); }
-html body.frontpage .container main #products .after { right: 0; float: right; }
-html body.frontpage .container main #products article { display: none; }
-html body.frontpage .container main #products article:first-of-type { display: block; }
+@media only screen and (max-width: 29.999em) { html body.frontpage .container main #products { position: relative; height: 100%; }
+  html body.frontpage .container main #products .before, html body.frontpage .container main #products .after { font-size: 150%; position: absolute; top: 40%; cursor: pointer; background: #f1f1f1; color: #231f20; padding: 0.3125em; opacity: .7; }
+  html body.frontpage .container main #products .before a, html body.frontpage .container main #products .after a { color: #231f20; text-decoration: none; }
+  html body.frontpage .container main #products .before a:hover, html body.frontpage .container main #products .after a:hover { color: white; }
+  html body.frontpage .container main #products .before:before, html body.frontpage .container main #products .after:before { content: "\2794"; }
+  html body.frontpage .container main #products .before { -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+  html body.frontpage .container main #products .after { right: 0; float: right; }
+  html body.frontpage .container main #products article { display: none; }
+  html body.frontpage .container main #products article:first-of-type { display: block; } }
 html body.frontpage .container main #projects h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; }
 html body.frontpage .container main #projects h3 a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #projects h3 a:hover { color: #231f20; }
@@ -916,6 +916,15 @@ html body.frontpage .container main #projects article .share-buttons ul li .box 
 html body.frontpage .container main #projects article .content a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #projects article .content a:hover { color: #982022; }
 html body.frontpage .container main #projects article h1 { font-size: medium; }
+@media only screen and (max-width: 29.999em) { html body.frontpage .container main #projects { position: relative; height: 100%; }
+  html body.frontpage .container main #projects .before, html body.frontpage .container main #projects .after { font-size: 150%; position: absolute; top: 40%; cursor: pointer; background: #f1f1f1; color: #231f20; padding: 0.3125em; opacity: .7; }
+  html body.frontpage .container main #projects .before a, html body.frontpage .container main #projects .after a { color: #231f20; text-decoration: none; }
+  html body.frontpage .container main #projects .before a:hover, html body.frontpage .container main #projects .after a:hover { color: white; }
+  html body.frontpage .container main #projects .before:before, html body.frontpage .container main #projects .after:before { content: "\2794"; }
+  html body.frontpage .container main #projects .before { -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+  html body.frontpage .container main #projects .after { right: 0; float: right; }
+  html body.frontpage .container main #projects article { display: none; }
+  html body.frontpage .container main #projects article:first-of-type { display: block; } }
 html body.frontpage .container main #blog h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; }
 html body.frontpage .container main #blog h3 a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #blog h3 a:hover { color: #231f20; }
@@ -1144,6 +1153,15 @@ html body.frontpage .container main #videos article .share-buttons ul li .box .s
 html body.frontpage .container main #videos article .content a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #videos article .content a:hover { color: #982022; }
 html body.frontpage .container main #videos article h1 { font-size: medium; }
+@media only screen and (max-width: 29.999em) { html body.frontpage .container main #videos { position: relative; height: 100%; }
+  html body.frontpage .container main #videos .before, html body.frontpage .container main #videos .after { font-size: 150%; position: absolute; top: 40%; cursor: pointer; background: #f1f1f1; color: #231f20; padding: 0.3125em; opacity: .7; }
+  html body.frontpage .container main #videos .before a, html body.frontpage .container main #videos .after a { color: #231f20; text-decoration: none; }
+  html body.frontpage .container main #videos .before a:hover, html body.frontpage .container main #videos .after a:hover { color: white; }
+  html body.frontpage .container main #videos .before:before, html body.frontpage .container main #videos .after:before { content: "\2794"; }
+  html body.frontpage .container main #videos .before { -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+  html body.frontpage .container main #videos .after { right: 0; float: right; }
+  html body.frontpage .container main #videos article { display: none; }
+  html body.frontpage .container main #videos article:first-of-type { display: block; } }
 @media only screen and (min-width: 80em) { html body.category main { overflow: hidden; }
   html body.category main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; position: relative; top: -2.5em; /* This is the margin between sidebar elements ... */ } }
 html body.category main #articles { width: 65.5%; margin-right: 2.5%; float: left; }

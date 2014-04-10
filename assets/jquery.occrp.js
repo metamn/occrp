@@ -7,15 +7,22 @@ $(document).ready(function() {
   // - mostly on mobile displays
   // - navigation arrows are inserted into the container
   simpleSlider($('.frontpage #products'));
+  simpleSlider($('.frontpage #projects'));
+  simpleSlider($('.frontpage #videos'));
   
   function simpleSlider(container) {
     container.prepend("<span class='before'></span>");
     container.append("<span class='after'></span>");
     
     container.find('span').click(function() {
-      var index = container.find('article:visible').index() + 1;
+      var index = container.find('article:visible').index() - 2;
+      var count = container.find('article').length;
+      
       container.find('article').hide();
-      container.find('article:eq(' + index + ')').show();
+      
+      ($(this).hasClass('before')) ? index -=1 : index += 1;
+      (index == count) ? index = 0 : index = index; 
+      container.find('article').eq(index).show();
     });
   }
   
