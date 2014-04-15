@@ -293,6 +293,18 @@
 
 @mixin blockquote {
   blockquote {
+    @include block;
+    border-left: $border;
+    background: $light-grey;
+    font-family: menu;
+    font-style: italic;
+    padding: $pad $pad*2;
+    @include padding;
+  }
+}
+
+@mixin blockquote2 {
+  blockquote {
     border-top: 1px solid;
     border-bottom: 1px solid;
     
@@ -504,8 +516,23 @@
         margin: 0;
         padding: 0;
       }
+      
       padding: $pad/4;
       font-size: smaller;
+      
+      ul {
+        margin: 0;
+        
+        li {
+          border-bottom: $border-thin;
+          margin-bottom: $pad/4;
+          
+          padding-left: 0;
+          &:before {
+            display: none;
+          }
+        }
+      }
     }
     
     @include small-screen {
