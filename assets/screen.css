@@ -73,6 +73,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 */
 /* in :before and :after usually the font size is larger for better visibility
 */
+/* Styling article thumbs - controls how an article thumb is displayed
+*/
+/* The parts of an article - this mixin controls what is diplayed in an article
+*/
 /* Set the background and font color - 'invert' inverts this color scheme
 */
 /* Links
@@ -172,9 +176,7 @@ figure a { line-height: 0; }
 */
 /* <ul> and <ol> lists - they display a custom bullet / number via $before - the text of the list is aligned right related to the bullet / number
 */
-/* Styling article thumbs - controls how an article thumb is displayed
-*/
-/* The parts of an article - this mixin controls what is diplayed in an article
+/* Displays an article - defines which parts are visible - how these parts are styled - and how they look on various devices
 */
 /* The search button with text in the tag bar
 */
@@ -1445,8 +1447,7 @@ html body.category main aside section article .share-buttons ul li .box .share i
 html body.category main aside section article .content a { color: #982022; text-decoration: none; }
 html body.category main aside section article .content a:hover { color: #982022; }
 html body.category main aside section article figure, html body.category main aside section article h1 { width: auto; float: left; max-width: 30%; margin: 1.5% 3% 0 0; }
-html body.category main aside section article h1 { font-weight: normal; font-size: medium; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; letter-spacing: 1.1px; margin-top: 0.3125em; max-width: calc(100% - 30% - 3%); margin-right: 0; }
-@media only screen and (max-width: 79.999em) { html body.category main aside section article h1 { font-size: small; } }
+html body.category main aside section article h1 { font-weight: normal; font-size: small; max-width: calc(100% - 30% - 3%); margin-right: 0; }
 html body.category main aside #spacer > h3 { display: none; }
 @media only screen and (min-width: 80em) { html body.tag main { overflow: hidden; }
   html body.tag main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; position: relative; top: -2.5em; /* This is the margin between sidebar elements ... */ } }
@@ -1721,8 +1722,7 @@ html body.tag main aside section article .share-buttons ul li .box .share img { 
 html body.tag main aside section article .content a { color: #982022; text-decoration: none; }
 html body.tag main aside section article .content a:hover { color: #982022; }
 html body.tag main aside section article figure, html body.tag main aside section article h1 { width: auto; float: left; max-width: 30%; margin: 1.5% 3% 0 0; }
-html body.tag main aside section article h1 { font-weight: normal; font-size: medium; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; letter-spacing: 1.1px; margin-top: 0.3125em; max-width: calc(100% - 30% - 3%); margin-right: 0; }
-@media only screen and (max-width: 79.999em) { html body.tag main aside section article h1 { font-size: small; } }
+html body.tag main aside section article h1 { font-weight: normal; font-size: small; max-width: calc(100% - 30% - 3%); margin-right: 0; }
 html body.tag main aside #spacer > h3 { display: none; }
 html body.tag main #banner { margin-bottom: 1.25em; }
 html body.tag main #banner figure figcaption { display: none; }
@@ -2269,8 +2269,7 @@ html body.blog main aside section article .share-buttons ul li .box .share img {
 html body.blog main aside section article .content a { color: #982022; text-decoration: none; }
 html body.blog main aside section article .content a:hover { color: #982022; }
 html body.blog main aside section article figure, html body.blog main aside section article h1 { width: auto; float: left; max-width: 30%; margin: 1.5% 3% 0 0; }
-html body.blog main aside section article h1 { font-weight: normal; font-size: medium; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; letter-spacing: 1.1px; margin-top: 0.3125em; max-width: calc(100% - 30% - 3%); margin-right: 0; }
-@media only screen and (max-width: 79.999em) { html body.blog main aside section article h1 { font-size: small; } }
+html body.blog main aside section article h1 { font-weight: normal; font-size: small; max-width: calc(100% - 30% - 3%); margin-right: 0; }
 html body.blog main aside #spacer > h3 { display: none; }
 html body.blog main #articles article { width: 100%; max-width: 100%; float: left; background: #f1f1f1; color: #231f20; }
 html body.blog main #articles article figure img { width: auto; }
@@ -2597,8 +2596,7 @@ html body.author main aside section article .share-buttons ul li .box .share img
 html body.author main aside section article .content a { color: #982022; text-decoration: none; }
 html body.author main aside section article .content a:hover { color: #982022; }
 html body.author main aside section article figure, html body.author main aside section article h1 { width: auto; float: left; max-width: 30%; margin: 1.5% 3% 0 0; }
-html body.author main aside section article h1 { font-weight: normal; font-size: medium; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; letter-spacing: 1.1px; margin-top: 0.3125em; max-width: calc(100% - 30% - 3%); margin-right: 0; }
-@media only screen and (max-width: 79.999em) { html body.author main aside section article h1 { font-size: small; } }
+html body.author main aside section article h1 { font-weight: normal; font-size: small; max-width: calc(100% - 30% - 3%); margin-right: 0; }
 html body.author main aside #spacer > h3 { display: none; }
 html body.author main aside #bio img { width: 7.5em; float: left; margin: 0 1.25em 1.25em 0; }
 html body.author main aside #bio div { padding: 0 0.625em; line-height: 1.75; font-size: smaller; margin-left: calc(7.5em + 1.25em + 1.25em); }
@@ -2898,8 +2896,7 @@ html body.article main aside section article .share-buttons ul li .box .share im
 html body.article main aside section article .content a, html body.about main aside section article .content a, html body.post main aside section article .content a { color: #982022; text-decoration: none; }
 html body.article main aside section article .content a:hover, html body.about main aside section article .content a:hover, html body.post main aside section article .content a:hover { color: #982022; }
 html body.article main aside section article figure, html body.article main aside section article h1, html body.about main aside section article figure, html body.about main aside section article h1, html body.post main aside section article figure, html body.post main aside section article h1 { width: auto; float: left; max-width: 30%; margin: 1.5% 3% 0 0; }
-html body.article main aside section article h1, html body.about main aside section article h1, html body.post main aside section article h1 { font-weight: normal; font-size: medium; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; letter-spacing: 1.1px; margin-top: 0.3125em; max-width: calc(100% - 30% - 3%); margin-right: 0; }
-@media only screen and (max-width: 79.999em) { html body.article main aside section article h1, html body.about main aside section article h1, html body.post main aside section article h1 { font-size: small; } }
+html body.article main aside section article h1, html body.about main aside section article h1, html body.post main aside section article h1 { font-weight: normal; font-size: small; max-width: calc(100% - 30% - 3%); margin-right: 0; }
 html body.article main aside #spacer > h3, html body.about main aside #spacer > h3, html body.post main aside #spacer > h3 { display: none; }
 html body.about main aside section > h3 { display: none; }
 html body.about main aside section nav ul li a { padding: 0.625em 0.3125em; display: inline-block; }
