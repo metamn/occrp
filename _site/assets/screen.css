@@ -174,7 +174,7 @@ figure a { line-height: 0; }
 */
 /* Styling article thumbs - controls how an article thumb is displayed
 */
-/* An article - displays mostly article thumbs - this mixin controls what is diplayed in an article
+/* The parts of an article - this mixin controls what is diplayed in an article
 */
 /* The search button with text in the tag bar
 */
@@ -1229,8 +1229,8 @@ html body.category main #articles aside .share-buttons ul li .box .count a:hover
 html body.category main #articles aside .share-buttons ul li .box .share img { width: 30%; }
 html body.category main #articles aside .content a { color: #982022; text-decoration: none; }
 html body.category main #articles aside .content a:hover { color: #982022; }
-html body.category main #articles aside figure, html body.category main #articles aside h1, html body.category main #articles aside .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
-html body.category main #articles aside h1, html body.category main #articles aside .excerpt { margin-right: 0; }
+@media only screen and (min-width: 30em) { html body.category main #articles aside figure, html body.category main #articles aside h1, html body.category main #articles aside .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
+  html body.category main #articles aside h1, html body.category main #articles aside .excerpt { margin-right: 0; } }
 html body.category main #articles article.thumb { margin-bottom: 0.3125em; }
 @media only screen and (max-width: 29.999em) { html body.category main #articles article.thumb { width: 100%; margin-right: 0; float: left; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.category main #articles article.thumb { width: 47.5%; margin-right: 2.5%; float: left; }
@@ -1325,6 +1325,58 @@ html body.category main #articles article.thumb .content a:hover { color: #98202
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.category main #articles article.thumb { height: 17em; } }
 @media only screen and (min-width: 80em) { html body.category main #articles article.thumb { height: 17em; } }
 html body.category main #articles article.thumb h1 { font-size: medium; }
+@media only screen and (max-width: 29.999em) { html body.category main #articles article.thumb { width: 100%; max-width: 100%; float: left; margin-bottom: 0.3125em; }
+  html body.category main #articles article.thumb figure img { width: auto; }
+  html body.category main #articles article.thumb figure figcaption { padding: 0.3125em; font-size: smaller; }
+  html body.category main #articles article.thumb figure figcaption h1, html body.category main #articles article.thumb figure figcaption h2, html body.category main #articles article.thumb figure figcaption h3, html body.category main #articles article.thumb figure figcaption h4, html body.category main #articles article.thumb figure figcaption h5, html body.category main #articles article.thumb figure figcaption h6 { margin: 0; padding: 0; } }
+@media only screen and (max-width: 29.999em) and (min-width: 30em) and (max-width: 79.999em) { html body.category main #articles article.thumb figure.people, html body.category main #articles article.thumb figure.document, html body.category main #articles article.thumb figure.company { width: 100%; max-width: 100%; float: left; }
+  html body.category main #articles article.thumb figure.people img, html body.category main #articles article.thumb figure.document img, html body.category main #articles article.thumb figure.company img { float: left; width: 2.5em; margin-right: 1.25em; }
+  html body.category main #articles article.thumb figure.people figcaption, html body.category main #articles article.thumb figure.document figcaption, html body.category main #articles article.thumb figure.company figcaption { padding: 0; } }
+@media only screen and (max-width: 29.999em) and (min-width: 80em) { html body.category main #articles article.thumb figure { /* Fit figcpation to image width */ }
+  html body.category main #articles article.thumb figure.left, html body.category main #articles article.thumb figure.right, html body.category main #articles article.thumb figure.person, html body.category main #articles article.thumb figure.document, html body.category main #articles article.thumb figure.company, html body.category main #articles article.thumb figure.people { display: table; }
+  html body.category main #articles article.thumb figure.left img, html body.category main #articles article.thumb figure.right img, html body.category main #articles article.thumb figure.person img, html body.category main #articles article.thumb figure.document img, html body.category main #articles article.thumb figure.company img, html body.category main #articles article.thumb figure.people img { display: block; max-width: 100%; }
+  html body.category main #articles article.thumb figure.left figcaption, html body.category main #articles article.thumb figure.right figcaption, html body.category main #articles article.thumb figure.person figcaption, html body.category main #articles article.thumb figure.document figcaption, html body.category main #articles article.thumb figure.company figcaption, html body.category main #articles article.thumb figure.people figcaption { display: table-caption; caption-side: bottom; margin-top: 0.3125em; }
+  html body.category main #articles article.thumb figure.left + p, html body.category main #articles article.thumb figure.right + p, html body.category main #articles article.thumb figure.person + p, html body.category main #articles article.thumb figure.document + p, html body.category main #articles article.thumb figure.company + p, html body.category main #articles article.thumb figure.people + p { margin-top: 1.25em; }
+  html body.category main #articles article.thumb figure.left { float: left; margin: 0.625em 2.5em 1.25em 0; }
+  html body.category main #articles article.thumb figure.right { float: right; margin: 0.625em 0 1.25em 2.5em; } }
+@media only screen and (max-width: 29.999em) { html body.category main #articles article.thumb h1 { display: block; }
+  html body.category main #articles article.thumb figure { display: block; }
+  html body.category main #articles article.thumb figcaption { display: none; }
+  html body.category main #articles article.thumb .excerpt { display: none; }
+  html body.category main #articles article.thumb .content { display: none; }
+  html body.category main #articles article.thumb .meta .category { display: none; }
+  html body.category main #articles article.thumb .meta .date { display: none; }
+  html body.category main #articles article.thumb .meta { display: none; }
+  html body.category main #articles article.thumb .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
+  html body.category main #articles article.thumb .meta > h3 { display: none; }
+  html body.category main #articles article.thumb .meta ul { margin: 0; }
+  html body.category main #articles article.thumb .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
+  html body.category main #articles article.thumb .meta ul li:before { content: ''; }
+  html body.category main #articles article.thumb .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
+  html body.category main #articles article.thumb .meta ul li:last-of-type { margin-right: 0; }
+  html body.category main #articles article.thumb .meta .date { font-size: small; color: #332d2f; font-style: normal; }
+  html body.category main #articles article.thumb .meta .category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
+  html body.category main #articles article.thumb .meta .category a { color: #982022; text-decoration: none; }
+  html body.category main #articles article.thumb .meta .category a:hover { color: #231f20; }
+  html body.category main #articles article.thumb .meta .authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
+  html body.category main #articles article.thumb .meta .authors ul li:after { content: ','; }
+  html body.category main #articles article.thumb .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+  html body.category main #articles article.thumb .meta .authors ul li:first-of-type:after, html body.category main #articles article.thumb .meta .authors ul li:last-of-type:after { content: ''; }
+  html body.category main #articles article.thumb .meta .print { cursor: pointer; width: 1.25em; display: none; }
+  html body.category main #articles article.thumb .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
+  html body.category main #articles article.thumb .share-buttons ul li:before { content: ''; }
+  html body.category main #articles article.thumb .share-buttons ul li { display: inline-block; float: left; margin-right: 1.25em; }
+  html body.category main #articles article.thumb .share-buttons ul li:last-of-type { margin-right: 0; }
+  html body.category main #articles article.thumb .share-buttons ul li .box { width: 100%; max-width: 100%; float: left; width: 3.125em; }
+  html body.category main #articles article.thumb .share-buttons ul li .box .count { float: right; background: #231f20; color: white; font-size: small; padding: 0 0.3125em; }
+  html body.category main #articles article.thumb .share-buttons ul li .box .count a { color: white; text-decoration: none; }
+  html body.category main #articles article.thumb .share-buttons ul li .box .count a:hover { color: white; }
+  html body.category main #articles article.thumb .share-buttons ul li .box .share img { width: 30%; }
+  html body.category main #articles article.thumb .content a { color: #982022; text-decoration: none; }
+  html body.category main #articles article.thumb .content a:hover { color: #982022; }
+  html body.category main #articles article.thumb figure, html body.category main #articles article.thumb h1, html body.category main #articles article.thumb .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
+  html body.category main #articles article.thumb h1, html body.category main #articles article.thumb .excerpt { margin-right: 0; }
+  html body.category main #articles article.thumb h1 { font-weight: normal; } }
 html body.category main #articles nav { margin-top: 1.25em; }
 html body.category main #articles nav > h3 { display: none; }
 html body.category main #articles nav ol li { display: inline-block; float: left; margin-right: 0.625em; }
@@ -1453,8 +1505,8 @@ html body.tag main #articles aside .share-buttons ul li .box .count a:hover { co
 html body.tag main #articles aside .share-buttons ul li .box .share img { width: 30%; }
 html body.tag main #articles aside .content a { color: #982022; text-decoration: none; }
 html body.tag main #articles aside .content a:hover { color: #982022; }
-html body.tag main #articles aside figure, html body.tag main #articles aside h1, html body.tag main #articles aside .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
-html body.tag main #articles aside h1, html body.tag main #articles aside .excerpt { margin-right: 0; }
+@media only screen and (min-width: 30em) { html body.tag main #articles aside figure, html body.tag main #articles aside h1, html body.tag main #articles aside .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
+  html body.tag main #articles aside h1, html body.tag main #articles aside .excerpt { margin-right: 0; } }
 html body.tag main #articles article.thumb { margin-bottom: 0.3125em; }
 @media only screen and (max-width: 29.999em) { html body.tag main #articles article.thumb { width: 100%; margin-right: 0; float: left; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.tag main #articles article.thumb { width: 47.5%; margin-right: 2.5%; float: left; }
@@ -1549,6 +1601,58 @@ html body.tag main #articles article.thumb .content a:hover { color: #982022; }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.tag main #articles article.thumb { height: 17em; } }
 @media only screen and (min-width: 80em) { html body.tag main #articles article.thumb { height: 17em; } }
 html body.tag main #articles article.thumb h1 { font-size: medium; }
+@media only screen and (max-width: 29.999em) { html body.tag main #articles article.thumb { width: 100%; max-width: 100%; float: left; margin-bottom: 0.3125em; }
+  html body.tag main #articles article.thumb figure img { width: auto; }
+  html body.tag main #articles article.thumb figure figcaption { padding: 0.3125em; font-size: smaller; }
+  html body.tag main #articles article.thumb figure figcaption h1, html body.tag main #articles article.thumb figure figcaption h2, html body.tag main #articles article.thumb figure figcaption h3, html body.tag main #articles article.thumb figure figcaption h4, html body.tag main #articles article.thumb figure figcaption h5, html body.tag main #articles article.thumb figure figcaption h6 { margin: 0; padding: 0; } }
+@media only screen and (max-width: 29.999em) and (min-width: 30em) and (max-width: 79.999em) { html body.tag main #articles article.thumb figure.people, html body.tag main #articles article.thumb figure.document, html body.tag main #articles article.thumb figure.company { width: 100%; max-width: 100%; float: left; }
+  html body.tag main #articles article.thumb figure.people img, html body.tag main #articles article.thumb figure.document img, html body.tag main #articles article.thumb figure.company img { float: left; width: 2.5em; margin-right: 1.25em; }
+  html body.tag main #articles article.thumb figure.people figcaption, html body.tag main #articles article.thumb figure.document figcaption, html body.tag main #articles article.thumb figure.company figcaption { padding: 0; } }
+@media only screen and (max-width: 29.999em) and (min-width: 80em) { html body.tag main #articles article.thumb figure { /* Fit figcpation to image width */ }
+  html body.tag main #articles article.thumb figure.left, html body.tag main #articles article.thumb figure.right, html body.tag main #articles article.thumb figure.person, html body.tag main #articles article.thumb figure.document, html body.tag main #articles article.thumb figure.company, html body.tag main #articles article.thumb figure.people { display: table; }
+  html body.tag main #articles article.thumb figure.left img, html body.tag main #articles article.thumb figure.right img, html body.tag main #articles article.thumb figure.person img, html body.tag main #articles article.thumb figure.document img, html body.tag main #articles article.thumb figure.company img, html body.tag main #articles article.thumb figure.people img { display: block; max-width: 100%; }
+  html body.tag main #articles article.thumb figure.left figcaption, html body.tag main #articles article.thumb figure.right figcaption, html body.tag main #articles article.thumb figure.person figcaption, html body.tag main #articles article.thumb figure.document figcaption, html body.tag main #articles article.thumb figure.company figcaption, html body.tag main #articles article.thumb figure.people figcaption { display: table-caption; caption-side: bottom; margin-top: 0.3125em; }
+  html body.tag main #articles article.thumb figure.left + p, html body.tag main #articles article.thumb figure.right + p, html body.tag main #articles article.thumb figure.person + p, html body.tag main #articles article.thumb figure.document + p, html body.tag main #articles article.thumb figure.company + p, html body.tag main #articles article.thumb figure.people + p { margin-top: 1.25em; }
+  html body.tag main #articles article.thumb figure.left { float: left; margin: 0.625em 2.5em 1.25em 0; }
+  html body.tag main #articles article.thumb figure.right { float: right; margin: 0.625em 0 1.25em 2.5em; } }
+@media only screen and (max-width: 29.999em) { html body.tag main #articles article.thumb h1 { display: block; }
+  html body.tag main #articles article.thumb figure { display: block; }
+  html body.tag main #articles article.thumb figcaption { display: none; }
+  html body.tag main #articles article.thumb .excerpt { display: none; }
+  html body.tag main #articles article.thumb .content { display: none; }
+  html body.tag main #articles article.thumb .meta .category { display: none; }
+  html body.tag main #articles article.thumb .meta .date { display: none; }
+  html body.tag main #articles article.thumb .meta { display: none; }
+  html body.tag main #articles article.thumb .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
+  html body.tag main #articles article.thumb .meta > h3 { display: none; }
+  html body.tag main #articles article.thumb .meta ul { margin: 0; }
+  html body.tag main #articles article.thumb .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
+  html body.tag main #articles article.thumb .meta ul li:before { content: ''; }
+  html body.tag main #articles article.thumb .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
+  html body.tag main #articles article.thumb .meta ul li:last-of-type { margin-right: 0; }
+  html body.tag main #articles article.thumb .meta .date { font-size: small; color: #332d2f; font-style: normal; }
+  html body.tag main #articles article.thumb .meta .category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
+  html body.tag main #articles article.thumb .meta .category a { color: #982022; text-decoration: none; }
+  html body.tag main #articles article.thumb .meta .category a:hover { color: #231f20; }
+  html body.tag main #articles article.thumb .meta .authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
+  html body.tag main #articles article.thumb .meta .authors ul li:after { content: ','; }
+  html body.tag main #articles article.thumb .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+  html body.tag main #articles article.thumb .meta .authors ul li:first-of-type:after, html body.tag main #articles article.thumb .meta .authors ul li:last-of-type:after { content: ''; }
+  html body.tag main #articles article.thumb .meta .print { cursor: pointer; width: 1.25em; display: none; }
+  html body.tag main #articles article.thumb .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
+  html body.tag main #articles article.thumb .share-buttons ul li:before { content: ''; }
+  html body.tag main #articles article.thumb .share-buttons ul li { display: inline-block; float: left; margin-right: 1.25em; }
+  html body.tag main #articles article.thumb .share-buttons ul li:last-of-type { margin-right: 0; }
+  html body.tag main #articles article.thumb .share-buttons ul li .box { width: 100%; max-width: 100%; float: left; width: 3.125em; }
+  html body.tag main #articles article.thumb .share-buttons ul li .box .count { float: right; background: #231f20; color: white; font-size: small; padding: 0 0.3125em; }
+  html body.tag main #articles article.thumb .share-buttons ul li .box .count a { color: white; text-decoration: none; }
+  html body.tag main #articles article.thumb .share-buttons ul li .box .count a:hover { color: white; }
+  html body.tag main #articles article.thumb .share-buttons ul li .box .share img { width: 30%; }
+  html body.tag main #articles article.thumb .content a { color: #982022; text-decoration: none; }
+  html body.tag main #articles article.thumb .content a:hover { color: #982022; }
+  html body.tag main #articles article.thumb figure, html body.tag main #articles article.thumb h1, html body.tag main #articles article.thumb .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
+  html body.tag main #articles article.thumb h1, html body.tag main #articles article.thumb .excerpt { margin-right: 0; }
+  html body.tag main #articles article.thumb h1 { font-weight: normal; } }
 html body.tag main #articles nav { margin-top: 1.25em; }
 html body.tag main #articles nav > h3 { display: none; }
 html body.tag main #articles nav ol li { display: inline-block; float: left; margin-right: 0.625em; }
@@ -1949,8 +2053,8 @@ html body.blog main #articles aside .share-buttons ul li .box .count a:hover { c
 html body.blog main #articles aside .share-buttons ul li .box .share img { width: 30%; }
 html body.blog main #articles aside .content a { color: #982022; text-decoration: none; }
 html body.blog main #articles aside .content a:hover { color: #982022; }
-html body.blog main #articles aside figure, html body.blog main #articles aside h1, html body.blog main #articles aside .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
-html body.blog main #articles aside h1, html body.blog main #articles aside .excerpt { margin-right: 0; }
+@media only screen and (min-width: 30em) { html body.blog main #articles aside figure, html body.blog main #articles aside h1, html body.blog main #articles aside .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
+  html body.blog main #articles aside h1, html body.blog main #articles aside .excerpt { margin-right: 0; } }
 html body.blog main #articles article.thumb { margin-bottom: 0.3125em; }
 @media only screen and (max-width: 29.999em) { html body.blog main #articles article.thumb { width: 100%; margin-right: 0; float: left; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.blog main #articles article.thumb { width: 47.5%; margin-right: 2.5%; float: left; }
@@ -2045,6 +2149,58 @@ html body.blog main #articles article.thumb .content a:hover { color: #982022; }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.blog main #articles article.thumb { height: 17em; } }
 @media only screen and (min-width: 80em) { html body.blog main #articles article.thumb { height: 17em; } }
 html body.blog main #articles article.thumb h1 { font-size: medium; }
+@media only screen and (max-width: 29.999em) { html body.blog main #articles article.thumb { width: 100%; max-width: 100%; float: left; margin-bottom: 0.3125em; }
+  html body.blog main #articles article.thumb figure img { width: auto; }
+  html body.blog main #articles article.thumb figure figcaption { padding: 0.3125em; font-size: smaller; }
+  html body.blog main #articles article.thumb figure figcaption h1, html body.blog main #articles article.thumb figure figcaption h2, html body.blog main #articles article.thumb figure figcaption h3, html body.blog main #articles article.thumb figure figcaption h4, html body.blog main #articles article.thumb figure figcaption h5, html body.blog main #articles article.thumb figure figcaption h6 { margin: 0; padding: 0; } }
+@media only screen and (max-width: 29.999em) and (min-width: 30em) and (max-width: 79.999em) { html body.blog main #articles article.thumb figure.people, html body.blog main #articles article.thumb figure.document, html body.blog main #articles article.thumb figure.company { width: 100%; max-width: 100%; float: left; }
+  html body.blog main #articles article.thumb figure.people img, html body.blog main #articles article.thumb figure.document img, html body.blog main #articles article.thumb figure.company img { float: left; width: 2.5em; margin-right: 1.25em; }
+  html body.blog main #articles article.thumb figure.people figcaption, html body.blog main #articles article.thumb figure.document figcaption, html body.blog main #articles article.thumb figure.company figcaption { padding: 0; } }
+@media only screen and (max-width: 29.999em) and (min-width: 80em) { html body.blog main #articles article.thumb figure { /* Fit figcpation to image width */ }
+  html body.blog main #articles article.thumb figure.left, html body.blog main #articles article.thumb figure.right, html body.blog main #articles article.thumb figure.person, html body.blog main #articles article.thumb figure.document, html body.blog main #articles article.thumb figure.company, html body.blog main #articles article.thumb figure.people { display: table; }
+  html body.blog main #articles article.thumb figure.left img, html body.blog main #articles article.thumb figure.right img, html body.blog main #articles article.thumb figure.person img, html body.blog main #articles article.thumb figure.document img, html body.blog main #articles article.thumb figure.company img, html body.blog main #articles article.thumb figure.people img { display: block; max-width: 100%; }
+  html body.blog main #articles article.thumb figure.left figcaption, html body.blog main #articles article.thumb figure.right figcaption, html body.blog main #articles article.thumb figure.person figcaption, html body.blog main #articles article.thumb figure.document figcaption, html body.blog main #articles article.thumb figure.company figcaption, html body.blog main #articles article.thumb figure.people figcaption { display: table-caption; caption-side: bottom; margin-top: 0.3125em; }
+  html body.blog main #articles article.thumb figure.left + p, html body.blog main #articles article.thumb figure.right + p, html body.blog main #articles article.thumb figure.person + p, html body.blog main #articles article.thumb figure.document + p, html body.blog main #articles article.thumb figure.company + p, html body.blog main #articles article.thumb figure.people + p { margin-top: 1.25em; }
+  html body.blog main #articles article.thumb figure.left { float: left; margin: 0.625em 2.5em 1.25em 0; }
+  html body.blog main #articles article.thumb figure.right { float: right; margin: 0.625em 0 1.25em 2.5em; } }
+@media only screen and (max-width: 29.999em) { html body.blog main #articles article.thumb h1 { display: block; }
+  html body.blog main #articles article.thumb figure { display: block; }
+  html body.blog main #articles article.thumb figcaption { display: none; }
+  html body.blog main #articles article.thumb .excerpt { display: none; }
+  html body.blog main #articles article.thumb .content { display: none; }
+  html body.blog main #articles article.thumb .meta .category { display: none; }
+  html body.blog main #articles article.thumb .meta .date { display: none; }
+  html body.blog main #articles article.thumb .meta { display: none; }
+  html body.blog main #articles article.thumb .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
+  html body.blog main #articles article.thumb .meta > h3 { display: none; }
+  html body.blog main #articles article.thumb .meta ul { margin: 0; }
+  html body.blog main #articles article.thumb .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
+  html body.blog main #articles article.thumb .meta ul li:before { content: ''; }
+  html body.blog main #articles article.thumb .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
+  html body.blog main #articles article.thumb .meta ul li:last-of-type { margin-right: 0; }
+  html body.blog main #articles article.thumb .meta .date { font-size: small; color: #332d2f; font-style: normal; }
+  html body.blog main #articles article.thumb .meta .category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
+  html body.blog main #articles article.thumb .meta .category a { color: #982022; text-decoration: none; }
+  html body.blog main #articles article.thumb .meta .category a:hover { color: #231f20; }
+  html body.blog main #articles article.thumb .meta .authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
+  html body.blog main #articles article.thumb .meta .authors ul li:after { content: ','; }
+  html body.blog main #articles article.thumb .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+  html body.blog main #articles article.thumb .meta .authors ul li:first-of-type:after, html body.blog main #articles article.thumb .meta .authors ul li:last-of-type:after { content: ''; }
+  html body.blog main #articles article.thumb .meta .print { cursor: pointer; width: 1.25em; display: none; }
+  html body.blog main #articles article.thumb .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
+  html body.blog main #articles article.thumb .share-buttons ul li:before { content: ''; }
+  html body.blog main #articles article.thumb .share-buttons ul li { display: inline-block; float: left; margin-right: 1.25em; }
+  html body.blog main #articles article.thumb .share-buttons ul li:last-of-type { margin-right: 0; }
+  html body.blog main #articles article.thumb .share-buttons ul li .box { width: 100%; max-width: 100%; float: left; width: 3.125em; }
+  html body.blog main #articles article.thumb .share-buttons ul li .box .count { float: right; background: #231f20; color: white; font-size: small; padding: 0 0.3125em; }
+  html body.blog main #articles article.thumb .share-buttons ul li .box .count a { color: white; text-decoration: none; }
+  html body.blog main #articles article.thumb .share-buttons ul li .box .count a:hover { color: white; }
+  html body.blog main #articles article.thumb .share-buttons ul li .box .share img { width: 30%; }
+  html body.blog main #articles article.thumb .content a { color: #982022; text-decoration: none; }
+  html body.blog main #articles article.thumb .content a:hover { color: #982022; }
+  html body.blog main #articles article.thumb figure, html body.blog main #articles article.thumb h1, html body.blog main #articles article.thumb .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
+  html body.blog main #articles article.thumb h1, html body.blog main #articles article.thumb .excerpt { margin-right: 0; }
+  html body.blog main #articles article.thumb h1 { font-weight: normal; } }
 html body.blog main #articles nav { margin-top: 1.25em; }
 html body.blog main #articles nav > h3 { display: none; }
 html body.blog main #articles nav ol li { display: inline-block; float: left; margin-right: 0.625em; }
@@ -2225,8 +2381,8 @@ html body.author main #articles aside .share-buttons ul li .box .count a:hover {
 html body.author main #articles aside .share-buttons ul li .box .share img { width: 30%; }
 html body.author main #articles aside .content a { color: #982022; text-decoration: none; }
 html body.author main #articles aside .content a:hover { color: #982022; }
-html body.author main #articles aside figure, html body.author main #articles aside h1, html body.author main #articles aside .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
-html body.author main #articles aside h1, html body.author main #articles aside .excerpt { margin-right: 0; }
+@media only screen and (min-width: 30em) { html body.author main #articles aside figure, html body.author main #articles aside h1, html body.author main #articles aside .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
+  html body.author main #articles aside h1, html body.author main #articles aside .excerpt { margin-right: 0; } }
 html body.author main #articles article.thumb { margin-bottom: 0.3125em; }
 @media only screen and (max-width: 29.999em) { html body.author main #articles article.thumb { width: 100%; margin-right: 0; float: left; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.author main #articles article.thumb { width: 47.5%; margin-right: 2.5%; float: left; }
@@ -2321,6 +2477,58 @@ html body.author main #articles article.thumb .content a:hover { color: #982022;
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.author main #articles article.thumb { height: 17em; } }
 @media only screen and (min-width: 80em) { html body.author main #articles article.thumb { height: 17em; } }
 html body.author main #articles article.thumb h1 { font-size: medium; }
+@media only screen and (max-width: 29.999em) { html body.author main #articles article.thumb { width: 100%; max-width: 100%; float: left; margin-bottom: 0.3125em; }
+  html body.author main #articles article.thumb figure img { width: auto; }
+  html body.author main #articles article.thumb figure figcaption { padding: 0.3125em; font-size: smaller; }
+  html body.author main #articles article.thumb figure figcaption h1, html body.author main #articles article.thumb figure figcaption h2, html body.author main #articles article.thumb figure figcaption h3, html body.author main #articles article.thumb figure figcaption h4, html body.author main #articles article.thumb figure figcaption h5, html body.author main #articles article.thumb figure figcaption h6 { margin: 0; padding: 0; } }
+@media only screen and (max-width: 29.999em) and (min-width: 30em) and (max-width: 79.999em) { html body.author main #articles article.thumb figure.people, html body.author main #articles article.thumb figure.document, html body.author main #articles article.thumb figure.company { width: 100%; max-width: 100%; float: left; }
+  html body.author main #articles article.thumb figure.people img, html body.author main #articles article.thumb figure.document img, html body.author main #articles article.thumb figure.company img { float: left; width: 2.5em; margin-right: 1.25em; }
+  html body.author main #articles article.thumb figure.people figcaption, html body.author main #articles article.thumb figure.document figcaption, html body.author main #articles article.thumb figure.company figcaption { padding: 0; } }
+@media only screen and (max-width: 29.999em) and (min-width: 80em) { html body.author main #articles article.thumb figure { /* Fit figcpation to image width */ }
+  html body.author main #articles article.thumb figure.left, html body.author main #articles article.thumb figure.right, html body.author main #articles article.thumb figure.person, html body.author main #articles article.thumb figure.document, html body.author main #articles article.thumb figure.company, html body.author main #articles article.thumb figure.people { display: table; }
+  html body.author main #articles article.thumb figure.left img, html body.author main #articles article.thumb figure.right img, html body.author main #articles article.thumb figure.person img, html body.author main #articles article.thumb figure.document img, html body.author main #articles article.thumb figure.company img, html body.author main #articles article.thumb figure.people img { display: block; max-width: 100%; }
+  html body.author main #articles article.thumb figure.left figcaption, html body.author main #articles article.thumb figure.right figcaption, html body.author main #articles article.thumb figure.person figcaption, html body.author main #articles article.thumb figure.document figcaption, html body.author main #articles article.thumb figure.company figcaption, html body.author main #articles article.thumb figure.people figcaption { display: table-caption; caption-side: bottom; margin-top: 0.3125em; }
+  html body.author main #articles article.thumb figure.left + p, html body.author main #articles article.thumb figure.right + p, html body.author main #articles article.thumb figure.person + p, html body.author main #articles article.thumb figure.document + p, html body.author main #articles article.thumb figure.company + p, html body.author main #articles article.thumb figure.people + p { margin-top: 1.25em; }
+  html body.author main #articles article.thumb figure.left { float: left; margin: 0.625em 2.5em 1.25em 0; }
+  html body.author main #articles article.thumb figure.right { float: right; margin: 0.625em 0 1.25em 2.5em; } }
+@media only screen and (max-width: 29.999em) { html body.author main #articles article.thumb h1 { display: block; }
+  html body.author main #articles article.thumb figure { display: block; }
+  html body.author main #articles article.thumb figcaption { display: none; }
+  html body.author main #articles article.thumb .excerpt { display: none; }
+  html body.author main #articles article.thumb .content { display: none; }
+  html body.author main #articles article.thumb .meta .category { display: none; }
+  html body.author main #articles article.thumb .meta .date { display: none; }
+  html body.author main #articles article.thumb .meta { display: none; }
+  html body.author main #articles article.thumb .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
+  html body.author main #articles article.thumb .meta > h3 { display: none; }
+  html body.author main #articles article.thumb .meta ul { margin: 0; }
+  html body.author main #articles article.thumb .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
+  html body.author main #articles article.thumb .meta ul li:before { content: ''; }
+  html body.author main #articles article.thumb .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
+  html body.author main #articles article.thumb .meta ul li:last-of-type { margin-right: 0; }
+  html body.author main #articles article.thumb .meta .date { font-size: small; color: #332d2f; font-style: normal; }
+  html body.author main #articles article.thumb .meta .category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
+  html body.author main #articles article.thumb .meta .category a { color: #982022; text-decoration: none; }
+  html body.author main #articles article.thumb .meta .category a:hover { color: #231f20; }
+  html body.author main #articles article.thumb .meta .authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
+  html body.author main #articles article.thumb .meta .authors ul li:after { content: ','; }
+  html body.author main #articles article.thumb .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+  html body.author main #articles article.thumb .meta .authors ul li:first-of-type:after, html body.author main #articles article.thumb .meta .authors ul li:last-of-type:after { content: ''; }
+  html body.author main #articles article.thumb .meta .print { cursor: pointer; width: 1.25em; display: none; }
+  html body.author main #articles article.thumb .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
+  html body.author main #articles article.thumb .share-buttons ul li:before { content: ''; }
+  html body.author main #articles article.thumb .share-buttons ul li { display: inline-block; float: left; margin-right: 1.25em; }
+  html body.author main #articles article.thumb .share-buttons ul li:last-of-type { margin-right: 0; }
+  html body.author main #articles article.thumb .share-buttons ul li .box { width: 100%; max-width: 100%; float: left; width: 3.125em; }
+  html body.author main #articles article.thumb .share-buttons ul li .box .count { float: right; background: #231f20; color: white; font-size: small; padding: 0 0.3125em; }
+  html body.author main #articles article.thumb .share-buttons ul li .box .count a { color: white; text-decoration: none; }
+  html body.author main #articles article.thumb .share-buttons ul li .box .count a:hover { color: white; }
+  html body.author main #articles article.thumb .share-buttons ul li .box .share img { width: 30%; }
+  html body.author main #articles article.thumb .content a { color: #982022; text-decoration: none; }
+  html body.author main #articles article.thumb .content a:hover { color: #982022; }
+  html body.author main #articles article.thumb figure, html body.author main #articles article.thumb h1, html body.author main #articles article.thumb .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
+  html body.author main #articles article.thumb h1, html body.author main #articles article.thumb .excerpt { margin-right: 0; }
+  html body.author main #articles article.thumb h1 { font-weight: normal; } }
 html body.author main #articles nav { margin-top: 1.25em; }
 html body.author main #articles nav > h3 { display: none; }
 html body.author main #articles nav ol li { display: inline-block; float: left; margin-right: 0.625em; }

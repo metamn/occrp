@@ -17,7 +17,7 @@
   }
   
   article.single {
-    @include article(category, date, title, figure, figcaption, null, body);
+    @include article-parts(category, date, title, figure, figcaption, null, body);
     @include body-text;
     
     h1 {

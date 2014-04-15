@@ -44,6 +44,11 @@
     &.thumb {
       @include responsive-grid(3, 20);
       @include article-style(projects);
+      
+      @include mobile {
+        @include block;
+        @include article-style(archive);
+      }
     }
   }
   

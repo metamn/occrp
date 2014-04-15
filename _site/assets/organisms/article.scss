@@ -9,7 +9,7 @@
 @mixin article-style($style) {
   @if ($style == thumb-left) {
     @include block;
-    @include article(null, null, title, figure, null, null);
+    @include article-parts(null, null, title, figure, null, null);
     margin-bottom: $margin/2;
     
     figure, h1 {
@@ -22,16 +22,29 @@
       margin-right: 0;
     }
   
+  } @elseif ($style == archive) {
+    @include article-parts(null, null, title, figure, null, null);
+    @include article-thumb-left($container-margin);
+    margin-bottom: $margin/2;
+  
+    h1 {
+      font-weight: normal;
+    } 
+    
+
   } @elseif ($style == first-article-in-archive) {
     @include block;
-    @include article(null, null, title, figure, null, excerpt);
-    @include article-thumb-left($container-margin);
+    @include article-parts(null, null, title, figure, null, excerpt);
     @include color(slider);
     margin-bottom: $margin/2;
   
+    @include mobile-and-up {
+      @include article-thumb-left($container-margin);
+    }
+  
     
   } @elseif ($style == blog) {
-    @include article(null, null, title, figure, null, null);
+    @include article-parts(null, null, title, figure, null, null);
     @include article-thumb-left($container-margin);
     @include color(invert);
     margin-bottom: $margin/2;
@@ -42,7 +55,7 @@
   
   
   } @elseif ($style == projects) {
-    @include article(null, null, title, figure, null, null);
+    @include article-parts(null, null, title, figure, null, null);
     @include responsive-height(17em, 17em);
     margin-bottom: $margin/2;
     
@@ -52,18 +65,18 @@
   
   
   } @elseif ($style == products) {
-    @include article(null, null, null, figure);
+    @include article-parts(null, null, null, figure);
     margin-bottom: $margin/2;
     
   
   } @elseif ($style == investigations) {
-    @include article(null, date, title, figure, null, excerpt, null);
+    @include article-parts(null, date, title, figure, null, excerpt, null);
     @include responsive-height(30em, 30em);
     @include separator(border-thick);
     
   
   } @elseif ($style == news) {
-    @include article(null, null, title);
+    @include article-parts(null, null, title);
     @include separator(border-thin);
     
     h1 {
@@ -74,7 +87,7 @@
   } @elseif ($style == slider) {
     article {
       @include block;
-      @include article(null, null, title, figure, null, excerpt);
+      @include article-parts(null, null, title, figure, null, excerpt);
       
       @include color(slider);
     }
@@ -83,11 +96,10 @@
 
 
 
-/* An article
-  - displays mostly article thumbs
+/* The parts of an article
   - this mixin controls what is diplayed in an article
 */
-@mixin article($category, $date, $title, $figure: null, $figcaption: null, $excerpt: null, $body: null) {
+@mixin article-parts($category, $date, $title, $figure: null, $figcaption: null, $excerpt: null, $body: null) {
   @include figure;      
   
   @if ($title == null) {
