@@ -240,6 +240,15 @@
   
   .content {
     @include link($highlight);
+    
+    a {
+      &.external {
+        &:after {
+          content: url(/assets/images/link-icon.png);
+          margin-left: $pad/4;
+        }
+      }
+    }
   }
   
 }

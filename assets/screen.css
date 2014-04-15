@@ -594,6 +594,7 @@ html body.frontpage .container main #intro #slider article .share-buttons ul li 
 html body.frontpage .container main #intro #slider article .share-buttons ul li .box .share img { width: 30%; }
 html body.frontpage .container main #intro #slider article .content a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #intro #slider article .content a:hover { color: #982022; }
+html body.frontpage .container main #intro #slider article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
 html body.frontpage .container main #intro #slider nav { margin-top: 1.25em; }
 html body.frontpage .container main #intro #slider nav > h3 { display: none; }
 html body.frontpage .container main #intro #slider nav ol li { display: inline-block; float: left; margin-right: 0.625em; }
@@ -687,6 +688,7 @@ html body.frontpage .container main #intro aside section article .share-buttons 
 html body.frontpage .container main #intro aside section article .share-buttons ul li .box .share img { width: 30%; }
 html body.frontpage .container main #intro aside section article .content a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #intro aside section article .content a:hover { color: #982022; }
+html body.frontpage .container main #intro aside section article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
 html body.frontpage .container main #intro aside section article h1 { font-size: medium; }
 @media only screen and (min-width: 80em) { html body.frontpage .container main #intro #slider { width: 65.5%; margin-right: 2.5%; float: left; }
   html body.frontpage .container main #intro aside { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0 !important; }
@@ -763,6 +765,7 @@ html body.frontpage .container main #investigations article .share-buttons ul li
 html body.frontpage .container main #investigations article .share-buttons ul li .box .share img { width: 30%; }
 html body.frontpage .container main #investigations article .content a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #investigations article .content a:hover { color: #982022; }
+html body.frontpage .container main #investigations article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
 @media only screen and (max-width: 29.999em) { html body.frontpage .container main #investigations article { margin-bottom: 0.625em; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.frontpage .container main #investigations article { height: 30em; } }
 @media only screen and (min-width: 80em) { html body.frontpage .container main #investigations article { height: 30em; } }
@@ -839,6 +842,7 @@ html body.frontpage .container main #products article .share-buttons ul li .box 
 html body.frontpage .container main #products article .share-buttons ul li .box .share img { width: 30%; }
 html body.frontpage .container main #products article .content a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #products article .content a:hover { color: #982022; }
+html body.frontpage .container main #products article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
 @media only screen and (max-width: 29.999em) { html body.frontpage .container main #products { position: relative; height: 100%; }
   html body.frontpage .container main #products .before, html body.frontpage .container main #products .after { font-size: 150%; position: absolute; top: 40%; cursor: pointer; background: #f1f1f1; color: #231f20; padding: 0.3125em; opacity: .7; }
   html body.frontpage .container main #products .before a, html body.frontpage .container main #products .after a { color: #231f20; text-decoration: none; }
@@ -921,6 +925,7 @@ html body.frontpage .container main #projects article .share-buttons ul li .box 
 html body.frontpage .container main #projects article .share-buttons ul li .box .share img { width: 30%; }
 html body.frontpage .container main #projects article .content a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #projects article .content a:hover { color: #982022; }
+html body.frontpage .container main #projects article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
 @media only screen and (max-width: 29.999em) { html body.frontpage .container main #projects article { margin-bottom: 0.625em; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.frontpage .container main #projects article { height: 17em; } }
 @media only screen and (min-width: 80em) { html body.frontpage .container main #projects article { height: 17em; } }
@@ -1007,6 +1012,7 @@ html body.frontpage .container main #blog article .share-buttons ul li .box .cou
 html body.frontpage .container main #blog article .share-buttons ul li .box .share img { width: 30%; }
 html body.frontpage .container main #blog article .content a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #blog article .content a:hover { color: #982022; }
+html body.frontpage .container main #blog article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
 html body.frontpage .container main #blog article figure, html body.frontpage .container main #blog article h1, html body.frontpage .container main #blog article .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
 html body.frontpage .container main #blog article h1, html body.frontpage .container main #blog article .excerpt { margin-right: 0; }
 html body.frontpage .container main #blog article a { color: white; text-decoration: none; }
@@ -1086,6 +1092,7 @@ html body.frontpage .container main #most-read section article .share-buttons ul
 html body.frontpage .container main #most-read section article .share-buttons ul li .box .share img { width: 30%; }
 html body.frontpage .container main #most-read section article .content a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #most-read section article .content a:hover { color: #982022; }
+html body.frontpage .container main #most-read section article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
 html body.frontpage .container main #most-read section article h1 { font-size: medium; }
 html body.frontpage .container main #most-read section article h1 { font-weight: normal; }
 html body.frontpage .container main #videos h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; }
@@ -1161,6 +1168,7 @@ html body.frontpage .container main #videos article .share-buttons ul li .box .c
 html body.frontpage .container main #videos article .share-buttons ul li .box .share img { width: 30%; }
 html body.frontpage .container main #videos article .content a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #videos article .content a:hover { color: #982022; }
+html body.frontpage .container main #videos article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
 @media only screen and (max-width: 29.999em) { html body.frontpage .container main #videos article { margin-bottom: 0.625em; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.frontpage .container main #videos article { height: 17em; } }
 @media only screen and (min-width: 80em) { html body.frontpage .container main #videos article { height: 17em; } }
@@ -1231,6 +1239,7 @@ html body.category main #articles aside .share-buttons ul li .box .count a:hover
 html body.category main #articles aside .share-buttons ul li .box .share img { width: 30%; }
 html body.category main #articles aside .content a { color: #982022; text-decoration: none; }
 html body.category main #articles aside .content a:hover { color: #982022; }
+html body.category main #articles aside .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
 @media only screen and (min-width: 30em) { html body.category main #articles aside figure, html body.category main #articles aside h1, html body.category main #articles aside .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.category main #articles aside h1, html body.category main #articles aside .excerpt { margin-right: 0; } }
 html body.category main #articles article.thumb { margin-bottom: 0.3125em; }
@@ -1323,6 +1332,7 @@ html body.category main #articles article.thumb .share-buttons ul li .box .count
 html body.category main #articles article.thumb .share-buttons ul li .box .share img { width: 30%; }
 html body.category main #articles article.thumb .content a { color: #982022; text-decoration: none; }
 html body.category main #articles article.thumb .content a:hover { color: #982022; }
+html body.category main #articles article.thumb .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
 @media only screen and (max-width: 29.999em) { html body.category main #articles article.thumb { margin-bottom: 0.625em; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.category main #articles article.thumb { height: 17em; } }
 @media only screen and (min-width: 80em) { html body.category main #articles article.thumb { height: 17em; } }
@@ -1376,6 +1386,7 @@ html body.category main #articles article.thumb h1 { font-size: medium; }
   html body.category main #articles article.thumb .share-buttons ul li .box .share img { width: 30%; }
   html body.category main #articles article.thumb .content a { color: #982022; text-decoration: none; }
   html body.category main #articles article.thumb .content a:hover { color: #982022; }
+  html body.category main #articles article.thumb .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
   html body.category main #articles article.thumb figure, html body.category main #articles article.thumb h1, html body.category main #articles article.thumb .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.category main #articles article.thumb h1, html body.category main #articles article.thumb .excerpt { margin-right: 0; }
   html body.category main #articles article.thumb h1 { font-weight: normal; } }
@@ -1446,6 +1457,7 @@ html body.category main aside section article .share-buttons ul li .box .count a
 html body.category main aside section article .share-buttons ul li .box .share img { width: 30%; }
 html body.category main aside section article .content a { color: #982022; text-decoration: none; }
 html body.category main aside section article .content a:hover { color: #982022; }
+html body.category main aside section article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
 html body.category main aside section article figure, html body.category main aside section article h1 { width: auto; float: left; max-width: 30%; margin: 1.5% 3% 0 0; }
 html body.category main aside section article h1 { font-weight: normal; font-size: small; max-width: calc(100% - 30% - 3%); margin-right: 0; }
 html body.category main aside #spacer > h3 { display: none; }
@@ -1506,6 +1518,7 @@ html body.tag main #articles aside .share-buttons ul li .box .count a:hover { co
 html body.tag main #articles aside .share-buttons ul li .box .share img { width: 30%; }
 html body.tag main #articles aside .content a { color: #982022; text-decoration: none; }
 html body.tag main #articles aside .content a:hover { color: #982022; }
+html body.tag main #articles aside .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
 @media only screen and (min-width: 30em) { html body.tag main #articles aside figure, html body.tag main #articles aside h1, html body.tag main #articles aside .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.tag main #articles aside h1, html body.tag main #articles aside .excerpt { margin-right: 0; } }
 html body.tag main #articles article.thumb { margin-bottom: 0.3125em; }
@@ -1598,6 +1611,7 @@ html body.tag main #articles article.thumb .share-buttons ul li .box .count a:ho
 html body.tag main #articles article.thumb .share-buttons ul li .box .share img { width: 30%; }
 html body.tag main #articles article.thumb .content a { color: #982022; text-decoration: none; }
 html body.tag main #articles article.thumb .content a:hover { color: #982022; }
+html body.tag main #articles article.thumb .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
 @media only screen and (max-width: 29.999em) { html body.tag main #articles article.thumb { margin-bottom: 0.625em; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.tag main #articles article.thumb { height: 17em; } }
 @media only screen and (min-width: 80em) { html body.tag main #articles article.thumb { height: 17em; } }
@@ -1651,6 +1665,7 @@ html body.tag main #articles article.thumb h1 { font-size: medium; }
   html body.tag main #articles article.thumb .share-buttons ul li .box .share img { width: 30%; }
   html body.tag main #articles article.thumb .content a { color: #982022; text-decoration: none; }
   html body.tag main #articles article.thumb .content a:hover { color: #982022; }
+  html body.tag main #articles article.thumb .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
   html body.tag main #articles article.thumb figure, html body.tag main #articles article.thumb h1, html body.tag main #articles article.thumb .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.tag main #articles article.thumb h1, html body.tag main #articles article.thumb .excerpt { margin-right: 0; }
   html body.tag main #articles article.thumb h1 { font-weight: normal; } }
@@ -1721,6 +1736,7 @@ html body.tag main aside section article .share-buttons ul li .box .count a:hove
 html body.tag main aside section article .share-buttons ul li .box .share img { width: 30%; }
 html body.tag main aside section article .content a { color: #982022; text-decoration: none; }
 html body.tag main aside section article .content a:hover { color: #982022; }
+html body.tag main aside section article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
 html body.tag main aside section article figure, html body.tag main aside section article h1 { width: auto; float: left; max-width: 30%; margin: 1.5% 3% 0 0; }
 html body.tag main aside section article h1 { font-weight: normal; font-size: small; max-width: calc(100% - 30% - 3%); margin-right: 0; }
 html body.tag main aside #spacer > h3 { display: none; }
@@ -1799,6 +1815,7 @@ html body.projects main #articles article .share-buttons ul li .box .count a:hov
 html body.projects main #articles article .share-buttons ul li .box .share img { width: 30%; }
 html body.projects main #articles article .content a { color: #982022; text-decoration: none; }
 html body.projects main #articles article .content a:hover { color: #982022; }
+html body.projects main #articles article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
 @media only screen and (max-width: 29.999em) { html body.projects main #articles article { margin-bottom: 0.625em; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.projects main #articles article { height: 17em; } }
 @media only screen and (min-width: 80em) { html body.projects main #articles article { height: 17em; } }
@@ -1882,6 +1899,7 @@ html body.projects article .share-buttons ul li .box .count a:hover { color: whi
 html body.projects article .share-buttons ul li .box .share img { width: 30%; }
 html body.projects article .content a { color: #982022; text-decoration: none; }
 html body.projects article .content a:hover { color: #982022; }
+html body.projects article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
 @media only screen and (max-width: 29.999em) { html body.projects article { margin-bottom: 0.625em; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.projects article { height: 30em; } }
 @media only screen and (min-width: 80em) { html body.projects article { height: 30em; } }
@@ -1970,6 +1988,7 @@ html body.resources main #articles article .share-buttons ul li .box .count a:ho
 html body.resources main #articles article .share-buttons ul li .box .share img { width: 30%; }
 html body.resources main #articles article .content a { color: #982022; text-decoration: none; }
 html body.resources main #articles article .content a:hover { color: #982022; }
+html body.resources main #articles article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
 @media only screen and (max-width: 29.999em) { html body.resources main #articles article { margin-bottom: 0.625em; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.resources main #articles article { height: 17em; } }
 @media only screen and (min-width: 80em) { html body.resources main #articles article { height: 17em; } }
@@ -2053,6 +2072,7 @@ html body.blog main #articles aside .share-buttons ul li .box .count a:hover { c
 html body.blog main #articles aside .share-buttons ul li .box .share img { width: 30%; }
 html body.blog main #articles aside .content a { color: #982022; text-decoration: none; }
 html body.blog main #articles aside .content a:hover { color: #982022; }
+html body.blog main #articles aside .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
 @media only screen and (min-width: 30em) { html body.blog main #articles aside figure, html body.blog main #articles aside h1, html body.blog main #articles aside .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.blog main #articles aside h1, html body.blog main #articles aside .excerpt { margin-right: 0; } }
 html body.blog main #articles article.thumb { margin-bottom: 0.3125em; }
@@ -2145,6 +2165,7 @@ html body.blog main #articles article.thumb .share-buttons ul li .box .count a:h
 html body.blog main #articles article.thumb .share-buttons ul li .box .share img { width: 30%; }
 html body.blog main #articles article.thumb .content a { color: #982022; text-decoration: none; }
 html body.blog main #articles article.thumb .content a:hover { color: #982022; }
+html body.blog main #articles article.thumb .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
 @media only screen and (max-width: 29.999em) { html body.blog main #articles article.thumb { margin-bottom: 0.625em; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.blog main #articles article.thumb { height: 17em; } }
 @media only screen and (min-width: 80em) { html body.blog main #articles article.thumb { height: 17em; } }
@@ -2198,6 +2219,7 @@ html body.blog main #articles article.thumb h1 { font-size: medium; }
   html body.blog main #articles article.thumb .share-buttons ul li .box .share img { width: 30%; }
   html body.blog main #articles article.thumb .content a { color: #982022; text-decoration: none; }
   html body.blog main #articles article.thumb .content a:hover { color: #982022; }
+  html body.blog main #articles article.thumb .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
   html body.blog main #articles article.thumb figure, html body.blog main #articles article.thumb h1, html body.blog main #articles article.thumb .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.blog main #articles article.thumb h1, html body.blog main #articles article.thumb .excerpt { margin-right: 0; }
   html body.blog main #articles article.thumb h1 { font-weight: normal; } }
@@ -2268,6 +2290,7 @@ html body.blog main aside section article .share-buttons ul li .box .count a:hov
 html body.blog main aside section article .share-buttons ul li .box .share img { width: 30%; }
 html body.blog main aside section article .content a { color: #982022; text-decoration: none; }
 html body.blog main aside section article .content a:hover { color: #982022; }
+html body.blog main aside section article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
 html body.blog main aside section article figure, html body.blog main aside section article h1 { width: auto; float: left; max-width: 30%; margin: 1.5% 3% 0 0; }
 html body.blog main aside section article h1 { font-weight: normal; font-size: small; max-width: calc(100% - 30% - 3%); margin-right: 0; }
 html body.blog main aside #spacer > h3 { display: none; }
@@ -2319,6 +2342,7 @@ html body.blog main #articles article .share-buttons ul li .box .count a:hover {
 html body.blog main #articles article .share-buttons ul li .box .share img { width: 30%; }
 html body.blog main #articles article .content a { color: #982022; text-decoration: none; }
 html body.blog main #articles article .content a:hover { color: #982022; }
+html body.blog main #articles article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
 html body.blog main #articles article.thumb { width: 100%; max-width: 100%; float: left; }
 html body.blog main #articles article.thumb h1 { font-size: 20px; font-size: 1.25rem; font-weight: bold; }
 html body.blog main #articles article.thumb .excerpt { display: block; border-bottom: 1px solid #f1f1f1; padding-bottom: 2.5em; }
@@ -2380,6 +2404,7 @@ html body.author main #articles aside .share-buttons ul li .box .count a:hover {
 html body.author main #articles aside .share-buttons ul li .box .share img { width: 30%; }
 html body.author main #articles aside .content a { color: #982022; text-decoration: none; }
 html body.author main #articles aside .content a:hover { color: #982022; }
+html body.author main #articles aside .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
 @media only screen and (min-width: 30em) { html body.author main #articles aside figure, html body.author main #articles aside h1, html body.author main #articles aside .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.author main #articles aside h1, html body.author main #articles aside .excerpt { margin-right: 0; } }
 html body.author main #articles article.thumb { margin-bottom: 0.3125em; }
@@ -2472,6 +2497,7 @@ html body.author main #articles article.thumb .share-buttons ul li .box .count a
 html body.author main #articles article.thumb .share-buttons ul li .box .share img { width: 30%; }
 html body.author main #articles article.thumb .content a { color: #982022; text-decoration: none; }
 html body.author main #articles article.thumb .content a:hover { color: #982022; }
+html body.author main #articles article.thumb .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
 @media only screen and (max-width: 29.999em) { html body.author main #articles article.thumb { margin-bottom: 0.625em; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.author main #articles article.thumb { height: 17em; } }
 @media only screen and (min-width: 80em) { html body.author main #articles article.thumb { height: 17em; } }
@@ -2525,6 +2551,7 @@ html body.author main #articles article.thumb h1 { font-size: medium; }
   html body.author main #articles article.thumb .share-buttons ul li .box .share img { width: 30%; }
   html body.author main #articles article.thumb .content a { color: #982022; text-decoration: none; }
   html body.author main #articles article.thumb .content a:hover { color: #982022; }
+  html body.author main #articles article.thumb .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
   html body.author main #articles article.thumb figure, html body.author main #articles article.thumb h1, html body.author main #articles article.thumb .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.author main #articles article.thumb h1, html body.author main #articles article.thumb .excerpt { margin-right: 0; }
   html body.author main #articles article.thumb h1 { font-weight: normal; } }
@@ -2595,6 +2622,7 @@ html body.author main aside section article .share-buttons ul li .box .count a:h
 html body.author main aside section article .share-buttons ul li .box .share img { width: 30%; }
 html body.author main aside section article .content a { color: #982022; text-decoration: none; }
 html body.author main aside section article .content a:hover { color: #982022; }
+html body.author main aside section article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
 html body.author main aside section article figure, html body.author main aside section article h1 { width: auto; float: left; max-width: 30%; margin: 1.5% 3% 0 0; }
 html body.author main aside section article h1 { font-weight: normal; font-size: small; max-width: calc(100% - 30% - 3%); margin-right: 0; }
 html body.author main aside #spacer > h3 { display: none; }
@@ -2649,6 +2677,7 @@ html body.author main #articles article .share-buttons ul li .box .count a:hover
 html body.author main #articles article .share-buttons ul li .box .share img { width: 30%; }
 html body.author main #articles article .content a { color: #982022; text-decoration: none; }
 html body.author main #articles article .content a:hover { color: #982022; }
+html body.author main #articles article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
 html body.author main #articles article.thumb { width: 100%; max-width: 100%; float: left; }
 html body.author main #articles article.thumb h1 { font-size: 20px; font-size: 1.25rem; font-weight: bold; }
 html body.author main #articles article.thumb .excerpt { display: block; border-bottom: 1px solid #f1f1f1; padding-bottom: 2.5em; }
@@ -2702,6 +2731,7 @@ html body.article main #article article.single .share-buttons ul li .box .count 
 html body.article main #article article.single .share-buttons ul li .box .share img, html body.about main #article article.single .share-buttons ul li .box .share img, html body.post main #article article.single .share-buttons ul li .box .share img { width: 30%; }
 html body.article main #article article.single .content a, html body.about main #article article.single .content a, html body.post main #article article.single .content a { color: #982022; text-decoration: none; }
 html body.article main #article article.single .content a:hover, html body.about main #article article.single .content a:hover, html body.post main #article article.single .content a:hover { color: #982022; }
+html body.article main #article article.single .content a.external:after, html body.about main #article article.single .content a.external:after, html body.post main #article article.single .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
 html body.article main #article article.single h1, html body.article main #article article.single h2, html body.article main #article article.single h3, html body.article main #article article.single h4, html body.article main #article article.single h5, html body.article main #article article.single h6, html body.about main #article article.single h1, html body.about main #article article.single h2, html body.about main #article article.single h3, html body.about main #article article.single h4, html body.about main #article article.single h5, html body.about main #article article.single h6, html body.post main #article article.single h1, html body.post main #article article.single h2, html body.post main #article article.single h3, html body.post main #article article.single h4, html body.post main #article article.single h5, html body.post main #article article.single h6 { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; line-height: 1.25; padding: 0; }
 html body.article main #article article.single h1, html body.about main #article article.single h1, html body.post main #article article.single h1 { font-size: 20px; font-size: 1.25rem; font-weight: bold; }
 html body.article main #article article.single h2, html body.about main #article article.single h2, html body.post main #article article.single h2 { font-size: 20px; font-size: 1.25rem; font-weight: normal; text-transform: uppercase; letter-spacing: 1.1px; }
@@ -2895,6 +2925,7 @@ html body.article main aside section article .share-buttons ul li .box .count a:
 html body.article main aside section article .share-buttons ul li .box .share img, html body.about main aside section article .share-buttons ul li .box .share img, html body.post main aside section article .share-buttons ul li .box .share img { width: 30%; }
 html body.article main aside section article .content a, html body.about main aside section article .content a, html body.post main aside section article .content a { color: #982022; text-decoration: none; }
 html body.article main aside section article .content a:hover, html body.about main aside section article .content a:hover, html body.post main aside section article .content a:hover { color: #982022; }
+html body.article main aside section article .content a.external:after, html body.about main aside section article .content a.external:after, html body.post main aside section article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
 html body.article main aside section article figure, html body.article main aside section article h1, html body.about main aside section article figure, html body.about main aside section article h1, html body.post main aside section article figure, html body.post main aside section article h1 { width: auto; float: left; max-width: 30%; margin: 1.5% 3% 0 0; }
 html body.article main aside section article h1, html body.about main aside section article h1, html body.post main aside section article h1 { font-weight: normal; font-size: small; max-width: calc(100% - 30% - 3%); margin-right: 0; }
 html body.article main aside #spacer > h3, html body.about main aside #spacer > h3, html body.post main aside #spacer > h3 { display: none; }
@@ -2963,6 +2994,7 @@ html body.jobs main #article #content article .share-buttons ul li .box .count a
 html body.jobs main #article #content article .share-buttons ul li .box .share img, html body.announcements main #article #content article .share-buttons ul li .box .share img { width: 30%; }
 html body.jobs main #article #content article .content a, html body.announcements main #article #content article .content a { color: #982022; text-decoration: none; }
 html body.jobs main #article #content article .content a:hover, html body.announcements main #article #content article .content a:hover { color: #982022; }
+html body.jobs main #article #content article .content a.external:after, html body.announcements main #article #content article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
 html body.jobs main #article #content article h1, html body.announcements main #article #content article h1 { font-size: medium; }
 html body.jobs main #article #content article h1, html body.jobs main #article #content article h2, html body.jobs main #article #content article h3, html body.jobs main #article #content article h4, html body.jobs main #article #content article h5, html body.jobs main #article #content article h6, html body.announcements main #article #content article h1, html body.announcements main #article #content article h2, html body.announcements main #article #content article h3, html body.announcements main #article #content article h4, html body.announcements main #article #content article h5, html body.announcements main #article #content article h6 { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; line-height: 1.25; padding: 0; }
 html body.jobs main #article #content article h1, html body.announcements main #article #content article h1 { font-size: 20px; font-size: 1.25rem; font-weight: bold; }
