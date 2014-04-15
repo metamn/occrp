@@ -285,7 +285,25 @@
 
 
 
-
+/* Tags on frontpage above footer
+*/
+@mixin frontpage-tags {
+  h3 {
+    @include font(section-title);
+  }
+  
+  nav {
+    @include hide-title;
+    @include font(navigation);
+    @include tags;
+    
+    ul.tag-list {
+      @include block;
+      @include padding;
+      @include list-inline($pad);
+    }
+  }
+}
 
 
 /* Videos

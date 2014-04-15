@@ -232,6 +232,8 @@ figure a { line-height: 0; }
 */
 /* The Category page
 */
+/* Tags on frontpage above footer
+*/
 /* Videos
 */
 /* Most read
@@ -1238,6 +1240,28 @@ html body.frontpage .container main #videos article h1 { font-size: medium; }
   html body.frontpage .container main #videos .after { right: 0; float: right; }
   html body.frontpage .container main #videos article { display: none; }
   html body.frontpage .container main #videos article:first-of-type { display: block; } }
+html body.frontpage .container main #tags h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; }
+html body.frontpage .container main #tags h3 a { color: #982022; text-decoration: none; }
+html body.frontpage .container main #tags h3 a:hover { color: #231f20; }
+html body.frontpage .container main #tags nav { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; width: 100%; max-width: 100%; float: left; background: #231f20; color: white; }
+html body.frontpage .container main #tags nav > h3 { display: none; }
+html body.frontpage .container main #tags nav a { color: white; text-decoration: none; }
+html body.frontpage .container main #tags nav a:hover { color: white; }
+html body.frontpage .container main #tags nav ul.search li.text img { height: 12px; position: relative; top: 1px; }
+html body.frontpage .container main #tags nav ul.search li.input { display: none; }
+html body.frontpage .container main #tags nav ul.search li.input input { margin: 0.3125em; }
+html body.frontpage .container main #tags nav ul.tag-list { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
+html body.frontpage .container main #tags nav ul.tag-list li, html body.frontpage .container main #tags nav ul.social li, html body.frontpage .container main #tags nav ul.search li { display: inline-block; float: left; margin-right: 0.3125em; }
+html body.frontpage .container main #tags nav ul.tag-list li:last-of-type, html body.frontpage .container main #tags nav ul.social li:last-of-type, html body.frontpage .container main #tags nav ul.search li:last-of-type { margin-right: 0; }
+html body.frontpage .container main #tags nav ul.social { float: right; }
+html body.frontpage .container main #tags nav ul.social li { /* We are not replacing social icons on hover - so the second image must not be displayed - also the icon should be taller, the maximum possible
+*/ }
+html body.frontpage .container main #tags nav ul.social li img { height: 12px; position: relative; top: 1px; }
+html body.frontpage .container main #tags nav ul.social li a img { height: 13px; }
+html body.frontpage .container main #tags nav ul.social li a img:last-of-type { display: none; }
+html body.frontpage .container main #tags nav ul.tag-list { width: 100%; max-width: 100%; float: left; padding: 1.25em; width: calc(100% - 2.5em); }
+html body.frontpage .container main #tags nav ul.tag-list li { display: inline-block; float: left; margin-right: 1.25em; }
+html body.frontpage .container main #tags nav ul.tag-list li:last-of-type { margin-right: 0; }
 @media only screen and (min-width: 80em) { html body.category main { overflow: hidden; }
   html body.category main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; position: relative; top: -2.5em; /* This is the margin between sidebar elements ... */ } }
 html body.category main #articles { width: 65.5%; margin-right: 2.5%; float: left; /* The first article

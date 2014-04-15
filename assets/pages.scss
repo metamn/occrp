@@ -73,6 +73,10 @@ html {
           #videos {
             @include videos;
           }
+          
+          #tags {
+            @include frontpage-tags;
+          }
         }
       }
     }  
