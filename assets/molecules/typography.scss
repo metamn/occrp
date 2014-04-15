@@ -420,7 +420,7 @@
     }
     
     /* Stretching and padding */
-    input, textarea {
+    input, textarea, label {
       @include block;
     }
     
@@ -432,23 +432,25 @@
     
 
     /* Text */
-    input[type='text'], input[type='email'], input[type='password'], input[type='url'], input[type='search'],   textarea {
-	    border: 1px solid $color;
-	    font-style: italic;
+    input[type='text'], input[type='email'], input[type='password'], input[type='url'], input[type='search'], textarea {
+      border: 1px solid $color;
+      font-style: italic;
     }
     
 
     /* Button */
     input[type='submit'] {	
+      width: auto;
+  
       @include uppercase;	
-	    border: 1px solid $color;
-	    @include color(invert);
-	    cursor: pointer;
-	    
-	    @include transition($easing);
-	    &:hover {
-	      @include color(normal);
-	    }
+      border: 1px solid $color;
+      @include color(invert);
+      cursor: pointer;
+      
+      @include transition($easing);
+      &:hover {
+        @include color(normal);
+      }
     }
     
     /* Label

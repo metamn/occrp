@@ -305,3 +305,44 @@ authors:
 
 
 
+<section id="comments">
+  <h3>Comments</h3>
+  
+  <form>
+    <label>Your name</label>
+    <input type="text">
+    <label>Your email</label>
+    <input type="text">
+    <label>Your comment</label>
+    <textarea></textarea>
+    <input type="submit" value="Post Comment">
+  </form>
+  
+  <div class="notice">
+    There are X comments for this article.
+  </div>
+  
+  <ol>
+    <li>
+      {% include comment.html %}
+    </li>
+    
+    <li>
+      {% include comment.html %}
+      
+      <ol>
+        <li>
+          {% include comment.html %}
+        </li>
+        
+        <li>
+          {% include comment.html %}
+        </li>
+      </ol>
+    </li>
+    
+    <li>
+      {% include comment.html %}
+    </li>
+  </ol>
+</section>

@@ -598,6 +598,10 @@ html body.frontpage .container main #intro #slider article .share-buttons ul li 
 html body.frontpage .container main #intro #slider article .content a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #intro #slider article .content a:hover { color: #982022; }
 html body.frontpage .container main #intro #slider article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.frontpage .container main #intro #slider article #comments > h3 { display: block; }
+html body.frontpage .container main #intro #slider article #comments form, html body.frontpage .container main #intro #slider article #comments .notice, html body.frontpage .container main #intro #slider article #comments ol, html body.frontpage .container main #intro #slider article #comments li { width: 100%; max-width: 100%; float: left; }
+html body.frontpage .container main #intro #slider article #comments li a { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
+html body.frontpage .container main #intro #slider article #comments li date { font-size: small; color: #332d2f; font-style: normal; }
 html body.frontpage .container main #intro #slider nav { margin-top: 1.25em; }
 html body.frontpage .container main #intro #slider nav > h3 { display: none; }
 html body.frontpage .container main #intro #slider nav ol li { display: inline-block; float: left; margin-right: 0.625em; }
@@ -695,6 +699,10 @@ html body.frontpage .container main #intro aside section article .share-buttons 
 html body.frontpage .container main #intro aside section article .content a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #intro aside section article .content a:hover { color: #982022; }
 html body.frontpage .container main #intro aside section article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.frontpage .container main #intro aside section article #comments > h3 { display: block; }
+html body.frontpage .container main #intro aside section article #comments form, html body.frontpage .container main #intro aside section article #comments .notice, html body.frontpage .container main #intro aside section article #comments ol, html body.frontpage .container main #intro aside section article #comments li { width: 100%; max-width: 100%; float: left; }
+html body.frontpage .container main #intro aside section article #comments li a { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
+html body.frontpage .container main #intro aside section article #comments li date { font-size: small; color: #332d2f; font-style: normal; }
 html body.frontpage .container main #intro aside section article h1 { font-size: medium; }
 @media only screen and (min-width: 80em) { html body.frontpage .container main #intro #slider { width: 65.5%; margin-right: 2.5%; float: left; }
   html body.frontpage .container main #intro aside { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0 !important; }
@@ -775,6 +783,10 @@ html body.frontpage .container main #investigations article .share-buttons ul li
 html body.frontpage .container main #investigations article .content a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #investigations article .content a:hover { color: #982022; }
 html body.frontpage .container main #investigations article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.frontpage .container main #investigations article #comments > h3 { display: block; }
+html body.frontpage .container main #investigations article #comments form, html body.frontpage .container main #investigations article #comments .notice, html body.frontpage .container main #investigations article #comments ol, html body.frontpage .container main #investigations article #comments li { width: 100%; max-width: 100%; float: left; }
+html body.frontpage .container main #investigations article #comments li a { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
+html body.frontpage .container main #investigations article #comments li date { font-size: small; color: #332d2f; font-style: normal; }
 @media only screen and (max-width: 29.999em) { html body.frontpage .container main #investigations article { margin-bottom: 0.625em; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.frontpage .container main #investigations article { height: 30em; } }
 @media only screen and (min-width: 80em) { html body.frontpage .container main #investigations article { height: 30em; } }
@@ -855,6 +867,10 @@ html body.frontpage .container main #products article .share-buttons ul li .box 
 html body.frontpage .container main #products article .content a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #products article .content a:hover { color: #982022; }
 html body.frontpage .container main #products article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.frontpage .container main #products article #comments > h3 { display: block; }
+html body.frontpage .container main #products article #comments form, html body.frontpage .container main #products article #comments .notice, html body.frontpage .container main #products article #comments ol, html body.frontpage .container main #products article #comments li { width: 100%; max-width: 100%; float: left; }
+html body.frontpage .container main #products article #comments li a { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
+html body.frontpage .container main #products article #comments li date { font-size: small; color: #332d2f; font-style: normal; }
 @media only screen and (max-width: 29.999em) { html body.frontpage .container main #products { position: relative; height: 100%; }
   html body.frontpage .container main #products .before, html body.frontpage .container main #products .after { font-size: 150%; position: absolute; top: 40%; cursor: pointer; background: #f1f1f1; color: #231f20; padding: 0.3125em; opacity: .7; }
   html body.frontpage .container main #products .before a, html body.frontpage .container main #products .after a { color: #231f20; text-decoration: none; }
@@ -941,6 +957,10 @@ html body.frontpage .container main #projects article .share-buttons ul li .box 
 html body.frontpage .container main #projects article .content a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #projects article .content a:hover { color: #982022; }
 html body.frontpage .container main #projects article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.frontpage .container main #projects article #comments > h3 { display: block; }
+html body.frontpage .container main #projects article #comments form, html body.frontpage .container main #projects article #comments .notice, html body.frontpage .container main #projects article #comments ol, html body.frontpage .container main #projects article #comments li { width: 100%; max-width: 100%; float: left; }
+html body.frontpage .container main #projects article #comments li a { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
+html body.frontpage .container main #projects article #comments li date { font-size: small; color: #332d2f; font-style: normal; }
 @media only screen and (max-width: 29.999em) { html body.frontpage .container main #projects article { margin-bottom: 0.625em; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.frontpage .container main #projects article { height: 17em; } }
 @media only screen and (min-width: 80em) { html body.frontpage .container main #projects article { height: 17em; } }
@@ -1031,6 +1051,10 @@ html body.frontpage .container main #blog article .share-buttons ul li .box .sha
 html body.frontpage .container main #blog article .content a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #blog article .content a:hover { color: #982022; }
 html body.frontpage .container main #blog article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.frontpage .container main #blog article #comments > h3 { display: block; }
+html body.frontpage .container main #blog article #comments form, html body.frontpage .container main #blog article #comments .notice, html body.frontpage .container main #blog article #comments ol, html body.frontpage .container main #blog article #comments li { width: 100%; max-width: 100%; float: left; }
+html body.frontpage .container main #blog article #comments li a { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
+html body.frontpage .container main #blog article #comments li date { font-size: small; color: #332d2f; font-style: normal; }
 html body.frontpage .container main #blog article figure, html body.frontpage .container main #blog article h1, html body.frontpage .container main #blog article .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
 html body.frontpage .container main #blog article h1, html body.frontpage .container main #blog article .excerpt { margin-right: 0; }
 html body.frontpage .container main #blog article a { color: white; text-decoration: none; }
@@ -1114,6 +1138,10 @@ html body.frontpage .container main #most-read section article .share-buttons ul
 html body.frontpage .container main #most-read section article .content a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #most-read section article .content a:hover { color: #982022; }
 html body.frontpage .container main #most-read section article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.frontpage .container main #most-read section article #comments > h3 { display: block; }
+html body.frontpage .container main #most-read section article #comments form, html body.frontpage .container main #most-read section article #comments .notice, html body.frontpage .container main #most-read section article #comments ol, html body.frontpage .container main #most-read section article #comments li { width: 100%; max-width: 100%; float: left; }
+html body.frontpage .container main #most-read section article #comments li a { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
+html body.frontpage .container main #most-read section article #comments li date { font-size: small; color: #332d2f; font-style: normal; }
 html body.frontpage .container main #most-read section article h1 { font-size: medium; }
 html body.frontpage .container main #most-read section article h1 { font-weight: normal; }
 html body.frontpage .container main #videos h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; }
@@ -1193,6 +1221,10 @@ html body.frontpage .container main #videos article .share-buttons ul li .box .s
 html body.frontpage .container main #videos article .content a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #videos article .content a:hover { color: #982022; }
 html body.frontpage .container main #videos article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.frontpage .container main #videos article #comments > h3 { display: block; }
+html body.frontpage .container main #videos article #comments form, html body.frontpage .container main #videos article #comments .notice, html body.frontpage .container main #videos article #comments ol, html body.frontpage .container main #videos article #comments li { width: 100%; max-width: 100%; float: left; }
+html body.frontpage .container main #videos article #comments li a { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
+html body.frontpage .container main #videos article #comments li date { font-size: small; color: #332d2f; font-style: normal; }
 @media only screen and (max-width: 29.999em) { html body.frontpage .container main #videos article { margin-bottom: 0.625em; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.frontpage .container main #videos article { height: 17em; } }
 @media only screen and (min-width: 80em) { html body.frontpage .container main #videos article { height: 17em; } }
@@ -1267,6 +1299,10 @@ html body.category main #articles aside .share-buttons ul li .box .share img { w
 html body.category main #articles aside .content a { color: #982022; text-decoration: none; }
 html body.category main #articles aside .content a:hover { color: #982022; }
 html body.category main #articles aside .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.category main #articles aside #comments > h3 { display: block; }
+html body.category main #articles aside #comments form, html body.category main #articles aside #comments .notice, html body.category main #articles aside #comments ol, html body.category main #articles aside #comments li { width: 100%; max-width: 100%; float: left; }
+html body.category main #articles aside #comments li a { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
+html body.category main #articles aside #comments li date { font-size: small; color: #332d2f; font-style: normal; }
 @media only screen and (min-width: 30em) { html body.category main #articles aside figure, html body.category main #articles aside h1, html body.category main #articles aside .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.category main #articles aside h1, html body.category main #articles aside .excerpt { margin-right: 0; } }
 html body.category main #articles article.thumb { margin-bottom: 0.3125em; }
@@ -1363,6 +1399,10 @@ html body.category main #articles article.thumb .share-buttons ul li .box .share
 html body.category main #articles article.thumb .content a { color: #982022; text-decoration: none; }
 html body.category main #articles article.thumb .content a:hover { color: #982022; }
 html body.category main #articles article.thumb .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.category main #articles article.thumb #comments > h3 { display: block; }
+html body.category main #articles article.thumb #comments form, html body.category main #articles article.thumb #comments .notice, html body.category main #articles article.thumb #comments ol, html body.category main #articles article.thumb #comments li { width: 100%; max-width: 100%; float: left; }
+html body.category main #articles article.thumb #comments li a { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
+html body.category main #articles article.thumb #comments li date { font-size: small; color: #332d2f; font-style: normal; }
 @media only screen and (max-width: 29.999em) { html body.category main #articles article.thumb { margin-bottom: 0.625em; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.category main #articles article.thumb { height: 17em; } }
 @media only screen and (min-width: 80em) { html body.category main #articles article.thumb { height: 17em; } }
@@ -1420,6 +1460,10 @@ html body.category main #articles article.thumb h1 { font-size: medium; }
   html body.category main #articles article.thumb .content a { color: #982022; text-decoration: none; }
   html body.category main #articles article.thumb .content a:hover { color: #982022; }
   html body.category main #articles article.thumb .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+  html body.category main #articles article.thumb #comments > h3 { display: block; }
+  html body.category main #articles article.thumb #comments form, html body.category main #articles article.thumb #comments .notice, html body.category main #articles article.thumb #comments ol, html body.category main #articles article.thumb #comments li { width: 100%; max-width: 100%; float: left; }
+  html body.category main #articles article.thumb #comments li a { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
+  html body.category main #articles article.thumb #comments li date { font-size: small; color: #332d2f; font-style: normal; }
   html body.category main #articles article.thumb figure, html body.category main #articles article.thumb h1, html body.category main #articles article.thumb .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.category main #articles article.thumb h1, html body.category main #articles article.thumb .excerpt { margin-right: 0; }
   html body.category main #articles article.thumb h1 { font-weight: normal; } }
@@ -1494,6 +1538,10 @@ html body.category main aside section article .share-buttons ul li .box .share i
 html body.category main aside section article .content a { color: #982022; text-decoration: none; }
 html body.category main aside section article .content a:hover { color: #982022; }
 html body.category main aside section article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.category main aside section article #comments > h3 { display: block; }
+html body.category main aside section article #comments form, html body.category main aside section article #comments .notice, html body.category main aside section article #comments ol, html body.category main aside section article #comments li { width: 100%; max-width: 100%; float: left; }
+html body.category main aside section article #comments li a { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
+html body.category main aside section article #comments li date { font-size: small; color: #332d2f; font-style: normal; }
 html body.category main aside section article figure, html body.category main aside section article h1 { width: auto; float: left; max-width: 30%; margin: 1.5% 3% 0 0; }
 html body.category main aside section article h1 { font-weight: normal; font-size: small; max-width: calc(100% - 30% - 3%); margin-right: 0; }
 html body.category main aside #spacer > h3 { display: none; }
@@ -1558,6 +1606,10 @@ html body.tag main #articles aside .share-buttons ul li .box .share img { width:
 html body.tag main #articles aside .content a { color: #982022; text-decoration: none; }
 html body.tag main #articles aside .content a:hover { color: #982022; }
 html body.tag main #articles aside .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.tag main #articles aside #comments > h3 { display: block; }
+html body.tag main #articles aside #comments form, html body.tag main #articles aside #comments .notice, html body.tag main #articles aside #comments ol, html body.tag main #articles aside #comments li { width: 100%; max-width: 100%; float: left; }
+html body.tag main #articles aside #comments li a { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
+html body.tag main #articles aside #comments li date { font-size: small; color: #332d2f; font-style: normal; }
 @media only screen and (min-width: 30em) { html body.tag main #articles aside figure, html body.tag main #articles aside h1, html body.tag main #articles aside .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.tag main #articles aside h1, html body.tag main #articles aside .excerpt { margin-right: 0; } }
 html body.tag main #articles article.thumb { margin-bottom: 0.3125em; }
@@ -1654,6 +1706,10 @@ html body.tag main #articles article.thumb .share-buttons ul li .box .share img 
 html body.tag main #articles article.thumb .content a { color: #982022; text-decoration: none; }
 html body.tag main #articles article.thumb .content a:hover { color: #982022; }
 html body.tag main #articles article.thumb .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.tag main #articles article.thumb #comments > h3 { display: block; }
+html body.tag main #articles article.thumb #comments form, html body.tag main #articles article.thumb #comments .notice, html body.tag main #articles article.thumb #comments ol, html body.tag main #articles article.thumb #comments li { width: 100%; max-width: 100%; float: left; }
+html body.tag main #articles article.thumb #comments li a { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
+html body.tag main #articles article.thumb #comments li date { font-size: small; color: #332d2f; font-style: normal; }
 @media only screen and (max-width: 29.999em) { html body.tag main #articles article.thumb { margin-bottom: 0.625em; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.tag main #articles article.thumb { height: 17em; } }
 @media only screen and (min-width: 80em) { html body.tag main #articles article.thumb { height: 17em; } }
@@ -1711,6 +1767,10 @@ html body.tag main #articles article.thumb h1 { font-size: medium; }
   html body.tag main #articles article.thumb .content a { color: #982022; text-decoration: none; }
   html body.tag main #articles article.thumb .content a:hover { color: #982022; }
   html body.tag main #articles article.thumb .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+  html body.tag main #articles article.thumb #comments > h3 { display: block; }
+  html body.tag main #articles article.thumb #comments form, html body.tag main #articles article.thumb #comments .notice, html body.tag main #articles article.thumb #comments ol, html body.tag main #articles article.thumb #comments li { width: 100%; max-width: 100%; float: left; }
+  html body.tag main #articles article.thumb #comments li a { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
+  html body.tag main #articles article.thumb #comments li date { font-size: small; color: #332d2f; font-style: normal; }
   html body.tag main #articles article.thumb figure, html body.tag main #articles article.thumb h1, html body.tag main #articles article.thumb .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.tag main #articles article.thumb h1, html body.tag main #articles article.thumb .excerpt { margin-right: 0; }
   html body.tag main #articles article.thumb h1 { font-weight: normal; } }
@@ -1785,6 +1845,10 @@ html body.tag main aside section article .share-buttons ul li .box .share img { 
 html body.tag main aside section article .content a { color: #982022; text-decoration: none; }
 html body.tag main aside section article .content a:hover { color: #982022; }
 html body.tag main aside section article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.tag main aside section article #comments > h3 { display: block; }
+html body.tag main aside section article #comments form, html body.tag main aside section article #comments .notice, html body.tag main aside section article #comments ol, html body.tag main aside section article #comments li { width: 100%; max-width: 100%; float: left; }
+html body.tag main aside section article #comments li a { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
+html body.tag main aside section article #comments li date { font-size: small; color: #332d2f; font-style: normal; }
 html body.tag main aside section article figure, html body.tag main aside section article h1 { width: auto; float: left; max-width: 30%; margin: 1.5% 3% 0 0; }
 html body.tag main aside section article h1 { font-weight: normal; font-size: small; max-width: calc(100% - 30% - 3%); margin-right: 0; }
 html body.tag main aside #spacer > h3 { display: none; }
@@ -1867,6 +1931,10 @@ html body.projects main #articles article .share-buttons ul li .box .share img {
 html body.projects main #articles article .content a { color: #982022; text-decoration: none; }
 html body.projects main #articles article .content a:hover { color: #982022; }
 html body.projects main #articles article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.projects main #articles article #comments > h3 { display: block; }
+html body.projects main #articles article #comments form, html body.projects main #articles article #comments .notice, html body.projects main #articles article #comments ol, html body.projects main #articles article #comments li { width: 100%; max-width: 100%; float: left; }
+html body.projects main #articles article #comments li a { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
+html body.projects main #articles article #comments li date { font-size: small; color: #332d2f; font-style: normal; }
 @media only screen and (max-width: 29.999em) { html body.projects main #articles article { margin-bottom: 0.625em; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.projects main #articles article { height: 17em; } }
 @media only screen and (min-width: 80em) { html body.projects main #articles article { height: 17em; } }
@@ -1954,6 +2022,10 @@ html body.projects article .share-buttons ul li .box .share img { width: 30%; }
 html body.projects article .content a { color: #982022; text-decoration: none; }
 html body.projects article .content a:hover { color: #982022; }
 html body.projects article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.projects article #comments > h3 { display: block; }
+html body.projects article #comments form, html body.projects article #comments .notice, html body.projects article #comments ol, html body.projects article #comments li { width: 100%; max-width: 100%; float: left; }
+html body.projects article #comments li a { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
+html body.projects article #comments li date { font-size: small; color: #332d2f; font-style: normal; }
 @media only screen and (max-width: 29.999em) { html body.projects article { margin-bottom: 0.625em; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.projects article { height: 30em; } }
 @media only screen and (min-width: 80em) { html body.projects article { height: 30em; } }
@@ -2046,6 +2118,10 @@ html body.resources main #articles article .share-buttons ul li .box .share img 
 html body.resources main #articles article .content a { color: #982022; text-decoration: none; }
 html body.resources main #articles article .content a:hover { color: #982022; }
 html body.resources main #articles article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.resources main #articles article #comments > h3 { display: block; }
+html body.resources main #articles article #comments form, html body.resources main #articles article #comments .notice, html body.resources main #articles article #comments ol, html body.resources main #articles article #comments li { width: 100%; max-width: 100%; float: left; }
+html body.resources main #articles article #comments li a { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
+html body.resources main #articles article #comments li date { font-size: small; color: #332d2f; font-style: normal; }
 @media only screen and (max-width: 29.999em) { html body.resources main #articles article { margin-bottom: 0.625em; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.resources main #articles article { height: 17em; } }
 @media only screen and (min-width: 80em) { html body.resources main #articles article { height: 17em; } }
@@ -2133,6 +2209,10 @@ html body.blog main #articles aside .share-buttons ul li .box .share img { width
 html body.blog main #articles aside .content a { color: #982022; text-decoration: none; }
 html body.blog main #articles aside .content a:hover { color: #982022; }
 html body.blog main #articles aside .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.blog main #articles aside #comments > h3 { display: block; }
+html body.blog main #articles aside #comments form, html body.blog main #articles aside #comments .notice, html body.blog main #articles aside #comments ol, html body.blog main #articles aside #comments li { width: 100%; max-width: 100%; float: left; }
+html body.blog main #articles aside #comments li a { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
+html body.blog main #articles aside #comments li date { font-size: small; color: #332d2f; font-style: normal; }
 @media only screen and (min-width: 30em) { html body.blog main #articles aside figure, html body.blog main #articles aside h1, html body.blog main #articles aside .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.blog main #articles aside h1, html body.blog main #articles aside .excerpt { margin-right: 0; } }
 html body.blog main #articles article.thumb { margin-bottom: 0.3125em; }
@@ -2229,6 +2309,10 @@ html body.blog main #articles article.thumb .share-buttons ul li .box .share img
 html body.blog main #articles article.thumb .content a { color: #982022; text-decoration: none; }
 html body.blog main #articles article.thumb .content a:hover { color: #982022; }
 html body.blog main #articles article.thumb .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.blog main #articles article.thumb #comments > h3 { display: block; }
+html body.blog main #articles article.thumb #comments form, html body.blog main #articles article.thumb #comments .notice, html body.blog main #articles article.thumb #comments ol, html body.blog main #articles article.thumb #comments li { width: 100%; max-width: 100%; float: left; }
+html body.blog main #articles article.thumb #comments li a { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
+html body.blog main #articles article.thumb #comments li date { font-size: small; color: #332d2f; font-style: normal; }
 @media only screen and (max-width: 29.999em) { html body.blog main #articles article.thumb { margin-bottom: 0.625em; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.blog main #articles article.thumb { height: 17em; } }
 @media only screen and (min-width: 80em) { html body.blog main #articles article.thumb { height: 17em; } }
@@ -2286,6 +2370,10 @@ html body.blog main #articles article.thumb h1 { font-size: medium; }
   html body.blog main #articles article.thumb .content a { color: #982022; text-decoration: none; }
   html body.blog main #articles article.thumb .content a:hover { color: #982022; }
   html body.blog main #articles article.thumb .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+  html body.blog main #articles article.thumb #comments > h3 { display: block; }
+  html body.blog main #articles article.thumb #comments form, html body.blog main #articles article.thumb #comments .notice, html body.blog main #articles article.thumb #comments ol, html body.blog main #articles article.thumb #comments li { width: 100%; max-width: 100%; float: left; }
+  html body.blog main #articles article.thumb #comments li a { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
+  html body.blog main #articles article.thumb #comments li date { font-size: small; color: #332d2f; font-style: normal; }
   html body.blog main #articles article.thumb figure, html body.blog main #articles article.thumb h1, html body.blog main #articles article.thumb .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.blog main #articles article.thumb h1, html body.blog main #articles article.thumb .excerpt { margin-right: 0; }
   html body.blog main #articles article.thumb h1 { font-weight: normal; } }
@@ -2360,6 +2448,10 @@ html body.blog main aside section article .share-buttons ul li .box .share img {
 html body.blog main aside section article .content a { color: #982022; text-decoration: none; }
 html body.blog main aside section article .content a:hover { color: #982022; }
 html body.blog main aside section article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.blog main aside section article #comments > h3 { display: block; }
+html body.blog main aside section article #comments form, html body.blog main aside section article #comments .notice, html body.blog main aside section article #comments ol, html body.blog main aside section article #comments li { width: 100%; max-width: 100%; float: left; }
+html body.blog main aside section article #comments li a { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
+html body.blog main aside section article #comments li date { font-size: small; color: #332d2f; font-style: normal; }
 html body.blog main aside section article figure, html body.blog main aside section article h1 { width: auto; float: left; max-width: 30%; margin: 1.5% 3% 0 0; }
 html body.blog main aside section article h1 { font-weight: normal; font-size: small; max-width: calc(100% - 30% - 3%); margin-right: 0; }
 html body.blog main aside #spacer > h3 { display: none; }
@@ -2415,6 +2507,10 @@ html body.blog main #articles article .share-buttons ul li .box .share img { wid
 html body.blog main #articles article .content a { color: #982022; text-decoration: none; }
 html body.blog main #articles article .content a:hover { color: #982022; }
 html body.blog main #articles article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.blog main #articles article #comments > h3 { display: block; }
+html body.blog main #articles article #comments form, html body.blog main #articles article #comments .notice, html body.blog main #articles article #comments ol, html body.blog main #articles article #comments li { width: 100%; max-width: 100%; float: left; }
+html body.blog main #articles article #comments li a { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
+html body.blog main #articles article #comments li date { font-size: small; color: #332d2f; font-style: normal; }
 html body.blog main #articles article.thumb { width: 100%; max-width: 100%; float: left; }
 html body.blog main #articles article.thumb h1 { font-size: 20px; font-size: 1.25rem; font-weight: bold; }
 html body.blog main #articles article.thumb .excerpt { display: block; border-bottom: 1px solid #f1f1f1; padding-bottom: 2.5em; }
@@ -2480,6 +2576,10 @@ html body.author main #articles aside .share-buttons ul li .box .share img { wid
 html body.author main #articles aside .content a { color: #982022; text-decoration: none; }
 html body.author main #articles aside .content a:hover { color: #982022; }
 html body.author main #articles aside .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.author main #articles aside #comments > h3 { display: block; }
+html body.author main #articles aside #comments form, html body.author main #articles aside #comments .notice, html body.author main #articles aside #comments ol, html body.author main #articles aside #comments li { width: 100%; max-width: 100%; float: left; }
+html body.author main #articles aside #comments li a { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
+html body.author main #articles aside #comments li date { font-size: small; color: #332d2f; font-style: normal; }
 @media only screen and (min-width: 30em) { html body.author main #articles aside figure, html body.author main #articles aside h1, html body.author main #articles aside .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.author main #articles aside h1, html body.author main #articles aside .excerpt { margin-right: 0; } }
 html body.author main #articles article.thumb { margin-bottom: 0.3125em; }
@@ -2576,6 +2676,10 @@ html body.author main #articles article.thumb .share-buttons ul li .box .share i
 html body.author main #articles article.thumb .content a { color: #982022; text-decoration: none; }
 html body.author main #articles article.thumb .content a:hover { color: #982022; }
 html body.author main #articles article.thumb .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.author main #articles article.thumb #comments > h3 { display: block; }
+html body.author main #articles article.thumb #comments form, html body.author main #articles article.thumb #comments .notice, html body.author main #articles article.thumb #comments ol, html body.author main #articles article.thumb #comments li { width: 100%; max-width: 100%; float: left; }
+html body.author main #articles article.thumb #comments li a { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
+html body.author main #articles article.thumb #comments li date { font-size: small; color: #332d2f; font-style: normal; }
 @media only screen and (max-width: 29.999em) { html body.author main #articles article.thumb { margin-bottom: 0.625em; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.author main #articles article.thumb { height: 17em; } }
 @media only screen and (min-width: 80em) { html body.author main #articles article.thumb { height: 17em; } }
@@ -2633,6 +2737,10 @@ html body.author main #articles article.thumb h1 { font-size: medium; }
   html body.author main #articles article.thumb .content a { color: #982022; text-decoration: none; }
   html body.author main #articles article.thumb .content a:hover { color: #982022; }
   html body.author main #articles article.thumb .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+  html body.author main #articles article.thumb #comments > h3 { display: block; }
+  html body.author main #articles article.thumb #comments form, html body.author main #articles article.thumb #comments .notice, html body.author main #articles article.thumb #comments ol, html body.author main #articles article.thumb #comments li { width: 100%; max-width: 100%; float: left; }
+  html body.author main #articles article.thumb #comments li a { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
+  html body.author main #articles article.thumb #comments li date { font-size: small; color: #332d2f; font-style: normal; }
   html body.author main #articles article.thumb figure, html body.author main #articles article.thumb h1, html body.author main #articles article.thumb .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.author main #articles article.thumb h1, html body.author main #articles article.thumb .excerpt { margin-right: 0; }
   html body.author main #articles article.thumb h1 { font-weight: normal; } }
@@ -2707,6 +2815,10 @@ html body.author main aside section article .share-buttons ul li .box .share img
 html body.author main aside section article .content a { color: #982022; text-decoration: none; }
 html body.author main aside section article .content a:hover { color: #982022; }
 html body.author main aside section article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.author main aside section article #comments > h3 { display: block; }
+html body.author main aside section article #comments form, html body.author main aside section article #comments .notice, html body.author main aside section article #comments ol, html body.author main aside section article #comments li { width: 100%; max-width: 100%; float: left; }
+html body.author main aside section article #comments li a { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
+html body.author main aside section article #comments li date { font-size: small; color: #332d2f; font-style: normal; }
 html body.author main aside section article figure, html body.author main aside section article h1 { width: auto; float: left; max-width: 30%; margin: 1.5% 3% 0 0; }
 html body.author main aside section article h1 { font-weight: normal; font-size: small; max-width: calc(100% - 30% - 3%); margin-right: 0; }
 html body.author main aside #spacer > h3 { display: none; }
@@ -2765,6 +2877,10 @@ html body.author main #articles article .share-buttons ul li .box .share img { w
 html body.author main #articles article .content a { color: #982022; text-decoration: none; }
 html body.author main #articles article .content a:hover { color: #982022; }
 html body.author main #articles article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.author main #articles article #comments > h3 { display: block; }
+html body.author main #articles article #comments form, html body.author main #articles article #comments .notice, html body.author main #articles article #comments ol, html body.author main #articles article #comments li { width: 100%; max-width: 100%; float: left; }
+html body.author main #articles article #comments li a { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
+html body.author main #articles article #comments li date { font-size: small; color: #332d2f; font-style: normal; }
 html body.author main #articles article.thumb { width: 100%; max-width: 100%; float: left; }
 html body.author main #articles article.thumb h1 { font-size: 20px; font-size: 1.25rem; font-weight: bold; }
 html body.author main #articles article.thumb .excerpt { display: block; border-bottom: 1px solid #f1f1f1; padding-bottom: 2.5em; }
@@ -2822,6 +2938,10 @@ html body.article main #article article.single .share-buttons ul li .box .share 
 html body.article main #article article.single .content a, html body.about main #article article.single .content a, html body.post main #article article.single .content a { color: #982022; text-decoration: none; }
 html body.article main #article article.single .content a:hover, html body.about main #article article.single .content a:hover, html body.post main #article article.single .content a:hover { color: #982022; }
 html body.article main #article article.single .content a.external:after, html body.about main #article article.single .content a.external:after, html body.post main #article article.single .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.article main #article article.single #comments > h3, html body.about main #article article.single #comments > h3, html body.post main #article article.single #comments > h3 { display: block; }
+html body.article main #article article.single #comments form, html body.article main #article article.single #comments .notice, html body.article main #article article.single #comments ol, html body.article main #article article.single #comments li, html body.about main #article article.single #comments form, html body.about main #article article.single #comments .notice, html body.about main #article article.single #comments ol, html body.about main #article article.single #comments li, html body.post main #article article.single #comments form, html body.post main #article article.single #comments .notice, html body.post main #article article.single #comments ol, html body.post main #article article.single #comments li { width: 100%; max-width: 100%; float: left; }
+html body.article main #article article.single #comments li a, html body.about main #article article.single #comments li a, html body.post main #article article.single #comments li a { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
+html body.article main #article article.single #comments li date, html body.about main #article article.single #comments li date, html body.post main #article article.single #comments li date { font-size: small; color: #332d2f; font-style: normal; }
 html body.article main #article article.single h1, html body.article main #article article.single h2, html body.article main #article article.single h3, html body.article main #article article.single h4, html body.article main #article article.single h5, html body.article main #article article.single h6, html body.about main #article article.single h1, html body.about main #article article.single h2, html body.about main #article article.single h3, html body.about main #article article.single h4, html body.about main #article article.single h5, html body.about main #article article.single h6, html body.post main #article article.single h1, html body.post main #article article.single h2, html body.post main #article article.single h3, html body.post main #article article.single h4, html body.post main #article article.single h5, html body.post main #article article.single h6 { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; line-height: 1.25; padding: 0; }
 html body.article main #article article.single h1, html body.about main #article article.single h1, html body.post main #article article.single h1 { font-size: 20px; font-size: 1.25rem; font-weight: bold; }
 html body.article main #article article.single h2, html body.about main #article article.single h2, html body.post main #article article.single h2 { font-size: 20px; font-size: 1.25rem; font-weight: normal; text-transform: uppercase; letter-spacing: 1.1px; }
@@ -2868,10 +2988,10 @@ html body.article main #article article.single figure figcaption ul li:before, h
 html body.article main #article article.single form, html body.about main #article article.single form, html body.post main #article article.single form { /* Reset */ /* Stretching and padding */ /* Text */ /* Button */ /* Label
 */ }
 html body.article main #article article.single form input, html body.article main #article article.single form textarea, html body.article main #article article.single form select, html body.about main #article article.single form input, html body.about main #article article.single form textarea, html body.about main #article article.single form select, html body.post main #article article.single form input, html body.post main #article article.single form textarea, html body.post main #article article.single form select { border: none; outline: 0; background: white; appearance: none; -webkit-appearance: none; -moz-appearance: none; }
-html body.article main #article article.single form input, html body.article main #article article.single form textarea, html body.about main #article article.single form input, html body.about main #article article.single form textarea, html body.post main #article article.single form input, html body.post main #article article.single form textarea { width: 100%; max-width: 100%; float: left; }
+html body.article main #article article.single form input, html body.article main #article article.single form textarea, html body.article main #article article.single form label, html body.about main #article article.single form input, html body.about main #article article.single form textarea, html body.about main #article article.single form label, html body.post main #article article.single form input, html body.post main #article article.single form textarea, html body.post main #article article.single form label { width: 100%; max-width: 100%; float: left; }
 html body.article main #article article.single form input, html body.article main #article article.single form textarea, html body.about main #article article.single form input, html body.about main #article article.single form textarea, html body.post main #article article.single form input, html body.post main #article article.single form textarea { padding: 0.625em; width: calc(100% - 1.25em); margin-bottom: 0.625em; }
 html body.article main #article article.single form input[type='text'], html body.article main #article article.single form input[type='email'], html body.article main #article article.single form input[type='password'], html body.article main #article article.single form input[type='url'], html body.article main #article article.single form input[type='search'], html body.article main #article article.single form textarea, html body.about main #article article.single form input[type='text'], html body.about main #article article.single form input[type='email'], html body.about main #article article.single form input[type='password'], html body.about main #article article.single form input[type='url'], html body.about main #article article.single form input[type='search'], html body.about main #article article.single form textarea, html body.post main #article article.single form input[type='text'], html body.post main #article article.single form input[type='email'], html body.post main #article article.single form input[type='password'], html body.post main #article article.single form input[type='url'], html body.post main #article article.single form input[type='search'], html body.post main #article article.single form textarea { border: 1px solid #231f20; font-style: italic; }
-html body.article main #article article.single form input[type='submit'], html body.about main #article article.single form input[type='submit'], html body.post main #article article.single form input[type='submit'] { text-transform: uppercase; letter-spacing: 1.1px; border: 1px solid #231f20; background: #231f20; color: white; cursor: pointer; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; }
+html body.article main #article article.single form input[type='submit'], html body.about main #article article.single form input[type='submit'], html body.post main #article article.single form input[type='submit'] { width: auto; text-transform: uppercase; letter-spacing: 1.1px; border: 1px solid #231f20; background: #231f20; color: white; cursor: pointer; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; }
 html body.article main #article article.single form input[type='submit'] a, html body.about main #article article.single form input[type='submit'] a, html body.post main #article article.single form input[type='submit'] a { color: white; text-decoration: none; }
 html body.article main #article article.single form input[type='submit'] a:hover, html body.about main #article article.single form input[type='submit'] a:hover, html body.post main #article article.single form input[type='submit'] a:hover { color: white; }
 html body.article main #article article.single form input[type='submit']:hover, html body.about main #article article.single form input[type='submit']:hover, html body.post main #article article.single form input[type='submit']:hover { background: white; color: #231f20; }
@@ -3017,6 +3137,10 @@ html body.article main aside section article .share-buttons ul li .box .share im
 html body.article main aside section article .content a, html body.about main aside section article .content a, html body.post main aside section article .content a { color: #982022; text-decoration: none; }
 html body.article main aside section article .content a:hover, html body.about main aside section article .content a:hover, html body.post main aside section article .content a:hover { color: #982022; }
 html body.article main aside section article .content a.external:after, html body.about main aside section article .content a.external:after, html body.post main aside section article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.article main aside section article #comments > h3, html body.about main aside section article #comments > h3, html body.post main aside section article #comments > h3 { display: block; }
+html body.article main aside section article #comments form, html body.article main aside section article #comments .notice, html body.article main aside section article #comments ol, html body.article main aside section article #comments li, html body.about main aside section article #comments form, html body.about main aside section article #comments .notice, html body.about main aside section article #comments ol, html body.about main aside section article #comments li, html body.post main aside section article #comments form, html body.post main aside section article #comments .notice, html body.post main aside section article #comments ol, html body.post main aside section article #comments li { width: 100%; max-width: 100%; float: left; }
+html body.article main aside section article #comments li a, html body.about main aside section article #comments li a, html body.post main aside section article #comments li a { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
+html body.article main aside section article #comments li date, html body.about main aside section article #comments li date, html body.post main aside section article #comments li date { font-size: small; color: #332d2f; font-style: normal; }
 html body.article main aside section article figure, html body.article main aside section article h1, html body.about main aside section article figure, html body.about main aside section article h1, html body.post main aside section article figure, html body.post main aside section article h1 { width: auto; float: left; max-width: 30%; margin: 1.5% 3% 0 0; }
 html body.article main aside section article h1, html body.about main aside section article h1, html body.post main aside section article h1 { font-weight: normal; font-size: small; max-width: calc(100% - 30% - 3%); margin-right: 0; }
 html body.article main aside #spacer > h3, html body.about main aside #spacer > h3, html body.post main aside #spacer > h3 { display: none; }
@@ -3089,6 +3213,10 @@ html body.jobs main #article #content article .share-buttons ul li .box .share i
 html body.jobs main #article #content article .content a, html body.announcements main #article #content article .content a { color: #982022; text-decoration: none; }
 html body.jobs main #article #content article .content a:hover, html body.announcements main #article #content article .content a:hover { color: #982022; }
 html body.jobs main #article #content article .content a.external:after, html body.announcements main #article #content article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.jobs main #article #content article #comments > h3, html body.announcements main #article #content article #comments > h3 { display: block; }
+html body.jobs main #article #content article #comments form, html body.jobs main #article #content article #comments .notice, html body.jobs main #article #content article #comments ol, html body.jobs main #article #content article #comments li, html body.announcements main #article #content article #comments form, html body.announcements main #article #content article #comments .notice, html body.announcements main #article #content article #comments ol, html body.announcements main #article #content article #comments li { width: 100%; max-width: 100%; float: left; }
+html body.jobs main #article #content article #comments li a, html body.announcements main #article #content article #comments li a { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
+html body.jobs main #article #content article #comments li date, html body.announcements main #article #content article #comments li date { font-size: small; color: #332d2f; font-style: normal; }
 html body.jobs main #article #content article h1, html body.announcements main #article #content article h1 { font-size: medium; }
 html body.jobs main #article #content article h1, html body.jobs main #article #content article h2, html body.jobs main #article #content article h3, html body.jobs main #article #content article h4, html body.jobs main #article #content article h5, html body.jobs main #article #content article h6, html body.announcements main #article #content article h1, html body.announcements main #article #content article h2, html body.announcements main #article #content article h3, html body.announcements main #article #content article h4, html body.announcements main #article #content article h5, html body.announcements main #article #content article h6 { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; line-height: 1.25; padding: 0; }
 html body.jobs main #article #content article h1, html body.announcements main #article #content article h1 { font-size: 20px; font-size: 1.25rem; font-weight: bold; }
@@ -3136,10 +3264,10 @@ html body.jobs main #article #content article figure figcaption ul li:before, ht
 html body.jobs main #article #content article form, html body.announcements main #article #content article form { /* Reset */ /* Stretching and padding */ /* Text */ /* Button */ /* Label
 */ }
 html body.jobs main #article #content article form input, html body.jobs main #article #content article form textarea, html body.jobs main #article #content article form select, html body.announcements main #article #content article form input, html body.announcements main #article #content article form textarea, html body.announcements main #article #content article form select { border: none; outline: 0; background: white; appearance: none; -webkit-appearance: none; -moz-appearance: none; }
-html body.jobs main #article #content article form input, html body.jobs main #article #content article form textarea, html body.announcements main #article #content article form input, html body.announcements main #article #content article form textarea { width: 100%; max-width: 100%; float: left; }
+html body.jobs main #article #content article form input, html body.jobs main #article #content article form textarea, html body.jobs main #article #content article form label, html body.announcements main #article #content article form input, html body.announcements main #article #content article form textarea, html body.announcements main #article #content article form label { width: 100%; max-width: 100%; float: left; }
 html body.jobs main #article #content article form input, html body.jobs main #article #content article form textarea, html body.announcements main #article #content article form input, html body.announcements main #article #content article form textarea { padding: 0.625em; width: calc(100% - 1.25em); margin-bottom: 0.625em; }
 html body.jobs main #article #content article form input[type='text'], html body.jobs main #article #content article form input[type='email'], html body.jobs main #article #content article form input[type='password'], html body.jobs main #article #content article form input[type='url'], html body.jobs main #article #content article form input[type='search'], html body.jobs main #article #content article form textarea, html body.announcements main #article #content article form input[type='text'], html body.announcements main #article #content article form input[type='email'], html body.announcements main #article #content article form input[type='password'], html body.announcements main #article #content article form input[type='url'], html body.announcements main #article #content article form input[type='search'], html body.announcements main #article #content article form textarea { border: 1px solid #231f20; font-style: italic; }
-html body.jobs main #article #content article form input[type='submit'], html body.announcements main #article #content article form input[type='submit'] { text-transform: uppercase; letter-spacing: 1.1px; border: 1px solid #231f20; background: #231f20; color: white; cursor: pointer; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; }
+html body.jobs main #article #content article form input[type='submit'], html body.announcements main #article #content article form input[type='submit'] { width: auto; text-transform: uppercase; letter-spacing: 1.1px; border: 1px solid #231f20; background: #231f20; color: white; cursor: pointer; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; }
 html body.jobs main #article #content article form input[type='submit'] a, html body.announcements main #article #content article form input[type='submit'] a { color: white; text-decoration: none; }
 html body.jobs main #article #content article form input[type='submit'] a:hover, html body.announcements main #article #content article form input[type='submit'] a:hover { color: white; }
 html body.jobs main #article #content article form input[type='submit']:hover, html body.announcements main #article #content article form input[type='submit']:hover { background: white; color: #231f20; }

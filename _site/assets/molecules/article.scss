@@ -251,6 +251,25 @@
     }
   }
   
+  
+  #comments {
+    @include show-title;
+    
+    form, .notice, ol, li {
+      @include block;
+    }
+    
+    li {
+      a {
+        @include font(author);
+      }
+      
+      date {
+        @include font(date);
+      }
+    }
+  }
+  
 }
 
 
