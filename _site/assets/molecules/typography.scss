@@ -346,6 +346,21 @@
 
 @mixin q {
   q {
+    font-family: menu;
+    font-style: italic;
+    
+    &:before {
+      content: '\201C';
+    }
+    
+    &:after {
+      content: '\201D';
+    }
+  }
+}
+
+@mixin q2 {
+  q {
     background: $light-grey;
     padding: $pad/4;
     border-bottom: 1px solid darken($light-grey, 5%);
