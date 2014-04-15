@@ -71,7 +71,7 @@
     
   
   } @elseif ($style == investigations) {
-    @include article-parts(null, date, title, figure, null, excerpt, null);
+    @include article-parts(null, date, title, figure, null, excerpt, null, true);
     @include responsive-height(30em, 30em);
     @include separator(border-thick);
     
@@ -100,8 +100,7 @@
 /* The parts of an article
   - this mixin controls what is diplayed in an article
 */
-@mixin article-parts($category, $date, $title, $figure: null, $figcaption: null, $excerpt: null, $body: null) {
-  @include figure;      
+@mixin article-parts($category, $date, $title, $figure: null, $figcaption: null, $excerpt: null, $body: null, $label: null) {
   
   @if ($title == null) {
     h1 {
@@ -156,6 +155,34 @@
   @if ($category == null) and ($date == null) {
     .meta {
       display: none;
+    }
+  }
+  
+  /*
+  @if ($label == null) {
+    .label {
+      display: none;
+    }
+  } @else {
+    .label {
+      display: block;
+    }
+  }
+  */
+  
+  @include figure;      
+  figure {
+    position: relative;
+    
+    .label {
+      position: absolute;
+      bottom: 0;
+      
+      @include font(navigation);
+      font-size: small;
+      @include color(menu);
+      padding: $pad/4;
+      opacity: .9;
     }
   }
   

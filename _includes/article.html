@@ -18,7 +18,7 @@
   {% if include.klass != 'single' %}
     {% if post.images.size > 0 %}
       {% assign image_index = 0 %}
-      {% include responsive-images.html type='from post' holder=include.holder %}
+      {% include responsive-images.html type='from post' holder=include.holder label=include.label %}
     {% endif %}
   
     {% if include.type == 'slider' %}

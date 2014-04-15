@@ -43,6 +43,12 @@
     </a>
   {% endif %}
   
+  {% if include.label  %}
+    <div class="label">
+      {{ include.label }}
+    </div>
+  {% endif %}
+  
   <figcaption>
     {% if link != "" %}
       <a href="{{ site.url }}{{ link }}" title="{{ title }}">
