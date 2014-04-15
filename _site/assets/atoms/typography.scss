@@ -39,6 +39,10 @@ $letter-spacing-uppercase: 1.1px;
   font-family: "Lucida Console", "Lucida Sans Typewriter", Monaco, "Bitstream Vera Sans Mono", monospace;
 }
 
+@mixin font-serif {
+  font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+
 
 /* Font sizing for headers
   - We employ modern typography where headers differ by design not by font size

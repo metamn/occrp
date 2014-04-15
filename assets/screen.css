@@ -583,7 +583,7 @@ html body.frontpage .container main #intro #slider article .meta .category a { c
 html body.frontpage .container main #intro #slider article .meta .category a:hover { color: #231f20; }
 html body.frontpage .container main #intro #slider article .meta .authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
 html body.frontpage .container main #intro #slider article .meta .authors ul li:after { content: ','; }
-html body.frontpage .container main #intro #slider article .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+html body.frontpage .container main #intro #slider article .meta .authors ul li:first-of-type { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; }
 html body.frontpage .container main #intro #slider article .meta .authors ul li:first-of-type:after, html body.frontpage .container main #intro #slider article .meta .authors ul li:last-of-type:after { content: ''; }
 html body.frontpage .container main #intro #slider article .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.frontpage .container main #intro #slider article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -680,7 +680,7 @@ html body.frontpage .container main #intro aside section article .meta .category
 html body.frontpage .container main #intro aside section article .meta .category a:hover { color: #231f20; }
 html body.frontpage .container main #intro aside section article .meta .authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
 html body.frontpage .container main #intro aside section article .meta .authors ul li:after { content: ','; }
-html body.frontpage .container main #intro aside section article .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+html body.frontpage .container main #intro aside section article .meta .authors ul li:first-of-type { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; }
 html body.frontpage .container main #intro aside section article .meta .authors ul li:first-of-type:after, html body.frontpage .container main #intro aside section article .meta .authors ul li:last-of-type:after { content: ''; }
 html body.frontpage .container main #intro aside section article .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.frontpage .container main #intro aside section article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -760,7 +760,7 @@ html body.frontpage .container main #investigations article .meta .category a { 
 html body.frontpage .container main #investigations article .meta .category a:hover { color: #231f20; }
 html body.frontpage .container main #investigations article .meta .authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
 html body.frontpage .container main #investigations article .meta .authors ul li:after { content: ','; }
-html body.frontpage .container main #investigations article .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+html body.frontpage .container main #investigations article .meta .authors ul li:first-of-type { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; }
 html body.frontpage .container main #investigations article .meta .authors ul li:first-of-type:after, html body.frontpage .container main #investigations article .meta .authors ul li:last-of-type:after { content: ''; }
 html body.frontpage .container main #investigations article .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.frontpage .container main #investigations article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -840,7 +840,7 @@ html body.frontpage .container main #products article .meta .category a { color:
 html body.frontpage .container main #products article .meta .category a:hover { color: #231f20; }
 html body.frontpage .container main #products article .meta .authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
 html body.frontpage .container main #products article .meta .authors ul li:after { content: ','; }
-html body.frontpage .container main #products article .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+html body.frontpage .container main #products article .meta .authors ul li:first-of-type { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; }
 html body.frontpage .container main #products article .meta .authors ul li:first-of-type:after, html body.frontpage .container main #products article .meta .authors ul li:last-of-type:after { content: ''; }
 html body.frontpage .container main #products article .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.frontpage .container main #products article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -926,7 +926,7 @@ html body.frontpage .container main #projects article .meta .category a { color:
 html body.frontpage .container main #projects article .meta .category a:hover { color: #231f20; }
 html body.frontpage .container main #projects article .meta .authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
 html body.frontpage .container main #projects article .meta .authors ul li:after { content: ','; }
-html body.frontpage .container main #projects article .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+html body.frontpage .container main #projects article .meta .authors ul li:first-of-type { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; }
 html body.frontpage .container main #projects article .meta .authors ul li:first-of-type:after, html body.frontpage .container main #projects article .meta .authors ul li:last-of-type:after { content: ''; }
 html body.frontpage .container main #projects article .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.frontpage .container main #projects article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -1016,7 +1016,7 @@ html body.frontpage .container main #blog article .meta .category a { color: #98
 html body.frontpage .container main #blog article .meta .category a:hover { color: #231f20; }
 html body.frontpage .container main #blog article .meta .authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
 html body.frontpage .container main #blog article .meta .authors ul li:after { content: ','; }
-html body.frontpage .container main #blog article .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+html body.frontpage .container main #blog article .meta .authors ul li:first-of-type { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; }
 html body.frontpage .container main #blog article .meta .authors ul li:first-of-type:after, html body.frontpage .container main #blog article .meta .authors ul li:last-of-type:after { content: ''; }
 html body.frontpage .container main #blog article .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.frontpage .container main #blog article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -1099,7 +1099,7 @@ html body.frontpage .container main #most-read section article .meta .category a
 html body.frontpage .container main #most-read section article .meta .category a:hover { color: #231f20; }
 html body.frontpage .container main #most-read section article .meta .authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
 html body.frontpage .container main #most-read section article .meta .authors ul li:after { content: ','; }
-html body.frontpage .container main #most-read section article .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+html body.frontpage .container main #most-read section article .meta .authors ul li:first-of-type { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; }
 html body.frontpage .container main #most-read section article .meta .authors ul li:first-of-type:after, html body.frontpage .container main #most-read section article .meta .authors ul li:last-of-type:after { content: ''; }
 html body.frontpage .container main #most-read section article .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.frontpage .container main #most-read section article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -1178,7 +1178,7 @@ html body.frontpage .container main #videos article .meta .category a { color: #
 html body.frontpage .container main #videos article .meta .category a:hover { color: #231f20; }
 html body.frontpage .container main #videos article .meta .authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
 html body.frontpage .container main #videos article .meta .authors ul li:after { content: ','; }
-html body.frontpage .container main #videos article .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+html body.frontpage .container main #videos article .meta .authors ul li:first-of-type { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; }
 html body.frontpage .container main #videos article .meta .authors ul li:first-of-type:after, html body.frontpage .container main #videos article .meta .authors ul li:last-of-type:after { content: ''; }
 html body.frontpage .container main #videos article .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.frontpage .container main #videos article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -1252,7 +1252,7 @@ html body.category main #articles aside .meta .category a { color: #982022; text
 html body.category main #articles aside .meta .category a:hover { color: #231f20; }
 html body.category main #articles aside .meta .authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
 html body.category main #articles aside .meta .authors ul li:after { content: ','; }
-html body.category main #articles aside .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+html body.category main #articles aside .meta .authors ul li:first-of-type { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; }
 html body.category main #articles aside .meta .authors ul li:first-of-type:after, html body.category main #articles aside .meta .authors ul li:last-of-type:after { content: ''; }
 html body.category main #articles aside .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.category main #articles aside .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -1348,7 +1348,7 @@ html body.category main #articles article.thumb .meta .category a { color: #9820
 html body.category main #articles article.thumb .meta .category a:hover { color: #231f20; }
 html body.category main #articles article.thumb .meta .authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
 html body.category main #articles article.thumb .meta .authors ul li:after { content: ','; }
-html body.category main #articles article.thumb .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+html body.category main #articles article.thumb .meta .authors ul li:first-of-type { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; }
 html body.category main #articles article.thumb .meta .authors ul li:first-of-type:after, html body.category main #articles article.thumb .meta .authors ul li:last-of-type:after { content: ''; }
 html body.category main #articles article.thumb .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.category main #articles article.thumb .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -1405,7 +1405,7 @@ html body.category main #articles article.thumb h1 { font-size: medium; }
   html body.category main #articles article.thumb .meta .category a:hover { color: #231f20; }
   html body.category main #articles article.thumb .meta .authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
   html body.category main #articles article.thumb .meta .authors ul li:after { content: ','; }
-  html body.category main #articles article.thumb .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+  html body.category main #articles article.thumb .meta .authors ul li:first-of-type { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; }
   html body.category main #articles article.thumb .meta .authors ul li:first-of-type:after, html body.category main #articles article.thumb .meta .authors ul li:last-of-type:after { content: ''; }
   html body.category main #articles article.thumb .meta .print { cursor: pointer; width: 1.25em; display: none; }
   html body.category main #articles article.thumb .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -1479,7 +1479,7 @@ html body.category main aside section article .meta .category a { color: #982022
 html body.category main aside section article .meta .category a:hover { color: #231f20; }
 html body.category main aside section article .meta .authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
 html body.category main aside section article .meta .authors ul li:after { content: ','; }
-html body.category main aside section article .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+html body.category main aside section article .meta .authors ul li:first-of-type { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; }
 html body.category main aside section article .meta .authors ul li:first-of-type:after, html body.category main aside section article .meta .authors ul li:last-of-type:after { content: ''; }
 html body.category main aside section article .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.category main aside section article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -1543,7 +1543,7 @@ html body.tag main #articles aside .meta .category a { color: #982022; text-deco
 html body.tag main #articles aside .meta .category a:hover { color: #231f20; }
 html body.tag main #articles aside .meta .authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
 html body.tag main #articles aside .meta .authors ul li:after { content: ','; }
-html body.tag main #articles aside .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+html body.tag main #articles aside .meta .authors ul li:first-of-type { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; }
 html body.tag main #articles aside .meta .authors ul li:first-of-type:after, html body.tag main #articles aside .meta .authors ul li:last-of-type:after { content: ''; }
 html body.tag main #articles aside .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.tag main #articles aside .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -1639,7 +1639,7 @@ html body.tag main #articles article.thumb .meta .category a { color: #982022; t
 html body.tag main #articles article.thumb .meta .category a:hover { color: #231f20; }
 html body.tag main #articles article.thumb .meta .authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
 html body.tag main #articles article.thumb .meta .authors ul li:after { content: ','; }
-html body.tag main #articles article.thumb .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+html body.tag main #articles article.thumb .meta .authors ul li:first-of-type { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; }
 html body.tag main #articles article.thumb .meta .authors ul li:first-of-type:after, html body.tag main #articles article.thumb .meta .authors ul li:last-of-type:after { content: ''; }
 html body.tag main #articles article.thumb .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.tag main #articles article.thumb .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -1696,7 +1696,7 @@ html body.tag main #articles article.thumb h1 { font-size: medium; }
   html body.tag main #articles article.thumb .meta .category a:hover { color: #231f20; }
   html body.tag main #articles article.thumb .meta .authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
   html body.tag main #articles article.thumb .meta .authors ul li:after { content: ','; }
-  html body.tag main #articles article.thumb .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+  html body.tag main #articles article.thumb .meta .authors ul li:first-of-type { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; }
   html body.tag main #articles article.thumb .meta .authors ul li:first-of-type:after, html body.tag main #articles article.thumb .meta .authors ul li:last-of-type:after { content: ''; }
   html body.tag main #articles article.thumb .meta .print { cursor: pointer; width: 1.25em; display: none; }
   html body.tag main #articles article.thumb .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -1770,7 +1770,7 @@ html body.tag main aside section article .meta .category a { color: #982022; tex
 html body.tag main aside section article .meta .category a:hover { color: #231f20; }
 html body.tag main aside section article .meta .authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
 html body.tag main aside section article .meta .authors ul li:after { content: ','; }
-html body.tag main aside section article .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+html body.tag main aside section article .meta .authors ul li:first-of-type { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; }
 html body.tag main aside section article .meta .authors ul li:first-of-type:after, html body.tag main aside section article .meta .authors ul li:last-of-type:after { content: ''; }
 html body.tag main aside section article .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.tag main aside section article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -1852,7 +1852,7 @@ html body.projects main #articles article .meta .category a { color: #982022; te
 html body.projects main #articles article .meta .category a:hover { color: #231f20; }
 html body.projects main #articles article .meta .authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
 html body.projects main #articles article .meta .authors ul li:after { content: ','; }
-html body.projects main #articles article .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+html body.projects main #articles article .meta .authors ul li:first-of-type { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; }
 html body.projects main #articles article .meta .authors ul li:first-of-type:after, html body.projects main #articles article .meta .authors ul li:last-of-type:after { content: ''; }
 html body.projects main #articles article .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.projects main #articles article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -1939,7 +1939,7 @@ html body.projects article .meta .category a { color: #982022; text-decoration: 
 html body.projects article .meta .category a:hover { color: #231f20; }
 html body.projects article .meta .authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
 html body.projects article .meta .authors ul li:after { content: ','; }
-html body.projects article .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+html body.projects article .meta .authors ul li:first-of-type { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; }
 html body.projects article .meta .authors ul li:first-of-type:after, html body.projects article .meta .authors ul li:last-of-type:after { content: ''; }
 html body.projects article .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.projects article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -2031,7 +2031,7 @@ html body.resources main #articles article .meta .category a { color: #982022; t
 html body.resources main #articles article .meta .category a:hover { color: #231f20; }
 html body.resources main #articles article .meta .authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
 html body.resources main #articles article .meta .authors ul li:after { content: ','; }
-html body.resources main #articles article .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+html body.resources main #articles article .meta .authors ul li:first-of-type { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; }
 html body.resources main #articles article .meta .authors ul li:first-of-type:after, html body.resources main #articles article .meta .authors ul li:last-of-type:after { content: ''; }
 html body.resources main #articles article .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.resources main #articles article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -2118,7 +2118,7 @@ html body.blog main #articles aside .meta .category a { color: #982022; text-dec
 html body.blog main #articles aside .meta .category a:hover { color: #231f20; }
 html body.blog main #articles aside .meta .authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
 html body.blog main #articles aside .meta .authors ul li:after { content: ','; }
-html body.blog main #articles aside .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+html body.blog main #articles aside .meta .authors ul li:first-of-type { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; }
 html body.blog main #articles aside .meta .authors ul li:first-of-type:after, html body.blog main #articles aside .meta .authors ul li:last-of-type:after { content: ''; }
 html body.blog main #articles aside .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.blog main #articles aside .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -2214,7 +2214,7 @@ html body.blog main #articles article.thumb .meta .category a { color: #982022; 
 html body.blog main #articles article.thumb .meta .category a:hover { color: #231f20; }
 html body.blog main #articles article.thumb .meta .authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
 html body.blog main #articles article.thumb .meta .authors ul li:after { content: ','; }
-html body.blog main #articles article.thumb .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+html body.blog main #articles article.thumb .meta .authors ul li:first-of-type { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; }
 html body.blog main #articles article.thumb .meta .authors ul li:first-of-type:after, html body.blog main #articles article.thumb .meta .authors ul li:last-of-type:after { content: ''; }
 html body.blog main #articles article.thumb .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.blog main #articles article.thumb .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -2271,7 +2271,7 @@ html body.blog main #articles article.thumb h1 { font-size: medium; }
   html body.blog main #articles article.thumb .meta .category a:hover { color: #231f20; }
   html body.blog main #articles article.thumb .meta .authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
   html body.blog main #articles article.thumb .meta .authors ul li:after { content: ','; }
-  html body.blog main #articles article.thumb .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+  html body.blog main #articles article.thumb .meta .authors ul li:first-of-type { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; }
   html body.blog main #articles article.thumb .meta .authors ul li:first-of-type:after, html body.blog main #articles article.thumb .meta .authors ul li:last-of-type:after { content: ''; }
   html body.blog main #articles article.thumb .meta .print { cursor: pointer; width: 1.25em; display: none; }
   html body.blog main #articles article.thumb .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -2345,7 +2345,7 @@ html body.blog main aside section article .meta .category a { color: #982022; te
 html body.blog main aside section article .meta .category a:hover { color: #231f20; }
 html body.blog main aside section article .meta .authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
 html body.blog main aside section article .meta .authors ul li:after { content: ','; }
-html body.blog main aside section article .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+html body.blog main aside section article .meta .authors ul li:first-of-type { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; }
 html body.blog main aside section article .meta .authors ul li:first-of-type:after, html body.blog main aside section article .meta .authors ul li:last-of-type:after { content: ''; }
 html body.blog main aside section article .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.blog main aside section article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -2400,7 +2400,7 @@ html body.blog main #articles article .meta .category a { color: #982022; text-d
 html body.blog main #articles article .meta .category a:hover { color: #231f20; }
 html body.blog main #articles article .meta .authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
 html body.blog main #articles article .meta .authors ul li:after { content: ','; }
-html body.blog main #articles article .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+html body.blog main #articles article .meta .authors ul li:first-of-type { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; }
 html body.blog main #articles article .meta .authors ul li:first-of-type:after, html body.blog main #articles article .meta .authors ul li:last-of-type:after { content: ''; }
 html body.blog main #articles article .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.blog main #articles article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -2465,7 +2465,7 @@ html body.author main #articles aside .meta .category a { color: #982022; text-d
 html body.author main #articles aside .meta .category a:hover { color: #231f20; }
 html body.author main #articles aside .meta .authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
 html body.author main #articles aside .meta .authors ul li:after { content: ','; }
-html body.author main #articles aside .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+html body.author main #articles aside .meta .authors ul li:first-of-type { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; }
 html body.author main #articles aside .meta .authors ul li:first-of-type:after, html body.author main #articles aside .meta .authors ul li:last-of-type:after { content: ''; }
 html body.author main #articles aside .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.author main #articles aside .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -2561,7 +2561,7 @@ html body.author main #articles article.thumb .meta .category a { color: #982022
 html body.author main #articles article.thumb .meta .category a:hover { color: #231f20; }
 html body.author main #articles article.thumb .meta .authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
 html body.author main #articles article.thumb .meta .authors ul li:after { content: ','; }
-html body.author main #articles article.thumb .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+html body.author main #articles article.thumb .meta .authors ul li:first-of-type { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; }
 html body.author main #articles article.thumb .meta .authors ul li:first-of-type:after, html body.author main #articles article.thumb .meta .authors ul li:last-of-type:after { content: ''; }
 html body.author main #articles article.thumb .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.author main #articles article.thumb .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -2618,7 +2618,7 @@ html body.author main #articles article.thumb h1 { font-size: medium; }
   html body.author main #articles article.thumb .meta .category a:hover { color: #231f20; }
   html body.author main #articles article.thumb .meta .authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
   html body.author main #articles article.thumb .meta .authors ul li:after { content: ','; }
-  html body.author main #articles article.thumb .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+  html body.author main #articles article.thumb .meta .authors ul li:first-of-type { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; }
   html body.author main #articles article.thumb .meta .authors ul li:first-of-type:after, html body.author main #articles article.thumb .meta .authors ul li:last-of-type:after { content: ''; }
   html body.author main #articles article.thumb .meta .print { cursor: pointer; width: 1.25em; display: none; }
   html body.author main #articles article.thumb .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -2692,7 +2692,7 @@ html body.author main aside section article .meta .category a { color: #982022; 
 html body.author main aside section article .meta .category a:hover { color: #231f20; }
 html body.author main aside section article .meta .authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
 html body.author main aside section article .meta .authors ul li:after { content: ','; }
-html body.author main aside section article .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+html body.author main aside section article .meta .authors ul li:first-of-type { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; }
 html body.author main aside section article .meta .authors ul li:first-of-type:after, html body.author main aside section article .meta .authors ul li:last-of-type:after { content: ''; }
 html body.author main aside section article .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.author main aside section article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -2750,7 +2750,7 @@ html body.author main #articles article .meta .category a { color: #982022; text
 html body.author main #articles article .meta .category a:hover { color: #231f20; }
 html body.author main #articles article .meta .authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
 html body.author main #articles article .meta .authors ul li:after { content: ','; }
-html body.author main #articles article .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+html body.author main #articles article .meta .authors ul li:first-of-type { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; }
 html body.author main #articles article .meta .authors ul li:first-of-type:after, html body.author main #articles article .meta .authors ul li:last-of-type:after { content: ''; }
 html body.author main #articles article .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.author main #articles article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -2807,7 +2807,7 @@ html body.article main #article article.single .meta .category a, html body.abou
 html body.article main #article article.single .meta .category a:hover, html body.about main #article article.single .meta .category a:hover, html body.post main #article article.single .meta .category a:hover { color: #231f20; }
 html body.article main #article article.single .meta .authors, html body.about main #article article.single .meta .authors, html body.post main #article article.single .meta .authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
 html body.article main #article article.single .meta .authors ul li:after, html body.about main #article article.single .meta .authors ul li:after, html body.post main #article article.single .meta .authors ul li:after { content: ','; }
-html body.article main #article article.single .meta .authors ul li:first-of-type, html body.about main #article article.single .meta .authors ul li:first-of-type, html body.post main #article article.single .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+html body.article main #article article.single .meta .authors ul li:first-of-type, html body.about main #article article.single .meta .authors ul li:first-of-type, html body.post main #article article.single .meta .authors ul li:first-of-type { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; }
 html body.article main #article article.single .meta .authors ul li:first-of-type:after, html body.article main #article article.single .meta .authors ul li:last-of-type:after, html body.about main #article article.single .meta .authors ul li:first-of-type:after, html body.about main #article article.single .meta .authors ul li:last-of-type:after, html body.post main #article article.single .meta .authors ul li:first-of-type:after, html body.post main #article article.single .meta .authors ul li:last-of-type:after { content: ''; }
 html body.article main #article article.single .meta .print, html body.about main #article article.single .meta .print, html body.post main #article article.single .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.article main #article article.single .share-buttons ul li, html body.about main #article article.single .share-buttons ul li, html body.post main #article article.single .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -2842,7 +2842,7 @@ html body.article main #article article.single ol li, html body.about main #arti
 html body.article main #article article.single ol li:before, html body.about main #article article.single ol li:before, html body.post main #article article.single ol li:before { content: counter(ol-counter,decimal) "."; }
 html body.article main #article article.single dl dt, html body.about main #article article.single dl dt, html body.post main #article article.single dl dt { font-size: 20px; font-size: 1.25rem; font-weight: normal; text-transform: uppercase; letter-spacing: 1.1px; }
 html body.article main #article article.single table, html body.about main #article article.single table, html body.post main #article article.single table { width: 100%; display: table !important; }
-html body.article main #article article.single table caption, html body.about main #article article.single table caption, html body.post main #article article.single table caption { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; margin-bottom: 0.3125em; }
+html body.article main #article article.single table caption, html body.about main #article article.single table caption, html body.post main #article article.single table caption { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; margin-bottom: 0.3125em; }
 html body.article main #article article.single table thead, html body.about main #article article.single table thead, html body.post main #article article.single table thead { background: #231f20; color: white; }
 html body.article main #article article.single table thead a, html body.about main #article article.single table thead a, html body.post main #article article.single table thead a { color: white; text-decoration: none; }
 html body.article main #article article.single table thead a:hover, html body.about main #article article.single table thead a:hover, html body.post main #article article.single table thead a:hover { color: white; }
@@ -2878,10 +2878,10 @@ html body.article main #article article.single form input[type='submit']:hover, 
 html body.article main #article article.single form input[type='submit']:hover a, html body.about main #article article.single form input[type='submit']:hover a, html body.post main #article article.single form input[type='submit']:hover a { color: #231f20; text-decoration: none; }
 html body.article main #article article.single form input[type='submit']:hover a:hover, html body.about main #article article.single form input[type='submit']:hover a:hover, html body.post main #article article.single form input[type='submit']:hover a:hover { color: #982022; }
 html body.article main #article article.single form label, html body.about main #article article.single form label, html body.post main #article article.single form label { text-transform: uppercase; letter-spacing: 1.1px; }
-html body.article main #article article.single q, html body.about main #article article.single q, html body.post main #article article.single q { font-family: menu; font-style: italic; }
+html body.article main #article article.single q, html body.about main #article article.single q, html body.post main #article article.single q { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; }
 html body.article main #article article.single q:before, html body.about main #article article.single q:before, html body.post main #article article.single q:before { content: '\201C'; }
 html body.article main #article article.single q:after, html body.about main #article article.single q:after, html body.post main #article article.single q:after { content: '\201D'; }
-html body.article main #article article.single blockquote, html body.about main #article article.single blockquote, html body.post main #article article.single blockquote { width: 100%; max-width: 100%; float: left; border-left: 0.3125em solid; background: #f1f1f1; font-family: menu; font-style: italic; padding: 1.25em 2.5em; padding: 1.25em; width: calc(100% - 2.5em); }
+html body.article main #article article.single blockquote, html body.about main #article article.single blockquote, html body.post main #article article.single blockquote { width: 100%; max-width: 100%; float: left; border-left: 0.3125em solid; border-color: #982022; background: #f1f1f1; padding: 1.25em; width: calc(100% - 2.5em); font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; }
 html body.article main #article article.single code, html body.article main #article article.single pre, html body.about main #article article.single code, html body.about main #article article.single pre, html body.post main #article article.single code, html body.post main #article article.single pre { background: #f1f1f1; color: #231f20; padding: 0.3125em; font-family: "Lucida Console", "Lucida Sans Typewriter", Monaco, "Bitstream Vera Sans Mono", monospace; }
 html body.article main #article article.single code a, html body.article main #article article.single pre a, html body.about main #article article.single code a, html body.about main #article article.single pre a, html body.post main #article article.single code a, html body.post main #article article.single pre a { color: #231f20; text-decoration: none; }
 html body.article main #article article.single code a:hover, html body.article main #article article.single pre a:hover, html body.about main #article article.single code a:hover, html body.about main #article article.single pre a:hover, html body.post main #article article.single code a:hover, html body.post main #article article.single pre a:hover { color: white; }
@@ -2892,7 +2892,7 @@ html body.article main #article article.single strong, html body.article main #a
 html body.article main #article article.single small, html body.about main #article article.single small, html body.post main #article article.single small { font-size: small; }
 html body.article main #article article.single s, html body.about main #article article.single s, html body.post main #article article.single s { text-decoration: line-through; }
 html body.article main #article article.single cite, html body.about main #article article.single cite, html body.post main #article article.single cite { font-style: italic; }
-html body.article main #article article.single q, html body.about main #article article.single q, html body.post main #article article.single q { font-family: menu; font-style: italic; }
+html body.article main #article article.single q, html body.about main #article article.single q, html body.post main #article article.single q { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; }
 html body.article main #article article.single q:before, html body.about main #article article.single q:before, html body.post main #article article.single q:before { content: '\201C'; }
 html body.article main #article article.single q:after, html body.about main #article article.single q:after, html body.post main #article article.single q:after { content: '\201D'; }
 html body.article main #article article.single dfn, html body.about main #article article.single dfn, html body.post main #article article.single dfn { border-bottom: 1px solid #f1f1f1; }
@@ -3002,7 +3002,7 @@ html body.article main aside section article .meta .category a, html body.about 
 html body.article main aside section article .meta .category a:hover, html body.about main aside section article .meta .category a:hover, html body.post main aside section article .meta .category a:hover { color: #231f20; }
 html body.article main aside section article .meta .authors, html body.about main aside section article .meta .authors, html body.post main aside section article .meta .authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
 html body.article main aside section article .meta .authors ul li:after, html body.about main aside section article .meta .authors ul li:after, html body.post main aside section article .meta .authors ul li:after { content: ','; }
-html body.article main aside section article .meta .authors ul li:first-of-type, html body.about main aside section article .meta .authors ul li:first-of-type, html body.post main aside section article .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+html body.article main aside section article .meta .authors ul li:first-of-type, html body.about main aside section article .meta .authors ul li:first-of-type, html body.post main aside section article .meta .authors ul li:first-of-type { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; }
 html body.article main aside section article .meta .authors ul li:first-of-type:after, html body.article main aside section article .meta .authors ul li:last-of-type:after, html body.about main aside section article .meta .authors ul li:first-of-type:after, html body.about main aside section article .meta .authors ul li:last-of-type:after, html body.post main aside section article .meta .authors ul li:first-of-type:after, html body.post main aside section article .meta .authors ul li:last-of-type:after { content: ''; }
 html body.article main aside section article .meta .print, html body.about main aside section article .meta .print, html body.post main aside section article .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.article main aside section article .share-buttons ul li, html body.about main aside section article .share-buttons ul li, html body.post main aside section article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -3074,7 +3074,7 @@ html body.jobs main #article #content article .meta .category a, html body.annou
 html body.jobs main #article #content article .meta .category a:hover, html body.announcements main #article #content article .meta .category a:hover { color: #231f20; }
 html body.jobs main #article #content article .meta .authors, html body.announcements main #article #content article .meta .authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
 html body.jobs main #article #content article .meta .authors ul li:after, html body.announcements main #article #content article .meta .authors ul li:after { content: ','; }
-html body.jobs main #article #content article .meta .authors ul li:first-of-type, html body.announcements main #article #content article .meta .authors ul li:first-of-type { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; }
+html body.jobs main #article #content article .meta .authors ul li:first-of-type, html body.announcements main #article #content article .meta .authors ul li:first-of-type { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; }
 html body.jobs main #article #content article .meta .authors ul li:first-of-type:after, html body.jobs main #article #content article .meta .authors ul li:last-of-type:after, html body.announcements main #article #content article .meta .authors ul li:first-of-type:after, html body.announcements main #article #content article .meta .authors ul li:last-of-type:after { content: ''; }
 html body.jobs main #article #content article .meta .print, html body.announcements main #article #content article .meta .print { cursor: pointer; width: 1.25em; display: none; }
 html body.jobs main #article #content article .share-buttons ul li, html body.announcements main #article #content article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -3110,7 +3110,7 @@ html body.jobs main #article #content article ol li, html body.announcements mai
 html body.jobs main #article #content article ol li:before, html body.announcements main #article #content article ol li:before { content: counter(ol-counter,decimal) "."; }
 html body.jobs main #article #content article dl dt, html body.announcements main #article #content article dl dt { font-size: 20px; font-size: 1.25rem; font-weight: normal; text-transform: uppercase; letter-spacing: 1.1px; }
 html body.jobs main #article #content article table, html body.announcements main #article #content article table { width: 100%; display: table !important; }
-html body.jobs main #article #content article table caption, html body.announcements main #article #content article table caption { font-size: small; color: #231f20; font-style: italic; font-family: font-headings; text-transform: none; margin-bottom: 0.3125em; }
+html body.jobs main #article #content article table caption, html body.announcements main #article #content article table caption { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; margin-bottom: 0.3125em; }
 html body.jobs main #article #content article table thead, html body.announcements main #article #content article table thead { background: #231f20; color: white; }
 html body.jobs main #article #content article table thead a, html body.announcements main #article #content article table thead a { color: white; text-decoration: none; }
 html body.jobs main #article #content article table thead a:hover, html body.announcements main #article #content article table thead a:hover { color: white; }
@@ -3146,10 +3146,10 @@ html body.jobs main #article #content article form input[type='submit']:hover, h
 html body.jobs main #article #content article form input[type='submit']:hover a, html body.announcements main #article #content article form input[type='submit']:hover a { color: #231f20; text-decoration: none; }
 html body.jobs main #article #content article form input[type='submit']:hover a:hover, html body.announcements main #article #content article form input[type='submit']:hover a:hover { color: #982022; }
 html body.jobs main #article #content article form label, html body.announcements main #article #content article form label { text-transform: uppercase; letter-spacing: 1.1px; }
-html body.jobs main #article #content article q, html body.announcements main #article #content article q { font-family: menu; font-style: italic; }
+html body.jobs main #article #content article q, html body.announcements main #article #content article q { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; }
 html body.jobs main #article #content article q:before, html body.announcements main #article #content article q:before { content: '\201C'; }
 html body.jobs main #article #content article q:after, html body.announcements main #article #content article q:after { content: '\201D'; }
-html body.jobs main #article #content article blockquote, html body.announcements main #article #content article blockquote { width: 100%; max-width: 100%; float: left; border-left: 0.3125em solid; background: #f1f1f1; font-family: menu; font-style: italic; padding: 1.25em 2.5em; padding: 1.25em; width: calc(100% - 2.5em); }
+html body.jobs main #article #content article blockquote, html body.announcements main #article #content article blockquote { width: 100%; max-width: 100%; float: left; border-left: 0.3125em solid; border-color: #982022; background: #f1f1f1; padding: 1.25em; width: calc(100% - 2.5em); font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; }
 html body.jobs main #article #content article code, html body.jobs main #article #content article pre, html body.announcements main #article #content article code, html body.announcements main #article #content article pre { background: #f1f1f1; color: #231f20; padding: 0.3125em; font-family: "Lucida Console", "Lucida Sans Typewriter", Monaco, "Bitstream Vera Sans Mono", monospace; }
 html body.jobs main #article #content article code a, html body.jobs main #article #content article pre a, html body.announcements main #article #content article code a, html body.announcements main #article #content article pre a { color: #231f20; text-decoration: none; }
 html body.jobs main #article #content article code a:hover, html body.jobs main #article #content article pre a:hover, html body.announcements main #article #content article code a:hover, html body.announcements main #article #content article pre a:hover { color: white; }
@@ -3160,7 +3160,7 @@ html body.jobs main #article #content article strong, html body.jobs main #artic
 html body.jobs main #article #content article small, html body.announcements main #article #content article small { font-size: small; }
 html body.jobs main #article #content article s, html body.announcements main #article #content article s { text-decoration: line-through; }
 html body.jobs main #article #content article cite, html body.announcements main #article #content article cite { font-style: italic; }
-html body.jobs main #article #content article q, html body.announcements main #article #content article q { font-family: menu; font-style: italic; }
+html body.jobs main #article #content article q, html body.announcements main #article #content article q { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; }
 html body.jobs main #article #content article q:before, html body.announcements main #article #content article q:before { content: '\201C'; }
 html body.jobs main #article #content article q:after, html body.announcements main #article #content article q:after { content: '\201D'; }
 html body.jobs main #article #content article dfn, html body.announcements main #article #content article dfn { border-bottom: 1px solid #f1f1f1; }
