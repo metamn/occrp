@@ -232,6 +232,8 @@ figure a { line-height: 0; }
 */
 /* The Category page
 */
+/* Full Screen Gallery 
+*/
 /* Tags on frontpage above footer
 */
 /* Videos
@@ -258,6 +260,21 @@ figure a { line-height: 0; }
 */
 /* Footer
 */
+html { /* Full Screen Gallery
+*/ }
+html.full-screen-gallery { height: 100%; }
+html.full-screen-gallery body { height: 100%; }
+html.full-screen-gallery body .container { display: none; }
+html.full-screen-gallery body .gallery { height: 100%; text-align: center; position: relative; height: 100%; }
+html.full-screen-gallery body .gallery .before, html.full-screen-gallery body .gallery .after { font-size: 150%; position: absolute; top: 40%; cursor: pointer; background: #f1f1f1; color: #231f20; padding: 0.3125em; opacity: .7; }
+html.full-screen-gallery body .gallery .before a, html.full-screen-gallery body .gallery .after a { color: #231f20; text-decoration: none; }
+html.full-screen-gallery body .gallery .before a:hover, html.full-screen-gallery body .gallery .after a:hover { color: white; }
+html.full-screen-gallery body .gallery .before:before, html.full-screen-gallery body .gallery .after:before { content: "\2794"; }
+html.full-screen-gallery body .gallery .before { -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+html.full-screen-gallery body .gallery .after { right: 0; float: right; }
+html.full-screen-gallery body .gallery article, html.full-screen-gallery body .gallery .gallery-item { display: none; }
+html.full-screen-gallery body .gallery article:first-of-type, html.full-screen-gallery body .gallery .gallery-item:first-of-type { display: block; }
+html.full-screen-gallery body .gallery figure { position: relative; top: 50%; -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -o-transform: translateY(-50%); -webkit-transform: translateY(-50%); transform: translateY(-50%); }
 html body { background: white; color: #231f20; font-size: 100%; line-height: 1.25; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; /* Sticky header
 */ /* Frontpage
 */ /* Category

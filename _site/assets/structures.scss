@@ -285,6 +285,40 @@
 
 
 
+
+/* Full Screen Gallery 
+*/
+@mixin full-screen-gallery {
+  height: 100%;
+  
+  body {
+    height: 100%;
+    
+    .container {
+      display: none;
+    }
+    
+    .gallery {
+      height: 100%;
+      text-align: center;
+      @include simple-slider;
+      
+      figure {
+        position: relative;
+        top: 50%;
+        @include transform(translateY(-50%));
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
 /* Tags on frontpage above footer
 */
 @mixin frontpage-tags {

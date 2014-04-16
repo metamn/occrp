@@ -1,4 +1,12 @@
 html {
+  
+  /* Full Screen Gallery
+  */
+  &.full-screen-gallery {
+    @include full-screen-gallery;
+  }
+  
+  
   body {
     @include default-settings;
     
@@ -39,6 +47,7 @@ html {
         }
       }
     }
+    
     
     
     /* Frontpage

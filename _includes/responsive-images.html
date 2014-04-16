@@ -25,6 +25,11 @@
 {% endif %}
 
 
+{% if include.link == 'false' %}
+  {% assign link = '' %}
+{% endif %}
+
+
 
 <figure class="{{ include.klass }}">
   {% if link != "" %}

@@ -30,6 +30,14 @@ $(document).ready(function() {
   }
   
   
+  // Full screen gallery
+  // - the .gallery content is inserted after the .container
+  $('.gallery .gallery-item').click(function() {
+    $('.gallery').insertAfter($('.container'));
+    $('html').addClass('full-screen-gallery');
+  });
+  
+  
   // Slider for featured content
   // -------------------------------------------------------------------------
   // - on mobiles the navigator / paginator is present inside every article
