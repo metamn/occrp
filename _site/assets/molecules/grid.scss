@@ -238,3 +238,13 @@
     }
   }
 }
+
+
+/* Center vertically
+  - http://davidwalsh.name/css-vertical-center 
+*/
+@mixin center-vertical {
+  position: relative;
+  top: 50%;
+  @include transform(translateY(-50%));
+}

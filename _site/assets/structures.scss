@@ -299,14 +299,23 @@
     }
     
     .gallery {
-      height: 100%;
-      text-align: center;
-      @include simple-slider;
-      
+      @include image-gallery;
+      height: calc(100% - #{$pad*3});
+      margin: auto;
+
+      text-align: center;      
       figure {
-        position: relative;
-        top: 50%;
-        @include transform(translateY(-50%));
+        @include center-vertical;
+      }
+      
+      span {
+        &.show {
+          display: none;
+        }  
+      
+        &.close {
+          display: block;
+        }
       }
     }
   }

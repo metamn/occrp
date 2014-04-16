@@ -30,6 +30,29 @@
 
 
 
+/* Image Gallery
+*/
+@mixin image-gallery {
+  margin: $pad 0;
+  
+  @include simple-slider;
+  @include image-gallery-border;
+  
+  span {
+    @include font(navigation);
+    @include color(highlight);
+    font-size: small;
+    cursor: pointer;
+    
+    &.close {
+      position: absolute;
+      bottom: 0;
+      left: 47%;
+      display: none;
+    }
+  }
+}
+
 
 
 /* Simple slider

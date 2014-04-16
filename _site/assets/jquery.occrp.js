@@ -32,9 +32,18 @@ $(document).ready(function() {
   
   // Full screen gallery
   // - the .gallery content is inserted after the .container
-  $('.gallery .gallery-item').click(function() {
+  // - it's original place is marked, and on close it is copied back again
+  // - .clone() made full screen navigation impossible
+  $('.gallery .show').click(function() {
+    $('.gallery').after("<span class='gallery-original-location'></span>");
     $('.gallery').insertAfter($('.container'));
     $('html').addClass('full-screen-gallery');
+  });
+  
+   $('.gallery .close').click(function() {
+    $('.gallery').insertAfter($('.gallery-original-location'));
+    $('.gallery-original-location').remove();
+    $('html').removeClass('full-screen-gallery');
   });
   
   

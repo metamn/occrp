@@ -1,3 +1,18 @@
+
+
+
+
+/* Image gallery border
+*/
+@mixin image-gallery-border {
+  @include box-shadow($shadow);
+  border: 1px solid;
+  @include padding(100%, $pad + $pad/2);
+  padding: $pad;
+}
+
+
+
 /* Separating items in a list
 */
 @mixin separator($type) {

@@ -1,5 +1,4 @@
 /* Navigation arrows
-  - they are inserted via jQuery into <span>
 */
 @mixin navigation-arrows {
   position: relative;
@@ -11,6 +10,7 @@
     position: absolute;
     top: 40%;
     
+    z-index: 2;
     cursor: pointer;
     
     @include color(navigation);
@@ -24,6 +24,7 @@
   
   .before {
     @include transform(rotate(180deg));
+    left: 0;
   }
   
   .after {
