@@ -3,26 +3,29 @@ $(document).ready(function() {
 
   
   // Simple slider
-  // - a list of articles is transformed into a slider
-  // - mostly on mobile displays
+  // - a list of articles, figures is transformed into a slider
   // - navigation arrows are inserted into the container
   simpleSlider($('.frontpage #products'));
   simpleSlider($('.frontpage #projects'));
   simpleSlider($('.frontpage #videos'));
+  simpleSlider($('.gallery'), '.gallery-item');
   
-  function simpleSlider(container) {
+  function simpleSlider(container, item) {
+    item = item || 'article';
+    
     container.prepend("<span class='before'></span>");
     container.append("<span class='after'></span>");
     
     container.find('span').click(function() {
-      var index = container.find('article:visible').index() - 2;
-      var count = container.find('article').length;
+      var index = container.find(item + ':visible').index();
+      (item == 'article') ? index -= 2 : index -= 1;
+      var count = container.find(item).length;
       
-      container.find('article').hide();
+      container.find(item).hide();
       
       ($(this).hasClass('before')) ? index -=1 : index += 1;
       (index == count) ? index = 0 : index = index; 
-      container.find('article').eq(index).show();
+      container.find(item).eq(index).show();
     });
   }
   
