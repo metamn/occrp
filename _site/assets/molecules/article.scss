@@ -36,12 +36,13 @@
   } @elseif ($style == first-article-in-archive) {
     @include block;
     @include article-parts(null, null, title, figure, null, excerpt);
-    @include color(slider);
     margin-bottom: $margin/2;
   
     @include mobile-and-up {
-      @include article-thumb-left($container-margin);
+      @include article-thumb-left($container-margin, $pad/4);
     }
+  
+    @include color(slider);
   
     
   } @elseif ($style == blog) {
