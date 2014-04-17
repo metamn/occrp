@@ -395,6 +395,10 @@
     @include responsive-grid(3);
     @include article-style(blog);
   }
+  
+  @include small-screen-and-up {
+    @include hide-last-article;
+  }
 }
 
 
@@ -413,6 +417,10 @@
   
   @include mobile {
     @include simple-slider;
+  }
+  
+  @include small-screen-and-up {
+    @include hide-last-article;
   }
 }
 
@@ -475,11 +483,7 @@
     
     @include small-screen-and-up {
       &#announcements {
-        article {
-          &:last-of-type {
-            display: none;
-          }
-        }
+        @include hide-last-article;
       }
     }
   }

@@ -141,6 +141,8 @@ figure a { line-height: 0; }
 */
 /* Center vertically - http://davidwalsh.name/css-vertical-center 
 */
+/* Hide last article 
+*/
 /* Category aside
 */
 /* Category archives
@@ -1112,6 +1114,7 @@ html body.frontpage .container main #projects article h1 { font-size: medium; }
   html body.frontpage .container main #projects .after { right: 0; float: right; }
   html body.frontpage .container main #projects article, html body.frontpage .container main #projects .gallery-item { display: none; }
   html body.frontpage .container main #projects article:first-of-type, html body.frontpage .container main #projects .gallery-item:first-of-type { display: block; } }
+@media only screen and (min-width: 80em) { html body.frontpage .container main #projects article:last-of-type { display: none; } }
 html body.frontpage .container main #blog h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; }
 html body.frontpage .container main #blog h3 a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #blog h3 a:hover { color: #231f20; }
@@ -1220,6 +1223,7 @@ html body.frontpage .container main #blog article a { color: white; text-decorat
 html body.frontpage .container main #blog article a:hover { color: white; }
 html body.frontpage .container main #blog article h1 { font-weight: normal; font-size: medium; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; letter-spacing: 1.1px; margin-top: 0.3125em; }
 @media only screen and (max-width: 79.999em) { html body.frontpage .container main #blog article h1 { font-size: small; } }
+@media only screen and (min-width: 80em) { html body.frontpage .container main #blog article:last-of-type { display: none; } }
 @media only screen and (max-width: 29.999em) { html body.frontpage .container main #most-read section { width: 100%; margin-right: 0; float: left; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.frontpage .container main #most-read section { width: 47.5%; margin-right: 2.5%; float: left; }
   html body.frontpage .container main #most-read section:nth-of-type(2) { margin-right: 0; }
@@ -2360,6 +2364,7 @@ html body.projects main #articles article h1 { font-size: medium; }
   html body.projects main #articles .after { right: 0; float: right; }
   html body.projects main #articles article, html body.projects main #articles .gallery-item { display: none; }
   html body.projects main #articles article:first-of-type, html body.projects main #articles .gallery-item:first-of-type { display: block; } }
+@media only screen and (min-width: 80em) { html body.projects main #articles article:last-of-type { display: none; } }
 html body.projects .title { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; }
 html body.projects .title a { color: #982022; text-decoration: none; }
 html body.projects .title a:hover { color: #231f20; }
@@ -2589,6 +2594,7 @@ html body.resources main #articles article h1 { font-size: medium; }
   html body.resources main #articles .after { right: 0; float: right; }
   html body.resources main #articles article, html body.resources main #articles .gallery-item { display: none; }
   html body.resources main #articles article:first-of-type, html body.resources main #articles .gallery-item:first-of-type { display: block; } }
+@media only screen and (min-width: 80em) { html body.resources main #articles article:last-of-type { display: none; } }
 html body.resources main #articles #tools article #meta { display: none; }
 html body.resources main #documents > h3 { display: block; }
 html body.resources main #documents article { border-top: 1px solid; }

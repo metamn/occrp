@@ -248,3 +248,15 @@
   top: 50%;
   @include transform(translateY(-50%));
 }
+
+
+
+/* Hide last article 
+*/
+@mixin hide-last-article {
+  article {
+    &:last-of-type {
+      display: none;
+    }
+  }
+}
