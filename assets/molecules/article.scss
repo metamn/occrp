@@ -7,7 +7,8 @@
   - controls how an article thumb is displayed
 */
 @mixin article-style($style) {
-  @if ($style == archive-smaller) {
+  @if ($style == thumb-left-smaller) {
+    // It goes together with thumb-left
     @include color;
     @include border-thin;
     padding-bottom: $margin/2;
@@ -16,7 +17,7 @@
       font-weight: normal;
     }
   
-  } @elseif ($style == archive) {
+  } @elseif ($style == thumb-left) {
     @include block;
     @include article-parts(null, null, title, figure, null, null);
     @include article-thumb-left($container-margin, $pad/4);
@@ -48,6 +49,10 @@
     }
   
     
+  } @elseif ($style == archive) {
+    // It goes together with projects
+    @include separator(border-thick);
+  
   } @elseif ($style == blog) {
     @include article-parts(null, null, title, figure, null, null);
     @include article-thumb-left($container-margin);

@@ -185,55 +185,30 @@
 /* Resources archive
 */
 @mixin page-resources {
-  main {
-    #articles {
-      @include frontpage-projects;
-      
-      #tools {
-        article {
-          #meta {
-            display: none;
-          }
-        }
-      }
+  @include archive;
+  
+  #tools, #documents {
+    h3 {
+      @include font(section-title);
+      margin-top: $margin;
+      display: block;
     }
   }
 }
-
-
 
 
 /* Projects archive
 */
 @mixin page-projects {
-  main {
-    #articles {
-      @include frontpage-projects;
-    }
-  }
-  
-  .title {
-    @include font(section-title);
-    @include font(category-title);
-  }
-  
-  article {
-    @include responsive-grid(5);
-    @include article-style(investigations);
-    
-  }
-  
-  @include pagination(navigation);
+  @include archive;
 }
-
-
 
 
 /* The Tags page
 */
 @mixin page-tags {
   main {
-    @include archive;
+    @include archive-with-sidebar;
     
     #banner {
       margin-bottom: $pad;
@@ -248,54 +223,13 @@
 }
 
 
-
 /* The Category page
 */
 @mixin page-categories {
   main {
-    @include archive;
+    @include archive-with-sidebar;
   }
 }
-
-
-
-
-
-/* Full Screen Gallery 
-*/
-@mixin full-screen-gallery {
-  height: 100%;
-  
-  body {
-    height: 100%;
-    
-    .container {
-      display: none;
-    }
-    
-    .gallery {
-      @include image-gallery;
-      height: calc(100% - #{$pad*3});
-      margin: auto;
-
-      text-align: center;      
-      figure {
-        @include center(vertical);
-      }
-      
-      span {
-        &.show {
-          display: none;
-        }  
-      
-        &.close {
-          display: block;
-        }
-      }
-    }
-  }
-}
-
 
 
 
@@ -564,9 +498,6 @@
 
 
 
-
-
-
 /* Footer
 */
 @mixin footer {
@@ -605,3 +536,46 @@
     }
   }
 }
+
+
+
+
+/* Full Screen Gallery 
+*/
+@mixin full-screen-gallery {
+  height: 100%;
+  
+  body {
+    height: 100%;
+    
+    .container {
+      display: none;
+    }
+    
+    .gallery {
+      @include image-gallery;
+      height: calc(100% - #{$pad*3});
+      margin: auto;
+
+      text-align: center;      
+      figure {
+        @include center(vertical);
+      }
+      
+      span {
+        &.show {
+          display: none;
+        }  
+      
+        &.close {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+

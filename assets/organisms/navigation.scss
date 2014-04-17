@@ -1,7 +1,26 @@
 
-/* Archives
+/* Archive without sidebar
 */
 @mixin archive {
+  .title {
+    @include font(section-title);
+    @include font(category-title);
+  }
+  
+  article {
+    @include responsive-grid(5, 20);
+    @include article-style(projects);
+    @include article-style(archive);
+  }
+  
+  @include pagination(navigation);
+}
+
+
+
+/* Archives with sidebar
+*/
+@mixin archive-with-sidebar {
   @include fixed-sidebar;
   
   #articles {

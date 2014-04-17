@@ -12,8 +12,8 @@
     }
     
     article {
-      @include article-style(archive);
-      @include article-style(archive-smaller);
+      @include article-style(thumb-left);
+      @include article-style(thumb-left-smaller);
     }
     
   }
@@ -48,7 +48,7 @@
       
       @include mobile {
         @include block;
-        @include article-style(archive);
+        @include article-style(thumb-left);
       }
     }
   }
