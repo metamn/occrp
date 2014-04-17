@@ -778,6 +778,7 @@ html body.frontpage .container main #intro aside section article .gallery span a
 html body.frontpage .container main #intro aside section article .gallery span a:hover { color: #231f20; }
 html body.frontpage .container main #intro aside section article .gallery span.close { position: absolute; bottom: 0; left: 47%; display: none; }
 html body.frontpage .container main #intro aside section article h1 { font-size: medium; }
+@media only screen and (min-width: 80em) { html body.frontpage .container main #intro aside section#announcements article:last-of-type { display: none; } }
 @media only screen and (min-width: 80em) { html body.frontpage .container main #intro #slider { width: 65.5%; margin-right: 2.5%; float: left; }
   html body.frontpage .container main #intro aside { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0 !important; }
   html body.frontpage .container main #intro aside:nth-of-type(2) { margin-right: 2.5%; }

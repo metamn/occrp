@@ -472,6 +472,16 @@
   section {
     @include news;
     margin-bottom: $margin;
+    
+    @include small-screen-and-up {
+      &#announcements {
+        article {
+          &:last-of-type {
+            display: none;
+          }
+        }
+      }
+    }
   }
 }
 
