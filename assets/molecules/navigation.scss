@@ -12,7 +12,8 @@
     }
     
     article {
-      @include article-style(thumb-left);
+      @include article-style(archive);
+      @include article-style(archive-smaller);
     }
     
   }

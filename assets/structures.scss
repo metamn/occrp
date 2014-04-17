@@ -149,51 +149,6 @@
 
 
 
-/* Resources / Documents
-*/
-@mixin documents {
-  @include show-title;
-  
-  article {
-    border-top: $border-thin;
-    
-    img {
-      width: $pad*2;
-      float: right;
-      margin: $pad/2 $pad/2 0 0;
-    }
-    
-    h1 {
-    }
-    
-    ul {
-      @include block;
-      @include ol-ul('');
-      font-size: smaller;
-      
-      li {
-        margin-bottom: $pad/2;
-        padding-left: 0;
-        
-        date {
-          @include font(date);
-        }
-      }
-    }
-  }
-  
-  @include small-screen {
-    article {
-      border-color: $light-grey;
-      
-      img {
-        width: $pad + $pad/2;
-      }
-    }
-  }
-}
-
-
 
 /* Jobs
 */
@@ -223,6 +178,26 @@
   }
 
   @include pagination(navigation);
+}
+
+
+
+/* Resources archive
+*/
+@mixin page-resources {
+  main {
+    #articles {
+      @include frontpage-projects;
+      
+      #tools {
+        article {
+          #meta {
+            display: none;
+          }
+        }
+      }
+    }
+  }
 }
 
 

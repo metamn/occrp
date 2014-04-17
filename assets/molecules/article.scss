@@ -7,29 +7,29 @@
   - controls how an article thumb is displayed
 */
 @mixin article-style($style) {
-  @if ($style == thumb-left) {
-    @include block;
-    @include article-parts(null, null, title, figure, null, null);
-    margin-bottom: $margin/2;
+  @if ($style == archive-smaller) {
+    @include color;
+    @include border-thin;
+    padding-bottom: $margin/2;
     
-    figure, h1 {
-      @include flexible-grid;
-    }
-   
     h1 {
       font-weight: normal;
-      font-size: small;
-      max-width: calc(100% - #{$flexible-grid-width} - #{$flexible-grid-margin});
-      margin-right: 0;
     }
   
   } @elseif ($style == archive) {
+    @include block;
     @include article-parts(null, null, title, figure, null, null);
-    @include article-thumb-left($container-margin);
+    @include article-thumb-left($container-margin, $pad/4);
     margin-bottom: $margin/2;
   
+    @include color(slider);
+  
     h1 {
-      font-weight: normal;
+      font-size: small;
+      
+      @include small-screen-and-up {
+        font-size: medium;
+      }
     } 
     
 
@@ -43,6 +43,9 @@
     }
   
     @include color(slider);
+    h1, .excerpt {
+      padding: $pad/4;
+    }
   
     
   } @elseif ($style == blog) {

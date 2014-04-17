@@ -116,23 +116,7 @@ html {
     /* Resource Center
     */
     &.resources {
-      main {
-        #articles {
-          @include frontpage-projects;
-          
-          #tools {
-            article {
-              #meta {
-                display: none;
-              }
-            }
-          }
-        }
-        
-        #documents {
-          @include documents;
-        }
-      }
+      @include page-resources;
     }
     
     

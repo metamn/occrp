@@ -4,5 +4,9 @@
   - and how they look on various devices
 */
 @mixin article($type) {
+  @if ($type == normal) {
   
+  } @elseif ($type == thumb-left) {
+   
+  }
 }
