@@ -83,8 +83,8 @@ html {
             @include videos;
           }
           
-          #tags {
-            @include frontpage-tags;
+          #tags-and-gallery {
+            @include tags-and-gallery;
           }
         }
       }

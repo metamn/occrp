@@ -47,7 +47,7 @@
     &.close {
       position: absolute;
       bottom: 0;
-      left: 47%;
+      @include center(horizontal);
       display: none;
     }
   }

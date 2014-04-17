@@ -139,7 +139,7 @@ figure a { line-height: 0; }
 */
 /* Hide / show .mobile / .dekstop elements
 */
-/* Center vertically - http://davidwalsh.name/css-vertical-center 
+/* Center vertically or horizontally - http://davidwalsh.name/css-vertical-center 
 */
 /* Hide last article 
 */
@@ -285,7 +285,7 @@ html.full-screen-gallery body .gallery article:first-of-type, html.full-screen-g
 html.full-screen-gallery body .gallery span { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; font-size: small; cursor: pointer; }
 html.full-screen-gallery body .gallery span a { color: #982022; text-decoration: none; }
 html.full-screen-gallery body .gallery span a:hover { color: #231f20; }
-html.full-screen-gallery body .gallery span.close { position: absolute; bottom: 0; left: 47%; display: none; }
+html.full-screen-gallery body .gallery span.close { position: absolute; bottom: 0; position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); display: none; }
 html.full-screen-gallery body .gallery figure { position: relative; top: 50%; -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -o-transform: translateY(-50%); -webkit-transform: translateY(-50%); transform: translateY(-50%); }
 html.full-screen-gallery body .gallery span.show { display: none; }
 html.full-screen-gallery body .gallery span.close { display: block; }
@@ -655,7 +655,7 @@ html body.frontpage .container main #intro #slider article .gallery article:firs
 html body.frontpage .container main #intro #slider article .gallery span { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; font-size: small; cursor: pointer; }
 html body.frontpage .container main #intro #slider article .gallery span a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #intro #slider article .gallery span a:hover { color: #231f20; }
-html body.frontpage .container main #intro #slider article .gallery span.close { position: absolute; bottom: 0; left: 47%; display: none; }
+html body.frontpage .container main #intro #slider article .gallery span.close { position: absolute; bottom: 0; position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); display: none; }
 html body.frontpage .container main #intro #slider nav { margin-top: 1.25em; }
 html body.frontpage .container main #intro #slider nav > h3 { display: none; }
 html body.frontpage .container main #intro #slider nav ol li { display: inline-block; float: left; margin-right: 0.625em; }
@@ -778,7 +778,7 @@ html body.frontpage .container main #intro aside section article .gallery articl
 html body.frontpage .container main #intro aside section article .gallery span { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; font-size: small; cursor: pointer; }
 html body.frontpage .container main #intro aside section article .gallery span a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #intro aside section article .gallery span a:hover { color: #231f20; }
-html body.frontpage .container main #intro aside section article .gallery span.close { position: absolute; bottom: 0; left: 47%; display: none; }
+html body.frontpage .container main #intro aside section article .gallery span.close { position: absolute; bottom: 0; position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); display: none; }
 html body.frontpage .container main #intro aside section article h1 { font-size: medium; }
 @media only screen and (min-width: 80em) { html body.frontpage .container main #intro aside section#announcements article:last-of-type { display: none; } }
 @media only screen and (min-width: 80em) { html body.frontpage .container main #intro #slider { width: 65.5%; margin-right: 2.5%; float: left; }
@@ -884,7 +884,7 @@ html body.frontpage .container main #investigations article .gallery article:fir
 html body.frontpage .container main #investigations article .gallery span { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; font-size: small; cursor: pointer; }
 html body.frontpage .container main #investigations article .gallery span a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #investigations article .gallery span a:hover { color: #231f20; }
-html body.frontpage .container main #investigations article .gallery span.close { position: absolute; bottom: 0; left: 47%; display: none; }
+html body.frontpage .container main #investigations article .gallery span.close { position: absolute; bottom: 0; position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); display: none; }
 @media only screen and (max-width: 29.999em) { html body.frontpage .container main #investigations article { margin-bottom: 0.625em; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.frontpage .container main #investigations article { height: 30em; } }
 @media only screen and (min-width: 80em) { html body.frontpage .container main #investigations article { height: 30em; } }
@@ -989,7 +989,7 @@ html body.frontpage .container main #products article .gallery article:first-of-
 html body.frontpage .container main #products article .gallery span { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; font-size: small; cursor: pointer; }
 html body.frontpage .container main #products article .gallery span a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #products article .gallery span a:hover { color: #231f20; }
-html body.frontpage .container main #products article .gallery span.close { position: absolute; bottom: 0; left: 47%; display: none; }
+html body.frontpage .container main #products article .gallery span.close { position: absolute; bottom: 0; position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); display: none; }
 @media only screen and (max-width: 29.999em) { html body.frontpage .container main #products { position: relative; height: 100%; }
   html body.frontpage .container main #products .before, html body.frontpage .container main #products .after { font-size: 150%; position: absolute; top: 40%; z-index: 2; cursor: pointer; background: #f1f1f1; color: #231f20; padding: 0.3125em; opacity: .7; }
   html body.frontpage .container main #products .before a, html body.frontpage .container main #products .after a { color: #231f20; text-decoration: none; }
@@ -1100,11 +1100,26 @@ html body.frontpage .container main #projects article .gallery article:first-of-
 html body.frontpage .container main #projects article .gallery span { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; font-size: small; cursor: pointer; }
 html body.frontpage .container main #projects article .gallery span a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #projects article .gallery span a:hover { color: #231f20; }
-html body.frontpage .container main #projects article .gallery span.close { position: absolute; bottom: 0; left: 47%; display: none; }
+html body.frontpage .container main #projects article .gallery span.close { position: absolute; bottom: 0; position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); display: none; }
 @media only screen and (max-width: 29.999em) { html body.frontpage .container main #projects article { margin-bottom: 0.625em; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.frontpage .container main #projects article { height: 17em; } }
 @media only screen and (min-width: 80em) { html body.frontpage .container main #projects article { height: 17em; } }
 html body.frontpage .container main #projects article h1 { font-size: medium; }
+html body.frontpage .container main #projects form { /* Reset */ /* Stretching and padding */ /* Text */ /* Button */ /* Label
+*/ }
+html body.frontpage .container main #projects form input, html body.frontpage .container main #projects form textarea, html body.frontpage .container main #projects form select { border: none; outline: 0; background: white; appearance: none; -webkit-appearance: none; -moz-appearance: none; }
+html body.frontpage .container main #projects form input, html body.frontpage .container main #projects form textarea, html body.frontpage .container main #projects form label { width: 100%; max-width: 100%; float: left; }
+html body.frontpage .container main #projects form input, html body.frontpage .container main #projects form textarea { padding: 0.625em; width: calc(100% - 1.25em); margin-bottom: 0.625em; }
+html body.frontpage .container main #projects form input[type='text'], html body.frontpage .container main #projects form input[type='email'], html body.frontpage .container main #projects form input[type='password'], html body.frontpage .container main #projects form input[type='url'], html body.frontpage .container main #projects form input[type='search'], html body.frontpage .container main #projects form textarea { border: 1px solid #231f20; font-style: italic; }
+html body.frontpage .container main #projects form input[type='submit'] { width: auto; text-transform: uppercase; letter-spacing: 1.1px; border: 1px solid #231f20; background: #231f20; color: white; cursor: pointer; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; }
+html body.frontpage .container main #projects form input[type='submit'] a { color: white; text-decoration: none; }
+html body.frontpage .container main #projects form input[type='submit'] a:hover { color: white; }
+html body.frontpage .container main #projects form input[type='submit']:hover { background: white; color: #231f20; }
+html body.frontpage .container main #projects form input[type='submit']:hover a { color: #231f20; text-decoration: none; }
+html body.frontpage .container main #projects form input[type='submit']:hover a:hover { color: #982022; }
+html body.frontpage .container main #projects form label { text-transform: uppercase; letter-spacing: 1.1px; }
+html body.frontpage .container main #projects form { width: 100%; max-width: 100%; float: left; }
+html body.frontpage .container main #projects form input { position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); }
 @media only screen and (max-width: 29.999em) { html body.frontpage .container main #projects { position: relative; height: 100%; }
   html body.frontpage .container main #projects .before, html body.frontpage .container main #projects .after { font-size: 150%; position: absolute; top: 40%; z-index: 2; cursor: pointer; background: #f1f1f1; color: #231f20; padding: 0.3125em; opacity: .7; }
   html body.frontpage .container main #projects .before a, html body.frontpage .container main #projects .after a { color: #231f20; text-decoration: none; }
@@ -1216,7 +1231,7 @@ html body.frontpage .container main #blog article .gallery article:first-of-type
 html body.frontpage .container main #blog article .gallery span { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; font-size: small; cursor: pointer; }
 html body.frontpage .container main #blog article .gallery span a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #blog article .gallery span a:hover { color: #231f20; }
-html body.frontpage .container main #blog article .gallery span.close { position: absolute; bottom: 0; left: 47%; display: none; }
+html body.frontpage .container main #blog article .gallery span.close { position: absolute; bottom: 0; position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); display: none; }
 html body.frontpage .container main #blog article figure, html body.frontpage .container main #blog article h1, html body.frontpage .container main #blog article .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
 html body.frontpage .container main #blog article h1, html body.frontpage .container main #blog article .excerpt { margin-right: 0; padding: 0; width: calc(48.75% - 0); }
 html body.frontpage .container main #blog article a { color: white; text-decoration: none; }
@@ -1325,7 +1340,7 @@ html body.frontpage .container main #most-read section article .gallery article:
 html body.frontpage .container main #most-read section article .gallery span { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; font-size: small; cursor: pointer; }
 html body.frontpage .container main #most-read section article .gallery span a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #most-read section article .gallery span a:hover { color: #231f20; }
-html body.frontpage .container main #most-read section article .gallery span.close { position: absolute; bottom: 0; left: 47%; display: none; }
+html body.frontpage .container main #most-read section article .gallery span.close { position: absolute; bottom: 0; position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); display: none; }
 html body.frontpage .container main #most-read section article h1 { font-size: medium; }
 html body.frontpage .container main #most-read section article h1 { font-weight: normal; }
 html body.frontpage .container main #videos h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; }
@@ -1429,7 +1444,7 @@ html body.frontpage .container main #videos article .gallery article:first-of-ty
 html body.frontpage .container main #videos article .gallery span { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; font-size: small; cursor: pointer; }
 html body.frontpage .container main #videos article .gallery span a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #videos article .gallery span a:hover { color: #231f20; }
-html body.frontpage .container main #videos article .gallery span.close { position: absolute; bottom: 0; left: 47%; display: none; }
+html body.frontpage .container main #videos article .gallery span.close { position: absolute; bottom: 0; position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); display: none; }
 @media only screen and (max-width: 29.999em) { html body.frontpage .container main #videos article { margin-bottom: 0.625em; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.frontpage .container main #videos article { height: 17em; } }
 @media only screen and (min-width: 80em) { html body.frontpage .container main #videos article { height: 17em; } }
@@ -1443,28 +1458,50 @@ html body.frontpage .container main #videos article h1 { font-size: medium; }
   html body.frontpage .container main #videos .after { right: 0; float: right; }
   html body.frontpage .container main #videos article, html body.frontpage .container main #videos .gallery-item { display: none; }
   html body.frontpage .container main #videos article:first-of-type, html body.frontpage .container main #videos .gallery-item:first-of-type { display: block; } }
-html body.frontpage .container main #tags h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; }
-html body.frontpage .container main #tags h3 a { color: #982022; text-decoration: none; }
-html body.frontpage .container main #tags h3 a:hover { color: #231f20; }
-html body.frontpage .container main #tags nav { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; width: 100%; max-width: 100%; float: left; background: #231f20; color: white; }
-html body.frontpage .container main #tags nav > h3 { display: none; }
-html body.frontpage .container main #tags nav a { color: white; text-decoration: none; }
-html body.frontpage .container main #tags nav a:hover { color: white; }
-html body.frontpage .container main #tags nav ul.search li.text img { height: 12px; position: relative; top: 1px; }
-html body.frontpage .container main #tags nav ul.search li.input { display: none; }
-html body.frontpage .container main #tags nav ul.search li.input input { margin: 0.3125em; }
-html body.frontpage .container main #tags nav ul.tag-list { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
-html body.frontpage .container main #tags nav ul.tag-list li, html body.frontpage .container main #tags nav ul.social li, html body.frontpage .container main #tags nav ul.search li { display: inline-block; float: left; margin-right: 0.3125em; }
-html body.frontpage .container main #tags nav ul.tag-list li:last-of-type, html body.frontpage .container main #tags nav ul.social li:last-of-type, html body.frontpage .container main #tags nav ul.search li:last-of-type { margin-right: 0; }
-html body.frontpage .container main #tags nav ul.social { float: right; }
-html body.frontpage .container main #tags nav ul.social li { /* We are not replacing social icons on hover - so the second image must not be displayed - also the icon should be taller, the maximum possible
+html body.frontpage .container main #tags-and-gallery h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; display: none; }
+html body.frontpage .container main #tags-and-gallery h3 a { color: #982022; text-decoration: none; }
+html body.frontpage .container main #tags-and-gallery h3 a:hover { color: #231f20; }
+html body.frontpage .container main #tags-and-gallery nav { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; width: 100%; max-width: 100%; float: left; background: #231f20; color: white; }
+html body.frontpage .container main #tags-and-gallery nav a { color: white; text-decoration: none; }
+html body.frontpage .container main #tags-and-gallery nav a:hover { color: white; }
+html body.frontpage .container main #tags-and-gallery nav ul.search li.text img { height: 12px; position: relative; top: 1px; }
+html body.frontpage .container main #tags-and-gallery nav ul.search li.input { display: none; }
+html body.frontpage .container main #tags-and-gallery nav ul.search li.input input { margin: 0.3125em; }
+html body.frontpage .container main #tags-and-gallery nav ul.tag-list { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
+html body.frontpage .container main #tags-and-gallery nav ul.tag-list li, html body.frontpage .container main #tags-and-gallery nav ul.social li, html body.frontpage .container main #tags-and-gallery nav ul.search li { display: inline-block; float: left; margin-right: 0.3125em; }
+html body.frontpage .container main #tags-and-gallery nav ul.tag-list li:last-of-type, html body.frontpage .container main #tags-and-gallery nav ul.social li:last-of-type, html body.frontpage .container main #tags-and-gallery nav ul.search li:last-of-type { margin-right: 0; }
+html body.frontpage .container main #tags-and-gallery nav ul.social { float: right; }
+html body.frontpage .container main #tags-and-gallery nav ul.social li { /* We are not replacing social icons on hover - so the second image must not be displayed - also the icon should be taller, the maximum possible
 */ }
-html body.frontpage .container main #tags nav ul.social li img { height: 12px; position: relative; top: 1px; }
-html body.frontpage .container main #tags nav ul.social li a img { height: 13px; }
-html body.frontpage .container main #tags nav ul.social li a img:last-of-type { display: none; }
-html body.frontpage .container main #tags nav ul.tag-list { width: 100%; max-width: 100%; float: left; padding: 1.25em; width: calc(100% - 2.5em); }
-html body.frontpage .container main #tags nav ul.tag-list li { display: inline-block; float: left; margin-right: 1.25em; }
-html body.frontpage .container main #tags nav ul.tag-list li:last-of-type { margin-right: 0; }
+html body.frontpage .container main #tags-and-gallery nav ul.social li img { height: 12px; position: relative; top: 1px; }
+html body.frontpage .container main #tags-and-gallery nav ul.social li a img { height: 13px; }
+html body.frontpage .container main #tags-and-gallery nav ul.social li a img:last-of-type { display: none; }
+html body.frontpage .container main #tags-and-gallery nav ul.tag-list { width: 100%; max-width: 100%; float: left; padding: 1.25em; width: calc(100% - 2.5em); }
+html body.frontpage .container main #tags-and-gallery nav ul.tag-list li { display: inline-block; float: left; margin-right: 1.25em; }
+html body.frontpage .container main #tags-and-gallery nav ul.tag-list li:last-of-type { margin-right: 0; }
+html body.frontpage .container main #tags-and-gallery aside { height: 7em; overflow: hidden; }
+@media only screen and (max-width: 29.999em) { html body.frontpage .container main #tags-and-gallery nav, html body.frontpage .container main #tags-and-gallery aside { width: 100%; margin-right: 0; float: left; } }
+@media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.frontpage .container main #tags-and-gallery nav, html body.frontpage .container main #tags-and-gallery aside { width: 47.5%; margin-right: 2.5%; float: left; }
+  html body.frontpage .container main #tags-and-gallery nav:nth-of-type(2), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(2) { margin-right: 0; }
+  html body.frontpage .container main #tags-and-gallery nav:nth-of-type(3), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(3) { margin-right: 2.5%; }
+  html body.frontpage .container main #tags-and-gallery nav:nth-of-type(4), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(4) { margin-right: 0; }
+  html body.frontpage .container main #tags-and-gallery nav:nth-of-type(5), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(5) { margin-right: 2.5%; }
+  html body.frontpage .container main #tags-and-gallery nav:nth-of-type(6), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(6) { margin-right: 0; }
+  html body.frontpage .container main #tags-and-gallery nav:nth-of-type(7), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(7) { margin-right: 2.5%; }
+  html body.frontpage .container main #tags-and-gallery nav:nth-of-type(8), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(8) { margin-right: 0; }
+  html body.frontpage .container main #tags-and-gallery nav:nth-of-type(9), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(9) { margin-right: 2.5%; }
+  html body.frontpage .container main #tags-and-gallery nav:nth-of-type(10), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(10) { margin-right: 0; } }
+@media only screen and (min-width: 80em) { html body.frontpage .container main #tags-and-gallery nav, html body.frontpage .container main #tags-and-gallery aside { width: 47.5%; margin-right: 2.5%; float: left; }
+  html body.frontpage .container main #tags-and-gallery nav:nth-of-type(2), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(2) { margin-right: 0; }
+  html body.frontpage .container main #tags-and-gallery nav:nth-of-type(3), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(3) { margin-right: 2.5%; }
+  html body.frontpage .container main #tags-and-gallery nav:nth-of-type(4), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(4) { margin-right: 0; }
+  html body.frontpage .container main #tags-and-gallery nav:nth-of-type(5), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(5) { margin-right: 2.5%; }
+  html body.frontpage .container main #tags-and-gallery nav:nth-of-type(6), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(6) { margin-right: 0; }
+  html body.frontpage .container main #tags-and-gallery nav:nth-of-type(7), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(7) { margin-right: 2.5%; }
+  html body.frontpage .container main #tags-and-gallery nav:nth-of-type(8), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(8) { margin-right: 0; }
+  html body.frontpage .container main #tags-and-gallery nav:nth-of-type(9), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(9) { margin-right: 2.5%; }
+  html body.frontpage .container main #tags-and-gallery nav:nth-of-type(10), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(10) { margin-right: 0; } }
+html body.frontpage .container main #tags-and-gallery nav > h3, html body.frontpage .container main #tags-and-gallery aside > h3 { display: block; }
 @media only screen and (min-width: 80em) { html body.category main { overflow: hidden; }
   html body.category main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; position: relative; top: -2.5em; /* This is the margin between sidebar elements ... */ } }
 html body.category main #articles { width: 65.5%; margin-right: 2.5%; float: left; /* The first article
@@ -1550,7 +1587,7 @@ html body.category main #articles aside .gallery article:first-of-type, html bod
 html body.category main #articles aside .gallery span { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; font-size: small; cursor: pointer; }
 html body.category main #articles aside .gallery span a { color: #982022; text-decoration: none; }
 html body.category main #articles aside .gallery span a:hover { color: #231f20; }
-html body.category main #articles aside .gallery span.close { position: absolute; bottom: 0; left: 47%; display: none; }
+html body.category main #articles aside .gallery span.close { position: absolute; bottom: 0; position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); display: none; }
 @media only screen and (min-width: 30em) { html body.category main #articles aside figure, html body.category main #articles aside h1, html body.category main #articles aside .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.category main #articles aside h1, html body.category main #articles aside .excerpt { margin-right: 0; padding: 0.3125em; width: calc(48.75% - 0.625em); } }
 html body.category main #articles article.thumb { /*
@@ -1671,7 +1708,7 @@ html body.category main #articles article.thumb .gallery article:first-of-type, 
 html body.category main #articles article.thumb .gallery span { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; font-size: small; cursor: pointer; }
 html body.category main #articles article.thumb .gallery span a { color: #982022; text-decoration: none; }
 html body.category main #articles article.thumb .gallery span a:hover { color: #231f20; }
-html body.category main #articles article.thumb .gallery span.close { position: absolute; bottom: 0; left: 47%; display: none; }
+html body.category main #articles article.thumb .gallery span.close { position: absolute; bottom: 0; position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); display: none; }
 @media only screen and (max-width: 29.999em) { html body.category main #articles article.thumb { margin-bottom: 0.625em; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.category main #articles article.thumb { height: 17em; } }
 @media only screen and (min-width: 80em) { html body.category main #articles article.thumb { height: 17em; } }
@@ -1753,7 +1790,7 @@ html body.category main #articles article.thumb h1 { font-size: medium; }
   html body.category main #articles article.thumb .gallery span { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; font-size: small; cursor: pointer; }
   html body.category main #articles article.thumb .gallery span a { color: #982022; text-decoration: none; }
   html body.category main #articles article.thumb .gallery span a:hover { color: #231f20; }
-  html body.category main #articles article.thumb .gallery span.close { position: absolute; bottom: 0; left: 47%; display: none; }
+  html body.category main #articles article.thumb .gallery span.close { position: absolute; bottom: 0; position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); display: none; }
   html body.category main #articles article.thumb figure, html body.category main #articles article.thumb h1, html body.category main #articles article.thumb .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.category main #articles article.thumb h1, html body.category main #articles article.thumb .excerpt { margin-right: 0; padding: 0; width: calc(48.75% - 0); }
   html body.category main #articles article.thumb h1 { font-weight: normal; } }
@@ -1852,7 +1889,7 @@ html body.category main aside section article .gallery article:first-of-type, ht
 html body.category main aside section article .gallery span { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; font-size: small; cursor: pointer; }
 html body.category main aside section article .gallery span a { color: #982022; text-decoration: none; }
 html body.category main aside section article .gallery span a:hover { color: #231f20; }
-html body.category main aside section article .gallery span.close { position: absolute; bottom: 0; left: 47%; display: none; }
+html body.category main aside section article .gallery span.close { position: absolute; bottom: 0; position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); display: none; }
 html body.category main aside section article figure, html body.category main aside section article h1 { width: auto; float: left; max-width: 30%; margin: 1.5% 3% 0 0; }
 html body.category main aside section article h1 { font-weight: normal; font-size: small; max-width: calc(100% - 30% - 3%); margin-right: 0; }
 html body.category main aside #spacer > h3 { display: none; }
@@ -1941,7 +1978,7 @@ html body.tag main #articles aside .gallery article:first-of-type, html body.tag
 html body.tag main #articles aside .gallery span { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; font-size: small; cursor: pointer; }
 html body.tag main #articles aside .gallery span a { color: #982022; text-decoration: none; }
 html body.tag main #articles aside .gallery span a:hover { color: #231f20; }
-html body.tag main #articles aside .gallery span.close { position: absolute; bottom: 0; left: 47%; display: none; }
+html body.tag main #articles aside .gallery span.close { position: absolute; bottom: 0; position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); display: none; }
 @media only screen and (min-width: 30em) { html body.tag main #articles aside figure, html body.tag main #articles aside h1, html body.tag main #articles aside .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.tag main #articles aside h1, html body.tag main #articles aside .excerpt { margin-right: 0; padding: 0.3125em; width: calc(48.75% - 0.625em); } }
 html body.tag main #articles article.thumb { /*
@@ -2062,7 +2099,7 @@ html body.tag main #articles article.thumb .gallery article:first-of-type, html 
 html body.tag main #articles article.thumb .gallery span { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; font-size: small; cursor: pointer; }
 html body.tag main #articles article.thumb .gallery span a { color: #982022; text-decoration: none; }
 html body.tag main #articles article.thumb .gallery span a:hover { color: #231f20; }
-html body.tag main #articles article.thumb .gallery span.close { position: absolute; bottom: 0; left: 47%; display: none; }
+html body.tag main #articles article.thumb .gallery span.close { position: absolute; bottom: 0; position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); display: none; }
 @media only screen and (max-width: 29.999em) { html body.tag main #articles article.thumb { margin-bottom: 0.625em; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.tag main #articles article.thumb { height: 17em; } }
 @media only screen and (min-width: 80em) { html body.tag main #articles article.thumb { height: 17em; } }
@@ -2144,7 +2181,7 @@ html body.tag main #articles article.thumb h1 { font-size: medium; }
   html body.tag main #articles article.thumb .gallery span { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; font-size: small; cursor: pointer; }
   html body.tag main #articles article.thumb .gallery span a { color: #982022; text-decoration: none; }
   html body.tag main #articles article.thumb .gallery span a:hover { color: #231f20; }
-  html body.tag main #articles article.thumb .gallery span.close { position: absolute; bottom: 0; left: 47%; display: none; }
+  html body.tag main #articles article.thumb .gallery span.close { position: absolute; bottom: 0; position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); display: none; }
   html body.tag main #articles article.thumb figure, html body.tag main #articles article.thumb h1, html body.tag main #articles article.thumb .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.tag main #articles article.thumb h1, html body.tag main #articles article.thumb .excerpt { margin-right: 0; padding: 0; width: calc(48.75% - 0); }
   html body.tag main #articles article.thumb h1 { font-weight: normal; } }
@@ -2243,7 +2280,7 @@ html body.tag main aside section article .gallery article:first-of-type, html bo
 html body.tag main aside section article .gallery span { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; font-size: small; cursor: pointer; }
 html body.tag main aside section article .gallery span a { color: #982022; text-decoration: none; }
 html body.tag main aside section article .gallery span a:hover { color: #231f20; }
-html body.tag main aside section article .gallery span.close { position: absolute; bottom: 0; left: 47%; display: none; }
+html body.tag main aside section article .gallery span.close { position: absolute; bottom: 0; position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); display: none; }
 html body.tag main aside section article figure, html body.tag main aside section article h1 { width: auto; float: left; max-width: 30%; margin: 1.5% 3% 0 0; }
 html body.tag main aside section article h1 { font-weight: normal; font-size: small; max-width: calc(100% - 30% - 3%); margin-right: 0; }
 html body.tag main aside #spacer > h3 { display: none; }
@@ -2350,11 +2387,26 @@ html body.projects main #articles article .gallery article:first-of-type, html b
 html body.projects main #articles article .gallery span { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; font-size: small; cursor: pointer; }
 html body.projects main #articles article .gallery span a { color: #982022; text-decoration: none; }
 html body.projects main #articles article .gallery span a:hover { color: #231f20; }
-html body.projects main #articles article .gallery span.close { position: absolute; bottom: 0; left: 47%; display: none; }
+html body.projects main #articles article .gallery span.close { position: absolute; bottom: 0; position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); display: none; }
 @media only screen and (max-width: 29.999em) { html body.projects main #articles article { margin-bottom: 0.625em; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.projects main #articles article { height: 17em; } }
 @media only screen and (min-width: 80em) { html body.projects main #articles article { height: 17em; } }
 html body.projects main #articles article h1 { font-size: medium; }
+html body.projects main #articles form { /* Reset */ /* Stretching and padding */ /* Text */ /* Button */ /* Label
+*/ }
+html body.projects main #articles form input, html body.projects main #articles form textarea, html body.projects main #articles form select { border: none; outline: 0; background: white; appearance: none; -webkit-appearance: none; -moz-appearance: none; }
+html body.projects main #articles form input, html body.projects main #articles form textarea, html body.projects main #articles form label { width: 100%; max-width: 100%; float: left; }
+html body.projects main #articles form input, html body.projects main #articles form textarea { padding: 0.625em; width: calc(100% - 1.25em); margin-bottom: 0.625em; }
+html body.projects main #articles form input[type='text'], html body.projects main #articles form input[type='email'], html body.projects main #articles form input[type='password'], html body.projects main #articles form input[type='url'], html body.projects main #articles form input[type='search'], html body.projects main #articles form textarea { border: 1px solid #231f20; font-style: italic; }
+html body.projects main #articles form input[type='submit'] { width: auto; text-transform: uppercase; letter-spacing: 1.1px; border: 1px solid #231f20; background: #231f20; color: white; cursor: pointer; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; }
+html body.projects main #articles form input[type='submit'] a { color: white; text-decoration: none; }
+html body.projects main #articles form input[type='submit'] a:hover { color: white; }
+html body.projects main #articles form input[type='submit']:hover { background: white; color: #231f20; }
+html body.projects main #articles form input[type='submit']:hover a { color: #231f20; text-decoration: none; }
+html body.projects main #articles form input[type='submit']:hover a:hover { color: #982022; }
+html body.projects main #articles form label { text-transform: uppercase; letter-spacing: 1.1px; }
+html body.projects main #articles form { width: 100%; max-width: 100%; float: left; }
+html body.projects main #articles form input { position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); }
 @media only screen and (max-width: 29.999em) { html body.projects main #articles { position: relative; height: 100%; }
   html body.projects main #articles .before, html body.projects main #articles .after { font-size: 150%; position: absolute; top: 40%; z-index: 2; cursor: pointer; background: #f1f1f1; color: #231f20; padding: 0.3125em; opacity: .7; }
   html body.projects main #articles .before a, html body.projects main #articles .after a { color: #231f20; text-decoration: none; }
@@ -2463,7 +2515,7 @@ html body.projects article .gallery article:first-of-type, html body.projects ar
 html body.projects article .gallery span { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; font-size: small; cursor: pointer; }
 html body.projects article .gallery span a { color: #982022; text-decoration: none; }
 html body.projects article .gallery span a:hover { color: #231f20; }
-html body.projects article .gallery span.close { position: absolute; bottom: 0; left: 47%; display: none; }
+html body.projects article .gallery span.close { position: absolute; bottom: 0; position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); display: none; }
 @media only screen and (max-width: 29.999em) { html body.projects article { margin-bottom: 0.625em; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.projects article { height: 30em; } }
 @media only screen and (min-width: 80em) { html body.projects article { height: 30em; } }
@@ -2580,11 +2632,26 @@ html body.resources main #articles article .gallery article:first-of-type, html 
 html body.resources main #articles article .gallery span { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; font-size: small; cursor: pointer; }
 html body.resources main #articles article .gallery span a { color: #982022; text-decoration: none; }
 html body.resources main #articles article .gallery span a:hover { color: #231f20; }
-html body.resources main #articles article .gallery span.close { position: absolute; bottom: 0; left: 47%; display: none; }
+html body.resources main #articles article .gallery span.close { position: absolute; bottom: 0; position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); display: none; }
 @media only screen and (max-width: 29.999em) { html body.resources main #articles article { margin-bottom: 0.625em; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.resources main #articles article { height: 17em; } }
 @media only screen and (min-width: 80em) { html body.resources main #articles article { height: 17em; } }
 html body.resources main #articles article h1 { font-size: medium; }
+html body.resources main #articles form { /* Reset */ /* Stretching and padding */ /* Text */ /* Button */ /* Label
+*/ }
+html body.resources main #articles form input, html body.resources main #articles form textarea, html body.resources main #articles form select { border: none; outline: 0; background: white; appearance: none; -webkit-appearance: none; -moz-appearance: none; }
+html body.resources main #articles form input, html body.resources main #articles form textarea, html body.resources main #articles form label { width: 100%; max-width: 100%; float: left; }
+html body.resources main #articles form input, html body.resources main #articles form textarea { padding: 0.625em; width: calc(100% - 1.25em); margin-bottom: 0.625em; }
+html body.resources main #articles form input[type='text'], html body.resources main #articles form input[type='email'], html body.resources main #articles form input[type='password'], html body.resources main #articles form input[type='url'], html body.resources main #articles form input[type='search'], html body.resources main #articles form textarea { border: 1px solid #231f20; font-style: italic; }
+html body.resources main #articles form input[type='submit'] { width: auto; text-transform: uppercase; letter-spacing: 1.1px; border: 1px solid #231f20; background: #231f20; color: white; cursor: pointer; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; }
+html body.resources main #articles form input[type='submit'] a { color: white; text-decoration: none; }
+html body.resources main #articles form input[type='submit'] a:hover { color: white; }
+html body.resources main #articles form input[type='submit']:hover { background: white; color: #231f20; }
+html body.resources main #articles form input[type='submit']:hover a { color: #231f20; text-decoration: none; }
+html body.resources main #articles form input[type='submit']:hover a:hover { color: #982022; }
+html body.resources main #articles form label { text-transform: uppercase; letter-spacing: 1.1px; }
+html body.resources main #articles form { width: 100%; max-width: 100%; float: left; }
+html body.resources main #articles form input { position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); }
 @media only screen and (max-width: 29.999em) { html body.resources main #articles { position: relative; height: 100%; }
   html body.resources main #articles .before, html body.resources main #articles .after { font-size: 150%; position: absolute; top: 40%; z-index: 2; cursor: pointer; background: #f1f1f1; color: #231f20; padding: 0.3125em; opacity: .7; }
   html body.resources main #articles .before a, html body.resources main #articles .after a { color: #231f20; text-decoration: none; }
@@ -2693,7 +2760,7 @@ html body.blog main #articles aside .gallery article:first-of-type, html body.bl
 html body.blog main #articles aside .gallery span { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; font-size: small; cursor: pointer; }
 html body.blog main #articles aside .gallery span a { color: #982022; text-decoration: none; }
 html body.blog main #articles aside .gallery span a:hover { color: #231f20; }
-html body.blog main #articles aside .gallery span.close { position: absolute; bottom: 0; left: 47%; display: none; }
+html body.blog main #articles aside .gallery span.close { position: absolute; bottom: 0; position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); display: none; }
 @media only screen and (min-width: 30em) { html body.blog main #articles aside figure, html body.blog main #articles aside h1, html body.blog main #articles aside .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.blog main #articles aside h1, html body.blog main #articles aside .excerpt { margin-right: 0; padding: 0.3125em; width: calc(48.75% - 0.625em); } }
 html body.blog main #articles article.thumb { /*
@@ -2814,7 +2881,7 @@ html body.blog main #articles article.thumb .gallery article:first-of-type, html
 html body.blog main #articles article.thumb .gallery span { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; font-size: small; cursor: pointer; }
 html body.blog main #articles article.thumb .gallery span a { color: #982022; text-decoration: none; }
 html body.blog main #articles article.thumb .gallery span a:hover { color: #231f20; }
-html body.blog main #articles article.thumb .gallery span.close { position: absolute; bottom: 0; left: 47%; display: none; }
+html body.blog main #articles article.thumb .gallery span.close { position: absolute; bottom: 0; position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); display: none; }
 @media only screen and (max-width: 29.999em) { html body.blog main #articles article.thumb { margin-bottom: 0.625em; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.blog main #articles article.thumb { height: 17em; } }
 @media only screen and (min-width: 80em) { html body.blog main #articles article.thumb { height: 17em; } }
@@ -2896,7 +2963,7 @@ html body.blog main #articles article.thumb h1 { font-size: medium; }
   html body.blog main #articles article.thumb .gallery span { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; font-size: small; cursor: pointer; }
   html body.blog main #articles article.thumb .gallery span a { color: #982022; text-decoration: none; }
   html body.blog main #articles article.thumb .gallery span a:hover { color: #231f20; }
-  html body.blog main #articles article.thumb .gallery span.close { position: absolute; bottom: 0; left: 47%; display: none; }
+  html body.blog main #articles article.thumb .gallery span.close { position: absolute; bottom: 0; position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); display: none; }
   html body.blog main #articles article.thumb figure, html body.blog main #articles article.thumb h1, html body.blog main #articles article.thumb .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.blog main #articles article.thumb h1, html body.blog main #articles article.thumb .excerpt { margin-right: 0; padding: 0; width: calc(48.75% - 0); }
   html body.blog main #articles article.thumb h1 { font-weight: normal; } }
@@ -2995,7 +3062,7 @@ html body.blog main aside section article .gallery article:first-of-type, html b
 html body.blog main aside section article .gallery span { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; font-size: small; cursor: pointer; }
 html body.blog main aside section article .gallery span a { color: #982022; text-decoration: none; }
 html body.blog main aside section article .gallery span a:hover { color: #231f20; }
-html body.blog main aside section article .gallery span.close { position: absolute; bottom: 0; left: 47%; display: none; }
+html body.blog main aside section article .gallery span.close { position: absolute; bottom: 0; position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); display: none; }
 html body.blog main aside section article figure, html body.blog main aside section article h1 { width: auto; float: left; max-width: 30%; margin: 1.5% 3% 0 0; }
 html body.blog main aside section article h1 { font-weight: normal; font-size: small; max-width: calc(100% - 30% - 3%); margin-right: 0; }
 html body.blog main aside #spacer > h3 { display: none; }
@@ -3075,7 +3142,7 @@ html body.blog main #articles article .gallery article:first-of-type, html body.
 html body.blog main #articles article .gallery span { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; font-size: small; cursor: pointer; }
 html body.blog main #articles article .gallery span a { color: #982022; text-decoration: none; }
 html body.blog main #articles article .gallery span a:hover { color: #231f20; }
-html body.blog main #articles article .gallery span.close { position: absolute; bottom: 0; left: 47%; display: none; }
+html body.blog main #articles article .gallery span.close { position: absolute; bottom: 0; position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); display: none; }
 html body.blog main #articles article.thumb { width: 100%; max-width: 100%; float: left; }
 html body.blog main #articles article.thumb h1 { font-size: 20px; font-size: 1.25rem; font-weight: bold; }
 html body.blog main #articles article.thumb .excerpt { display: block; border-bottom: 1px solid #f1f1f1; padding-bottom: 2.5em; }
@@ -3165,7 +3232,7 @@ html body.author main #articles aside .gallery article:first-of-type, html body.
 html body.author main #articles aside .gallery span { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; font-size: small; cursor: pointer; }
 html body.author main #articles aside .gallery span a { color: #982022; text-decoration: none; }
 html body.author main #articles aside .gallery span a:hover { color: #231f20; }
-html body.author main #articles aside .gallery span.close { position: absolute; bottom: 0; left: 47%; display: none; }
+html body.author main #articles aside .gallery span.close { position: absolute; bottom: 0; position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); display: none; }
 @media only screen and (min-width: 30em) { html body.author main #articles aside figure, html body.author main #articles aside h1, html body.author main #articles aside .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.author main #articles aside h1, html body.author main #articles aside .excerpt { margin-right: 0; padding: 0.3125em; width: calc(48.75% - 0.625em); } }
 html body.author main #articles article.thumb { /*
@@ -3286,7 +3353,7 @@ html body.author main #articles article.thumb .gallery article:first-of-type, ht
 html body.author main #articles article.thumb .gallery span { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; font-size: small; cursor: pointer; }
 html body.author main #articles article.thumb .gallery span a { color: #982022; text-decoration: none; }
 html body.author main #articles article.thumb .gallery span a:hover { color: #231f20; }
-html body.author main #articles article.thumb .gallery span.close { position: absolute; bottom: 0; left: 47%; display: none; }
+html body.author main #articles article.thumb .gallery span.close { position: absolute; bottom: 0; position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); display: none; }
 @media only screen and (max-width: 29.999em) { html body.author main #articles article.thumb { margin-bottom: 0.625em; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.author main #articles article.thumb { height: 17em; } }
 @media only screen and (min-width: 80em) { html body.author main #articles article.thumb { height: 17em; } }
@@ -3368,7 +3435,7 @@ html body.author main #articles article.thumb h1 { font-size: medium; }
   html body.author main #articles article.thumb .gallery span { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; font-size: small; cursor: pointer; }
   html body.author main #articles article.thumb .gallery span a { color: #982022; text-decoration: none; }
   html body.author main #articles article.thumb .gallery span a:hover { color: #231f20; }
-  html body.author main #articles article.thumb .gallery span.close { position: absolute; bottom: 0; left: 47%; display: none; }
+  html body.author main #articles article.thumb .gallery span.close { position: absolute; bottom: 0; position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); display: none; }
   html body.author main #articles article.thumb figure, html body.author main #articles article.thumb h1, html body.author main #articles article.thumb .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.author main #articles article.thumb h1, html body.author main #articles article.thumb .excerpt { margin-right: 0; padding: 0; width: calc(48.75% - 0); }
   html body.author main #articles article.thumb h1 { font-weight: normal; } }
@@ -3467,7 +3534,7 @@ html body.author main aside section article .gallery article:first-of-type, html
 html body.author main aside section article .gallery span { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; font-size: small; cursor: pointer; }
 html body.author main aside section article .gallery span a { color: #982022; text-decoration: none; }
 html body.author main aside section article .gallery span a:hover { color: #231f20; }
-html body.author main aside section article .gallery span.close { position: absolute; bottom: 0; left: 47%; display: none; }
+html body.author main aside section article .gallery span.close { position: absolute; bottom: 0; position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); display: none; }
 html body.author main aside section article figure, html body.author main aside section article h1 { width: auto; float: left; max-width: 30%; margin: 1.5% 3% 0 0; }
 html body.author main aside section article h1 { font-weight: normal; font-size: small; max-width: calc(100% - 30% - 3%); margin-right: 0; }
 html body.author main aside #spacer > h3 { display: none; }
@@ -3550,7 +3617,7 @@ html body.author main #articles article .gallery article:first-of-type, html bod
 html body.author main #articles article .gallery span { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; font-size: small; cursor: pointer; }
 html body.author main #articles article .gallery span a { color: #982022; text-decoration: none; }
 html body.author main #articles article .gallery span a:hover { color: #231f20; }
-html body.author main #articles article .gallery span.close { position: absolute; bottom: 0; left: 47%; display: none; }
+html body.author main #articles article .gallery span.close { position: absolute; bottom: 0; position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); display: none; }
 html body.author main #articles article.thumb { width: 100%; max-width: 100%; float: left; }
 html body.author main #articles article.thumb h1 { font-size: 20px; font-size: 1.25rem; font-weight: bold; }
 html body.author main #articles article.thumb .excerpt { display: block; border-bottom: 1px solid #f1f1f1; padding-bottom: 2.5em; }
@@ -3632,7 +3699,7 @@ html body.article main #article article.single .gallery article:first-of-type, h
 html body.article main #article article.single .gallery span, html body.about main #article article.single .gallery span, html body.post main #article article.single .gallery span { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; font-size: small; cursor: pointer; }
 html body.article main #article article.single .gallery span a, html body.about main #article article.single .gallery span a, html body.post main #article article.single .gallery span a { color: #982022; text-decoration: none; }
 html body.article main #article article.single .gallery span a:hover, html body.about main #article article.single .gallery span a:hover, html body.post main #article article.single .gallery span a:hover { color: #231f20; }
-html body.article main #article article.single .gallery span.close, html body.about main #article article.single .gallery span.close, html body.post main #article article.single .gallery span.close { position: absolute; bottom: 0; left: 47%; display: none; }
+html body.article main #article article.single .gallery span.close, html body.about main #article article.single .gallery span.close, html body.post main #article article.single .gallery span.close { position: absolute; bottom: 0; position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); display: none; }
 html body.article main #article article.single h1, html body.article main #article article.single h2, html body.article main #article article.single h3, html body.article main #article article.single h4, html body.article main #article article.single h5, html body.article main #article article.single h6, html body.about main #article article.single h1, html body.about main #article article.single h2, html body.about main #article article.single h3, html body.about main #article article.single h4, html body.about main #article article.single h5, html body.about main #article article.single h6, html body.post main #article article.single h1, html body.post main #article article.single h2, html body.post main #article article.single h3, html body.post main #article article.single h4, html body.post main #article article.single h5, html body.post main #article article.single h6 { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; line-height: 1.25; padding: 0; }
 html body.article main #article article.single h1, html body.about main #article article.single h1, html body.post main #article article.single h1 { font-size: 20px; font-size: 1.25rem; font-weight: bold; }
 html body.article main #article article.single h2, html body.about main #article article.single h2, html body.post main #article article.single h2 { font-size: 20px; font-size: 1.25rem; font-weight: normal; text-transform: uppercase; letter-spacing: 1.1px; }
@@ -3852,7 +3919,7 @@ html body.article main aside section article .gallery article:first-of-type, htm
 html body.article main aside section article .gallery span, html body.about main aside section article .gallery span, html body.post main aside section article .gallery span { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; font-size: small; cursor: pointer; }
 html body.article main aside section article .gallery span a, html body.about main aside section article .gallery span a, html body.post main aside section article .gallery span a { color: #982022; text-decoration: none; }
 html body.article main aside section article .gallery span a:hover, html body.about main aside section article .gallery span a:hover, html body.post main aside section article .gallery span a:hover { color: #231f20; }
-html body.article main aside section article .gallery span.close, html body.about main aside section article .gallery span.close, html body.post main aside section article .gallery span.close { position: absolute; bottom: 0; left: 47%; display: none; }
+html body.article main aside section article .gallery span.close, html body.about main aside section article .gallery span.close, html body.post main aside section article .gallery span.close { position: absolute; bottom: 0; position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); display: none; }
 html body.article main aside section article figure, html body.article main aside section article h1, html body.about main aside section article figure, html body.about main aside section article h1, html body.post main aside section article figure, html body.post main aside section article h1 { width: auto; float: left; max-width: 30%; margin: 1.5% 3% 0 0; }
 html body.article main aside section article h1, html body.about main aside section article h1, html body.post main aside section article h1 { font-weight: normal; font-size: small; max-width: calc(100% - 30% - 3%); margin-right: 0; }
 html body.article main aside #spacer > h3, html body.about main aside #spacer > h3, html body.post main aside #spacer > h3 { display: none; }
@@ -3949,7 +4016,7 @@ html body.jobs main #article #content article .gallery article:first-of-type, ht
 html body.jobs main #article #content article .gallery span, html body.announcements main #article #content article .gallery span { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; font-size: small; cursor: pointer; }
 html body.jobs main #article #content article .gallery span a, html body.announcements main #article #content article .gallery span a { color: #982022; text-decoration: none; }
 html body.jobs main #article #content article .gallery span a:hover, html body.announcements main #article #content article .gallery span a:hover { color: #231f20; }
-html body.jobs main #article #content article .gallery span.close, html body.announcements main #article #content article .gallery span.close { position: absolute; bottom: 0; left: 47%; display: none; }
+html body.jobs main #article #content article .gallery span.close, html body.announcements main #article #content article .gallery span.close { position: absolute; bottom: 0; position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); display: none; }
 html body.jobs main #article #content article h1, html body.announcements main #article #content article h1 { font-size: medium; }
 html body.jobs main #article #content article h1, html body.jobs main #article #content article h2, html body.jobs main #article #content article h3, html body.jobs main #article #content article h4, html body.jobs main #article #content article h5, html body.jobs main #article #content article h6, html body.announcements main #article #content article h1, html body.announcements main #article #content article h2, html body.announcements main #article #content article h3, html body.announcements main #article #content article h4, html body.announcements main #article #content article h5, html body.announcements main #article #content article h6 { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; line-height: 1.25; padding: 0; }
 html body.jobs main #article #content article h1, html body.announcements main #article #content article h1 { font-size: 20px; font-size: 1.25rem; font-weight: bold; }
