@@ -53,6 +53,7 @@
     // It goes together with projects
     @include separator(border-thick);
   
+  
   } @elseif ($style == blog) {
     @include article-parts(null, null, title, figure, null, null);
     @include article-thumb-left($container-margin);
@@ -63,7 +64,18 @@
       @include font(blog-title);
     }
   
-  
+  } @elseif ($style == blog-archive) {
+    @include block;
+    @include article-parts(null, null, title, figure, null, excerpt);
+    @include article-thumb-left($container-margin);
+    margin-bottom: $margin/2;
+    
+    .excerpt {
+      padding-top: $pad;
+      padding-bottom: $pad;
+      @include border-thin;
+    }
+    
   } @elseif ($style == projects) {
     @include article-parts(null, null, title, figure, null, null);
     @include responsive-height(17em, 17em);

@@ -20,7 +20,7 @@
 
 /* Archives with sidebar
 */
-@mixin archive-with-sidebar {
+@mixin archive-with-sidebar($style: default) {
   @include fixed-sidebar;
   
   #articles {
@@ -29,7 +29,7 @@
       @include block;
     }
     
-    @include category-articles;
+    @include category-articles($style);
   }
   
   aside { 

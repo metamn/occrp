@@ -182,6 +182,8 @@
 
 
 
+
+
 /* Resources archive
 */
 @mixin page-resources {
@@ -201,6 +203,23 @@
 */
 @mixin page-projects {
   @include archive;
+}
+
+
+/* Products archive
+*/
+@mixin page-products {
+  @include archive;
+}
+
+
+
+/* Blog archive
+*/
+@mixin page-blog {
+  main {
+    @include archive-with-sidebar(blog);
+  }
 }
 
 

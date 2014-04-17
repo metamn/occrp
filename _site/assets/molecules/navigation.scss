@@ -26,30 +26,37 @@
 
 /* Category archives
 */
-@mixin category-articles {
+@mixin category-articles($style) {
   .title {
     @include font(section-title);
     @include font(category-title);
   }
   
-  /* The first article
-  */
-  aside {
-    @include article-style(first-article-in-archive);
-  }
-  
-  
-  /* The rest of the articles
-  */
-  article {
-    &.thumb {
-      @include responsive-grid(3, 20);
-      @include article-style(projects);
-      
-      @include mobile {
-        @include block;
-        @include article-style(thumb-left);
+  @if ($style == default) {
+    /* The first article
+    */
+    aside {
+      @include article-style(first-article-in-archive);
+    }
+    
+    
+    /* The rest of the articles
+    */
+    article {
+      &.thumb {
+        @include responsive-grid(3, 20);
+        @include article-style(projects);
+        
+        @include mobile {
+          @include block;
+          @include article-style(thumb-left);
+        }
       }
+    }
+  
+  } @elseif ($style == blog) {
+    article {
+      @include article-style(blog-archive);
     }
   }
   

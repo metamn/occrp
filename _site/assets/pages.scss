@@ -106,6 +106,12 @@ html {
     }
     
     
+    /* Products
+    */
+    &.products {
+      @include page-products;
+    }
+    
     /* Projects
     */
     &.projects {
@@ -123,19 +129,7 @@ html {
     /* Blog Archive
     */
     &.blog {
-      main {
-        @include archive;
-        
-        #articles {
-          @include blog;
-          
-          article {
-            #meta, #date, #authors {
-              display: block !important;
-            }
-          }
-        }
-      }
+      @include page-blog;
     }
     
     
