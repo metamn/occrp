@@ -66,9 +66,7 @@
       #spacer {
         margin-bottom: -$pad*2000;
         padding-bottom: $pad*2000;
-        
-        position: relative;
-        top: -$pad*2; /* This is the margin between sidebar elements ... */
+        @include color(slider);
       }
     }
   }

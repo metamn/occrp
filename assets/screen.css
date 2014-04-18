@@ -1500,7 +1500,7 @@ html body.frontpage .container main #tags-and-gallery aside { height: 7em; overf
   html body.frontpage .container main #tags-and-gallery nav:nth-of-type(10), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(10) { margin-right: 0; } }
 html body.frontpage .container main #tags-and-gallery nav > h3, html body.frontpage .container main #tags-and-gallery aside > h3 { display: block; }
 @media only screen and (min-width: 80em) { html body.category main { overflow: hidden; }
-  html body.category main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; position: relative; top: -2.5em; /* This is the margin between sidebar elements ... */ } }
+  html body.category main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
 html body.category main #articles { width: 65.5%; margin-right: 2.5%; float: left; }
 @media only screen and (max-width: 29.999em) { html body.category main #articles { width: 100%; max-width: 100%; float: left; } }
 html body.category main aside { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; }
@@ -1903,7 +1903,7 @@ html body.category #articles article.thumb h1 { font-size: medium; }
 @media only screen and (max-width: 29.999em) and (min-width: 80em) { html body.category #articles article.thumb h1 { font-size: medium; } }
 
 @media only screen and (min-width: 80em) { html body.tag main { overflow: hidden; }
-  html body.tag main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; position: relative; top: -2.5em; /* This is the margin between sidebar elements ... */ } }
+  html body.tag main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
 html body.tag main #articles { width: 65.5%; margin-right: 2.5%; float: left; }
 @media only screen and (max-width: 29.999em) { html body.tag main #articles { width: 100%; max-width: 100%; float: left; } }
 html body.tag main aside { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; }
@@ -2449,7 +2449,7 @@ html body.resources #tools h3, html body.resources #documents h3 { text-transfor
 html body.resources #tools h3 a, html body.resources #documents h3 a { color: #982022; text-decoration: none; }
 html body.resources #tools h3 a:hover, html body.resources #documents h3 a:hover { color: #231f20; }
 @media only screen and (min-width: 80em) { html body.blog main { overflow: hidden; }
-  html body.blog main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; position: relative; top: -2.5em; /* This is the margin between sidebar elements ... */ } }
+  html body.blog main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
 html body.blog main #articles { width: 65.5%; margin-right: 2.5%; float: left; }
 @media only screen and (max-width: 29.999em) { html body.blog main #articles { width: 100%; max-width: 100%; float: left; } }
 html body.blog main aside { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; }
@@ -2643,7 +2643,7 @@ html body.blog #articles article figure, html body.blog #articles article h1, ht
 html body.blog #articles article h1, html body.blog #articles article .excerpt { margin-right: 0; padding: 0; width: calc(48.75% - 0); }
 html body.blog #articles article .excerpt { padding-top: 1.25em; padding-bottom: 1.25em; border-bottom: 1px solid #f1f1f1; }
 @media only screen and (min-width: 80em) { html body.author main { overflow: hidden; }
-  html body.author main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; position: relative; top: -2.5em; /* This is the margin between sidebar elements ... */ } }
+  html body.author main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
 html body.author main #articles { width: 65.5%; margin-right: 2.5%; float: left; }
 @media only screen and (max-width: 29.999em) { html body.author main #articles { width: 100%; max-width: 100%; float: left; } }
 html body.author main aside { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; }
@@ -2836,8 +2836,11 @@ html body.author #articles article .gallery span.close { position: absolute; bot
 html body.author #articles article figure, html body.author #articles article h1, html body.author #articles article .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
 html body.author #articles article h1, html body.author #articles article .excerpt { margin-right: 0; padding: 0; width: calc(48.75% - 0); }
 html body.author #articles article .excerpt { padding-top: 1.25em; padding-bottom: 1.25em; border-bottom: 1px solid #f1f1f1; }
+html body.author #articles article:first-of-type { background: #f1f1f1; color: #231f20; }
+html body.author #articles article:first-of-type h1 { padding: 0.3125em 0; }
+html body.author #articles h2 { padding: 1.45833em 0; }
 @media only screen and (min-width: 80em) { html body.article main, html body.about main, html body.post main { overflow: hidden; }
-  html body.article main aside #spacer, html body.about main aside #spacer, html body.post main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; position: relative; top: -2.5em; /* This is the margin between sidebar elements ... */ } }
+  html body.article main aside #spacer, html body.about main aside #spacer, html body.post main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
 html body.article main #articles, html body.about main #articles, html body.post main #articles { width: 65.5%; margin-right: 2.5%; float: left; }
 @media only screen and (max-width: 29.999em) { html body.article main #articles, html body.about main #articles, html body.post main #articles { width: 100%; max-width: 100%; float: left; } }
 html body.article main aside, html body.about main aside, html body.post main aside { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; }
@@ -2935,7 +2938,10 @@ html body.article main aside section#bio img, html body.about main aside section
 html body.article main aside section#bio div, html body.about main aside section#bio div, html body.post main aside section#bio div { padding: 0 0.625em; line-height: 1.75; font-size: smaller; margin-left: calc(7.5em + 1.25em + 1.25em); }
 html body.article main aside section#bio div p + p, html body.about main aside section#bio div p + p, html body.post main aside section#bio div p + p { margin-top: 1.25em; }
 html body.article main aside #spacer > h3, html body.about main aside #spacer > h3, html body.post main aside #spacer > h3 { display: none; }
-html body.article #article, html body.about #article, html body.post #article { width: 100%; max-width: 100%; float: left; width: 65.5%; margin-right: 2.5%; float: left; }
+html body.article #article, html body.about #article, html body.post #article { width: 100%; max-width: 100%; float: left; width: 65.5%; margin-right: 2.5%; float: left; /*
+#most-read, #most-recent { h3 { @include font(section-title); color: $color; padding-top: $pad; margin-top: $pad; border-top: $border; }  @include responsive-grid(2); @include article-style(title-right);  article { .excerpt { display: none; } }
+}
+*/ }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.article #article, html body.about #article, html body.post #article { width: 100%; max-width: 100%; float: left; } }
 html body.article #article article.single, html body.about #article article.single, html body.post #article article.single { /*
 @if ($label == null) { .label { display: none; }
@@ -3125,31 +3131,6 @@ html body.article #article article.single .meta, html body.about #article articl
 html body.article #article article.single .meta .print, html body.about #article article.single .meta .print, html body.post #article article.single .meta .print { display: inline-block; }
 html body.article #article article.single .content figure figcaption a, html body.about #article article.single .content figure figcaption a, html body.post #article article.single .content figure figcaption a { color: #231f20; text-decoration: none; }
 html body.article #article article.single .content figure figcaption a:hover, html body.about #article article.single .content figure figcaption a:hover, html body.post #article article.single .content figure figcaption a:hover { color: #982022; }
-html body.article #article #most-read h3, html body.article #article #most-recent h3, html body.about #article #most-read h3, html body.about #article #most-recent h3, html body.post #article #most-read h3, html body.post #article #most-recent h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; color: #231f20; padding-top: 1.25em; margin-top: 1.25em; border-top: 0.3125em solid; }
-html body.article #article #most-read h3 a, html body.article #article #most-recent h3 a, html body.about #article #most-read h3 a, html body.about #article #most-recent h3 a, html body.post #article #most-read h3 a, html body.post #article #most-recent h3 a { color: #982022; text-decoration: none; }
-html body.article #article #most-read h3 a:hover, html body.article #article #most-recent h3 a:hover, html body.about #article #most-read h3 a:hover, html body.about #article #most-recent h3 a:hover, html body.post #article #most-read h3 a:hover, html body.post #article #most-recent h3 a:hover { color: #231f20; }
-@media only screen and (max-width: 29.999em) { html body.article #article #most-read, html body.article #article #most-recent, html body.about #article #most-read, html body.about #article #most-recent, html body.post #article #most-read, html body.post #article #most-recent { width: 100%; margin-right: 0; float: left; } }
-@media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.article #article #most-read, html body.article #article #most-recent, html body.about #article #most-read, html body.about #article #most-recent, html body.post #article #most-read, html body.post #article #most-recent { width: 47.5%; margin-right: 2.5%; float: left; }
-  html body.article #article #most-read:nth-of-type(2), html body.article #article #most-recent:nth-of-type(2), html body.about #article #most-read:nth-of-type(2), html body.about #article #most-recent:nth-of-type(2), html body.post #article #most-read:nth-of-type(2), html body.post #article #most-recent:nth-of-type(2) { margin-right: 0; }
-  html body.article #article #most-read:nth-of-type(3), html body.article #article #most-recent:nth-of-type(3), html body.about #article #most-read:nth-of-type(3), html body.about #article #most-recent:nth-of-type(3), html body.post #article #most-read:nth-of-type(3), html body.post #article #most-recent:nth-of-type(3) { margin-right: 2.5%; }
-  html body.article #article #most-read:nth-of-type(4), html body.article #article #most-recent:nth-of-type(4), html body.about #article #most-read:nth-of-type(4), html body.about #article #most-recent:nth-of-type(4), html body.post #article #most-read:nth-of-type(4), html body.post #article #most-recent:nth-of-type(4) { margin-right: 0; }
-  html body.article #article #most-read:nth-of-type(5), html body.article #article #most-recent:nth-of-type(5), html body.about #article #most-read:nth-of-type(5), html body.about #article #most-recent:nth-of-type(5), html body.post #article #most-read:nth-of-type(5), html body.post #article #most-recent:nth-of-type(5) { margin-right: 2.5%; }
-  html body.article #article #most-read:nth-of-type(6), html body.article #article #most-recent:nth-of-type(6), html body.about #article #most-read:nth-of-type(6), html body.about #article #most-recent:nth-of-type(6), html body.post #article #most-read:nth-of-type(6), html body.post #article #most-recent:nth-of-type(6) { margin-right: 0; }
-  html body.article #article #most-read:nth-of-type(7), html body.article #article #most-recent:nth-of-type(7), html body.about #article #most-read:nth-of-type(7), html body.about #article #most-recent:nth-of-type(7), html body.post #article #most-read:nth-of-type(7), html body.post #article #most-recent:nth-of-type(7) { margin-right: 2.5%; }
-  html body.article #article #most-read:nth-of-type(8), html body.article #article #most-recent:nth-of-type(8), html body.about #article #most-read:nth-of-type(8), html body.about #article #most-recent:nth-of-type(8), html body.post #article #most-read:nth-of-type(8), html body.post #article #most-recent:nth-of-type(8) { margin-right: 0; }
-  html body.article #article #most-read:nth-of-type(9), html body.article #article #most-recent:nth-of-type(9), html body.about #article #most-read:nth-of-type(9), html body.about #article #most-recent:nth-of-type(9), html body.post #article #most-read:nth-of-type(9), html body.post #article #most-recent:nth-of-type(9) { margin-right: 2.5%; }
-  html body.article #article #most-read:nth-of-type(10), html body.article #article #most-recent:nth-of-type(10), html body.about #article #most-read:nth-of-type(10), html body.about #article #most-recent:nth-of-type(10), html body.post #article #most-read:nth-of-type(10), html body.post #article #most-recent:nth-of-type(10) { margin-right: 0; } }
-@media only screen and (min-width: 80em) { html body.article #article #most-read, html body.article #article #most-recent, html body.about #article #most-read, html body.about #article #most-recent, html body.post #article #most-read, html body.post #article #most-recent { width: 47.5%; margin-right: 2.5%; float: left; }
-  html body.article #article #most-read:nth-of-type(2), html body.article #article #most-recent:nth-of-type(2), html body.about #article #most-read:nth-of-type(2), html body.about #article #most-recent:nth-of-type(2), html body.post #article #most-read:nth-of-type(2), html body.post #article #most-recent:nth-of-type(2) { margin-right: 0; }
-  html body.article #article #most-read:nth-of-type(3), html body.article #article #most-recent:nth-of-type(3), html body.about #article #most-read:nth-of-type(3), html body.about #article #most-recent:nth-of-type(3), html body.post #article #most-read:nth-of-type(3), html body.post #article #most-recent:nth-of-type(3) { margin-right: 2.5%; }
-  html body.article #article #most-read:nth-of-type(4), html body.article #article #most-recent:nth-of-type(4), html body.about #article #most-read:nth-of-type(4), html body.about #article #most-recent:nth-of-type(4), html body.post #article #most-read:nth-of-type(4), html body.post #article #most-recent:nth-of-type(4) { margin-right: 0; }
-  html body.article #article #most-read:nth-of-type(5), html body.article #article #most-recent:nth-of-type(5), html body.about #article #most-read:nth-of-type(5), html body.about #article #most-recent:nth-of-type(5), html body.post #article #most-read:nth-of-type(5), html body.post #article #most-recent:nth-of-type(5) { margin-right: 2.5%; }
-  html body.article #article #most-read:nth-of-type(6), html body.article #article #most-recent:nth-of-type(6), html body.about #article #most-read:nth-of-type(6), html body.about #article #most-recent:nth-of-type(6), html body.post #article #most-read:nth-of-type(6), html body.post #article #most-recent:nth-of-type(6) { margin-right: 0; }
-  html body.article #article #most-read:nth-of-type(7), html body.article #article #most-recent:nth-of-type(7), html body.about #article #most-read:nth-of-type(7), html body.about #article #most-recent:nth-of-type(7), html body.post #article #most-read:nth-of-type(7), html body.post #article #most-recent:nth-of-type(7) { margin-right: 2.5%; }
-  html body.article #article #most-read:nth-of-type(8), html body.article #article #most-recent:nth-of-type(8), html body.about #article #most-read:nth-of-type(8), html body.about #article #most-recent:nth-of-type(8), html body.post #article #most-read:nth-of-type(8), html body.post #article #most-recent:nth-of-type(8) { margin-right: 0; }
-  html body.article #article #most-read:nth-of-type(9), html body.article #article #most-recent:nth-of-type(9), html body.about #article #most-read:nth-of-type(9), html body.about #article #most-recent:nth-of-type(9), html body.post #article #most-read:nth-of-type(9), html body.post #article #most-recent:nth-of-type(9) { margin-right: 2.5%; }
-  html body.article #article #most-read:nth-of-type(10), html body.article #article #most-recent:nth-of-type(10), html body.about #article #most-read:nth-of-type(10), html body.about #article #most-recent:nth-of-type(10), html body.post #article #most-read:nth-of-type(10), html body.post #article #most-recent:nth-of-type(10) { margin-right: 0; } }
-html body.article #article #most-read article .excerpt, html body.article #article #most-recent article .excerpt, html body.about #article #most-read article .excerpt, html body.about #article #most-recent article .excerpt, html body.post #article #most-read article .excerpt, html body.post #article #most-recent article .excerpt { display: none; }
 html body.about main aside section > h3 { display: none; }
 html body.about main aside section nav { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; }
 html body.about main aside section nav > h3 { display: none; }

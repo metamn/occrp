@@ -42,6 +42,22 @@
 */
 @mixin page-author {
   @include page-blog;
+  
+  #articles {
+    article {
+      &:first-of-type {
+        @include color(slider);
+        
+        h1 {
+          padding: $pad/4 0;
+        }
+      }
+    }
+    
+    h2 {
+      padding: $h1-padding 0;
+    }
+  }
 }
 
 /* Blog archive

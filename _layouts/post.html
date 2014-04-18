@@ -25,7 +25,6 @@
     
     <section id="authors">
       <h3>Other Authors</h3>
-      
       {% for post in site.posts limit: 20 %}
         {% if post.authors %}
           {% if post.authors[0].name != '' %}
