@@ -21,26 +21,13 @@
 /* Archives with sidebar
 */
 @mixin archive-with-sidebar($style: default) {
-  @include fixed-sidebar;
+  @include sidebar;
   
   #articles {
-    @include col-nm(2, 3);
-    @include mobile {
-      @include block;
-    }
-    
     @include category-articles($style);
   }
   
   aside { 
-    @include col-nm(1, 3);
-    margin-right: 0;
-    
-    @include mobile {
-      @include block;
-      margin-top: $margin*2;
-    }
-    
     @include category-aside; 
   }
 }

@@ -71,6 +71,9 @@
 
 
 
+
+
+
 /* Blog archives
 */
 @mixin blog {
@@ -86,40 +89,6 @@
       display: block;
       @include border-thin;
       padding-bottom: $pad*2;
-    }
-  }
-}
-
-
-
-
-
-/* About us Sidebar menu
-*/
-@mixin about-us {
-  aside {
-    section {
-      @include hide-title;
-      
-      nav {
-        ul {
-          @include menu-item;
-          
-          li {
-            @include block;
-            @include grid-resize(100%, $pad/2);
-            
-            a {
-              @include block;
-              @include grid-resize(100%, $pad/2);
-            }
-          }
-        }
-      }
-    }
-    
-    #spacer {
-      top: -$pad - $pad/4;
     }
   }
 }
@@ -150,8 +119,52 @@
 
 
 
-/* Jobs
+/* About us
 */
+@mixin about-us {
+  aside {
+    section {
+      @include hide-title;
+      
+      nav {
+        @include menu;
+      }
+    }
+    
+    #spacer {
+      top: -0;
+    }
+  }
+}
+
+
+@mixin board-of-directors {
+  main {
+    #article {
+      .single {
+        .content {
+          h4 {
+            @include border-thin;
+            font-weight: bold;
+            padding-bottom: 0;
+          }
+          
+          dl + p {
+            margin-top: $pad*2 !important;
+          }
+          
+          dd.portrait {
+            @include block;
+            margin-bottom: $pad;
+            @include author(50%, normal);
+          }
+        }
+      }
+    }
+  }
+}
+
+
 @mixin jobs {
   #content {
     article {
@@ -167,28 +180,22 @@
 
 
 
-/* Announcements
+
+
+
+
+
+/* Author archives
 */
-@mixin announcements {
-  article {
-    &.thumb {
-      @include responsive-grid(3);
-      @include article-style(projects);
-    }
-  }
-
-  @include pagination(navigation);
+@mixin page-author {
+  @include archive-with-sidebar(blog);
 }
-
-
 
 
 
 /* Resources archive
 */
 @mixin page-resources {
-  @include archive;
-  
   #tools, #documents {
     h3 {
       @include font(section-title);
@@ -199,43 +206,35 @@
 }
 
 
-/* Projects archive
+/* Single article page
 */
-@mixin page-projects {
-  @include archive;
+@mixin page-article {
+  @include sidebar;
+  
+  #article {
+    @include single-article;
+  }
 }
-
-
-/* Products archive
-*/
-@mixin page-products {
-  @include archive;
-}
-
 
 
 /* Blog archive
 */
 @mixin page-blog {
-  main {
-    @include archive-with-sidebar(blog);
-  }
+  @include archive-with-sidebar(blog);
 }
 
 
 /* The Tags page
 */
 @mixin page-tags {
-  main {
-    @include archive-with-sidebar;
+  @include archive-with-sidebar;
     
-    #banner {
-      margin-bottom: $pad;
-      
-      figure {
-        figcaption {
-          display: none;
-        }
+  #banner {
+    margin-bottom: $pad;
+    
+    figure {
+      figcaption {
+        display: none;
       }
     }
   }
@@ -245,9 +244,7 @@
 /* The Category page
 */
 @mixin page-categories {
-  main {
-    @include archive-with-sidebar;
-  }
+  @include archive-with-sidebar; 
 }
 
 

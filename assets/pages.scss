@@ -106,16 +106,10 @@ html {
     }
     
     
-    /* Products
+    /* Archives
     */
-    &.products {
-      @include page-products;
-    }
-    
-    /* Projects
-    */
-    &.projects {
-      @include page-projects;
+    &.archive {
+      @include archive;
     }
     
     
@@ -136,79 +130,32 @@ html {
     /* Author Archive
     */
     &.author {
-      main {
-        @include archive;
-        
-        aside {
-          #bio {
-            @include author;
-          }
-        }
-        
-        
-        #articles {
-          @include blog;
-        }
-      }
+      @include page-author;
     }
     
     
-    /* Single Article, Single Post, About Us
+    /* Single Article
     */
     &.article, &.about, &.post {
-      main {
-        @include fixed-sidebar;
-        
-        #article {
-          @include single-article;
-        }
-        
-        aside {
-          @include category-aside;
-        }
-      }
+      @include page-article;
     }
     
     
     /* About Us
     */
     &.about {
-      main {
-        @include about-us;
-      }
+      @include about-us;
     }
     
     
     /* Board Directors
     */
     &.board-directors {
-      main {
-        #article {
-          .single {
-            .content {
-              h4 {
-                @include border-thin;
-                font-weight: bold;
-                padding-bottom: 0;
-              }
-              
-              dl + p {
-                margin-top: $pad*2 !important;
-              }
-              
-              dd.portrait {
-                @include block;
-                margin-bottom: $pad;
-                @include author(50%, normal);
-              }
-            }
-          }
-        }
-      }
+      @include board-of-directors;
     }
     
     
-    /* Jobs
+    /* Jobs, Announcements
     */
     &.jobs, &.announcements {
       main {

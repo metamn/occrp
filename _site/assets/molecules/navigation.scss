@@ -1,4 +1,33 @@
 
+/* The sidebar
+*/
+@mixin sidebar {
+  main {
+    @include fixed-sidebar;
+    
+    #articles {
+      @include col-nm(2, 3);
+      
+      @include mobile {
+        @include block;
+      }
+    }
+    
+    aside { 
+      @include col-nm(1, 3);
+      margin-right: 0;
+      
+      @include mobile {
+        @include block;
+        margin-top: $margin*2;
+      }
+    }
+  }
+}
+
+
+
+
 
 /* Category aside
 */
@@ -14,6 +43,10 @@
     article {
       @include article-style(thumb-left);
       @include article-style(thumb-left-smaller);
+    }
+    
+    &#bio {
+      @include author;
     }
     
   }
@@ -81,8 +114,6 @@
     }
   }
 }
-
-
 
 
 
