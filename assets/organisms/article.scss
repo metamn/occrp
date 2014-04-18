@@ -1,12 +1,155 @@
-/* Displays an article
-  - defines which parts are visible
-  - how these parts are styled
-  - and how they look on various devices
+
+/* Single article
 */
-@mixin article($type) {
-  @if ($type == normal) {
+@mixin single-article {
+  @include block;
+  @include col-nm(2, 3);
   
-  } @elseif ($type == thumb-left) {
-   
+  @include small-screen {
+    @include block;
+  }
+  
+  article.single {
+    @include article-parts(category, date, title, figure, figcaption, null, body);
+    @include body-text;
+    
+    h1 {
+      &:first-of-type {
+        @include font(single-article-title);
+      }
+    }
+    
+    .meta, .share-buttons, .content {
+      @include block;
+    }
+      
+    .meta {
+      @include border-thin;
+      margin-bottom: $pad;
+      
+      .print {
+        display: inline-block;
+      }
+    }
+    
+    .content {
+      figure {
+        figcaption {
+          @include link($color, $highlight);
+        }
+      }
+    }
+  }
+  
+  #most-read, #most-recent {
+    h3 {
+      @include font(section-title);
+      color: $color;
+      padding-top: $pad;
+      margin-top: $pad;
+      border-top: $border;
+    }
+    
+    @include responsive-grid(2);
+    @include article-style(title-right);
+    
+    article {
+      .excerpt {
+        display: none;
+      }
+    }
   }
 }
+
+
+
+
+
+/* Author with image and bio
+*/
+@mixin author($image-width: $pad*6, $font-size: smaller) {
+  img {
+    width: $image-width;
+    float: left;
+    margin: 0 $pad $pad 0;
+  }
+  
+  div {
+    padding: 0 $pad/2;
+    line-height: $line-height-body-text;
+    font-size: $font-size;
+    margin-left: calc(#{$image-width} + #{$pad} + #{$pad});
+    
+    p + p {
+      margin-top: $pad;
+    }
+  }
+}
+
+
+
+
+/* About us
+*/
+@mixin about-us {
+  main {
+    aside {
+      section {
+        @include hide-title;
+        
+        nav {
+          @include hide-title;
+          @include menu;
+        }
+      }
+      
+      #spacer {
+        top: -0;
+      }
+    }
+  }
+}
+
+
+@mixin board-of-directors {
+  main {
+    #article {
+      .single {
+        .content {
+          h4 {
+            @include border-thin;
+            font-weight: bold;
+            padding-bottom: 0;
+          }
+          
+          dl + p {
+            margin-top: $pad*2 !important;
+          }
+          
+          dd.portrait {
+            @include block;
+            margin-bottom: $pad;
+            @include author(50%, normal);
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@mixin jobs {
+  #content {
+    article {
+      @include article-style(news);
+      @include body-text;
+      
+      #excerpt {
+        display: block;
+      }
+    }
+  }
+}
+
+
+

@@ -143,10 +143,6 @@ figure a { line-height: 0; }
 */
 /* Hide last article 
 */
-/* The sidebar
-*/
-/* Fixed sidebar
-*/
 /* The fixed header
 */
 /* The tag bar
@@ -180,7 +176,11 @@ figure a { line-height: 0; }
 */
 /* <ul> and <ol> lists - they display a custom bullet / number via $before - the text of the list is aligned right related to the bullet / number
 */
-/* Displays an article - defines which parts are visible - how these parts are styled - and how they look on various devices
+/* Single article
+*/
+/* Author with image and bio
+*/
+/* About us
 */
 /* The search button with text in the tag bar
 */
@@ -190,11 +190,15 @@ figure a { line-height: 0; }
 */
 /* The language selector
 */
-/* An article with thumb left, the rest right
+/* The sidebar
 */
 /* The sidebar
 */
-/* Archive 
+/* Fixed sidebar
+*/
+/* The Archives 
+*/
+/* An article with thumb left, the rest right
 */
 /* Image Gallery
 */
@@ -218,19 +222,11 @@ figure a { line-height: 0; }
 */
 /* Structures / Templates of the Atomic web design - the layout, the grid, the wireframe - groups of organisms stitched together to form pages 
 */
-/* Single article
-*/
-/* Blog archives
-*/
-/* Author with image and bio
-*/
-/* About us
-*/
-/* Author archives
-*/
 /* Resources archive
 */
 /* Single article page
+*/
+/* Author archives
 */
 /* Blog archive
 */
