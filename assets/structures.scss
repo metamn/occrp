@@ -122,17 +122,20 @@
 /* About us
 */
 @mixin about-us {
-  aside {
-    section {
-      @include hide-title;
-      
-      nav {
-        @include menu;
+  main {
+    aside {
+      section {
+        @include hide-title;
+        
+        nav {
+          @include hide-title;
+          @include menu;
+        }
       }
-    }
-    
-    #spacer {
-      top: -0;
+      
+      #spacer {
+        top: -0;
+      }
     }
   }
 }
@@ -188,7 +191,7 @@
 /* Author archives
 */
 @mixin page-author {
-  @include archive-with-sidebar(blog);
+  @include page-blog;
 }
 
 
@@ -209,7 +212,7 @@
 /* Single article page
 */
 @mixin page-article {
-  @include sidebar;
+  @include with-sidebar;
   
   #article {
     @include single-article;
@@ -220,14 +223,18 @@
 /* Blog archive
 */
 @mixin page-blog {
-  @include archive-with-sidebar(blog);
+  @include with-sidebar;
+  
+  #articles {
+    @include archive(blog);
+  } 
 }
 
 
 /* The Tags page
 */
 @mixin page-tags {
-  @include archive-with-sidebar;
+  @include page-categories;
     
   #banner {
     margin-bottom: $pad;
@@ -244,7 +251,11 @@
 /* The Category page
 */
 @mixin page-categories {
-  @include archive-with-sidebar; 
+  @include with-sidebar;
+  
+  #articles {
+    @include archive(category);
+  } 
 }
 
 
