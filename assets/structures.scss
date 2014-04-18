@@ -5,7 +5,13 @@
 */
 
 
-
+/* Galleries
+*/
+@mixin page-gallery {
+  #articles {
+    @include archive(gallery);
+  }
+}
 
 
 /* Resources archive

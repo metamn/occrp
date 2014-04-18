@@ -1,0 +1,11 @@
+---
+layout: archive
+title: Galleries
+---
+
+
+{% for post in site.categories.blog offset:4 %}
+  <article>
+    {% include gallery.html %}
+  </article>
+{% endfor %}

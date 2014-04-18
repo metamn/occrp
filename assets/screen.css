@@ -222,6 +222,8 @@ figure a { line-height: 0; }
 */
 /* Structures / Templates of the Atomic web design - the layout, the grid, the wireframe - groups of organisms stitched together to form pages 
 */
+/* Galleries
+*/
 /* Resources archive
 */
 /* Single article page
@@ -295,6 +297,7 @@ html body { background: white; color: #231f20; font-size: 100%; line-height: 1.2
 */ /* About Us
 */ /* Board Directors
 */ /* Jobs, Announcements
+*/ /* Galleries
 */ /* Highlighting active menu items
 */ /* Highlighting active menu items in the sidebar, About pages
 */ }
@@ -3350,6 +3353,63 @@ html body.jobs main #article #content article h1 + h2, html body.jobs main #arti
 html body.jobs main #article #content article h1 + ul, html body.jobs main #article #content article h2 + ul, html body.jobs main #article #content article h3 + ul, html body.jobs main #article #content article h1 + ol, html body.jobs main #article #content article h2 + ol, html body.jobs main #article #content article h3 + ol, html body.jobs main #article #content article h1 + figure, html body.jobs main #article #content article h2 + figure, html body.jobs main #article #content article h3 + figure, html body.jobs main #article #content article h1 + nav, html body.announcements main #article #content article h1 + ul, html body.announcements main #article #content article h2 + ul, html body.announcements main #article #content article h3 + ul, html body.announcements main #article #content article h1 + ol, html body.announcements main #article #content article h2 + ol, html body.announcements main #article #content article h3 + ol, html body.announcements main #article #content article h1 + figure, html body.announcements main #article #content article h2 + figure, html body.announcements main #article #content article h3 + figure, html body.announcements main #article #content article h1 + nav { margin-top: 0; }
 html body.jobs main #article #content article li ul, html body.jobs main #article #content article li ol, html body.announcements main #article #content article li ul, html body.announcements main #article #content article li ol { margin-top: 0; }
 html body.jobs main #article #content article #excerpt, html body.announcements main #article #content article #excerpt { display: block; }
+html body.galleries #articles .title { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; }
+html body.galleries #articles .title a { color: #982022; text-decoration: none; }
+html body.galleries #articles .title a:hover { color: #231f20; }
+html body.galleries #articles nav { margin-top: 1.25em; }
+html body.galleries #articles nav > h3 { display: none; }
+html body.galleries #articles nav ol li { display: inline-block; float: left; margin-right: 0.625em; }
+html body.galleries #articles nav ol li:last-of-type { margin-right: 0; }
+html body.galleries #articles nav ol li a { padding: 0.625em 0.9375em; display: block; }
+html body.galleries #articles nav ol li.active a, html body.galleries #articles nav ol li:hover a { background: #982022; color: white; }
+html body.galleries #articles nav ol li.active a a, html body.galleries #articles nav ol li:hover a a { color: white; text-decoration: none; }
+html body.galleries #articles nav ol li.active a a:hover, html body.galleries #articles nav ol li:hover a a:hover { color: white; }
+html body.galleries #articles nav ol li { background: #f1f1f1; color: #231f20; -moz-border-radius: 1.25em; -webkit-border-radius: 1.25em; border-radius: 1.25em; }
+html body.galleries #articles nav ol li a { color: #231f20; text-decoration: none; }
+html body.galleries #articles nav ol li a:hover { color: white; }
+@media only screen and (max-width: 47.999em) { html body.galleries #articles nav ol { font-size: small; } }
+html body.galleries #articles article { height: auto; }
+@media only screen and (max-width: 29.999em) { html body.galleries #articles article { width: 100%; margin-right: 0; float: left; } }
+@media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.galleries #articles article { width: 47.5%; margin-right: 2.5%; float: left; }
+  html body.galleries #articles article:nth-of-type(2) { margin-right: 0; }
+  html body.galleries #articles article:nth-of-type(3) { margin-right: 2.5%; }
+  html body.galleries #articles article:nth-of-type(4) { margin-right: 0; }
+  html body.galleries #articles article:nth-of-type(5) { margin-right: 2.5%; }
+  html body.galleries #articles article:nth-of-type(6) { margin-right: 0; }
+  html body.galleries #articles article:nth-of-type(7) { margin-right: 2.5%; }
+  html body.galleries #articles article:nth-of-type(8) { margin-right: 0; }
+  html body.galleries #articles article:nth-of-type(9) { margin-right: 2.5%; }
+  html body.galleries #articles article:nth-of-type(10) { margin-right: 0; }
+  html body.galleries #articles article:nth-of-type(11) { margin-right: 2.5%; }
+  html body.galleries #articles article:nth-of-type(12) { margin-right: 0; }
+  html body.galleries #articles article:nth-of-type(13) { margin-right: 2.5%; }
+  html body.galleries #articles article:nth-of-type(14) { margin-right: 0; }
+  html body.galleries #articles article:nth-of-type(15) { margin-right: 2.5%; }
+  html body.galleries #articles article:nth-of-type(16) { margin-right: 0; }
+  html body.galleries #articles article:nth-of-type(17) { margin-right: 2.5%; }
+  html body.galleries #articles article:nth-of-type(18) { margin-right: 0; }
+  html body.galleries #articles article:nth-of-type(19) { margin-right: 2.5%; }
+  html body.galleries #articles article:nth-of-type(20) { margin-right: 0; } }
+@media only screen and (min-width: 80em) { html body.galleries #articles article { width: 31.5%; margin-right: 2.5%; float: left; }
+  html body.galleries #articles article:nth-of-type(2) { margin-right: 2.5%; }
+  html body.galleries #articles article:nth-of-type(3) { margin-right: 0; }
+  html body.galleries #articles article:nth-of-type(4) { margin-right: 2.5%; }
+  html body.galleries #articles article:nth-of-type(5) { margin-right: 2.5%; }
+  html body.galleries #articles article:nth-of-type(6) { margin-right: 0; }
+  html body.galleries #articles article:nth-of-type(7) { margin-right: 2.5%; }
+  html body.galleries #articles article:nth-of-type(8) { margin-right: 2.5%; }
+  html body.galleries #articles article:nth-of-type(9) { margin-right: 0; }
+  html body.galleries #articles article:nth-of-type(10) { margin-right: 2.5%; }
+  html body.galleries #articles article:nth-of-type(11) { margin-right: 2.5%; }
+  html body.galleries #articles article:nth-of-type(12) { margin-right: 0; }
+  html body.galleries #articles article:nth-of-type(13) { margin-right: 2.5%; }
+  html body.galleries #articles article:nth-of-type(14) { margin-right: 2.5%; }
+  html body.galleries #articles article:nth-of-type(15) { margin-right: 0; }
+  html body.galleries #articles article:nth-of-type(16) { margin-right: 2.5%; }
+  html body.galleries #articles article:nth-of-type(17) { margin-right: 2.5%; }
+  html body.galleries #articles article:nth-of-type(18) { margin-right: 0; }
+  html body.galleries #articles article:nth-of-type(19) { margin-right: 2.5%; }
+  html body.galleries #articles article:nth-of-type(20) { margin-right: 2.5%; } }
 html body.frontpage #header nav ul li.frontpage a { background: #982022; color: white; }
 html body.frontpage #header nav ul li.frontpage a a { color: white; text-decoration: none; }
 html body.frontpage #header nav ul li.frontpage a a:hover { color: white; }
