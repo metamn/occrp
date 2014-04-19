@@ -111,6 +111,18 @@
     }
 
     
+  } @elseif ($style == daily) {
+    // builds upon news
+    @include body-text;
+    
+    h1 {
+      padding-bottom: 0;
+    }
+    
+    .excerpt {
+      display: block;
+    }
+  
   } @elseif ($style == slider) {
     article {
       @include block;

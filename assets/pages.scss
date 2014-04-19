@@ -158,18 +158,26 @@ html {
     /* Jobs, Announcements
     */
     &.jobs, &.announcements {
-      main {
-        #article {
-          @include jobs;
-        }
-      }
+      @include jobs;
     }
+    
     
     /* Galleries
     */
     &.galleries {
       @include page-gallery;
     }
+    
+    
+    /* Daily 
+    */
+    &.daily {
+      @include daily;
+    }
+    
+    
+    
+    
     
     
     
@@ -202,6 +210,14 @@ html {
     
     &.blog {
       #header nav ul li.blog {
+        a {
+          @include color(menu);
+        }
+      }
+    }
+    
+    &.daily {
+      #header nav ul li.daily {
         a {
           @include color(menu);
         }

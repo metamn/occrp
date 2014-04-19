@@ -5,6 +5,80 @@
 */
 
 
+/* About us
+*/
+@mixin about-us {
+  main {
+    aside {
+      section {
+        @include hide-title;
+        
+        nav {
+          @include hide-title;
+          @include menu(border-thin);
+        }
+      }
+      
+      #spacer {
+        top: 0;
+      }
+    }
+  }
+}
+
+
+/* Board of Directors
+*/
+@mixin board-of-directors {
+  main {
+    #article {
+      .single {
+        .content {
+          h4 {
+            @include border-thin;
+            font-weight: bold;
+            padding-bottom: 0;
+          }
+          
+          dl + p {
+            margin-top: $pad*2 !important;
+          }
+          
+          dd.portrait {
+            @include block;
+            margin-bottom: $pad;
+            @include image-thumb-left(50%);
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* Jobs
+*/
+@mixin jobs {
+  #main {
+    #article {
+      .single {
+        .content {
+          article {
+            @include article-style(news);
+            @include article-style(daily);
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
 /* Galleries
 */
 @mixin page-gallery {
@@ -50,6 +124,17 @@
   } 
 }
 
+
+
+/* Daily
+*/
+@mixin daily {
+  @include page-categories;
+  
+  #articles {
+    @include archive(daily);
+  }
+}
 
 /* Author archives
 */

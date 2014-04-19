@@ -1,3 +1,86 @@
+
+
+
+/* The Archives 
+*/
+@mixin archive($type: default) {
+  .title {
+    @include font(section-title);
+    @include font(category-title);
+  }
+  
+  @include pagination(navigation);
+  
+  
+  @if ($type == default) {
+    article.thumb {
+      @include responsive-grid(5, 20);
+      @include article-style(projects);
+      @include article-style(archive);
+      
+      @include mobile {
+        @include block;
+        @include article-style(thumb-left);
+      }
+    }
+  
+  } @elseif ($type == category) {
+    /* The first article
+    */
+    aside {
+      @include article-style(first-article-in-archive);
+    }
+    
+    /* The rest of the articles
+    */
+    article {
+      &.thumb {
+        @include below-small-screen {
+          @include article-style(thumb-left);
+          @include responsive-grid(2, 20);
+        }
+        
+        @include small-screen-and-up {
+          @include article-style(projects);
+          @include responsive-grid(3, 20);
+        }
+        
+        @include mobile {
+          @include block;
+        }
+      }
+    }
+  
+  } @elseif ($type == blog) {
+    article.thumb {
+      @include article-style(blog-archive);
+      
+      @include mobile {
+        @include block;
+        @include article-style(thumb-left);
+      }
+    }
+  
+  } @elseif ($type == gallery) {
+    article.thumb {
+      @include responsive-grid(3, 20);
+      height: auto;
+    }
+  
+  } @elseif ($type == daily) {
+    article.thumb {
+      @include block;
+      @include article-style(news);
+      @include article-style(daily);
+      height: auto;
+    }
+  }
+}
+
+
+
+
+
 /* The sidebar
 */
 @mixin with-sidebar {
@@ -84,81 +167,6 @@
 
 
 
-
-
-
-
-/* The Archives 
-*/
-@mixin archive($type: default) {
-  .title {
-    @include font(section-title);
-    @include font(category-title);
-  }
-  
-  @include pagination(navigation);
-  
-  
-  @if ($type == default) {
-    article {
-      @include responsive-grid(5, 20);
-      @include article-style(projects);
-      @include article-style(archive);
-      
-      @include mobile {
-        @include block;
-        @include article-style(thumb-left);
-      }
-    }
-  
-  } @elseif ($type == category) {
-    /* The first article
-    */
-    aside {
-      @include article-style(first-article-in-archive);
-    }
-    
-    /* The rest of the articles
-    */
-    article {
-      &.thumb {
-        @include below-small-screen {
-          @include article-style(thumb-left);
-          @include responsive-grid(2, 20);
-        }
-        
-        @include small-screen-and-up {
-          @include article-style(projects);
-          @include responsive-grid(3, 20);
-        }
-        
-        @include mobile {
-          @include block;
-        }
-      }
-    }
-  
-  } @elseif ($type == blog) {
-    article {
-      @include article-style(blog-archive);
-      
-      @include mobile {
-        @include block;
-        @include article-style(thumb-left);
-      }
-    }
-  
-  } @elseif ($type == gallery) {
-    article {
-      @include responsive-grid(3, 20);
-      height: auto;
-    }
-  }
-}
-
-
-
-
 /* An article with thumb left, the rest right
 */
 @mixin article-thumb-left($gutter, $padding: 0) {
@@ -171,3 +179,28 @@
     @include padding(col-by-gutter-width(2, $gutter), $padding);
   }
 }
+
+
+
+/* Image left
+*/
+@mixin image-thumb-left($image-width: $pad*6) {
+  img {
+    width: $image-width;
+    float: left;
+    margin: 0 $pad $pad 0;
+  }
+  
+  div {
+    padding: 0 $pad/2;
+    line-height: $line-height-body-text;
+    margin-left: calc(#{$image-width} + #{$pad} + #{$pad});
+    
+    p + p {
+      margin-top: $pad;
+    }
+  }
+}
+
+
+

@@ -122,11 +122,17 @@
   - a list of items, with different hover and active states
   - it's parent is usually a <nav> element
 */
-@mixin menu {
+@mixin menu($border: false) {
   @include font(navigation);
   
   ul {
     @include menu-item;
+    
+    @if ($border != false) {
+      li {
+        @include separator(border-thin);
+      }
+    }
   }  
 }
 
