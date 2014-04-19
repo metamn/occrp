@@ -30,12 +30,17 @@
       <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </h1>
     
-    <div class="excerpt">
-      {{ post.excerpt }}
-    </div>
+    {% if include.type == 'bio' %}
+      <div class="excerpt">
+        {{ content }}
+      </div>
+    {% else %}
+      <div class="excerpt">
+        {{ post.excerpt }}
+      </div>
     
-    {% include article-meta.html %}
+      {% include article-meta.html %}
+    {% endif %}
+    
   {% endif %} 
- 
-  
 </article>

@@ -4,27 +4,14 @@
 <main id="main">
   
   <section id="articles">
-    <h1 class="title">{{ page.title }}</h1>
+    <aside>
+      {% assign post = page %}
+      {% include article.html klass="bio" type="bio"  %}
+    </aside>
     
-    <article id="bio">
-      <figure>
-        <img src="{{ site.url }}/assets/images/marina_gorbis.jpg" alt="Author Name">
-      </figure>
-      <h1>Author name</h1>
-      <div class="excerpt">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis imperdiet convallis. Maecenas euismod bibendum nibh, non mattis lorem posuere ac. 
-        </p>
-        
-        <p>
-  Maecenas consectetur, dolor vitae varius aliquam, magna turpis fermentum quam, quis ullamcorper justo est cursus est. Proin blandit tristique est, ac ultrices dolor mollis eu. Duis faucibus in nibh sit amet sollicitudin. Pellentesque pulvinar egestas justo ullamcorper placerat. 
-        </p>
-      </div>
-    </article>
-    
-    <h2>All Articles</h2>
-    
-    {{ content }}
+    {% for post in site.categories.investigations  %}
+      {% include article.html klass = 'thumb' %}
+    {% endfor %}
     
     {% assign items = 7 %}
     {% include navigation.html %}
