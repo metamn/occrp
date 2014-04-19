@@ -51,7 +51,10 @@
     
   } @elseif ($style == archive) {
     // It goes together with projects
-    @include separator(border-thick);
+    
+    @include small-screen-and-up {
+      @include separator(border-thick);
+    }
   
   
   } @elseif ($style == blog) {
@@ -71,7 +74,9 @@
     margin-bottom: $margin/2;
     
     .excerpt {
-      padding-top: $pad;
+      @include tablet-and-up {
+        padding-top: $pad;
+      }
       padding-bottom: $pad;
       @include border-thin;
     }

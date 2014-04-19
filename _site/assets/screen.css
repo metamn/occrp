@@ -1501,10 +1501,10 @@ html body.frontpage .container main #tags-and-gallery aside { height: 7em; overf
 html body.frontpage .container main #tags-and-gallery nav > h3, html body.frontpage .container main #tags-and-gallery aside > h3 { display: block; }
 @media only screen and (min-width: 80em) { html body.category main { overflow: hidden; }
   html body.category main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
-html body.category main #articles { width: 65.5%; margin-right: 2.5%; float: left; }
-@media only screen and (max-width: 29.999em) { html body.category main #articles { width: 100%; max-width: 100%; float: left; } }
-html body.category main aside { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; }
-@media only screen and (max-width: 29.999em) { html body.category main aside { width: 100%; max-width: 100%; float: left; margin-top: 1.25em; } }
+html body.category main #articles { width: 100%; max-width: 100%; float: left; }
+@media only screen and (min-width: 80em) { html body.category main #articles { width: 65.5%; margin-right: 2.5%; float: left; } }
+html body.category main aside { width: 100%; max-width: 100%; float: left; margin-top: 1.25em; }
+@media only screen and (min-width: 80em) { html body.category main aside { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; margin-top: 0; } }
 html body.category main aside section { margin-bottom: 0.625em; }
 html body.category main aside section h3 { display: block; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; }
 html body.category main aside section h3 a { color: #982022; text-decoration: none; }
@@ -1594,9 +1594,50 @@ html body.category main aside section article h1 { font-size: small; }
 html body.category main aside section article a { color: #231f20; text-decoration: none; }
 html body.category main aside section article a:hover { color: #982022; }
 html body.category main aside section article h1 { font-weight: normal; }
-html body.category main aside section#bio img { width: 7.5em; float: left; margin: 0 1.25em 1.25em 0; }
-html body.category main aside section#bio div { padding: 0 0.625em; line-height: 1.75; font-size: smaller; margin-left: calc(7.5em + 1.25em + 1.25em); }
-html body.category main aside section#bio div p + p { margin-top: 1.25em; }
+@media only screen and (max-width: 79.999em) and (max-width: 29.999em) { html body.category main aside section article { width: 100%; margin-right: 0; float: left; } }
+@media only screen and (max-width: 79.999em) and (min-width: 30em) and (max-width: 79.999em) { html body.category main aside section article { width: 47.5%; margin-right: 2.5%; float: left; }
+  html body.category main aside section article:nth-of-type(2) { margin-right: 0; }
+  html body.category main aside section article:nth-of-type(3) { margin-right: 2.5%; }
+  html body.category main aside section article:nth-of-type(4) { margin-right: 0; }
+  html body.category main aside section article:nth-of-type(5) { margin-right: 2.5%; }
+  html body.category main aside section article:nth-of-type(6) { margin-right: 0; }
+  html body.category main aside section article:nth-of-type(7) { margin-right: 2.5%; }
+  html body.category main aside section article:nth-of-type(8) { margin-right: 0; }
+  html body.category main aside section article:nth-of-type(9) { margin-right: 2.5%; }
+  html body.category main aside section article:nth-of-type(10) { margin-right: 0; }
+  html body.category main aside section article:nth-of-type(11) { margin-right: 2.5%; }
+  html body.category main aside section article:nth-of-type(12) { margin-right: 0; }
+  html body.category main aside section article:nth-of-type(13) { margin-right: 2.5%; }
+  html body.category main aside section article:nth-of-type(14) { margin-right: 0; }
+  html body.category main aside section article:nth-of-type(15) { margin-right: 2.5%; }
+  html body.category main aside section article:nth-of-type(16) { margin-right: 0; }
+  html body.category main aside section article:nth-of-type(17) { margin-right: 2.5%; }
+  html body.category main aside section article:nth-of-type(18) { margin-right: 0; }
+  html body.category main aside section article:nth-of-type(19) { margin-right: 2.5%; }
+  html body.category main aside section article:nth-of-type(20) { margin-right: 0; } }
+@media only screen and (max-width: 79.999em) and (min-width: 80em) { html body.category main aside section article { width: 47.5%; margin-right: 2.5%; float: left; }
+  html body.category main aside section article:nth-of-type(2) { margin-right: 0; }
+  html body.category main aside section article:nth-of-type(3) { margin-right: 2.5%; }
+  html body.category main aside section article:nth-of-type(4) { margin-right: 0; }
+  html body.category main aside section article:nth-of-type(5) { margin-right: 2.5%; }
+  html body.category main aside section article:nth-of-type(6) { margin-right: 0; }
+  html body.category main aside section article:nth-of-type(7) { margin-right: 2.5%; }
+  html body.category main aside section article:nth-of-type(8) { margin-right: 0; }
+  html body.category main aside section article:nth-of-type(9) { margin-right: 2.5%; }
+  html body.category main aside section article:nth-of-type(10) { margin-right: 0; }
+  html body.category main aside section article:nth-of-type(11) { margin-right: 2.5%; }
+  html body.category main aside section article:nth-of-type(12) { margin-right: 0; }
+  html body.category main aside section article:nth-of-type(13) { margin-right: 2.5%; }
+  html body.category main aside section article:nth-of-type(14) { margin-right: 0; }
+  html body.category main aside section article:nth-of-type(15) { margin-right: 2.5%; }
+  html body.category main aside section article:nth-of-type(16) { margin-right: 0; }
+  html body.category main aside section article:nth-of-type(17) { margin-right: 2.5%; }
+  html body.category main aside section article:nth-of-type(18) { margin-right: 0; }
+  html body.category main aside section article:nth-of-type(19) { margin-right: 2.5%; }
+  html body.category main aside section article:nth-of-type(20) { margin-right: 0; } }
+
+@media only screen and (max-width: 29.999em) { html body.category main aside section article { width: 100%; max-width: 100%; float: left; } }
+@media only screen and (min-width: 80em) { html body.category main aside section article { width: 100%; max-width: 100%; float: left; } }
 html body.category main aside #spacer > h3 { display: none; }
 html body.category #articles { /* The first article
 */ /* The rest of the articles
@@ -1696,130 +1737,7 @@ html body.category #articles aside .gallery span.close { position: absolute; bot
 @media only screen and (min-width: 30em) { html body.category #articles aside figure, html body.category #articles aside h1, html body.category #articles aside .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.category #articles aside h1, html body.category #articles aside .excerpt { margin-right: 0; padding: 0.3125em; width: calc(48.75% - 0.625em); } }
 html body.category #articles aside h1, html body.category #articles aside .excerpt { padding: 0.3125em; }
-html body.category #articles article.thumb { /*
-@if ($label == null) { .label { display: none; }
-} @else { .label { display: block; }
-}
-*/ margin-bottom: 0.3125em; }
-@media only screen and (max-width: 29.999em) { html body.category #articles article.thumb { width: 100%; margin-right: 0; float: left; } }
-@media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.category #articles article.thumb { width: 47.5%; margin-right: 2.5%; float: left; }
-  html body.category #articles article.thumb:nth-of-type(2) { margin-right: 0; }
-  html body.category #articles article.thumb:nth-of-type(3) { margin-right: 2.5%; }
-  html body.category #articles article.thumb:nth-of-type(4) { margin-right: 0; }
-  html body.category #articles article.thumb:nth-of-type(5) { margin-right: 2.5%; }
-  html body.category #articles article.thumb:nth-of-type(6) { margin-right: 0; }
-  html body.category #articles article.thumb:nth-of-type(7) { margin-right: 2.5%; }
-  html body.category #articles article.thumb:nth-of-type(8) { margin-right: 0; }
-  html body.category #articles article.thumb:nth-of-type(9) { margin-right: 2.5%; }
-  html body.category #articles article.thumb:nth-of-type(10) { margin-right: 0; }
-  html body.category #articles article.thumb:nth-of-type(11) { margin-right: 2.5%; }
-  html body.category #articles article.thumb:nth-of-type(12) { margin-right: 0; }
-  html body.category #articles article.thumb:nth-of-type(13) { margin-right: 2.5%; }
-  html body.category #articles article.thumb:nth-of-type(14) { margin-right: 0; }
-  html body.category #articles article.thumb:nth-of-type(15) { margin-right: 2.5%; }
-  html body.category #articles article.thumb:nth-of-type(16) { margin-right: 0; }
-  html body.category #articles article.thumb:nth-of-type(17) { margin-right: 2.5%; }
-  html body.category #articles article.thumb:nth-of-type(18) { margin-right: 0; }
-  html body.category #articles article.thumb:nth-of-type(19) { margin-right: 2.5%; }
-  html body.category #articles article.thumb:nth-of-type(20) { margin-right: 0; } }
-@media only screen and (min-width: 80em) { html body.category #articles article.thumb { width: 31.5%; margin-right: 2.5%; float: left; }
-  html body.category #articles article.thumb:nth-of-type(2) { margin-right: 2.5%; }
-  html body.category #articles article.thumb:nth-of-type(3) { margin-right: 0; }
-  html body.category #articles article.thumb:nth-of-type(4) { margin-right: 2.5%; }
-  html body.category #articles article.thumb:nth-of-type(5) { margin-right: 2.5%; }
-  html body.category #articles article.thumb:nth-of-type(6) { margin-right: 0; }
-  html body.category #articles article.thumb:nth-of-type(7) { margin-right: 2.5%; }
-  html body.category #articles article.thumb:nth-of-type(8) { margin-right: 2.5%; }
-  html body.category #articles article.thumb:nth-of-type(9) { margin-right: 0; }
-  html body.category #articles article.thumb:nth-of-type(10) { margin-right: 2.5%; }
-  html body.category #articles article.thumb:nth-of-type(11) { margin-right: 2.5%; }
-  html body.category #articles article.thumb:nth-of-type(12) { margin-right: 0; }
-  html body.category #articles article.thumb:nth-of-type(13) { margin-right: 2.5%; }
-  html body.category #articles article.thumb:nth-of-type(14) { margin-right: 2.5%; }
-  html body.category #articles article.thumb:nth-of-type(15) { margin-right: 0; }
-  html body.category #articles article.thumb:nth-of-type(16) { margin-right: 2.5%; }
-  html body.category #articles article.thumb:nth-of-type(17) { margin-right: 2.5%; }
-  html body.category #articles article.thumb:nth-of-type(18) { margin-right: 0; }
-  html body.category #articles article.thumb:nth-of-type(19) { margin-right: 2.5%; }
-  html body.category #articles article.thumb:nth-of-type(20) { margin-right: 2.5%; } }
-html body.category #articles article.thumb h1 { display: block; }
-html body.category #articles article.thumb figure { display: block; }
-html body.category #articles article.thumb figcaption { display: none; }
-html body.category #articles article.thumb .excerpt { display: none; }
-html body.category #articles article.thumb .content { display: none; }
-html body.category #articles article.thumb .meta .category { display: none; }
-html body.category #articles article.thumb .meta .date { display: none; }
-html body.category #articles article.thumb .meta { display: none; }
-html body.category #articles article.thumb figure img { width: auto; }
-html body.category #articles article.thumb figure figcaption { padding: 0.3125em; font-size: smaller; }
-html body.category #articles article.thumb figure figcaption h1, html body.category #articles article.thumb figure figcaption h2, html body.category #articles article.thumb figure figcaption h3, html body.category #articles article.thumb figure figcaption h4, html body.category #articles article.thumb figure figcaption h5, html body.category #articles article.thumb figure figcaption h6 { margin: 0; padding: 0; }
-html body.category #articles article.thumb figure figcaption ul { margin: 0; }
-html body.category #articles article.thumb figure figcaption ul li { border-bottom: 1px solid; margin-bottom: 0.3125em; padding-left: 0; }
-html body.category #articles article.thumb figure figcaption ul li:before { display: none; }
-@media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.category #articles article.thumb figure.people, html body.category #articles article.thumb figure.document, html body.category #articles article.thumb figure.company { width: 100%; max-width: 100%; float: left; }
-  html body.category #articles article.thumb figure.people img, html body.category #articles article.thumb figure.document img, html body.category #articles article.thumb figure.company img { float: left; width: 2.5em; margin-right: 1.25em; }
-  html body.category #articles article.thumb figure.people figcaption, html body.category #articles article.thumb figure.document figcaption, html body.category #articles article.thumb figure.company figcaption { padding: 0; } }
-@media only screen and (min-width: 80em) { html body.category #articles article.thumb figure { /* Fit figcpation to image width */ }
-  html body.category #articles article.thumb figure.left, html body.category #articles article.thumb figure.right, html body.category #articles article.thumb figure.person, html body.category #articles article.thumb figure.document, html body.category #articles article.thumb figure.company, html body.category #articles article.thumb figure.people { display: table; }
-  html body.category #articles article.thumb figure.left img, html body.category #articles article.thumb figure.right img, html body.category #articles article.thumb figure.person img, html body.category #articles article.thumb figure.document img, html body.category #articles article.thumb figure.company img, html body.category #articles article.thumb figure.people img { display: block; max-width: 100%; }
-  html body.category #articles article.thumb figure.left figcaption, html body.category #articles article.thumb figure.right figcaption, html body.category #articles article.thumb figure.person figcaption, html body.category #articles article.thumb figure.document figcaption, html body.category #articles article.thumb figure.company figcaption, html body.category #articles article.thumb figure.people figcaption { display: table-caption; caption-side: bottom; margin-top: 0.3125em; }
-  html body.category #articles article.thumb figure.left + p, html body.category #articles article.thumb figure.right + p, html body.category #articles article.thumb figure.person + p, html body.category #articles article.thumb figure.document + p, html body.category #articles article.thumb figure.company + p, html body.category #articles article.thumb figure.people + p { margin-top: 1.25em; }
-  html body.category #articles article.thumb figure.left { float: left; margin: 0.625em 2.5em 1.25em 0; }
-  html body.category #articles article.thumb figure.right { float: right; margin: 0.625em 0 1.25em 2.5em; } }
-html body.category #articles article.thumb figure { position: relative; }
-html body.category #articles article.thumb figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
-html body.category #articles article.thumb figure .label a { color: white; text-decoration: none; }
-html body.category #articles article.thumb figure .label a:hover { color: white; }
-html body.category #articles article.thumb .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
-html body.category #articles article.thumb .meta > h3 { display: none; }
-html body.category #articles article.thumb .meta ul { margin: 0; }
-html body.category #articles article.thumb .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.category #articles article.thumb .meta ul li:before { content: ''; }
-html body.category #articles article.thumb .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
-html body.category #articles article.thumb .meta ul li:last-of-type { margin-right: 0; }
-html body.category #articles article.thumb .meta .date { font-size: small; color: #332d2f; font-style: normal; }
-html body.category #articles article.thumb .meta .category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
-html body.category #articles article.thumb .meta .category a { color: #982022; text-decoration: none; }
-html body.category #articles article.thumb .meta .category a:hover { color: #231f20; }
-html body.category #articles article.thumb .meta .authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
-html body.category #articles article.thumb .meta .authors ul li:after { content: ','; }
-html body.category #articles article.thumb .meta .authors ul li:first-of-type { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; }
-html body.category #articles article.thumb .meta .authors ul li:first-of-type:after, html body.category #articles article.thumb .meta .authors ul li:last-of-type:after { content: ''; }
-html body.category #articles article.thumb .meta .print { cursor: pointer; width: 1.25em; display: none; }
-html body.category #articles article.thumb .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.category #articles article.thumb .share-buttons ul li:before { content: ''; }
-html body.category #articles article.thumb .share-buttons ul li { display: inline-block; float: left; margin-right: 1.25em; }
-html body.category #articles article.thumb .share-buttons ul li:last-of-type { margin-right: 0; }
-html body.category #articles article.thumb .share-buttons ul li .box { width: 100%; max-width: 100%; float: left; width: 3.125em; }
-html body.category #articles article.thumb .share-buttons ul li .box .count { float: right; background: #231f20; color: white; font-size: small; padding: 0 0.3125em; }
-html body.category #articles article.thumb .share-buttons ul li .box .count a { color: white; text-decoration: none; }
-html body.category #articles article.thumb .share-buttons ul li .box .count a:hover { color: white; }
-html body.category #articles article.thumb .share-buttons ul li .box .share img { width: 30%; }
-html body.category #articles article.thumb .content a { color: #982022; text-decoration: none; }
-html body.category #articles article.thumb .content a:hover { color: #982022; }
-html body.category #articles article.thumb .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
-html body.category #articles article.thumb #comments > h3 { display: block; }
-html body.category #articles article.thumb #comments form, html body.category #articles article.thumb #comments .notice, html body.category #articles article.thumb #comments ol, html body.category #articles article.thumb #comments li { width: 100%; max-width: 100%; float: left; }
-html body.category #articles article.thumb #comments li a { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
-html body.category #articles article.thumb #comments li date { font-size: small; color: #332d2f; font-style: normal; }
-html body.category #articles article.thumb .gallery { margin: 1.25em 0; position: relative; height: 100%; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; border: 1px solid; padding: 1.875em; width: calc(100% - 3.75em); padding: 1.25em; }
-html body.category #articles article.thumb .gallery .before, html body.category #articles article.thumb .gallery .after { font-size: 150%; position: absolute; top: 40%; z-index: 2; cursor: pointer; background: #f1f1f1; color: #231f20; padding: 0.3125em; opacity: .7; }
-html body.category #articles article.thumb .gallery .before a, html body.category #articles article.thumb .gallery .after a { color: #231f20; text-decoration: none; }
-html body.category #articles article.thumb .gallery .before a:hover, html body.category #articles article.thumb .gallery .after a:hover { color: white; }
-html body.category #articles article.thumb .gallery .before:before, html body.category #articles article.thumb .gallery .after:before { content: "\2794"; }
-html body.category #articles article.thumb .gallery .before { -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); left: 0; }
-html body.category #articles article.thumb .gallery .after { right: 0; float: right; }
-html body.category #articles article.thumb .gallery article, html body.category #articles article.thumb .gallery .gallery-item { display: none; }
-html body.category #articles article.thumb .gallery article:first-of-type, html body.category #articles article.thumb .gallery .gallery-item:first-of-type { display: block; }
-html body.category #articles article.thumb .gallery span { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; font-size: small; cursor: pointer; }
-html body.category #articles article.thumb .gallery span a { color: #982022; text-decoration: none; }
-html body.category #articles article.thumb .gallery span a:hover { color: #231f20; }
-html body.category #articles article.thumb .gallery span.close { position: absolute; bottom: 0; position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); display: none; }
-@media only screen and (max-width: 29.999em) { html body.category #articles article.thumb { margin-bottom: 0.625em; } }
-@media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.category #articles article.thumb { height: 17em; } }
-@media only screen and (min-width: 80em) { html body.category #articles article.thumb { height: 17em; } }
-html body.category #articles article.thumb h1 { font-size: medium; }
-@media only screen and (max-width: 29.999em) { html body.category #articles article.thumb { width: 100%; max-width: 100%; float: left; width: 100%; max-width: 100%; float: left; /*
+@media only screen and (max-width: 79.999em) { html body.category #articles article.thumb { width: 100%; max-width: 100%; float: left; /*
 @if ($label == null) { .label { display: none; }
 } @else { .label { display: block; }
 }
@@ -1838,17 +1756,17 @@ html body.category #articles article.thumb h1 { font-size: medium; }
   html body.category #articles article.thumb figure figcaption ul { margin: 0; }
   html body.category #articles article.thumb figure figcaption ul li { border-bottom: 1px solid; margin-bottom: 0.3125em; padding-left: 0; }
   html body.category #articles article.thumb figure figcaption ul li:before { display: none; } }
-@media only screen and (max-width: 29.999em) and (min-width: 30em) and (max-width: 79.999em) { html body.category #articles article.thumb figure.people, html body.category #articles article.thumb figure.document, html body.category #articles article.thumb figure.company { width: 100%; max-width: 100%; float: left; }
+@media only screen and (max-width: 79.999em) and (min-width: 30em) and (max-width: 79.999em) { html body.category #articles article.thumb figure.people, html body.category #articles article.thumb figure.document, html body.category #articles article.thumb figure.company { width: 100%; max-width: 100%; float: left; }
   html body.category #articles article.thumb figure.people img, html body.category #articles article.thumb figure.document img, html body.category #articles article.thumb figure.company img { float: left; width: 2.5em; margin-right: 1.25em; }
   html body.category #articles article.thumb figure.people figcaption, html body.category #articles article.thumb figure.document figcaption, html body.category #articles article.thumb figure.company figcaption { padding: 0; } }
-@media only screen and (max-width: 29.999em) and (min-width: 80em) { html body.category #articles article.thumb figure { /* Fit figcpation to image width */ }
+@media only screen and (max-width: 79.999em) and (min-width: 80em) { html body.category #articles article.thumb figure { /* Fit figcpation to image width */ }
   html body.category #articles article.thumb figure.left, html body.category #articles article.thumb figure.right, html body.category #articles article.thumb figure.person, html body.category #articles article.thumb figure.document, html body.category #articles article.thumb figure.company, html body.category #articles article.thumb figure.people { display: table; }
   html body.category #articles article.thumb figure.left img, html body.category #articles article.thumb figure.right img, html body.category #articles article.thumb figure.person img, html body.category #articles article.thumb figure.document img, html body.category #articles article.thumb figure.company img, html body.category #articles article.thumb figure.people img { display: block; max-width: 100%; }
   html body.category #articles article.thumb figure.left figcaption, html body.category #articles article.thumb figure.right figcaption, html body.category #articles article.thumb figure.person figcaption, html body.category #articles article.thumb figure.document figcaption, html body.category #articles article.thumb figure.company figcaption, html body.category #articles article.thumb figure.people figcaption { display: table-caption; caption-side: bottom; margin-top: 0.3125em; }
   html body.category #articles article.thumb figure.left + p, html body.category #articles article.thumb figure.right + p, html body.category #articles article.thumb figure.person + p, html body.category #articles article.thumb figure.document + p, html body.category #articles article.thumb figure.company + p, html body.category #articles article.thumb figure.people + p { margin-top: 1.25em; }
   html body.category #articles article.thumb figure.left { float: left; margin: 0.625em 2.5em 1.25em 0; }
   html body.category #articles article.thumb figure.right { float: right; margin: 0.625em 0 1.25em 2.5em; } }
-@media only screen and (max-width: 29.999em) { html body.category #articles article.thumb figure { position: relative; }
+@media only screen and (max-width: 79.999em) { html body.category #articles article.thumb figure { position: relative; }
   html body.category #articles article.thumb figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
   html body.category #articles article.thumb figure .label a { color: white; text-decoration: none; }
   html body.category #articles article.thumb figure .label a:hover { color: white; }
@@ -1900,14 +1818,180 @@ html body.category #articles article.thumb h1 { font-size: medium; }
   html body.category #articles article.thumb figure, html body.category #articles article.thumb h1, html body.category #articles article.thumb .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.category #articles article.thumb h1, html body.category #articles article.thumb .excerpt { margin-right: 0; padding: 0.3125em; width: calc(48.75% - 0.625em); }
   html body.category #articles article.thumb h1 { font-size: small; } }
-@media only screen and (max-width: 29.999em) and (min-width: 80em) { html body.category #articles article.thumb h1 { font-size: medium; } }
+@media only screen and (max-width: 79.999em) and (min-width: 80em) { html body.category #articles article.thumb h1 { font-size: medium; } }
+@media only screen and (max-width: 79.999em) and (max-width: 29.999em) { html body.category #articles article.thumb { width: 100%; margin-right: 0; float: left; } }
+@media only screen and (max-width: 79.999em) and (min-width: 30em) and (max-width: 79.999em) { html body.category #articles article.thumb { width: 47.5%; margin-right: 2.5%; float: left; }
+  html body.category #articles article.thumb:nth-of-type(2) { margin-right: 0; }
+  html body.category #articles article.thumb:nth-of-type(3) { margin-right: 2.5%; }
+  html body.category #articles article.thumb:nth-of-type(4) { margin-right: 0; }
+  html body.category #articles article.thumb:nth-of-type(5) { margin-right: 2.5%; }
+  html body.category #articles article.thumb:nth-of-type(6) { margin-right: 0; }
+  html body.category #articles article.thumb:nth-of-type(7) { margin-right: 2.5%; }
+  html body.category #articles article.thumb:nth-of-type(8) { margin-right: 0; }
+  html body.category #articles article.thumb:nth-of-type(9) { margin-right: 2.5%; }
+  html body.category #articles article.thumb:nth-of-type(10) { margin-right: 0; }
+  html body.category #articles article.thumb:nth-of-type(11) { margin-right: 2.5%; }
+  html body.category #articles article.thumb:nth-of-type(12) { margin-right: 0; }
+  html body.category #articles article.thumb:nth-of-type(13) { margin-right: 2.5%; }
+  html body.category #articles article.thumb:nth-of-type(14) { margin-right: 0; }
+  html body.category #articles article.thumb:nth-of-type(15) { margin-right: 2.5%; }
+  html body.category #articles article.thumb:nth-of-type(16) { margin-right: 0; }
+  html body.category #articles article.thumb:nth-of-type(17) { margin-right: 2.5%; }
+  html body.category #articles article.thumb:nth-of-type(18) { margin-right: 0; }
+  html body.category #articles article.thumb:nth-of-type(19) { margin-right: 2.5%; }
+  html body.category #articles article.thumb:nth-of-type(20) { margin-right: 0; } }
+@media only screen and (max-width: 79.999em) and (min-width: 80em) { html body.category #articles article.thumb { width: 47.5%; margin-right: 2.5%; float: left; }
+  html body.category #articles article.thumb:nth-of-type(2) { margin-right: 0; }
+  html body.category #articles article.thumb:nth-of-type(3) { margin-right: 2.5%; }
+  html body.category #articles article.thumb:nth-of-type(4) { margin-right: 0; }
+  html body.category #articles article.thumb:nth-of-type(5) { margin-right: 2.5%; }
+  html body.category #articles article.thumb:nth-of-type(6) { margin-right: 0; }
+  html body.category #articles article.thumb:nth-of-type(7) { margin-right: 2.5%; }
+  html body.category #articles article.thumb:nth-of-type(8) { margin-right: 0; }
+  html body.category #articles article.thumb:nth-of-type(9) { margin-right: 2.5%; }
+  html body.category #articles article.thumb:nth-of-type(10) { margin-right: 0; }
+  html body.category #articles article.thumb:nth-of-type(11) { margin-right: 2.5%; }
+  html body.category #articles article.thumb:nth-of-type(12) { margin-right: 0; }
+  html body.category #articles article.thumb:nth-of-type(13) { margin-right: 2.5%; }
+  html body.category #articles article.thumb:nth-of-type(14) { margin-right: 0; }
+  html body.category #articles article.thumb:nth-of-type(15) { margin-right: 2.5%; }
+  html body.category #articles article.thumb:nth-of-type(16) { margin-right: 0; }
+  html body.category #articles article.thumb:nth-of-type(17) { margin-right: 2.5%; }
+  html body.category #articles article.thumb:nth-of-type(18) { margin-right: 0; }
+  html body.category #articles article.thumb:nth-of-type(19) { margin-right: 2.5%; }
+  html body.category #articles article.thumb:nth-of-type(20) { margin-right: 0; } }
 
+@media only screen and (min-width: 80em) { html body.category #articles article.thumb { /*
+@if ($label == null) { .label { display: none; }
+} @else { .label { display: block; }
+}
+*/ margin-bottom: 0.3125em; }
+  html body.category #articles article.thumb h1 { display: block; }
+  html body.category #articles article.thumb figure { display: block; }
+  html body.category #articles article.thumb figcaption { display: none; }
+  html body.category #articles article.thumb .excerpt { display: none; }
+  html body.category #articles article.thumb .content { display: none; }
+  html body.category #articles article.thumb .meta .category { display: none; }
+  html body.category #articles article.thumb .meta .date { display: none; }
+  html body.category #articles article.thumb .meta { display: none; }
+  html body.category #articles article.thumb figure img { width: auto; }
+  html body.category #articles article.thumb figure figcaption { padding: 0.3125em; font-size: smaller; }
+  html body.category #articles article.thumb figure figcaption h1, html body.category #articles article.thumb figure figcaption h2, html body.category #articles article.thumb figure figcaption h3, html body.category #articles article.thumb figure figcaption h4, html body.category #articles article.thumb figure figcaption h5, html body.category #articles article.thumb figure figcaption h6 { margin: 0; padding: 0; }
+  html body.category #articles article.thumb figure figcaption ul { margin: 0; }
+  html body.category #articles article.thumb figure figcaption ul li { border-bottom: 1px solid; margin-bottom: 0.3125em; padding-left: 0; }
+  html body.category #articles article.thumb figure figcaption ul li:before { display: none; } }
+@media only screen and (min-width: 80em) and (min-width: 30em) and (max-width: 79.999em) { html body.category #articles article.thumb figure.people, html body.category #articles article.thumb figure.document, html body.category #articles article.thumb figure.company { width: 100%; max-width: 100%; float: left; }
+  html body.category #articles article.thumb figure.people img, html body.category #articles article.thumb figure.document img, html body.category #articles article.thumb figure.company img { float: left; width: 2.5em; margin-right: 1.25em; }
+  html body.category #articles article.thumb figure.people figcaption, html body.category #articles article.thumb figure.document figcaption, html body.category #articles article.thumb figure.company figcaption { padding: 0; } }
+@media only screen and (min-width: 80em) and (min-width: 80em) { html body.category #articles article.thumb figure { /* Fit figcpation to image width */ }
+  html body.category #articles article.thumb figure.left, html body.category #articles article.thumb figure.right, html body.category #articles article.thumb figure.person, html body.category #articles article.thumb figure.document, html body.category #articles article.thumb figure.company, html body.category #articles article.thumb figure.people { display: table; }
+  html body.category #articles article.thumb figure.left img, html body.category #articles article.thumb figure.right img, html body.category #articles article.thumb figure.person img, html body.category #articles article.thumb figure.document img, html body.category #articles article.thumb figure.company img, html body.category #articles article.thumb figure.people img { display: block; max-width: 100%; }
+  html body.category #articles article.thumb figure.left figcaption, html body.category #articles article.thumb figure.right figcaption, html body.category #articles article.thumb figure.person figcaption, html body.category #articles article.thumb figure.document figcaption, html body.category #articles article.thumb figure.company figcaption, html body.category #articles article.thumb figure.people figcaption { display: table-caption; caption-side: bottom; margin-top: 0.3125em; }
+  html body.category #articles article.thumb figure.left + p, html body.category #articles article.thumb figure.right + p, html body.category #articles article.thumb figure.person + p, html body.category #articles article.thumb figure.document + p, html body.category #articles article.thumb figure.company + p, html body.category #articles article.thumb figure.people + p { margin-top: 1.25em; }
+  html body.category #articles article.thumb figure.left { float: left; margin: 0.625em 2.5em 1.25em 0; }
+  html body.category #articles article.thumb figure.right { float: right; margin: 0.625em 0 1.25em 2.5em; } }
+@media only screen and (min-width: 80em) { html body.category #articles article.thumb figure { position: relative; }
+  html body.category #articles article.thumb figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
+  html body.category #articles article.thumb figure .label a { color: white; text-decoration: none; }
+  html body.category #articles article.thumb figure .label a:hover { color: white; }
+  html body.category #articles article.thumb .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
+  html body.category #articles article.thumb .meta > h3 { display: none; }
+  html body.category #articles article.thumb .meta ul { margin: 0; }
+  html body.category #articles article.thumb .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
+  html body.category #articles article.thumb .meta ul li:before { content: ''; }
+  html body.category #articles article.thumb .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
+  html body.category #articles article.thumb .meta ul li:last-of-type { margin-right: 0; }
+  html body.category #articles article.thumb .meta .date { font-size: small; color: #332d2f; font-style: normal; }
+  html body.category #articles article.thumb .meta .category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
+  html body.category #articles article.thumb .meta .category a { color: #982022; text-decoration: none; }
+  html body.category #articles article.thumb .meta .category a:hover { color: #231f20; }
+  html body.category #articles article.thumb .meta .authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
+  html body.category #articles article.thumb .meta .authors ul li:after { content: ','; }
+  html body.category #articles article.thumb .meta .authors ul li:first-of-type { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; }
+  html body.category #articles article.thumb .meta .authors ul li:first-of-type:after, html body.category #articles article.thumb .meta .authors ul li:last-of-type:after { content: ''; }
+  html body.category #articles article.thumb .meta .print { cursor: pointer; width: 1.25em; display: none; }
+  html body.category #articles article.thumb .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
+  html body.category #articles article.thumb .share-buttons ul li:before { content: ''; }
+  html body.category #articles article.thumb .share-buttons ul li { display: inline-block; float: left; margin-right: 1.25em; }
+  html body.category #articles article.thumb .share-buttons ul li:last-of-type { margin-right: 0; }
+  html body.category #articles article.thumb .share-buttons ul li .box { width: 100%; max-width: 100%; float: left; width: 3.125em; }
+  html body.category #articles article.thumb .share-buttons ul li .box .count { float: right; background: #231f20; color: white; font-size: small; padding: 0 0.3125em; }
+  html body.category #articles article.thumb .share-buttons ul li .box .count a { color: white; text-decoration: none; }
+  html body.category #articles article.thumb .share-buttons ul li .box .count a:hover { color: white; }
+  html body.category #articles article.thumb .share-buttons ul li .box .share img { width: 30%; }
+  html body.category #articles article.thumb .content a { color: #982022; text-decoration: none; }
+  html body.category #articles article.thumb .content a:hover { color: #982022; }
+  html body.category #articles article.thumb .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+  html body.category #articles article.thumb #comments > h3 { display: block; }
+  html body.category #articles article.thumb #comments form, html body.category #articles article.thumb #comments .notice, html body.category #articles article.thumb #comments ol, html body.category #articles article.thumb #comments li { width: 100%; max-width: 100%; float: left; }
+  html body.category #articles article.thumb #comments li a { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
+  html body.category #articles article.thumb #comments li date { font-size: small; color: #332d2f; font-style: normal; }
+  html body.category #articles article.thumb .gallery { margin: 1.25em 0; position: relative; height: 100%; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; border: 1px solid; padding: 1.875em; width: calc(100% - 3.75em); padding: 1.25em; }
+  html body.category #articles article.thumb .gallery .before, html body.category #articles article.thumb .gallery .after { font-size: 150%; position: absolute; top: 40%; z-index: 2; cursor: pointer; background: #f1f1f1; color: #231f20; padding: 0.3125em; opacity: .7; }
+  html body.category #articles article.thumb .gallery .before a, html body.category #articles article.thumb .gallery .after a { color: #231f20; text-decoration: none; }
+  html body.category #articles article.thumb .gallery .before a:hover, html body.category #articles article.thumb .gallery .after a:hover { color: white; }
+  html body.category #articles article.thumb .gallery .before:before, html body.category #articles article.thumb .gallery .after:before { content: "\2794"; }
+  html body.category #articles article.thumb .gallery .before { -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); left: 0; }
+  html body.category #articles article.thumb .gallery .after { right: 0; float: right; }
+  html body.category #articles article.thumb .gallery article, html body.category #articles article.thumb .gallery .gallery-item { display: none; }
+  html body.category #articles article.thumb .gallery article:first-of-type, html body.category #articles article.thumb .gallery .gallery-item:first-of-type { display: block; }
+  html body.category #articles article.thumb .gallery span { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; font-size: small; cursor: pointer; }
+  html body.category #articles article.thumb .gallery span a { color: #982022; text-decoration: none; }
+  html body.category #articles article.thumb .gallery span a:hover { color: #231f20; }
+  html body.category #articles article.thumb .gallery span.close { position: absolute; bottom: 0; position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); display: none; } }
+@media only screen and (min-width: 80em) and (max-width: 29.999em) { html body.category #articles article.thumb { margin-bottom: 0.625em; } }
+@media only screen and (min-width: 80em) and (min-width: 30em) and (max-width: 79.999em) { html body.category #articles article.thumb { height: 17em; } }
+@media only screen and (min-width: 80em) and (min-width: 80em) { html body.category #articles article.thumb { height: 17em; } }
+@media only screen and (min-width: 80em) { html body.category #articles article.thumb h1 { font-size: medium; } }
+@media only screen and (min-width: 80em) and (max-width: 29.999em) { html body.category #articles article.thumb { width: 100%; margin-right: 0; float: left; } }
+@media only screen and (min-width: 80em) and (min-width: 30em) and (max-width: 79.999em) { html body.category #articles article.thumb { width: 47.5%; margin-right: 2.5%; float: left; }
+  html body.category #articles article.thumb:nth-of-type(2) { margin-right: 0; }
+  html body.category #articles article.thumb:nth-of-type(3) { margin-right: 2.5%; }
+  html body.category #articles article.thumb:nth-of-type(4) { margin-right: 0; }
+  html body.category #articles article.thumb:nth-of-type(5) { margin-right: 2.5%; }
+  html body.category #articles article.thumb:nth-of-type(6) { margin-right: 0; }
+  html body.category #articles article.thumb:nth-of-type(7) { margin-right: 2.5%; }
+  html body.category #articles article.thumb:nth-of-type(8) { margin-right: 0; }
+  html body.category #articles article.thumb:nth-of-type(9) { margin-right: 2.5%; }
+  html body.category #articles article.thumb:nth-of-type(10) { margin-right: 0; }
+  html body.category #articles article.thumb:nth-of-type(11) { margin-right: 2.5%; }
+  html body.category #articles article.thumb:nth-of-type(12) { margin-right: 0; }
+  html body.category #articles article.thumb:nth-of-type(13) { margin-right: 2.5%; }
+  html body.category #articles article.thumb:nth-of-type(14) { margin-right: 0; }
+  html body.category #articles article.thumb:nth-of-type(15) { margin-right: 2.5%; }
+  html body.category #articles article.thumb:nth-of-type(16) { margin-right: 0; }
+  html body.category #articles article.thumb:nth-of-type(17) { margin-right: 2.5%; }
+  html body.category #articles article.thumb:nth-of-type(18) { margin-right: 0; }
+  html body.category #articles article.thumb:nth-of-type(19) { margin-right: 2.5%; }
+  html body.category #articles article.thumb:nth-of-type(20) { margin-right: 0; } }
+@media only screen and (min-width: 80em) and (min-width: 80em) { html body.category #articles article.thumb { width: 31.5%; margin-right: 2.5%; float: left; }
+  html body.category #articles article.thumb:nth-of-type(2) { margin-right: 2.5%; }
+  html body.category #articles article.thumb:nth-of-type(3) { margin-right: 0; }
+  html body.category #articles article.thumb:nth-of-type(4) { margin-right: 2.5%; }
+  html body.category #articles article.thumb:nth-of-type(5) { margin-right: 2.5%; }
+  html body.category #articles article.thumb:nth-of-type(6) { margin-right: 0; }
+  html body.category #articles article.thumb:nth-of-type(7) { margin-right: 2.5%; }
+  html body.category #articles article.thumb:nth-of-type(8) { margin-right: 2.5%; }
+  html body.category #articles article.thumb:nth-of-type(9) { margin-right: 0; }
+  html body.category #articles article.thumb:nth-of-type(10) { margin-right: 2.5%; }
+  html body.category #articles article.thumb:nth-of-type(11) { margin-right: 2.5%; }
+  html body.category #articles article.thumb:nth-of-type(12) { margin-right: 0; }
+  html body.category #articles article.thumb:nth-of-type(13) { margin-right: 2.5%; }
+  html body.category #articles article.thumb:nth-of-type(14) { margin-right: 2.5%; }
+  html body.category #articles article.thumb:nth-of-type(15) { margin-right: 0; }
+  html body.category #articles article.thumb:nth-of-type(16) { margin-right: 2.5%; }
+  html body.category #articles article.thumb:nth-of-type(17) { margin-right: 2.5%; }
+  html body.category #articles article.thumb:nth-of-type(18) { margin-right: 0; }
+  html body.category #articles article.thumb:nth-of-type(19) { margin-right: 2.5%; }
+  html body.category #articles article.thumb:nth-of-type(20) { margin-right: 2.5%; } }
+
+@media only screen and (max-width: 29.999em) { html body.category #articles article.thumb { width: 100%; max-width: 100%; float: left; } }
 @media only screen and (min-width: 80em) { html body.tag main { overflow: hidden; }
   html body.tag main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
-html body.tag main #articles { width: 65.5%; margin-right: 2.5%; float: left; }
-@media only screen and (max-width: 29.999em) { html body.tag main #articles { width: 100%; max-width: 100%; float: left; } }
-html body.tag main aside { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; }
-@media only screen and (max-width: 29.999em) { html body.tag main aside { width: 100%; max-width: 100%; float: left; margin-top: 1.25em; } }
+html body.tag main #articles { width: 100%; max-width: 100%; float: left; }
+@media only screen and (min-width: 80em) { html body.tag main #articles { width: 65.5%; margin-right: 2.5%; float: left; } }
+html body.tag main aside { width: 100%; max-width: 100%; float: left; margin-top: 1.25em; }
+@media only screen and (min-width: 80em) { html body.tag main aside { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; margin-top: 0; } }
 html body.tag main aside section { margin-bottom: 0.625em; }
 html body.tag main aside section h3 { display: block; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; }
 html body.tag main aside section h3 a { color: #982022; text-decoration: none; }
@@ -1997,9 +2081,50 @@ html body.tag main aside section article h1 { font-size: small; }
 html body.tag main aside section article a { color: #231f20; text-decoration: none; }
 html body.tag main aside section article a:hover { color: #982022; }
 html body.tag main aside section article h1 { font-weight: normal; }
-html body.tag main aside section#bio img { width: 7.5em; float: left; margin: 0 1.25em 1.25em 0; }
-html body.tag main aside section#bio div { padding: 0 0.625em; line-height: 1.75; font-size: smaller; margin-left: calc(7.5em + 1.25em + 1.25em); }
-html body.tag main aside section#bio div p + p { margin-top: 1.25em; }
+@media only screen and (max-width: 79.999em) and (max-width: 29.999em) { html body.tag main aside section article { width: 100%; margin-right: 0; float: left; } }
+@media only screen and (max-width: 79.999em) and (min-width: 30em) and (max-width: 79.999em) { html body.tag main aside section article { width: 47.5%; margin-right: 2.5%; float: left; }
+  html body.tag main aside section article:nth-of-type(2) { margin-right: 0; }
+  html body.tag main aside section article:nth-of-type(3) { margin-right: 2.5%; }
+  html body.tag main aside section article:nth-of-type(4) { margin-right: 0; }
+  html body.tag main aside section article:nth-of-type(5) { margin-right: 2.5%; }
+  html body.tag main aside section article:nth-of-type(6) { margin-right: 0; }
+  html body.tag main aside section article:nth-of-type(7) { margin-right: 2.5%; }
+  html body.tag main aside section article:nth-of-type(8) { margin-right: 0; }
+  html body.tag main aside section article:nth-of-type(9) { margin-right: 2.5%; }
+  html body.tag main aside section article:nth-of-type(10) { margin-right: 0; }
+  html body.tag main aside section article:nth-of-type(11) { margin-right: 2.5%; }
+  html body.tag main aside section article:nth-of-type(12) { margin-right: 0; }
+  html body.tag main aside section article:nth-of-type(13) { margin-right: 2.5%; }
+  html body.tag main aside section article:nth-of-type(14) { margin-right: 0; }
+  html body.tag main aside section article:nth-of-type(15) { margin-right: 2.5%; }
+  html body.tag main aside section article:nth-of-type(16) { margin-right: 0; }
+  html body.tag main aside section article:nth-of-type(17) { margin-right: 2.5%; }
+  html body.tag main aside section article:nth-of-type(18) { margin-right: 0; }
+  html body.tag main aside section article:nth-of-type(19) { margin-right: 2.5%; }
+  html body.tag main aside section article:nth-of-type(20) { margin-right: 0; } }
+@media only screen and (max-width: 79.999em) and (min-width: 80em) { html body.tag main aside section article { width: 47.5%; margin-right: 2.5%; float: left; }
+  html body.tag main aside section article:nth-of-type(2) { margin-right: 0; }
+  html body.tag main aside section article:nth-of-type(3) { margin-right: 2.5%; }
+  html body.tag main aside section article:nth-of-type(4) { margin-right: 0; }
+  html body.tag main aside section article:nth-of-type(5) { margin-right: 2.5%; }
+  html body.tag main aside section article:nth-of-type(6) { margin-right: 0; }
+  html body.tag main aside section article:nth-of-type(7) { margin-right: 2.5%; }
+  html body.tag main aside section article:nth-of-type(8) { margin-right: 0; }
+  html body.tag main aside section article:nth-of-type(9) { margin-right: 2.5%; }
+  html body.tag main aside section article:nth-of-type(10) { margin-right: 0; }
+  html body.tag main aside section article:nth-of-type(11) { margin-right: 2.5%; }
+  html body.tag main aside section article:nth-of-type(12) { margin-right: 0; }
+  html body.tag main aside section article:nth-of-type(13) { margin-right: 2.5%; }
+  html body.tag main aside section article:nth-of-type(14) { margin-right: 0; }
+  html body.tag main aside section article:nth-of-type(15) { margin-right: 2.5%; }
+  html body.tag main aside section article:nth-of-type(16) { margin-right: 0; }
+  html body.tag main aside section article:nth-of-type(17) { margin-right: 2.5%; }
+  html body.tag main aside section article:nth-of-type(18) { margin-right: 0; }
+  html body.tag main aside section article:nth-of-type(19) { margin-right: 2.5%; }
+  html body.tag main aside section article:nth-of-type(20) { margin-right: 0; } }
+
+@media only screen and (max-width: 29.999em) { html body.tag main aside section article { width: 100%; max-width: 100%; float: left; } }
+@media only screen and (min-width: 80em) { html body.tag main aside section article { width: 100%; max-width: 100%; float: left; } }
 html body.tag main aside #spacer > h3 { display: none; }
 html body.tag #articles { /* The first article
 */ /* The rest of the articles
@@ -2099,130 +2224,7 @@ html body.tag #articles aside .gallery span.close { position: absolute; bottom: 
 @media only screen and (min-width: 30em) { html body.tag #articles aside figure, html body.tag #articles aside h1, html body.tag #articles aside .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.tag #articles aside h1, html body.tag #articles aside .excerpt { margin-right: 0; padding: 0.3125em; width: calc(48.75% - 0.625em); } }
 html body.tag #articles aside h1, html body.tag #articles aside .excerpt { padding: 0.3125em; }
-html body.tag #articles article.thumb { /*
-@if ($label == null) { .label { display: none; }
-} @else { .label { display: block; }
-}
-*/ margin-bottom: 0.3125em; }
-@media only screen and (max-width: 29.999em) { html body.tag #articles article.thumb { width: 100%; margin-right: 0; float: left; } }
-@media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.tag #articles article.thumb { width: 47.5%; margin-right: 2.5%; float: left; }
-  html body.tag #articles article.thumb:nth-of-type(2) { margin-right: 0; }
-  html body.tag #articles article.thumb:nth-of-type(3) { margin-right: 2.5%; }
-  html body.tag #articles article.thumb:nth-of-type(4) { margin-right: 0; }
-  html body.tag #articles article.thumb:nth-of-type(5) { margin-right: 2.5%; }
-  html body.tag #articles article.thumb:nth-of-type(6) { margin-right: 0; }
-  html body.tag #articles article.thumb:nth-of-type(7) { margin-right: 2.5%; }
-  html body.tag #articles article.thumb:nth-of-type(8) { margin-right: 0; }
-  html body.tag #articles article.thumb:nth-of-type(9) { margin-right: 2.5%; }
-  html body.tag #articles article.thumb:nth-of-type(10) { margin-right: 0; }
-  html body.tag #articles article.thumb:nth-of-type(11) { margin-right: 2.5%; }
-  html body.tag #articles article.thumb:nth-of-type(12) { margin-right: 0; }
-  html body.tag #articles article.thumb:nth-of-type(13) { margin-right: 2.5%; }
-  html body.tag #articles article.thumb:nth-of-type(14) { margin-right: 0; }
-  html body.tag #articles article.thumb:nth-of-type(15) { margin-right: 2.5%; }
-  html body.tag #articles article.thumb:nth-of-type(16) { margin-right: 0; }
-  html body.tag #articles article.thumb:nth-of-type(17) { margin-right: 2.5%; }
-  html body.tag #articles article.thumb:nth-of-type(18) { margin-right: 0; }
-  html body.tag #articles article.thumb:nth-of-type(19) { margin-right: 2.5%; }
-  html body.tag #articles article.thumb:nth-of-type(20) { margin-right: 0; } }
-@media only screen and (min-width: 80em) { html body.tag #articles article.thumb { width: 31.5%; margin-right: 2.5%; float: left; }
-  html body.tag #articles article.thumb:nth-of-type(2) { margin-right: 2.5%; }
-  html body.tag #articles article.thumb:nth-of-type(3) { margin-right: 0; }
-  html body.tag #articles article.thumb:nth-of-type(4) { margin-right: 2.5%; }
-  html body.tag #articles article.thumb:nth-of-type(5) { margin-right: 2.5%; }
-  html body.tag #articles article.thumb:nth-of-type(6) { margin-right: 0; }
-  html body.tag #articles article.thumb:nth-of-type(7) { margin-right: 2.5%; }
-  html body.tag #articles article.thumb:nth-of-type(8) { margin-right: 2.5%; }
-  html body.tag #articles article.thumb:nth-of-type(9) { margin-right: 0; }
-  html body.tag #articles article.thumb:nth-of-type(10) { margin-right: 2.5%; }
-  html body.tag #articles article.thumb:nth-of-type(11) { margin-right: 2.5%; }
-  html body.tag #articles article.thumb:nth-of-type(12) { margin-right: 0; }
-  html body.tag #articles article.thumb:nth-of-type(13) { margin-right: 2.5%; }
-  html body.tag #articles article.thumb:nth-of-type(14) { margin-right: 2.5%; }
-  html body.tag #articles article.thumb:nth-of-type(15) { margin-right: 0; }
-  html body.tag #articles article.thumb:nth-of-type(16) { margin-right: 2.5%; }
-  html body.tag #articles article.thumb:nth-of-type(17) { margin-right: 2.5%; }
-  html body.tag #articles article.thumb:nth-of-type(18) { margin-right: 0; }
-  html body.tag #articles article.thumb:nth-of-type(19) { margin-right: 2.5%; }
-  html body.tag #articles article.thumb:nth-of-type(20) { margin-right: 2.5%; } }
-html body.tag #articles article.thumb h1 { display: block; }
-html body.tag #articles article.thumb figure { display: block; }
-html body.tag #articles article.thumb figcaption { display: none; }
-html body.tag #articles article.thumb .excerpt { display: none; }
-html body.tag #articles article.thumb .content { display: none; }
-html body.tag #articles article.thumb .meta .category { display: none; }
-html body.tag #articles article.thumb .meta .date { display: none; }
-html body.tag #articles article.thumb .meta { display: none; }
-html body.tag #articles article.thumb figure img { width: auto; }
-html body.tag #articles article.thumb figure figcaption { padding: 0.3125em; font-size: smaller; }
-html body.tag #articles article.thumb figure figcaption h1, html body.tag #articles article.thumb figure figcaption h2, html body.tag #articles article.thumb figure figcaption h3, html body.tag #articles article.thumb figure figcaption h4, html body.tag #articles article.thumb figure figcaption h5, html body.tag #articles article.thumb figure figcaption h6 { margin: 0; padding: 0; }
-html body.tag #articles article.thumb figure figcaption ul { margin: 0; }
-html body.tag #articles article.thumb figure figcaption ul li { border-bottom: 1px solid; margin-bottom: 0.3125em; padding-left: 0; }
-html body.tag #articles article.thumb figure figcaption ul li:before { display: none; }
-@media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.tag #articles article.thumb figure.people, html body.tag #articles article.thumb figure.document, html body.tag #articles article.thumb figure.company { width: 100%; max-width: 100%; float: left; }
-  html body.tag #articles article.thumb figure.people img, html body.tag #articles article.thumb figure.document img, html body.tag #articles article.thumb figure.company img { float: left; width: 2.5em; margin-right: 1.25em; }
-  html body.tag #articles article.thumb figure.people figcaption, html body.tag #articles article.thumb figure.document figcaption, html body.tag #articles article.thumb figure.company figcaption { padding: 0; } }
-@media only screen and (min-width: 80em) { html body.tag #articles article.thumb figure { /* Fit figcpation to image width */ }
-  html body.tag #articles article.thumb figure.left, html body.tag #articles article.thumb figure.right, html body.tag #articles article.thumb figure.person, html body.tag #articles article.thumb figure.document, html body.tag #articles article.thumb figure.company, html body.tag #articles article.thumb figure.people { display: table; }
-  html body.tag #articles article.thumb figure.left img, html body.tag #articles article.thumb figure.right img, html body.tag #articles article.thumb figure.person img, html body.tag #articles article.thumb figure.document img, html body.tag #articles article.thumb figure.company img, html body.tag #articles article.thumb figure.people img { display: block; max-width: 100%; }
-  html body.tag #articles article.thumb figure.left figcaption, html body.tag #articles article.thumb figure.right figcaption, html body.tag #articles article.thumb figure.person figcaption, html body.tag #articles article.thumb figure.document figcaption, html body.tag #articles article.thumb figure.company figcaption, html body.tag #articles article.thumb figure.people figcaption { display: table-caption; caption-side: bottom; margin-top: 0.3125em; }
-  html body.tag #articles article.thumb figure.left + p, html body.tag #articles article.thumb figure.right + p, html body.tag #articles article.thumb figure.person + p, html body.tag #articles article.thumb figure.document + p, html body.tag #articles article.thumb figure.company + p, html body.tag #articles article.thumb figure.people + p { margin-top: 1.25em; }
-  html body.tag #articles article.thumb figure.left { float: left; margin: 0.625em 2.5em 1.25em 0; }
-  html body.tag #articles article.thumb figure.right { float: right; margin: 0.625em 0 1.25em 2.5em; } }
-html body.tag #articles article.thumb figure { position: relative; }
-html body.tag #articles article.thumb figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
-html body.tag #articles article.thumb figure .label a { color: white; text-decoration: none; }
-html body.tag #articles article.thumb figure .label a:hover { color: white; }
-html body.tag #articles article.thumb .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
-html body.tag #articles article.thumb .meta > h3 { display: none; }
-html body.tag #articles article.thumb .meta ul { margin: 0; }
-html body.tag #articles article.thumb .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.tag #articles article.thumb .meta ul li:before { content: ''; }
-html body.tag #articles article.thumb .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
-html body.tag #articles article.thumb .meta ul li:last-of-type { margin-right: 0; }
-html body.tag #articles article.thumb .meta .date { font-size: small; color: #332d2f; font-style: normal; }
-html body.tag #articles article.thumb .meta .category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
-html body.tag #articles article.thumb .meta .category a { color: #982022; text-decoration: none; }
-html body.tag #articles article.thumb .meta .category a:hover { color: #231f20; }
-html body.tag #articles article.thumb .meta .authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
-html body.tag #articles article.thumb .meta .authors ul li:after { content: ','; }
-html body.tag #articles article.thumb .meta .authors ul li:first-of-type { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; }
-html body.tag #articles article.thumb .meta .authors ul li:first-of-type:after, html body.tag #articles article.thumb .meta .authors ul li:last-of-type:after { content: ''; }
-html body.tag #articles article.thumb .meta .print { cursor: pointer; width: 1.25em; display: none; }
-html body.tag #articles article.thumb .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.tag #articles article.thumb .share-buttons ul li:before { content: ''; }
-html body.tag #articles article.thumb .share-buttons ul li { display: inline-block; float: left; margin-right: 1.25em; }
-html body.tag #articles article.thumb .share-buttons ul li:last-of-type { margin-right: 0; }
-html body.tag #articles article.thumb .share-buttons ul li .box { width: 100%; max-width: 100%; float: left; width: 3.125em; }
-html body.tag #articles article.thumb .share-buttons ul li .box .count { float: right; background: #231f20; color: white; font-size: small; padding: 0 0.3125em; }
-html body.tag #articles article.thumb .share-buttons ul li .box .count a { color: white; text-decoration: none; }
-html body.tag #articles article.thumb .share-buttons ul li .box .count a:hover { color: white; }
-html body.tag #articles article.thumb .share-buttons ul li .box .share img { width: 30%; }
-html body.tag #articles article.thumb .content a { color: #982022; text-decoration: none; }
-html body.tag #articles article.thumb .content a:hover { color: #982022; }
-html body.tag #articles article.thumb .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
-html body.tag #articles article.thumb #comments > h3 { display: block; }
-html body.tag #articles article.thumb #comments form, html body.tag #articles article.thumb #comments .notice, html body.tag #articles article.thumb #comments ol, html body.tag #articles article.thumb #comments li { width: 100%; max-width: 100%; float: left; }
-html body.tag #articles article.thumb #comments li a { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
-html body.tag #articles article.thumb #comments li date { font-size: small; color: #332d2f; font-style: normal; }
-html body.tag #articles article.thumb .gallery { margin: 1.25em 0; position: relative; height: 100%; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; border: 1px solid; padding: 1.875em; width: calc(100% - 3.75em); padding: 1.25em; }
-html body.tag #articles article.thumb .gallery .before, html body.tag #articles article.thumb .gallery .after { font-size: 150%; position: absolute; top: 40%; z-index: 2; cursor: pointer; background: #f1f1f1; color: #231f20; padding: 0.3125em; opacity: .7; }
-html body.tag #articles article.thumb .gallery .before a, html body.tag #articles article.thumb .gallery .after a { color: #231f20; text-decoration: none; }
-html body.tag #articles article.thumb .gallery .before a:hover, html body.tag #articles article.thumb .gallery .after a:hover { color: white; }
-html body.tag #articles article.thumb .gallery .before:before, html body.tag #articles article.thumb .gallery .after:before { content: "\2794"; }
-html body.tag #articles article.thumb .gallery .before { -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); left: 0; }
-html body.tag #articles article.thumb .gallery .after { right: 0; float: right; }
-html body.tag #articles article.thumb .gallery article, html body.tag #articles article.thumb .gallery .gallery-item { display: none; }
-html body.tag #articles article.thumb .gallery article:first-of-type, html body.tag #articles article.thumb .gallery .gallery-item:first-of-type { display: block; }
-html body.tag #articles article.thumb .gallery span { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; font-size: small; cursor: pointer; }
-html body.tag #articles article.thumb .gallery span a { color: #982022; text-decoration: none; }
-html body.tag #articles article.thumb .gallery span a:hover { color: #231f20; }
-html body.tag #articles article.thumb .gallery span.close { position: absolute; bottom: 0; position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); display: none; }
-@media only screen and (max-width: 29.999em) { html body.tag #articles article.thumb { margin-bottom: 0.625em; } }
-@media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.tag #articles article.thumb { height: 17em; } }
-@media only screen and (min-width: 80em) { html body.tag #articles article.thumb { height: 17em; } }
-html body.tag #articles article.thumb h1 { font-size: medium; }
-@media only screen and (max-width: 29.999em) { html body.tag #articles article.thumb { width: 100%; max-width: 100%; float: left; width: 100%; max-width: 100%; float: left; /*
+@media only screen and (max-width: 79.999em) { html body.tag #articles article.thumb { width: 100%; max-width: 100%; float: left; /*
 @if ($label == null) { .label { display: none; }
 } @else { .label { display: block; }
 }
@@ -2241,17 +2243,17 @@ html body.tag #articles article.thumb h1 { font-size: medium; }
   html body.tag #articles article.thumb figure figcaption ul { margin: 0; }
   html body.tag #articles article.thumb figure figcaption ul li { border-bottom: 1px solid; margin-bottom: 0.3125em; padding-left: 0; }
   html body.tag #articles article.thumb figure figcaption ul li:before { display: none; } }
-@media only screen and (max-width: 29.999em) and (min-width: 30em) and (max-width: 79.999em) { html body.tag #articles article.thumb figure.people, html body.tag #articles article.thumb figure.document, html body.tag #articles article.thumb figure.company { width: 100%; max-width: 100%; float: left; }
+@media only screen and (max-width: 79.999em) and (min-width: 30em) and (max-width: 79.999em) { html body.tag #articles article.thumb figure.people, html body.tag #articles article.thumb figure.document, html body.tag #articles article.thumb figure.company { width: 100%; max-width: 100%; float: left; }
   html body.tag #articles article.thumb figure.people img, html body.tag #articles article.thumb figure.document img, html body.tag #articles article.thumb figure.company img { float: left; width: 2.5em; margin-right: 1.25em; }
   html body.tag #articles article.thumb figure.people figcaption, html body.tag #articles article.thumb figure.document figcaption, html body.tag #articles article.thumb figure.company figcaption { padding: 0; } }
-@media only screen and (max-width: 29.999em) and (min-width: 80em) { html body.tag #articles article.thumb figure { /* Fit figcpation to image width */ }
+@media only screen and (max-width: 79.999em) and (min-width: 80em) { html body.tag #articles article.thumb figure { /* Fit figcpation to image width */ }
   html body.tag #articles article.thumb figure.left, html body.tag #articles article.thumb figure.right, html body.tag #articles article.thumb figure.person, html body.tag #articles article.thumb figure.document, html body.tag #articles article.thumb figure.company, html body.tag #articles article.thumb figure.people { display: table; }
   html body.tag #articles article.thumb figure.left img, html body.tag #articles article.thumb figure.right img, html body.tag #articles article.thumb figure.person img, html body.tag #articles article.thumb figure.document img, html body.tag #articles article.thumb figure.company img, html body.tag #articles article.thumb figure.people img { display: block; max-width: 100%; }
   html body.tag #articles article.thumb figure.left figcaption, html body.tag #articles article.thumb figure.right figcaption, html body.tag #articles article.thumb figure.person figcaption, html body.tag #articles article.thumb figure.document figcaption, html body.tag #articles article.thumb figure.company figcaption, html body.tag #articles article.thumb figure.people figcaption { display: table-caption; caption-side: bottom; margin-top: 0.3125em; }
   html body.tag #articles article.thumb figure.left + p, html body.tag #articles article.thumb figure.right + p, html body.tag #articles article.thumb figure.person + p, html body.tag #articles article.thumb figure.document + p, html body.tag #articles article.thumb figure.company + p, html body.tag #articles article.thumb figure.people + p { margin-top: 1.25em; }
   html body.tag #articles article.thumb figure.left { float: left; margin: 0.625em 2.5em 1.25em 0; }
   html body.tag #articles article.thumb figure.right { float: right; margin: 0.625em 0 1.25em 2.5em; } }
-@media only screen and (max-width: 29.999em) { html body.tag #articles article.thumb figure { position: relative; }
+@media only screen and (max-width: 79.999em) { html body.tag #articles article.thumb figure { position: relative; }
   html body.tag #articles article.thumb figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
   html body.tag #articles article.thumb figure .label a { color: white; text-decoration: none; }
   html body.tag #articles article.thumb figure .label a:hover { color: white; }
@@ -2303,8 +2305,174 @@ html body.tag #articles article.thumb h1 { font-size: medium; }
   html body.tag #articles article.thumb figure, html body.tag #articles article.thumb h1, html body.tag #articles article.thumb .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.tag #articles article.thumb h1, html body.tag #articles article.thumb .excerpt { margin-right: 0; padding: 0.3125em; width: calc(48.75% - 0.625em); }
   html body.tag #articles article.thumb h1 { font-size: small; } }
-@media only screen and (max-width: 29.999em) and (min-width: 80em) { html body.tag #articles article.thumb h1 { font-size: medium; } }
+@media only screen and (max-width: 79.999em) and (min-width: 80em) { html body.tag #articles article.thumb h1 { font-size: medium; } }
+@media only screen and (max-width: 79.999em) and (max-width: 29.999em) { html body.tag #articles article.thumb { width: 100%; margin-right: 0; float: left; } }
+@media only screen and (max-width: 79.999em) and (min-width: 30em) and (max-width: 79.999em) { html body.tag #articles article.thumb { width: 47.5%; margin-right: 2.5%; float: left; }
+  html body.tag #articles article.thumb:nth-of-type(2) { margin-right: 0; }
+  html body.tag #articles article.thumb:nth-of-type(3) { margin-right: 2.5%; }
+  html body.tag #articles article.thumb:nth-of-type(4) { margin-right: 0; }
+  html body.tag #articles article.thumb:nth-of-type(5) { margin-right: 2.5%; }
+  html body.tag #articles article.thumb:nth-of-type(6) { margin-right: 0; }
+  html body.tag #articles article.thumb:nth-of-type(7) { margin-right: 2.5%; }
+  html body.tag #articles article.thumb:nth-of-type(8) { margin-right: 0; }
+  html body.tag #articles article.thumb:nth-of-type(9) { margin-right: 2.5%; }
+  html body.tag #articles article.thumb:nth-of-type(10) { margin-right: 0; }
+  html body.tag #articles article.thumb:nth-of-type(11) { margin-right: 2.5%; }
+  html body.tag #articles article.thumb:nth-of-type(12) { margin-right: 0; }
+  html body.tag #articles article.thumb:nth-of-type(13) { margin-right: 2.5%; }
+  html body.tag #articles article.thumb:nth-of-type(14) { margin-right: 0; }
+  html body.tag #articles article.thumb:nth-of-type(15) { margin-right: 2.5%; }
+  html body.tag #articles article.thumb:nth-of-type(16) { margin-right: 0; }
+  html body.tag #articles article.thumb:nth-of-type(17) { margin-right: 2.5%; }
+  html body.tag #articles article.thumb:nth-of-type(18) { margin-right: 0; }
+  html body.tag #articles article.thumb:nth-of-type(19) { margin-right: 2.5%; }
+  html body.tag #articles article.thumb:nth-of-type(20) { margin-right: 0; } }
+@media only screen and (max-width: 79.999em) and (min-width: 80em) { html body.tag #articles article.thumb { width: 47.5%; margin-right: 2.5%; float: left; }
+  html body.tag #articles article.thumb:nth-of-type(2) { margin-right: 0; }
+  html body.tag #articles article.thumb:nth-of-type(3) { margin-right: 2.5%; }
+  html body.tag #articles article.thumb:nth-of-type(4) { margin-right: 0; }
+  html body.tag #articles article.thumb:nth-of-type(5) { margin-right: 2.5%; }
+  html body.tag #articles article.thumb:nth-of-type(6) { margin-right: 0; }
+  html body.tag #articles article.thumb:nth-of-type(7) { margin-right: 2.5%; }
+  html body.tag #articles article.thumb:nth-of-type(8) { margin-right: 0; }
+  html body.tag #articles article.thumb:nth-of-type(9) { margin-right: 2.5%; }
+  html body.tag #articles article.thumb:nth-of-type(10) { margin-right: 0; }
+  html body.tag #articles article.thumb:nth-of-type(11) { margin-right: 2.5%; }
+  html body.tag #articles article.thumb:nth-of-type(12) { margin-right: 0; }
+  html body.tag #articles article.thumb:nth-of-type(13) { margin-right: 2.5%; }
+  html body.tag #articles article.thumb:nth-of-type(14) { margin-right: 0; }
+  html body.tag #articles article.thumb:nth-of-type(15) { margin-right: 2.5%; }
+  html body.tag #articles article.thumb:nth-of-type(16) { margin-right: 0; }
+  html body.tag #articles article.thumb:nth-of-type(17) { margin-right: 2.5%; }
+  html body.tag #articles article.thumb:nth-of-type(18) { margin-right: 0; }
+  html body.tag #articles article.thumb:nth-of-type(19) { margin-right: 2.5%; }
+  html body.tag #articles article.thumb:nth-of-type(20) { margin-right: 0; } }
 
+@media only screen and (min-width: 80em) { html body.tag #articles article.thumb { /*
+@if ($label == null) { .label { display: none; }
+} @else { .label { display: block; }
+}
+*/ margin-bottom: 0.3125em; }
+  html body.tag #articles article.thumb h1 { display: block; }
+  html body.tag #articles article.thumb figure { display: block; }
+  html body.tag #articles article.thumb figcaption { display: none; }
+  html body.tag #articles article.thumb .excerpt { display: none; }
+  html body.tag #articles article.thumb .content { display: none; }
+  html body.tag #articles article.thumb .meta .category { display: none; }
+  html body.tag #articles article.thumb .meta .date { display: none; }
+  html body.tag #articles article.thumb .meta { display: none; }
+  html body.tag #articles article.thumb figure img { width: auto; }
+  html body.tag #articles article.thumb figure figcaption { padding: 0.3125em; font-size: smaller; }
+  html body.tag #articles article.thumb figure figcaption h1, html body.tag #articles article.thumb figure figcaption h2, html body.tag #articles article.thumb figure figcaption h3, html body.tag #articles article.thumb figure figcaption h4, html body.tag #articles article.thumb figure figcaption h5, html body.tag #articles article.thumb figure figcaption h6 { margin: 0; padding: 0; }
+  html body.tag #articles article.thumb figure figcaption ul { margin: 0; }
+  html body.tag #articles article.thumb figure figcaption ul li { border-bottom: 1px solid; margin-bottom: 0.3125em; padding-left: 0; }
+  html body.tag #articles article.thumb figure figcaption ul li:before { display: none; } }
+@media only screen and (min-width: 80em) and (min-width: 30em) and (max-width: 79.999em) { html body.tag #articles article.thumb figure.people, html body.tag #articles article.thumb figure.document, html body.tag #articles article.thumb figure.company { width: 100%; max-width: 100%; float: left; }
+  html body.tag #articles article.thumb figure.people img, html body.tag #articles article.thumb figure.document img, html body.tag #articles article.thumb figure.company img { float: left; width: 2.5em; margin-right: 1.25em; }
+  html body.tag #articles article.thumb figure.people figcaption, html body.tag #articles article.thumb figure.document figcaption, html body.tag #articles article.thumb figure.company figcaption { padding: 0; } }
+@media only screen and (min-width: 80em) and (min-width: 80em) { html body.tag #articles article.thumb figure { /* Fit figcpation to image width */ }
+  html body.tag #articles article.thumb figure.left, html body.tag #articles article.thumb figure.right, html body.tag #articles article.thumb figure.person, html body.tag #articles article.thumb figure.document, html body.tag #articles article.thumb figure.company, html body.tag #articles article.thumb figure.people { display: table; }
+  html body.tag #articles article.thumb figure.left img, html body.tag #articles article.thumb figure.right img, html body.tag #articles article.thumb figure.person img, html body.tag #articles article.thumb figure.document img, html body.tag #articles article.thumb figure.company img, html body.tag #articles article.thumb figure.people img { display: block; max-width: 100%; }
+  html body.tag #articles article.thumb figure.left figcaption, html body.tag #articles article.thumb figure.right figcaption, html body.tag #articles article.thumb figure.person figcaption, html body.tag #articles article.thumb figure.document figcaption, html body.tag #articles article.thumb figure.company figcaption, html body.tag #articles article.thumb figure.people figcaption { display: table-caption; caption-side: bottom; margin-top: 0.3125em; }
+  html body.tag #articles article.thumb figure.left + p, html body.tag #articles article.thumb figure.right + p, html body.tag #articles article.thumb figure.person + p, html body.tag #articles article.thumb figure.document + p, html body.tag #articles article.thumb figure.company + p, html body.tag #articles article.thumb figure.people + p { margin-top: 1.25em; }
+  html body.tag #articles article.thumb figure.left { float: left; margin: 0.625em 2.5em 1.25em 0; }
+  html body.tag #articles article.thumb figure.right { float: right; margin: 0.625em 0 1.25em 2.5em; } }
+@media only screen and (min-width: 80em) { html body.tag #articles article.thumb figure { position: relative; }
+  html body.tag #articles article.thumb figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
+  html body.tag #articles article.thumb figure .label a { color: white; text-decoration: none; }
+  html body.tag #articles article.thumb figure .label a:hover { color: white; }
+  html body.tag #articles article.thumb .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
+  html body.tag #articles article.thumb .meta > h3 { display: none; }
+  html body.tag #articles article.thumb .meta ul { margin: 0; }
+  html body.tag #articles article.thumb .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
+  html body.tag #articles article.thumb .meta ul li:before { content: ''; }
+  html body.tag #articles article.thumb .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
+  html body.tag #articles article.thumb .meta ul li:last-of-type { margin-right: 0; }
+  html body.tag #articles article.thumb .meta .date { font-size: small; color: #332d2f; font-style: normal; }
+  html body.tag #articles article.thumb .meta .category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
+  html body.tag #articles article.thumb .meta .category a { color: #982022; text-decoration: none; }
+  html body.tag #articles article.thumb .meta .category a:hover { color: #231f20; }
+  html body.tag #articles article.thumb .meta .authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
+  html body.tag #articles article.thumb .meta .authors ul li:after { content: ','; }
+  html body.tag #articles article.thumb .meta .authors ul li:first-of-type { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; }
+  html body.tag #articles article.thumb .meta .authors ul li:first-of-type:after, html body.tag #articles article.thumb .meta .authors ul li:last-of-type:after { content: ''; }
+  html body.tag #articles article.thumb .meta .print { cursor: pointer; width: 1.25em; display: none; }
+  html body.tag #articles article.thumb .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
+  html body.tag #articles article.thumb .share-buttons ul li:before { content: ''; }
+  html body.tag #articles article.thumb .share-buttons ul li { display: inline-block; float: left; margin-right: 1.25em; }
+  html body.tag #articles article.thumb .share-buttons ul li:last-of-type { margin-right: 0; }
+  html body.tag #articles article.thumb .share-buttons ul li .box { width: 100%; max-width: 100%; float: left; width: 3.125em; }
+  html body.tag #articles article.thumb .share-buttons ul li .box .count { float: right; background: #231f20; color: white; font-size: small; padding: 0 0.3125em; }
+  html body.tag #articles article.thumb .share-buttons ul li .box .count a { color: white; text-decoration: none; }
+  html body.tag #articles article.thumb .share-buttons ul li .box .count a:hover { color: white; }
+  html body.tag #articles article.thumb .share-buttons ul li .box .share img { width: 30%; }
+  html body.tag #articles article.thumb .content a { color: #982022; text-decoration: none; }
+  html body.tag #articles article.thumb .content a:hover { color: #982022; }
+  html body.tag #articles article.thumb .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+  html body.tag #articles article.thumb #comments > h3 { display: block; }
+  html body.tag #articles article.thumb #comments form, html body.tag #articles article.thumb #comments .notice, html body.tag #articles article.thumb #comments ol, html body.tag #articles article.thumb #comments li { width: 100%; max-width: 100%; float: left; }
+  html body.tag #articles article.thumb #comments li a { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
+  html body.tag #articles article.thumb #comments li date { font-size: small; color: #332d2f; font-style: normal; }
+  html body.tag #articles article.thumb .gallery { margin: 1.25em 0; position: relative; height: 100%; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; border: 1px solid; padding: 1.875em; width: calc(100% - 3.75em); padding: 1.25em; }
+  html body.tag #articles article.thumb .gallery .before, html body.tag #articles article.thumb .gallery .after { font-size: 150%; position: absolute; top: 40%; z-index: 2; cursor: pointer; background: #f1f1f1; color: #231f20; padding: 0.3125em; opacity: .7; }
+  html body.tag #articles article.thumb .gallery .before a, html body.tag #articles article.thumb .gallery .after a { color: #231f20; text-decoration: none; }
+  html body.tag #articles article.thumb .gallery .before a:hover, html body.tag #articles article.thumb .gallery .after a:hover { color: white; }
+  html body.tag #articles article.thumb .gallery .before:before, html body.tag #articles article.thumb .gallery .after:before { content: "\2794"; }
+  html body.tag #articles article.thumb .gallery .before { -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); left: 0; }
+  html body.tag #articles article.thumb .gallery .after { right: 0; float: right; }
+  html body.tag #articles article.thumb .gallery article, html body.tag #articles article.thumb .gallery .gallery-item { display: none; }
+  html body.tag #articles article.thumb .gallery article:first-of-type, html body.tag #articles article.thumb .gallery .gallery-item:first-of-type { display: block; }
+  html body.tag #articles article.thumb .gallery span { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; font-size: small; cursor: pointer; }
+  html body.tag #articles article.thumb .gallery span a { color: #982022; text-decoration: none; }
+  html body.tag #articles article.thumb .gallery span a:hover { color: #231f20; }
+  html body.tag #articles article.thumb .gallery span.close { position: absolute; bottom: 0; position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); display: none; } }
+@media only screen and (min-width: 80em) and (max-width: 29.999em) { html body.tag #articles article.thumb { margin-bottom: 0.625em; } }
+@media only screen and (min-width: 80em) and (min-width: 30em) and (max-width: 79.999em) { html body.tag #articles article.thumb { height: 17em; } }
+@media only screen and (min-width: 80em) and (min-width: 80em) { html body.tag #articles article.thumb { height: 17em; } }
+@media only screen and (min-width: 80em) { html body.tag #articles article.thumb h1 { font-size: medium; } }
+@media only screen and (min-width: 80em) and (max-width: 29.999em) { html body.tag #articles article.thumb { width: 100%; margin-right: 0; float: left; } }
+@media only screen and (min-width: 80em) and (min-width: 30em) and (max-width: 79.999em) { html body.tag #articles article.thumb { width: 47.5%; margin-right: 2.5%; float: left; }
+  html body.tag #articles article.thumb:nth-of-type(2) { margin-right: 0; }
+  html body.tag #articles article.thumb:nth-of-type(3) { margin-right: 2.5%; }
+  html body.tag #articles article.thumb:nth-of-type(4) { margin-right: 0; }
+  html body.tag #articles article.thumb:nth-of-type(5) { margin-right: 2.5%; }
+  html body.tag #articles article.thumb:nth-of-type(6) { margin-right: 0; }
+  html body.tag #articles article.thumb:nth-of-type(7) { margin-right: 2.5%; }
+  html body.tag #articles article.thumb:nth-of-type(8) { margin-right: 0; }
+  html body.tag #articles article.thumb:nth-of-type(9) { margin-right: 2.5%; }
+  html body.tag #articles article.thumb:nth-of-type(10) { margin-right: 0; }
+  html body.tag #articles article.thumb:nth-of-type(11) { margin-right: 2.5%; }
+  html body.tag #articles article.thumb:nth-of-type(12) { margin-right: 0; }
+  html body.tag #articles article.thumb:nth-of-type(13) { margin-right: 2.5%; }
+  html body.tag #articles article.thumb:nth-of-type(14) { margin-right: 0; }
+  html body.tag #articles article.thumb:nth-of-type(15) { margin-right: 2.5%; }
+  html body.tag #articles article.thumb:nth-of-type(16) { margin-right: 0; }
+  html body.tag #articles article.thumb:nth-of-type(17) { margin-right: 2.5%; }
+  html body.tag #articles article.thumb:nth-of-type(18) { margin-right: 0; }
+  html body.tag #articles article.thumb:nth-of-type(19) { margin-right: 2.5%; }
+  html body.tag #articles article.thumb:nth-of-type(20) { margin-right: 0; } }
+@media only screen and (min-width: 80em) and (min-width: 80em) { html body.tag #articles article.thumb { width: 31.5%; margin-right: 2.5%; float: left; }
+  html body.tag #articles article.thumb:nth-of-type(2) { margin-right: 2.5%; }
+  html body.tag #articles article.thumb:nth-of-type(3) { margin-right: 0; }
+  html body.tag #articles article.thumb:nth-of-type(4) { margin-right: 2.5%; }
+  html body.tag #articles article.thumb:nth-of-type(5) { margin-right: 2.5%; }
+  html body.tag #articles article.thumb:nth-of-type(6) { margin-right: 0; }
+  html body.tag #articles article.thumb:nth-of-type(7) { margin-right: 2.5%; }
+  html body.tag #articles article.thumb:nth-of-type(8) { margin-right: 2.5%; }
+  html body.tag #articles article.thumb:nth-of-type(9) { margin-right: 0; }
+  html body.tag #articles article.thumb:nth-of-type(10) { margin-right: 2.5%; }
+  html body.tag #articles article.thumb:nth-of-type(11) { margin-right: 2.5%; }
+  html body.tag #articles article.thumb:nth-of-type(12) { margin-right: 0; }
+  html body.tag #articles article.thumb:nth-of-type(13) { margin-right: 2.5%; }
+  html body.tag #articles article.thumb:nth-of-type(14) { margin-right: 2.5%; }
+  html body.tag #articles article.thumb:nth-of-type(15) { margin-right: 0; }
+  html body.tag #articles article.thumb:nth-of-type(16) { margin-right: 2.5%; }
+  html body.tag #articles article.thumb:nth-of-type(17) { margin-right: 2.5%; }
+  html body.tag #articles article.thumb:nth-of-type(18) { margin-right: 0; }
+  html body.tag #articles article.thumb:nth-of-type(19) { margin-right: 2.5%; }
+  html body.tag #articles article.thumb:nth-of-type(20) { margin-right: 2.5%; } }
+
+@media only screen and (max-width: 29.999em) { html body.tag #articles article.thumb { width: 100%; max-width: 100%; float: left; } }
 html body.tag #banner { margin-bottom: 1.25em; }
 html body.tag #banner figure figcaption { display: none; }
 html body.archive .title { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; }
@@ -2326,7 +2494,7 @@ html body.archive article { /*
 @if ($label == null) { .label { display: none; }
 } @else { .label { display: block; }
 }
-*/ margin-bottom: 0.3125em; border-top: 0.3125em solid; padding-top: 0.3125em; }
+*/ margin-bottom: 0.3125em; }
 @media only screen and (max-width: 29.999em) { html body.archive article { width: 100%; margin-right: 0; float: left; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.archive article { width: 47.5%; margin-right: 2.5%; float: left; }
   html body.archive article:nth-of-type(2) { margin-right: 0; }
@@ -2445,15 +2613,99 @@ html body.archive article .gallery span.close { position: absolute; bottom: 0; p
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.archive article { height: 17em; } }
 @media only screen and (min-width: 80em) { html body.archive article { height: 17em; } }
 html body.archive article h1 { font-size: medium; }
+@media only screen and (min-width: 80em) { html body.archive article { border-top: 0.3125em solid; padding-top: 0.3125em; } }
+@media only screen and (max-width: 29.999em) { html body.archive article { width: 100%; max-width: 100%; float: left; width: 100%; max-width: 100%; float: left; /*
+@if ($label == null) { .label { display: none; }
+} @else { .label { display: block; }
+}
+*/ margin-bottom: 0.3125em; background: #f1f1f1; color: #231f20; }
+  html body.archive article h1 { display: block; }
+  html body.archive article figure { display: block; }
+  html body.archive article figcaption { display: none; }
+  html body.archive article .excerpt { display: none; }
+  html body.archive article .content { display: none; }
+  html body.archive article .meta .category { display: none; }
+  html body.archive article .meta .date { display: none; }
+  html body.archive article .meta { display: none; }
+  html body.archive article figure img { width: auto; }
+  html body.archive article figure figcaption { padding: 0.3125em; font-size: smaller; }
+  html body.archive article figure figcaption h1, html body.archive article figure figcaption h2, html body.archive article figure figcaption h3, html body.archive article figure figcaption h4, html body.archive article figure figcaption h5, html body.archive article figure figcaption h6 { margin: 0; padding: 0; }
+  html body.archive article figure figcaption ul { margin: 0; }
+  html body.archive article figure figcaption ul li { border-bottom: 1px solid; margin-bottom: 0.3125em; padding-left: 0; }
+  html body.archive article figure figcaption ul li:before { display: none; } }
+@media only screen and (max-width: 29.999em) and (min-width: 30em) and (max-width: 79.999em) { html body.archive article figure.people, html body.archive article figure.document, html body.archive article figure.company { width: 100%; max-width: 100%; float: left; }
+  html body.archive article figure.people img, html body.archive article figure.document img, html body.archive article figure.company img { float: left; width: 2.5em; margin-right: 1.25em; }
+  html body.archive article figure.people figcaption, html body.archive article figure.document figcaption, html body.archive article figure.company figcaption { padding: 0; } }
+@media only screen and (max-width: 29.999em) and (min-width: 80em) { html body.archive article figure { /* Fit figcpation to image width */ }
+  html body.archive article figure.left, html body.archive article figure.right, html body.archive article figure.person, html body.archive article figure.document, html body.archive article figure.company, html body.archive article figure.people { display: table; }
+  html body.archive article figure.left img, html body.archive article figure.right img, html body.archive article figure.person img, html body.archive article figure.document img, html body.archive article figure.company img, html body.archive article figure.people img { display: block; max-width: 100%; }
+  html body.archive article figure.left figcaption, html body.archive article figure.right figcaption, html body.archive article figure.person figcaption, html body.archive article figure.document figcaption, html body.archive article figure.company figcaption, html body.archive article figure.people figcaption { display: table-caption; caption-side: bottom; margin-top: 0.3125em; }
+  html body.archive article figure.left + p, html body.archive article figure.right + p, html body.archive article figure.person + p, html body.archive article figure.document + p, html body.archive article figure.company + p, html body.archive article figure.people + p { margin-top: 1.25em; }
+  html body.archive article figure.left { float: left; margin: 0.625em 2.5em 1.25em 0; }
+  html body.archive article figure.right { float: right; margin: 0.625em 0 1.25em 2.5em; } }
+@media only screen and (max-width: 29.999em) { html body.archive article figure { position: relative; }
+  html body.archive article figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
+  html body.archive article figure .label a { color: white; text-decoration: none; }
+  html body.archive article figure .label a:hover { color: white; }
+  html body.archive article .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
+  html body.archive article .meta > h3 { display: none; }
+  html body.archive article .meta ul { margin: 0; }
+  html body.archive article .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
+  html body.archive article .meta ul li:before { content: ''; }
+  html body.archive article .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
+  html body.archive article .meta ul li:last-of-type { margin-right: 0; }
+  html body.archive article .meta .date { font-size: small; color: #332d2f; font-style: normal; }
+  html body.archive article .meta .category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
+  html body.archive article .meta .category a { color: #982022; text-decoration: none; }
+  html body.archive article .meta .category a:hover { color: #231f20; }
+  html body.archive article .meta .authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
+  html body.archive article .meta .authors ul li:after { content: ','; }
+  html body.archive article .meta .authors ul li:first-of-type { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; }
+  html body.archive article .meta .authors ul li:first-of-type:after, html body.archive article .meta .authors ul li:last-of-type:after { content: ''; }
+  html body.archive article .meta .print { cursor: pointer; width: 1.25em; display: none; }
+  html body.archive article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
+  html body.archive article .share-buttons ul li:before { content: ''; }
+  html body.archive article .share-buttons ul li { display: inline-block; float: left; margin-right: 1.25em; }
+  html body.archive article .share-buttons ul li:last-of-type { margin-right: 0; }
+  html body.archive article .share-buttons ul li .box { width: 100%; max-width: 100%; float: left; width: 3.125em; }
+  html body.archive article .share-buttons ul li .box .count { float: right; background: #231f20; color: white; font-size: small; padding: 0 0.3125em; }
+  html body.archive article .share-buttons ul li .box .count a { color: white; text-decoration: none; }
+  html body.archive article .share-buttons ul li .box .count a:hover { color: white; }
+  html body.archive article .share-buttons ul li .box .share img { width: 30%; }
+  html body.archive article .content a { color: #982022; text-decoration: none; }
+  html body.archive article .content a:hover { color: #982022; }
+  html body.archive article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+  html body.archive article #comments > h3 { display: block; }
+  html body.archive article #comments form, html body.archive article #comments .notice, html body.archive article #comments ol, html body.archive article #comments li { width: 100%; max-width: 100%; float: left; }
+  html body.archive article #comments li a { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
+  html body.archive article #comments li date { font-size: small; color: #332d2f; font-style: normal; }
+  html body.archive article .gallery { margin: 1.25em 0; position: relative; height: 100%; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; border: 1px solid; padding: 1.875em; width: calc(100% - 3.75em); padding: 1.25em; }
+  html body.archive article .gallery .before, html body.archive article .gallery .after { font-size: 150%; position: absolute; top: 40%; z-index: 2; cursor: pointer; background: #f1f1f1; color: #231f20; padding: 0.3125em; opacity: .7; }
+  html body.archive article .gallery .before a, html body.archive article .gallery .after a { color: #231f20; text-decoration: none; }
+  html body.archive article .gallery .before a:hover, html body.archive article .gallery .after a:hover { color: white; }
+  html body.archive article .gallery .before:before, html body.archive article .gallery .after:before { content: "\2794"; }
+  html body.archive article .gallery .before { -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); left: 0; }
+  html body.archive article .gallery .after { right: 0; float: right; }
+  html body.archive article .gallery article, html body.archive article .gallery .gallery-item { display: none; }
+  html body.archive article .gallery article:first-of-type, html body.archive article .gallery .gallery-item:first-of-type { display: block; }
+  html body.archive article .gallery span { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; font-size: small; cursor: pointer; }
+  html body.archive article .gallery span a { color: #982022; text-decoration: none; }
+  html body.archive article .gallery span a:hover { color: #231f20; }
+  html body.archive article .gallery span.close { position: absolute; bottom: 0; position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); display: none; }
+  html body.archive article figure, html body.archive article h1, html body.archive article .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
+  html body.archive article h1, html body.archive article .excerpt { margin-right: 0; padding: 0.3125em; width: calc(48.75% - 0.625em); }
+  html body.archive article h1 { font-size: small; } }
+@media only screen and (max-width: 29.999em) and (min-width: 80em) { html body.archive article h1 { font-size: medium; } }
+
 html body.resources #tools h3, html body.resources #documents h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; margin-top: 0.625em; display: block; }
 html body.resources #tools h3 a, html body.resources #documents h3 a { color: #982022; text-decoration: none; }
 html body.resources #tools h3 a:hover, html body.resources #documents h3 a:hover { color: #231f20; }
 @media only screen and (min-width: 80em) { html body.blog main { overflow: hidden; }
   html body.blog main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
-html body.blog main #articles { width: 65.5%; margin-right: 2.5%; float: left; }
-@media only screen and (max-width: 29.999em) { html body.blog main #articles { width: 100%; max-width: 100%; float: left; } }
-html body.blog main aside { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; }
-@media only screen and (max-width: 29.999em) { html body.blog main aside { width: 100%; max-width: 100%; float: left; margin-top: 1.25em; } }
+html body.blog main #articles { width: 100%; max-width: 100%; float: left; }
+@media only screen and (min-width: 80em) { html body.blog main #articles { width: 65.5%; margin-right: 2.5%; float: left; } }
+html body.blog main aside { width: 100%; max-width: 100%; float: left; margin-top: 1.25em; }
+@media only screen and (min-width: 80em) { html body.blog main aside { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; margin-top: 0; } }
 html body.blog main aside section { margin-bottom: 0.625em; }
 html body.blog main aside section h3 { display: block; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; }
 html body.blog main aside section h3 a { color: #982022; text-decoration: none; }
@@ -2543,9 +2795,50 @@ html body.blog main aside section article h1 { font-size: small; }
 html body.blog main aside section article a { color: #231f20; text-decoration: none; }
 html body.blog main aside section article a:hover { color: #982022; }
 html body.blog main aside section article h1 { font-weight: normal; }
-html body.blog main aside section#bio img { width: 7.5em; float: left; margin: 0 1.25em 1.25em 0; }
-html body.blog main aside section#bio div { padding: 0 0.625em; line-height: 1.75; font-size: smaller; margin-left: calc(7.5em + 1.25em + 1.25em); }
-html body.blog main aside section#bio div p + p { margin-top: 1.25em; }
+@media only screen and (max-width: 79.999em) and (max-width: 29.999em) { html body.blog main aside section article { width: 100%; margin-right: 0; float: left; } }
+@media only screen and (max-width: 79.999em) and (min-width: 30em) and (max-width: 79.999em) { html body.blog main aside section article { width: 47.5%; margin-right: 2.5%; float: left; }
+  html body.blog main aside section article:nth-of-type(2) { margin-right: 0; }
+  html body.blog main aside section article:nth-of-type(3) { margin-right: 2.5%; }
+  html body.blog main aside section article:nth-of-type(4) { margin-right: 0; }
+  html body.blog main aside section article:nth-of-type(5) { margin-right: 2.5%; }
+  html body.blog main aside section article:nth-of-type(6) { margin-right: 0; }
+  html body.blog main aside section article:nth-of-type(7) { margin-right: 2.5%; }
+  html body.blog main aside section article:nth-of-type(8) { margin-right: 0; }
+  html body.blog main aside section article:nth-of-type(9) { margin-right: 2.5%; }
+  html body.blog main aside section article:nth-of-type(10) { margin-right: 0; }
+  html body.blog main aside section article:nth-of-type(11) { margin-right: 2.5%; }
+  html body.blog main aside section article:nth-of-type(12) { margin-right: 0; }
+  html body.blog main aside section article:nth-of-type(13) { margin-right: 2.5%; }
+  html body.blog main aside section article:nth-of-type(14) { margin-right: 0; }
+  html body.blog main aside section article:nth-of-type(15) { margin-right: 2.5%; }
+  html body.blog main aside section article:nth-of-type(16) { margin-right: 0; }
+  html body.blog main aside section article:nth-of-type(17) { margin-right: 2.5%; }
+  html body.blog main aside section article:nth-of-type(18) { margin-right: 0; }
+  html body.blog main aside section article:nth-of-type(19) { margin-right: 2.5%; }
+  html body.blog main aside section article:nth-of-type(20) { margin-right: 0; } }
+@media only screen and (max-width: 79.999em) and (min-width: 80em) { html body.blog main aside section article { width: 47.5%; margin-right: 2.5%; float: left; }
+  html body.blog main aside section article:nth-of-type(2) { margin-right: 0; }
+  html body.blog main aside section article:nth-of-type(3) { margin-right: 2.5%; }
+  html body.blog main aside section article:nth-of-type(4) { margin-right: 0; }
+  html body.blog main aside section article:nth-of-type(5) { margin-right: 2.5%; }
+  html body.blog main aside section article:nth-of-type(6) { margin-right: 0; }
+  html body.blog main aside section article:nth-of-type(7) { margin-right: 2.5%; }
+  html body.blog main aside section article:nth-of-type(8) { margin-right: 0; }
+  html body.blog main aside section article:nth-of-type(9) { margin-right: 2.5%; }
+  html body.blog main aside section article:nth-of-type(10) { margin-right: 0; }
+  html body.blog main aside section article:nth-of-type(11) { margin-right: 2.5%; }
+  html body.blog main aside section article:nth-of-type(12) { margin-right: 0; }
+  html body.blog main aside section article:nth-of-type(13) { margin-right: 2.5%; }
+  html body.blog main aside section article:nth-of-type(14) { margin-right: 0; }
+  html body.blog main aside section article:nth-of-type(15) { margin-right: 2.5%; }
+  html body.blog main aside section article:nth-of-type(16) { margin-right: 0; }
+  html body.blog main aside section article:nth-of-type(17) { margin-right: 2.5%; }
+  html body.blog main aside section article:nth-of-type(18) { margin-right: 0; }
+  html body.blog main aside section article:nth-of-type(19) { margin-right: 2.5%; }
+  html body.blog main aside section article:nth-of-type(20) { margin-right: 0; } }
+
+@media only screen and (max-width: 29.999em) { html body.blog main aside section article { width: 100%; max-width: 100%; float: left; } }
+@media only screen and (min-width: 80em) { html body.blog main aside section article { width: 100%; max-width: 100%; float: left; } }
 html body.blog main aside #spacer > h3 { display: none; }
 html body.blog #articles .title { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; }
 html body.blog #articles .title a { color: #982022; text-decoration: none; }
@@ -2641,13 +2934,97 @@ html body.blog #articles article .gallery span a:hover { color: #231f20; }
 html body.blog #articles article .gallery span.close { position: absolute; bottom: 0; position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); display: none; }
 html body.blog #articles article figure, html body.blog #articles article h1, html body.blog #articles article .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
 html body.blog #articles article h1, html body.blog #articles article .excerpt { margin-right: 0; padding: 0; width: calc(48.75% - 0); }
-html body.blog #articles article .excerpt { padding-top: 1.25em; padding-bottom: 1.25em; border-bottom: 1px solid #f1f1f1; }
+html body.blog #articles article .excerpt { padding-bottom: 1.25em; border-bottom: 1px solid #f1f1f1; }
+@media only screen and (min-width: 48em) { html body.blog #articles article .excerpt { padding-top: 1.25em; } }
+@media only screen and (max-width: 29.999em) { html body.blog #articles article { width: 100%; max-width: 100%; float: left; width: 100%; max-width: 100%; float: left; /*
+@if ($label == null) { .label { display: none; }
+} @else { .label { display: block; }
+}
+*/ margin-bottom: 0.3125em; background: #f1f1f1; color: #231f20; }
+  html body.blog #articles article h1 { display: block; }
+  html body.blog #articles article figure { display: block; }
+  html body.blog #articles article figcaption { display: none; }
+  html body.blog #articles article .excerpt { display: none; }
+  html body.blog #articles article .content { display: none; }
+  html body.blog #articles article .meta .category { display: none; }
+  html body.blog #articles article .meta .date { display: none; }
+  html body.blog #articles article .meta { display: none; }
+  html body.blog #articles article figure img { width: auto; }
+  html body.blog #articles article figure figcaption { padding: 0.3125em; font-size: smaller; }
+  html body.blog #articles article figure figcaption h1, html body.blog #articles article figure figcaption h2, html body.blog #articles article figure figcaption h3, html body.blog #articles article figure figcaption h4, html body.blog #articles article figure figcaption h5, html body.blog #articles article figure figcaption h6 { margin: 0; padding: 0; }
+  html body.blog #articles article figure figcaption ul { margin: 0; }
+  html body.blog #articles article figure figcaption ul li { border-bottom: 1px solid; margin-bottom: 0.3125em; padding-left: 0; }
+  html body.blog #articles article figure figcaption ul li:before { display: none; } }
+@media only screen and (max-width: 29.999em) and (min-width: 30em) and (max-width: 79.999em) { html body.blog #articles article figure.people, html body.blog #articles article figure.document, html body.blog #articles article figure.company { width: 100%; max-width: 100%; float: left; }
+  html body.blog #articles article figure.people img, html body.blog #articles article figure.document img, html body.blog #articles article figure.company img { float: left; width: 2.5em; margin-right: 1.25em; }
+  html body.blog #articles article figure.people figcaption, html body.blog #articles article figure.document figcaption, html body.blog #articles article figure.company figcaption { padding: 0; } }
+@media only screen and (max-width: 29.999em) and (min-width: 80em) { html body.blog #articles article figure { /* Fit figcpation to image width */ }
+  html body.blog #articles article figure.left, html body.blog #articles article figure.right, html body.blog #articles article figure.person, html body.blog #articles article figure.document, html body.blog #articles article figure.company, html body.blog #articles article figure.people { display: table; }
+  html body.blog #articles article figure.left img, html body.blog #articles article figure.right img, html body.blog #articles article figure.person img, html body.blog #articles article figure.document img, html body.blog #articles article figure.company img, html body.blog #articles article figure.people img { display: block; max-width: 100%; }
+  html body.blog #articles article figure.left figcaption, html body.blog #articles article figure.right figcaption, html body.blog #articles article figure.person figcaption, html body.blog #articles article figure.document figcaption, html body.blog #articles article figure.company figcaption, html body.blog #articles article figure.people figcaption { display: table-caption; caption-side: bottom; margin-top: 0.3125em; }
+  html body.blog #articles article figure.left + p, html body.blog #articles article figure.right + p, html body.blog #articles article figure.person + p, html body.blog #articles article figure.document + p, html body.blog #articles article figure.company + p, html body.blog #articles article figure.people + p { margin-top: 1.25em; }
+  html body.blog #articles article figure.left { float: left; margin: 0.625em 2.5em 1.25em 0; }
+  html body.blog #articles article figure.right { float: right; margin: 0.625em 0 1.25em 2.5em; } }
+@media only screen and (max-width: 29.999em) { html body.blog #articles article figure { position: relative; }
+  html body.blog #articles article figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
+  html body.blog #articles article figure .label a { color: white; text-decoration: none; }
+  html body.blog #articles article figure .label a:hover { color: white; }
+  html body.blog #articles article .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
+  html body.blog #articles article .meta > h3 { display: none; }
+  html body.blog #articles article .meta ul { margin: 0; }
+  html body.blog #articles article .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
+  html body.blog #articles article .meta ul li:before { content: ''; }
+  html body.blog #articles article .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
+  html body.blog #articles article .meta ul li:last-of-type { margin-right: 0; }
+  html body.blog #articles article .meta .date { font-size: small; color: #332d2f; font-style: normal; }
+  html body.blog #articles article .meta .category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
+  html body.blog #articles article .meta .category a { color: #982022; text-decoration: none; }
+  html body.blog #articles article .meta .category a:hover { color: #231f20; }
+  html body.blog #articles article .meta .authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
+  html body.blog #articles article .meta .authors ul li:after { content: ','; }
+  html body.blog #articles article .meta .authors ul li:first-of-type { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; }
+  html body.blog #articles article .meta .authors ul li:first-of-type:after, html body.blog #articles article .meta .authors ul li:last-of-type:after { content: ''; }
+  html body.blog #articles article .meta .print { cursor: pointer; width: 1.25em; display: none; }
+  html body.blog #articles article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
+  html body.blog #articles article .share-buttons ul li:before { content: ''; }
+  html body.blog #articles article .share-buttons ul li { display: inline-block; float: left; margin-right: 1.25em; }
+  html body.blog #articles article .share-buttons ul li:last-of-type { margin-right: 0; }
+  html body.blog #articles article .share-buttons ul li .box { width: 100%; max-width: 100%; float: left; width: 3.125em; }
+  html body.blog #articles article .share-buttons ul li .box .count { float: right; background: #231f20; color: white; font-size: small; padding: 0 0.3125em; }
+  html body.blog #articles article .share-buttons ul li .box .count a { color: white; text-decoration: none; }
+  html body.blog #articles article .share-buttons ul li .box .count a:hover { color: white; }
+  html body.blog #articles article .share-buttons ul li .box .share img { width: 30%; }
+  html body.blog #articles article .content a { color: #982022; text-decoration: none; }
+  html body.blog #articles article .content a:hover { color: #982022; }
+  html body.blog #articles article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+  html body.blog #articles article #comments > h3 { display: block; }
+  html body.blog #articles article #comments form, html body.blog #articles article #comments .notice, html body.blog #articles article #comments ol, html body.blog #articles article #comments li { width: 100%; max-width: 100%; float: left; }
+  html body.blog #articles article #comments li a { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
+  html body.blog #articles article #comments li date { font-size: small; color: #332d2f; font-style: normal; }
+  html body.blog #articles article .gallery { margin: 1.25em 0; position: relative; height: 100%; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; border: 1px solid; padding: 1.875em; width: calc(100% - 3.75em); padding: 1.25em; }
+  html body.blog #articles article .gallery .before, html body.blog #articles article .gallery .after { font-size: 150%; position: absolute; top: 40%; z-index: 2; cursor: pointer; background: #f1f1f1; color: #231f20; padding: 0.3125em; opacity: .7; }
+  html body.blog #articles article .gallery .before a, html body.blog #articles article .gallery .after a { color: #231f20; text-decoration: none; }
+  html body.blog #articles article .gallery .before a:hover, html body.blog #articles article .gallery .after a:hover { color: white; }
+  html body.blog #articles article .gallery .before:before, html body.blog #articles article .gallery .after:before { content: "\2794"; }
+  html body.blog #articles article .gallery .before { -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); left: 0; }
+  html body.blog #articles article .gallery .after { right: 0; float: right; }
+  html body.blog #articles article .gallery article, html body.blog #articles article .gallery .gallery-item { display: none; }
+  html body.blog #articles article .gallery article:first-of-type, html body.blog #articles article .gallery .gallery-item:first-of-type { display: block; }
+  html body.blog #articles article .gallery span { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; font-size: small; cursor: pointer; }
+  html body.blog #articles article .gallery span a { color: #982022; text-decoration: none; }
+  html body.blog #articles article .gallery span a:hover { color: #231f20; }
+  html body.blog #articles article .gallery span.close { position: absolute; bottom: 0; position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); display: none; }
+  html body.blog #articles article figure, html body.blog #articles article h1, html body.blog #articles article .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
+  html body.blog #articles article h1, html body.blog #articles article .excerpt { margin-right: 0; padding: 0.3125em; width: calc(48.75% - 0.625em); }
+  html body.blog #articles article h1 { font-size: small; } }
+@media only screen and (max-width: 29.999em) and (min-width: 80em) { html body.blog #articles article h1 { font-size: medium; } }
+
 @media only screen and (min-width: 80em) { html body.author main { overflow: hidden; }
   html body.author main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
-html body.author main #articles { width: 65.5%; margin-right: 2.5%; float: left; }
-@media only screen and (max-width: 29.999em) { html body.author main #articles { width: 100%; max-width: 100%; float: left; } }
-html body.author main aside { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; }
-@media only screen and (max-width: 29.999em) { html body.author main aside { width: 100%; max-width: 100%; float: left; margin-top: 1.25em; } }
+html body.author main #articles { width: 100%; max-width: 100%; float: left; }
+@media only screen and (min-width: 80em) { html body.author main #articles { width: 65.5%; margin-right: 2.5%; float: left; } }
+html body.author main aside { width: 100%; max-width: 100%; float: left; margin-top: 1.25em; }
+@media only screen and (min-width: 80em) { html body.author main aside { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; margin-top: 0; } }
 html body.author main aside section { margin-bottom: 0.625em; }
 html body.author main aside section h3 { display: block; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; }
 html body.author main aside section h3 a { color: #982022; text-decoration: none; }
@@ -2737,9 +3114,50 @@ html body.author main aside section article h1 { font-size: small; }
 html body.author main aside section article a { color: #231f20; text-decoration: none; }
 html body.author main aside section article a:hover { color: #982022; }
 html body.author main aside section article h1 { font-weight: normal; }
-html body.author main aside section#bio img { width: 7.5em; float: left; margin: 0 1.25em 1.25em 0; }
-html body.author main aside section#bio div { padding: 0 0.625em; line-height: 1.75; font-size: smaller; margin-left: calc(7.5em + 1.25em + 1.25em); }
-html body.author main aside section#bio div p + p { margin-top: 1.25em; }
+@media only screen and (max-width: 79.999em) and (max-width: 29.999em) { html body.author main aside section article { width: 100%; margin-right: 0; float: left; } }
+@media only screen and (max-width: 79.999em) and (min-width: 30em) and (max-width: 79.999em) { html body.author main aside section article { width: 47.5%; margin-right: 2.5%; float: left; }
+  html body.author main aside section article:nth-of-type(2) { margin-right: 0; }
+  html body.author main aside section article:nth-of-type(3) { margin-right: 2.5%; }
+  html body.author main aside section article:nth-of-type(4) { margin-right: 0; }
+  html body.author main aside section article:nth-of-type(5) { margin-right: 2.5%; }
+  html body.author main aside section article:nth-of-type(6) { margin-right: 0; }
+  html body.author main aside section article:nth-of-type(7) { margin-right: 2.5%; }
+  html body.author main aside section article:nth-of-type(8) { margin-right: 0; }
+  html body.author main aside section article:nth-of-type(9) { margin-right: 2.5%; }
+  html body.author main aside section article:nth-of-type(10) { margin-right: 0; }
+  html body.author main aside section article:nth-of-type(11) { margin-right: 2.5%; }
+  html body.author main aside section article:nth-of-type(12) { margin-right: 0; }
+  html body.author main aside section article:nth-of-type(13) { margin-right: 2.5%; }
+  html body.author main aside section article:nth-of-type(14) { margin-right: 0; }
+  html body.author main aside section article:nth-of-type(15) { margin-right: 2.5%; }
+  html body.author main aside section article:nth-of-type(16) { margin-right: 0; }
+  html body.author main aside section article:nth-of-type(17) { margin-right: 2.5%; }
+  html body.author main aside section article:nth-of-type(18) { margin-right: 0; }
+  html body.author main aside section article:nth-of-type(19) { margin-right: 2.5%; }
+  html body.author main aside section article:nth-of-type(20) { margin-right: 0; } }
+@media only screen and (max-width: 79.999em) and (min-width: 80em) { html body.author main aside section article { width: 47.5%; margin-right: 2.5%; float: left; }
+  html body.author main aside section article:nth-of-type(2) { margin-right: 0; }
+  html body.author main aside section article:nth-of-type(3) { margin-right: 2.5%; }
+  html body.author main aside section article:nth-of-type(4) { margin-right: 0; }
+  html body.author main aside section article:nth-of-type(5) { margin-right: 2.5%; }
+  html body.author main aside section article:nth-of-type(6) { margin-right: 0; }
+  html body.author main aside section article:nth-of-type(7) { margin-right: 2.5%; }
+  html body.author main aside section article:nth-of-type(8) { margin-right: 0; }
+  html body.author main aside section article:nth-of-type(9) { margin-right: 2.5%; }
+  html body.author main aside section article:nth-of-type(10) { margin-right: 0; }
+  html body.author main aside section article:nth-of-type(11) { margin-right: 2.5%; }
+  html body.author main aside section article:nth-of-type(12) { margin-right: 0; }
+  html body.author main aside section article:nth-of-type(13) { margin-right: 2.5%; }
+  html body.author main aside section article:nth-of-type(14) { margin-right: 0; }
+  html body.author main aside section article:nth-of-type(15) { margin-right: 2.5%; }
+  html body.author main aside section article:nth-of-type(16) { margin-right: 0; }
+  html body.author main aside section article:nth-of-type(17) { margin-right: 2.5%; }
+  html body.author main aside section article:nth-of-type(18) { margin-right: 0; }
+  html body.author main aside section article:nth-of-type(19) { margin-right: 2.5%; }
+  html body.author main aside section article:nth-of-type(20) { margin-right: 0; } }
+
+@media only screen and (max-width: 29.999em) { html body.author main aside section article { width: 100%; max-width: 100%; float: left; } }
+@media only screen and (min-width: 80em) { html body.author main aside section article { width: 100%; max-width: 100%; float: left; } }
 html body.author main aside #spacer > h3 { display: none; }
 html body.author #articles .title { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; }
 html body.author #articles .title a { color: #982022; text-decoration: none; }
@@ -2835,16 +3253,100 @@ html body.author #articles article .gallery span a:hover { color: #231f20; }
 html body.author #articles article .gallery span.close { position: absolute; bottom: 0; position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); display: none; }
 html body.author #articles article figure, html body.author #articles article h1, html body.author #articles article .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
 html body.author #articles article h1, html body.author #articles article .excerpt { margin-right: 0; padding: 0; width: calc(48.75% - 0); }
-html body.author #articles article .excerpt { padding-top: 1.25em; padding-bottom: 1.25em; border-bottom: 1px solid #f1f1f1; }
+html body.author #articles article .excerpt { padding-bottom: 1.25em; border-bottom: 1px solid #f1f1f1; }
+@media only screen and (min-width: 48em) { html body.author #articles article .excerpt { padding-top: 1.25em; } }
+@media only screen and (max-width: 29.999em) { html body.author #articles article { width: 100%; max-width: 100%; float: left; width: 100%; max-width: 100%; float: left; /*
+@if ($label == null) { .label { display: none; }
+} @else { .label { display: block; }
+}
+*/ margin-bottom: 0.3125em; background: #f1f1f1; color: #231f20; }
+  html body.author #articles article h1 { display: block; }
+  html body.author #articles article figure { display: block; }
+  html body.author #articles article figcaption { display: none; }
+  html body.author #articles article .excerpt { display: none; }
+  html body.author #articles article .content { display: none; }
+  html body.author #articles article .meta .category { display: none; }
+  html body.author #articles article .meta .date { display: none; }
+  html body.author #articles article .meta { display: none; }
+  html body.author #articles article figure img { width: auto; }
+  html body.author #articles article figure figcaption { padding: 0.3125em; font-size: smaller; }
+  html body.author #articles article figure figcaption h1, html body.author #articles article figure figcaption h2, html body.author #articles article figure figcaption h3, html body.author #articles article figure figcaption h4, html body.author #articles article figure figcaption h5, html body.author #articles article figure figcaption h6 { margin: 0; padding: 0; }
+  html body.author #articles article figure figcaption ul { margin: 0; }
+  html body.author #articles article figure figcaption ul li { border-bottom: 1px solid; margin-bottom: 0.3125em; padding-left: 0; }
+  html body.author #articles article figure figcaption ul li:before { display: none; } }
+@media only screen and (max-width: 29.999em) and (min-width: 30em) and (max-width: 79.999em) { html body.author #articles article figure.people, html body.author #articles article figure.document, html body.author #articles article figure.company { width: 100%; max-width: 100%; float: left; }
+  html body.author #articles article figure.people img, html body.author #articles article figure.document img, html body.author #articles article figure.company img { float: left; width: 2.5em; margin-right: 1.25em; }
+  html body.author #articles article figure.people figcaption, html body.author #articles article figure.document figcaption, html body.author #articles article figure.company figcaption { padding: 0; } }
+@media only screen and (max-width: 29.999em) and (min-width: 80em) { html body.author #articles article figure { /* Fit figcpation to image width */ }
+  html body.author #articles article figure.left, html body.author #articles article figure.right, html body.author #articles article figure.person, html body.author #articles article figure.document, html body.author #articles article figure.company, html body.author #articles article figure.people { display: table; }
+  html body.author #articles article figure.left img, html body.author #articles article figure.right img, html body.author #articles article figure.person img, html body.author #articles article figure.document img, html body.author #articles article figure.company img, html body.author #articles article figure.people img { display: block; max-width: 100%; }
+  html body.author #articles article figure.left figcaption, html body.author #articles article figure.right figcaption, html body.author #articles article figure.person figcaption, html body.author #articles article figure.document figcaption, html body.author #articles article figure.company figcaption, html body.author #articles article figure.people figcaption { display: table-caption; caption-side: bottom; margin-top: 0.3125em; }
+  html body.author #articles article figure.left + p, html body.author #articles article figure.right + p, html body.author #articles article figure.person + p, html body.author #articles article figure.document + p, html body.author #articles article figure.company + p, html body.author #articles article figure.people + p { margin-top: 1.25em; }
+  html body.author #articles article figure.left { float: left; margin: 0.625em 2.5em 1.25em 0; }
+  html body.author #articles article figure.right { float: right; margin: 0.625em 0 1.25em 2.5em; } }
+@media only screen and (max-width: 29.999em) { html body.author #articles article figure { position: relative; }
+  html body.author #articles article figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
+  html body.author #articles article figure .label a { color: white; text-decoration: none; }
+  html body.author #articles article figure .label a:hover { color: white; }
+  html body.author #articles article .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
+  html body.author #articles article .meta > h3 { display: none; }
+  html body.author #articles article .meta ul { margin: 0; }
+  html body.author #articles article .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
+  html body.author #articles article .meta ul li:before { content: ''; }
+  html body.author #articles article .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
+  html body.author #articles article .meta ul li:last-of-type { margin-right: 0; }
+  html body.author #articles article .meta .date { font-size: small; color: #332d2f; font-style: normal; }
+  html body.author #articles article .meta .category { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; }
+  html body.author #articles article .meta .category a { color: #982022; text-decoration: none; }
+  html body.author #articles article .meta .category a:hover { color: #231f20; }
+  html body.author #articles article .meta .authors { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
+  html body.author #articles article .meta .authors ul li:after { content: ','; }
+  html body.author #articles article .meta .authors ul li:first-of-type { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; }
+  html body.author #articles article .meta .authors ul li:first-of-type:after, html body.author #articles article .meta .authors ul li:last-of-type:after { content: ''; }
+  html body.author #articles article .meta .print { cursor: pointer; width: 1.25em; display: none; }
+  html body.author #articles article .share-buttons ul li { display: block; margin-right: none; float: none; padding-left: 0; }
+  html body.author #articles article .share-buttons ul li:before { content: ''; }
+  html body.author #articles article .share-buttons ul li { display: inline-block; float: left; margin-right: 1.25em; }
+  html body.author #articles article .share-buttons ul li:last-of-type { margin-right: 0; }
+  html body.author #articles article .share-buttons ul li .box { width: 100%; max-width: 100%; float: left; width: 3.125em; }
+  html body.author #articles article .share-buttons ul li .box .count { float: right; background: #231f20; color: white; font-size: small; padding: 0 0.3125em; }
+  html body.author #articles article .share-buttons ul li .box .count a { color: white; text-decoration: none; }
+  html body.author #articles article .share-buttons ul li .box .count a:hover { color: white; }
+  html body.author #articles article .share-buttons ul li .box .share img { width: 30%; }
+  html body.author #articles article .content a { color: #982022; text-decoration: none; }
+  html body.author #articles article .content a:hover { color: #982022; }
+  html body.author #articles article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+  html body.author #articles article #comments > h3 { display: block; }
+  html body.author #articles article #comments form, html body.author #articles article #comments .notice, html body.author #articles article #comments ol, html body.author #articles article #comments li { width: 100%; max-width: 100%; float: left; }
+  html body.author #articles article #comments li a { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
+  html body.author #articles article #comments li date { font-size: small; color: #332d2f; font-style: normal; }
+  html body.author #articles article .gallery { margin: 1.25em 0; position: relative; height: 100%; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; border: 1px solid; padding: 1.875em; width: calc(100% - 3.75em); padding: 1.25em; }
+  html body.author #articles article .gallery .before, html body.author #articles article .gallery .after { font-size: 150%; position: absolute; top: 40%; z-index: 2; cursor: pointer; background: #f1f1f1; color: #231f20; padding: 0.3125em; opacity: .7; }
+  html body.author #articles article .gallery .before a, html body.author #articles article .gallery .after a { color: #231f20; text-decoration: none; }
+  html body.author #articles article .gallery .before a:hover, html body.author #articles article .gallery .after a:hover { color: white; }
+  html body.author #articles article .gallery .before:before, html body.author #articles article .gallery .after:before { content: "\2794"; }
+  html body.author #articles article .gallery .before { -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); left: 0; }
+  html body.author #articles article .gallery .after { right: 0; float: right; }
+  html body.author #articles article .gallery article, html body.author #articles article .gallery .gallery-item { display: none; }
+  html body.author #articles article .gallery article:first-of-type, html body.author #articles article .gallery .gallery-item:first-of-type { display: block; }
+  html body.author #articles article .gallery span { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; font-size: small; cursor: pointer; }
+  html body.author #articles article .gallery span a { color: #982022; text-decoration: none; }
+  html body.author #articles article .gallery span a:hover { color: #231f20; }
+  html body.author #articles article .gallery span.close { position: absolute; bottom: 0; position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); display: none; }
+  html body.author #articles article figure, html body.author #articles article h1, html body.author #articles article .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
+  html body.author #articles article h1, html body.author #articles article .excerpt { margin-right: 0; padding: 0.3125em; width: calc(48.75% - 0.625em); }
+  html body.author #articles article h1 { font-size: small; } }
+@media only screen and (max-width: 29.999em) and (min-width: 80em) { html body.author #articles article h1 { font-size: medium; } }
+
 html body.author #articles article:first-of-type { background: #f1f1f1; color: #231f20; }
 html body.author #articles article:first-of-type h1 { padding: 0.3125em 0; }
 html body.author #articles h2 { padding: 1.45833em 0; }
 @media only screen and (min-width: 80em) { html body.article main, html body.about main, html body.post main { overflow: hidden; }
   html body.article main aside #spacer, html body.about main aside #spacer, html body.post main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
-html body.article main #articles, html body.about main #articles, html body.post main #articles { width: 65.5%; margin-right: 2.5%; float: left; }
-@media only screen and (max-width: 29.999em) { html body.article main #articles, html body.about main #articles, html body.post main #articles { width: 100%; max-width: 100%; float: left; } }
-html body.article main aside, html body.about main aside, html body.post main aside { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; }
-@media only screen and (max-width: 29.999em) { html body.article main aside, html body.about main aside, html body.post main aside { width: 100%; max-width: 100%; float: left; margin-top: 1.25em; } }
+html body.article main #articles, html body.about main #articles, html body.post main #articles { width: 100%; max-width: 100%; float: left; }
+@media only screen and (min-width: 80em) { html body.article main #articles, html body.about main #articles, html body.post main #articles { width: 65.5%; margin-right: 2.5%; float: left; } }
+html body.article main aside, html body.about main aside, html body.post main aside { width: 100%; max-width: 100%; float: left; margin-top: 1.25em; }
+@media only screen and (min-width: 80em) { html body.article main aside, html body.about main aside, html body.post main aside { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; margin-top: 0; } }
 html body.article main aside section, html body.about main aside section, html body.post main aside section { margin-bottom: 0.625em; }
 html body.article main aside section h3, html body.about main aside section h3, html body.post main aside section h3 { display: block; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; }
 html body.article main aside section h3 a, html body.about main aside section h3 a, html body.post main aside section h3 a { color: #982022; text-decoration: none; }
@@ -2934,9 +3436,50 @@ html body.article main aside section article h1, html body.about main aside sect
 html body.article main aside section article a, html body.about main aside section article a, html body.post main aside section article a { color: #231f20; text-decoration: none; }
 html body.article main aside section article a:hover, html body.about main aside section article a:hover, html body.post main aside section article a:hover { color: #982022; }
 html body.article main aside section article h1, html body.about main aside section article h1, html body.post main aside section article h1 { font-weight: normal; }
-html body.article main aside section#bio img, html body.about main aside section#bio img, html body.post main aside section#bio img { width: 7.5em; float: left; margin: 0 1.25em 1.25em 0; }
-html body.article main aside section#bio div, html body.about main aside section#bio div, html body.post main aside section#bio div { padding: 0 0.625em; line-height: 1.75; font-size: smaller; margin-left: calc(7.5em + 1.25em + 1.25em); }
-html body.article main aside section#bio div p + p, html body.about main aside section#bio div p + p, html body.post main aside section#bio div p + p { margin-top: 1.25em; }
+@media only screen and (max-width: 79.999em) and (max-width: 29.999em) { html body.article main aside section article, html body.about main aside section article, html body.post main aside section article { width: 100%; margin-right: 0; float: left; } }
+@media only screen and (max-width: 79.999em) and (min-width: 30em) and (max-width: 79.999em) { html body.article main aside section article, html body.about main aside section article, html body.post main aside section article { width: 47.5%; margin-right: 2.5%; float: left; }
+  html body.article main aside section article:nth-of-type(2), html body.about main aside section article:nth-of-type(2), html body.post main aside section article:nth-of-type(2) { margin-right: 0; }
+  html body.article main aside section article:nth-of-type(3), html body.about main aside section article:nth-of-type(3), html body.post main aside section article:nth-of-type(3) { margin-right: 2.5%; }
+  html body.article main aside section article:nth-of-type(4), html body.about main aside section article:nth-of-type(4), html body.post main aside section article:nth-of-type(4) { margin-right: 0; }
+  html body.article main aside section article:nth-of-type(5), html body.about main aside section article:nth-of-type(5), html body.post main aside section article:nth-of-type(5) { margin-right: 2.5%; }
+  html body.article main aside section article:nth-of-type(6), html body.about main aside section article:nth-of-type(6), html body.post main aside section article:nth-of-type(6) { margin-right: 0; }
+  html body.article main aside section article:nth-of-type(7), html body.about main aside section article:nth-of-type(7), html body.post main aside section article:nth-of-type(7) { margin-right: 2.5%; }
+  html body.article main aside section article:nth-of-type(8), html body.about main aside section article:nth-of-type(8), html body.post main aside section article:nth-of-type(8) { margin-right: 0; }
+  html body.article main aside section article:nth-of-type(9), html body.about main aside section article:nth-of-type(9), html body.post main aside section article:nth-of-type(9) { margin-right: 2.5%; }
+  html body.article main aside section article:nth-of-type(10), html body.about main aside section article:nth-of-type(10), html body.post main aside section article:nth-of-type(10) { margin-right: 0; }
+  html body.article main aside section article:nth-of-type(11), html body.about main aside section article:nth-of-type(11), html body.post main aside section article:nth-of-type(11) { margin-right: 2.5%; }
+  html body.article main aside section article:nth-of-type(12), html body.about main aside section article:nth-of-type(12), html body.post main aside section article:nth-of-type(12) { margin-right: 0; }
+  html body.article main aside section article:nth-of-type(13), html body.about main aside section article:nth-of-type(13), html body.post main aside section article:nth-of-type(13) { margin-right: 2.5%; }
+  html body.article main aside section article:nth-of-type(14), html body.about main aside section article:nth-of-type(14), html body.post main aside section article:nth-of-type(14) { margin-right: 0; }
+  html body.article main aside section article:nth-of-type(15), html body.about main aside section article:nth-of-type(15), html body.post main aside section article:nth-of-type(15) { margin-right: 2.5%; }
+  html body.article main aside section article:nth-of-type(16), html body.about main aside section article:nth-of-type(16), html body.post main aside section article:nth-of-type(16) { margin-right: 0; }
+  html body.article main aside section article:nth-of-type(17), html body.about main aside section article:nth-of-type(17), html body.post main aside section article:nth-of-type(17) { margin-right: 2.5%; }
+  html body.article main aside section article:nth-of-type(18), html body.about main aside section article:nth-of-type(18), html body.post main aside section article:nth-of-type(18) { margin-right: 0; }
+  html body.article main aside section article:nth-of-type(19), html body.about main aside section article:nth-of-type(19), html body.post main aside section article:nth-of-type(19) { margin-right: 2.5%; }
+  html body.article main aside section article:nth-of-type(20), html body.about main aside section article:nth-of-type(20), html body.post main aside section article:nth-of-type(20) { margin-right: 0; } }
+@media only screen and (max-width: 79.999em) and (min-width: 80em) { html body.article main aside section article, html body.about main aside section article, html body.post main aside section article { width: 47.5%; margin-right: 2.5%; float: left; }
+  html body.article main aside section article:nth-of-type(2), html body.about main aside section article:nth-of-type(2), html body.post main aside section article:nth-of-type(2) { margin-right: 0; }
+  html body.article main aside section article:nth-of-type(3), html body.about main aside section article:nth-of-type(3), html body.post main aside section article:nth-of-type(3) { margin-right: 2.5%; }
+  html body.article main aside section article:nth-of-type(4), html body.about main aside section article:nth-of-type(4), html body.post main aside section article:nth-of-type(4) { margin-right: 0; }
+  html body.article main aside section article:nth-of-type(5), html body.about main aside section article:nth-of-type(5), html body.post main aside section article:nth-of-type(5) { margin-right: 2.5%; }
+  html body.article main aside section article:nth-of-type(6), html body.about main aside section article:nth-of-type(6), html body.post main aside section article:nth-of-type(6) { margin-right: 0; }
+  html body.article main aside section article:nth-of-type(7), html body.about main aside section article:nth-of-type(7), html body.post main aside section article:nth-of-type(7) { margin-right: 2.5%; }
+  html body.article main aside section article:nth-of-type(8), html body.about main aside section article:nth-of-type(8), html body.post main aside section article:nth-of-type(8) { margin-right: 0; }
+  html body.article main aside section article:nth-of-type(9), html body.about main aside section article:nth-of-type(9), html body.post main aside section article:nth-of-type(9) { margin-right: 2.5%; }
+  html body.article main aside section article:nth-of-type(10), html body.about main aside section article:nth-of-type(10), html body.post main aside section article:nth-of-type(10) { margin-right: 0; }
+  html body.article main aside section article:nth-of-type(11), html body.about main aside section article:nth-of-type(11), html body.post main aside section article:nth-of-type(11) { margin-right: 2.5%; }
+  html body.article main aside section article:nth-of-type(12), html body.about main aside section article:nth-of-type(12), html body.post main aside section article:nth-of-type(12) { margin-right: 0; }
+  html body.article main aside section article:nth-of-type(13), html body.about main aside section article:nth-of-type(13), html body.post main aside section article:nth-of-type(13) { margin-right: 2.5%; }
+  html body.article main aside section article:nth-of-type(14), html body.about main aside section article:nth-of-type(14), html body.post main aside section article:nth-of-type(14) { margin-right: 0; }
+  html body.article main aside section article:nth-of-type(15), html body.about main aside section article:nth-of-type(15), html body.post main aside section article:nth-of-type(15) { margin-right: 2.5%; }
+  html body.article main aside section article:nth-of-type(16), html body.about main aside section article:nth-of-type(16), html body.post main aside section article:nth-of-type(16) { margin-right: 0; }
+  html body.article main aside section article:nth-of-type(17), html body.about main aside section article:nth-of-type(17), html body.post main aside section article:nth-of-type(17) { margin-right: 2.5%; }
+  html body.article main aside section article:nth-of-type(18), html body.about main aside section article:nth-of-type(18), html body.post main aside section article:nth-of-type(18) { margin-right: 0; }
+  html body.article main aside section article:nth-of-type(19), html body.about main aside section article:nth-of-type(19), html body.post main aside section article:nth-of-type(19) { margin-right: 2.5%; }
+  html body.article main aside section article:nth-of-type(20), html body.about main aside section article:nth-of-type(20), html body.post main aside section article:nth-of-type(20) { margin-right: 0; } }
+
+@media only screen and (max-width: 29.999em) { html body.article main aside section article, html body.about main aside section article, html body.post main aside section article { width: 100%; max-width: 100%; float: left; } }
+@media only screen and (min-width: 80em) { html body.article main aside section article, html body.about main aside section article, html body.post main aside section article { width: 100%; max-width: 100%; float: left; } }
 html body.article main aside #spacer > h3, html body.about main aside #spacer > h3, html body.post main aside #spacer > h3 { display: none; }
 html body.article #article, html body.about #article, html body.post #article { width: 100%; max-width: 100%; float: left; width: 65.5%; margin-right: 2.5%; float: left; /*
 #most-read, #most-recent { h3 { @include font(section-title); color: $color; padding-top: $pad; margin-top: $pad; border-top: $border; }  @include responsive-grid(2); @include article-style(title-right);  article { .excerpt { display: none; } }
