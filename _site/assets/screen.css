@@ -228,6 +228,8 @@ figure a { line-height: 0; }
 */
 /* Jobs
 */
+/* Videos
+*/
 /* Galleries
 */
 /* Resources archive
@@ -309,6 +311,7 @@ html body { background: white; color: #231f20; font-size: 100%; line-height: 1.2
 */ /* Jobs, Announcements
 */ /* Galleries
 */ /* Daily 
+*/ /* Videos
 */ /* Highlighting active menu items
 */ /* Highlighting active menu items in the sidebar, About pages
 */ }
@@ -3852,6 +3855,9 @@ html body.daily #articles article.thumb h1 + ul, html body.daily #articles artic
 html body.daily #articles article.thumb li ul, html body.daily #articles article.thumb li ol { margin-top: 0; }
 html body.daily #articles article.thumb h1 { padding-bottom: 0; }
 html body.daily #articles article.thumb .excerpt { display: block; }
+html body.videos article { position: relative; }
+html body.videos article span.icon { position: absolute; height: 0; top: 38%; left: 38%; opacity: .7; }
+@media only screen and (min-width: 80em) { html body.videos article span.icon { top: 18%; left: 32%; } }
 html body.frontpage #header nav ul li.frontpage a { background: #982022; color: white; }
 html body.frontpage #header nav ul li.frontpage a a { color: white; text-decoration: none; }
 html body.frontpage #header nav ul li.frontpage a a:hover { color: white; }

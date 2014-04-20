@@ -21,7 +21,7 @@
       {% include responsive-images.html type='from post' holder=include.holder label=include.label %}
     {% endif %}
   
-    {% if include.icon != '' %}
+    {% if include.icon %}
       <span class="icon">
         <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">
           <img src="{{ site.url }}/assets/images/{{ include.icon }}.png" alt="icon {{ include.icon }}">

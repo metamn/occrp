@@ -175,7 +175,11 @@ html {
       @include daily;
     }
     
-    
+    /* Videos
+    */
+    &.videos {
+      @include page-videos;
+    }
     
     
     

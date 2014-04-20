@@ -75,7 +75,13 @@
 
 
 
-
+/* Videos
+*/
+@mixin page-videos {
+  article {
+    @include icon-over-image;
+  }
+}
 
 
 
