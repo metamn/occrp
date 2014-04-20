@@ -1,3 +1,7 @@
+/* Display a figure inline
+*/
+/* Figures are floated around the text, either left or right - becuase of 'display:table' it's not working well on mobiles
+*/
 /* The search button with text in the tag bar
 */
 /* The social icons in the tag bar
