@@ -280,7 +280,8 @@ html.full-screen-gallery body .gallery .before, html.full-screen-gallery body .g
 html.full-screen-gallery body .gallery .before a, html.full-screen-gallery body .gallery .after a { color: #231f20; text-decoration: none; }
 html.full-screen-gallery body .gallery .before a:hover, html.full-screen-gallery body .gallery .after a:hover { color: white; }
 html.full-screen-gallery body .gallery .before:before, html.full-screen-gallery body .gallery .after:before { content: "\2794"; }
-html.full-screen-gallery body .gallery .before { -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); left: 0; }
+html.full-screen-gallery body .gallery .before { -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); left: 0; /* Aliging the arrow aftre the rotate
+*/ top: 41%; padding-top: .25em; padding-bottom: .4em; }
 html.full-screen-gallery body .gallery .after { right: 0; float: right; }
 html.full-screen-gallery body .gallery article, html.full-screen-gallery body .gallery .gallery-item { display: none; }
 html.full-screen-gallery body .gallery article:first-of-type, html.full-screen-gallery body .gallery .gallery-item:first-of-type { display: block; }
@@ -884,7 +885,8 @@ html body.frontpage .container main #products article .content figure figcaption
   html body.frontpage .container main #products .before a, html body.frontpage .container main #products .after a { color: #231f20; text-decoration: none; }
   html body.frontpage .container main #products .before a:hover, html body.frontpage .container main #products .after a:hover { color: white; }
   html body.frontpage .container main #products .before:before, html body.frontpage .container main #products .after:before { content: "\2794"; }
-  html body.frontpage .container main #products .before { -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); left: 0; }
+  html body.frontpage .container main #products .before { -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); left: 0; /* Aliging the arrow aftre the rotate
+*/ top: 41%; padding-top: .25em; padding-bottom: .4em; }
   html body.frontpage .container main #products .after { right: 0; float: right; }
   html body.frontpage .container main #products article, html body.frontpage .container main #products .gallery-item { display: none; }
   html body.frontpage .container main #products article:first-of-type, html body.frontpage .container main #products .gallery-item:first-of-type { display: block; } }
@@ -985,7 +987,8 @@ html body.frontpage .container main #projects form input { position: relative; l
   html body.frontpage .container main #projects .before a, html body.frontpage .container main #projects .after a { color: #231f20; text-decoration: none; }
   html body.frontpage .container main #projects .before a:hover, html body.frontpage .container main #projects .after a:hover { color: white; }
   html body.frontpage .container main #projects .before:before, html body.frontpage .container main #projects .after:before { content: "\2794"; }
-  html body.frontpage .container main #projects .before { -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); left: 0; }
+  html body.frontpage .container main #projects .before { -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); left: 0; /* Aliging the arrow aftre the rotate
+*/ top: 41%; padding-top: .25em; padding-bottom: .4em; }
   html body.frontpage .container main #projects .after { right: 0; float: right; }
   html body.frontpage .container main #projects article, html body.frontpage .container main #projects .gallery-item { display: none; }
   html body.frontpage .container main #projects article:first-of-type, html body.frontpage .container main #projects .gallery-item:first-of-type { display: block; } }
@@ -1227,7 +1230,8 @@ html body.frontpage .container main #videos article h1 { font-size: medium; }
   html body.frontpage .container main #videos .before a, html body.frontpage .container main #videos .after a { color: #231f20; text-decoration: none; }
   html body.frontpage .container main #videos .before a:hover, html body.frontpage .container main #videos .after a:hover { color: white; }
   html body.frontpage .container main #videos .before:before, html body.frontpage .container main #videos .after:before { content: "\2794"; }
-  html body.frontpage .container main #videos .before { -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); left: 0; }
+  html body.frontpage .container main #videos .before { -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); left: 0; /* Aliging the arrow aftre the rotate
+*/ top: 41%; padding-top: .25em; padding-bottom: .4em; }
   html body.frontpage .container main #videos .after { right: 0; float: right; }
   html body.frontpage .container main #videos article, html body.frontpage .container main #videos .gallery-item { display: none; }
   html body.frontpage .container main #videos article:first-of-type, html body.frontpage .container main #videos .gallery-item:first-of-type { display: block; } }
@@ -3080,7 +3084,8 @@ html body.article #article article.single .gallery .before, html body.article #a
 html body.article #article article.single .gallery .before a, html body.article #article article.single .gallery .after a, html body.about #article article.single .gallery .before a, html body.about #article article.single .gallery .after a, html body.post #article article.single .gallery .before a, html body.post #article article.single .gallery .after a { color: #231f20; text-decoration: none; }
 html body.article #article article.single .gallery .before a:hover, html body.article #article article.single .gallery .after a:hover, html body.about #article article.single .gallery .before a:hover, html body.about #article article.single .gallery .after a:hover, html body.post #article article.single .gallery .before a:hover, html body.post #article article.single .gallery .after a:hover { color: white; }
 html body.article #article article.single .gallery .before:before, html body.article #article article.single .gallery .after:before, html body.about #article article.single .gallery .before:before, html body.about #article article.single .gallery .after:before, html body.post #article article.single .gallery .before:before, html body.post #article article.single .gallery .after:before { content: "\2794"; }
-html body.article #article article.single .gallery .before, html body.about #article article.single .gallery .before, html body.post #article article.single .gallery .before { -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); left: 0; }
+html body.article #article article.single .gallery .before, html body.about #article article.single .gallery .before, html body.post #article article.single .gallery .before { -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); left: 0; /* Aliging the arrow aftre the rotate
+*/ top: 41%; padding-top: .25em; padding-bottom: .4em; }
 html body.article #article article.single .gallery .after, html body.about #article article.single .gallery .after, html body.post #article article.single .gallery .after { right: 0; float: right; }
 html body.article #article article.single .gallery article, html body.article #article article.single .gallery .gallery-item, html body.about #article article.single .gallery article, html body.about #article article.single .gallery .gallery-item, html body.post #article article.single .gallery article, html body.post #article article.single .gallery .gallery-item { display: none; }
 html body.article #article article.single .gallery article:first-of-type, html body.article #article article.single .gallery .gallery-item:first-of-type, html body.about #article article.single .gallery article:first-of-type, html body.about #article article.single .gallery .gallery-item:first-of-type, html body.post #article article.single .gallery article:first-of-type, html body.post #article article.single .gallery .gallery-item:first-of-type { display: block; }

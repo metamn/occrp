@@ -25,6 +25,11 @@
   .before {
     @include transform(rotate(180deg));
     left: 0;
+    /* Aliging the arrow aftre the rotate
+    */
+    top: 41%;
+    padding-top: .25em;
+    padding-bottom: .4em;
   }
   
   .after {
