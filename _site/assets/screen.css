@@ -184,6 +184,10 @@ figure a { line-height: 0; }
 */
 /* The social icons in the tag bar
 */
+/* Social icons in the footer
+*/
+/* Sponsors, contact in the footer
+*/
 /* Make icons taller than the default size in the header - this is kinda manual pixel pushing
 */
 /* The language selector
@@ -488,17 +492,30 @@ html body .container #header.mobile-menu-active .close-icon:after { content: "\2
   html body .container #header.mobile-menu-active .secondary ul { float: right; }
   html body .container #header.mobile-menu-active .main, html body .container #header.mobile-menu-active .secondary { margin-top: 2.5em; border-bottom: 1px solid #f1f1f1; }
   html body .container #header.mobile-menu-active .mobile-menubar, html body .container #header.mobile-menu-active .close-icon { display: none; } }
-html body .container #footer { margin: 3.75em 0 0; padding: 1.25em 0; border-top: 0.3125em solid; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; }
-html body .container #footer ul li { display: inline-block; float: left; margin-right: 1.25em; }
-html body .container #footer ul li:last-of-type { margin-right: 0; }
-html body .container #footer ul li#usaid { position: relative; top: -0.625em; }
-html body .container #footer ul li#social-icons { float: right; position: relative; top: -2.8125em; }
-html body .container #footer ul li#social-icons p { font-weight: bold; margin-bottom: 1.25em; text-align: right; background: #231f20; color: white; }
-html body .container #footer ul li#social-icons p a { color: white; text-decoration: none; }
-html body .container #footer ul li#social-icons p a:hover { color: white; }
-html body .container #footer ul li#social-icons ul li img:last-of-type { display: none; position: relative; top: 0; }
-html body .container #footer ul li#social-icons ul li:hover img:first-of-type { display: none; }
-html body .container #footer ul li#social-icons ul li:hover img:last-of-type { display: block; }
+html body .container #footer { margin: 3.75em 0 0; padding: 1.25em 0; border-top: 0.3125em solid; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; /*
+ul { @include list-inline($pad);  li { &#usaid { position: relative; top: -$pad/2; }  &#social-icons { @include social-icons-footer; } }
+}
+*/ }
+@media only screen and (max-width: 79.999em) { html body .container #footer nav { width: 47.5%; margin-right: 2.5%; float: left; }
+  html body .container #footer nav:nth-of-type(2) { margin-right: 0; } }
+html body .container #footer nav#occrp ul li { margin-bottom: 0.625em; }
+html body .container #footer nav#occrp ul li#made-by ul li { display: inline-block; float: left; margin-right: 0.625em; }
+html body .container #footer nav#occrp ul li#made-by ul li:last-of-type { margin-right: 0; }
+@media only screen and (min-width: 80em) { html body .container #footer nav#occrp ul li#made-by ul li#usaid { position: relative; top: -0.625em; } }
+@media only screen and (min-width: 80em) { html body .container #footer nav#occrp ul li { display: inline-block; float: left; margin-right: 1.25em; }
+  html body .container #footer nav#occrp ul li:last-of-type { margin-right: 0; } }
+html body .container #footer nav#social-icons { margin-right: 0; }
+html body .container #footer nav#social-icons ul li.social-icons { float: right; position: relative; top: -2.8125em; }
+@media only screen and (min-width: 80em) { html body .container #footer nav#social-icons ul li.social-icons { top: -8em; } }
+html body .container #footer nav#social-icons ul li.social-icons p { font-weight: bold; margin-bottom: 1.25em; text-align: right; background: #231f20; color: white; }
+html body .container #footer nav#social-icons ul li.social-icons p a { color: white; text-decoration: none; }
+html body .container #footer nav#social-icons ul li.social-icons p a:hover { color: white; }
+html body .container #footer nav#social-icons ul li.social-icons ul li { display: inline-block; float: left; margin-right: 0.15625em; }
+html body .container #footer nav#social-icons ul li.social-icons ul li:last-of-type { margin-right: 0; }
+html body .container #footer nav#social-icons ul li.social-icons ul li img:last-of-type { display: none; position: relative; top: 0; }
+html body .container #footer nav#social-icons ul li.social-icons ul li:hover img:first-of-type { display: none; }
+html body .container #footer nav#social-icons ul li.social-icons ul li:hover img:last-of-type { display: block; }
+html body .container #footer nav#social-icons ul li.social-icons ul li img { width: 70%; }
 html body.sticky .container #header { margin-bottom: 0.625em; }
 html body.sticky .container #header .logo { height: 2.03125em; }
 html body.sticky .container #header .logo h1, html body.sticky .container #header .logo figure figcaption { display: none; }

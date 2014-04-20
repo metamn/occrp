@@ -138,6 +138,73 @@
 }
 
 
+/* Social icons in the footer
+*/
+@mixin social-icons-footer {
+  ul {
+    li {
+      &.social-icons {
+        float: right;
+        position: relative;
+        
+        top: -$pad*2 - $pad/4;
+        @include small-screen-and-up {
+          top: -8em;
+        }
+        
+        p {
+          font-weight: bold;
+          margin-bottom: $pad;
+          text-align: right;
+          
+          @include color(invert);
+        }
+        
+        ul {
+          @include list-inline($pad/8);
+          
+          li {
+            @include image-change-on-hover; 
+            
+            img {
+              width: 70%;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+}
+
+
+
+/* Sponsors, contact in the footer
+*/
+@mixin sponsors-footer {
+  ul {
+    li {
+      margin-bottom: $margin;
+      
+      &#made-by {
+        ul {
+          @include list-inline;
+          
+          @include small-screen-and-up {
+            li#usaid {
+              position: relative;
+              top: -$pad/2;
+            }
+          }
+        }
+      }
+    }
+    
+    @include small-screen-and-up {
+      @include list-inline($pad);
+    }
+  }
+}
 
 
 

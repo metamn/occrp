@@ -437,6 +437,22 @@
   border-top: $border;
   @include font(navigation);
   
+  nav {
+    @include below-small-screen {
+      @include grid(2, 2);
+    }
+    
+    &#occrp {
+      @include sponsors-footer;
+    }
+    
+    &#social-icons {
+      margin-right: 0;
+      @include social-icons-footer;
+    }
+  }
+  
+  /*
   ul {
     @include list-inline($pad);
     
@@ -447,26 +463,11 @@
       }
       
       &#social-icons {
-        float: right;
-        position: relative;
-        top: -$pad*2 - $pad/4;
-        
-        p {
-          font-weight: bold;
-          margin-bottom: $pad;
-          text-align: right;
-          
-          @include color(invert);
-        }
-        
-        ul {
-          li {
-            @include image-change-on-hover; 
-          }
-        }
+        @include social-icons-footer;
       }
     }
   }
+  */
 }
 
 
