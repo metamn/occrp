@@ -21,6 +21,14 @@
       {% include responsive-images.html type='from post' holder=include.holder label=include.label %}
     {% endif %}
   
+    {% if include.icon != '' %}
+      <span class="icon">
+        <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">
+          <img src="{{ site.url }}/assets/images/{{ include.icon }}.png" alt="icon {{ include.icon }}">
+        </a>
+      </span>
+    {% endif %} 
+  
     {% if include.type == 'slider' %}
       {% assign items = 7 %}
       {% include navigation.html klass = 'mobile' %}

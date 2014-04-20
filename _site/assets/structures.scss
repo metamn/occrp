@@ -215,6 +215,7 @@
   article {
     @include responsive-grid(6);
     @include article-style(projects);
+    @include icon-over-image;
   }
   
   @include mobile {

@@ -1,4 +1,22 @@
+/* Icon over an image
+*/
 
+@mixin icon-over-image {
+  position: relative;
+  
+  span.icon {
+    position: absolute;
+    height: 0;
+    top: 38%;
+    left: 38%;
+    opacity: .7;
+    
+    @include small-screen-and-up {
+      top: 18%;
+      left: 32%;
+    }
+  }
+}
 
 
 
