@@ -38,6 +38,14 @@
         @include floated-figure;
       }
       
+      &.people, &.document {
+        @include mobile-and-up {
+          img {
+            max-width: 75%;
+          }
+        }
+      }
+      
       
       figcaption {
         ul {
@@ -56,6 +64,34 @@
         }
       }
     }
+    
+    #comments {
+      @include block;
+      @include show-title;
+      
+      form, .notice, ul {
+        @include block;
+      }
+      
+      ul {
+        @include ol-ul('');
+        li {
+          a {
+            @include font(author);
+          }
+          
+          date {
+            @include font(date);
+          }
+        }
+      }
+    }
+    
+    
+    .gallery {
+      @include image-gallery;
+    }
+  
   }
 }
 
@@ -380,31 +416,6 @@
       }
     }
   }
-  
-  
-  #comments {
-    @include show-title;
-    
-    form, .notice, ol, li {
-      @include block;
-    }
-    
-    li {
-      a {
-        @include font(author);
-      }
-      
-      date {
-        @include font(date);
-      }
-    }
-  }
-  
-  
-  .gallery {
-    @include image-gallery;
-  }
-  
 }
 
 

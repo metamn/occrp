@@ -8,6 +8,15 @@
   @include simple-slider;
   @include image-gallery-border;
   
+  text-align: center; 
+  overflow: hidden;
+  
+  figure {
+    figcaption {
+      display: none;
+    }
+  }
+  
   span {
     @include font(navigation);
     @include color(highlight);
@@ -15,9 +24,12 @@
     cursor: pointer;
     
     &.close {
-      position: absolute;
-      bottom: 0;
       @include center(horizontal);
+      padding: $pad/8;
+      
+      position: absolute;
+      bottom: $margin;
+      
       display: none;
     }
   }
