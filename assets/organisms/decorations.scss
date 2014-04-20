@@ -1,3 +1,30 @@
+@mixin tag-cloud {
+  @include font(navigation);
+  @include tags;
+  
+  ul.tag-list {
+    @include block;
+    @include padding;
+    @include list-normal;
+    @include list-inline($pad);
+    
+    li {
+      text-align: left;
+      margin-bottom: $pad/4;
+      
+      @include mobile {
+        margin-bottom: $pad;
+      }
+      
+      @include small-screen-and-up {
+        margin-bottom: $pad;
+      }
+    }
+  }
+}
+
+
+
 /* Display a figure inline
 */
 @mixin inline-figure {

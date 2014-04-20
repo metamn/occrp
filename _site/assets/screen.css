@@ -1261,9 +1261,14 @@ html body.frontpage .container main #tags-and-gallery nav ul.social li img { hei
 html body.frontpage .container main #tags-and-gallery nav ul.social li a img { height: 13px; }
 html body.frontpage .container main #tags-and-gallery nav ul.social li a img:last-of-type { display: none; }
 html body.frontpage .container main #tags-and-gallery nav ul.tag-list { width: 100%; max-width: 100%; float: left; padding: 1.25em; width: calc(100% - 2.5em); }
+html body.frontpage .container main #tags-and-gallery nav ul.tag-list li { display: block; margin-right: none; float: none; padding-left: 0; }
+html body.frontpage .container main #tags-and-gallery nav ul.tag-list li:before { content: ''; }
 html body.frontpage .container main #tags-and-gallery nav ul.tag-list li { display: inline-block; float: left; margin-right: 1.25em; }
 html body.frontpage .container main #tags-and-gallery nav ul.tag-list li:last-of-type { margin-right: 0; }
-html body.frontpage .container main #tags-and-gallery aside { height: 7em; overflow: hidden; }
+html body.frontpage .container main #tags-and-gallery nav ul.tag-list li { text-align: left; margin-bottom: 0.3125em; }
+@media only screen and (max-width: 29.999em) { html body.frontpage .container main #tags-and-gallery nav ul.tag-list li { margin-bottom: 1.25em; } }
+@media only screen and (min-width: 80em) { html body.frontpage .container main #tags-and-gallery nav ul.tag-list li { margin-bottom: 1.25em; } }
+html body.frontpage .container main #tags-and-gallery nav > h3, html body.frontpage .container main #tags-and-gallery aside > h3 { display: block; }
 @media only screen and (max-width: 29.999em) { html body.frontpage .container main #tags-and-gallery nav, html body.frontpage .container main #tags-and-gallery aside { width: 100%; margin-right: 0; float: left; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.frontpage .container main #tags-and-gallery nav, html body.frontpage .container main #tags-and-gallery aside { width: 47.5%; margin-right: 2.5%; float: left; }
   html body.frontpage .container main #tags-and-gallery nav:nth-of-type(2), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(2) { margin-right: 0; }
@@ -1275,17 +1280,16 @@ html body.frontpage .container main #tags-and-gallery aside { height: 7em; overf
   html body.frontpage .container main #tags-and-gallery nav:nth-of-type(8), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(8) { margin-right: 0; }
   html body.frontpage .container main #tags-and-gallery nav:nth-of-type(9), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(9) { margin-right: 2.5%; }
   html body.frontpage .container main #tags-and-gallery nav:nth-of-type(10), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(10) { margin-right: 0; } }
-@media only screen and (min-width: 80em) { html body.frontpage .container main #tags-and-gallery nav, html body.frontpage .container main #tags-and-gallery aside { width: 47.5%; margin-right: 2.5%; float: left; }
-  html body.frontpage .container main #tags-and-gallery nav:nth-of-type(2), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(2) { margin-right: 0; }
-  html body.frontpage .container main #tags-and-gallery nav:nth-of-type(3), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(3) { margin-right: 2.5%; }
-  html body.frontpage .container main #tags-and-gallery nav:nth-of-type(4), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(4) { margin-right: 0; }
+@media only screen and (min-width: 80em) { html body.frontpage .container main #tags-and-gallery nav, html body.frontpage .container main #tags-and-gallery aside { width: 31.5%; margin-right: 2.5%; float: left; }
+  html body.frontpage .container main #tags-and-gallery nav:nth-of-type(2), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(2) { margin-right: 2.5%; }
+  html body.frontpage .container main #tags-and-gallery nav:nth-of-type(3), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(3) { margin-right: 0; }
+  html body.frontpage .container main #tags-and-gallery nav:nth-of-type(4), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(4) { margin-right: 2.5%; }
   html body.frontpage .container main #tags-and-gallery nav:nth-of-type(5), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(5) { margin-right: 2.5%; }
   html body.frontpage .container main #tags-and-gallery nav:nth-of-type(6), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(6) { margin-right: 0; }
   html body.frontpage .container main #tags-and-gallery nav:nth-of-type(7), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(7) { margin-right: 2.5%; }
-  html body.frontpage .container main #tags-and-gallery nav:nth-of-type(8), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(8) { margin-right: 0; }
-  html body.frontpage .container main #tags-and-gallery nav:nth-of-type(9), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(9) { margin-right: 2.5%; }
-  html body.frontpage .container main #tags-and-gallery nav:nth-of-type(10), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(10) { margin-right: 0; } }
-html body.frontpage .container main #tags-and-gallery nav > h3, html body.frontpage .container main #tags-and-gallery aside > h3 { display: block; }
+  html body.frontpage .container main #tags-and-gallery nav:nth-of-type(8), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(8) { margin-right: 2.5%; }
+  html body.frontpage .container main #tags-and-gallery nav:nth-of-type(9), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(9) { margin-right: 0; }
+  html body.frontpage .container main #tags-and-gallery nav:nth-of-type(10), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(10) { margin-right: 2.5%; } }
 @media only screen and (min-width: 80em) { html body.category main { overflow: hidden; }
   html body.category main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
 html body.category main #articles { width: 100%; max-width: 100%; float: left; }

@@ -187,26 +187,14 @@
     @include font(section-title);
     display: none;
   }
-  
+
   nav {
-    @include font(navigation);
-    @include tags;
-    
-    ul.tag-list {
-      @include block;
-      @include padding;
-      @include list-inline($pad);
-    }
-  }
-  
-  aside {
-    height: 7em;
-    overflow: hidden;
+    @include tag-cloud;
   }
   
   nav, aside {
-    @include responsive-grid(2);
     @include show-title;
+    @include responsive-grid(3);
   }
 }
 
