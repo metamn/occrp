@@ -1,13 +1,13 @@
 /*
-Syntax error: Undefined mixin 'default-settings'.
-        on line 3 of /home/cs/work/occrp/assets/pages.scss, in `default-settings'
-        from line 3 of /home/cs/work/occrp/assets/pages.scss
+Syntax error: Undefined mixin 'full-screen-gallery'.
+        on line 6 of /home/cs/work/occrp/assets/pages.scss, in `full-screen-gallery'
+        from line 6 of /home/cs/work/occrp/assets/pages.scss
 
 1: /home/cs/work/occrp/assets/pages.scss
 
 Backtrace:
-/home/cs/work/occrp/assets/pages.scss:3:in `default-settings'
-/home/cs/work/occrp/assets/pages.scss:3
+/home/cs/work/occrp/assets/pages.scss:6:in `full-screen-gallery'
+/home/cs/work/occrp/assets/pages.scss:6
 /var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:320:in `block in visit_mixin'
 /var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/stack.rb:98:in `block in with_mixin'
 /var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/stack.rb:115:in `with_frame'
@@ -86,4 +86,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'default-settings'.\A         on line 3 of /home/cs/work/occrp/assets/pages.scss, in `default-settings'\A         from line 3 of /home/cs/work/occrp/assets/pages.scss\A \A 1: /home/cs/work/occrp/assets/pages.scss"; }
+  content: "Syntax error: Undefined mixin 'full-screen-gallery'.\A         on line 6 of /home/cs/work/occrp/assets/pages.scss, in `full-screen-gallery'\A         from line 6 of /home/cs/work/occrp/assets/pages.scss\A \A 1: /home/cs/work/occrp/assets/pages.scss"; }

@@ -1,4 +1,16 @@
-/* Styling article thumbs - controls how an article thumb is displayed
+/* Display a figure inline
 */
-/* An article - displays mostly article thumbs - this mixin controls what is diplayed in an article
+/* Figures are floated around the text, either left or right - becuase of 'display:table' it's not working well on mobiles
+*/
+/* The search button with text in the tag bar
+*/
+/* The social icons in the tag bar
+*/
+/* Social icons in the footer
+*/
+/* Sponsors, contact in the footer
+*/
+/* Make icons taller than the default size in the header - this is kinda manual pixel pushing
+*/
+/* The language selector
 */

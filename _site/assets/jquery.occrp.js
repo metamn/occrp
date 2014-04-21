@@ -1,7 +1,62 @@
 
 $(document).ready(function() {
 
-  // Slider
+  
+  // Simple slider
+  // -------------------------------------------------------------------------
+  // - a list of articles, figures is transformed into a slider
+  // - navigation arrows are inserted into the container
+  simpleSlider($('.frontpage #products'));
+  simpleSlider($('.frontpage #projects'));
+  simpleSlider($('.frontpage #videos'));
+  $('.gallery').each(function() {
+    simpleSlider($(this), '.gallery-item');
+  })
+  
+  function simpleSlider(container, item) {
+    item = item || 'article';
+    
+    container.prepend("<span class='before'></span>");
+    container.append("<span class='after'></span>");
+    
+    container.find('span').click(function() {
+      var index = container.find(item + ':visible').index();
+      (item == 'article') ? index -= 2 : index -= 1;
+      var count = container.find(item).length;
+      
+      container.find(item).hide();
+      
+      ($(this).hasClass('before')) ? index -=1 : index += 1;
+      (index == count) ? index = 0 : index = index; 
+      container.find(item).eq(index).show();
+    });
+  }
+  
+  
+  // Full screen gallery
+  // -------------------------------------------------------------------------
+  // - the .gallery content is inserted after the .container
+  // - it's original place is marked, and on close it is copied back again
+  // - .clone() made full screen navigation impossible
+  $('.gallery').each(function() {
+    var gallery = $(this);
+    gallery.find('.show').click(function() {
+      gallery.after("<span class='gallery-original-location'></span>");
+      gallery.insertAfter($('.container'));
+      $('html').addClass('full-screen-gallery');
+    });
+  });
+  
+   $('.gallery .close').click(function() {
+    var gallery = $(this).parent();
+    gallery.insertAfter($('.gallery-original-location'));
+    $('.gallery-original-location').remove();
+    $('html').removeClass('full-screen-gallery');
+  });
+  
+  
+  // Slider for featured content
+  // -------------------------------------------------------------------------
   // - on mobiles the navigator / paginator is present inside every article
   $('.frontpage #slider article').hide();
   $('.frontpage #slider article').first().show();
@@ -11,17 +66,17 @@ $(document).ready(function() {
   $('.frontpage #slider nav ol li').click(function() {
     var index = $(this).index();
     var article = $('.frontpage #slider article:eq(' + index + ')');
-    $('.frontpage #slider article').fadeOut('slow');
-    article.fadeIn('slow');
     
     $('.frontpage #slider nav ol li').removeClass('active');
     $(this).addClass('active');
     // for mobiles
     article.find('nav ol li:eq(' + index + ')').addClass('active');
     
+    $('.frontpage #slider article').hide();
+    article.show();
+    
     return false;
   });
-  
   
   
   // Mark first item in pagination navigation active
@@ -37,15 +92,10 @@ $(document).ready(function() {
   // -------------------------------------------------
   
   // Sticky header
-  // - the menu element must be greater than 0
-  // - an element with a top margin or padding should be choosen
-  var menu = document.querySelector('#header figure');
-  var origOffsetY = menu.offsetTop;
-
   // - if the mobile menu is visible the sticky header wont be enabled
   function scroll () {
-    if (!($('#header .mobile-menu').is(':visible'))) {
-      if ($(window).scrollTop() >= origOffsetY) {
+    if (!($('#header .close-icon').is(':visible'))) {
+      if ($(window).scrollTop() >= 10) {
         $('body').addClass('sticky');
       } else {
         $('body').removeClass('sticky');
@@ -75,26 +125,21 @@ $(document).ready(function() {
   });
   
   
-  // Show navigation, search & co on click on mobile hamburger icon
-  $('#header #hamburger-menu').click(function() {
-    $('body').removeClass('sticky');
-    $('#header .mobile-navbar').hide();
-    $('#header .mobile-menu').slideToggle();
-    scrollTo($('body'));
-  });
-  
   // Show navigation, search & co on click on mobile navbar
-  $('#header .mobile-navbar').click(function() {
+  $('#header .mobile-menubar').click(function() {
+    scrollTo($('body'));
     $('body').removeClass('sticky');
     $(this).hide();
-    $('#header .mobile-menu').slideToggle();
+    $('#header nav').slideToggle();
+    $("#header").addClass('mobile-menu-active');
   });
   
   // Close navigation, search & co on click on mobiles
-  $('#header #close-menu').click(function() {
-    $('#header .mobile-menu').hide();
-    $('#header .mobile-navbar').slideToggle();
+  $('#header .close-icon').click(function() {
     scrollTo($('body'));
+    $('#header').removeClass('mobile-menu-active');
+    $('#header .mobile-menubar').show();  
+    $('#header nav').slideToggle();
   });
 
 

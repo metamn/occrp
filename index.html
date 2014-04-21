@@ -15,28 +15,32 @@ class: frontpage
     {% endfor %}
     
     {% assign items = 7 %}
-    {% include navigation.html %}
+    {% include navigation.html klass="desktop" %}
   </section>
 
-  <section id="news">
-    <h3>
-      <a href="{{ site.url }}/daily" title="Daily News">Daily News</a>
-    </h3>
+  <aside>
+    <h3>News Tickers</h3>
     
-    {% for post in site.categories.daily limit:3 %}
-      {% include article.html klass = 'thumb' %}
-    {% endfor %}
-  </section>
+    <section id="news">
+      <h3>
+        <a href="{{ site.url }}/daily" title="Daily News">Daily News</a>
+      </h3>
+      
+      {% for post in site.categories.daily limit:3 %}
+        {% include article.html klass = 'thumb' %}
+      {% endfor %}
+    </section>
+    
+    <section id="announcements">
+      <h3>
+        <a href="{{ site.url }}/about-us/announcements" title="Announcements">Announcements</a>
+      </h3>
   
-  <section id="announcements">
-    <h3>
-      <a href="{{ site.url }}/announcements" title="Announcements">Announcements</a>
-    </h3>
-
-    {% for post in site.categories.daily limit:1 offset:0 %}
-      {% include article.html klass = 'thumb' %}
-    {% endfor %}
-  </section>
+      {% for post in site.categories.daily limit:3 offset:0 %}
+        {% include article.html klass = 'thumb' %}
+      {% endfor %}
+    </section>
+  </aside>
 </section>
 
 
@@ -47,7 +51,7 @@ class: frontpage
   </h3>
 
   {% for post in site.categories.investigations limit:6 offset:0 %}
-    {% include article.html klass = 'thumb' %}
+    {% include article.html klass = 'thumb' label = 'This is a label' %}
   {% endfor %}
 </section>
 
@@ -68,9 +72,13 @@ class: frontpage
     <a href="{{ site.url }}/projects" title="Projects">Projects</a>
   </h3>
   
-  {% for post in site.categories.projects limit:5 offset:0 %}
+  {% for post in site.categories.projects limit:6 offset:0 %}
     {% include article.html klass = 'thumb' holder='false' %}
   {% endfor %}
+  
+  <form>
+    <input type="submit" value="More Projects">
+  </form>
 </section>
 
 
@@ -79,7 +87,7 @@ class: frontpage
     <a href="{{ site.url }}/blog" title="Blog">Blog</a>
   </h3>
   
-  {% for post in site.categories.blog limit:3 offset:2 %}
+  {% for post in site.categories.blog limit:4 offset:2 %}
     {% include article.html %}
   {% endfor %}
 </section>
@@ -127,8 +135,119 @@ class: frontpage
   </h3>
   
   {% for post in site.categories.investigations limit:6 offset:0 %}
-    {% include article.html %}
+    {% include article.html icon='video' %}
   {% endfor %}
+</section>
+
+
+<section id="tags-and-gallery">
+  <h3>
+    Tags & Galleries
+  </h3>
+  
+  <aside>
+    <h3>
+      <a href="{{ site.url }}/galleries" title="Image Galleries">Galleries</a>
+    </h3>
+    <a href="{{ site.url }}/galleries" title="Image Galleries">
+      <img src="{{ site.url }}/assets/images/image-gallery.png" alt="Image Galleries">
+    </a>
+  </aside>
+  
+  <nav>
+    <h3>Tags</h3>
+    <ul class="tag-list">
+      <li class="russia">
+        <a href="{{ site.url }}/russia" title="About Us">
+          #Russia
+        </a>
+      </li>
+      
+      <li>
+        <a href="{{ site.url }}/russia" title="Get involved">
+          #Drugs & Weapons
+        </a>
+      </li>
+      
+      <li>
+        <a href="{{ site.url }}/russia" title="Contact">
+          #Nelson Mandela
+        </a>
+      </li>
+      
+      <li>
+        <a href="{{ site.url }}/russia" title="Contact">
+          #Soci 2014
+        </a>
+      </li>
+      
+      <li>
+        <a href="{{ site.url }}/russia" title="Contact">
+          #Putin & Khodorkovskiy
+        </a>
+      </li>
+      
+       <li>
+        <a href="{{ site.url }}/russia" title="Contact">
+          #tag 1
+        </a>
+      </li>
+      
+       <li>
+        <a href="{{ site.url }}/russia" title="Contact">
+          #tag 2
+        </a>
+      </li>
+      
+       <li>
+        <a href="{{ site.url }}/russia" title="Contact">
+          #tag 3
+        </a>
+      </li>
+      
+       <li>
+        <a href="{{ site.url }}/russia" title="Contact">
+          #tag 4
+        </a>
+      </li>
+      
+       <li>
+        <a href="{{ site.url }}/russia" title="Contact">
+          #Romanian prosecutors
+        </a>
+      </li>
+      
+      <li>
+        <a href="{{ site.url }}/russia" title="Contact">
+          #Criminal investigation
+        </a>
+      </li>
+      
+      <li>
+        <a href="{{ site.url }}/russia" title="Contact">
+          #Money laundering
+        </a>
+      </li>
+      
+      <li>
+        <a href="{{ site.url }}/russia" title="Contact">
+          #Tax evasion
+        </a>
+      </li>
+      
+      <li>
+        <a href="{{ site.url }}/russia" title="Contact">
+          #Rosia Montana Gold Corporation
+        </a>
+      </li>
+      
+      <li>
+        <a href="{{ site.url }}/russia" title="Contact">
+          #Organized criminals
+        </a>
+      </li>
+    </ul>
+  </nav>
 </section>
 
 

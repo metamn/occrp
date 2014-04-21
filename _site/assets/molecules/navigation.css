@@ -1,8 +1,16 @@
-/* A menu - an inline list of items, with different hover and active states - it's parent is usually a <nav> element
-*/
-/* Floats the secondary menu right
+/* The fixed header
 */
 /* The tag bar
 */
-/* The logo
+/* The menu for mobiles
+*/
+/* A menubar for mobiles - it's a static bar which shows the menu on click
+*/
+/* A responsive menu  - it is usually a <nav> element
+*/
+/* A menu - a list of items, with different hover and active states - it's parent is usually a <nav> element
+*/
+/* Creates a menu item - on hover & active the menu item is highlighted
+*/
+/* A pagination bar
 */

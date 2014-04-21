@@ -6,23 +6,7 @@
   <section id="article">
     {% assign post = page %}
     {% include article.html klass = 'single' %}
-    
-    <div id="most-read">
-      <h3>Most recent</h3>
-      {% for post in site.categories.investigations limit:5 %}
-        {% include article.html klass = 'thumb' %}
-      {% endfor %}
-    </div>
-    
-    <div id="most-recent">
-      <h3>Most read</h3>
-      {% for post in site.categories.slider limit:5 %}
-        {% include article.html klass = 'thumb' %}
-      {% endfor %}
-    </div>
   </section>
-  
-  
   
   <aside>
     <section id="related-articles">
@@ -36,6 +20,20 @@
       <h3>Projects</h3>
       {% for post in site.categories.projects limit:5 offset:0 %}
         {% include article.html klass = 'thumb' holder='false' %}
+      {% endfor %}
+    </section>
+    
+    <section id="most-read">
+      <h3>Most recent</h3>
+      {% for post in site.categories.investigations limit:5 %}
+        {% include article.html klass = 'thumb' %}
+      {% endfor %}
+    </section>
+    
+    <section id="most-recent">
+      <h3>Most read</h3>
+      {% for post in site.categories.slider limit:5 %}
+        {% include article.html klass = 'thumb' %}
       {% endfor %}
     </section>
     

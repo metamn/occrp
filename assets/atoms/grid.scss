@@ -1,18 +1,18 @@
 
 $breakpoint-mobile: 30em !default; /* 480px, iPhone 3,4 landscape */
 $breakpoint-tablet: 48em !default; /* 768px */
-$breakpoint-small-screen: 64em !default; /* 1024px */
+$breakpoint-small-screen: 80em !default; /* 1280px */
 $breakpoint-large-screen: 90em !default; /* 1440px */
 
 
-@mixin landscape {
-  @media only screen and (orientation: landscape) {
+@mixin mobile {
+  @media only screen and (max-width: $breakpoint-mobile - 0.001) {
     @content;
   }
 }
 
-@mixin mobile {
-  @media only screen and (max-width: $breakpoint-mobile - 0.001) {
+@mixin mobile-and-up {
+  @media only screen and (min-width: $breakpoint-mobile) {
     @content;
   }
 }
@@ -23,40 +23,32 @@ $breakpoint-large-screen: 90em !default; /* 1440px */
   }
 }
 
-@mixin below-and-tablet {
-  @media only screen and (max-width: $breakpoint-tablet) {
-    @content;
-  }
-}
-
 @mixin tablet {
-  @media only screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
+  @media only screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-small-screen - 0.001) {
     @content;
   }
 }
 
 @mixin tablet-and-up {
-  @media only screen and (min-width: $breakpoint-tablet + 0.001) {
+  @media only screen and (min-width: $breakpoint-tablet) {
     @content;
   }
 }
 
-
-@mixin below-and-small-screen {
-  @media only screen and (max-width: $breakpoint-small-screen) {
+@mixin below-small-screen {
+  @media only screen and (max-width: $breakpoint-small-screen - 0.001) {
     @content;
   }
 }
-
 
 @mixin small-screen {
-  @media only screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-small-screen) {
+  @media only screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-small-screen - 0.001) {
     @content;
   }
 }
 
-@mixin above-small-screen {
-  @media only screen and (min-width: $breakpoint-small-screen + 0.001) {
+@mixin small-screen-and-up {
+  @media only screen and (min-width: $breakpoint-small-screen) {
     @content;
   }
 }
@@ -91,12 +83,7 @@ $container-margin: 2.5%;
 $large-screen-container-width: 75%;
 $large-screen-container-margin: 12.5%;
 
+$margin: $pad/2;
 
-
-/* Flexible grid
-*/
 $flexible-grid-width: 30%;
 $flexible-grid-margin: 3%;
-
-
-

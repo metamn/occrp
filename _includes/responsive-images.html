@@ -37,6 +37,10 @@
 {% endif %}
 
 
+{% if include.link == 'false' %}
+  {% assign link = '' %}
+{% endif %}
+
 <figure class="{{ include.klass }}">
   {% if link != "" %}
     <a href="{{ site.url }}{{ link }}" title="{{ title }}">
@@ -52,6 +56,12 @@
     
   {% if link != '' %}
     </a>
+  {% endif %}
+  
+  {% if include.label  %}
+    <div class="label">
+      {{ include.label }}
+    </div>
   {% endif %}
   
   <figcaption>

@@ -1,171 +1,25 @@
 
 
-@mixin navigation($color-scheme : slider) {
-  nav {
-    @include hide-title;
-    margin-top: $pad;
-    
-    ol {
-      @include list-inline;
-      @include list-menu(block, $pad/2, $pad/2 + $pad/4);
-      
-      li {
-        @include color($color-scheme);
-        @include border-radius($pad);
-      }
-      
-      @include below-and-tablet {
-        font-size: small;
-      }
-    }
-  }
-}
-
-
-
-@mixin mobile-menu {
-  nav {
-    &.main, &.secondary, &.tags {
-      display: block;
-      margin-top: $pad*2;
-    }
-    
-    ul {
-      @include block;
-    }
-    
-    &.main, &.secondary {
-      ul {
-        @include list-normal;
-        text-align: left;
-      }
-      
-      @include tablet {
-        @include grid(2, 2);
-      }
-    }
-    
-    &.tags {
-      ul {
-        &.search {
-          li {
-            &.text {
-              display: none;
-            }
-            
-            &.input {
-              display: block;
-              
-              input {
-                width: 95%;
-              }
-            }
-          }
-        }
-        
-        &.tag-list {
-          margin: $pad 0;
-        }
-        
-        &.social {
-          li {
-            margin-right: $pad;
-          }
-        }
-      }
-    }
-  }  
-  
-  #close-menu {
-    @include close-menu;
-  }
-}
-
-
-@mixin mobile-navbar {
-  @include block;
-  @include color(invert);
-  @include padding(100%, $pad/4);
-  font-size: 70%;
-  margin-top: $pad/2;
-  
-  cursor: pointer;
-  
-  ul.mobile-navbar-menu {
-    @include list-inline;
-    @include list-centered;
-    
-    li {
-      &.hamburger {
-        span {
-          @include hamburger-menu($background);
-          min-width: $pad;
-          top: 1px;
-        }
-      }
-    }
-  }
-}
-
-
-
-
-/* A menu
-  - an inline list of items, with different hover and active states
-  - it's parent is usually a <nav> element
+/* The fixed header
 */
-@mixin menu {
-  @include font(navigation);
-  
-  ul {
-    @include list-menu;
-  }  
+@mixin fixed-header {
+  position: fixed;
+  z-index: 1;
+  background: $background;
+  @include border-thin;
 }
-
-
-/* Floats the secondary menu right
-*/
-@mixin menu-float-right {
-  ul {
-    float: right;
-    
-    li {
-      &.language {
-        margin-right: 0;
-      }
-    }
-  }
-}
-
-
 
 
 
 /* The tag bar
 */
 @mixin tags {
+  @include block;
   @include color(invert);
-  
-  /* Since <a> has padding on the last social icon we must reduce the tagbar width
-  */ 
-  @include padding(100%, $pad/4);
-  padding: 0;
   
   ul {
     &.search {
-      li {
-        &.text {
-          @include text-with-icon;
-        }
-        
-        &.input {
-          display: none;
-          
-          input {
-            margin: $pad/4;
-          }
-        }
-      }
+      @include search;
     }
     
     &.tag-list {
@@ -177,23 +31,35 @@
     }
     
     &.social {
-      float: right;
+      @include social-icons;
+    }
+  }
+}
+
+
+/* The menu for mobiles
+*/
+@mixin mobile-menu {
+  nav {
+    &.main, &.secondary {
+      @include border-thin($color);
+      margin-bottom: $pad;
+    }
+    
+    &.main {
+      margin-top: $pad*5;
+    }
+    
+    &.tags {
+      @include block;
+      margin-right: 0;
+      @include enlarge-social-icons;
       
-      li {
-        @include text-with-icon;
+      ul {
+        @include block;
         
-        /* We are not replacing social icons on hover
-          - so the second image must not be displayed
-          - also the icon should be taller, the maximum possible
-        */
-        a {
-          img {
-            height: 13px;
-            
-            &:last-of-type {
-              display: none;
-            }
-          }
+        &.search {
+          @include search(active);
         }
       }
     }
@@ -201,55 +67,120 @@
 }
 
 
-
-
-/* The logo
+/* A menubar for mobiles
+  - it's a static bar which shows the menu on click
 */
-@mixin logo($type: desktop) {
+@mixin mobile-menubar($type) {
+  @include block;
+  @include font(menubar-mobile);
+  cursor: pointer;
   
-  h1, figure figcaption {
-    display: none;
-  }
+  ul {
+    @include list-inline;
     
-  
-  @if ($type == desktop) {
-    text-align: center;
-  
-    figure {
-      margin-top: $pad/2;
-    }
-    
-    @include tablet-and-up {
-      @include responsive-grid(3);
-    }
-    
-    
-  } @elseif ($type == desktop-fixed) {
-    height: $pad + $pad/2 + $pad/8;
-    
-    figure {
-      margin-top: 0;
-      
-      img {
-        max-width: 10em;
-        position: relative;
-        top: -$pad/4;
-      }
-    }
-  
-  
-  } @elseif ($type == tablet-fixed) {
-    width: 35%;
-    float: left;
-  
-  
-  } @elseif ($type == mobile-fixed) {
-    figure {
-      img {
-        width: 50%;
+    li {
+      &.icon {
+        @include text-with-icon(9px, 1px);
       }
     }
   }
   
+  
+  @if ($type == mobile) {
+    @include color(invert);
+    padding: $pad/4 0;
+    
+    ul {
+      @include list-centered;
+    }
+    
+  } @elseif ($type == tablet) {
+    ul {
+      @include list-floated-right;
+    }
+  }
 }
+
+
+
+
+/* A responsive menu 
+  - it is usually a <nav> element
+*/
+@mixin responsive-menu {
+  @include menu;
+  
+  @include small-screen-and-up {
+    ul {
+      @include list-inline($pad/4);
+    }
+  }
+}
+
+
+/* A menu
+  - a list of items, with different hover and active states
+  - it's parent is usually a <nav> element
+*/
+@mixin menu($border: false) {
+  @include font(navigation);
+  
+  ul {
+    @include menu-item;
+    
+    @if ($border != false) {
+      li {
+        @include separator(border-thin);
+      }
+    }
+  }  
+}
+
+
+/* Creates a menu item
+  - on hover & active the menu item is highlighted
+*/
+@mixin menu-item($display: inline-block, $top : $pad/2, $left: $pad/4)  {
+  li {
+    a {
+      padding: $top $left;
+      display: $display;
+    }
+    
+    &.active, &:hover {
+      a {
+        @include color(menu);
+      }
+    }
+  }
+}
+
+
+
+/* A pagination bar
+*/
+@mixin pagination($color-scheme : normal) {
+  nav {
+    @include hide-title;
+    margin-top: $pad;
+    
+    ol {
+      @include list-inline;
+      
+      li {
+        @include color($color-scheme);
+        @include border-radius($pad);
+      }
+      
+      @include menu-item(block, $pad/2, $pad/2 + $pad/4);
+      
+      
+      
+      @include below-tablet {
+        font-size: small;
+      }
+    }
+  }
+}
+
 

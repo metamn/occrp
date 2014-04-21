@@ -24,10 +24,6 @@
   
   max-width: $max-width;
   margin: $margin/2 $margin 0 0;
-  
-  @include below-and-tablet {
-    @include block;
-  }
 }
 
 
@@ -92,18 +88,36 @@
 
 
 
+/* Responsive grids should have fixed heights to align columns left without flaw
+*/
+@mixin responsive-height($height-1, $height-2) {
+  @include mobile {
+    margin-bottom: $margin;
+  }
+  
+  @include small-screen {
+    height: $height-1;
+  }
+  
+  @include small-screen-and-up {
+    height: $height-2;
+  }
+}
+
+
+
 /* A responsive grid
 */
 @mixin responsive-grid($how-many, $maximum : 10) {
-  @include below-tablet {
+  @include mobile {
     @include col(100%, 0);
   }
   
-  @include tablet {
+  @include small-screen {
     @include grid(2, $maximum);
   }
   
-  @include above-small-screen {
+  @include small-screen-and-up {
     @include grid($how-many, $maximum);
   }
 }
@@ -126,7 +140,9 @@
 /* Returns the width of a column in a grid
 */
 @function col-width($how-many) {
-  @if ($how-many == 3) {
+  @if ($how-many == 2) {
+    @return 48.75%;
+  } @elseif ($how-many == 3) {
     @return 31.5%;
   } @else {
     @return 90% / $how-many;
@@ -136,7 +152,9 @@
 /* Returns the margin of a column in a grid
 */
 @function col-gutter($how-many) {
-  @if ($how-many == 3) {
+  @if ($how-many == 2) {
+    @return 2.5%;
+  } @elseif ($how-many == 3) {
     @return 2.5%;
   } @else {
     @return 10% / ($how-many - 1);
@@ -198,3 +216,55 @@
   float: left;
 }
 
+
+/* Hide / show .mobile / .dekstop elements
+*/
+@mixin hide-show-mobile-elements {
+  .mobile {
+    display: none;
+  }
+  
+  .desktop {
+    display: block;
+  }
+  
+  @include mobile {
+    .mobile {
+      display: block;
+    }
+    
+    .desktop {
+      display: none;
+    }
+  }
+}
+
+
+/* Center vertically or horizontally
+  - http://davidwalsh.name/css-vertical-center 
+*/
+@mixin center($direction) {
+  position: relative;
+  
+  @if ($direction == vertical) {
+    top: 50%;
+    @include transform(translateY(-50%));
+  }
+  
+  @if ($direction == horizontal) {
+    left: 50%;
+    @include transform(translateX(-50%));
+  }
+}
+
+
+
+/* Hide last article 
+*/
+@mixin hide-last-article {
+  article {
+    &:last-of-type {
+      display: none;
+    }
+  }
+}

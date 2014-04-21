@@ -1,0 +1,9 @@
+---
+layout: category
+title: Daily
+---
+
+
+{% for post in site.categories.daily %}
+  {% include article.html klass = 'thumb' %}
+{% endfor %}

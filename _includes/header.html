@@ -1,11 +1,8 @@
 <header id="header">
   <h3>Header</h3>
-
+  
   {% include nav-main.html %}
   
-  <div id="hamburger-menu">
-  </div>
-
   <section class="logo">
     <h3>Logo</h3>
     <h1>
@@ -16,36 +13,28 @@
     
     <figure>
       <a href="{{ site.url }}/" title="{{ site.title }}">
-        <img src="{{ site.url }}/assets/images/logo.png">
+        <img src="{{ site.url }}/assets/images/logo.jpg">
       </a>
       <figcaption>
         {{ site.title }}
       </figcaption>
     </figure>
   </section>
-    
-  <nav class="mobile-navbar">
-    <h3>Mobile and Tablet Navigation</h3>
-    <ul class="mobile-navbar-menu">
-      <li class="hamburger"><span>&nbsp;</span></li>
+  
+  <section class="mobile-menubar">
+    <h3>Mobile menu</h3>
+    <ul>
+      <li class="icon"><img src="{{ site.url }}/assets/images/menu-icon.png" alt="Menu icon"></li>
       <li>Navigation</li>
       <li>Tags</li>
       <li>Search</li>
       <li>Share</li>
     </ul>
-  </nav>
-    
-  <section class="mobile-menu">
-    <h3>Mobile and Tablet Menu</h3>
-    {% include nav-main.html %}
-    {% include nav-secondary.html %}
-    {% include nav-tags.html %}
-    
-    <span id="close-menu"></span>
   </section>
   
   {% include nav-secondary.html %}
   {% include nav-tags.html %}
+  <span class="close-icon"></span>
 </header>
 
 

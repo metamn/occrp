@@ -6,7 +6,7 @@
     @include headings;
     
   } @elseif ($type == excerpt) {
-    @include line-height(body);
+    @include line-height(excerpt);
     color: $grey;
   
   } @elseif ($type == navigation) {
@@ -21,7 +21,6 @@
     
     @include color(highlight);
     display: block;
-    margin-bottom: $pad/2;
   
   } @elseif ($type == date) {
     font-size: small;
@@ -40,15 +39,32 @@
     font-style: normal;
     
   } @elseif ($type == italic) {
-    font-size: small;
-    color: $color;
+    @include font-headings;
     font-style: italic;
-    font-family: font-headings;
-    text-transform: none;
     
   } @elseif ($type == single-article-title) {
     @include font-size($h1-title); 
     padding: 0;
+    
+  } @elseif ($type == menubar-mobile) {
+    @include font(navigation);
+    font-size: 60%;
+    
+    @include tablet {
+      font-size: small;
+    }
+  
+  
+  } @elseif ($type == blog-title) {
+    font-weight: normal;
+    font-size: medium;
+    @include font-body;
+    letter-spacing: $letter-spacing-uppercase;
+    margin-top: $margin/2;
+    
+    @include below-small-screen {
+      font-size: small;
+    }
   }
 }
 
@@ -139,6 +155,9 @@
   
   } @elseif ($type == headings) {
     line-height: $line-height-headings;
+    
+  } @elseif ($type == excerpt) {
+    line-height: $line-height-excerpt;
   }
 }
 
@@ -271,50 +290,20 @@
 
 @mixin blockquote {
   blockquote {
-    border-top: 1px solid;
-    border-bottom: 1px solid;
-    
-    font-size: large;
-    font-style: italic;
-    color: lighten($color, 5%);
-    
-    /* Making room to the " sign 
-    */
-    position: relative;
-    float: left;
-    padding: $pad*4 0 $pad*2 $pad*4;
-    
-    
-    /* Fill the parent block
-    */
     @include block;
-    text-align: right;
-    width: calc(#{$body-text-width} - #{$pad*8});
+    border-left: $border;
+    border-color: $highlight;
+    background: $light-grey;
+    @include padding;
     
-    &:before {
-      content: '\201C';
-      font-size: 900%;
-      
-      position: absolute;
-      top: -$pad/10;
-      left: 0;
-    }
-
-    @include below-tablet {
-      padding: $pad*3 0 $pad*2 0;
-  
-      &:before {
-        font-size: 450%;
-      }
-    }
+    @include font(italic);
   }
 }
 
+
 @mixin q {
   q {
-    background: $light-grey;
-    padding: $pad/4;
-    border-bottom: 1px solid darken($light-grey, 5%);
+    @include font(italic);
     
     &:before {
       content: '\201C';
@@ -325,6 +314,8 @@
     }
   }
 }
+
+
 
 
 /* Select box
@@ -429,41 +420,44 @@
     }
     
     /* Stretching and padding */
-    input, textarea {
+    input, textarea, label {
       @include block;
     }
     
     input, textarea {
-      padding: $pad/2;
-      width: calc(100% - #{$pad});
+      padding: $pad/4;
+      width: calc(100% - #{$pad/2});
       margin-bottom: $pad/2;
     }
     
 
     /* Text */
-    input[type='text'], input[type='email'], input[type='password'], input[type='url'], input[type='search'],   textarea {
-	    border: 1px solid $color;
-	    font-style: italic;
+    input[type='text'], input[type='email'], input[type='password'], input[type='url'], input[type='search'], textarea {
+      border: 1px solid $color;
+      font-style: italic;
     }
     
 
     /* Button */
     input[type='submit'] {	
+      width: auto;
+  
       @include uppercase;	
-	    border: 1px solid $color;
-	    @include color(invert);
-	    cursor: pointer;
-	    
-	    @include transition($easing);
-	    &:hover {
-	      @include color(normal);
-	    }
+      border: 1px solid $color;
+      @include color(invert);
+      cursor: pointer;
+      
+      @include transition($easing);
+      &:hover {
+        @include color(normal);
+      }
     }
     
     /* Label
     */
     label {
       @include uppercase;
+      font-size: small;
     }
     
   }
@@ -482,72 +476,10 @@
         margin: 0;
         padding: 0;
       }
+      
       padding: $pad/4;
       font-size: smaller;
     }
-    
-    @include below-tablet {
-      @include inline-figure;
-    }
-    
-    @include tablet-and-up {
-      @include floated-figure;
-    }
-  }
-}
-
-
-/* Display a figure inline
-*/
-@mixin inline-figure {
-  &.people, &.document, &.company {
-    @include block;
-    
-    img {
-      float: left;
-      width: $pad*2;
-      margin-right: $pad;
-    }
-    
-    figcaption {
-      padding: 0;
-    }
-  }
-}
-
-/* Figures are floated around the text, either left or right
-  - becuase of 'display:table' it's not working well on mobiles
-*/
-@mixin floated-figure {
-  /* Fit figcpation to image width
-    */
-  &.left, &.right, &.person, &.document, &.company, &.people {
-    display: table;
-    
-    img {
-      display: block;
-      max-width: 100%;
-    }
-    
-    figcaption {
-      display: table-caption;
-      caption-side: bottom;
-      margin-top: $pad/4;
-    }
-    
-    + p {
-      margin-top: $pad;
-    }
-  }
-  
-  &.left {
-    float: left;
-    margin: $pad/2 $pad*2 $pad 0;
-  }
-  
-  &.right {
-    float: right;
-    margin: $pad/2 0 $pad $pad*2;
   }
 }
 

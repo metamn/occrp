@@ -12,3 +12,5 @@
 */
 /* Font sizing for headers - We employ modern typography where headers differ by design not by font size - We size fonts by REM instead of EM - We use Traditional / em scaling from http://lamb.cc/typograph/
 */
+/* in :before and :after usually the font size is larger for better visibility
+*/

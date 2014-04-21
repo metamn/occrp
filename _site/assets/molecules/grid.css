@@ -14,6 +14,8 @@
 */
 /* Resize a grid column 
 */
+/* Responsive grids should have fixed heights to align columns left without flaw
+*/
 /* A responsive grid
 */
 /* Generates a full grid of $how-many columns and $maximum elements - calculates automatically the columns size and margin - the right margin of the last element in a row is set to zero - $maximum sets how many articles will be displayed on a single page 
@@ -31,4 +33,10 @@
 /* Show a section title
 */
 /* Strech content to fill parent width
+*/
+/* Hide / show .mobile / .dekstop elements
+*/
+/* Center vertically or horizontally - http://davidwalsh.name/css-vertical-center 
+*/
+/* Hide last article 
 */
