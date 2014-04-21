@@ -65,6 +65,8 @@
     article.thumb {
       @include responsive-grid(3, 20);
       height: auto;
+      border-top: 0;
+      padding-top: 0;
     }
   
   } @elseif ($type == daily) {

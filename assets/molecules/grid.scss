@@ -141,7 +141,7 @@
 */
 @function col-width($how-many) {
   @if ($how-many == 2) {
-    @return 47.5%;
+    @return 48.75%;
   } @elseif ($how-many == 3) {
     @return 31.5%;
   } @else {

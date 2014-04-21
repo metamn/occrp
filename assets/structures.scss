@@ -196,6 +196,12 @@
     @include show-title;
     @include responsive-grid(3);
   }
+  
+  @include below-small-screen {
+    nav {
+      margin-right: 0;
+    }
+  }
 }
 
 

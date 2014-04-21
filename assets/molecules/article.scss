@@ -86,12 +86,6 @@
         }
       }
     }
-    
-    
-    .gallery {
-      @include image-gallery;
-    }
-  
   }
 }
 
@@ -416,6 +410,11 @@
       }
     }
   }
+  
+  .gallery {
+    @include image-gallery;
+  }
+  
 }
 
 
