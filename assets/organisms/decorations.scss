@@ -91,10 +91,13 @@
     }
     
     &.input {
+      @include form;
       display: none;
       
-      input {
-        margin: $pad/4;
+      form {
+        input {
+          margin: $pad/8 $pad/4 0;
+        }
       }
     }
   }

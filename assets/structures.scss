@@ -451,64 +451,7 @@
       @include social-icons-footer;
     }
   }
-  
-  /*
-  ul {
-    @include list-inline($pad);
-    
-    li {
-      &#usaid {
-        position: relative;
-        top: -$pad/2;
-      }
-      
-      &#social-icons {
-        @include social-icons-footer;
-      }
-    }
-  }
-  */
 }
-
-
-
-
-/* Full Screen Gallery 
-*/
-@mixin full-screen-gallery {
-  height: 100%;
-  
-  body {
-    height: 100%;
-    
-    .container {
-      display: none;
-    }
-    
-    .gallery {
-      @include image-gallery;
-      height: calc(100% - #{$pad*3});
-      margin: auto;
-
-      text-align: center;      
-      figure {
-        @include center(vertical);
-      }
-      
-      span {
-        &.show {
-          display: none;
-        }  
-      
-        &.close {
-          display: block;
-        }
-      }
-    }
-  }
-}
-
-
 
 
 

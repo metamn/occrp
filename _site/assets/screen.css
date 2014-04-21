@@ -204,6 +204,8 @@ figure a { line-height: 0; }
 */
 /* Image left
 */
+/* Full Screen Gallery 
+*/
 /* Image Gallery
 */
 /* Simple slider
@@ -276,8 +278,6 @@ figure a { line-height: 0; }
 */
 /* Footer
 */
-/* Full Screen Gallery 
-*/
 html { /* Full Screen Gallery
 */ }
 html.full-screen-gallery { height: 100%; }
@@ -349,7 +349,20 @@ html body .container #header nav.tags a { color: white; text-decoration: none; }
 html body .container #header nav.tags a:hover { color: white; }
 html body .container #header nav.tags ul.search li.text img { height: 12px; position: relative; top: 1px; }
 html body .container #header nav.tags ul.search li.input { display: none; }
-html body .container #header nav.tags ul.search li.input input { margin: 0.3125em; }
+html body .container #header nav.tags ul.search li.input form { /* Reset */ /* Stretching and padding */ /* Text */ /* Button */ /* Label
+*/ }
+html body .container #header nav.tags ul.search li.input form input, html body .container #header nav.tags ul.search li.input form textarea, html body .container #header nav.tags ul.search li.input form select { border: none; outline: 0; background: white; appearance: none; -webkit-appearance: none; -moz-appearance: none; }
+html body .container #header nav.tags ul.search li.input form input, html body .container #header nav.tags ul.search li.input form textarea, html body .container #header nav.tags ul.search li.input form label { width: 100%; max-width: 100%; float: left; }
+html body .container #header nav.tags ul.search li.input form input, html body .container #header nav.tags ul.search li.input form textarea { padding: 0.3125em; width: calc(100% - 0.625em); margin-bottom: 0.625em; }
+html body .container #header nav.tags ul.search li.input form input[type='text'], html body .container #header nav.tags ul.search li.input form input[type='email'], html body .container #header nav.tags ul.search li.input form input[type='password'], html body .container #header nav.tags ul.search li.input form input[type='url'], html body .container #header nav.tags ul.search li.input form input[type='search'], html body .container #header nav.tags ul.search li.input form textarea { border: 1px solid #231f20; font-style: italic; }
+html body .container #header nav.tags ul.search li.input form input[type='submit'] { width: auto; text-transform: uppercase; letter-spacing: 1.1px; border: 1px solid #231f20; background: #231f20; color: white; cursor: pointer; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; }
+html body .container #header nav.tags ul.search li.input form input[type='submit'] a { color: white; text-decoration: none; }
+html body .container #header nav.tags ul.search li.input form input[type='submit'] a:hover { color: white; }
+html body .container #header nav.tags ul.search li.input form input[type='submit']:hover { background: white; color: #231f20; }
+html body .container #header nav.tags ul.search li.input form input[type='submit']:hover a { color: #231f20; text-decoration: none; }
+html body .container #header nav.tags ul.search li.input form input[type='submit']:hover a:hover { color: #982022; }
+html body .container #header nav.tags ul.search li.input form label { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
+html body .container #header nav.tags ul.search li.input form input { margin: 0.15625em 0.3125em 0; }
 html body .container #header nav.tags ul.tag-list { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
 html body .container #header nav.tags ul.tag-list li, html body .container #header nav.tags ul.social li, html body .container #header nav.tags ul.search li { display: inline-block; float: left; margin-right: 0.3125em; }
 html body .container #header nav.tags ul.tag-list li:last-of-type, html body .container #header nav.tags ul.social li:last-of-type, html body .container #header nav.tags ul.search li:last-of-type { margin-right: 0; }
@@ -369,7 +382,20 @@ html body .container #header .close-icon:after { content: "\2715"; padding: 0.15
   html body .container #header nav.tags ul { width: 100%; max-width: 100%; float: left; }
   html body .container #header nav.tags ul.search li.text img { height: 12px; position: relative; top: 1px; }
   html body .container #header nav.tags ul.search li.input { display: none; }
-  html body .container #header nav.tags ul.search li.input input { margin: 0.3125em; }
+  html body .container #header nav.tags ul.search li.input form { /* Reset */ /* Stretching and padding */ /* Text */ /* Button */ /* Label
+*/ }
+  html body .container #header nav.tags ul.search li.input form input, html body .container #header nav.tags ul.search li.input form textarea, html body .container #header nav.tags ul.search li.input form select { border: none; outline: 0; background: white; appearance: none; -webkit-appearance: none; -moz-appearance: none; }
+  html body .container #header nav.tags ul.search li.input form input, html body .container #header nav.tags ul.search li.input form textarea, html body .container #header nav.tags ul.search li.input form label { width: 100%; max-width: 100%; float: left; }
+  html body .container #header nav.tags ul.search li.input form input, html body .container #header nav.tags ul.search li.input form textarea { padding: 0.3125em; width: calc(100% - 0.625em); margin-bottom: 0.625em; }
+  html body .container #header nav.tags ul.search li.input form input[type='text'], html body .container #header nav.tags ul.search li.input form input[type='email'], html body .container #header nav.tags ul.search li.input form input[type='password'], html body .container #header nav.tags ul.search li.input form input[type='url'], html body .container #header nav.tags ul.search li.input form input[type='search'], html body .container #header nav.tags ul.search li.input form textarea { border: 1px solid #231f20; font-style: italic; }
+  html body .container #header nav.tags ul.search li.input form input[type='submit'] { width: auto; text-transform: uppercase; letter-spacing: 1.1px; border: 1px solid #231f20; background: #231f20; color: white; cursor: pointer; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; }
+  html body .container #header nav.tags ul.search li.input form input[type='submit'] a { color: white; text-decoration: none; }
+  html body .container #header nav.tags ul.search li.input form input[type='submit'] a:hover { color: white; }
+  html body .container #header nav.tags ul.search li.input form input[type='submit']:hover { background: white; color: #231f20; }
+  html body .container #header nav.tags ul.search li.input form input[type='submit']:hover a { color: #231f20; text-decoration: none; }
+  html body .container #header nav.tags ul.search li.input form input[type='submit']:hover a:hover { color: #982022; }
+  html body .container #header nav.tags ul.search li.input form label { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
+  html body .container #header nav.tags ul.search li.input form input { margin: 0.15625em 0.3125em 0; }
   html body .container #header nav.tags ul.search li.text { display: none; }
   html body .container #header nav.tags ul.search li.input { display: block; }
   html body .container #header .mobile-menubar { width: 100%; max-width: 100%; float: left; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: 60%; cursor: pointer; background: #231f20; color: white; padding: 0.3125em 0; } }
@@ -391,7 +417,20 @@ html body .container #header .close-icon:after { content: "\2715"; padding: 0.15
   html body .container #header nav.tags ul { width: 100%; max-width: 100%; float: left; }
   html body .container #header nav.tags ul.search li.text img { height: 12px; position: relative; top: 1px; }
   html body .container #header nav.tags ul.search li.input { display: none; }
-  html body .container #header nav.tags ul.search li.input input { margin: 0.3125em; }
+  html body .container #header nav.tags ul.search li.input form { /* Reset */ /* Stretching and padding */ /* Text */ /* Button */ /* Label
+*/ }
+  html body .container #header nav.tags ul.search li.input form input, html body .container #header nav.tags ul.search li.input form textarea, html body .container #header nav.tags ul.search li.input form select { border: none; outline: 0; background: white; appearance: none; -webkit-appearance: none; -moz-appearance: none; }
+  html body .container #header nav.tags ul.search li.input form input, html body .container #header nav.tags ul.search li.input form textarea, html body .container #header nav.tags ul.search li.input form label { width: 100%; max-width: 100%; float: left; }
+  html body .container #header nav.tags ul.search li.input form input, html body .container #header nav.tags ul.search li.input form textarea { padding: 0.3125em; width: calc(100% - 0.625em); margin-bottom: 0.625em; }
+  html body .container #header nav.tags ul.search li.input form input[type='text'], html body .container #header nav.tags ul.search li.input form input[type='email'], html body .container #header nav.tags ul.search li.input form input[type='password'], html body .container #header nav.tags ul.search li.input form input[type='url'], html body .container #header nav.tags ul.search li.input form input[type='search'], html body .container #header nav.tags ul.search li.input form textarea { border: 1px solid #231f20; font-style: italic; }
+  html body .container #header nav.tags ul.search li.input form input[type='submit'] { width: auto; text-transform: uppercase; letter-spacing: 1.1px; border: 1px solid #231f20; background: #231f20; color: white; cursor: pointer; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; }
+  html body .container #header nav.tags ul.search li.input form input[type='submit'] a { color: white; text-decoration: none; }
+  html body .container #header nav.tags ul.search li.input form input[type='submit'] a:hover { color: white; }
+  html body .container #header nav.tags ul.search li.input form input[type='submit']:hover { background: white; color: #231f20; }
+  html body .container #header nav.tags ul.search li.input form input[type='submit']:hover a { color: #231f20; text-decoration: none; }
+  html body .container #header nav.tags ul.search li.input form input[type='submit']:hover a:hover { color: #982022; }
+  html body .container #header nav.tags ul.search li.input form label { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
+  html body .container #header nav.tags ul.search li.input form input { margin: 0.15625em 0.3125em 0; }
   html body .container #header nav.tags ul.search li.text { display: none; }
   html body .container #header nav.tags ul.search li.input { display: block; }
   html body .container #header section.logo, html body .container #header section.mobile-menu { width: 47.5%; margin-right: 2.5%; float: left; }
@@ -430,7 +469,20 @@ html body .container #header.mobile-menu-active nav.tags a { color: white; text-
 html body .container #header.mobile-menu-active nav.tags a:hover { color: white; }
 html body .container #header.mobile-menu-active nav.tags ul.search li.text img { height: 12px; position: relative; top: 1px; }
 html body .container #header.mobile-menu-active nav.tags ul.search li.input { display: none; }
-html body .container #header.mobile-menu-active nav.tags ul.search li.input input { margin: 0.3125em; }
+html body .container #header.mobile-menu-active nav.tags ul.search li.input form { /* Reset */ /* Stretching and padding */ /* Text */ /* Button */ /* Label
+*/ }
+html body .container #header.mobile-menu-active nav.tags ul.search li.input form input, html body .container #header.mobile-menu-active nav.tags ul.search li.input form textarea, html body .container #header.mobile-menu-active nav.tags ul.search li.input form select { border: none; outline: 0; background: white; appearance: none; -webkit-appearance: none; -moz-appearance: none; }
+html body .container #header.mobile-menu-active nav.tags ul.search li.input form input, html body .container #header.mobile-menu-active nav.tags ul.search li.input form textarea, html body .container #header.mobile-menu-active nav.tags ul.search li.input form label { width: 100%; max-width: 100%; float: left; }
+html body .container #header.mobile-menu-active nav.tags ul.search li.input form input, html body .container #header.mobile-menu-active nav.tags ul.search li.input form textarea { padding: 0.3125em; width: calc(100% - 0.625em); margin-bottom: 0.625em; }
+html body .container #header.mobile-menu-active nav.tags ul.search li.input form input[type='text'], html body .container #header.mobile-menu-active nav.tags ul.search li.input form input[type='email'], html body .container #header.mobile-menu-active nav.tags ul.search li.input form input[type='password'], html body .container #header.mobile-menu-active nav.tags ul.search li.input form input[type='url'], html body .container #header.mobile-menu-active nav.tags ul.search li.input form input[type='search'], html body .container #header.mobile-menu-active nav.tags ul.search li.input form textarea { border: 1px solid #231f20; font-style: italic; }
+html body .container #header.mobile-menu-active nav.tags ul.search li.input form input[type='submit'] { width: auto; text-transform: uppercase; letter-spacing: 1.1px; border: 1px solid #231f20; background: #231f20; color: white; cursor: pointer; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; }
+html body .container #header.mobile-menu-active nav.tags ul.search li.input form input[type='submit'] a { color: white; text-decoration: none; }
+html body .container #header.mobile-menu-active nav.tags ul.search li.input form input[type='submit'] a:hover { color: white; }
+html body .container #header.mobile-menu-active nav.tags ul.search li.input form input[type='submit']:hover { background: white; color: #231f20; }
+html body .container #header.mobile-menu-active nav.tags ul.search li.input form input[type='submit']:hover a { color: #231f20; text-decoration: none; }
+html body .container #header.mobile-menu-active nav.tags ul.search li.input form input[type='submit']:hover a:hover { color: #982022; }
+html body .container #header.mobile-menu-active nav.tags ul.search li.input form label { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
+html body .container #header.mobile-menu-active nav.tags ul.search li.input form input { margin: 0.15625em 0.3125em 0; }
 html body .container #header.mobile-menu-active nav.tags ul.tag-list { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
 html body .container #header.mobile-menu-active nav.tags ul.tag-list li, html body .container #header.mobile-menu-active nav.tags ul.social li, html body .container #header.mobile-menu-active nav.tags ul.search li { display: inline-block; float: left; margin-right: 0.3125em; }
 html body .container #header.mobile-menu-active nav.tags ul.tag-list li:last-of-type, html body .container #header.mobile-menu-active nav.tags ul.social li:last-of-type, html body .container #header.mobile-menu-active nav.tags ul.search li:last-of-type { margin-right: 0; }
@@ -450,7 +502,20 @@ html body .container #header.mobile-menu-active .close-icon:after { content: "\2
   html body .container #header.mobile-menu-active nav.tags ul { width: 100%; max-width: 100%; float: left; }
   html body .container #header.mobile-menu-active nav.tags ul.search li.text img { height: 12px; position: relative; top: 1px; }
   html body .container #header.mobile-menu-active nav.tags ul.search li.input { display: none; }
-  html body .container #header.mobile-menu-active nav.tags ul.search li.input input { margin: 0.3125em; }
+  html body .container #header.mobile-menu-active nav.tags ul.search li.input form { /* Reset */ /* Stretching and padding */ /* Text */ /* Button */ /* Label
+*/ }
+  html body .container #header.mobile-menu-active nav.tags ul.search li.input form input, html body .container #header.mobile-menu-active nav.tags ul.search li.input form textarea, html body .container #header.mobile-menu-active nav.tags ul.search li.input form select { border: none; outline: 0; background: white; appearance: none; -webkit-appearance: none; -moz-appearance: none; }
+  html body .container #header.mobile-menu-active nav.tags ul.search li.input form input, html body .container #header.mobile-menu-active nav.tags ul.search li.input form textarea, html body .container #header.mobile-menu-active nav.tags ul.search li.input form label { width: 100%; max-width: 100%; float: left; }
+  html body .container #header.mobile-menu-active nav.tags ul.search li.input form input, html body .container #header.mobile-menu-active nav.tags ul.search li.input form textarea { padding: 0.3125em; width: calc(100% - 0.625em); margin-bottom: 0.625em; }
+  html body .container #header.mobile-menu-active nav.tags ul.search li.input form input[type='text'], html body .container #header.mobile-menu-active nav.tags ul.search li.input form input[type='email'], html body .container #header.mobile-menu-active nav.tags ul.search li.input form input[type='password'], html body .container #header.mobile-menu-active nav.tags ul.search li.input form input[type='url'], html body .container #header.mobile-menu-active nav.tags ul.search li.input form input[type='search'], html body .container #header.mobile-menu-active nav.tags ul.search li.input form textarea { border: 1px solid #231f20; font-style: italic; }
+  html body .container #header.mobile-menu-active nav.tags ul.search li.input form input[type='submit'] { width: auto; text-transform: uppercase; letter-spacing: 1.1px; border: 1px solid #231f20; background: #231f20; color: white; cursor: pointer; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; }
+  html body .container #header.mobile-menu-active nav.tags ul.search li.input form input[type='submit'] a { color: white; text-decoration: none; }
+  html body .container #header.mobile-menu-active nav.tags ul.search li.input form input[type='submit'] a:hover { color: white; }
+  html body .container #header.mobile-menu-active nav.tags ul.search li.input form input[type='submit']:hover { background: white; color: #231f20; }
+  html body .container #header.mobile-menu-active nav.tags ul.search li.input form input[type='submit']:hover a { color: #231f20; text-decoration: none; }
+  html body .container #header.mobile-menu-active nav.tags ul.search li.input form input[type='submit']:hover a:hover { color: #982022; }
+  html body .container #header.mobile-menu-active nav.tags ul.search li.input form label { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
+  html body .container #header.mobile-menu-active nav.tags ul.search li.input form input { margin: 0.15625em 0.3125em 0; }
   html body .container #header.mobile-menu-active nav.tags ul.search li.text { display: none; }
   html body .container #header.mobile-menu-active nav.tags ul.search li.input { display: block; }
   html body .container #header.mobile-menu-active .mobile-menubar { width: 100%; max-width: 100%; float: left; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: 60%; cursor: pointer; background: #231f20; color: white; padding: 0.3125em 0; } }
@@ -472,7 +537,20 @@ html body .container #header.mobile-menu-active .close-icon:after { content: "\2
   html body .container #header.mobile-menu-active nav.tags ul { width: 100%; max-width: 100%; float: left; }
   html body .container #header.mobile-menu-active nav.tags ul.search li.text img { height: 12px; position: relative; top: 1px; }
   html body .container #header.mobile-menu-active nav.tags ul.search li.input { display: none; }
-  html body .container #header.mobile-menu-active nav.tags ul.search li.input input { margin: 0.3125em; }
+  html body .container #header.mobile-menu-active nav.tags ul.search li.input form { /* Reset */ /* Stretching and padding */ /* Text */ /* Button */ /* Label
+*/ }
+  html body .container #header.mobile-menu-active nav.tags ul.search li.input form input, html body .container #header.mobile-menu-active nav.tags ul.search li.input form textarea, html body .container #header.mobile-menu-active nav.tags ul.search li.input form select { border: none; outline: 0; background: white; appearance: none; -webkit-appearance: none; -moz-appearance: none; }
+  html body .container #header.mobile-menu-active nav.tags ul.search li.input form input, html body .container #header.mobile-menu-active nav.tags ul.search li.input form textarea, html body .container #header.mobile-menu-active nav.tags ul.search li.input form label { width: 100%; max-width: 100%; float: left; }
+  html body .container #header.mobile-menu-active nav.tags ul.search li.input form input, html body .container #header.mobile-menu-active nav.tags ul.search li.input form textarea { padding: 0.3125em; width: calc(100% - 0.625em); margin-bottom: 0.625em; }
+  html body .container #header.mobile-menu-active nav.tags ul.search li.input form input[type='text'], html body .container #header.mobile-menu-active nav.tags ul.search li.input form input[type='email'], html body .container #header.mobile-menu-active nav.tags ul.search li.input form input[type='password'], html body .container #header.mobile-menu-active nav.tags ul.search li.input form input[type='url'], html body .container #header.mobile-menu-active nav.tags ul.search li.input form input[type='search'], html body .container #header.mobile-menu-active nav.tags ul.search li.input form textarea { border: 1px solid #231f20; font-style: italic; }
+  html body .container #header.mobile-menu-active nav.tags ul.search li.input form input[type='submit'] { width: auto; text-transform: uppercase; letter-spacing: 1.1px; border: 1px solid #231f20; background: #231f20; color: white; cursor: pointer; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; }
+  html body .container #header.mobile-menu-active nav.tags ul.search li.input form input[type='submit'] a { color: white; text-decoration: none; }
+  html body .container #header.mobile-menu-active nav.tags ul.search li.input form input[type='submit'] a:hover { color: white; }
+  html body .container #header.mobile-menu-active nav.tags ul.search li.input form input[type='submit']:hover { background: white; color: #231f20; }
+  html body .container #header.mobile-menu-active nav.tags ul.search li.input form input[type='submit']:hover a { color: #231f20; text-decoration: none; }
+  html body .container #header.mobile-menu-active nav.tags ul.search li.input form input[type='submit']:hover a:hover { color: #982022; }
+  html body .container #header.mobile-menu-active nav.tags ul.search li.input form label { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
+  html body .container #header.mobile-menu-active nav.tags ul.search li.input form input { margin: 0.15625em 0.3125em 0; }
   html body .container #header.mobile-menu-active nav.tags ul.search li.text { display: none; }
   html body .container #header.mobile-menu-active nav.tags ul.search li.input { display: block; }
   html body .container #header.mobile-menu-active section.logo, html body .container #header.mobile-menu-active section.mobile-menu { width: 47.5%; margin-right: 2.5%; float: left; }
@@ -492,10 +570,7 @@ html body .container #header.mobile-menu-active .close-icon:after { content: "\2
   html body .container #header.mobile-menu-active .secondary ul { float: right; }
   html body .container #header.mobile-menu-active .main, html body .container #header.mobile-menu-active .secondary { margin-top: 2.5em; border-bottom: 1px solid #f1f1f1; }
   html body .container #header.mobile-menu-active .mobile-menubar, html body .container #header.mobile-menu-active .close-icon { display: none; } }
-html body .container #footer { margin: 3.75em 0 0; padding: 1.25em 0; border-top: 0.3125em solid; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; /*
-ul { @include list-inline($pad);  li { &#usaid { position: relative; top: -$pad/2; }  &#social-icons { @include social-icons-footer; } }
-}
-*/ }
+html body .container #footer { margin: 3.75em 0 0; padding: 1.25em 0; border-top: 0.3125em solid; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; }
 @media only screen and (max-width: 79.999em) { html body .container #footer nav { width: 47.5%; margin-right: 2.5%; float: left; }
   html body .container #footer nav:nth-of-type(2) { margin-right: 0; } }
 html body .container #footer nav#occrp ul li { margin-bottom: 0.625em; }
@@ -537,7 +612,20 @@ html body.sticky .container #header nav.tags a { color: white; text-decoration: 
 html body.sticky .container #header nav.tags a:hover { color: white; }
 html body.sticky .container #header nav.tags ul.search li.text img { height: 12px; position: relative; top: 1px; }
 html body.sticky .container #header nav.tags ul.search li.input { display: none; }
-html body.sticky .container #header nav.tags ul.search li.input input { margin: 0.3125em; }
+html body.sticky .container #header nav.tags ul.search li.input form { /* Reset */ /* Stretching and padding */ /* Text */ /* Button */ /* Label
+*/ }
+html body.sticky .container #header nav.tags ul.search li.input form input, html body.sticky .container #header nav.tags ul.search li.input form textarea, html body.sticky .container #header nav.tags ul.search li.input form select { border: none; outline: 0; background: white; appearance: none; -webkit-appearance: none; -moz-appearance: none; }
+html body.sticky .container #header nav.tags ul.search li.input form input, html body.sticky .container #header nav.tags ul.search li.input form textarea, html body.sticky .container #header nav.tags ul.search li.input form label { width: 100%; max-width: 100%; float: left; }
+html body.sticky .container #header nav.tags ul.search li.input form input, html body.sticky .container #header nav.tags ul.search li.input form textarea { padding: 0.3125em; width: calc(100% - 0.625em); margin-bottom: 0.625em; }
+html body.sticky .container #header nav.tags ul.search li.input form input[type='text'], html body.sticky .container #header nav.tags ul.search li.input form input[type='email'], html body.sticky .container #header nav.tags ul.search li.input form input[type='password'], html body.sticky .container #header nav.tags ul.search li.input form input[type='url'], html body.sticky .container #header nav.tags ul.search li.input form input[type='search'], html body.sticky .container #header nav.tags ul.search li.input form textarea { border: 1px solid #231f20; font-style: italic; }
+html body.sticky .container #header nav.tags ul.search li.input form input[type='submit'] { width: auto; text-transform: uppercase; letter-spacing: 1.1px; border: 1px solid #231f20; background: #231f20; color: white; cursor: pointer; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; }
+html body.sticky .container #header nav.tags ul.search li.input form input[type='submit'] a { color: white; text-decoration: none; }
+html body.sticky .container #header nav.tags ul.search li.input form input[type='submit'] a:hover { color: white; }
+html body.sticky .container #header nav.tags ul.search li.input form input[type='submit']:hover { background: white; color: #231f20; }
+html body.sticky .container #header nav.tags ul.search li.input form input[type='submit']:hover a { color: #231f20; text-decoration: none; }
+html body.sticky .container #header nav.tags ul.search li.input form input[type='submit']:hover a:hover { color: #982022; }
+html body.sticky .container #header nav.tags ul.search li.input form label { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
+html body.sticky .container #header nav.tags ul.search li.input form input { margin: 0.15625em 0.3125em 0; }
 html body.sticky .container #header nav.tags ul.tag-list { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
 html body.sticky .container #header nav.tags ul.tag-list li, html body.sticky .container #header nav.tags ul.social li, html body.sticky .container #header nav.tags ul.search li { display: inline-block; float: left; margin-right: 0.3125em; }
 html body.sticky .container #header nav.tags ul.tag-list li:last-of-type, html body.sticky .container #header nav.tags ul.social li:last-of-type, html body.sticky .container #header nav.tags ul.search li:last-of-type { margin-right: 0; }
@@ -558,7 +646,20 @@ html body.sticky .container #header .close-icon:after { content: "\2715"; paddin
   html body.sticky .container #header nav.tags ul { width: 100%; max-width: 100%; float: left; }
   html body.sticky .container #header nav.tags ul.search li.text img { height: 12px; position: relative; top: 1px; }
   html body.sticky .container #header nav.tags ul.search li.input { display: none; }
-  html body.sticky .container #header nav.tags ul.search li.input input { margin: 0.3125em; }
+  html body.sticky .container #header nav.tags ul.search li.input form { /* Reset */ /* Stretching and padding */ /* Text */ /* Button */ /* Label
+*/ }
+  html body.sticky .container #header nav.tags ul.search li.input form input, html body.sticky .container #header nav.tags ul.search li.input form textarea, html body.sticky .container #header nav.tags ul.search li.input form select { border: none; outline: 0; background: white; appearance: none; -webkit-appearance: none; -moz-appearance: none; }
+  html body.sticky .container #header nav.tags ul.search li.input form input, html body.sticky .container #header nav.tags ul.search li.input form textarea, html body.sticky .container #header nav.tags ul.search li.input form label { width: 100%; max-width: 100%; float: left; }
+  html body.sticky .container #header nav.tags ul.search li.input form input, html body.sticky .container #header nav.tags ul.search li.input form textarea { padding: 0.3125em; width: calc(100% - 0.625em); margin-bottom: 0.625em; }
+  html body.sticky .container #header nav.tags ul.search li.input form input[type='text'], html body.sticky .container #header nav.tags ul.search li.input form input[type='email'], html body.sticky .container #header nav.tags ul.search li.input form input[type='password'], html body.sticky .container #header nav.tags ul.search li.input form input[type='url'], html body.sticky .container #header nav.tags ul.search li.input form input[type='search'], html body.sticky .container #header nav.tags ul.search li.input form textarea { border: 1px solid #231f20; font-style: italic; }
+  html body.sticky .container #header nav.tags ul.search li.input form input[type='submit'] { width: auto; text-transform: uppercase; letter-spacing: 1.1px; border: 1px solid #231f20; background: #231f20; color: white; cursor: pointer; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; }
+  html body.sticky .container #header nav.tags ul.search li.input form input[type='submit'] a { color: white; text-decoration: none; }
+  html body.sticky .container #header nav.tags ul.search li.input form input[type='submit'] a:hover { color: white; }
+  html body.sticky .container #header nav.tags ul.search li.input form input[type='submit']:hover { background: white; color: #231f20; }
+  html body.sticky .container #header nav.tags ul.search li.input form input[type='submit']:hover a { color: #231f20; text-decoration: none; }
+  html body.sticky .container #header nav.tags ul.search li.input form input[type='submit']:hover a:hover { color: #982022; }
+  html body.sticky .container #header nav.tags ul.search li.input form label { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
+  html body.sticky .container #header nav.tags ul.search li.input form input { margin: 0.15625em 0.3125em 0; }
   html body.sticky .container #header nav.tags ul.search li.text { display: none; }
   html body.sticky .container #header nav.tags ul.search li.input { display: block; }
   html body.sticky .container #header .mobile-menubar { width: 100%; max-width: 100%; float: left; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: 60%; cursor: pointer; background: #231f20; color: white; padding: 0.3125em 0; } }
@@ -581,7 +682,20 @@ html body.sticky .container #header .close-icon:after { content: "\2715"; paddin
   html body.sticky .container #header nav.tags ul { width: 100%; max-width: 100%; float: left; }
   html body.sticky .container #header nav.tags ul.search li.text img { height: 12px; position: relative; top: 1px; }
   html body.sticky .container #header nav.tags ul.search li.input { display: none; }
-  html body.sticky .container #header nav.tags ul.search li.input input { margin: 0.3125em; }
+  html body.sticky .container #header nav.tags ul.search li.input form { /* Reset */ /* Stretching and padding */ /* Text */ /* Button */ /* Label
+*/ }
+  html body.sticky .container #header nav.tags ul.search li.input form input, html body.sticky .container #header nav.tags ul.search li.input form textarea, html body.sticky .container #header nav.tags ul.search li.input form select { border: none; outline: 0; background: white; appearance: none; -webkit-appearance: none; -moz-appearance: none; }
+  html body.sticky .container #header nav.tags ul.search li.input form input, html body.sticky .container #header nav.tags ul.search li.input form textarea, html body.sticky .container #header nav.tags ul.search li.input form label { width: 100%; max-width: 100%; float: left; }
+  html body.sticky .container #header nav.tags ul.search li.input form input, html body.sticky .container #header nav.tags ul.search li.input form textarea { padding: 0.3125em; width: calc(100% - 0.625em); margin-bottom: 0.625em; }
+  html body.sticky .container #header nav.tags ul.search li.input form input[type='text'], html body.sticky .container #header nav.tags ul.search li.input form input[type='email'], html body.sticky .container #header nav.tags ul.search li.input form input[type='password'], html body.sticky .container #header nav.tags ul.search li.input form input[type='url'], html body.sticky .container #header nav.tags ul.search li.input form input[type='search'], html body.sticky .container #header nav.tags ul.search li.input form textarea { border: 1px solid #231f20; font-style: italic; }
+  html body.sticky .container #header nav.tags ul.search li.input form input[type='submit'] { width: auto; text-transform: uppercase; letter-spacing: 1.1px; border: 1px solid #231f20; background: #231f20; color: white; cursor: pointer; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; }
+  html body.sticky .container #header nav.tags ul.search li.input form input[type='submit'] a { color: white; text-decoration: none; }
+  html body.sticky .container #header nav.tags ul.search li.input form input[type='submit'] a:hover { color: white; }
+  html body.sticky .container #header nav.tags ul.search li.input form input[type='submit']:hover { background: white; color: #231f20; }
+  html body.sticky .container #header nav.tags ul.search li.input form input[type='submit']:hover a { color: #231f20; text-decoration: none; }
+  html body.sticky .container #header nav.tags ul.search li.input form input[type='submit']:hover a:hover { color: #982022; }
+  html body.sticky .container #header nav.tags ul.search li.input form label { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
+  html body.sticky .container #header nav.tags ul.search li.input form input { margin: 0.15625em 0.3125em 0; }
   html body.sticky .container #header nav.tags ul.search li.text { display: none; }
   html body.sticky .container #header nav.tags ul.search li.input { display: block; }
   html body.sticky .container #header section.logo, html body.sticky .container #header section.mobile-menu { width: 47.5%; margin-right: 2.5%; float: left; }
@@ -993,7 +1107,7 @@ html body.frontpage .container main #projects form { /* Reset */ /* Stretching a
 */ }
 html body.frontpage .container main #projects form input, html body.frontpage .container main #projects form textarea, html body.frontpage .container main #projects form select { border: none; outline: 0; background: white; appearance: none; -webkit-appearance: none; -moz-appearance: none; }
 html body.frontpage .container main #projects form input, html body.frontpage .container main #projects form textarea, html body.frontpage .container main #projects form label { width: 100%; max-width: 100%; float: left; }
-html body.frontpage .container main #projects form input, html body.frontpage .container main #projects form textarea { padding: 0.625em; width: calc(100% - 1.25em); margin-bottom: 0.625em; }
+html body.frontpage .container main #projects form input, html body.frontpage .container main #projects form textarea { padding: 0.3125em; width: calc(100% - 0.625em); margin-bottom: 0.625em; }
 html body.frontpage .container main #projects form input[type='text'], html body.frontpage .container main #projects form input[type='email'], html body.frontpage .container main #projects form input[type='password'], html body.frontpage .container main #projects form input[type='url'], html body.frontpage .container main #projects form input[type='search'], html body.frontpage .container main #projects form textarea { border: 1px solid #231f20; font-style: italic; }
 html body.frontpage .container main #projects form input[type='submit'] { width: auto; text-transform: uppercase; letter-spacing: 1.1px; border: 1px solid #231f20; background: #231f20; color: white; cursor: pointer; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; }
 html body.frontpage .container main #projects form input[type='submit'] a { color: white; text-decoration: none; }
@@ -1001,7 +1115,7 @@ html body.frontpage .container main #projects form input[type='submit'] a:hover 
 html body.frontpage .container main #projects form input[type='submit']:hover { background: white; color: #231f20; }
 html body.frontpage .container main #projects form input[type='submit']:hover a { color: #231f20; text-decoration: none; }
 html body.frontpage .container main #projects form input[type='submit']:hover a:hover { color: #982022; }
-html body.frontpage .container main #projects form label { text-transform: uppercase; letter-spacing: 1.1px; }
+html body.frontpage .container main #projects form label { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
 html body.frontpage .container main #projects form { width: 100%; max-width: 100%; float: left; }
 html body.frontpage .container main #projects form input { position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); }
 @media only screen and (max-width: 29.999em) { html body.frontpage .container main #projects { position: relative; height: 100%; }
@@ -1267,7 +1381,20 @@ html body.frontpage .container main #tags-and-gallery nav a { color: white; text
 html body.frontpage .container main #tags-and-gallery nav a:hover { color: white; }
 html body.frontpage .container main #tags-and-gallery nav ul.search li.text img { height: 12px; position: relative; top: 1px; }
 html body.frontpage .container main #tags-and-gallery nav ul.search li.input { display: none; }
-html body.frontpage .container main #tags-and-gallery nav ul.search li.input input { margin: 0.3125em; }
+html body.frontpage .container main #tags-and-gallery nav ul.search li.input form { /* Reset */ /* Stretching and padding */ /* Text */ /* Button */ /* Label
+*/ }
+html body.frontpage .container main #tags-and-gallery nav ul.search li.input form input, html body.frontpage .container main #tags-and-gallery nav ul.search li.input form textarea, html body.frontpage .container main #tags-and-gallery nav ul.search li.input form select { border: none; outline: 0; background: white; appearance: none; -webkit-appearance: none; -moz-appearance: none; }
+html body.frontpage .container main #tags-and-gallery nav ul.search li.input form input, html body.frontpage .container main #tags-and-gallery nav ul.search li.input form textarea, html body.frontpage .container main #tags-and-gallery nav ul.search li.input form label { width: 100%; max-width: 100%; float: left; }
+html body.frontpage .container main #tags-and-gallery nav ul.search li.input form input, html body.frontpage .container main #tags-and-gallery nav ul.search li.input form textarea { padding: 0.3125em; width: calc(100% - 0.625em); margin-bottom: 0.625em; }
+html body.frontpage .container main #tags-and-gallery nav ul.search li.input form input[type='text'], html body.frontpage .container main #tags-and-gallery nav ul.search li.input form input[type='email'], html body.frontpage .container main #tags-and-gallery nav ul.search li.input form input[type='password'], html body.frontpage .container main #tags-and-gallery nav ul.search li.input form input[type='url'], html body.frontpage .container main #tags-and-gallery nav ul.search li.input form input[type='search'], html body.frontpage .container main #tags-and-gallery nav ul.search li.input form textarea { border: 1px solid #231f20; font-style: italic; }
+html body.frontpage .container main #tags-and-gallery nav ul.search li.input form input[type='submit'] { width: auto; text-transform: uppercase; letter-spacing: 1.1px; border: 1px solid #231f20; background: #231f20; color: white; cursor: pointer; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; }
+html body.frontpage .container main #tags-and-gallery nav ul.search li.input form input[type='submit'] a { color: white; text-decoration: none; }
+html body.frontpage .container main #tags-and-gallery nav ul.search li.input form input[type='submit'] a:hover { color: white; }
+html body.frontpage .container main #tags-and-gallery nav ul.search li.input form input[type='submit']:hover { background: white; color: #231f20; }
+html body.frontpage .container main #tags-and-gallery nav ul.search li.input form input[type='submit']:hover a { color: #231f20; text-decoration: none; }
+html body.frontpage .container main #tags-and-gallery nav ul.search li.input form input[type='submit']:hover a:hover { color: #982022; }
+html body.frontpage .container main #tags-and-gallery nav ul.search li.input form label { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
+html body.frontpage .container main #tags-and-gallery nav ul.search li.input form input { margin: 0.15625em 0.3125em 0; }
 html body.frontpage .container main #tags-and-gallery nav ul.tag-list { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
 html body.frontpage .container main #tags-and-gallery nav ul.tag-list li, html body.frontpage .container main #tags-and-gallery nav ul.social li, html body.frontpage .container main #tags-and-gallery nav ul.search li { display: inline-block; float: left; margin-right: 0.3125em; }
 html body.frontpage .container main #tags-and-gallery nav ul.tag-list li:last-of-type, html body.frontpage .container main #tags-and-gallery nav ul.social li:last-of-type, html body.frontpage .container main #tags-and-gallery nav ul.search li:last-of-type { margin-right: 0; }
@@ -3014,7 +3141,7 @@ html body.article #article article.single form, html body.about #article article
 */ }
 html body.article #article article.single form input, html body.article #article article.single form textarea, html body.article #article article.single form select, html body.about #article article.single form input, html body.about #article article.single form textarea, html body.about #article article.single form select, html body.post #article article.single form input, html body.post #article article.single form textarea, html body.post #article article.single form select { border: none; outline: 0; background: white; appearance: none; -webkit-appearance: none; -moz-appearance: none; }
 html body.article #article article.single form input, html body.article #article article.single form textarea, html body.article #article article.single form label, html body.about #article article.single form input, html body.about #article article.single form textarea, html body.about #article article.single form label, html body.post #article article.single form input, html body.post #article article.single form textarea, html body.post #article article.single form label { width: 100%; max-width: 100%; float: left; }
-html body.article #article article.single form input, html body.article #article article.single form textarea, html body.about #article article.single form input, html body.about #article article.single form textarea, html body.post #article article.single form input, html body.post #article article.single form textarea { padding: 0.625em; width: calc(100% - 1.25em); margin-bottom: 0.625em; }
+html body.article #article article.single form input, html body.article #article article.single form textarea, html body.about #article article.single form input, html body.about #article article.single form textarea, html body.post #article article.single form input, html body.post #article article.single form textarea { padding: 0.3125em; width: calc(100% - 0.625em); margin-bottom: 0.625em; }
 html body.article #article article.single form input[type='text'], html body.article #article article.single form input[type='email'], html body.article #article article.single form input[type='password'], html body.article #article article.single form input[type='url'], html body.article #article article.single form input[type='search'], html body.article #article article.single form textarea, html body.about #article article.single form input[type='text'], html body.about #article article.single form input[type='email'], html body.about #article article.single form input[type='password'], html body.about #article article.single form input[type='url'], html body.about #article article.single form input[type='search'], html body.about #article article.single form textarea, html body.post #article article.single form input[type='text'], html body.post #article article.single form input[type='email'], html body.post #article article.single form input[type='password'], html body.post #article article.single form input[type='url'], html body.post #article article.single form input[type='search'], html body.post #article article.single form textarea { border: 1px solid #231f20; font-style: italic; }
 html body.article #article article.single form input[type='submit'], html body.about #article article.single form input[type='submit'], html body.post #article article.single form input[type='submit'] { width: auto; text-transform: uppercase; letter-spacing: 1.1px; border: 1px solid #231f20; background: #231f20; color: white; cursor: pointer; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; }
 html body.article #article article.single form input[type='submit'] a, html body.about #article article.single form input[type='submit'] a, html body.post #article article.single form input[type='submit'] a { color: white; text-decoration: none; }
@@ -3022,7 +3149,7 @@ html body.article #article article.single form input[type='submit'] a:hover, htm
 html body.article #article article.single form input[type='submit']:hover, html body.about #article article.single form input[type='submit']:hover, html body.post #article article.single form input[type='submit']:hover { background: white; color: #231f20; }
 html body.article #article article.single form input[type='submit']:hover a, html body.about #article article.single form input[type='submit']:hover a, html body.post #article article.single form input[type='submit']:hover a { color: #231f20; text-decoration: none; }
 html body.article #article article.single form input[type='submit']:hover a:hover, html body.about #article article.single form input[type='submit']:hover a:hover, html body.post #article article.single form input[type='submit']:hover a:hover { color: #982022; }
-html body.article #article article.single form label, html body.about #article article.single form label, html body.post #article article.single form label { text-transform: uppercase; letter-spacing: 1.1px; }
+html body.article #article article.single form label, html body.about #article article.single form label, html body.post #article article.single form label { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
 html body.article #article article.single q, html body.about #article article.single q, html body.post #article article.single q { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; }
 html body.article #article article.single q:before, html body.about #article article.single q:before, html body.post #article article.single q:before { content: '\201C'; }
 html body.article #article article.single q:after, html body.about #article article.single q:after, html body.post #article article.single q:after { content: '\201D'; }
@@ -3223,7 +3350,7 @@ html body.jobs #main #article .single .content article form, html body.announcem
 */ }
 html body.jobs #main #article .single .content article form input, html body.jobs #main #article .single .content article form textarea, html body.jobs #main #article .single .content article form select, html body.announcements #main #article .single .content article form input, html body.announcements #main #article .single .content article form textarea, html body.announcements #main #article .single .content article form select { border: none; outline: 0; background: white; appearance: none; -webkit-appearance: none; -moz-appearance: none; }
 html body.jobs #main #article .single .content article form input, html body.jobs #main #article .single .content article form textarea, html body.jobs #main #article .single .content article form label, html body.announcements #main #article .single .content article form input, html body.announcements #main #article .single .content article form textarea, html body.announcements #main #article .single .content article form label { width: 100%; max-width: 100%; float: left; }
-html body.jobs #main #article .single .content article form input, html body.jobs #main #article .single .content article form textarea, html body.announcements #main #article .single .content article form input, html body.announcements #main #article .single .content article form textarea { padding: 0.625em; width: calc(100% - 1.25em); margin-bottom: 0.625em; }
+html body.jobs #main #article .single .content article form input, html body.jobs #main #article .single .content article form textarea, html body.announcements #main #article .single .content article form input, html body.announcements #main #article .single .content article form textarea { padding: 0.3125em; width: calc(100% - 0.625em); margin-bottom: 0.625em; }
 html body.jobs #main #article .single .content article form input[type='text'], html body.jobs #main #article .single .content article form input[type='email'], html body.jobs #main #article .single .content article form input[type='password'], html body.jobs #main #article .single .content article form input[type='url'], html body.jobs #main #article .single .content article form input[type='search'], html body.jobs #main #article .single .content article form textarea, html body.announcements #main #article .single .content article form input[type='text'], html body.announcements #main #article .single .content article form input[type='email'], html body.announcements #main #article .single .content article form input[type='password'], html body.announcements #main #article .single .content article form input[type='url'], html body.announcements #main #article .single .content article form input[type='search'], html body.announcements #main #article .single .content article form textarea { border: 1px solid #231f20; font-style: italic; }
 html body.jobs #main #article .single .content article form input[type='submit'], html body.announcements #main #article .single .content article form input[type='submit'] { width: auto; text-transform: uppercase; letter-spacing: 1.1px; border: 1px solid #231f20; background: #231f20; color: white; cursor: pointer; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; }
 html body.jobs #main #article .single .content article form input[type='submit'] a, html body.announcements #main #article .single .content article form input[type='submit'] a { color: white; text-decoration: none; }
@@ -3231,7 +3358,7 @@ html body.jobs #main #article .single .content article form input[type='submit']
 html body.jobs #main #article .single .content article form input[type='submit']:hover, html body.announcements #main #article .single .content article form input[type='submit']:hover { background: white; color: #231f20; }
 html body.jobs #main #article .single .content article form input[type='submit']:hover a, html body.announcements #main #article .single .content article form input[type='submit']:hover a { color: #231f20; text-decoration: none; }
 html body.jobs #main #article .single .content article form input[type='submit']:hover a:hover, html body.announcements #main #article .single .content article form input[type='submit']:hover a:hover { color: #982022; }
-html body.jobs #main #article .single .content article form label, html body.announcements #main #article .single .content article form label { text-transform: uppercase; letter-spacing: 1.1px; }
+html body.jobs #main #article .single .content article form label, html body.announcements #main #article .single .content article form label { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
 html body.jobs #main #article .single .content article q, html body.announcements #main #article .single .content article q { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; }
 html body.jobs #main #article .single .content article q:before, html body.announcements #main #article .single .content article q:before { content: '\201C'; }
 html body.jobs #main #article .single .content article q:after, html body.announcements #main #article .single .content article q:after { content: '\201D'; }
@@ -3814,7 +3941,7 @@ html body.daily #articles article.thumb form { /* Reset */ /* Stretching and pad
 */ }
 html body.daily #articles article.thumb form input, html body.daily #articles article.thumb form textarea, html body.daily #articles article.thumb form select { border: none; outline: 0; background: white; appearance: none; -webkit-appearance: none; -moz-appearance: none; }
 html body.daily #articles article.thumb form input, html body.daily #articles article.thumb form textarea, html body.daily #articles article.thumb form label { width: 100%; max-width: 100%; float: left; }
-html body.daily #articles article.thumb form input, html body.daily #articles article.thumb form textarea { padding: 0.625em; width: calc(100% - 1.25em); margin-bottom: 0.625em; }
+html body.daily #articles article.thumb form input, html body.daily #articles article.thumb form textarea { padding: 0.3125em; width: calc(100% - 0.625em); margin-bottom: 0.625em; }
 html body.daily #articles article.thumb form input[type='text'], html body.daily #articles article.thumb form input[type='email'], html body.daily #articles article.thumb form input[type='password'], html body.daily #articles article.thumb form input[type='url'], html body.daily #articles article.thumb form input[type='search'], html body.daily #articles article.thumb form textarea { border: 1px solid #231f20; font-style: italic; }
 html body.daily #articles article.thumb form input[type='submit'] { width: auto; text-transform: uppercase; letter-spacing: 1.1px; border: 1px solid #231f20; background: #231f20; color: white; cursor: pointer; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; }
 html body.daily #articles article.thumb form input[type='submit'] a { color: white; text-decoration: none; }
@@ -3822,7 +3949,7 @@ html body.daily #articles article.thumb form input[type='submit'] a:hover { colo
 html body.daily #articles article.thumb form input[type='submit']:hover { background: white; color: #231f20; }
 html body.daily #articles article.thumb form input[type='submit']:hover a { color: #231f20; text-decoration: none; }
 html body.daily #articles article.thumb form input[type='submit']:hover a:hover { color: #982022; }
-html body.daily #articles article.thumb form label { text-transform: uppercase; letter-spacing: 1.1px; }
+html body.daily #articles article.thumb form label { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
 html body.daily #articles article.thumb q { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-family: 'Bitter', serif; font-style: italic; }
 html body.daily #articles article.thumb q:before { content: '\201C'; }
 html body.daily #articles article.thumb q:after { content: '\201D'; }

@@ -425,8 +425,8 @@
     }
     
     input, textarea {
-      padding: $pad/2;
-      width: calc(100% - #{$pad});
+      padding: $pad/4;
+      width: calc(100% - #{$pad/2});
       margin-bottom: $pad/2;
     }
     
@@ -457,6 +457,7 @@
     */
     label {
       @include uppercase;
+      font-size: small;
     }
     
   }
