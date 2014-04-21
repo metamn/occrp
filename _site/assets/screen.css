@@ -737,7 +737,7 @@ html body.frontpage .container main #intro #slider article figure .label { posit
 html body.frontpage .container main #intro #slider article figure .label a { color: #231f20; text-decoration: none; }
 html body.frontpage .container main #intro #slider article figure .label a:hover { color: white; }
 html body.frontpage .container main #intro #slider article .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
-html body.frontpage .container main #intro #slider article .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
+html body.frontpage .container main #intro #slider article .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.frontpage .container main #intro #slider article .meta > h3 { display: none; }
 html body.frontpage .container main #intro #slider article .meta ul { margin: 0; }
 html body.frontpage .container main #intro #slider article .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -848,7 +848,7 @@ html body.frontpage .container main #intro aside section article figure .label {
 html body.frontpage .container main #intro aside section article figure .label a { color: #231f20; text-decoration: none; }
 html body.frontpage .container main #intro aside section article figure .label a:hover { color: white; }
 html body.frontpage .container main #intro aside section article .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
-html body.frontpage .container main #intro aside section article .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
+html body.frontpage .container main #intro aside section article .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.frontpage .container main #intro aside section article .meta > h3 { display: none; }
 html body.frontpage .container main #intro aside section article .meta ul { margin: 0; }
 html body.frontpage .container main #intro aside section article .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -940,7 +940,7 @@ html body.frontpage .container main #investigations article figure .label { posi
 html body.frontpage .container main #investigations article figure .label a { color: #231f20; text-decoration: none; }
 html body.frontpage .container main #investigations article figure .label a:hover { color: white; }
 html body.frontpage .container main #investigations article .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
-html body.frontpage .container main #investigations article .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
+html body.frontpage .container main #investigations article .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.frontpage .container main #investigations article .meta > h3 { display: none; }
 html body.frontpage .container main #investigations article .meta ul { margin: 0; }
 html body.frontpage .container main #investigations article .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -1031,7 +1031,7 @@ html body.frontpage .container main #products article figure .label { position: 
 html body.frontpage .container main #products article figure .label a { color: #231f20; text-decoration: none; }
 html body.frontpage .container main #products article figure .label a:hover { color: white; }
 html body.frontpage .container main #products article .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
-html body.frontpage .container main #products article .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
+html body.frontpage .container main #products article .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.frontpage .container main #products article .meta > h3 { display: none; }
 html body.frontpage .container main #products article .meta ul { margin: 0; }
 html body.frontpage .container main #products article .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -1129,7 +1129,7 @@ html body.frontpage .container main #projects article figure .label { position: 
 html body.frontpage .container main #projects article figure .label a { color: #231f20; text-decoration: none; }
 html body.frontpage .container main #projects article figure .label a:hover { color: white; }
 html body.frontpage .container main #projects article .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
-html body.frontpage .container main #projects article .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
+html body.frontpage .container main #projects article .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.frontpage .container main #projects article .meta > h3 { display: none; }
 html body.frontpage .container main #projects article .meta ul { margin: 0; }
 html body.frontpage .container main #projects article .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -1176,9 +1176,6 @@ html body.frontpage .container main #projects article .gallery span { text-trans
 html body.frontpage .container main #projects article .gallery span a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #projects article .gallery span a:hover { color: #231f20; }
 html body.frontpage .container main #projects article .gallery span.close { position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); padding: 0.15625em; position: absolute; bottom: 0.625em; display: none; }
-@media only screen and (max-width: 29.999em) { html body.frontpage .container main #projects article { margin-bottom: 0.625em; } }
-@media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.frontpage .container main #projects article { height: 17em; } }
-@media only screen and (min-width: 80em) { html body.frontpage .container main #projects article { height: 17em; } }
 html body.frontpage .container main #projects article h1 { font-size: medium; }
 html body.frontpage .container main #projects form { /* Reset */ /* Stretching and padding */ /* Text */ /* Button */ /* Label
 */ }
@@ -1247,7 +1244,7 @@ html body.frontpage .container main #blog article figure .label { position: abso
 html body.frontpage .container main #blog article figure .label a { color: #231f20; text-decoration: none; }
 html body.frontpage .container main #blog article figure .label a:hover { color: white; }
 html body.frontpage .container main #blog article .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
-html body.frontpage .container main #blog article .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
+html body.frontpage .container main #blog article .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.frontpage .container main #blog article .meta > h3 { display: none; }
 html body.frontpage .container main #blog article .meta ul { margin: 0; }
 html body.frontpage .container main #blog article .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -1342,7 +1339,7 @@ html body.frontpage .container main #most-read section article figure .label { p
 html body.frontpage .container main #most-read section article figure .label a { color: #231f20; text-decoration: none; }
 html body.frontpage .container main #most-read section article figure .label a:hover { color: white; }
 html body.frontpage .container main #most-read section article .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
-html body.frontpage .container main #most-read section article .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
+html body.frontpage .container main #most-read section article .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.frontpage .container main #most-read section article .meta > h3 { display: none; }
 html body.frontpage .container main #most-read section article .meta ul { margin: 0; }
 html body.frontpage .container main #most-read section article .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -1432,7 +1429,7 @@ html body.frontpage .container main #videos article figure .label { position: ab
 html body.frontpage .container main #videos article figure .label a { color: #231f20; text-decoration: none; }
 html body.frontpage .container main #videos article figure .label a:hover { color: white; }
 html body.frontpage .container main #videos article .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
-html body.frontpage .container main #videos article .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
+html body.frontpage .container main #videos article .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.frontpage .container main #videos article .meta > h3 { display: none; }
 html body.frontpage .container main #videos article .meta ul { margin: 0; }
 html body.frontpage .container main #videos article .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -1479,9 +1476,6 @@ html body.frontpage .container main #videos article .gallery span { text-transfo
 html body.frontpage .container main #videos article .gallery span a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #videos article .gallery span a:hover { color: #231f20; }
 html body.frontpage .container main #videos article .gallery span.close { position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); padding: 0.15625em; position: absolute; bottom: 0.625em; display: none; }
-@media only screen and (max-width: 29.999em) { html body.frontpage .container main #videos article { margin-bottom: 0.625em; } }
-@media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.frontpage .container main #videos article { height: 17em; } }
-@media only screen and (min-width: 80em) { html body.frontpage .container main #videos article { height: 17em; } }
 html body.frontpage .container main #videos article h1 { font-size: medium; }
 html body.frontpage .container main #videos article span.icon { position: absolute; height: 0; top: 38%; left: 38%; opacity: .7; }
 @media only screen and (min-width: 80em) { html body.frontpage .container main #videos article span.icon { top: 18%; left: 32%; } }
@@ -1584,7 +1578,7 @@ html body.category main aside section article figure .label { position: absolute
 html body.category main aside section article figure .label a { color: #231f20; text-decoration: none; }
 html body.category main aside section article figure .label a:hover { color: white; }
 html body.category main aside section article .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
-html body.category main aside section article .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
+html body.category main aside section article .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.category main aside section article .meta > h3 { display: none; }
 html body.category main aside section article .meta ul { margin: 0; }
 html body.category main aside section article .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -1717,7 +1711,7 @@ html body.category #articles aside figure .label { position: absolute; bottom: 0
 html body.category #articles aside figure .label a { color: #231f20; text-decoration: none; }
 html body.category #articles aside figure .label a:hover { color: white; }
 html body.category #articles aside .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
-html body.category #articles aside .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
+html body.category #articles aside .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.category #articles aside .meta > h3 { display: none; }
 html body.category #articles aside .meta ul { margin: 0; }
 html body.category #articles aside .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -1784,7 +1778,7 @@ html body.category #articles aside h1, html body.category #articles aside .excer
   html body.category #articles article.thumb figure .label a { color: #231f20; text-decoration: none; }
   html body.category #articles article.thumb figure .label a:hover { color: white; }
   html body.category #articles article.thumb .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
-  html body.category #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
+  html body.category #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
   html body.category #articles article.thumb .meta > h3 { display: none; }
   html body.category #articles article.thumb .meta ul { margin: 0; }
   html body.category #articles article.thumb .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -1894,7 +1888,7 @@ html body.category #articles aside h1, html body.category #articles aside .excer
   html body.category #articles article.thumb figure .label a { color: #231f20; text-decoration: none; }
   html body.category #articles article.thumb figure .label a:hover { color: white; }
   html body.category #articles article.thumb .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
-  html body.category #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
+  html body.category #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
   html body.category #articles article.thumb .meta > h3 { display: none; }
   html body.category #articles article.thumb .meta ul { margin: 0; }
   html body.category #articles article.thumb .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -1940,11 +1934,8 @@ html body.category #articles aside h1, html body.category #articles aside .excer
   html body.category #articles article.thumb .gallery span { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; font-size: small; cursor: pointer; }
   html body.category #articles article.thumb .gallery span a { color: #982022; text-decoration: none; }
   html body.category #articles article.thumb .gallery span a:hover { color: #231f20; }
-  html body.category #articles article.thumb .gallery span.close { position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); padding: 0.15625em; position: absolute; bottom: 0.625em; display: none; } }
-@media only screen and (min-width: 80em) and (max-width: 29.999em) { html body.category #articles article.thumb { margin-bottom: 0.625em; } }
-@media only screen and (min-width: 80em) and (min-width: 30em) and (max-width: 79.999em) { html body.category #articles article.thumb { height: 17em; } }
-@media only screen and (min-width: 80em) and (min-width: 80em) { html body.category #articles article.thumb { height: 17em; } }
-@media only screen and (min-width: 80em) { html body.category #articles article.thumb h1 { font-size: medium; } }
+  html body.category #articles article.thumb .gallery span.close { position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); padding: 0.15625em; position: absolute; bottom: 0.625em; display: none; }
+  html body.category #articles article.thumb h1 { font-size: medium; } }
 @media only screen and (min-width: 80em) and (max-width: 29.999em) { html body.category #articles article.thumb { width: 100%; margin-right: 0; float: left; } }
 @media only screen and (min-width: 80em) and (min-width: 30em) and (max-width: 79.999em) { html body.category #articles article.thumb { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.category #articles article.thumb:nth-of-type(2) { margin-right: 0; }
@@ -2015,7 +2006,7 @@ html body.tag main aside section article figure .label { position: absolute; bot
 html body.tag main aside section article figure .label a { color: #231f20; text-decoration: none; }
 html body.tag main aside section article figure .label a:hover { color: white; }
 html body.tag main aside section article .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
-html body.tag main aside section article .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
+html body.tag main aside section article .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.tag main aside section article .meta > h3 { display: none; }
 html body.tag main aside section article .meta ul { margin: 0; }
 html body.tag main aside section article .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -2148,7 +2139,7 @@ html body.tag #articles aside figure .label { position: absolute; bottom: 0; tex
 html body.tag #articles aside figure .label a { color: #231f20; text-decoration: none; }
 html body.tag #articles aside figure .label a:hover { color: white; }
 html body.tag #articles aside .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
-html body.tag #articles aside .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
+html body.tag #articles aside .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.tag #articles aside .meta > h3 { display: none; }
 html body.tag #articles aside .meta ul { margin: 0; }
 html body.tag #articles aside .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -2215,7 +2206,7 @@ html body.tag #articles aside h1, html body.tag #articles aside .excerpt { paddi
   html body.tag #articles article.thumb figure .label a { color: #231f20; text-decoration: none; }
   html body.tag #articles article.thumb figure .label a:hover { color: white; }
   html body.tag #articles article.thumb .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
-  html body.tag #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
+  html body.tag #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
   html body.tag #articles article.thumb .meta > h3 { display: none; }
   html body.tag #articles article.thumb .meta ul { margin: 0; }
   html body.tag #articles article.thumb .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -2325,7 +2316,7 @@ html body.tag #articles aside h1, html body.tag #articles aside .excerpt { paddi
   html body.tag #articles article.thumb figure .label a { color: #231f20; text-decoration: none; }
   html body.tag #articles article.thumb figure .label a:hover { color: white; }
   html body.tag #articles article.thumb .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
-  html body.tag #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
+  html body.tag #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
   html body.tag #articles article.thumb .meta > h3 { display: none; }
   html body.tag #articles article.thumb .meta ul { margin: 0; }
   html body.tag #articles article.thumb .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -2371,11 +2362,8 @@ html body.tag #articles aside h1, html body.tag #articles aside .excerpt { paddi
   html body.tag #articles article.thumb .gallery span { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; font-size: small; cursor: pointer; }
   html body.tag #articles article.thumb .gallery span a { color: #982022; text-decoration: none; }
   html body.tag #articles article.thumb .gallery span a:hover { color: #231f20; }
-  html body.tag #articles article.thumb .gallery span.close { position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); padding: 0.15625em; position: absolute; bottom: 0.625em; display: none; } }
-@media only screen and (min-width: 80em) and (max-width: 29.999em) { html body.tag #articles article.thumb { margin-bottom: 0.625em; } }
-@media only screen and (min-width: 80em) and (min-width: 30em) and (max-width: 79.999em) { html body.tag #articles article.thumb { height: 17em; } }
-@media only screen and (min-width: 80em) and (min-width: 80em) { html body.tag #articles article.thumb { height: 17em; } }
-@media only screen and (min-width: 80em) { html body.tag #articles article.thumb h1 { font-size: medium; } }
+  html body.tag #articles article.thumb .gallery span.close { position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); padding: 0.15625em; position: absolute; bottom: 0.625em; display: none; }
+  html body.tag #articles article.thumb h1 { font-size: medium; } }
 @media only screen and (min-width: 80em) and (max-width: 29.999em) { html body.tag #articles article.thumb { width: 100%; margin-right: 0; float: left; } }
 @media only screen and (min-width: 80em) and (min-width: 30em) and (max-width: 79.999em) { html body.tag #articles article.thumb { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.tag #articles article.thumb:nth-of-type(2) { margin-right: 0; }
@@ -2494,7 +2482,7 @@ html body.archive article.thumb figure .label { position: absolute; bottom: 0; t
 html body.archive article.thumb figure .label a { color: #231f20; text-decoration: none; }
 html body.archive article.thumb figure .label a:hover { color: white; }
 html body.archive article.thumb .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
-html body.archive article.thumb .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
+html body.archive article.thumb .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.archive article.thumb .meta > h3 { display: none; }
 html body.archive article.thumb .meta ul { margin: 0; }
 html body.archive article.thumb .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -2541,10 +2529,10 @@ html body.archive article.thumb .gallery span { text-transform: uppercase; lette
 html body.archive article.thumb .gallery span a { color: #982022; text-decoration: none; }
 html body.archive article.thumb .gallery span a:hover { color: #231f20; }
 html body.archive article.thumb .gallery span.close { position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); padding: 0.15625em; position: absolute; bottom: 0.625em; display: none; }
+html body.archive article.thumb h1 { font-size: medium; }
 @media only screen and (max-width: 29.999em) { html body.archive article.thumb { margin-bottom: 0.625em; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.archive article.thumb { height: 17em; } }
 @media only screen and (min-width: 80em) { html body.archive article.thumb { height: 17em; } }
-html body.archive article.thumb h1 { font-size: medium; }
 @media only screen and (min-width: 80em) { html body.archive article.thumb { border-top: 0.3125em solid; padding-top: 0.3125em; } }
 @media only screen and (max-width: 29.999em) { html body.archive article.thumb { width: 100%; max-width: 100%; float: left; width: 100%; max-width: 100%; float: left; margin-bottom: 0.3125em; background: #f1f1f1; color: #231f20; }
   html body.archive article.thumb h1 { display: block; }
@@ -2563,7 +2551,7 @@ html body.archive article.thumb h1 { font-size: medium; }
   html body.archive article.thumb figure .label a { color: #231f20; text-decoration: none; }
   html body.archive article.thumb figure .label a:hover { color: white; }
   html body.archive article.thumb .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
-  html body.archive article.thumb .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
+  html body.archive article.thumb .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
   html body.archive article.thumb .meta > h3 { display: none; }
   html body.archive article.thumb .meta ul { margin: 0; }
   html body.archive article.thumb .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -2645,7 +2633,7 @@ html body.blog main aside section article figure .label { position: absolute; bo
 html body.blog main aside section article figure .label a { color: #231f20; text-decoration: none; }
 html body.blog main aside section article figure .label a:hover { color: white; }
 html body.blog main aside section article .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
-html body.blog main aside section article .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
+html body.blog main aside section article .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.blog main aside section article .meta > h3 { display: none; }
 html body.blog main aside section article .meta ul { margin: 0; }
 html body.blog main aside section article .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -2775,7 +2763,7 @@ html body.blog #articles article.thumb figure .label { position: absolute; botto
 html body.blog #articles article.thumb figure .label a { color: #231f20; text-decoration: none; }
 html body.blog #articles article.thumb figure .label a:hover { color: white; }
 html body.blog #articles article.thumb .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
-html body.blog #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
+html body.blog #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.blog #articles article.thumb .meta > h3 { display: none; }
 html body.blog #articles article.thumb .meta ul { margin: 0; }
 html body.blog #articles article.thumb .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -2843,7 +2831,7 @@ html body.blog #articles article.thumb .excerpt { padding-bottom: 1.25em; border
   html body.blog #articles article.thumb figure .label a { color: #231f20; text-decoration: none; }
   html body.blog #articles article.thumb figure .label a:hover { color: white; }
   html body.blog #articles article.thumb .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
-  html body.blog #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
+  html body.blog #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
   html body.blog #articles article.thumb .meta > h3 { display: none; }
   html body.blog #articles article.thumb .meta ul { margin: 0; }
   html body.blog #articles article.thumb .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -2922,7 +2910,7 @@ html body.author main aside section article figure .label { position: absolute; 
 html body.author main aside section article figure .label a { color: #231f20; text-decoration: none; }
 html body.author main aside section article figure .label a:hover { color: white; }
 html body.author main aside section article .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
-html body.author main aside section article .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
+html body.author main aside section article .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.author main aside section article .meta > h3 { display: none; }
 html body.author main aside section article .meta ul { margin: 0; }
 html body.author main aside section article .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -3055,7 +3043,7 @@ html body.author #articles aside figure .label { position: absolute; bottom: 0; 
 html body.author #articles aside figure .label a { color: #231f20; text-decoration: none; }
 html body.author #articles aside figure .label a:hover { color: white; }
 html body.author #articles aside .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
-html body.author #articles aside .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
+html body.author #articles aside .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.author #articles aside .meta > h3 { display: none; }
 html body.author #articles aside .meta ul { margin: 0; }
 html body.author #articles aside .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -3122,7 +3110,7 @@ html body.author #articles aside h1, html body.author #articles aside .excerpt {
   html body.author #articles article.thumb figure .label a { color: #231f20; text-decoration: none; }
   html body.author #articles article.thumb figure .label a:hover { color: white; }
   html body.author #articles article.thumb .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
-  html body.author #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
+  html body.author #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
   html body.author #articles article.thumb .meta > h3 { display: none; }
   html body.author #articles article.thumb .meta ul { margin: 0; }
   html body.author #articles article.thumb .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -3232,7 +3220,7 @@ html body.author #articles aside h1, html body.author #articles aside .excerpt {
   html body.author #articles article.thumb figure .label a { color: #231f20; text-decoration: none; }
   html body.author #articles article.thumb figure .label a:hover { color: white; }
   html body.author #articles article.thumb .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
-  html body.author #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
+  html body.author #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
   html body.author #articles article.thumb .meta > h3 { display: none; }
   html body.author #articles article.thumb .meta ul { margin: 0; }
   html body.author #articles article.thumb .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -3278,11 +3266,8 @@ html body.author #articles aside h1, html body.author #articles aside .excerpt {
   html body.author #articles article.thumb .gallery span { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; font-size: small; cursor: pointer; }
   html body.author #articles article.thumb .gallery span a { color: #982022; text-decoration: none; }
   html body.author #articles article.thumb .gallery span a:hover { color: #231f20; }
-  html body.author #articles article.thumb .gallery span.close { position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); padding: 0.15625em; position: absolute; bottom: 0.625em; display: none; } }
-@media only screen and (min-width: 80em) and (max-width: 29.999em) { html body.author #articles article.thumb { margin-bottom: 0.625em; } }
-@media only screen and (min-width: 80em) and (min-width: 30em) and (max-width: 79.999em) { html body.author #articles article.thumb { height: 17em; } }
-@media only screen and (min-width: 80em) and (min-width: 80em) { html body.author #articles article.thumb { height: 17em; } }
-@media only screen and (min-width: 80em) { html body.author #articles article.thumb h1 { font-size: medium; } }
+  html body.author #articles article.thumb .gallery span.close { position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); padding: 0.15625em; position: absolute; bottom: 0.625em; display: none; }
+  html body.author #articles article.thumb h1 { font-size: medium; } }
 @media only screen and (min-width: 80em) and (max-width: 29.999em) { html body.author #articles article.thumb { width: 100%; margin-right: 0; float: left; } }
 @media only screen and (min-width: 80em) and (min-width: 30em) and (max-width: 79.999em) { html body.author #articles article.thumb { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.author #articles article.thumb:nth-of-type(2) { margin-right: 0; }
@@ -3353,7 +3338,7 @@ html body.article main aside section article figure .label, html body.about main
 html body.article main aside section article figure .label a, html body.about main aside section article figure .label a, html body.post main aside section article figure .label a { color: #231f20; text-decoration: none; }
 html body.article main aside section article figure .label a:hover, html body.about main aside section article figure .label a:hover, html body.post main aside section article figure .label a:hover { color: white; }
 html body.article main aside section article .excerpt, html body.about main aside section article .excerpt, html body.post main aside section article .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
-html body.article main aside section article .meta, html body.about main aside section article .meta, html body.post main aside section article .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
+html body.article main aside section article .meta, html body.about main aside section article .meta, html body.post main aside section article .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.article main aside section article .meta > h3, html body.about main aside section article .meta > h3, html body.post main aside section article .meta > h3 { display: none; }
 html body.article main aside section article .meta ul, html body.about main aside section article .meta ul, html body.post main aside section article .meta ul { margin: 0; }
 html body.article main aside section article .meta ul li, html body.about main aside section article .meta ul li, html body.post main aside section article .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -3468,7 +3453,7 @@ html body.article #article article.single figure .label, html body.about #articl
 html body.article #article article.single figure .label a, html body.about #article article.single figure .label a, html body.post #article article.single figure .label a { color: #231f20; text-decoration: none; }
 html body.article #article article.single figure .label a:hover, html body.about #article article.single figure .label a:hover, html body.post #article article.single figure .label a:hover { color: white; }
 html body.article #article article.single .excerpt, html body.about #article article.single .excerpt, html body.post #article article.single .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
-html body.article #article article.single .meta, html body.about #article article.single .meta, html body.post #article article.single .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
+html body.article #article article.single .meta, html body.about #article article.single .meta, html body.post #article article.single .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.article #article article.single .meta > h3, html body.about #article article.single .meta > h3, html body.post #article article.single .meta > h3 { display: none; }
 html body.article #article article.single .meta ul, html body.about #article article.single .meta ul, html body.post #article article.single .meta ul { margin: 0; }
 html body.article #article article.single .meta ul li, html body.about #article article.single .meta ul li, html body.post #article article.single .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -3654,9 +3639,9 @@ html body.about main aside #spacer { top: 0; }
 html body.board-directors main #article .single .content h4 { border-bottom: 1px solid #f1f1f1; font-weight: bold; padding-bottom: 0; }
 html body.board-directors main #article .single .content dl + p { margin-top: 2.5em !important; }
 html body.board-directors main #article .single .content dd.portrait { width: 100%; max-width: 100%; float: left; margin-bottom: 1.25em; }
-html body.board-directors main #article .single .content dd.portrait img { width: 50%; float: left; margin: 0 1.25em 1.25em 0; }
-html body.board-directors main #article .single .content dd.portrait div { padding: 0 0.625em; line-height: 1.75; margin-left: calc(50% + 1.25em + 1.25em); }
-html body.board-directors main #article .single .content dd.portrait div p + p { margin-top: 1.25em; }
+@media only screen and (min-width: 48em) { html body.board-directors main #article .single .content dd.portrait img { width: 50%; float: left; margin: 0 1.25em 1.25em 0; }
+  html body.board-directors main #article .single .content dd.portrait div { padding: 0 0.625em; line-height: 1.75; margin-left: calc(50% + 1.25em + 1.25em); }
+  html body.board-directors main #article .single .content dd.portrait div p + p { margin-top: 1.25em; } }
 html body.jobs #main #article .single .content article, html body.announcements #main #article .single .content article { border-bottom: 1px solid #f1f1f1; margin-bottom: 0.3125em; padding-bottom: 0.3125em; max-width: 43.75em; line-height: 1.75; /* Padding of individual elements
 */ /* Padding of consecutive elements
 */ }
@@ -3676,7 +3661,7 @@ html body.jobs #main #article .single .content article figure .label, html body.
 html body.jobs #main #article .single .content article figure .label a, html body.announcements #main #article .single .content article figure .label a { color: #231f20; text-decoration: none; }
 html body.jobs #main #article .single .content article figure .label a:hover, html body.announcements #main #article .single .content article figure .label a:hover { color: white; }
 html body.jobs #main #article .single .content article .excerpt, html body.announcements #main #article .single .content article .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
-html body.jobs #main #article .single .content article .meta, html body.announcements #main #article .single .content article .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
+html body.jobs #main #article .single .content article .meta, html body.announcements #main #article .single .content article .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.jobs #main #article .single .content article .meta > h3, html body.announcements #main #article .single .content article .meta > h3 { display: none; }
 html body.jobs #main #article .single .content article .meta ul, html body.announcements #main #article .single .content article .meta ul { margin: 0; }
 html body.jobs #main #article .single .content article .meta ul li, html body.announcements #main #article .single .content article .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -3904,7 +3889,7 @@ html body.daily main aside section article figure .label { position: absolute; b
 html body.daily main aside section article figure .label a { color: #231f20; text-decoration: none; }
 html body.daily main aside section article figure .label a:hover { color: white; }
 html body.daily main aside section article .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
-html body.daily main aside section article .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
+html body.daily main aside section article .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.daily main aside section article .meta > h3 { display: none; }
 html body.daily main aside section article .meta ul { margin: 0; }
 html body.daily main aside section article .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -4037,7 +4022,7 @@ html body.daily #articles aside figure .label { position: absolute; bottom: 0; t
 html body.daily #articles aside figure .label a { color: #231f20; text-decoration: none; }
 html body.daily #articles aside figure .label a:hover { color: white; }
 html body.daily #articles aside .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
-html body.daily #articles aside .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
+html body.daily #articles aside .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.daily #articles aside .meta > h3 { display: none; }
 html body.daily #articles aside .meta ul { margin: 0; }
 html body.daily #articles aside .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -4104,7 +4089,7 @@ html body.daily #articles aside h1, html body.daily #articles aside .excerpt { p
   html body.daily #articles article.thumb figure .label a { color: #231f20; text-decoration: none; }
   html body.daily #articles article.thumb figure .label a:hover { color: white; }
   html body.daily #articles article.thumb .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
-  html body.daily #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
+  html body.daily #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
   html body.daily #articles article.thumb .meta > h3 { display: none; }
   html body.daily #articles article.thumb .meta ul { margin: 0; }
   html body.daily #articles article.thumb .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -4214,7 +4199,7 @@ html body.daily #articles aside h1, html body.daily #articles aside .excerpt { p
   html body.daily #articles article.thumb figure .label a { color: #231f20; text-decoration: none; }
   html body.daily #articles article.thumb figure .label a:hover { color: white; }
   html body.daily #articles article.thumb .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
-  html body.daily #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
+  html body.daily #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
   html body.daily #articles article.thumb .meta > h3 { display: none; }
   html body.daily #articles article.thumb .meta ul { margin: 0; }
   html body.daily #articles article.thumb .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -4260,11 +4245,8 @@ html body.daily #articles aside h1, html body.daily #articles aside .excerpt { p
   html body.daily #articles article.thumb .gallery span { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; font-size: small; cursor: pointer; }
   html body.daily #articles article.thumb .gallery span a { color: #982022; text-decoration: none; }
   html body.daily #articles article.thumb .gallery span a:hover { color: #231f20; }
-  html body.daily #articles article.thumb .gallery span.close { position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); padding: 0.15625em; position: absolute; bottom: 0.625em; display: none; } }
-@media only screen and (min-width: 80em) and (max-width: 29.999em) { html body.daily #articles article.thumb { margin-bottom: 0.625em; } }
-@media only screen and (min-width: 80em) and (min-width: 30em) and (max-width: 79.999em) { html body.daily #articles article.thumb { height: 17em; } }
-@media only screen and (min-width: 80em) and (min-width: 80em) { html body.daily #articles article.thumb { height: 17em; } }
-@media only screen and (min-width: 80em) { html body.daily #articles article.thumb h1 { font-size: medium; } }
+  html body.daily #articles article.thumb .gallery span.close { position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); padding: 0.15625em; position: absolute; bottom: 0.625em; display: none; }
+  html body.daily #articles article.thumb h1 { font-size: medium; } }
 @media only screen and (min-width: 80em) and (max-width: 29.999em) { html body.daily #articles article.thumb { width: 100%; margin-right: 0; float: left; } }
 @media only screen and (min-width: 80em) and (min-width: 30em) and (max-width: 79.999em) { html body.daily #articles article.thumb { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.daily #articles article.thumb:nth-of-type(2) { margin-right: 0; }
@@ -4342,7 +4324,7 @@ html body.daily #articles article.thumb figure .label { position: absolute; bott
 html body.daily #articles article.thumb figure .label a { color: #231f20; text-decoration: none; }
 html body.daily #articles article.thumb figure .label a:hover { color: white; }
 html body.daily #articles article.thumb .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
-html body.daily #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
+html body.daily #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.daily #articles article.thumb .meta > h3 { display: none; }
 html body.daily #articles article.thumb .meta ul { margin: 0; }
 html body.daily #articles article.thumb .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
@@ -4486,6 +4468,9 @@ html body.daily #articles article.thumb h1 + ul, html body.daily #articles artic
 html body.daily #articles article.thumb li ul, html body.daily #articles article.thumb li ol { margin-top: 0; }
 html body.daily #articles article.thumb h1 { padding-bottom: 0; }
 html body.daily #articles article.thumb .excerpt { display: block; }
+@media only screen and (max-width: 79.999em) { html body.daily #articles article.thumb { background: none; }
+  html body.daily #articles article.thumb h1, html body.daily #articles article.thumb .excerpt { width: 100%; max-width: 100%; float: left; }
+  html body.daily #articles article.thumb h1 { padding-top: 0; } }
 html body.videos article { position: relative; }
 html body.videos article span.icon { position: absolute; height: 0; top: 38%; left: 38%; opacity: .7; }
 @media only screen and (min-width: 80em) { html body.videos article span.icon { top: 18%; left: 32%; } }

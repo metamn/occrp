@@ -16,6 +16,7 @@
     article.thumb {
       @include responsive-grid(5, 20);
       @include article-style(projects);
+      @include responsive-height(17em, 17em);
       @include article-style(archive);
       
       @include mobile {
@@ -75,6 +76,18 @@
       @include article-style(news);
       @include article-style(daily);
       height: auto;
+      
+      @include below-small-screen {
+        background: none;
+        
+        h1, .excerpt {
+          @include block;
+        }
+        
+        h1 {
+          padding-top: 0;
+        }
+      }
     }
   }
 }

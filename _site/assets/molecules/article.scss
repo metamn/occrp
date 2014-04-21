@@ -174,7 +174,6 @@
     
   } @elseif ($style == projects) {
     @include article-parts(null, null, title, figure, null, null);
-    @include responsive-height(17em, 17em);
     margin-bottom: $margin/2;
     
     h1 {
@@ -312,9 +311,7 @@
   .meta {
     @include hide-title;
     @include block;
-    @include border-thin;
     margin-bottom: $margin;
-    margin-top: $margin*2;
     
     ul {
       @include list-normal;

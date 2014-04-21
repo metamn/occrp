@@ -47,7 +47,10 @@
           dd.portrait {
             @include block;
             margin-bottom: $pad;
-            @include image-thumb-left(50%);
+            
+            @include tablet-and-up {
+              @include image-thumb-left(50%);
+            }
           }
         }
       }
