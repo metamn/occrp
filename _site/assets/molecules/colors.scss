@@ -20,7 +20,7 @@
   } @elseif ($type == menu) {
     background: $highlight;
     color: $background;
-    @include link($background, $background);
+    @include link($color, $background);
 
   } @elseif ($type == slider) {
     background: $light-grey;

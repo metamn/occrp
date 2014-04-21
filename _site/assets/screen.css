@@ -338,7 +338,7 @@ html body .container #header .logo h1, html body .container #header .logo figure
 html body .container #header nav { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; }
 html body .container #header nav ul li a { padding: 0.625em 0.3125em; display: inline-block; }
 html body .container #header nav ul li.active a, html body .container #header nav ul li:hover a { background: #982022; color: white; }
-html body .container #header nav ul li.active a a, html body .container #header nav ul li:hover a a { color: white; text-decoration: none; }
+html body .container #header nav ul li.active a a, html body .container #header nav ul li:hover a a { color: #231f20; text-decoration: none; }
 html body .container #header nav ul li.active a a:hover, html body .container #header nav ul li:hover a a:hover { color: white; }
 @media only screen and (min-width: 80em) { html body .container #header nav ul li { display: inline-block; float: left; margin-right: 0.3125em; }
   html body .container #header nav ul li:last-of-type { margin-right: 0; } }
@@ -458,7 +458,7 @@ html body .container #header.mobile-menu-active .logo h1, html body .container #
 html body .container #header.mobile-menu-active nav { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; }
 html body .container #header.mobile-menu-active nav ul li a { padding: 0.625em 0.3125em; display: inline-block; }
 html body .container #header.mobile-menu-active nav ul li.active a, html body .container #header.mobile-menu-active nav ul li:hover a { background: #982022; color: white; }
-html body .container #header.mobile-menu-active nav ul li.active a a, html body .container #header.mobile-menu-active nav ul li:hover a a { color: white; text-decoration: none; }
+html body .container #header.mobile-menu-active nav ul li.active a a, html body .container #header.mobile-menu-active nav ul li:hover a a { color: #231f20; text-decoration: none; }
 html body .container #header.mobile-menu-active nav ul li.active a a:hover, html body .container #header.mobile-menu-active nav ul li:hover a a:hover { color: white; }
 @media only screen and (min-width: 80em) { html body .container #header.mobile-menu-active nav ul li { display: inline-block; float: left; margin-right: 0.3125em; }
   html body .container #header.mobile-menu-active nav ul li:last-of-type { margin-right: 0; } }
@@ -601,7 +601,7 @@ html body.sticky .container #header .logo figure img { max-width: 10em; position
 html body.sticky .container #header nav { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; }
 html body.sticky .container #header nav ul li a { padding: 0.625em 0.3125em; display: inline-block; }
 html body.sticky .container #header nav ul li.active a, html body.sticky .container #header nav ul li:hover a { background: #982022; color: white; }
-html body.sticky .container #header nav ul li.active a a, html body.sticky .container #header nav ul li:hover a a { color: white; text-decoration: none; }
+html body.sticky .container #header nav ul li.active a a, html body.sticky .container #header nav ul li:hover a a { color: #231f20; text-decoration: none; }
 html body.sticky .container #header nav ul li.active a a:hover, html body.sticky .container #header nav ul li:hover a a:hover { color: white; }
 @media only screen and (min-width: 80em) { html body.sticky .container #header nav ul li { display: inline-block; float: left; margin-right: 0.3125em; }
   html body.sticky .container #header nav ul li:last-of-type { margin-right: 0; } }
@@ -734,7 +734,7 @@ html body.frontpage .container main #intro #slider article figure figcaption { p
 html body.frontpage .container main #intro #slider article figure figcaption h1, html body.frontpage .container main #intro #slider article figure figcaption h2, html body.frontpage .container main #intro #slider article figure figcaption h3, html body.frontpage .container main #intro #slider article figure figcaption h4, html body.frontpage .container main #intro #slider article figure figcaption h5, html body.frontpage .container main #intro #slider article figure figcaption h6 { margin: 0; padding: 0; }
 html body.frontpage .container main #intro #slider article figure { position: relative; }
 html body.frontpage .container main #intro #slider article figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
-html body.frontpage .container main #intro #slider article figure .label a { color: white; text-decoration: none; }
+html body.frontpage .container main #intro #slider article figure .label a { color: #231f20; text-decoration: none; }
 html body.frontpage .container main #intro #slider article figure .label a:hover { color: white; }
 html body.frontpage .container main #intro #slider article .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
 html body.frontpage .container main #intro #slider article .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
@@ -773,11 +773,13 @@ html body.frontpage .container main #intro #slider nav { margin-top: 1.25em; }
 html body.frontpage .container main #intro #slider nav > h3 { display: none; }
 html body.frontpage .container main #intro #slider nav ol li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.frontpage .container main #intro #slider nav ol li:last-of-type { margin-right: 0; }
+html body.frontpage .container main #intro #slider nav ol li { background: white; color: #231f20; -moz-border-radius: 1.25em; -webkit-border-radius: 1.25em; border-radius: 1.25em; }
+html body.frontpage .container main #intro #slider nav ol li a { color: #231f20; text-decoration: none; }
+html body.frontpage .container main #intro #slider nav ol li a:hover { color: #982022; }
 html body.frontpage .container main #intro #slider nav ol li a { padding: 0.625em 0.9375em; display: block; }
 html body.frontpage .container main #intro #slider nav ol li.active a, html body.frontpage .container main #intro #slider nav ol li:hover a { background: #982022; color: white; }
-html body.frontpage .container main #intro #slider nav ol li.active a a, html body.frontpage .container main #intro #slider nav ol li:hover a a { color: white; text-decoration: none; }
+html body.frontpage .container main #intro #slider nav ol li.active a a, html body.frontpage .container main #intro #slider nav ol li:hover a a { color: #231f20; text-decoration: none; }
 html body.frontpage .container main #intro #slider nav ol li.active a a:hover, html body.frontpage .container main #intro #slider nav ol li:hover a a:hover { color: white; }
-html body.frontpage .container main #intro #slider nav ol li { background: #f1f1f1; color: #231f20; -moz-border-radius: 1.25em; -webkit-border-radius: 1.25em; border-radius: 1.25em; }
 @media only screen and (max-width: 47.999em) { html body.frontpage .container main #intro #slider nav ol { font-size: small; } }
 html body.frontpage .container main #intro #slider .mobile { display: none; }
 html body.frontpage .container main #intro #slider .desktop { display: block; }
@@ -828,7 +830,7 @@ html body.frontpage .container main #intro aside section article figure figcapti
 html body.frontpage .container main #intro aside section article figure figcaption h1, html body.frontpage .container main #intro aside section article figure figcaption h2, html body.frontpage .container main #intro aside section article figure figcaption h3, html body.frontpage .container main #intro aside section article figure figcaption h4, html body.frontpage .container main #intro aside section article figure figcaption h5, html body.frontpage .container main #intro aside section article figure figcaption h6 { margin: 0; padding: 0; }
 html body.frontpage .container main #intro aside section article figure { position: relative; }
 html body.frontpage .container main #intro aside section article figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
-html body.frontpage .container main #intro aside section article figure .label a { color: white; text-decoration: none; }
+html body.frontpage .container main #intro aside section article figure .label a { color: #231f20; text-decoration: none; }
 html body.frontpage .container main #intro aside section article figure .label a:hover { color: white; }
 html body.frontpage .container main #intro aside section article .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
 html body.frontpage .container main #intro aside section article .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
@@ -905,7 +907,7 @@ html body.frontpage .container main #investigations article figure figcaption { 
 html body.frontpage .container main #investigations article figure figcaption h1, html body.frontpage .container main #investigations article figure figcaption h2, html body.frontpage .container main #investigations article figure figcaption h3, html body.frontpage .container main #investigations article figure figcaption h4, html body.frontpage .container main #investigations article figure figcaption h5, html body.frontpage .container main #investigations article figure figcaption h6 { margin: 0; padding: 0; }
 html body.frontpage .container main #investigations article figure { position: relative; }
 html body.frontpage .container main #investigations article figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
-html body.frontpage .container main #investigations article figure .label a { color: white; text-decoration: none; }
+html body.frontpage .container main #investigations article figure .label a { color: #231f20; text-decoration: none; }
 html body.frontpage .container main #investigations article figure .label a:hover { color: white; }
 html body.frontpage .container main #investigations article .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
 html body.frontpage .container main #investigations article .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
@@ -981,7 +983,7 @@ html body.frontpage .container main #products article figure figcaption { paddin
 html body.frontpage .container main #products article figure figcaption h1, html body.frontpage .container main #products article figure figcaption h2, html body.frontpage .container main #products article figure figcaption h3, html body.frontpage .container main #products article figure figcaption h4, html body.frontpage .container main #products article figure figcaption h5, html body.frontpage .container main #products article figure figcaption h6 { margin: 0; padding: 0; }
 html body.frontpage .container main #products article figure { position: relative; }
 html body.frontpage .container main #products article figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
-html body.frontpage .container main #products article figure .label a { color: white; text-decoration: none; }
+html body.frontpage .container main #products article figure .label a { color: #231f20; text-decoration: none; }
 html body.frontpage .container main #products article figure .label a:hover { color: white; }
 html body.frontpage .container main #products article .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
 html body.frontpage .container main #products article .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
@@ -1064,7 +1066,7 @@ html body.frontpage .container main #projects article figure figcaption { paddin
 html body.frontpage .container main #projects article figure figcaption h1, html body.frontpage .container main #projects article figure figcaption h2, html body.frontpage .container main #projects article figure figcaption h3, html body.frontpage .container main #projects article figure figcaption h4, html body.frontpage .container main #projects article figure figcaption h5, html body.frontpage .container main #projects article figure figcaption h6 { margin: 0; padding: 0; }
 html body.frontpage .container main #projects article figure { position: relative; }
 html body.frontpage .container main #projects article figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
-html body.frontpage .container main #projects article figure .label a { color: white; text-decoration: none; }
+html body.frontpage .container main #projects article figure .label a { color: #231f20; text-decoration: none; }
 html body.frontpage .container main #projects article figure .label a:hover { color: white; }
 html body.frontpage .container main #projects article .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
 html body.frontpage .container main #projects article .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
@@ -1167,7 +1169,7 @@ html body.frontpage .container main #blog article figure figcaption { padding: 0
 html body.frontpage .container main #blog article figure figcaption h1, html body.frontpage .container main #blog article figure figcaption h2, html body.frontpage .container main #blog article figure figcaption h3, html body.frontpage .container main #blog article figure figcaption h4, html body.frontpage .container main #blog article figure figcaption h5, html body.frontpage .container main #blog article figure figcaption h6 { margin: 0; padding: 0; }
 html body.frontpage .container main #blog article figure { position: relative; }
 html body.frontpage .container main #blog article figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
-html body.frontpage .container main #blog article figure .label a { color: white; text-decoration: none; }
+html body.frontpage .container main #blog article figure .label a { color: #231f20; text-decoration: none; }
 html body.frontpage .container main #blog article figure .label a:hover { color: white; }
 html body.frontpage .container main #blog article .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
 html body.frontpage .container main #blog article .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
@@ -1247,7 +1249,7 @@ html body.frontpage .container main #most-read section article figure figcaption
 html body.frontpage .container main #most-read section article figure figcaption h1, html body.frontpage .container main #most-read section article figure figcaption h2, html body.frontpage .container main #most-read section article figure figcaption h3, html body.frontpage .container main #most-read section article figure figcaption h4, html body.frontpage .container main #most-read section article figure figcaption h5, html body.frontpage .container main #most-read section article figure figcaption h6 { margin: 0; padding: 0; }
 html body.frontpage .container main #most-read section article figure { position: relative; }
 html body.frontpage .container main #most-read section article figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
-html body.frontpage .container main #most-read section article figure .label a { color: white; text-decoration: none; }
+html body.frontpage .container main #most-read section article figure .label a { color: #231f20; text-decoration: none; }
 html body.frontpage .container main #most-read section article figure .label a:hover { color: white; }
 html body.frontpage .container main #most-read section article .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
 html body.frontpage .container main #most-read section article .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
@@ -1322,7 +1324,7 @@ html body.frontpage .container main #videos article figure figcaption { padding:
 html body.frontpage .container main #videos article figure figcaption h1, html body.frontpage .container main #videos article figure figcaption h2, html body.frontpage .container main #videos article figure figcaption h3, html body.frontpage .container main #videos article figure figcaption h4, html body.frontpage .container main #videos article figure figcaption h5, html body.frontpage .container main #videos article figure figcaption h6 { margin: 0; padding: 0; }
 html body.frontpage .container main #videos article figure { position: relative; }
 html body.frontpage .container main #videos article figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
-html body.frontpage .container main #videos article figure .label a { color: white; text-decoration: none; }
+html body.frontpage .container main #videos article figure .label a { color: #231f20; text-decoration: none; }
 html body.frontpage .container main #videos article figure .label a:hover { color: white; }
 html body.frontpage .container main #videos article .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
 html body.frontpage .container main #videos article .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
@@ -1458,7 +1460,7 @@ html body.category main aside section article figure figcaption { padding: 0.312
 html body.category main aside section article figure figcaption h1, html body.category main aside section article figure figcaption h2, html body.category main aside section article figure figcaption h3, html body.category main aside section article figure figcaption h4, html body.category main aside section article figure figcaption h5, html body.category main aside section article figure figcaption h6 { margin: 0; padding: 0; }
 html body.category main aside section article figure { position: relative; }
 html body.category main aside section article figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
-html body.category main aside section article figure .label a { color: white; text-decoration: none; }
+html body.category main aside section article figure .label a { color: #231f20; text-decoration: none; }
 html body.category main aside section article figure .label a:hover { color: white; }
 html body.category main aside section article .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
 html body.category main aside section article .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
@@ -1555,13 +1557,13 @@ html body.category #articles nav { margin-top: 1.25em; }
 html body.category #articles nav > h3 { display: none; }
 html body.category #articles nav ol li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.category #articles nav ol li:last-of-type { margin-right: 0; }
-html body.category #articles nav ol li a { padding: 0.625em 0.9375em; display: block; }
-html body.category #articles nav ol li.active a, html body.category #articles nav ol li:hover a { background: #982022; color: white; }
-html body.category #articles nav ol li.active a a, html body.category #articles nav ol li:hover a a { color: white; text-decoration: none; }
-html body.category #articles nav ol li.active a a:hover, html body.category #articles nav ol li:hover a a:hover { color: white; }
 html body.category #articles nav ol li { background: #f1f1f1; color: #231f20; -moz-border-radius: 1.25em; -webkit-border-radius: 1.25em; border-radius: 1.25em; }
 html body.category #articles nav ol li a { color: #231f20; text-decoration: none; }
 html body.category #articles nav ol li a:hover { color: white; }
+html body.category #articles nav ol li a { padding: 0.625em 0.9375em; display: block; }
+html body.category #articles nav ol li.active a, html body.category #articles nav ol li:hover a { background: #982022; color: white; }
+html body.category #articles nav ol li.active a a, html body.category #articles nav ol li:hover a a { color: #231f20; text-decoration: none; }
+html body.category #articles nav ol li.active a a:hover, html body.category #articles nav ol li:hover a a:hover { color: white; }
 @media only screen and (max-width: 47.999em) { html body.category #articles nav ol { font-size: small; } }
 html body.category #articles aside { width: 100%; max-width: 100%; float: left; margin-bottom: 0.3125em; background: #f1f1f1; color: #231f20; }
 html body.category #articles aside h1 { display: block; }
@@ -1576,7 +1578,7 @@ html body.category #articles aside figure figcaption { padding: 0.3125em; font-s
 html body.category #articles aside figure figcaption h1, html body.category #articles aside figure figcaption h2, html body.category #articles aside figure figcaption h3, html body.category #articles aside figure figcaption h4, html body.category #articles aside figure figcaption h5, html body.category #articles aside figure figcaption h6 { margin: 0; padding: 0; }
 html body.category #articles aside figure { position: relative; }
 html body.category #articles aside figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
-html body.category #articles aside figure .label a { color: white; text-decoration: none; }
+html body.category #articles aside figure .label a { color: #231f20; text-decoration: none; }
 html body.category #articles aside figure .label a:hover { color: white; }
 html body.category #articles aside .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
 html body.category #articles aside .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
@@ -1628,7 +1630,7 @@ html body.category #articles aside h1, html body.category #articles aside .excer
   html body.category #articles article.thumb figure figcaption h1, html body.category #articles article.thumb figure figcaption h2, html body.category #articles article.thumb figure figcaption h3, html body.category #articles article.thumb figure figcaption h4, html body.category #articles article.thumb figure figcaption h5, html body.category #articles article.thumb figure figcaption h6 { margin: 0; padding: 0; }
   html body.category #articles article.thumb figure { position: relative; }
   html body.category #articles article.thumb figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
-  html body.category #articles article.thumb figure .label a { color: white; text-decoration: none; }
+  html body.category #articles article.thumb figure .label a { color: #231f20; text-decoration: none; }
   html body.category #articles article.thumb figure .label a:hover { color: white; }
   html body.category #articles article.thumb .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
   html body.category #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
@@ -1723,7 +1725,7 @@ html body.category #articles aside h1, html body.category #articles aside .excer
   html body.category #articles article.thumb figure figcaption h1, html body.category #articles article.thumb figure figcaption h2, html body.category #articles article.thumb figure figcaption h3, html body.category #articles article.thumb figure figcaption h4, html body.category #articles article.thumb figure figcaption h5, html body.category #articles article.thumb figure figcaption h6 { margin: 0; padding: 0; }
   html body.category #articles article.thumb figure { position: relative; }
   html body.category #articles article.thumb figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
-  html body.category #articles article.thumb figure .label a { color: white; text-decoration: none; }
+  html body.category #articles article.thumb figure .label a { color: #231f20; text-decoration: none; }
   html body.category #articles article.thumb figure .label a:hover { color: white; }
   html body.category #articles article.thumb .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
   html body.category #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
@@ -1829,7 +1831,7 @@ html body.tag main aside section article figure figcaption { padding: 0.3125em; 
 html body.tag main aside section article figure figcaption h1, html body.tag main aside section article figure figcaption h2, html body.tag main aside section article figure figcaption h3, html body.tag main aside section article figure figcaption h4, html body.tag main aside section article figure figcaption h5, html body.tag main aside section article figure figcaption h6 { margin: 0; padding: 0; }
 html body.tag main aside section article figure { position: relative; }
 html body.tag main aside section article figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
-html body.tag main aside section article figure .label a { color: white; text-decoration: none; }
+html body.tag main aside section article figure .label a { color: #231f20; text-decoration: none; }
 html body.tag main aside section article figure .label a:hover { color: white; }
 html body.tag main aside section article .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
 html body.tag main aside section article .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
@@ -1926,13 +1928,13 @@ html body.tag #articles nav { margin-top: 1.25em; }
 html body.tag #articles nav > h3 { display: none; }
 html body.tag #articles nav ol li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.tag #articles nav ol li:last-of-type { margin-right: 0; }
-html body.tag #articles nav ol li a { padding: 0.625em 0.9375em; display: block; }
-html body.tag #articles nav ol li.active a, html body.tag #articles nav ol li:hover a { background: #982022; color: white; }
-html body.tag #articles nav ol li.active a a, html body.tag #articles nav ol li:hover a a { color: white; text-decoration: none; }
-html body.tag #articles nav ol li.active a a:hover, html body.tag #articles nav ol li:hover a a:hover { color: white; }
 html body.tag #articles nav ol li { background: #f1f1f1; color: #231f20; -moz-border-radius: 1.25em; -webkit-border-radius: 1.25em; border-radius: 1.25em; }
 html body.tag #articles nav ol li a { color: #231f20; text-decoration: none; }
 html body.tag #articles nav ol li a:hover { color: white; }
+html body.tag #articles nav ol li a { padding: 0.625em 0.9375em; display: block; }
+html body.tag #articles nav ol li.active a, html body.tag #articles nav ol li:hover a { background: #982022; color: white; }
+html body.tag #articles nav ol li.active a a, html body.tag #articles nav ol li:hover a a { color: #231f20; text-decoration: none; }
+html body.tag #articles nav ol li.active a a:hover, html body.tag #articles nav ol li:hover a a:hover { color: white; }
 @media only screen and (max-width: 47.999em) { html body.tag #articles nav ol { font-size: small; } }
 html body.tag #articles aside { width: 100%; max-width: 100%; float: left; margin-bottom: 0.3125em; background: #f1f1f1; color: #231f20; }
 html body.tag #articles aside h1 { display: block; }
@@ -1947,7 +1949,7 @@ html body.tag #articles aside figure figcaption { padding: 0.3125em; font-size: 
 html body.tag #articles aside figure figcaption h1, html body.tag #articles aside figure figcaption h2, html body.tag #articles aside figure figcaption h3, html body.tag #articles aside figure figcaption h4, html body.tag #articles aside figure figcaption h5, html body.tag #articles aside figure figcaption h6 { margin: 0; padding: 0; }
 html body.tag #articles aside figure { position: relative; }
 html body.tag #articles aside figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
-html body.tag #articles aside figure .label a { color: white; text-decoration: none; }
+html body.tag #articles aside figure .label a { color: #231f20; text-decoration: none; }
 html body.tag #articles aside figure .label a:hover { color: white; }
 html body.tag #articles aside .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
 html body.tag #articles aside .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
@@ -1999,7 +2001,7 @@ html body.tag #articles aside h1, html body.tag #articles aside .excerpt { paddi
   html body.tag #articles article.thumb figure figcaption h1, html body.tag #articles article.thumb figure figcaption h2, html body.tag #articles article.thumb figure figcaption h3, html body.tag #articles article.thumb figure figcaption h4, html body.tag #articles article.thumb figure figcaption h5, html body.tag #articles article.thumb figure figcaption h6 { margin: 0; padding: 0; }
   html body.tag #articles article.thumb figure { position: relative; }
   html body.tag #articles article.thumb figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
-  html body.tag #articles article.thumb figure .label a { color: white; text-decoration: none; }
+  html body.tag #articles article.thumb figure .label a { color: #231f20; text-decoration: none; }
   html body.tag #articles article.thumb figure .label a:hover { color: white; }
   html body.tag #articles article.thumb .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
   html body.tag #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
@@ -2094,7 +2096,7 @@ html body.tag #articles aside h1, html body.tag #articles aside .excerpt { paddi
   html body.tag #articles article.thumb figure figcaption h1, html body.tag #articles article.thumb figure figcaption h2, html body.tag #articles article.thumb figure figcaption h3, html body.tag #articles article.thumb figure figcaption h4, html body.tag #articles article.thumb figure figcaption h5, html body.tag #articles article.thumb figure figcaption h6 { margin: 0; padding: 0; }
   html body.tag #articles article.thumb figure { position: relative; }
   html body.tag #articles article.thumb figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
-  html body.tag #articles article.thumb figure .label a { color: white; text-decoration: none; }
+  html body.tag #articles article.thumb figure .label a { color: #231f20; text-decoration: none; }
   html body.tag #articles article.thumb figure .label a:hover { color: white; }
   html body.tag #articles article.thumb .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
   html body.tag #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
@@ -2185,13 +2187,13 @@ html body.archive nav { margin-top: 1.25em; }
 html body.archive nav > h3 { display: none; }
 html body.archive nav ol li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.archive nav ol li:last-of-type { margin-right: 0; }
-html body.archive nav ol li a { padding: 0.625em 0.9375em; display: block; }
-html body.archive nav ol li.active a, html body.archive nav ol li:hover a { background: #982022; color: white; }
-html body.archive nav ol li.active a a, html body.archive nav ol li:hover a a { color: white; text-decoration: none; }
-html body.archive nav ol li.active a a:hover, html body.archive nav ol li:hover a a:hover { color: white; }
 html body.archive nav ol li { background: #f1f1f1; color: #231f20; -moz-border-radius: 1.25em; -webkit-border-radius: 1.25em; border-radius: 1.25em; }
 html body.archive nav ol li a { color: #231f20; text-decoration: none; }
 html body.archive nav ol li a:hover { color: white; }
+html body.archive nav ol li a { padding: 0.625em 0.9375em; display: block; }
+html body.archive nav ol li.active a, html body.archive nav ol li:hover a { background: #982022; color: white; }
+html body.archive nav ol li.active a a, html body.archive nav ol li:hover a a { color: #231f20; text-decoration: none; }
+html body.archive nav ol li.active a a:hover, html body.archive nav ol li:hover a a:hover { color: white; }
 @media only screen and (max-width: 47.999em) { html body.archive nav ol { font-size: small; } }
 html body.archive article.thumb { margin-bottom: 0.3125em; }
 @media only screen and (max-width: 29.999em) { html body.archive article.thumb { width: 100%; margin-right: 0; float: left; } }
@@ -2248,7 +2250,7 @@ html body.archive article.thumb figure figcaption { padding: 0.3125em; font-size
 html body.archive article.thumb figure figcaption h1, html body.archive article.thumb figure figcaption h2, html body.archive article.thumb figure figcaption h3, html body.archive article.thumb figure figcaption h4, html body.archive article.thumb figure figcaption h5, html body.archive article.thumb figure figcaption h6 { margin: 0; padding: 0; }
 html body.archive article.thumb figure { position: relative; }
 html body.archive article.thumb figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
-html body.archive article.thumb figure .label a { color: white; text-decoration: none; }
+html body.archive article.thumb figure .label a { color: #231f20; text-decoration: none; }
 html body.archive article.thumb figure .label a:hover { color: white; }
 html body.archive article.thumb .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
 html body.archive article.thumb .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
@@ -2302,7 +2304,7 @@ html body.archive article.thumb h1 { font-size: medium; }
   html body.archive article.thumb figure figcaption h1, html body.archive article.thumb figure figcaption h2, html body.archive article.thumb figure figcaption h3, html body.archive article.thumb figure figcaption h4, html body.archive article.thumb figure figcaption h5, html body.archive article.thumb figure figcaption h6 { margin: 0; padding: 0; }
   html body.archive article.thumb figure { position: relative; }
   html body.archive article.thumb figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
-  html body.archive article.thumb figure .label a { color: white; text-decoration: none; }
+  html body.archive article.thumb figure .label a { color: #231f20; text-decoration: none; }
   html body.archive article.thumb figure .label a:hover { color: white; }
   html body.archive article.thumb .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
   html body.archive article.thumb .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
@@ -2369,7 +2371,7 @@ html body.blog main aside section article figure figcaption { padding: 0.3125em;
 html body.blog main aside section article figure figcaption h1, html body.blog main aside section article figure figcaption h2, html body.blog main aside section article figure figcaption h3, html body.blog main aside section article figure figcaption h4, html body.blog main aside section article figure figcaption h5, html body.blog main aside section article figure figcaption h6 { margin: 0; padding: 0; }
 html body.blog main aside section article figure { position: relative; }
 html body.blog main aside section article figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
-html body.blog main aside section article figure .label a { color: white; text-decoration: none; }
+html body.blog main aside section article figure .label a { color: #231f20; text-decoration: none; }
 html body.blog main aside section article figure .label a:hover { color: white; }
 html body.blog main aside section article .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
 html body.blog main aside section article .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
@@ -2463,13 +2465,13 @@ html body.blog #articles nav { margin-top: 1.25em; }
 html body.blog #articles nav > h3 { display: none; }
 html body.blog #articles nav ol li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.blog #articles nav ol li:last-of-type { margin-right: 0; }
-html body.blog #articles nav ol li a { padding: 0.625em 0.9375em; display: block; }
-html body.blog #articles nav ol li.active a, html body.blog #articles nav ol li:hover a { background: #982022; color: white; }
-html body.blog #articles nav ol li.active a a, html body.blog #articles nav ol li:hover a a { color: white; text-decoration: none; }
-html body.blog #articles nav ol li.active a a:hover, html body.blog #articles nav ol li:hover a a:hover { color: white; }
 html body.blog #articles nav ol li { background: #f1f1f1; color: #231f20; -moz-border-radius: 1.25em; -webkit-border-radius: 1.25em; border-radius: 1.25em; }
 html body.blog #articles nav ol li a { color: #231f20; text-decoration: none; }
 html body.blog #articles nav ol li a:hover { color: white; }
+html body.blog #articles nav ol li a { padding: 0.625em 0.9375em; display: block; }
+html body.blog #articles nav ol li.active a, html body.blog #articles nav ol li:hover a { background: #982022; color: white; }
+html body.blog #articles nav ol li.active a a, html body.blog #articles nav ol li:hover a a { color: #231f20; text-decoration: none; }
+html body.blog #articles nav ol li.active a a:hover, html body.blog #articles nav ol li:hover a a:hover { color: white; }
 @media only screen and (max-width: 47.999em) { html body.blog #articles nav ol { font-size: small; } }
 html body.blog #articles article.thumb { width: 100%; max-width: 100%; float: left; margin-bottom: 0.3125em; }
 html body.blog #articles article.thumb h1 { display: block; }
@@ -2484,7 +2486,7 @@ html body.blog #articles article.thumb figure figcaption { padding: 0.3125em; fo
 html body.blog #articles article.thumb figure figcaption h1, html body.blog #articles article.thumb figure figcaption h2, html body.blog #articles article.thumb figure figcaption h3, html body.blog #articles article.thumb figure figcaption h4, html body.blog #articles article.thumb figure figcaption h5, html body.blog #articles article.thumb figure figcaption h6 { margin: 0; padding: 0; }
 html body.blog #articles article.thumb figure { position: relative; }
 html body.blog #articles article.thumb figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
-html body.blog #articles article.thumb figure .label a { color: white; text-decoration: none; }
+html body.blog #articles article.thumb figure .label a { color: #231f20; text-decoration: none; }
 html body.blog #articles article.thumb figure .label a:hover { color: white; }
 html body.blog #articles article.thumb .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
 html body.blog #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
@@ -2537,7 +2539,7 @@ html body.blog #articles article.thumb .excerpt { padding-bottom: 1.25em; border
   html body.blog #articles article.thumb figure figcaption h1, html body.blog #articles article.thumb figure figcaption h2, html body.blog #articles article.thumb figure figcaption h3, html body.blog #articles article.thumb figure figcaption h4, html body.blog #articles article.thumb figure figcaption h5, html body.blog #articles article.thumb figure figcaption h6 { margin: 0; padding: 0; }
   html body.blog #articles article.thumb figure { position: relative; }
   html body.blog #articles article.thumb figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
-  html body.blog #articles article.thumb figure .label a { color: white; text-decoration: none; }
+  html body.blog #articles article.thumb figure .label a { color: #231f20; text-decoration: none; }
   html body.blog #articles article.thumb figure .label a:hover { color: white; }
   html body.blog #articles article.thumb .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
   html body.blog #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
@@ -2601,7 +2603,7 @@ html body.author main aside section article figure figcaption { padding: 0.3125e
 html body.author main aside section article figure figcaption h1, html body.author main aside section article figure figcaption h2, html body.author main aside section article figure figcaption h3, html body.author main aside section article figure figcaption h4, html body.author main aside section article figure figcaption h5, html body.author main aside section article figure figcaption h6 { margin: 0; padding: 0; }
 html body.author main aside section article figure { position: relative; }
 html body.author main aside section article figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
-html body.author main aside section article figure .label a { color: white; text-decoration: none; }
+html body.author main aside section article figure .label a { color: #231f20; text-decoration: none; }
 html body.author main aside section article figure .label a:hover { color: white; }
 html body.author main aside section article .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
 html body.author main aside section article .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
@@ -2698,13 +2700,13 @@ html body.author #articles nav { margin-top: 1.25em; }
 html body.author #articles nav > h3 { display: none; }
 html body.author #articles nav ol li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.author #articles nav ol li:last-of-type { margin-right: 0; }
-html body.author #articles nav ol li a { padding: 0.625em 0.9375em; display: block; }
-html body.author #articles nav ol li.active a, html body.author #articles nav ol li:hover a { background: #982022; color: white; }
-html body.author #articles nav ol li.active a a, html body.author #articles nav ol li:hover a a { color: white; text-decoration: none; }
-html body.author #articles nav ol li.active a a:hover, html body.author #articles nav ol li:hover a a:hover { color: white; }
 html body.author #articles nav ol li { background: #f1f1f1; color: #231f20; -moz-border-radius: 1.25em; -webkit-border-radius: 1.25em; border-radius: 1.25em; }
 html body.author #articles nav ol li a { color: #231f20; text-decoration: none; }
 html body.author #articles nav ol li a:hover { color: white; }
+html body.author #articles nav ol li a { padding: 0.625em 0.9375em; display: block; }
+html body.author #articles nav ol li.active a, html body.author #articles nav ol li:hover a { background: #982022; color: white; }
+html body.author #articles nav ol li.active a a, html body.author #articles nav ol li:hover a a { color: #231f20; text-decoration: none; }
+html body.author #articles nav ol li.active a a:hover, html body.author #articles nav ol li:hover a a:hover { color: white; }
 @media only screen and (max-width: 47.999em) { html body.author #articles nav ol { font-size: small; } }
 html body.author #articles aside { width: 100%; max-width: 100%; float: left; margin-bottom: 0.3125em; background: #f1f1f1; color: #231f20; }
 html body.author #articles aside h1 { display: block; }
@@ -2719,7 +2721,7 @@ html body.author #articles aside figure figcaption { padding: 0.3125em; font-siz
 html body.author #articles aside figure figcaption h1, html body.author #articles aside figure figcaption h2, html body.author #articles aside figure figcaption h3, html body.author #articles aside figure figcaption h4, html body.author #articles aside figure figcaption h5, html body.author #articles aside figure figcaption h6 { margin: 0; padding: 0; }
 html body.author #articles aside figure { position: relative; }
 html body.author #articles aside figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
-html body.author #articles aside figure .label a { color: white; text-decoration: none; }
+html body.author #articles aside figure .label a { color: #231f20; text-decoration: none; }
 html body.author #articles aside figure .label a:hover { color: white; }
 html body.author #articles aside .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
 html body.author #articles aside .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
@@ -2771,7 +2773,7 @@ html body.author #articles aside h1, html body.author #articles aside .excerpt {
   html body.author #articles article.thumb figure figcaption h1, html body.author #articles article.thumb figure figcaption h2, html body.author #articles article.thumb figure figcaption h3, html body.author #articles article.thumb figure figcaption h4, html body.author #articles article.thumb figure figcaption h5, html body.author #articles article.thumb figure figcaption h6 { margin: 0; padding: 0; }
   html body.author #articles article.thumb figure { position: relative; }
   html body.author #articles article.thumb figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
-  html body.author #articles article.thumb figure .label a { color: white; text-decoration: none; }
+  html body.author #articles article.thumb figure .label a { color: #231f20; text-decoration: none; }
   html body.author #articles article.thumb figure .label a:hover { color: white; }
   html body.author #articles article.thumb .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
   html body.author #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
@@ -2866,7 +2868,7 @@ html body.author #articles aside h1, html body.author #articles aside .excerpt {
   html body.author #articles article.thumb figure figcaption h1, html body.author #articles article.thumb figure figcaption h2, html body.author #articles article.thumb figure figcaption h3, html body.author #articles article.thumb figure figcaption h4, html body.author #articles article.thumb figure figcaption h5, html body.author #articles article.thumb figure figcaption h6 { margin: 0; padding: 0; }
   html body.author #articles article.thumb figure { position: relative; }
   html body.author #articles article.thumb figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
-  html body.author #articles article.thumb figure .label a { color: white; text-decoration: none; }
+  html body.author #articles article.thumb figure .label a { color: #231f20; text-decoration: none; }
   html body.author #articles article.thumb figure .label a:hover { color: white; }
   html body.author #articles article.thumb .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
   html body.author #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
@@ -2972,7 +2974,7 @@ html body.article main aside section article figure figcaption, html body.about 
 html body.article main aside section article figure figcaption h1, html body.article main aside section article figure figcaption h2, html body.article main aside section article figure figcaption h3, html body.article main aside section article figure figcaption h4, html body.article main aside section article figure figcaption h5, html body.article main aside section article figure figcaption h6, html body.about main aside section article figure figcaption h1, html body.about main aside section article figure figcaption h2, html body.about main aside section article figure figcaption h3, html body.about main aside section article figure figcaption h4, html body.about main aside section article figure figcaption h5, html body.about main aside section article figure figcaption h6, html body.post main aside section article figure figcaption h1, html body.post main aside section article figure figcaption h2, html body.post main aside section article figure figcaption h3, html body.post main aside section article figure figcaption h4, html body.post main aside section article figure figcaption h5, html body.post main aside section article figure figcaption h6 { margin: 0; padding: 0; }
 html body.article main aside section article figure, html body.about main aside section article figure, html body.post main aside section article figure { position: relative; }
 html body.article main aside section article figure .label, html body.about main aside section article figure .label, html body.post main aside section article figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
-html body.article main aside section article figure .label a, html body.about main aside section article figure .label a, html body.post main aside section article figure .label a { color: white; text-decoration: none; }
+html body.article main aside section article figure .label a, html body.about main aside section article figure .label a, html body.post main aside section article figure .label a { color: #231f20; text-decoration: none; }
 html body.article main aside section article figure .label a:hover, html body.about main aside section article figure .label a:hover, html body.post main aside section article figure .label a:hover { color: white; }
 html body.article main aside section article .excerpt, html body.about main aside section article .excerpt, html body.post main aside section article .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
 html body.article main aside section article .meta, html body.about main aside section article .meta, html body.post main aside section article .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
@@ -3072,7 +3074,7 @@ html body.article #article article.single figure figcaption, html body.about #ar
 html body.article #article article.single figure figcaption h1, html body.article #article article.single figure figcaption h2, html body.article #article article.single figure figcaption h3, html body.article #article article.single figure figcaption h4, html body.article #article article.single figure figcaption h5, html body.article #article article.single figure figcaption h6, html body.about #article article.single figure figcaption h1, html body.about #article article.single figure figcaption h2, html body.about #article article.single figure figcaption h3, html body.about #article article.single figure figcaption h4, html body.about #article article.single figure figcaption h5, html body.about #article article.single figure figcaption h6, html body.post #article article.single figure figcaption h1, html body.post #article article.single figure figcaption h2, html body.post #article article.single figure figcaption h3, html body.post #article article.single figure figcaption h4, html body.post #article article.single figure figcaption h5, html body.post #article article.single figure figcaption h6 { margin: 0; padding: 0; }
 html body.article #article article.single figure, html body.about #article article.single figure, html body.post #article article.single figure { position: relative; }
 html body.article #article article.single figure .label, html body.about #article article.single figure .label, html body.post #article article.single figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
-html body.article #article article.single figure .label a, html body.about #article article.single figure .label a, html body.post #article article.single figure .label a { color: white; text-decoration: none; }
+html body.article #article article.single figure .label a, html body.about #article article.single figure .label a, html body.post #article article.single figure .label a { color: #231f20; text-decoration: none; }
 html body.article #article article.single figure .label a:hover, html body.about #article article.single figure .label a:hover, html body.post #article article.single figure .label a:hover { color: white; }
 html body.article #article article.single .excerpt, html body.about #article article.single .excerpt, html body.post #article article.single .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
 html body.article #article article.single .meta, html body.about #article article.single .meta, html body.post #article article.single .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
@@ -3254,7 +3256,7 @@ html body.about main aside section nav { text-transform: uppercase; letter-spaci
 html body.about main aside section nav > h3 { display: none; }
 html body.about main aside section nav ul li a { padding: 0.625em 0.3125em; display: inline-block; }
 html body.about main aside section nav ul li.active a, html body.about main aside section nav ul li:hover a { background: #982022; color: white; }
-html body.about main aside section nav ul li.active a a, html body.about main aside section nav ul li:hover a a { color: white; text-decoration: none; }
+html body.about main aside section nav ul li.active a a, html body.about main aside section nav ul li:hover a a { color: #231f20; text-decoration: none; }
 html body.about main aside section nav ul li.active a a:hover, html body.about main aside section nav ul li:hover a a:hover { color: white; }
 html body.about main aside section nav ul li { border-bottom: 1px solid #f1f1f1; margin-bottom: 0.3125em; padding-bottom: 0.3125em; }
 html body.about main aside #spacer { top: 0; }
@@ -3280,7 +3282,7 @@ html body.jobs #main #article .single .content article figure figcaption, html b
 html body.jobs #main #article .single .content article figure figcaption h1, html body.jobs #main #article .single .content article figure figcaption h2, html body.jobs #main #article .single .content article figure figcaption h3, html body.jobs #main #article .single .content article figure figcaption h4, html body.jobs #main #article .single .content article figure figcaption h5, html body.jobs #main #article .single .content article figure figcaption h6, html body.announcements #main #article .single .content article figure figcaption h1, html body.announcements #main #article .single .content article figure figcaption h2, html body.announcements #main #article .single .content article figure figcaption h3, html body.announcements #main #article .single .content article figure figcaption h4, html body.announcements #main #article .single .content article figure figcaption h5, html body.announcements #main #article .single .content article figure figcaption h6 { margin: 0; padding: 0; }
 html body.jobs #main #article .single .content article figure, html body.announcements #main #article .single .content article figure { position: relative; }
 html body.jobs #main #article .single .content article figure .label, html body.announcements #main #article .single .content article figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
-html body.jobs #main #article .single .content article figure .label a, html body.announcements #main #article .single .content article figure .label a { color: white; text-decoration: none; }
+html body.jobs #main #article .single .content article figure .label a, html body.announcements #main #article .single .content article figure .label a { color: #231f20; text-decoration: none; }
 html body.jobs #main #article .single .content article figure .label a:hover, html body.announcements #main #article .single .content article figure .label a:hover { color: white; }
 html body.jobs #main #article .single .content article .excerpt, html body.announcements #main #article .single .content article .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
 html body.jobs #main #article .single .content article .meta, html body.announcements #main #article .single .content article .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
@@ -3419,13 +3421,13 @@ html body.galleries #articles nav { margin-top: 1.25em; }
 html body.galleries #articles nav > h3 { display: none; }
 html body.galleries #articles nav ol li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.galleries #articles nav ol li:last-of-type { margin-right: 0; }
-html body.galleries #articles nav ol li a { padding: 0.625em 0.9375em; display: block; }
-html body.galleries #articles nav ol li.active a, html body.galleries #articles nav ol li:hover a { background: #982022; color: white; }
-html body.galleries #articles nav ol li.active a a, html body.galleries #articles nav ol li:hover a a { color: white; text-decoration: none; }
-html body.galleries #articles nav ol li.active a a:hover, html body.galleries #articles nav ol li:hover a a:hover { color: white; }
 html body.galleries #articles nav ol li { background: #f1f1f1; color: #231f20; -moz-border-radius: 1.25em; -webkit-border-radius: 1.25em; border-radius: 1.25em; }
 html body.galleries #articles nav ol li a { color: #231f20; text-decoration: none; }
 html body.galleries #articles nav ol li a:hover { color: white; }
+html body.galleries #articles nav ol li a { padding: 0.625em 0.9375em; display: block; }
+html body.galleries #articles nav ol li.active a, html body.galleries #articles nav ol li:hover a { background: #982022; color: white; }
+html body.galleries #articles nav ol li.active a a, html body.galleries #articles nav ol li:hover a a { color: #231f20; text-decoration: none; }
+html body.galleries #articles nav ol li.active a a:hover, html body.galleries #articles nav ol li:hover a a:hover { color: white; }
 @media only screen and (max-width: 47.999em) { html body.galleries #articles nav ol { font-size: small; } }
 html body.galleries #articles article.thumb { height: auto; }
 @media only screen and (max-width: 29.999em) { html body.galleries #articles article.thumb { width: 100%; margin-right: 0; float: left; } }
@@ -3493,7 +3495,7 @@ html body.daily main aside section article figure figcaption { padding: 0.3125em
 html body.daily main aside section article figure figcaption h1, html body.daily main aside section article figure figcaption h2, html body.daily main aside section article figure figcaption h3, html body.daily main aside section article figure figcaption h4, html body.daily main aside section article figure figcaption h5, html body.daily main aside section article figure figcaption h6 { margin: 0; padding: 0; }
 html body.daily main aside section article figure { position: relative; }
 html body.daily main aside section article figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
-html body.daily main aside section article figure .label a { color: white; text-decoration: none; }
+html body.daily main aside section article figure .label a { color: #231f20; text-decoration: none; }
 html body.daily main aside section article figure .label a:hover { color: white; }
 html body.daily main aside section article .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
 html body.daily main aside section article .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
@@ -3590,13 +3592,13 @@ html body.daily #articles nav { margin-top: 1.25em; }
 html body.daily #articles nav > h3 { display: none; }
 html body.daily #articles nav ol li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.daily #articles nav ol li:last-of-type { margin-right: 0; }
-html body.daily #articles nav ol li a { padding: 0.625em 0.9375em; display: block; }
-html body.daily #articles nav ol li.active a, html body.daily #articles nav ol li:hover a { background: #982022; color: white; }
-html body.daily #articles nav ol li.active a a, html body.daily #articles nav ol li:hover a a { color: white; text-decoration: none; }
-html body.daily #articles nav ol li.active a a:hover, html body.daily #articles nav ol li:hover a a:hover { color: white; }
 html body.daily #articles nav ol li { background: #f1f1f1; color: #231f20; -moz-border-radius: 1.25em; -webkit-border-radius: 1.25em; border-radius: 1.25em; }
 html body.daily #articles nav ol li a { color: #231f20; text-decoration: none; }
 html body.daily #articles nav ol li a:hover { color: white; }
+html body.daily #articles nav ol li a { padding: 0.625em 0.9375em; display: block; }
+html body.daily #articles nav ol li.active a, html body.daily #articles nav ol li:hover a { background: #982022; color: white; }
+html body.daily #articles nav ol li.active a a, html body.daily #articles nav ol li:hover a a { color: #231f20; text-decoration: none; }
+html body.daily #articles nav ol li.active a a:hover, html body.daily #articles nav ol li:hover a a:hover { color: white; }
 @media only screen and (max-width: 47.999em) { html body.daily #articles nav ol { font-size: small; } }
 html body.daily #articles aside { width: 100%; max-width: 100%; float: left; margin-bottom: 0.3125em; background: #f1f1f1; color: #231f20; }
 html body.daily #articles aside h1 { display: block; }
@@ -3611,7 +3613,7 @@ html body.daily #articles aside figure figcaption { padding: 0.3125em; font-size
 html body.daily #articles aside figure figcaption h1, html body.daily #articles aside figure figcaption h2, html body.daily #articles aside figure figcaption h3, html body.daily #articles aside figure figcaption h4, html body.daily #articles aside figure figcaption h5, html body.daily #articles aside figure figcaption h6 { margin: 0; padding: 0; }
 html body.daily #articles aside figure { position: relative; }
 html body.daily #articles aside figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
-html body.daily #articles aside figure .label a { color: white; text-decoration: none; }
+html body.daily #articles aside figure .label a { color: #231f20; text-decoration: none; }
 html body.daily #articles aside figure .label a:hover { color: white; }
 html body.daily #articles aside .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
 html body.daily #articles aside .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
@@ -3663,7 +3665,7 @@ html body.daily #articles aside h1, html body.daily #articles aside .excerpt { p
   html body.daily #articles article.thumb figure figcaption h1, html body.daily #articles article.thumb figure figcaption h2, html body.daily #articles article.thumb figure figcaption h3, html body.daily #articles article.thumb figure figcaption h4, html body.daily #articles article.thumb figure figcaption h5, html body.daily #articles article.thumb figure figcaption h6 { margin: 0; padding: 0; }
   html body.daily #articles article.thumb figure { position: relative; }
   html body.daily #articles article.thumb figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
-  html body.daily #articles article.thumb figure .label a { color: white; text-decoration: none; }
+  html body.daily #articles article.thumb figure .label a { color: #231f20; text-decoration: none; }
   html body.daily #articles article.thumb figure .label a:hover { color: white; }
   html body.daily #articles article.thumb .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
   html body.daily #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
@@ -3758,7 +3760,7 @@ html body.daily #articles aside h1, html body.daily #articles aside .excerpt { p
   html body.daily #articles article.thumb figure figcaption h1, html body.daily #articles article.thumb figure figcaption h2, html body.daily #articles article.thumb figure figcaption h3, html body.daily #articles article.thumb figure figcaption h4, html body.daily #articles article.thumb figure figcaption h5, html body.daily #articles article.thumb figure figcaption h6 { margin: 0; padding: 0; }
   html body.daily #articles article.thumb figure { position: relative; }
   html body.daily #articles article.thumb figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
-  html body.daily #articles article.thumb figure .label a { color: white; text-decoration: none; }
+  html body.daily #articles article.thumb figure .label a { color: #231f20; text-decoration: none; }
   html body.daily #articles article.thumb figure .label a:hover { color: white; }
   html body.daily #articles article.thumb .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
   html body.daily #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
@@ -3847,13 +3849,13 @@ html body.daily #articles nav { margin-top: 1.25em; }
 html body.daily #articles nav > h3 { display: none; }
 html body.daily #articles nav ol li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.daily #articles nav ol li:last-of-type { margin-right: 0; }
-html body.daily #articles nav ol li a { padding: 0.625em 0.9375em; display: block; }
-html body.daily #articles nav ol li.active a, html body.daily #articles nav ol li:hover a { background: #982022; color: white; }
-html body.daily #articles nav ol li.active a a, html body.daily #articles nav ol li:hover a a { color: white; text-decoration: none; }
-html body.daily #articles nav ol li.active a a:hover, html body.daily #articles nav ol li:hover a a:hover { color: white; }
 html body.daily #articles nav ol li { background: #f1f1f1; color: #231f20; -moz-border-radius: 1.25em; -webkit-border-radius: 1.25em; border-radius: 1.25em; }
 html body.daily #articles nav ol li a { color: #231f20; text-decoration: none; }
 html body.daily #articles nav ol li a:hover { color: white; }
+html body.daily #articles nav ol li a { padding: 0.625em 0.9375em; display: block; }
+html body.daily #articles nav ol li.active a, html body.daily #articles nav ol li:hover a { background: #982022; color: white; }
+html body.daily #articles nav ol li.active a a, html body.daily #articles nav ol li:hover a a { color: #231f20; text-decoration: none; }
+html body.daily #articles nav ol li.active a a:hover, html body.daily #articles nav ol li:hover a a:hover { color: white; }
 @media only screen and (max-width: 47.999em) { html body.daily #articles nav ol { font-size: small; } }
 html body.daily #articles article.thumb { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.3125em; padding-bottom: 0.3125em; max-width: 43.75em; line-height: 1.75; /* Padding of individual elements
 */ /* Padding of consecutive elements
@@ -3871,7 +3873,7 @@ html body.daily #articles article.thumb figure figcaption { padding: 0.3125em; f
 html body.daily #articles article.thumb figure figcaption h1, html body.daily #articles article.thumb figure figcaption h2, html body.daily #articles article.thumb figure figcaption h3, html body.daily #articles article.thumb figure figcaption h4, html body.daily #articles article.thumb figure figcaption h5, html body.daily #articles article.thumb figure figcaption h6 { margin: 0; padding: 0; }
 html body.daily #articles article.thumb figure { position: relative; }
 html body.daily #articles article.thumb figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
-html body.daily #articles article.thumb figure .label a { color: white; text-decoration: none; }
+html body.daily #articles article.thumb figure .label a { color: #231f20; text-decoration: none; }
 html body.daily #articles article.thumb figure .label a:hover { color: white; }
 html body.daily #articles article.thumb .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
 html body.daily #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; margin-top: 1.25em; }
@@ -4007,50 +4009,50 @@ html body.videos article { position: relative; }
 html body.videos article span.icon { position: absolute; height: 0; top: 38%; left: 38%; opacity: .7; }
 @media only screen and (min-width: 80em) { html body.videos article span.icon { top: 18%; left: 32%; } }
 html body.frontpage #header nav ul li.frontpage a { background: #982022; color: white; }
-html body.frontpage #header nav ul li.frontpage a a { color: white; text-decoration: none; }
+html body.frontpage #header nav ul li.frontpage a a { color: #231f20; text-decoration: none; }
 html body.frontpage #header nav ul li.frontpage a a:hover { color: white; }
 html body.investigations #header nav ul li.investigations a { background: #982022; color: white; }
-html body.investigations #header nav ul li.investigations a a { color: white; text-decoration: none; }
+html body.investigations #header nav ul li.investigations a a { color: #231f20; text-decoration: none; }
 html body.investigations #header nav ul li.investigations a a:hover { color: white; }
 html body.resources #header nav ul li.resources a { background: #982022; color: white; }
-html body.resources #header nav ul li.resources a a { color: white; text-decoration: none; }
+html body.resources #header nav ul li.resources a a { color: #231f20; text-decoration: none; }
 html body.resources #header nav ul li.resources a a:hover { color: white; }
 html body.blog #header nav ul li.blog a { background: #982022; color: white; }
-html body.blog #header nav ul li.blog a a { color: white; text-decoration: none; }
+html body.blog #header nav ul li.blog a a { color: #231f20; text-decoration: none; }
 html body.blog #header nav ul li.blog a a:hover { color: white; }
 html body.daily #header nav ul li.daily a { background: #982022; color: white; }
-html body.daily #header nav ul li.daily a a { color: white; text-decoration: none; }
+html body.daily #header nav ul li.daily a a { color: #231f20; text-decoration: none; }
 html body.daily #header nav ul li.daily a a:hover { color: white; }
 html body.about-us #header nav ul li.about-us a { background: #982022; color: white; }
-html body.about-us #header nav ul li.about-us a a { color: white; text-decoration: none; }
+html body.about-us #header nav ul li.about-us a a { color: #231f20; text-decoration: none; }
 html body.about-us #header nav ul li.about-us a a:hover { color: white; }
 html body.contact-us #header nav ul li.contact-us a { background: #982022; color: white; }
-html body.contact-us #header nav ul li.contact-us a a { color: white; text-decoration: none; }
+html body.contact-us #header nav ul li.contact-us a a { color: #231f20; text-decoration: none; }
 html body.contact-us #header nav ul li.contact-us a a:hover { color: white; }
 html body.russia #header #tags ul li.russia a { background: #982022; color: white; }
-html body.russia #header #tags ul li.russia a a { color: white; text-decoration: none; }
+html body.russia #header #tags ul li.russia a a { color: #231f20; text-decoration: none; }
 html body.russia #header #tags ul li.russia a a:hover { color: white; }
 html body.about-us aside #subpages nav li#about a { background: #982022; color: white; }
-html body.about-us aside #subpages nav li#about a a { color: white; text-decoration: none; }
+html body.about-us aside #subpages nav li#about a a { color: #231f20; text-decoration: none; }
 html body.about-us aside #subpages nav li#about a a:hover { color: white; }
 html body.history aside #subpages nav li#history a { background: #982022; color: white; }
-html body.history aside #subpages nav li#history a a { color: white; text-decoration: none; }
+html body.history aside #subpages nav li#history a a { color: #231f20; text-decoration: none; }
 html body.history aside #subpages nav li#history a a:hover { color: white; }
 html body.members aside #subpages nav li#members a { background: #982022; color: white; }
-html body.members aside #subpages nav li#members a a { color: white; text-decoration: none; }
+html body.members aside #subpages nav li#members a a { color: #231f20; text-decoration: none; }
 html body.members aside #subpages nav li#members a a:hover { color: white; }
 html body.staff aside #subpages nav li#staff a { background: #982022; color: white; }
-html body.staff aside #subpages nav li#staff a a { color: white; text-decoration: none; }
+html body.staff aside #subpages nav li#staff a a { color: #231f20; text-decoration: none; }
 html body.staff aside #subpages nav li#staff a a:hover { color: white; }
 html body.board-directors aside #subpages nav li#board-directors a { background: #982022; color: white; }
-html body.board-directors aside #subpages nav li#board-directors a a { color: white; text-decoration: none; }
+html body.board-directors aside #subpages nav li#board-directors a a { color: #231f20; text-decoration: none; }
 html body.board-directors aside #subpages nav li#board-directors a a:hover { color: white; }
 html body.jobs aside #subpages nav li#jobs a { background: #982022; color: white; }
-html body.jobs aside #subpages nav li#jobs a a { color: white; text-decoration: none; }
+html body.jobs aside #subpages nav li#jobs a a { color: #231f20; text-decoration: none; }
 html body.jobs aside #subpages nav li#jobs a a:hover { color: white; }
 html body.awards aside #subpages nav li#awards a { background: #982022; color: white; }
-html body.awards aside #subpages nav li#awards a a { color: white; text-decoration: none; }
+html body.awards aside #subpages nav li#awards a a { color: #231f20; text-decoration: none; }
 html body.awards aside #subpages nav li#awards a a:hover { color: white; }
 html body.announcements aside #subpages nav li#announcements a { background: #982022; color: white; }
-html body.announcements aside #subpages nav li#announcements a a { color: white; text-decoration: none; }
+html body.announcements aside #subpages nav li#announcements a a { color: #231f20; text-decoration: none; }
 html body.announcements aside #subpages nav li#announcements a a:hover { color: white; }

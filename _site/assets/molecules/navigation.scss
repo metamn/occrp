@@ -159,19 +159,22 @@
 
 /* A pagination bar
 */
-@mixin pagination($color-scheme : slider) {
+@mixin pagination($color-scheme : normal) {
   nav {
     @include hide-title;
     margin-top: $pad;
     
     ol {
       @include list-inline;
-      @include menu-item(block, $pad/2, $pad/2 + $pad/4);
       
       li {
         @include color($color-scheme);
         @include border-radius($pad);
       }
+      
+      @include menu-item(block, $pad/2, $pad/2 + $pad/4);
+      
+      
       
       @include below-tablet {
         font-size: small;
