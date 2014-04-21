@@ -194,7 +194,7 @@
   @include border-thin;
   
   section {
-    &.logo, &.mobile-menu {
+    &.logo, &.mobile-menubar {
       @include grid(2, 2);
     }
   }

@@ -3,6 +3,7 @@ $(document).ready(function() {
 
   
   // Simple slider
+  // -------------------------------------------------------------------------
   // - a list of articles, figures is transformed into a slider
   // - navigation arrows are inserted into the container
   simpleSlider($('.frontpage #products'));
@@ -33,6 +34,7 @@ $(document).ready(function() {
   
   
   // Full screen gallery
+  // -------------------------------------------------------------------------
   // - the .gallery content is inserted after the .container
   // - it's original place is marked, and on close it is copied back again
   // - .clone() made full screen navigation impossible
@@ -108,7 +110,7 @@ $(document).ready(function() {
   // - the second click on the logo will load the frontpage
   $('#header .logo figure a').click(function(event) {
     if ($('body').hasClass('sticky')) {
-      event.preventDefault();chrome://web-developer/content/generated/view-responsive-layouts.html
+      event.preventDefault();
       scrollTo($('body'));
     }
   });
@@ -125,6 +127,7 @@ $(document).ready(function() {
   
   // Show navigation, search & co on click on mobile navbar
   $('#header .mobile-menubar').click(function() {
+    scrollTo($('body'));
     $('body').removeClass('sticky');
     $(this).hide();
     $('#header nav').slideToggle();

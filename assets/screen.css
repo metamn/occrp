@@ -433,8 +433,8 @@ html body .container #header .close-icon:after { content: "\2715"; padding: 0.15
   html body .container #header nav.tags ul.search li.input form input { margin: 0.15625em 0.3125em 0; }
   html body .container #header nav.tags ul.search li.text { display: none; }
   html body .container #header nav.tags ul.search li.input { display: block; }
-  html body .container #header section.logo, html body .container #header section.mobile-menu { width: 48.75%; margin-right: 2.5%; float: left; }
-  html body .container #header section.logo:nth-of-type(2), html body .container #header section.mobile-menu:nth-of-type(2) { margin-right: 0; }
+  html body .container #header section.logo, html body .container #header section.mobile-menubar { width: 48.75%; margin-right: 2.5%; float: left; }
+  html body .container #header section.logo:nth-of-type(2), html body .container #header section.mobile-menubar:nth-of-type(2) { margin-right: 0; }
   html body .container #header .mobile-menubar { width: 100%; max-width: 100%; float: left; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: 60%; cursor: pointer; position: absolute; right: 0; bottom: .5em; /* to align to logo */ } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) and (min-width: 48em) and (max-width: 79.999em) { html body .container #header .mobile-menubar { font-size: small; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body .container #header .mobile-menubar ul li { display: inline-block; float: left; margin-right: 0.625em; }
@@ -553,8 +553,8 @@ html body .container #header.mobile-menu-active .close-icon:after { content: "\2
   html body .container #header.mobile-menu-active nav.tags ul.search li.input form input { margin: 0.15625em 0.3125em 0; }
   html body .container #header.mobile-menu-active nav.tags ul.search li.text { display: none; }
   html body .container #header.mobile-menu-active nav.tags ul.search li.input { display: block; }
-  html body .container #header.mobile-menu-active section.logo, html body .container #header.mobile-menu-active section.mobile-menu { width: 48.75%; margin-right: 2.5%; float: left; }
-  html body .container #header.mobile-menu-active section.logo:nth-of-type(2), html body .container #header.mobile-menu-active section.mobile-menu:nth-of-type(2) { margin-right: 0; }
+  html body .container #header.mobile-menu-active section.logo, html body .container #header.mobile-menu-active section.mobile-menubar { width: 48.75%; margin-right: 2.5%; float: left; }
+  html body .container #header.mobile-menu-active section.logo:nth-of-type(2), html body .container #header.mobile-menu-active section.mobile-menubar:nth-of-type(2) { margin-right: 0; }
   html body .container #header.mobile-menu-active .mobile-menubar { width: 100%; max-width: 100%; float: left; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: 60%; cursor: pointer; position: absolute; right: 0; bottom: .5em; /* to align to logo */ } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) and (min-width: 48em) and (max-width: 79.999em) { html body .container #header.mobile-menu-active .mobile-menubar { font-size: small; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body .container #header.mobile-menu-active .mobile-menubar ul li { display: inline-block; float: left; margin-right: 0.625em; }
@@ -698,8 +698,8 @@ html body.sticky .container #header .close-icon:after { content: "\2715"; paddin
   html body.sticky .container #header nav.tags ul.search li.input form input { margin: 0.15625em 0.3125em 0; }
   html body.sticky .container #header nav.tags ul.search li.text { display: none; }
   html body.sticky .container #header nav.tags ul.search li.input { display: block; }
-  html body.sticky .container #header section.logo, html body.sticky .container #header section.mobile-menu { width: 48.75%; margin-right: 2.5%; float: left; }
-  html body.sticky .container #header section.logo:nth-of-type(2), html body.sticky .container #header section.mobile-menu:nth-of-type(2) { margin-right: 0; }
+  html body.sticky .container #header section.logo, html body.sticky .container #header section.mobile-menubar { width: 48.75%; margin-right: 2.5%; float: left; }
+  html body.sticky .container #header section.logo:nth-of-type(2), html body.sticky .container #header section.mobile-menubar:nth-of-type(2) { margin-right: 0; }
   html body.sticky .container #header .mobile-menubar { width: 100%; max-width: 100%; float: left; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: 60%; cursor: pointer; position: absolute; right: 0; bottom: .5em; /* to align to logo */ } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) and (min-width: 48em) and (max-width: 79.999em) { html body.sticky .container #header .mobile-menubar { font-size: small; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.sticky .container #header .mobile-menubar ul li { display: inline-block; float: left; margin-right: 0.625em; }
