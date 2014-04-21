@@ -8,7 +8,9 @@ $(document).ready(function() {
   simpleSlider($('.frontpage #products'));
   simpleSlider($('.frontpage #projects'));
   simpleSlider($('.frontpage #videos'));
-  simpleSlider($('.gallery'), '.gallery-item');
+  $('.gallery').each(function() {
+    simpleSlider($(this), '.gallery-item');
+  })
   
   function simpleSlider(container, item) {
     item = item || 'article';
@@ -34,14 +36,18 @@ $(document).ready(function() {
   // - the .gallery content is inserted after the .container
   // - it's original place is marked, and on close it is copied back again
   // - .clone() made full screen navigation impossible
-  $('.gallery .show').click(function() {
-    $('.gallery').after("<span class='gallery-original-location'></span>");
-    $('.gallery').insertAfter($('.container'));
-    $('html').addClass('full-screen-gallery');
+  $('.gallery').each(function() {
+    var gallery = $(this);
+    gallery.find('.show').click(function() {
+      gallery.after("<span class='gallery-original-location'></span>");
+      gallery.insertAfter($('.container'));
+      $('html').addClass('full-screen-gallery');
+    });
   });
   
    $('.gallery .close').click(function() {
-    $('.gallery').insertAfter($('.gallery-original-location'));
+    var gallery = $(this).parent();
+    gallery.insertAfter($('.gallery-original-location'));
     $('.gallery-original-location').remove();
     $('html').removeClass('full-screen-gallery');
   });
