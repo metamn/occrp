@@ -1,7 +1,7 @@
 <div class="gallery">
   {% for image in post.images %}
     {% assign image_index = forloop.index | minus:1 %}
-    {% include responsive-images.html type = 'from post' holder = 'false' klass = 'gallery-item' link = 'false' %}
+    {% include responsive-images.html type = 'from post' holder = 'false' absolute = 'true' klass = 'gallery-item' link = 'false' %}
   {% endfor %}
   
   <span class="show">Slideshow</span>
