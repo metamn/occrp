@@ -187,6 +187,8 @@
 /* Tags on frontpage above footer
 */
 @mixin tags-and-gallery {
+  margin-top: $margin;
+  
   h3, figcaption {
     @include font(section-title);
     display: none;
@@ -223,6 +225,8 @@
 /* Videos
 */
 @mixin videos {
+  margin-top: $margin;
+  
   h3 {
     @include font(section-title);
   }
@@ -244,6 +248,7 @@
 */
 @mixin most-read {
   section {
+    margin-top: $margin;
     @include news(news-mobile);
   }
 }
@@ -272,6 +277,8 @@
 /* Projects on frontpage
 */
 @mixin frontpage-projects {
+  margin-top: $margin;
+  
   h3 {
     @include font(section-title);
   }

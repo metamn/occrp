@@ -784,7 +784,7 @@ html body.frontpage .container main #intro #slider article .gallery span { text-
 html body.frontpage .container main #intro #slider article .gallery span a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #intro #slider article .gallery span a:hover { color: #231f20; }
 html body.frontpage .container main #intro #slider article .gallery span.close { position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); padding: 0.15625em; position: absolute; bottom: 0.625em; display: none; }
-html body.frontpage .container main #intro #slider nav { margin-top: 1.25em; }
+html body.frontpage .container main #intro #slider nav { margin: 1.25em 0; }
 html body.frontpage .container main #intro #slider nav > h3 { display: none; }
 html body.frontpage .container main #intro #slider nav ol li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.frontpage .container main #intro #slider nav ol li:last-of-type { margin-right: 0; }
@@ -1088,6 +1088,7 @@ html body.frontpage .container main #products article .gallery span.close { posi
   html body.frontpage .container main #products .after { right: 0; float: right; }
   html body.frontpage .container main #products article, html body.frontpage .container main #products .gallery-item { display: none; }
   html body.frontpage .container main #products article:first-of-type, html body.frontpage .container main #products .gallery-item:first-of-type { display: block; } }
+html body.frontpage .container main #projects { margin-top: 0.625em; }
 html body.frontpage .container main #projects h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; display: block; }
 html body.frontpage .container main #projects h3 a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #projects h3 a:hover { color: #231f20; }
@@ -1298,6 +1299,7 @@ html body.frontpage .container main #blog article a:hover { color: white; }
 html body.frontpage .container main #blog article h1 { font-weight: normal; font-size: medium; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; letter-spacing: 1.1px; margin-top: 0.3125em; }
 @media only screen and (max-width: 79.999em) { html body.frontpage .container main #blog article h1 { font-size: small; } }
 @media only screen and (min-width: 80em) { html body.frontpage .container main #blog article:last-of-type { display: none; } }
+html body.frontpage .container main #most-read section { margin-top: 0.625em; }
 @media only screen and (max-width: 29.999em) { html body.frontpage .container main #most-read section { width: 100%; margin-right: 0; float: left; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.frontpage .container main #most-read section { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.frontpage .container main #most-read section:nth-of-type(2) { margin-right: 0; }
@@ -1387,6 +1389,7 @@ html body.frontpage .container main #most-read section article .gallery span a {
 html body.frontpage .container main #most-read section article .gallery span a:hover { color: #231f20; }
 html body.frontpage .container main #most-read section article .gallery span.close { position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); padding: 0.15625em; position: absolute; bottom: 0.625em; display: none; }
 html body.frontpage .container main #most-read section article h1 { font-size: medium; font-weight: normal; padding: 0.625em 0; }
+html body.frontpage .container main #videos { margin-top: 0.625em; }
 html body.frontpage .container main #videos h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; display: block; }
 html body.frontpage .container main #videos h3 a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #videos h3 a:hover { color: #231f20; }
@@ -1488,6 +1491,7 @@ html body.frontpage .container main #videos article span.icon { position: absolu
   html body.frontpage .container main #videos .after { right: 0; float: right; }
   html body.frontpage .container main #videos article, html body.frontpage .container main #videos .gallery-item { display: none; }
   html body.frontpage .container main #videos article:first-of-type, html body.frontpage .container main #videos .gallery-item:first-of-type { display: block; } }
+html body.frontpage .container main #tags-and-gallery { margin-top: 0.625em; }
 html body.frontpage .container main #tags-and-gallery h3, html body.frontpage .container main #tags-and-gallery figcaption { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; display: block; display: none; }
 html body.frontpage .container main #tags-and-gallery h3 a, html body.frontpage .container main #tags-and-gallery figcaption a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #tags-and-gallery h3 a:hover, html body.frontpage .container main #tags-and-gallery figcaption a:hover { color: #231f20; }
@@ -1685,7 +1689,7 @@ html body.category #articles { /* The first article
 html body.category #articles .title { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; display: block; }
 html body.category #articles .title a { color: #982022; text-decoration: none; }
 html body.category #articles .title a:hover { color: #231f20; }
-html body.category #articles nav { margin-top: 1.25em; }
+html body.category #articles nav { margin: 1.25em 0; }
 html body.category #articles nav > h3 { display: none; }
 html body.category #articles nav ol li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.category #articles nav ol li:last-of-type { margin-right: 0; }
@@ -1697,7 +1701,7 @@ html body.category #articles nav ol li.active a, html body.category #articles na
 html body.category #articles nav ol li.active a a, html body.category #articles nav ol li:hover a a { color: #231f20; text-decoration: none; }
 html body.category #articles nav ol li.active a a:hover, html body.category #articles nav ol li:hover a a:hover { color: white; }
 @media only screen and (max-width: 47.999em) { html body.category #articles nav ol { font-size: small; } }
-html body.category #articles aside { width: 100%; max-width: 100%; float: left; margin-bottom: 0.3125em; background: #f1f1f1; color: #231f20; }
+html body.category #articles aside { width: 100%; max-width: 100%; float: left; margin-bottom: 0.3125em; background: #f1f1f1; color: #231f20; margin-bottom: 0.625em; }
 html body.category #articles aside h1 { display: block; }
 html body.category #articles aside figure { display: block; }
 html body.category #articles aside figcaption { display: none; }
@@ -1763,6 +1767,7 @@ html body.category #articles aside .gallery span.close { position: relative; lef
 @media only screen and (min-width: 30em) { html body.category #articles aside figure, html body.category #articles aside h1, html body.category #articles aside .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.category #articles aside h1, html body.category #articles aside .excerpt { margin-right: 0; padding: 0.3125em; width: calc(48.75% - 0.625em); } }
 html body.category #articles aside h1, html body.category #articles aside .excerpt { padding: 0.3125em; }
+html body.category #articles article.thumb { margin-bottom: 0.625em; }
 @media only screen and (max-width: 79.999em) { html body.category #articles article.thumb { width: 100%; max-width: 100%; float: left; margin-bottom: 0.3125em; background: #f1f1f1; color: #231f20; }
   html body.category #articles article.thumb h1 { display: block; }
   html body.category #articles article.thumb figure { display: block; }
@@ -2113,7 +2118,7 @@ html body.tag #articles { /* The first article
 html body.tag #articles .title { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; display: block; }
 html body.tag #articles .title a { color: #982022; text-decoration: none; }
 html body.tag #articles .title a:hover { color: #231f20; }
-html body.tag #articles nav { margin-top: 1.25em; }
+html body.tag #articles nav { margin: 1.25em 0; }
 html body.tag #articles nav > h3 { display: none; }
 html body.tag #articles nav ol li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.tag #articles nav ol li:last-of-type { margin-right: 0; }
@@ -2125,7 +2130,7 @@ html body.tag #articles nav ol li.active a, html body.tag #articles nav ol li:ho
 html body.tag #articles nav ol li.active a a, html body.tag #articles nav ol li:hover a a { color: #231f20; text-decoration: none; }
 html body.tag #articles nav ol li.active a a:hover, html body.tag #articles nav ol li:hover a a:hover { color: white; }
 @media only screen and (max-width: 47.999em) { html body.tag #articles nav ol { font-size: small; } }
-html body.tag #articles aside { width: 100%; max-width: 100%; float: left; margin-bottom: 0.3125em; background: #f1f1f1; color: #231f20; }
+html body.tag #articles aside { width: 100%; max-width: 100%; float: left; margin-bottom: 0.3125em; background: #f1f1f1; color: #231f20; margin-bottom: 0.625em; }
 html body.tag #articles aside h1 { display: block; }
 html body.tag #articles aside figure { display: block; }
 html body.tag #articles aside figcaption { display: none; }
@@ -2191,6 +2196,7 @@ html body.tag #articles aside .gallery span.close { position: relative; left: 50
 @media only screen and (min-width: 30em) { html body.tag #articles aside figure, html body.tag #articles aside h1, html body.tag #articles aside .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.tag #articles aside h1, html body.tag #articles aside .excerpt { margin-right: 0; padding: 0.3125em; width: calc(48.75% - 0.625em); } }
 html body.tag #articles aside h1, html body.tag #articles aside .excerpt { padding: 0.3125em; }
+html body.tag #articles article.thumb { margin-bottom: 0.625em; }
 @media only screen and (max-width: 79.999em) { html body.tag #articles article.thumb { width: 100%; max-width: 100%; float: left; margin-bottom: 0.3125em; background: #f1f1f1; color: #231f20; }
   html body.tag #articles article.thumb h1 { display: block; }
   html body.tag #articles article.thumb figure { display: block; }
@@ -2414,7 +2420,7 @@ html body.tag #banner figure figcaption { display: none; }
 html body.archive .title { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; display: block; }
 html body.archive .title a { color: #982022; text-decoration: none; }
 html body.archive .title a:hover { color: #231f20; }
-html body.archive nav { margin-top: 1.25em; }
+html body.archive nav { margin: 1.25em 0; }
 html body.archive nav > h3 { display: none; }
 html body.archive nav ol li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.archive nav ol li:last-of-type { margin-right: 0; }
@@ -2737,7 +2743,7 @@ html body.blog main aside #spacer > h3 { display: none; }
 html body.blog #articles .title { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; display: block; }
 html body.blog #articles .title a { color: #982022; text-decoration: none; }
 html body.blog #articles .title a:hover { color: #231f20; }
-html body.blog #articles nav { margin-top: 1.25em; }
+html body.blog #articles nav { margin: 1.25em 0; }
 html body.blog #articles nav > h3 { display: none; }
 html body.blog #articles nav ol li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.blog #articles nav ol li:last-of-type { margin-right: 0; }
@@ -3017,7 +3023,7 @@ html body.author #articles { /* The first article
 html body.author #articles .title { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; display: block; }
 html body.author #articles .title a { color: #982022; text-decoration: none; }
 html body.author #articles .title a:hover { color: #231f20; }
-html body.author #articles nav { margin-top: 1.25em; }
+html body.author #articles nav { margin: 1.25em 0; }
 html body.author #articles nav > h3 { display: none; }
 html body.author #articles nav ol li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.author #articles nav ol li:last-of-type { margin-right: 0; }
@@ -3029,7 +3035,7 @@ html body.author #articles nav ol li.active a, html body.author #articles nav ol
 html body.author #articles nav ol li.active a a, html body.author #articles nav ol li:hover a a { color: #231f20; text-decoration: none; }
 html body.author #articles nav ol li.active a a:hover, html body.author #articles nav ol li:hover a a:hover { color: white; }
 @media only screen and (max-width: 47.999em) { html body.author #articles nav ol { font-size: small; } }
-html body.author #articles aside { width: 100%; max-width: 100%; float: left; margin-bottom: 0.3125em; background: #f1f1f1; color: #231f20; }
+html body.author #articles aside { width: 100%; max-width: 100%; float: left; margin-bottom: 0.3125em; background: #f1f1f1; color: #231f20; margin-bottom: 0.625em; }
 html body.author #articles aside h1 { display: block; }
 html body.author #articles aside figure { display: block; }
 html body.author #articles aside figcaption { display: none; }
@@ -3095,6 +3101,7 @@ html body.author #articles aside .gallery span.close { position: relative; left:
 @media only screen and (min-width: 30em) { html body.author #articles aside figure, html body.author #articles aside h1, html body.author #articles aside .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.author #articles aside h1, html body.author #articles aside .excerpt { margin-right: 0; padding: 0.3125em; width: calc(48.75% - 0.625em); } }
 html body.author #articles aside h1, html body.author #articles aside .excerpt { padding: 0.3125em; }
+html body.author #articles article.thumb { margin-bottom: 0.625em; }
 @media only screen and (max-width: 79.999em) { html body.author #articles article.thumb { width: 100%; max-width: 100%; float: left; margin-bottom: 0.3125em; background: #f1f1f1; color: #231f20; }
   html body.author #articles article.thumb h1 { display: block; }
   html body.author #articles article.thumb figure { display: block; }
@@ -3810,7 +3817,7 @@ html body.jobs #main #article .single .content article .excerpt, html body.annou
 html body.galleries #articles .title { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; display: block; }
 html body.galleries #articles .title a { color: #982022; text-decoration: none; }
 html body.galleries #articles .title a:hover { color: #231f20; }
-html body.galleries #articles nav { margin-top: 1.25em; }
+html body.galleries #articles nav { margin: 1.25em 0; }
 html body.galleries #articles nav > h3 { display: none; }
 html body.galleries #articles nav ol li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.galleries #articles nav ol li:last-of-type { margin-right: 0; }
@@ -3996,7 +4003,7 @@ html body.daily #articles { /* The first article
 html body.daily #articles .title { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; display: block; }
 html body.daily #articles .title a { color: #982022; text-decoration: none; }
 html body.daily #articles .title a:hover { color: #231f20; }
-html body.daily #articles nav { margin-top: 1.25em; }
+html body.daily #articles nav { margin: 1.25em 0; }
 html body.daily #articles nav > h3 { display: none; }
 html body.daily #articles nav ol li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.daily #articles nav ol li:last-of-type { margin-right: 0; }
@@ -4008,7 +4015,7 @@ html body.daily #articles nav ol li.active a, html body.daily #articles nav ol l
 html body.daily #articles nav ol li.active a a, html body.daily #articles nav ol li:hover a a { color: #231f20; text-decoration: none; }
 html body.daily #articles nav ol li.active a a:hover, html body.daily #articles nav ol li:hover a a:hover { color: white; }
 @media only screen and (max-width: 47.999em) { html body.daily #articles nav ol { font-size: small; } }
-html body.daily #articles aside { width: 100%; max-width: 100%; float: left; margin-bottom: 0.3125em; background: #f1f1f1; color: #231f20; }
+html body.daily #articles aside { width: 100%; max-width: 100%; float: left; margin-bottom: 0.3125em; background: #f1f1f1; color: #231f20; margin-bottom: 0.625em; }
 html body.daily #articles aside h1 { display: block; }
 html body.daily #articles aside figure { display: block; }
 html body.daily #articles aside figcaption { display: none; }
@@ -4074,6 +4081,7 @@ html body.daily #articles aside .gallery span.close { position: relative; left: 
 @media only screen and (min-width: 30em) { html body.daily #articles aside figure, html body.daily #articles aside h1, html body.daily #articles aside .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.daily #articles aside h1, html body.daily #articles aside .excerpt { margin-right: 0; padding: 0.3125em; width: calc(48.75% - 0.625em); } }
 html body.daily #articles aside h1, html body.daily #articles aside .excerpt { padding: 0.3125em; }
+html body.daily #articles article.thumb { margin-bottom: 0.625em; }
 @media only screen and (max-width: 79.999em) { html body.daily #articles article.thumb { width: 100%; max-width: 100%; float: left; margin-bottom: 0.3125em; background: #f1f1f1; color: #231f20; }
   html body.daily #articles article.thumb h1 { display: block; }
   html body.daily #articles article.thumb figure { display: block; }
@@ -4295,7 +4303,7 @@ html body.daily #articles aside h1, html body.daily #articles aside .excerpt { p
 html body.daily #articles .title { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; display: block; }
 html body.daily #articles .title a { color: #982022; text-decoration: none; }
 html body.daily #articles .title a:hover { color: #231f20; }
-html body.daily #articles nav { margin-top: 1.25em; }
+html body.daily #articles nav { margin: 1.25em 0; }
 html body.daily #articles nav > h3 { display: none; }
 html body.daily #articles nav ol li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.daily #articles nav ol li:last-of-type { margin-right: 0; }
