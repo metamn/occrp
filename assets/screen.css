@@ -1489,9 +1489,9 @@ html body.frontpage .container main #videos article span.icon { position: absolu
   html body.frontpage .container main #videos .after { right: 0; float: right; }
   html body.frontpage .container main #videos article, html body.frontpage .container main #videos .gallery-item { display: none; }
   html body.frontpage .container main #videos article:first-of-type, html body.frontpage .container main #videos .gallery-item:first-of-type { display: block; } }
-html body.frontpage .container main #tags-and-gallery h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; display: none; }
-html body.frontpage .container main #tags-and-gallery h3 a { color: #982022; text-decoration: none; }
-html body.frontpage .container main #tags-and-gallery h3 a:hover { color: #231f20; }
+html body.frontpage .container main #tags-and-gallery h3, html body.frontpage .container main #tags-and-gallery figcaption { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; background: white; color: #982022; display: block; display: none; }
+html body.frontpage .container main #tags-and-gallery h3 a, html body.frontpage .container main #tags-and-gallery figcaption a { color: #982022; text-decoration: none; }
+html body.frontpage .container main #tags-and-gallery h3 a:hover, html body.frontpage .container main #tags-and-gallery figcaption a:hover { color: #231f20; }
 html body.frontpage .container main #tags-and-gallery nav { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; width: 100%; max-width: 100%; float: left; background: #231f20; color: white; }
 html body.frontpage .container main #tags-and-gallery nav a { color: white; text-decoration: none; }
 html body.frontpage .container main #tags-and-gallery nav a:hover { color: white; }
@@ -1528,29 +1528,32 @@ html body.frontpage .container main #tags-and-gallery nav ul.tag-list li:last-of
 html body.frontpage .container main #tags-and-gallery nav ul.tag-list li { text-align: left; margin-bottom: 0.3125em; }
 @media only screen and (max-width: 29.999em) { html body.frontpage .container main #tags-and-gallery nav ul.tag-list li { margin-bottom: 1.25em; } }
 @media only screen and (min-width: 80em) { html body.frontpage .container main #tags-and-gallery nav ul.tag-list li { margin-bottom: 1.25em; } }
-html body.frontpage .container main #tags-and-gallery nav > h3, html body.frontpage .container main #tags-and-gallery aside > h3 { display: block; }
-@media only screen and (max-width: 29.999em) { html body.frontpage .container main #tags-and-gallery nav, html body.frontpage .container main #tags-and-gallery aside { width: 100%; margin-right: 0; float: left; } }
-@media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.frontpage .container main #tags-and-gallery nav, html body.frontpage .container main #tags-and-gallery aside { width: 48.75%; margin-right: 2.5%; float: left; }
-  html body.frontpage .container main #tags-and-gallery nav:nth-of-type(2), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(2) { margin-right: 0; }
-  html body.frontpage .container main #tags-and-gallery nav:nth-of-type(3), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(3) { margin-right: 2.5%; }
-  html body.frontpage .container main #tags-and-gallery nav:nth-of-type(4), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(4) { margin-right: 0; }
-  html body.frontpage .container main #tags-and-gallery nav:nth-of-type(5), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(5) { margin-right: 2.5%; }
-  html body.frontpage .container main #tags-and-gallery nav:nth-of-type(6), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(6) { margin-right: 0; }
-  html body.frontpage .container main #tags-and-gallery nav:nth-of-type(7), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(7) { margin-right: 2.5%; }
-  html body.frontpage .container main #tags-and-gallery nav:nth-of-type(8), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(8) { margin-right: 0; }
-  html body.frontpage .container main #tags-and-gallery nav:nth-of-type(9), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(9) { margin-right: 2.5%; }
-  html body.frontpage .container main #tags-and-gallery nav:nth-of-type(10), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(10) { margin-right: 0; } }
-@media only screen and (min-width: 80em) { html body.frontpage .container main #tags-and-gallery nav, html body.frontpage .container main #tags-and-gallery aside { width: 31.5%; margin-right: 2.5%; float: left; }
-  html body.frontpage .container main #tags-and-gallery nav:nth-of-type(2), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(2) { margin-right: 2.5%; }
-  html body.frontpage .container main #tags-and-gallery nav:nth-of-type(3), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(3) { margin-right: 0; }
-  html body.frontpage .container main #tags-and-gallery nav:nth-of-type(4), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(4) { margin-right: 2.5%; }
-  html body.frontpage .container main #tags-and-gallery nav:nth-of-type(5), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(5) { margin-right: 2.5%; }
-  html body.frontpage .container main #tags-and-gallery nav:nth-of-type(6), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(6) { margin-right: 0; }
-  html body.frontpage .container main #tags-and-gallery nav:nth-of-type(7), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(7) { margin-right: 2.5%; }
-  html body.frontpage .container main #tags-and-gallery nav:nth-of-type(8), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(8) { margin-right: 2.5%; }
-  html body.frontpage .container main #tags-and-gallery nav:nth-of-type(9), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(9) { margin-right: 0; }
-  html body.frontpage .container main #tags-and-gallery nav:nth-of-type(10), html body.frontpage .container main #tags-and-gallery aside:nth-of-type(10) { margin-right: 2.5%; } }
-@media only screen and (max-width: 79.999em) { html body.frontpage .container main #tags-and-gallery nav { margin-right: 0; } }
+html body.frontpage .container main #tags-and-gallery aside > h3, html body.frontpage .container main #tags-and-gallery nav > h3 { display: block; }
+@media only screen and (max-width: 79.999em) and (max-width: 29.999em) { html body.frontpage .container main #tags-and-gallery aside, html body.frontpage .container main #tags-and-gallery nav { width: 100%; margin-right: 0; float: left; } }
+@media only screen and (max-width: 79.999em) and (min-width: 30em) and (max-width: 79.999em) { html body.frontpage .container main #tags-and-gallery aside, html body.frontpage .container main #tags-and-gallery nav { width: 48.75%; margin-right: 2.5%; float: left; }
+  html body.frontpage .container main #tags-and-gallery aside:nth-of-type(2), html body.frontpage .container main #tags-and-gallery nav:nth-of-type(2) { margin-right: 0; }
+  html body.frontpage .container main #tags-and-gallery aside:nth-of-type(3), html body.frontpage .container main #tags-and-gallery nav:nth-of-type(3) { margin-right: 2.5%; }
+  html body.frontpage .container main #tags-and-gallery aside:nth-of-type(4), html body.frontpage .container main #tags-and-gallery nav:nth-of-type(4) { margin-right: 0; }
+  html body.frontpage .container main #tags-and-gallery aside:nth-of-type(5), html body.frontpage .container main #tags-and-gallery nav:nth-of-type(5) { margin-right: 2.5%; }
+  html body.frontpage .container main #tags-and-gallery aside:nth-of-type(6), html body.frontpage .container main #tags-and-gallery nav:nth-of-type(6) { margin-right: 0; }
+  html body.frontpage .container main #tags-and-gallery aside:nth-of-type(7), html body.frontpage .container main #tags-and-gallery nav:nth-of-type(7) { margin-right: 2.5%; }
+  html body.frontpage .container main #tags-and-gallery aside:nth-of-type(8), html body.frontpage .container main #tags-and-gallery nav:nth-of-type(8) { margin-right: 0; }
+  html body.frontpage .container main #tags-and-gallery aside:nth-of-type(9), html body.frontpage .container main #tags-and-gallery nav:nth-of-type(9) { margin-right: 2.5%; }
+  html body.frontpage .container main #tags-and-gallery aside:nth-of-type(10), html body.frontpage .container main #tags-and-gallery nav:nth-of-type(10) { margin-right: 0; } }
+@media only screen and (max-width: 79.999em) and (min-width: 80em) { html body.frontpage .container main #tags-and-gallery aside, html body.frontpage .container main #tags-and-gallery nav { width: 48.75%; margin-right: 2.5%; float: left; }
+  html body.frontpage .container main #tags-and-gallery aside:nth-of-type(2), html body.frontpage .container main #tags-and-gallery nav:nth-of-type(2) { margin-right: 0; }
+  html body.frontpage .container main #tags-and-gallery aside:nth-of-type(3), html body.frontpage .container main #tags-and-gallery nav:nth-of-type(3) { margin-right: 2.5%; }
+  html body.frontpage .container main #tags-and-gallery aside:nth-of-type(4), html body.frontpage .container main #tags-and-gallery nav:nth-of-type(4) { margin-right: 0; }
+  html body.frontpage .container main #tags-and-gallery aside:nth-of-type(5), html body.frontpage .container main #tags-and-gallery nav:nth-of-type(5) { margin-right: 2.5%; }
+  html body.frontpage .container main #tags-and-gallery aside:nth-of-type(6), html body.frontpage .container main #tags-and-gallery nav:nth-of-type(6) { margin-right: 0; }
+  html body.frontpage .container main #tags-and-gallery aside:nth-of-type(7), html body.frontpage .container main #tags-and-gallery nav:nth-of-type(7) { margin-right: 2.5%; }
+  html body.frontpage .container main #tags-and-gallery aside:nth-of-type(8), html body.frontpage .container main #tags-and-gallery nav:nth-of-type(8) { margin-right: 0; }
+  html body.frontpage .container main #tags-and-gallery aside:nth-of-type(9), html body.frontpage .container main #tags-and-gallery nav:nth-of-type(9) { margin-right: 2.5%; }
+  html body.frontpage .container main #tags-and-gallery aside:nth-of-type(10), html body.frontpage .container main #tags-and-gallery nav:nth-of-type(10) { margin-right: 0; } }
+
+@media only screen and (min-width: 80em) { html body.frontpage .container main #tags-and-gallery aside { width: 65.5%; margin-right: 2.5%; float: left; }
+  html body.frontpage .container main #tags-and-gallery nav { width: 31.5%; margin-right: 2.5%; float: left; } }
+html body.frontpage .container main #tags-and-gallery nav { margin-right: 0; }
 @media only screen and (min-width: 80em) { html body.category main { overflow: hidden; }
   html body.category main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
 html body.category main #articles { width: 100%; max-width: 100%; float: left; }

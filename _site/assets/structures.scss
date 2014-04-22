@@ -186,24 +186,35 @@
 /* Tags on frontpage above footer
 */
 @mixin tags-and-gallery {
-  h3 {
+  h3, figcaption {
     @include font(section-title);
     display: none;
   }
-
+  
   nav {
     @include tag-cloud;
   }
   
-  nav, aside {
+  aside, nav {
     @include show-title;
-    @include responsive-grid(3);
+    
+    @include below-small-screen {
+      @include responsive-grid(2);
+    }
   }
   
-  @include below-small-screen {
+  @include small-screen-and-up {
+    aside {
+      @include col-nm(2, 3);
+    } 
     nav {
-      margin-right: 0;
+      @include col-nm(1, 3);
     }
+  }
+  
+  
+  nav {
+    margin-right: 0;
   }
 }
 
