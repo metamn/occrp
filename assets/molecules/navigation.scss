@@ -162,7 +162,7 @@
 @mixin pagination($color-scheme : normal) {
   nav {
     @include hide-title;
-    margin-top: $pad;
+    margin: $pad 0;
     
     ol {
       @include list-inline;

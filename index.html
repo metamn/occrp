@@ -149,9 +149,7 @@ class: frontpage
     <h3>
       <a href="{{ site.url }}/galleries" title="Image Galleries">Galleries</a>
     </h3>
-    <a href="{{ site.url }}/galleries" title="Image Galleries">
-      <img src="{{ site.url }}/assets/images/image-gallery.png" alt="Image Galleries">
-    </a>
+    {% include responsive-images.html link="/galleries" title="Image Galleries" normal="http://placehold.it/900x320" mobile="http://placehold.it/700x500" holder="false" %}
   </aside>
   
   <nav>
