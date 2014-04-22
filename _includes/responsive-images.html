@@ -2,8 +2,7 @@
   {% assign title = post.images[image_index].title %}
   {% assign link = post.url %}
 
-
-  {% if include.absolute %} 
+  {% if include.absolute %}
     {% capture normal %}
       {{ post.images[image_index].url }}
     {% endcapture %}
@@ -40,6 +39,7 @@
 {% if include.link == 'false' %}
   {% assign link = '' %}
 {% endif %}
+
 
 <figure class="{{ include.klass }}">
   {% if link != "" %}
