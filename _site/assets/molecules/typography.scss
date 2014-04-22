@@ -18,6 +18,7 @@
     @include uppercase;
     font-size: small;
     @include font-body;
+    font-weight: bold;
     
     @include color(highlight);
     display: block;

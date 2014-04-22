@@ -30,6 +30,7 @@
     */
     aside {
       @include article-style(first-article-in-archive);
+      margin-bottom: $margin;
     }
     
     /* The rest of the articles
@@ -49,6 +50,8 @@
         @include mobile {
           @include block;
         }
+        
+        margin-bottom: $margin;
       }
     }
   
