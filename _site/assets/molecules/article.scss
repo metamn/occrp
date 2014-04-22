@@ -199,8 +199,17 @@
     h1 {
       @include font(thumb-title);
     }
-
     
+  } @elseif ($style == news-mobile) {
+    @include article-parts(null, null, title);
+    @include separator(border-thin);
+    
+    h1 {
+      @include font(thumb-title);
+      font-weight: normal;
+      padding: $margin 0;
+    }
+
   } @elseif ($style == daily) {
     // builds upon news
     @include body-text;

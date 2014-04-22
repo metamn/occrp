@@ -103,6 +103,7 @@
   #tools, #documents {
     h3 {
       @include font(section-title);
+      font-weight: normal;
       margin-top: $margin;
       display: block;
     }
@@ -243,13 +244,7 @@
 */
 @mixin most-read {
   section {
-    @include news;
-    
-    article {
-      h1 {
-        font-weight: normal;
-      }
-    }
+    @include news(news-mobile);
   }
 }
 
@@ -339,7 +334,7 @@
 
 /* The news
 */
-@mixin news {
+@mixin news($type: news) {
   @include responsive-grid(3);
   
   h3 {
@@ -347,7 +342,7 @@
   }
   
   article {
-    @include article-style(news);
+    @include article-style($type);
   }
 }
 
