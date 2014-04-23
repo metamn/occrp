@@ -2,32 +2,39 @@
   {% assign title = post.images[image_index].title %}
   {% assign link = post.url %}
 
-  {% capture normal %}
+  {% capture normal1 %}
     {{ post.images[image_index].url }}
   {% endcapture %}
-  {% capture mobile %}
+  {% capture mobile1 %}
     {{ post.images[image_index].url }}
   {% endcapture %}
 
 {% else %}
   {% assign title = include.title %}
   {% assign link = include.link %}
-  {% capture normal %}
-    {{ site.url }}{{ include.normal }}
+  {% capture normal1 %}
+    {{ include.normal }}
   {% endcapture %}
-  {% capture mobile %}
-    {{ site.url }}{{ include.mobile }}
+  {% capture mobile1 %}
+    {{ include.mobile }}
   {% endcapture %}
+  
 {% endif %}
 
 
 {% if include.absolute %}
-{% else %}
   {% capture normal %}
-    {{ site.url }}{{ normal }}
+    {{ normal1 }}
   {% endcapture %}
   {% capture mobile %}
-    {{ site.url }}{{ mobile }}
+    {{ mobile1 }}
+  {% endcapture %}
+{% else %}
+  {% capture normal %}
+    {{ site.url }}{{ normal1 }}
+  {% endcapture %}
+  {% capture mobile %}
+    {{ site.url }}{{ mobile1 }}
   {% endcapture %}
 {% endif %}
 
@@ -49,10 +56,10 @@
   {% endif %}
 
   <div data-picture data-alt="{{ title }}">
-    <div data-src="{{ normal }}"></div>
-    <div data-src="{{ mobile }}" data-media="(max-width: 768px)"></div>
+    <div data-src="{{ normal | remove: ' '}}"></div>
+    <div data-src="{{ mobile | remove: ' ' }}" data-media="(max-width: 768px)"></div>
     <noscript>
-      <img src="{{ normal }}" alt="{{ title }}">
+      <img src="{{ normal | remove: ' ' }}" alt="{{ title }}">
     </noscript>
   </div>
     
