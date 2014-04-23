@@ -176,6 +176,7 @@
     nav {
       &.main, &.secondary {
         margin-top: 0;
+        border-bottom: 0;
       }
     }
   }
@@ -257,7 +258,7 @@
     }
     
     .mobile-menubar {
-      display: none;
+      display: none !important;
     }
   }
 }
@@ -284,15 +285,20 @@
   }
   
   @if ($type == fixed) {
-    height: $pad + $pad/2 + $pad/8;
-    
     figure {
       margin-top: 0;
       
       img {
         max-width: 10em;
-        position: relative;
-        top: -$pad/4;
+        
+        @include tablet-and-up {
+          max-width: 15em;
+        }
+        
+        @include small-screen-and-up {
+          position: relative;
+          top: -$pad + $pad/4;
+        }
       }
     }
   }

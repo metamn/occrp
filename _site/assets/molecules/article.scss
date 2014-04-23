@@ -220,6 +220,7 @@
     
     .excerpt {
       display: block;
+      padding-left: 0;
     }
   
   } @elseif ($style == slider) {
