@@ -232,9 +232,18 @@
   }
   
   article {
-    @include responsive-grid(6);
     @include article-style(projects);
     @include icon-over-image;
+    
+    @include grid(3, 10);
+    
+    @include mobile {
+      @include block;
+    }
+    
+    @include small-screen-and-up {
+      @include responsive-grid(6);
+    }
   }
   
   @include mobile {
