@@ -1,0 +1,270 @@
+/* The width of the content
+  - the content is centered with automatic left and right margins
+*/
+@mixin container {
+  width: $container-width;
+  margin: 0 $container-margin;
+  
+  @include above-large-screen {
+    width: $large-screen-container-width;
+    margin: 0 $large-screen-container-margin;
+  }
+}
+
+
+
+
+/* Flexible grid
+  - all items are aligned left with an uniform margin
+  - this grid can be dynamically positioned by Isotope
+*/
+@mixin flexible-grid($max-width: $flexible-grid-width, $margin: $flexible-grid-margin) {
+  width: auto;
+  float: left;
+  
+  max-width: $max-width;
+  margin: $margin/2 $margin 0 0;
+}
+
+
+
+/* Column N of M
+  - creates a grid column on N cols from M total columns
+*/
+@mixin col-nm($n: 2, $m: 3) {
+  $gutter: col-gutter($m);
+  
+  @include col(col-nm-width($n, $m), $gutter);
+}
+
+/* A function to calculate the width of the column for col-n-of-m
+  - this is used usually in padding();
+*/
+@function col-nm-width($n, $m) {
+  $gutter: col-gutter($m);
+  $width: col-width($m);
+  @return ($n * $width + ($n - 1) * $gutter);
+}
+
+
+
+/* Columns defined by gutter
+  - Sometimes the width of a column is defined inversely, by the gutter size
+  - For example, when a col-nm(2,3) is divided into two subcolumns the gutter size is fixed to col-gutter(3)
+  - Ie, instead having two cols of 45% and margin 10% we have a fixed margin of 2.5% and the rest of the columns calaculated accordingly
+*/
+@mixin col-by-gutter($how-many, $gutter) {
+  $width: col-by-gutter-width($how-many, $gutter);
+  @include col($width, $gutter);
+}
+
+
+/* A function to calculate the width of the column for col-by-gutter
+  - this is used usually in padding();
+*/
+@function col-by-gutter-width($how-many, $gutter) {
+  $available-space: 100% - ($how-many - 1) * $gutter;
+  @return $available-space / $how-many;
+}
+
+
+
+
+/* Adds padding around a grid element
+  - the width of the element must be recalculated
+*/
+@mixin padding($width: 100%, $padding: $pad) {
+  padding: $padding;
+  @include grid-resize($width, $padding*2);
+}
+
+
+/* Resize a grid column 
+*/
+@mixin grid-resize($width, $resize) {
+  width: calc(#{$width} - #{$resize})
+}
+
+
+
+
+/* Responsive grids should have fixed heights to align columns left without flaw
+*/
+@mixin responsive-height($height-1, $height-2) {
+  @include mobile {
+    margin-bottom: $margin;
+  }
+  
+  @include small-screen {
+    height: $height-1;
+  }
+  
+  @include small-screen-and-up {
+    height: $height-2;
+  }
+}
+
+
+
+/* A responsive grid
+*/
+@mixin responsive-grid($how-many, $maximum : 10) {
+  @include mobile {
+    @include col(100%, 0);
+  }
+  
+  @include small-screen {
+    @include grid(2, $maximum);
+  }
+  
+  @include small-screen-and-up {
+    @include grid($how-many, $maximum);
+  }
+}
+
+
+/* Generates a full grid of $how-many columns and $maximum elements
+  - calculates automatically the columns size and margin
+  - the right margin of the last element in a row is set to zero
+  - $maximum sets how many articles will be displayed on a single page 
+*/
+@mixin grid($how-many, $maximum) {
+  $gutter: col-gutter($how-many);
+  $width: col-width($how-many);
+  
+  @include col($width, $gutter);
+  @include col-right-margin($how-many, $gutter, $maximum);
+}
+
+
+/* Returns the width of a column in a grid
+*/
+@function col-width($how-many) {
+  @if ($how-many == 2) {
+    @return 48.75%;
+  } @elseif ($how-many == 3) {
+    @return 31.5%;
+  } @else {
+    @return 90% / $how-many;
+  }
+}
+
+/* Returns the margin of a column in a grid
+*/
+@function col-gutter($how-many) {
+  @if ($how-many == 2) {
+    @return 2.5%;
+  } @elseif ($how-many == 3) {
+    @return 2.5%;
+  } @else {
+    @return 10% / ($how-many - 1);
+  }
+}
+
+
+/* A left aligned column
+*/
+@mixin col($width, $margin: 0) {
+  width: $width;
+  margin-right: $margin;
+  float: left;
+}
+
+/* Remove right margin of the last element in a row of a grid
+  - on responsive layouts we setup upd different grids
+  - on every grid re-declaration the previous margins of last elements must be removed
+*/
+@mixin col-right-margin($how-many, $gutter, $maximum) {
+  @for $i from 2 through $maximum {
+    @if (($how-many != 0) and (($i % $how-many) == 0)) {
+      &:nth-of-type(#{$i}) {
+         margin-right: 0;
+      }
+    } @else {
+      &:nth-of-type(#{$i}) {
+         margin-right: $gutter;
+      }
+    }
+  }
+}
+
+
+
+
+
+/* Hide a section title
+*/
+@mixin hide-title {
+  > h3 {
+    display: none;
+  }
+}
+
+/* Show a section title
+*/
+@mixin show-title {
+  > h3 {
+    display: block;
+  }
+}
+
+/* Strech content to fill parent width
+*/
+@mixin block {
+  width: 100%;
+  max-width: 100%;
+  float: left;
+}
+
+
+/* Hide / show .mobile / .dekstop elements
+*/
+@mixin hide-show-mobile-elements {
+  .mobile {
+    display: none;
+  }
+  
+  .desktop {
+    display: block;
+  }
+  
+  @include mobile {
+    .mobile {
+      display: block;
+    }
+    
+    .desktop {
+      display: none;
+    }
+  }
+}
+
+
+/* Center vertically or horizontally
+  - http://davidwalsh.name/css-vertical-center 
+*/
+@mixin center($direction) {
+  position: relative;
+  
+  @if ($direction == vertical) {
+    top: 50%;
+    @include transform(translateY(-50%));
+  }
+  
+  @if ($direction == horizontal) {
+    left: 50%;
+    @include transform(translateX(-50%));
+  }
+}
+
+
+
+/* Hide last article 
+*/
+@mixin hide-last-article {
+  article {
+    &:last-of-type {
+      display: none;
+    }
+  }
+}
