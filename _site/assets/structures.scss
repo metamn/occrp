@@ -290,7 +290,6 @@
 */
 @mixin frontpage-projects {
   margin-top: $margin;
-  @include button-with-arrow;
   
   h3 {
     @include font(section-title);
@@ -303,14 +302,21 @@
   
   @include mobile {
     @include simple-slider;
-    
-    form {
-      margin-top: $margin;
-    }
   }
   
   @include small-screen-and-up {
     @include hide-last-article;
+  }
+  
+  div {
+    @include block;
+    @include mobile {
+      margin-top: $margin;
+    }
+    
+    text-align: center;
+    @include font(navigation);
+    @include link-as-button;
   }
 }
 
