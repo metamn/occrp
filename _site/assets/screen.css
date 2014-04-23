@@ -374,6 +374,7 @@ html body .container #header nav.tags ul.social li a img { height: 13px; }
 html body .container #header nav.tags ul.social li a img:last-of-type { display: none; }
 html body .container #header .close-icon:after { content: "\2715"; padding: 0.15625em 0.3125em; border: 1px solid; color: white; position: relative; top: -1.875em; right: 0.3125em; float: right; cursor: pointer; }
 @media only screen and (max-width: 29.999em) { html body .container #header nav.main, html body .container #header nav.secondary { border-bottom: 1px solid #231f20; margin-bottom: 1.25em; }
+  html body .container #header nav.main ul li, html body .container #header nav.secondary ul li { border-bottom: 1px solid #f1f1f1; }
   html body .container #header nav.main { margin-top: 6.25em; }
   html body .container #header nav.tags { width: 100%; max-width: 100%; float: left; margin-right: 0; }
   html body .container #header nav.tags ul.search, html body .container #header nav.tags ul.tag-list { margin-top: 0.3125em; }
@@ -398,9 +399,8 @@ html body .container #header .close-icon:after { content: "\2715"; padding: 0.15
   html body .container #header nav.tags ul.search li.input form input { margin: 0.15625em 0.3125em 0; }
   html body .container #header nav.tags ul.search li.text { display: none; }
   html body .container #header nav.tags ul.search li.input { display: block; }
-  html body .container #header .mobile-menubar { width: 100%; max-width: 100%; float: left; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: 60%; cursor: pointer; background: #231f20; color: white; padding: 0.3125em 0; } }
-@media only screen and (max-width: 29.999em) and (min-width: 48em) and (max-width: 79.999em) { html body .container #header .mobile-menubar { font-size: small; } }
-@media only screen and (max-width: 29.999em) { html body .container #header .mobile-menubar ul li { display: inline-block; float: left; margin-right: 0.625em; }
+  html body .container #header .mobile-menubar { width: 100%; max-width: 100%; float: left; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; cursor: pointer; background: #231f20; color: white; padding: 0.3125em 0; }
+  html body .container #header .mobile-menubar ul li { display: inline-block; float: left; margin-right: 0.625em; }
   html body .container #header .mobile-menubar ul li:last-of-type { margin-right: 0; }
   html body .container #header .mobile-menubar ul li.icon img { height: 9px; position: relative; top: 1px; }
   html body .container #header .mobile-menubar a { color: white; text-decoration: none; }
@@ -409,6 +409,7 @@ html body .container #header .close-icon:after { content: "\2715"; padding: 0.15
   html body .container #header nav, html body .container #header .close-icon { display: none; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body .container #header { position: relative; border-bottom: 1px solid #f1f1f1; }
   html body .container #header nav.main, html body .container #header nav.secondary { border-bottom: 1px solid #231f20; margin-bottom: 1.25em; }
+  html body .container #header nav.main ul li, html body .container #header nav.secondary ul li { border-bottom: 1px solid #f1f1f1; }
   html body .container #header nav.main { margin-top: 6.25em; }
   html body .container #header nav.tags { width: 100%; max-width: 100%; float: left; margin-right: 0; }
   html body .container #header nav.tags ul.search, html body .container #header nav.tags ul.tag-list { margin-top: 0.3125em; }
@@ -435,9 +436,8 @@ html body .container #header .close-icon:after { content: "\2715"; padding: 0.15
   html body .container #header nav.tags ul.search li.input { display: block; }
   html body .container #header section.logo, html body .container #header section.mobile-menubar { width: 48.75%; margin-right: 2.5%; float: left; }
   html body .container #header section.logo:nth-of-type(2), html body .container #header section.mobile-menubar:nth-of-type(2) { margin-right: 0; }
-  html body .container #header .mobile-menubar { width: 100%; max-width: 100%; float: left; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: 60%; cursor: pointer; position: absolute; right: 0; bottom: .5em; /* to align to logo */ } }
-@media only screen and (min-width: 30em) and (max-width: 79.999em) and (min-width: 48em) and (max-width: 79.999em) { html body .container #header .mobile-menubar { font-size: small; } }
-@media only screen and (min-width: 30em) and (max-width: 79.999em) { html body .container #header .mobile-menubar ul li { display: inline-block; float: left; margin-right: 0.625em; }
+  html body .container #header .mobile-menubar { width: 100%; max-width: 100%; float: left; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; cursor: pointer; position: absolute; right: 0; bottom: .5em; /* to align to logo */ }
+  html body .container #header .mobile-menubar ul li { display: inline-block; float: left; margin-right: 0.625em; }
   html body .container #header .mobile-menubar ul li:last-of-type { margin-right: 0; }
   html body .container #header .mobile-menubar ul li.icon img { height: 9px; position: relative; top: 1px; }
   html body .container #header .mobile-menubar ul { float: right; }
@@ -494,6 +494,7 @@ html body .container #header.mobile-menu-active nav.tags ul.social li a img { he
 html body .container #header.mobile-menu-active nav.tags ul.social li a img:last-of-type { display: none; }
 html body .container #header.mobile-menu-active .close-icon:after { content: "\2715"; padding: 0.15625em 0.3125em; border: 1px solid; color: white; position: relative; top: -1.875em; right: 0.3125em; float: right; cursor: pointer; }
 @media only screen and (max-width: 29.999em) { html body .container #header.mobile-menu-active nav.main, html body .container #header.mobile-menu-active nav.secondary { border-bottom: 1px solid #231f20; margin-bottom: 1.25em; }
+  html body .container #header.mobile-menu-active nav.main ul li, html body .container #header.mobile-menu-active nav.secondary ul li { border-bottom: 1px solid #f1f1f1; }
   html body .container #header.mobile-menu-active nav.main { margin-top: 6.25em; }
   html body .container #header.mobile-menu-active nav.tags { width: 100%; max-width: 100%; float: left; margin-right: 0; }
   html body .container #header.mobile-menu-active nav.tags ul.search, html body .container #header.mobile-menu-active nav.tags ul.tag-list { margin-top: 0.3125em; }
@@ -518,9 +519,8 @@ html body .container #header.mobile-menu-active .close-icon:after { content: "\2
   html body .container #header.mobile-menu-active nav.tags ul.search li.input form input { margin: 0.15625em 0.3125em 0; }
   html body .container #header.mobile-menu-active nav.tags ul.search li.text { display: none; }
   html body .container #header.mobile-menu-active nav.tags ul.search li.input { display: block; }
-  html body .container #header.mobile-menu-active .mobile-menubar { width: 100%; max-width: 100%; float: left; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: 60%; cursor: pointer; background: #231f20; color: white; padding: 0.3125em 0; } }
-@media only screen and (max-width: 29.999em) and (min-width: 48em) and (max-width: 79.999em) { html body .container #header.mobile-menu-active .mobile-menubar { font-size: small; } }
-@media only screen and (max-width: 29.999em) { html body .container #header.mobile-menu-active .mobile-menubar ul li { display: inline-block; float: left; margin-right: 0.625em; }
+  html body .container #header.mobile-menu-active .mobile-menubar { width: 100%; max-width: 100%; float: left; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; cursor: pointer; background: #231f20; color: white; padding: 0.3125em 0; }
+  html body .container #header.mobile-menu-active .mobile-menubar ul li { display: inline-block; float: left; margin-right: 0.625em; }
   html body .container #header.mobile-menu-active .mobile-menubar ul li:last-of-type { margin-right: 0; }
   html body .container #header.mobile-menu-active .mobile-menubar ul li.icon img { height: 9px; position: relative; top: 1px; }
   html body .container #header.mobile-menu-active .mobile-menubar a { color: white; text-decoration: none; }
@@ -529,6 +529,7 @@ html body .container #header.mobile-menu-active .close-icon:after { content: "\2
   html body .container #header.mobile-menu-active nav, html body .container #header.mobile-menu-active .close-icon { display: block; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body .container #header.mobile-menu-active { position: relative; border-bottom: 1px solid #f1f1f1; }
   html body .container #header.mobile-menu-active nav.main, html body .container #header.mobile-menu-active nav.secondary { border-bottom: 1px solid #231f20; margin-bottom: 1.25em; }
+  html body .container #header.mobile-menu-active nav.main ul li, html body .container #header.mobile-menu-active nav.secondary ul li { border-bottom: 1px solid #f1f1f1; }
   html body .container #header.mobile-menu-active nav.main { margin-top: 6.25em; }
   html body .container #header.mobile-menu-active nav.tags { width: 100%; max-width: 100%; float: left; margin-right: 0; }
   html body .container #header.mobile-menu-active nav.tags ul.search, html body .container #header.mobile-menu-active nav.tags ul.tag-list { margin-top: 0.3125em; }
@@ -555,9 +556,8 @@ html body .container #header.mobile-menu-active .close-icon:after { content: "\2
   html body .container #header.mobile-menu-active nav.tags ul.search li.input { display: block; }
   html body .container #header.mobile-menu-active section.logo, html body .container #header.mobile-menu-active section.mobile-menubar { width: 48.75%; margin-right: 2.5%; float: left; }
   html body .container #header.mobile-menu-active section.logo:nth-of-type(2), html body .container #header.mobile-menu-active section.mobile-menubar:nth-of-type(2) { margin-right: 0; }
-  html body .container #header.mobile-menu-active .mobile-menubar { width: 100%; max-width: 100%; float: left; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: 60%; cursor: pointer; position: absolute; right: 0; bottom: .5em; /* to align to logo */ } }
-@media only screen and (min-width: 30em) and (max-width: 79.999em) and (min-width: 48em) and (max-width: 79.999em) { html body .container #header.mobile-menu-active .mobile-menubar { font-size: small; } }
-@media only screen and (min-width: 30em) and (max-width: 79.999em) { html body .container #header.mobile-menu-active .mobile-menubar ul li { display: inline-block; float: left; margin-right: 0.625em; }
+  html body .container #header.mobile-menu-active .mobile-menubar { width: 100%; max-width: 100%; float: left; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; cursor: pointer; position: absolute; right: 0; bottom: .5em; /* to align to logo */ }
+  html body .container #header.mobile-menu-active .mobile-menubar ul li { display: inline-block; float: left; margin-right: 0.625em; }
   html body .container #header.mobile-menu-active .mobile-menubar ul li:last-of-type { margin-right: 0; }
   html body .container #header.mobile-menu-active .mobile-menubar ul li.icon img { height: 9px; position: relative; top: 1px; }
   html body .container #header.mobile-menu-active .mobile-menubar ul { float: right; }
@@ -638,6 +638,7 @@ html body.sticky .container #header nav.tags ul.social li a img:last-of-type { d
 html body.sticky .container #header .close-icon:after { content: "\2715"; padding: 0.15625em 0.3125em; border: 1px solid; color: white; position: relative; top: -1.875em; right: 0.3125em; float: right; cursor: pointer; }
 @media only screen and (max-width: 29.999em) { html body.sticky .container #header { position: fixed; z-index: 1; background: white; border-bottom: 1px solid #f1f1f1; }
   html body.sticky .container #header nav.main, html body.sticky .container #header nav.secondary { border-bottom: 1px solid #231f20; margin-bottom: 1.25em; }
+  html body.sticky .container #header nav.main ul li, html body.sticky .container #header nav.secondary ul li { border-bottom: 1px solid #f1f1f1; }
   html body.sticky .container #header nav.main { margin-top: 6.25em; }
   html body.sticky .container #header nav.tags { width: 100%; max-width: 100%; float: left; margin-right: 0; }
   html body.sticky .container #header nav.tags ul.search, html body.sticky .container #header nav.tags ul.tag-list { margin-top: 0.3125em; }
@@ -662,9 +663,8 @@ html body.sticky .container #header .close-icon:after { content: "\2715"; paddin
   html body.sticky .container #header nav.tags ul.search li.input form input { margin: 0.15625em 0.3125em 0; }
   html body.sticky .container #header nav.tags ul.search li.text { display: none; }
   html body.sticky .container #header nav.tags ul.search li.input { display: block; }
-  html body.sticky .container #header .mobile-menubar { width: 100%; max-width: 100%; float: left; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: 60%; cursor: pointer; background: #231f20; color: white; padding: 0.3125em 0; } }
-@media only screen and (max-width: 29.999em) and (min-width: 48em) and (max-width: 79.999em) { html body.sticky .container #header .mobile-menubar { font-size: small; } }
-@media only screen and (max-width: 29.999em) { html body.sticky .container #header .mobile-menubar ul li { display: inline-block; float: left; margin-right: 0.625em; }
+  html body.sticky .container #header .mobile-menubar { width: 100%; max-width: 100%; float: left; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; cursor: pointer; background: #231f20; color: white; padding: 0.3125em 0; }
+  html body.sticky .container #header .mobile-menubar ul li { display: inline-block; float: left; margin-right: 0.625em; }
   html body.sticky .container #header .mobile-menubar ul li:last-of-type { margin-right: 0; }
   html body.sticky .container #header .mobile-menubar ul li.icon img { height: 9px; position: relative; top: 1px; }
   html body.sticky .container #header .mobile-menubar a { color: white; text-decoration: none; }
@@ -674,6 +674,7 @@ html body.sticky .container #header .close-icon:after { content: "\2715"; paddin
   html body.sticky .container #header .mobile-menubar { display: none; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.sticky .container #header { position: relative; border-bottom: 1px solid #f1f1f1; position: fixed; z-index: 1; background: white; border-bottom: 1px solid #f1f1f1; width: 95%; margin: 0 2.5%; margin-left: 0; }
   html body.sticky .container #header nav.main, html body.sticky .container #header nav.secondary { border-bottom: 1px solid #231f20; margin-bottom: 1.25em; }
+  html body.sticky .container #header nav.main ul li, html body.sticky .container #header nav.secondary ul li { border-bottom: 1px solid #f1f1f1; }
   html body.sticky .container #header nav.main { margin-top: 6.25em; }
   html body.sticky .container #header nav.tags { width: 100%; max-width: 100%; float: left; margin-right: 0; }
   html body.sticky .container #header nav.tags ul.search, html body.sticky .container #header nav.tags ul.tag-list { margin-top: 0.3125em; }
@@ -700,9 +701,8 @@ html body.sticky .container #header .close-icon:after { content: "\2715"; paddin
   html body.sticky .container #header nav.tags ul.search li.input { display: block; }
   html body.sticky .container #header section.logo, html body.sticky .container #header section.mobile-menubar { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.sticky .container #header section.logo:nth-of-type(2), html body.sticky .container #header section.mobile-menubar:nth-of-type(2) { margin-right: 0; }
-  html body.sticky .container #header .mobile-menubar { width: 100%; max-width: 100%; float: left; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: 60%; cursor: pointer; position: absolute; right: 0; bottom: .5em; /* to align to logo */ } }
-@media only screen and (min-width: 30em) and (max-width: 79.999em) and (min-width: 48em) and (max-width: 79.999em) { html body.sticky .container #header .mobile-menubar { font-size: small; } }
-@media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.sticky .container #header .mobile-menubar ul li { display: inline-block; float: left; margin-right: 0.625em; }
+  html body.sticky .container #header .mobile-menubar { width: 100%; max-width: 100%; float: left; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; cursor: pointer; position: absolute; right: 0; bottom: .5em; /* to align to logo */ }
+  html body.sticky .container #header .mobile-menubar ul li { display: inline-block; float: left; margin-right: 0.625em; }
   html body.sticky .container #header .mobile-menubar ul li:last-of-type { margin-right: 0; }
   html body.sticky .container #header .mobile-menubar ul li.icon img { height: 9px; position: relative; top: 1px; }
   html body.sticky .container #header .mobile-menubar ul { float: right; } }

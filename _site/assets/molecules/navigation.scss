@@ -44,6 +44,12 @@
     &.main, &.secondary {
       @include border-thin($color);
       margin-bottom: $pad;
+      
+      ul {
+        li {
+          @include border-thin;
+        }
+      }
     }
     
     &.main {
