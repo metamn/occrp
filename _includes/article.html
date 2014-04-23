@@ -18,16 +18,8 @@
   {% if include.klass != 'single' %}
     {% if post.images.size > 0 %}
       {% assign image_index = 0 %}
-      {% include responsive-images.html type='from post' holder=include.holder label=include.label %}
+      {% include responsive-images.html type='from post' holder=include.holder label=include.label icon=include.icon %}
     {% endif %}
-  
-    {% if include.icon %}
-      <span class="icon">
-        <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">
-          <img src="{{ site.url }}/assets/images/{{ include.icon }}.png" alt="icon {{ include.icon }}">
-        </a>
-      </span>
-    {% endif %} 
   
     {% if include.type == 'slider' %}
       {% assign items = 7 %}

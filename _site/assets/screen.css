@@ -1406,7 +1406,7 @@ html body.frontpage .container main #videos { margin-top: 0.625em; }
 html body.frontpage .container main #videos h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; display: block; }
 html body.frontpage .container main #videos h3 a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #videos h3 a:hover { color: #231f20; }
-html body.frontpage .container main #videos article { margin-bottom: 0.3125em; position: relative; width: 31.5%; margin-right: 2.5%; float: left; }
+html body.frontpage .container main #videos article { margin-bottom: 0.3125em; position: relative; width: 100%; height: 100%; width: 31.5%; margin-right: 2.5%; float: left; }
 html body.frontpage .container main #videos article h1 { display: block; }
 html body.frontpage .container main #videos article figure { display: block; }
 html body.frontpage .container main #videos article figcaption { display: none; }
@@ -1471,8 +1471,7 @@ html body.frontpage .container main #videos article .gallery span a { color: #98
 html body.frontpage .container main #videos article .gallery span a:hover { color: #231f20; }
 html body.frontpage .container main #videos article .gallery span.close { position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); padding: 0.15625em; position: absolute; bottom: 0.625em; display: none; }
 html body.frontpage .container main #videos article h1 { font-size: medium; }
-html body.frontpage .container main #videos article span.icon { position: absolute; height: 0; top: 38%; left: 38%; opacity: .7; }
-@media only screen and (min-width: 80em) { html body.frontpage .container main #videos article span.icon { top: 18%; left: 32%; } }
+html body.frontpage .container main #videos article span.icon { position: relative; top: 50%; left: 50%; -moz-transform: translateX(-50%) translateY(-50%); -ms-transform: translateX(-50%) translateY(-50%); -o-transform: translateX(-50%) translateY(-50%); -webkit-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); position: absolute; opacity: .7; }
 html body.frontpage .container main #videos article:nth-of-type(2) { margin-right: 2.5%; }
 html body.frontpage .container main #videos article:nth-of-type(3) { margin-right: 0; }
 html body.frontpage .container main #videos article:nth-of-type(4) { margin-right: 2.5%; }
@@ -4505,9 +4504,8 @@ html body.daily #articles article.thumb .excerpt { display: block; padding-left:
 @media only screen and (max-width: 79.999em) { html body.daily #articles article.thumb { background: none; }
   html body.daily #articles article.thumb h1, html body.daily #articles article.thumb .excerpt { width: 100%; max-width: 100%; float: left; }
   html body.daily #articles article.thumb h1 { padding-top: 0; } }
-html body.videos article { position: relative; }
-html body.videos article span.icon { position: absolute; height: 0; top: 38%; left: 38%; opacity: .7; }
-@media only screen and (min-width: 80em) { html body.videos article span.icon { top: 18%; left: 32%; } }
+html body.videos article { position: relative; width: 100%; height: 100%; }
+html body.videos article span.icon { position: relative; top: 50%; left: 50%; -moz-transform: translateX(-50%) translateY(-50%); -ms-transform: translateX(-50%) translateY(-50%); -o-transform: translateX(-50%) translateY(-50%); -webkit-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); position: absolute; opacity: .7; }
 html body.frontpage #header nav ul li.frontpage a { background: #982022; color: white; }
 html body.frontpage #header nav ul li.frontpage a a { color: #231f20; text-decoration: none; }
 html body.frontpage #header nav ul li.frontpage a a:hover { color: white; }
