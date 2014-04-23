@@ -2,21 +2,12 @@
   {% assign title = post.images[image_index].title %}
   {% assign link = post.url %}
 
-  {% if include.absolute %}
-    {% capture normal %}
-      {{ post.images[image_index].url }}
-    {% endcapture %}
-    {% capture mobile %}
-      {{ post.images[image_index].url }}
-    {% endcapture %}
-  {% else %}
-    {% capture normal %}
-      {{ site.url }}{{ post.images[image_index].url }}
-    {% endcapture %}
-    {% capture mobile %}
-      {{ site.url }}{{ post.images[image_index].url }}
-    {% endcapture %}
- {% endif %}
+  {% capture normal %}
+    {{ post.images[image_index].url }}
+  {% endcapture %}
+  {% capture mobile %}
+    {{ post.images[image_index].url }}
+  {% endcapture %}
 
 {% else %}
   {% assign title = include.title %}
@@ -38,6 +29,17 @@
     {% endcapture %}
   {% endif %}
   
+{% endif %}
+
+
+{% if include.absolute %}
+{% else %}
+  {% capture normal %}
+    {{ site.url }}{{ normal }}
+  {% endcapture %}
+  {% capture mobile %}
+    {{ site.url }}{{ mobile }}
+  {% endcapture %}
 {% endif %}
 
 
@@ -74,6 +76,14 @@
       {{ include.label }}
     </div>
   {% endif %}
+  
+  {% if include.icon %}
+    <span class="icon">
+      <a href="{{ site.url }}{{ link }}" title="{{ title }}">
+        <img src="{{ site.url }}/assets/images/{{ include.icon }}.png" alt="icon {{ include.icon }}">
+      </a>
+    </span>
+  {% endif %} 
   
   <figcaption>
     {% if link != "" %}

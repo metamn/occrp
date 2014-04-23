@@ -49,12 +49,15 @@
     
   } @elseif ($type == menubar-mobile) {
     @include font(navigation);
-    font-size: 60%;
+    font-size: small;
     
-    @include tablet {
+    @include below-tablet {
+      font-size: 60%;
+    }
+    
+    @include mobile {
       font-size: small;
     }
-  
   
   } @elseif ($type == blog-title) {
     font-weight: normal;

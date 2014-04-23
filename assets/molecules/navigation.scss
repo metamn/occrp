@@ -7,6 +7,7 @@
   z-index: 1;
   background: $background;
   @include border-thin;
+  margin-bottom: $margin;
 }
 
 
@@ -44,6 +45,12 @@
     &.main, &.secondary {
       @include border-thin($color);
       margin-bottom: $pad;
+      
+      ul {
+        li {
+          @include border-thin;
+        }
+      }
     }
     
     &.main {
