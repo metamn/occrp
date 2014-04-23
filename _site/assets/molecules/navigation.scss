@@ -181,8 +181,6 @@
       
       @include menu-item(block, $pad/2, $pad/2 + $pad/4);
       
-      
-      
       @include below-tablet {
         font-size: small;
       }

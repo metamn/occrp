@@ -13,6 +13,14 @@
       section {
         @include hide-title;
         
+        @include below-small-screen {
+          @include show-title;
+          
+          h3 {
+            margin-bottom: $margin;
+          }
+        }
+        
         nav {
           @include hide-title;
           @include menu(border-thin);
@@ -21,6 +29,27 @@
       
       #spacer {
         top: 0;
+      }
+    }
+    
+    .subpages-menu {
+      @include font(navigation);
+      position: absolute;
+      right: $pad/2;
+      margin-top: $pad/2;
+      cursor: pointer;
+      
+      .arrow {
+        &:after {
+          content: $arrow-down;
+          margin-left: $pad/4;
+          display: inline-block;
+          @include transform(rotate(90deg));
+        }
+      }
+      
+      @include small-screen-and-up {
+        display: none;
       }
     }
   }
@@ -215,9 +244,12 @@
     }
   }
   
-  
   nav {
     margin-right: 0;
+    
+    @include mobile {
+      margin-top: $margin;
+    }
   }
 }
 
@@ -297,20 +329,23 @@
     @include article-style(projects);
   }
   
-  @include form;
-  form {
-    @include block;
-    input {
-      @include center(horizontal);
-    }
-  }
-  
   @include mobile {
     @include simple-slider;
   }
   
   @include small-screen-and-up {
     @include hide-last-article;
+  }
+  
+  div {
+    @include block;
+    @include mobile {
+      margin-top: $margin;
+    }
+    
+    text-align: center;
+    @include font(navigation);
+    @include link-as-button;
   }
 }
 
