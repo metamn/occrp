@@ -12,22 +12,12 @@
 {% else %}
   {% assign title = include.title %}
   {% assign link = include.link %}
-
-  {% if include.absolute %} 
-    {% capture normal %}
-      {{ include.normal }}
-    {% endcapture %}
-    {% capture mobile %}
-      {{ include.mobile }}
-    {% endcapture %}
-  {% else %}
-    {% capture normal %}
-      {{ site.url }}{{ include.normal }}
-    {% endcapture %}
-    {% capture mobile %}
-      {{ site.url }}{{ include.mobile }}
-    {% endcapture %}
-  {% endif %}
+  {% capture normal %}
+    {{ include.normal }}
+  {% endcapture %}
+  {% capture mobile %}
+    {{ include.mobile }}
+  {% endcapture %}
   
 {% endif %}
 
