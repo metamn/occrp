@@ -1,0 +1,587 @@
+@mixin font($type : default) {
+  @if ($type == default) {
+    font-size: $font-size;
+    @include line-height(body);
+    @include font-body;
+    @include headings;
+    
+  } @elseif ($type == excerpt) {
+    @include line-height(excerpt);
+    color: $grey;
+  
+  } @elseif ($type == navigation) {
+    @include uppercase;
+    font-size: small;
+    @include font-body;
+  
+  } @elseif ($type == section-title) {
+    @include uppercase;
+    font-size: small;
+    @include font-body;
+    font-weight: bold;
+    
+    @include color(highlight);
+    display: block;
+  
+  } @elseif ($type == date) {
+    font-size: small;
+    color: $grey;
+    font-style: normal;
+  
+  } @elseif ($type == category-title) {
+    
+  
+  } @elseif ($type == thumb-title) {
+    font-size: medium;
+  
+  } @elseif ($type == author) {
+    font-size: small;
+    @include uppercase;
+    font-style: normal;
+    
+  } @elseif ($type == italic) {
+    @include font-headings;
+    font-style: italic;
+    
+  } @elseif ($type == single-article-title) {
+    @include font-size($h1-title); 
+    padding: 0;
+    
+  } @elseif ($type == menubar-mobile) {
+    @include font(navigation);
+    font-size: small;
+    
+    @include below-tablet {
+      font-size: 60%;
+    }
+    
+    @include mobile {
+      font-size: small;
+    }
+  
+  } @elseif ($type == blog-title) {
+    font-weight: normal;
+    font-size: medium;
+    @include font-body;
+    letter-spacing: $letter-spacing-uppercase;
+    margin-top: $margin/2;
+    
+    @include below-small-screen {
+      font-size: small;
+    }
+  }
+}
+
+
+@mixin headings($padding: false) {
+  h1, h2, h3, h4, h5, h6 {
+    @include font-headings;
+    @include line-height(headings);
+    padding: 0;
+  }
+  
+  h1 {
+    @include h1;
+  }
+  
+  h2 {
+    @include h2;
+  }
+  
+  h3 {
+    @include h3;
+  }
+  
+  h4 {
+    @include h4;
+  }
+  
+  @if ($padding != false) {
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding: $h1-padding 0; 
+    }
+  }
+}
+
+@mixin h1 {
+  @include font-size($h1);
+  font-weight: bold;
+}
+@mixin h2 {
+  @include font-size($h1);
+  font-weight: normal;
+  @include uppercase;
+}
+@mixin h3 {
+  @include font-size($h1);
+  font-weight: normal;
+}
+@mixin h4 {
+  @include font-size(1, larger);
+  font-weight: normal;
+}
+@mixin font-normal {
+  @include font-size(1);
+  font-weight: normal;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+
+
+
+/* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback  
+	Usage: @include font-size(1, large);
+*/
+@mixin font-size($decimal-size, $keyword: null) {
+  @if $keyword { 
+    font-size: $keyword; 
+  } @else { 
+    font-size: $decimal-size * $base-font-multiplier * 16px;
+    font-size: $decimal-size * 1rem;
+  }
+}
+
+
+/* Set the line height
+  - 'body' goes from non text elements, it is the default setting put in <body>
+  - 'text' goes for long texts like blog posts, articles, etc;
+  - 'headings' goes for <h1>, etc
+*/
+@mixin line-height($type) {
+  @if ($type == body) {
+    line-height: $line-height;
+  
+  } @elseif ($type == text) {
+    line-height: $line-height-body-text;
+  
+  } @elseif ($type == headings) {
+    line-height: $line-height-headings;
+    
+  } @elseif ($type == excerpt) {
+    line-height: $line-height-excerpt;
+  }
+}
+
+
+@mixin uppercase {
+  text-transform: uppercase;
+  letter-spacing: $letter-spacing-uppercase;
+}
+
+
+@mixin code {
+  code, pre {
+    @include color(navigation);
+    padding: $pad/4;
+    @include font-monospace;
+  }
+  
+  pre {
+    white-space: pre-line;
+    padding: $pad;
+  }
+}
+
+@mixin hr {
+  hr {
+    margin: $pad 0;
+  }
+}
+
+@mixin em {
+  em, i {
+    font-style: italic;
+  }
+}
+
+@mixin strong {
+  strong, b {
+    font-weight: bold;
+  }
+}
+
+@mixin small {
+  small {
+    font-size: small;
+  }
+}
+
+@mixin strikethrough {
+  s {
+    text-decoration: line-through;
+  }
+}
+
+@mixin cite {
+  cite {
+    font-style: italic;
+  }
+}
+
+
+@mixin dfn {
+  dfn {
+    @include border-thin;
+  }
+}
+
+@mixin abbr {
+  abbr {
+    font-variant: small-caps;
+  }
+}
+
+@mixin time {
+  time {
+    @include font(date);
+  }
+}
+
+@mixin var {
+  var {
+    font-style: italic;
+  }
+}
+
+@mixin samp {
+  samp, kbd {
+    @include font-monospace;
+    font-weight: bold;  
+    font-size: small;
+  }
+}
+
+@mixin sup {
+  sup {
+    vertical-align: super;
+    font-size: small;
+  }
+  
+  sub {
+    vertical-align: sub;
+    font-size: small;
+  }
+}
+
+@mixin mark {
+  mark {
+    @include color(invert);
+    padding: $pad/4;
+  }
+}
+
+@mixin del {
+  del {
+    text-decoration: line-through;
+  }
+  
+  ins {
+    @include color(navigation);
+    padding: $pad/4;
+  }
+}
+
+@mixin address {
+  address {
+    font-size: small;
+    color: $gray;
+    max-width: $body-text-width / 2;
+  }
+}
+
+@mixin blockquote {
+  blockquote {
+    @include block;
+    border-left: $border;
+    border-color: $highlight;
+    background: $light-grey;
+    @include padding;
+    
+    @include font(italic);
+  }
+}
+
+
+@mixin q {
+  q {
+    @include font(italic);
+    
+    &:before {
+      content: '\201C';
+    }
+    
+    &:after {
+      content: '\201D';
+    }
+  }
+}
+
+
+
+
+/* Select box
+  - put <select> inside a <label class="select">
+  - label:after is positioned over the original selectbox arrow
+  - label after must have a background color to hide the default arrow
+*/
+
+@mixin select {    
+  label.select {
+    @include block;
+    
+    &:after {
+      content: $arrow-down;
+      @include transform(rotate(90deg));
+      float: right;
+      
+      display: inline-block;
+      position: relative;
+      padding: 0;
+      left: -$pad/4;
+      background: $background;
+      font-size: $before-font-size;
+      top: -1.5em;
+      margin-right: $pad/4;
+      
+      pointer-events: none; /* this is a must */
+      cursor: pointer;
+    }
+    
+    select {
+      @include reset-form;
+      border: 1px solid;
+      cursor: pointer;
+      width: 100%;
+      padding: $pad/4;
+    }
+  }
+}
+
+/* Cross browser compatible styling: http://www.inserthtml.com/2012/06/custom-form-radio-checkbox/
+  - the checkbox and radio button is not displayed
+  - instead a label is displayed which can be styled with 'content' 
+  - example: 
+    <ul class="checkbox">
+        <li><input id="checkbox1" name="checkbox" checked="checked" type="checkbox"><label for="checkbox1"></label>Option 1</li>
+        <li><input id="checkbox2" name="checkbox" type="checkbox"><label for="checkbox2"></label>Option 2</li>
+        <li><input id="checkbox3" name="checkbox" type="checkbox"><label for="checkbox3"></label>Option 3</li>
+    </ul>
+*/
+@mixin checkbox {
+	input[type='radio'], input[type='checkbox'] {
+	  display: none;
+	}
+	input[type='radio'] + label, input[type='checkbox'] + label {
+	  display: inline-block;
+	}
+	
+	
+	input[type='radio'] + label:after {
+		content: $radio;
+		margin-right: $pad/2;
+	}
+	input[type='radio']:checked + label:after {
+		content: $radio-checked;
+	}
+	
+	
+	input[type='checkbox'] + label:after {
+		content: $checkbox;
+		margin-right: $pad/4;
+		
+		font-size: $before-font-size;
+		position: relative;
+		top: $pad/8;
+	}
+	input[type='checkbox']:checked + label:after {
+	  content: $checkbox-checked;
+	}
+	
+	ul.checkbox {
+	  @include list-normal;
+	}
+}
+
+
+@mixin reset-form {
+  border: none;
+  outline: 0;
+  background: $background;
+
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+@mixin form {
+  form {
+    /* Reset */
+    input, textarea, select {
+	    @include reset-form;
+    }
+    
+    /* Stretching and padding */
+    input, textarea, label {
+      @include block;
+    }
+    
+    input, textarea {
+      padding: $pad/4;
+      width: calc(100% - #{$pad/2});
+      margin-bottom: $pad/2;
+    }
+    
+
+    /* Text */
+    input[type='text'], input[type='email'], input[type='password'], input[type='url'], input[type='search'], textarea {
+      border: 1px solid $color;
+      font-style: italic;
+    }
+    
+
+    /* Button */
+    input[type='submit'] {	
+      width: auto;
+  
+      @include uppercase;	
+      border: 1px solid $color;
+      @include color(invert);
+      cursor: pointer;
+      
+      @include transition($easing);
+      &:hover {
+        @include color(normal);
+      }
+    }
+    
+    /* Label
+    */
+    label {
+      @include uppercase;
+      font-size: small;
+    }
+    
+  }
+}
+
+
+@mixin figure($width: auto) {
+  figure {
+    img {
+      //@include box-shadow($shadow);
+      width: $width;
+    }
+    
+    figcaption {
+      h1, h2, h3, h4, h5, h6 {
+        margin: 0;
+        padding: 0;
+      }
+      
+      padding: $pad/4;
+      font-size: smaller;
+    }
+  }
+}
+
+
+
+@mixin table {
+  table {
+    width: 100%;
+    display: table !important;
+    
+    caption {
+      @include font(italic);
+      margin-bottom: $pad/4;
+    }
+    
+    thead {
+      @include color(invert);
+    }
+    
+    thead th, tbody td {
+      padding: $pad/2;
+      padding-left: 0;
+      
+      &:first-of-type {
+        padding-left: 1px;
+      }
+    }
+    
+    tbody {
+      td {
+        border-bottom: 1px solid $gray;
+      }
+    }
+  }
+}
+
+
+
+/* <dl>
+*/
+@mixin dl {
+  dl {
+    dt {
+      @include h2;
+    }
+  }
+}
+
+
+
+
+/* <ul> and <ol> lists
+  - they display a custom bullet / number via $before
+  - the text of the list is aligned right related to the bullet / number
+*/
+@mixin ol-ul($before : null) {
+  list-style: none outside;
+  
+  li {
+    /* When parent positioned to 'relative' the children (:before) can be positioned to 'absolute'
+      - this way we can perfectly align the bullets / numbering to the list content
+    */
+    position: relative;
+    padding-left: $pad;
+    
+    &:before {
+      content: $before;
+      
+      /* making the content of the list perfectly align with numbering
+        - <li> is relatively positioned
+        - :the numbering (:before) is aboslutely positioned within <li> and fixed to left
+        - the the <li> content has a padding-left to not overlap the numbering
+      */
+      position: absolute;
+      left: 0;
+      font-weight: bold;
+    }
+  }
+}
+
+@mixin ul {
+  ul {
+    @include ol-ul('\2022');
+  }
+}
+
+@mixin ol {
+  ol {
+    @include ol-ul;
+    counter-reset: ol-counter;
+    
+    li {
+      counter-increment: ol-counter;
+      
+      &:before {
+        content: counter(ol-counter, decimal) ".";
+      }
+    }
+  }
+}
+
