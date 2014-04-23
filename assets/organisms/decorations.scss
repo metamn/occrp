@@ -1,3 +1,25 @@
+@mixin link-as-button {
+  a {
+    display: inline-block;
+    
+    @include button;
+    padding: $pad/2;
+    padding-top: $pad/4;
+    
+    .arrow {
+      &:after {
+        content: $arrow-down;
+        font-size: $before-font-size;
+        margin-left: $pad/4;
+        position: relative;
+        top: 1.5px;
+      }
+    }
+  }
+}
+
+
+
 @mixin tag-cloud {
   @include font(navigation);
   @include tags;

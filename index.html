@@ -76,9 +76,9 @@ class: frontpage
     {% include article.html klass = 'thumb' holder='false' %}
   {% endfor %}
   
-  <form>
-    <input type="submit" value="More Projects">
-  </form>
+  <div>
+    <a href="{{ site.url }}/projects" title="More Projects">More Projects <span class="arrow"></span></a>
+  </div>
 </section>
 
 

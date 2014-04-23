@@ -1,3 +1,17 @@
+@mixin button {
+  @include uppercase;	
+  border: 1px solid $color;
+  @include color(invert);
+  cursor: pointer;
+  
+  @include transition($easing);
+  &:hover {
+    @include color(normal);
+  }
+}
+
+
+
 /* Icon over an image
 */
 
