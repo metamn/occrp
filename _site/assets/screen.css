@@ -816,7 +816,7 @@ html body.frontpage .container main #intro #slider .desktop { display: block; }
   html body.frontpage .container main #intro #slider article nav { position: relative; left: 0; margin-top: 0; height: 0; top: -2.5em; opacity: .7; } }
 @media only screen and (min-width: 30em) { html body.frontpage .container main #intro #slider article figure, html body.frontpage .container main #intro #slider article h1, html body.frontpage .container main #intro #slider article .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.frontpage .container main #intro #slider article h1, html body.frontpage .container main #intro #slider article .excerpt { margin-right: 0; padding: 0.3125em; width: calc(48.75% - 0.625em); }
-  html body.frontpage .container main #intro #slider nav { margin-left: 51.25%; margin-top: 0; position: relative; top: -2.8125em; height: 0; } }
+  html body.frontpage .container main #intro #slider nav { margin-left: 51.25%; width: auto; margin-top: 0; position: relative; top: -2.8125em; height: 0; } }
 html body.frontpage .container main #intro aside section { margin-bottom: 0.625em; }
 @media only screen and (max-width: 29.999em) { html body.frontpage .container main #intro aside section { width: 100%; margin-right: 0; float: left; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.frontpage .container main #intro aside section { width: 48.75%; margin-right: 2.5%; float: left; }

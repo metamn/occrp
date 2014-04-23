@@ -124,6 +124,7 @@
     
     nav {
       margin-left: $col-gutter + $col-width;
+      width: auto;
       margin-top: 0;
       position: relative;
       top: -$pad*2 - $pad/4;
