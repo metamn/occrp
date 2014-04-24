@@ -1,0 +1,13 @@
+/* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback  
+	Usage: @include font-size(1, large);
+*/
+/* Set the line height - 'body' goes from non text elements, it is the default setting put in <body> - 'text' goes for long texts like blog posts, articles, etc; - 'headings' goes for <h1>, etc
+*/
+/* Select box - put <select> inside a <label class="select"> - label:after is positioned over the original selectbox arrow - label after must have a background color to hide the default arrow
+*/
+/* Cross browser compatible styling: http://www.inserthtml.com/2012/06/custom-form-radio-checkbox/ - the checkbox and radio button is not displayed - instead a label is displayed which can be styled with 'content'  - example:  <ul class="checkbox"> <li><input id="checkbox1" name="checkbox" checked="checked" type="checkbox"><label for="checkbox1"></label>Option 1</li> <li><input id="checkbox2" name="checkbox" type="checkbox"><label for="checkbox2"></label>Option 2</li> <li><input id="checkbox3" name="checkbox" type="checkbox"><label for="checkbox3"></label>Option 3</li> </ul>
+*/
+/* <dl>
+*/
+/* <ul> and <ol> lists - they display a custom bullet / number via $before - the text of the list is aligned right related to the bullet / number
+*/

@@ -1,0 +1,306 @@
+
+/* Full Screen Gallery 
+*/
+@mixin full-screen-gallery {
+  height: 100%;
+  
+  body {
+    height: 100%;
+    
+    .container {
+      display: none;
+    }
+    
+    .gallery {
+      @include image-gallery;
+      height: calc(100% - #{$pad*3});
+      margin: auto;
+
+      text-align: center;      
+      figure {
+        @include center(vertical);
+      }
+      
+      span {
+        &.show {
+          display: none;
+        }  
+      
+        &.close {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+
+
+/* Image Gallery
+*/
+@mixin image-gallery {
+  margin: $pad 0;
+  
+  @include simple-slider;
+  @include image-gallery-border;
+  
+  text-align: center; 
+  overflow: hidden;
+  
+  figure {
+    figcaption {
+      display: none;
+    }
+  }
+  
+  span {
+    @include font(navigation);
+    @include color(highlight);
+    font-size: small;
+    cursor: pointer;
+    
+    &.close {
+      @include center(horizontal);
+      padding: $pad/8;
+      
+      position: absolute;
+      bottom: $margin;
+      
+      display: none;
+    }
+  }
+}
+
+
+
+/* Simple slider
+*/
+@mixin simple-slider {
+  @include navigation-arrows;
+  
+  article, .gallery-item {
+    display: none;
+    
+    &:first-of-type {
+      display: block;
+    }
+  }
+}
+
+
+
+
+/* A responsive slider
+*/
+@mixin responsive-slider {
+  @include hide-show-mobile-elements;
+  
+  @include mobile {
+    article {
+      position: relative;
+      
+      h1, .excerpt {
+        padding: $pad/4;
+      }
+      
+      nav {
+        position: relative;
+        left: 0;
+        margin-top: 0;
+        height: 0;
+        top: -$pad*2;
+        opacity: .7;
+      }
+    }
+  }
+  
+  @include mobile-and-up {
+    $col-gutter: col-gutter(3);
+    $col-width: col-by-gutter-width(2, $col-gutter);
+    
+    article {
+      @include article-thumb-left($col-gutter, $pad/4);
+    }
+    
+    nav {
+      margin-left: $col-gutter + $col-width;
+      width: auto;
+      margin-top: 0;
+      position: relative;
+      top: -$pad*2 - $pad/4;
+      height: 0;
+    }
+  }
+}
+
+
+
+
+
+/* The header on desktop
+*/
+@mixin header-desktop($type: normal) {
+  .main, .logo, .secondary {
+    @include grid(3, 3);
+  }
+  
+  .secondary {
+    margin-right: 0 !important;
+    
+    ul {
+      @include list-floated-right;
+    }
+  }
+  
+  .main, .secondary {
+    margin-top: $pad*2;
+    @include border-thin;
+  }
+  
+  .mobile-menubar, .close-icon {
+    display: none;
+  }
+  
+  @if ($type == fixed) {
+    @include fixed-header;
+    @include container;
+  
+    margin: 0 0 $pad*2 !important;
+    padding-top: $pad;
+    top: 0;
+    height: $pad*2;
+    
+    .tags {
+      display: none;
+    }
+    
+    nav {
+      &.main, &.secondary {
+        margin-top: 0;
+        border-bottom: 0;
+      }
+    }
+  }
+}
+
+
+
+
+
+/* The header on tablets
+*/
+@mixin header-tablet($type: normal) {
+  @include mobile-menu;
+  
+  position: relative;
+  @include border-thin;
+  
+  section {
+    &.logo, &.mobile-menubar {
+      @include grid(2, 2);
+    }
+  }
+  
+  .mobile-menubar {
+    @include mobile-menubar(tablet);
+    position: absolute;
+    right: 0;
+    bottom: .5em; /* to align to logo */
+  }
+  
+  @if ($type == normal) {
+    nav, .close-icon {
+      display: none;
+    }
+    
+  } @elseif ($type == active) {
+    section.logo {
+      @include block;
+    }
+    
+    nav, .close-icon {
+      display: block;
+    }
+    
+  } @elseif ($type == fixed) {
+    @include fixed-header;
+    @include container;
+    margin-left: 0;
+  }
+}
+
+
+
+
+/* The header on mobiles
+*/
+@mixin header-mobile($type: normal) {
+  @include mobile-menu;
+  
+  .mobile-menubar {
+    @include mobile-menubar(mobile);
+  }
+  
+  @if ($type == normal) {
+    nav, .close-icon {
+      display: none;
+    }
+    
+  } @elseif ($type == active) {
+    nav, .close-icon {
+      display: block;
+    }
+    
+  } @elseif ($type == fixed) {
+    @include fixed-header;
+    
+    .logo {
+      margin-top: $pad/4;
+    }
+    
+    .mobile-menubar {
+      display: none !important;
+    }
+  }
+}
+
+
+
+/* The logo
+*/
+@mixin logo($type: normal) {
+  h1, figure figcaption {
+    display: none;
+  }
+  
+  @include mobile {
+    text-align: center;
+  }
+  @include small-screen-and-up {
+    text-align: center;
+  }
+  
+  @if ($type == active) {
+    position: absolute;
+    @include container;
+  }
+  
+  @if ($type == fixed) {
+    figure {
+      margin-top: 0;
+      
+      img {
+        max-width: 10em;
+        
+        @include tablet-and-up {
+          max-width: 15em;
+        }
+        
+        @include small-screen-and-up {
+          position: relative;
+          top: -$pad + $pad/4;
+        }
+      }
+    }
+  }
+}
