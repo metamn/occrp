@@ -781,7 +781,7 @@ html body.frontpage .container main #intro #slider article .share-buttons ul li 
 html body.frontpage .container main #intro #slider article .content { width: 100%; max-width: 100%; float: left; }
 html body.frontpage .container main #intro #slider article .content a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #intro #slider article .content a:hover { color: #982022; }
-html body.frontpage .container main #intro #slider article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.frontpage .container main #intro #slider article .content a.external:after { content: url(http://metamn.github.io/occrp/assets/images/link-icon.png); margin-left: 0.3125em; }
 html body.frontpage .container main #intro #slider article .content figure figcaption a { color: #231f20; text-decoration: none; }
 html body.frontpage .container main #intro #slider article .content figure figcaption a:hover { color: #982022; }
 html body.frontpage .container main #intro #slider article .gallery { margin: 1.25em 0; position: relative; height: 100%; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; border: 1px solid; padding: 1.875em; width: calc(100% - 3.75em); padding: 1.25em; text-align: center; overflow: hidden; }
@@ -892,7 +892,7 @@ html body.frontpage .container main #intro aside section article .share-buttons 
 html body.frontpage .container main #intro aside section article .content { width: 100%; max-width: 100%; float: left; }
 html body.frontpage .container main #intro aside section article .content a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #intro aside section article .content a:hover { color: #982022; }
-html body.frontpage .container main #intro aside section article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.frontpage .container main #intro aside section article .content a.external:after { content: url(http://metamn.github.io/occrp/assets/images/link-icon.png); margin-left: 0.3125em; }
 html body.frontpage .container main #intro aside section article .content figure figcaption a { color: #231f20; text-decoration: none; }
 html body.frontpage .container main #intro aside section article .content figure figcaption a:hover { color: #982022; }
 html body.frontpage .container main #intro aside section article .gallery { margin: 1.25em 0; position: relative; height: 100%; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; border: 1px solid; padding: 1.875em; width: calc(100% - 3.75em); padding: 1.25em; text-align: center; overflow: hidden; }
@@ -983,7 +983,7 @@ html body.frontpage .container main #investigations article .share-buttons ul li
 html body.frontpage .container main #investigations article .content { width: 100%; max-width: 100%; float: left; }
 html body.frontpage .container main #investigations article .content a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #investigations article .content a:hover { color: #982022; }
-html body.frontpage .container main #investigations article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.frontpage .container main #investigations article .content a.external:after { content: url(http://metamn.github.io/occrp/assets/images/link-icon.png); margin-left: 0.3125em; }
 html body.frontpage .container main #investigations article .content figure figcaption a { color: #231f20; text-decoration: none; }
 html body.frontpage .container main #investigations article .content figure figcaption a:hover { color: #982022; }
 html body.frontpage .container main #investigations article .gallery { margin: 1.25em 0; position: relative; height: 100%; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; border: 1px solid; padding: 1.875em; width: calc(100% - 3.75em); padding: 1.25em; text-align: center; overflow: hidden; }
@@ -1073,7 +1073,7 @@ html body.frontpage .container main #products article .share-buttons ul li .box 
 html body.frontpage .container main #products article .content { width: 100%; max-width: 100%; float: left; }
 html body.frontpage .container main #products article .content a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #products article .content a:hover { color: #982022; }
-html body.frontpage .container main #products article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.frontpage .container main #products article .content a.external:after { content: url(http://metamn.github.io/occrp/assets/images/link-icon.png); margin-left: 0.3125em; }
 html body.frontpage .container main #products article .content figure figcaption a { color: #231f20; text-decoration: none; }
 html body.frontpage .container main #products article .content figure figcaption a:hover { color: #982022; }
 html body.frontpage .container main #products article .gallery { margin: 1.25em 0; position: relative; height: 100%; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; border: 1px solid; padding: 1.875em; width: calc(100% - 3.75em); padding: 1.25em; text-align: center; overflow: hidden; }
@@ -1170,7 +1170,7 @@ html body.frontpage .container main #projects article .share-buttons ul li .box 
 html body.frontpage .container main #projects article .content { width: 100%; max-width: 100%; float: left; }
 html body.frontpage .container main #projects article .content a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #projects article .content a:hover { color: #982022; }
-html body.frontpage .container main #projects article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.frontpage .container main #projects article .content a.external:after { content: url(http://metamn.github.io/occrp/assets/images/link-icon.png); margin-left: 0.3125em; }
 html body.frontpage .container main #projects article .content figure figcaption a { color: #231f20; text-decoration: none; }
 html body.frontpage .container main #projects article .content figure figcaption a:hover { color: #982022; }
 html body.frontpage .container main #projects article .gallery { margin: 1.25em 0; position: relative; height: 100%; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; border: 1px solid; padding: 1.875em; width: calc(100% - 3.75em); padding: 1.25em; text-align: center; overflow: hidden; }
@@ -1277,7 +1277,7 @@ html body.frontpage .container main #blog article .share-buttons ul li .box .sha
 html body.frontpage .container main #blog article .content { width: 100%; max-width: 100%; float: left; }
 html body.frontpage .container main #blog article .content a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #blog article .content a:hover { color: #982022; }
-html body.frontpage .container main #blog article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.frontpage .container main #blog article .content a.external:after { content: url(http://metamn.github.io/occrp/assets/images/link-icon.png); margin-left: 0.3125em; }
 html body.frontpage .container main #blog article .content figure figcaption a { color: #231f20; text-decoration: none; }
 html body.frontpage .container main #blog article .content figure figcaption a:hover { color: #982022; }
 html body.frontpage .container main #blog article .gallery { margin: 1.25em 0; position: relative; height: 100%; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; border: 1px solid; padding: 1.875em; width: calc(100% - 3.75em); padding: 1.25em; text-align: center; overflow: hidden; }
@@ -1372,7 +1372,7 @@ html body.frontpage .container main #most-read section article .share-buttons ul
 html body.frontpage .container main #most-read section article .content { width: 100%; max-width: 100%; float: left; }
 html body.frontpage .container main #most-read section article .content a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #most-read section article .content a:hover { color: #982022; }
-html body.frontpage .container main #most-read section article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.frontpage .container main #most-read section article .content a.external:after { content: url(http://metamn.github.io/occrp/assets/images/link-icon.png); margin-left: 0.3125em; }
 html body.frontpage .container main #most-read section article .content figure figcaption a { color: #231f20; text-decoration: none; }
 html body.frontpage .container main #most-read section article .content figure figcaption a:hover { color: #982022; }
 html body.frontpage .container main #most-read section article .gallery { margin: 1.25em 0; position: relative; height: 100%; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; border: 1px solid; padding: 1.875em; width: calc(100% - 3.75em); padding: 1.25em; text-align: center; overflow: hidden; }
@@ -1440,7 +1440,7 @@ html body.frontpage .container main #videos article .share-buttons ul li .box .s
 html body.frontpage .container main #videos article .content { width: 100%; max-width: 100%; float: left; }
 html body.frontpage .container main #videos article .content a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #videos article .content a:hover { color: #982022; }
-html body.frontpage .container main #videos article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.frontpage .container main #videos article .content a.external:after { content: url(http://metamn.github.io/occrp/assets/images/link-icon.png); margin-left: 0.3125em; }
 html body.frontpage .container main #videos article .content figure figcaption a { color: #231f20; text-decoration: none; }
 html body.frontpage .container main #videos article .content figure figcaption a:hover { color: #982022; }
 html body.frontpage .container main #videos article .gallery { margin: 1.25em 0; position: relative; height: 100%; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; border: 1px solid; padding: 1.875em; width: calc(100% - 3.75em); padding: 1.25em; text-align: center; overflow: hidden; }
@@ -1623,7 +1623,7 @@ html body.category main aside section article .share-buttons ul li .box .share i
 html body.category main aside section article .content { width: 100%; max-width: 100%; float: left; }
 html body.category main aside section article .content a { color: #982022; text-decoration: none; }
 html body.category main aside section article .content a:hover { color: #982022; }
-html body.category main aside section article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.category main aside section article .content a.external:after { content: url(http://metamn.github.io/occrp/assets/images/link-icon.png); margin-left: 0.3125em; }
 html body.category main aside section article .content figure figcaption a { color: #231f20; text-decoration: none; }
 html body.category main aside section article .content figure figcaption a:hover { color: #982022; }
 html body.category main aside section article .gallery { margin: 1.25em 0; position: relative; height: 100%; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; border: 1px solid; padding: 1.875em; width: calc(100% - 3.75em); padding: 1.25em; text-align: center; overflow: hidden; }
@@ -1755,7 +1755,7 @@ html body.category #articles aside .share-buttons ul li .box .share img { width:
 html body.category #articles aside .content { width: 100%; max-width: 100%; float: left; }
 html body.category #articles aside .content a { color: #982022; text-decoration: none; }
 html body.category #articles aside .content a:hover { color: #982022; }
-html body.category #articles aside .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.category #articles aside .content a.external:after { content: url(http://metamn.github.io/occrp/assets/images/link-icon.png); margin-left: 0.3125em; }
 html body.category #articles aside .content figure figcaption a { color: #231f20; text-decoration: none; }
 html body.category #articles aside .content figure figcaption a:hover { color: #982022; }
 html body.category #articles aside .gallery { margin: 1.25em 0; position: relative; height: 100%; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; border: 1px solid; padding: 1.875em; width: calc(100% - 3.75em); padding: 1.25em; text-align: center; overflow: hidden; }
@@ -1822,7 +1822,7 @@ html body.category #articles article.thumb { margin-bottom: 0.625em; }
   html body.category #articles article.thumb .content { width: 100%; max-width: 100%; float: left; }
   html body.category #articles article.thumb .content a { color: #982022; text-decoration: none; }
   html body.category #articles article.thumb .content a:hover { color: #982022; }
-  html body.category #articles article.thumb .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+  html body.category #articles article.thumb .content a.external:after { content: url(http://metamn.github.io/occrp/assets/images/link-icon.png); margin-left: 0.3125em; }
   html body.category #articles article.thumb .content figure figcaption a { color: #231f20; text-decoration: none; }
   html body.category #articles article.thumb .content figure figcaption a:hover { color: #982022; }
   html body.category #articles article.thumb .gallery { margin: 1.25em 0; position: relative; height: 100%; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; border: 1px solid; padding: 1.875em; width: calc(100% - 3.75em); padding: 1.25em; text-align: center; overflow: hidden; }
@@ -1931,7 +1931,7 @@ html body.category #articles article.thumb { margin-bottom: 0.625em; }
   html body.category #articles article.thumb .content { width: 100%; max-width: 100%; float: left; }
   html body.category #articles article.thumb .content a { color: #982022; text-decoration: none; }
   html body.category #articles article.thumb .content a:hover { color: #982022; }
-  html body.category #articles article.thumb .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+  html body.category #articles article.thumb .content a.external:after { content: url(http://metamn.github.io/occrp/assets/images/link-icon.png); margin-left: 0.3125em; }
   html body.category #articles article.thumb .content figure figcaption a { color: #231f20; text-decoration: none; }
   html body.category #articles article.thumb .content figure figcaption a:hover { color: #982022; }
   html body.category #articles article.thumb .gallery { margin: 1.25em 0; position: relative; height: 100%; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; border: 1px solid; padding: 1.875em; width: calc(100% - 3.75em); padding: 1.25em; text-align: center; overflow: hidden; }
@@ -2048,7 +2048,7 @@ html body.tag main aside section article .share-buttons ul li .box .share img { 
 html body.tag main aside section article .content { width: 100%; max-width: 100%; float: left; }
 html body.tag main aside section article .content a { color: #982022; text-decoration: none; }
 html body.tag main aside section article .content a:hover { color: #982022; }
-html body.tag main aside section article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.tag main aside section article .content a.external:after { content: url(http://metamn.github.io/occrp/assets/images/link-icon.png); margin-left: 0.3125em; }
 html body.tag main aside section article .content figure figcaption a { color: #231f20; text-decoration: none; }
 html body.tag main aside section article .content figure figcaption a:hover { color: #982022; }
 html body.tag main aside section article .gallery { margin: 1.25em 0; position: relative; height: 100%; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; border: 1px solid; padding: 1.875em; width: calc(100% - 3.75em); padding: 1.25em; text-align: center; overflow: hidden; }
@@ -2180,7 +2180,7 @@ html body.tag #articles aside .share-buttons ul li .box .share img { width: 30%;
 html body.tag #articles aside .content { width: 100%; max-width: 100%; float: left; }
 html body.tag #articles aside .content a { color: #982022; text-decoration: none; }
 html body.tag #articles aside .content a:hover { color: #982022; }
-html body.tag #articles aside .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.tag #articles aside .content a.external:after { content: url(http://metamn.github.io/occrp/assets/images/link-icon.png); margin-left: 0.3125em; }
 html body.tag #articles aside .content figure figcaption a { color: #231f20; text-decoration: none; }
 html body.tag #articles aside .content figure figcaption a:hover { color: #982022; }
 html body.tag #articles aside .gallery { margin: 1.25em 0; position: relative; height: 100%; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; border: 1px solid; padding: 1.875em; width: calc(100% - 3.75em); padding: 1.25em; text-align: center; overflow: hidden; }
@@ -2247,7 +2247,7 @@ html body.tag #articles article.thumb { margin-bottom: 0.625em; }
   html body.tag #articles article.thumb .content { width: 100%; max-width: 100%; float: left; }
   html body.tag #articles article.thumb .content a { color: #982022; text-decoration: none; }
   html body.tag #articles article.thumb .content a:hover { color: #982022; }
-  html body.tag #articles article.thumb .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+  html body.tag #articles article.thumb .content a.external:after { content: url(http://metamn.github.io/occrp/assets/images/link-icon.png); margin-left: 0.3125em; }
   html body.tag #articles article.thumb .content figure figcaption a { color: #231f20; text-decoration: none; }
   html body.tag #articles article.thumb .content figure figcaption a:hover { color: #982022; }
   html body.tag #articles article.thumb .gallery { margin: 1.25em 0; position: relative; height: 100%; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; border: 1px solid; padding: 1.875em; width: calc(100% - 3.75em); padding: 1.25em; text-align: center; overflow: hidden; }
@@ -2356,7 +2356,7 @@ html body.tag #articles article.thumb { margin-bottom: 0.625em; }
   html body.tag #articles article.thumb .content { width: 100%; max-width: 100%; float: left; }
   html body.tag #articles article.thumb .content a { color: #982022; text-decoration: none; }
   html body.tag #articles article.thumb .content a:hover { color: #982022; }
-  html body.tag #articles article.thumb .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+  html body.tag #articles article.thumb .content a.external:after { content: url(http://metamn.github.io/occrp/assets/images/link-icon.png); margin-left: 0.3125em; }
   html body.tag #articles article.thumb .content figure figcaption a { color: #231f20; text-decoration: none; }
   html body.tag #articles article.thumb .content figure figcaption a:hover { color: #982022; }
   html body.tag #articles article.thumb .gallery { margin: 1.25em 0; position: relative; height: 100%; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; border: 1px solid; padding: 1.875em; width: calc(100% - 3.75em); padding: 1.25em; text-align: center; overflow: hidden; }
@@ -2521,7 +2521,7 @@ html body.archive #articles article.thumb .share-buttons ul li .box .share img {
 html body.archive #articles article.thumb .content { width: 100%; max-width: 100%; float: left; }
 html body.archive #articles article.thumb .content a { color: #982022; text-decoration: none; }
 html body.archive #articles article.thumb .content a:hover { color: #982022; }
-html body.archive #articles article.thumb .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.archive #articles article.thumb .content a.external:after { content: url(http://metamn.github.io/occrp/assets/images/link-icon.png); margin-left: 0.3125em; }
 html body.archive #articles article.thumb .content figure figcaption a { color: #231f20; text-decoration: none; }
 html body.archive #articles article.thumb .content figure figcaption a:hover { color: #982022; }
 html body.archive #articles article.thumb .gallery { margin: 1.25em 0; position: relative; height: 100%; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; border: 1px solid; padding: 1.875em; width: calc(100% - 3.75em); padding: 1.25em; text-align: center; overflow: hidden; }
@@ -2589,7 +2589,7 @@ html body.archive #articles article.thumb h1 { font-size: medium; }
   html body.archive #articles article.thumb .content { width: 100%; max-width: 100%; float: left; }
   html body.archive #articles article.thumb .content a { color: #982022; text-decoration: none; }
   html body.archive #articles article.thumb .content a:hover { color: #982022; }
-  html body.archive #articles article.thumb .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+  html body.archive #articles article.thumb .content a.external:after { content: url(http://metamn.github.io/occrp/assets/images/link-icon.png); margin-left: 0.3125em; }
   html body.archive #articles article.thumb .content figure figcaption a { color: #231f20; text-decoration: none; }
   html body.archive #articles article.thumb .content figure figcaption a:hover { color: #982022; }
   html body.archive #articles article.thumb .gallery { margin: 1.25em 0; position: relative; height: 100%; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; border: 1px solid; padding: 1.875em; width: calc(100% - 3.75em); padding: 1.25em; text-align: center; overflow: hidden; }
@@ -2670,7 +2670,7 @@ html body.blog main aside section article .share-buttons ul li .box .share img {
 html body.blog main aside section article .content { width: 100%; max-width: 100%; float: left; }
 html body.blog main aside section article .content a { color: #982022; text-decoration: none; }
 html body.blog main aside section article .content a:hover { color: #982022; }
-html body.blog main aside section article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.blog main aside section article .content a.external:after { content: url(http://metamn.github.io/occrp/assets/images/link-icon.png); margin-left: 0.3125em; }
 html body.blog main aside section article .content figure figcaption a { color: #231f20; text-decoration: none; }
 html body.blog main aside section article .content figure figcaption a:hover { color: #982022; }
 html body.blog main aside section article .gallery { margin: 1.25em 0; position: relative; height: 100%; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; border: 1px solid; padding: 1.875em; width: calc(100% - 3.75em); padding: 1.25em; text-align: center; overflow: hidden; }
@@ -2799,7 +2799,7 @@ html body.blog #articles article.thumb .share-buttons ul li .box .share img { wi
 html body.blog #articles article.thumb .content { width: 100%; max-width: 100%; float: left; }
 html body.blog #articles article.thumb .content a { color: #982022; text-decoration: none; }
 html body.blog #articles article.thumb .content a:hover { color: #982022; }
-html body.blog #articles article.thumb .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.blog #articles article.thumb .content a.external:after { content: url(http://metamn.github.io/occrp/assets/images/link-icon.png); margin-left: 0.3125em; }
 html body.blog #articles article.thumb .content figure figcaption a { color: #231f20; text-decoration: none; }
 html body.blog #articles article.thumb .content figure figcaption a:hover { color: #982022; }
 html body.blog #articles article.thumb .gallery { margin: 1.25em 0; position: relative; height: 100%; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; border: 1px solid; padding: 1.875em; width: calc(100% - 3.75em); padding: 1.25em; text-align: center; overflow: hidden; }
@@ -2866,7 +2866,7 @@ html body.blog #articles article.thumb .excerpt { padding-bottom: 1.25em; border
   html body.blog #articles article.thumb .content { width: 100%; max-width: 100%; float: left; }
   html body.blog #articles article.thumb .content a { color: #982022; text-decoration: none; }
   html body.blog #articles article.thumb .content a:hover { color: #982022; }
-  html body.blog #articles article.thumb .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+  html body.blog #articles article.thumb .content a.external:after { content: url(http://metamn.github.io/occrp/assets/images/link-icon.png); margin-left: 0.3125em; }
   html body.blog #articles article.thumb .content figure figcaption a { color: #231f20; text-decoration: none; }
   html body.blog #articles article.thumb .content figure figcaption a:hover { color: #982022; }
   html body.blog #articles article.thumb .gallery { margin: 1.25em 0; position: relative; height: 100%; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; border: 1px solid; padding: 1.875em; width: calc(100% - 3.75em); padding: 1.25em; text-align: center; overflow: hidden; }
@@ -2944,7 +2944,7 @@ html body.author main aside section article .share-buttons ul li .box .share img
 html body.author main aside section article .content { width: 100%; max-width: 100%; float: left; }
 html body.author main aside section article .content a { color: #982022; text-decoration: none; }
 html body.author main aside section article .content a:hover { color: #982022; }
-html body.author main aside section article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.author main aside section article .content a.external:after { content: url(http://metamn.github.io/occrp/assets/images/link-icon.png); margin-left: 0.3125em; }
 html body.author main aside section article .content figure figcaption a { color: #231f20; text-decoration: none; }
 html body.author main aside section article .content figure figcaption a:hover { color: #982022; }
 html body.author main aside section article .gallery { margin: 1.25em 0; position: relative; height: 100%; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; border: 1px solid; padding: 1.875em; width: calc(100% - 3.75em); padding: 1.25em; text-align: center; overflow: hidden; }
@@ -3076,7 +3076,7 @@ html body.author #articles aside .share-buttons ul li .box .share img { width: 3
 html body.author #articles aside .content { width: 100%; max-width: 100%; float: left; }
 html body.author #articles aside .content a { color: #982022; text-decoration: none; }
 html body.author #articles aside .content a:hover { color: #982022; }
-html body.author #articles aside .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.author #articles aside .content a.external:after { content: url(http://metamn.github.io/occrp/assets/images/link-icon.png); margin-left: 0.3125em; }
 html body.author #articles aside .content figure figcaption a { color: #231f20; text-decoration: none; }
 html body.author #articles aside .content figure figcaption a:hover { color: #982022; }
 html body.author #articles aside .gallery { margin: 1.25em 0; position: relative; height: 100%; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; border: 1px solid; padding: 1.875em; width: calc(100% - 3.75em); padding: 1.25em; text-align: center; overflow: hidden; }
@@ -3143,7 +3143,7 @@ html body.author #articles article.thumb { margin-bottom: 0.625em; }
   html body.author #articles article.thumb .content { width: 100%; max-width: 100%; float: left; }
   html body.author #articles article.thumb .content a { color: #982022; text-decoration: none; }
   html body.author #articles article.thumb .content a:hover { color: #982022; }
-  html body.author #articles article.thumb .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+  html body.author #articles article.thumb .content a.external:after { content: url(http://metamn.github.io/occrp/assets/images/link-icon.png); margin-left: 0.3125em; }
   html body.author #articles article.thumb .content figure figcaption a { color: #231f20; text-decoration: none; }
   html body.author #articles article.thumb .content figure figcaption a:hover { color: #982022; }
   html body.author #articles article.thumb .gallery { margin: 1.25em 0; position: relative; height: 100%; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; border: 1px solid; padding: 1.875em; width: calc(100% - 3.75em); padding: 1.25em; text-align: center; overflow: hidden; }
@@ -3252,7 +3252,7 @@ html body.author #articles article.thumb { margin-bottom: 0.625em; }
   html body.author #articles article.thumb .content { width: 100%; max-width: 100%; float: left; }
   html body.author #articles article.thumb .content a { color: #982022; text-decoration: none; }
   html body.author #articles article.thumb .content a:hover { color: #982022; }
-  html body.author #articles article.thumb .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+  html body.author #articles article.thumb .content a.external:after { content: url(http://metamn.github.io/occrp/assets/images/link-icon.png); margin-left: 0.3125em; }
   html body.author #articles article.thumb .content figure figcaption a { color: #231f20; text-decoration: none; }
   html body.author #articles article.thumb .content figure figcaption a:hover { color: #982022; }
   html body.author #articles article.thumb .gallery { margin: 1.25em 0; position: relative; height: 100%; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; border: 1px solid; padding: 1.875em; width: calc(100% - 3.75em); padding: 1.25em; text-align: center; overflow: hidden; }
@@ -3369,7 +3369,7 @@ html body.article main aside section article .share-buttons ul li .box .share im
 html body.article main aside section article .content, html body.about main aside section article .content, html body.post main aside section article .content { width: 100%; max-width: 100%; float: left; }
 html body.article main aside section article .content a, html body.about main aside section article .content a, html body.post main aside section article .content a { color: #982022; text-decoration: none; }
 html body.article main aside section article .content a:hover, html body.about main aside section article .content a:hover, html body.post main aside section article .content a:hover { color: #982022; }
-html body.article main aside section article .content a.external:after, html body.about main aside section article .content a.external:after, html body.post main aside section article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.article main aside section article .content a.external:after, html body.about main aside section article .content a.external:after, html body.post main aside section article .content a.external:after { content: url(http://metamn.github.io/occrp/assets/images/link-icon.png); margin-left: 0.3125em; }
 html body.article main aside section article .content figure figcaption a, html body.about main aside section article .content figure figcaption a, html body.post main aside section article .content figure figcaption a { color: #231f20; text-decoration: none; }
 html body.article main aside section article .content figure figcaption a:hover, html body.about main aside section article .content figure figcaption a:hover, html body.post main aside section article .content figure figcaption a:hover { color: #982022; }
 html body.article main aside section article .gallery, html body.about main aside section article .gallery, html body.post main aside section article .gallery { margin: 1.25em 0; position: relative; height: 100%; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; border: 1px solid; padding: 1.875em; width: calc(100% - 3.75em); padding: 1.25em; text-align: center; overflow: hidden; }
@@ -3483,7 +3483,7 @@ html body.article #article article.single .share-buttons ul li .box .share img, 
 html body.article #article article.single .content, html body.about #article article.single .content, html body.post #article article.single .content { width: 100%; max-width: 100%; float: left; }
 html body.article #article article.single .content a, html body.about #article article.single .content a, html body.post #article article.single .content a { color: #982022; text-decoration: none; }
 html body.article #article article.single .content a:hover, html body.about #article article.single .content a:hover, html body.post #article article.single .content a:hover { color: #982022; }
-html body.article #article article.single .content a.external:after, html body.about #article article.single .content a.external:after, html body.post #article article.single .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.article #article article.single .content a.external:after, html body.about #article article.single .content a.external:after, html body.post #article article.single .content a.external:after { content: url(http://metamn.github.io/occrp/assets/images/link-icon.png); margin-left: 0.3125em; }
 html body.article #article article.single .content figure figcaption a, html body.about #article article.single .content figure figcaption a, html body.post #article article.single .content figure figcaption a { color: #231f20; text-decoration: none; }
 html body.article #article article.single .content figure figcaption a:hover, html body.about #article article.single .content figure figcaption a:hover, html body.post #article article.single .content figure figcaption a:hover { color: #982022; }
 html body.article #article article.single .gallery, html body.about #article article.single .gallery, html body.post #article article.single .gallery { margin: 1.25em 0; position: relative; height: 100%; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; border: 1px solid; padding: 1.875em; width: calc(100% - 3.75em); padding: 1.25em; text-align: center; overflow: hidden; }
@@ -3697,7 +3697,7 @@ html body.jobs #main #article .single .content article .share-buttons ul li .box
 html body.jobs #main #article .single .content article .content, html body.announcements #main #article .single .content article .content { width: 100%; max-width: 100%; float: left; }
 html body.jobs #main #article .single .content article .content a, html body.announcements #main #article .single .content article .content a { color: #982022; text-decoration: none; }
 html body.jobs #main #article .single .content article .content a:hover, html body.announcements #main #article .single .content article .content a:hover { color: #982022; }
-html body.jobs #main #article .single .content article .content a.external:after, html body.announcements #main #article .single .content article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.jobs #main #article .single .content article .content a.external:after, html body.announcements #main #article .single .content article .content a.external:after { content: url(http://metamn.github.io/occrp/assets/images/link-icon.png); margin-left: 0.3125em; }
 html body.jobs #main #article .single .content article .content figure figcaption a, html body.announcements #main #article .single .content article .content figure figcaption a { color: #231f20; text-decoration: none; }
 html body.jobs #main #article .single .content article .content figure figcaption a:hover, html body.announcements #main #article .single .content article .content figure figcaption a:hover { color: #982022; }
 html body.jobs #main #article .single .content article .gallery, html body.announcements #main #article .single .content article .gallery { margin: 1.25em 0; position: relative; height: 100%; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; border: 1px solid; padding: 1.875em; width: calc(100% - 3.75em); padding: 1.25em; text-align: center; overflow: hidden; }
@@ -3924,7 +3924,7 @@ html body.daily main aside section article .share-buttons ul li .box .share img 
 html body.daily main aside section article .content { width: 100%; max-width: 100%; float: left; }
 html body.daily main aside section article .content a { color: #982022; text-decoration: none; }
 html body.daily main aside section article .content a:hover { color: #982022; }
-html body.daily main aside section article .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.daily main aside section article .content a.external:after { content: url(http://metamn.github.io/occrp/assets/images/link-icon.png); margin-left: 0.3125em; }
 html body.daily main aside section article .content figure figcaption a { color: #231f20; text-decoration: none; }
 html body.daily main aside section article .content figure figcaption a:hover { color: #982022; }
 html body.daily main aside section article .gallery { margin: 1.25em 0; position: relative; height: 100%; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; border: 1px solid; padding: 1.875em; width: calc(100% - 3.75em); padding: 1.25em; text-align: center; overflow: hidden; }
@@ -4056,7 +4056,7 @@ html body.daily #articles aside .share-buttons ul li .box .share img { width: 30
 html body.daily #articles aside .content { width: 100%; max-width: 100%; float: left; }
 html body.daily #articles aside .content a { color: #982022; text-decoration: none; }
 html body.daily #articles aside .content a:hover { color: #982022; }
-html body.daily #articles aside .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.daily #articles aside .content a.external:after { content: url(http://metamn.github.io/occrp/assets/images/link-icon.png); margin-left: 0.3125em; }
 html body.daily #articles aside .content figure figcaption a { color: #231f20; text-decoration: none; }
 html body.daily #articles aside .content figure figcaption a:hover { color: #982022; }
 html body.daily #articles aside .gallery { margin: 1.25em 0; position: relative; height: 100%; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; border: 1px solid; padding: 1.875em; width: calc(100% - 3.75em); padding: 1.25em; text-align: center; overflow: hidden; }
@@ -4123,7 +4123,7 @@ html body.daily #articles article.thumb { margin-bottom: 0.625em; }
   html body.daily #articles article.thumb .content { width: 100%; max-width: 100%; float: left; }
   html body.daily #articles article.thumb .content a { color: #982022; text-decoration: none; }
   html body.daily #articles article.thumb .content a:hover { color: #982022; }
-  html body.daily #articles article.thumb .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+  html body.daily #articles article.thumb .content a.external:after { content: url(http://metamn.github.io/occrp/assets/images/link-icon.png); margin-left: 0.3125em; }
   html body.daily #articles article.thumb .content figure figcaption a { color: #231f20; text-decoration: none; }
   html body.daily #articles article.thumb .content figure figcaption a:hover { color: #982022; }
   html body.daily #articles article.thumb .gallery { margin: 1.25em 0; position: relative; height: 100%; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; border: 1px solid; padding: 1.875em; width: calc(100% - 3.75em); padding: 1.25em; text-align: center; overflow: hidden; }
@@ -4232,7 +4232,7 @@ html body.daily #articles article.thumb { margin-bottom: 0.625em; }
   html body.daily #articles article.thumb .content { width: 100%; max-width: 100%; float: left; }
   html body.daily #articles article.thumb .content a { color: #982022; text-decoration: none; }
   html body.daily #articles article.thumb .content a:hover { color: #982022; }
-  html body.daily #articles article.thumb .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+  html body.daily #articles article.thumb .content a.external:after { content: url(http://metamn.github.io/occrp/assets/images/link-icon.png); margin-left: 0.3125em; }
   html body.daily #articles article.thumb .content figure figcaption a { color: #231f20; text-decoration: none; }
   html body.daily #articles article.thumb .content figure figcaption a:hover { color: #982022; }
   html body.daily #articles article.thumb .gallery { margin: 1.25em 0; position: relative; height: 100%; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; border: 1px solid; padding: 1.875em; width: calc(100% - 3.75em); padding: 1.25em; text-align: center; overflow: hidden; }
@@ -4356,7 +4356,7 @@ html body.daily #articles article.thumb .share-buttons ul li .box .share img { w
 html body.daily #articles article.thumb .content { width: 100%; max-width: 100%; float: left; }
 html body.daily #articles article.thumb .content a { color: #982022; text-decoration: none; }
 html body.daily #articles article.thumb .content a:hover { color: #982022; }
-html body.daily #articles article.thumb .content a.external:after { content: url(/assets/images/link-icon.png); margin-left: 0.3125em; }
+html body.daily #articles article.thumb .content a.external:after { content: url(http://metamn.github.io/occrp/assets/images/link-icon.png); margin-left: 0.3125em; }
 html body.daily #articles article.thumb .content figure figcaption a { color: #231f20; text-decoration: none; }
 html body.daily #articles article.thumb .content figure figcaption a:hover { color: #982022; }
 html body.daily #articles article.thumb .gallery { margin: 1.25em 0; position: relative; height: 100%; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; border: 1px solid; padding: 1.875em; width: calc(100% - 3.75em); padding: 1.25em; text-align: center; overflow: hidden; }

@@ -407,7 +407,7 @@
     a {
       &.external {
         &:after {
-          content: url(/assets/images/link-icon.png);
+          content: url(http://metamn.github.io/occrp/assets/images/link-icon.png);
           margin-left: $pad/4;
         }
       }
