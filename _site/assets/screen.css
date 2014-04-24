@@ -1611,10 +1611,14 @@ html body.frontpage .container main #tags-and-gallery nav { margin-right: 0; }
 @media only screen and (max-width: 29.999em) { html body.frontpage .container main #tags-and-gallery nav { margin-top: 0.625em; } }
 @media only screen and (min-width: 80em) { html body.category main { overflow: hidden; }
   html body.category main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
+@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.category main { overflow: hidden; }
+  html body.category main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
 html body.category main #articles { width: 100%; max-width: 100%; float: left; }
 @media only screen and (min-width: 80em) { html body.category main #articles { width: 65.5%; margin-right: 2.5%; float: left; } }
+@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.category main #articles { width: 65.5%; margin-right: 2.5%; float: left; } }
 html body.category main aside { width: 100%; max-width: 100%; float: left; margin-top: 1.25em; }
 @media only screen and (min-width: 80em) { html body.category main aside { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; margin-top: 0; } }
+@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.category main aside { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; margin-top: 0; } }
 html body.category main aside section { margin-bottom: 0.625em; }
 html body.category main aside section h3 { display: block; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; display: block; }
 html body.category main aside section h3 a { color: #982022; text-decoration: none; }
@@ -1733,6 +1737,7 @@ html body.category main aside section article h1 { font-weight: normal; }
 
 @media only screen and (max-width: 29.999em) { html body.category main aside section article { width: 100%; max-width: 100%; float: left; } }
 @media only screen and (min-width: 80em) { html body.category main aside section article { width: 100%; max-width: 100%; float: left; } }
+@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.category main aside section article { width: 100%; max-width: 100%; float: left; } }
 html body.category main aside #spacer > h3 { display: none; }
 html body.category #articles { /* The first article
 */ /* The rest of the articles
@@ -2037,10 +2042,14 @@ html body.category #articles article.thumb { margin-bottom: 0.625em; }
 @media only screen and (max-width: 29.999em) { html body.category #articles article.thumb { width: 100%; max-width: 100%; float: left; } }
 @media only screen and (min-width: 80em) { html body.tag main { overflow: hidden; }
   html body.tag main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
+@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.tag main { overflow: hidden; }
+  html body.tag main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
 html body.tag main #articles { width: 100%; max-width: 100%; float: left; }
 @media only screen and (min-width: 80em) { html body.tag main #articles { width: 65.5%; margin-right: 2.5%; float: left; } }
+@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.tag main #articles { width: 65.5%; margin-right: 2.5%; float: left; } }
 html body.tag main aside { width: 100%; max-width: 100%; float: left; margin-top: 1.25em; }
 @media only screen and (min-width: 80em) { html body.tag main aside { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; margin-top: 0; } }
+@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.tag main aside { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; margin-top: 0; } }
 html body.tag main aside section { margin-bottom: 0.625em; }
 html body.tag main aside section h3 { display: block; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; display: block; }
 html body.tag main aside section h3 a { color: #982022; text-decoration: none; }
@@ -2159,6 +2168,7 @@ html body.tag main aside section article h1 { font-weight: normal; }
 
 @media only screen and (max-width: 29.999em) { html body.tag main aside section article { width: 100%; max-width: 100%; float: left; } }
 @media only screen and (min-width: 80em) { html body.tag main aside section article { width: 100%; max-width: 100%; float: left; } }
+@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.tag main aside section article { width: 100%; max-width: 100%; float: left; } }
 html body.tag main aside #spacer > h3 { display: none; }
 html body.tag #articles { /* The first article
 */ /* The rest of the articles
@@ -2681,10 +2691,14 @@ html body.resources #tools h3 a, html body.resources #documents h3 a { color: #9
 html body.resources #tools h3 a:hover, html body.resources #documents h3 a:hover { color: #231f20; }
 @media only screen and (min-width: 80em) { html body.blog main { overflow: hidden; }
   html body.blog main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
+@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.blog main { overflow: hidden; }
+  html body.blog main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
 html body.blog main #articles { width: 100%; max-width: 100%; float: left; }
 @media only screen and (min-width: 80em) { html body.blog main #articles { width: 65.5%; margin-right: 2.5%; float: left; } }
+@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.blog main #articles { width: 65.5%; margin-right: 2.5%; float: left; } }
 html body.blog main aside { width: 100%; max-width: 100%; float: left; margin-top: 1.25em; }
 @media only screen and (min-width: 80em) { html body.blog main aside { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; margin-top: 0; } }
+@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.blog main aside { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; margin-top: 0; } }
 html body.blog main aside section { margin-bottom: 0.625em; }
 html body.blog main aside section h3 { display: block; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; display: block; }
 html body.blog main aside section h3 a { color: #982022; text-decoration: none; }
@@ -2803,6 +2817,7 @@ html body.blog main aside section article h1 { font-weight: normal; }
 
 @media only screen and (max-width: 29.999em) { html body.blog main aside section article { width: 100%; max-width: 100%; float: left; } }
 @media only screen and (min-width: 80em) { html body.blog main aside section article { width: 100%; max-width: 100%; float: left; } }
+@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.blog main aside section article { width: 100%; max-width: 100%; float: left; } }
 html body.blog main aside #spacer > h3 { display: none; }
 html body.blog #articles .title { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; display: block; }
 html body.blog #articles .title a { color: #982022; text-decoration: none; }
@@ -2954,13 +2969,16 @@ html body.blog #articles article.thumb .excerpt { padding-bottom: 1.25em; border
   html body.blog #articles article.thumb h1 { font-size: medium; } }
 @media only screen and (max-width: 29.999em) and (max-width: 47.999em) { html body.blog #articles article.thumb h1 { font-size: small; } }
 
-@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.blog #articles article.thumb { width: 75%; } }
 @media only screen and (min-width: 80em) { html body.author main { overflow: hidden; }
+  html body.author main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
+@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.author main { overflow: hidden; }
   html body.author main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
 html body.author main #articles { width: 100%; max-width: 100%; float: left; }
 @media only screen and (min-width: 80em) { html body.author main #articles { width: 65.5%; margin-right: 2.5%; float: left; } }
+@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.author main #articles { width: 65.5%; margin-right: 2.5%; float: left; } }
 html body.author main aside { width: 100%; max-width: 100%; float: left; margin-top: 1.25em; }
 @media only screen and (min-width: 80em) { html body.author main aside { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; margin-top: 0; } }
+@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.author main aside { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; margin-top: 0; } }
 html body.author main aside section { margin-bottom: 0.625em; }
 html body.author main aside section h3 { display: block; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; display: block; }
 html body.author main aside section h3 a { color: #982022; text-decoration: none; }
@@ -3079,6 +3097,7 @@ html body.author main aside section article h1 { font-weight: normal; }
 
 @media only screen and (max-width: 29.999em) { html body.author main aside section article { width: 100%; max-width: 100%; float: left; } }
 @media only screen and (min-width: 80em) { html body.author main aside section article { width: 100%; max-width: 100%; float: left; } }
+@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.author main aside section article { width: 100%; max-width: 100%; float: left; } }
 html body.author main aside #spacer > h3 { display: none; }
 html body.author #articles { /* The first article
 */ /* The rest of the articles
@@ -3383,10 +3402,14 @@ html body.author #articles article.thumb { margin-bottom: 0.625em; }
 @media only screen and (max-width: 29.999em) { html body.author #articles article.thumb { width: 100%; max-width: 100%; float: left; } }
 @media only screen and (min-width: 80em) { html body.article main, html body.about main, html body.post main { overflow: hidden; }
   html body.article main aside #spacer, html body.about main aside #spacer, html body.post main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
+@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.article main, html body.about main, html body.post main { overflow: hidden; }
+  html body.article main aside #spacer, html body.about main aside #spacer, html body.post main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
 html body.article main #articles, html body.about main #articles, html body.post main #articles { width: 100%; max-width: 100%; float: left; }
 @media only screen and (min-width: 80em) { html body.article main #articles, html body.about main #articles, html body.post main #articles { width: 65.5%; margin-right: 2.5%; float: left; } }
+@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.article main #articles, html body.about main #articles, html body.post main #articles { width: 65.5%; margin-right: 2.5%; float: left; } }
 html body.article main aside, html body.about main aside, html body.post main aside { width: 100%; max-width: 100%; float: left; margin-top: 1.25em; }
 @media only screen and (min-width: 80em) { html body.article main aside, html body.about main aside, html body.post main aside { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; margin-top: 0; } }
+@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.article main aside, html body.about main aside, html body.post main aside { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; margin-top: 0; } }
 html body.article main aside section, html body.about main aside section, html body.post main aside section { margin-bottom: 0.625em; }
 html body.article main aside section h3, html body.about main aside section h3, html body.post main aside section h3 { display: block; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; display: block; }
 html body.article main aside section h3 a, html body.about main aside section h3 a, html body.post main aside section h3 a { color: #982022; text-decoration: none; }
@@ -3505,9 +3528,11 @@ html body.article main aside section article h1, html body.about main aside sect
 
 @media only screen and (max-width: 29.999em) { html body.article main aside section article, html body.about main aside section article, html body.post main aside section article { width: 100%; max-width: 100%; float: left; } }
 @media only screen and (min-width: 80em) { html body.article main aside section article, html body.about main aside section article, html body.post main aside section article { width: 100%; max-width: 100%; float: left; } }
+@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.article main aside section article, html body.about main aside section article, html body.post main aside section article { width: 100%; max-width: 100%; float: left; } }
 html body.article main aside #spacer > h3, html body.about main aside #spacer > h3, html body.post main aside #spacer > h3 { display: none; }
 html body.article #article, html body.about #article, html body.post #article { width: 100%; max-width: 100%; float: left; }
 @media only screen and (min-width: 80em) { html body.article #article, html body.about #article, html body.post #article { width: 65.5%; margin-right: 2.5%; float: left; } }
+@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.article #article, html body.about #article, html body.post #article { width: 65.5%; margin-right: 2.5%; float: left; } }
 html body.article #article article.single, html body.about #article article.single, html body.post #article article.single { max-width: 43.75em; line-height: 1.75; /* Padding of individual elements
 */ /* Padding of consecutive elements
 */ }
@@ -3701,6 +3726,7 @@ html body.about main aside { margin-top: 2.5em; }
 html body.about main aside section > h3 { display: none; }
 @media only screen and (max-width: 79.999em) { html body.about main aside section > h3 { display: block; }
   html body.about main aside section h3 { margin-bottom: 0.625em; } }
+@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.about main aside section > h3 { display: none; } }
 html body.about main aside section nav { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; }
 html body.about main aside section nav > h3 { display: none; }
 html body.about main aside section nav ul li a { padding: 0.625em 0.3125em; display: inline-block; }
@@ -3712,6 +3738,7 @@ html body.about main aside #spacer { top: 0; }
 html body.about main .subpages-menu { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; position: absolute; right: 0.625em; margin-top: 0.625em; cursor: pointer; }
 html body.about main .subpages-menu .arrow:after { content: "\2794"; margin-left: 0.3125em; display: inline-block; -moz-transform: rotate(90deg); -ms-transform: rotate(90deg); -o-transform: rotate(90deg); -webkit-transform: rotate(90deg); transform: rotate(90deg); }
 @media only screen and (min-width: 80em) { html body.about main .subpages-menu { display: none; } }
+@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.about main .subpages-menu { display: none; } }
 html body.board-directors main #article .single .content h4 { border-bottom: 1px solid #f1f1f1; font-weight: bold; padding-bottom: 0; }
 html body.board-directors main #article .single .content dl + p { margin-top: 2.5em !important; }
 html body.board-directors main #article .single .content dd.portrait { width: 100%; max-width: 100%; float: left; margin-bottom: 1.25em; }
@@ -3940,10 +3967,14 @@ html body.galleries #articles article.thumb { height: auto; border-top: 0; paddi
   html body.galleries #articles article.thumb:nth-of-type(20) { margin-right: 2.5%; } }
 @media only screen and (min-width: 80em) { html body.daily main { overflow: hidden; }
   html body.daily main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
+@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.daily main { overflow: hidden; }
+  html body.daily main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
 html body.daily main #articles { width: 100%; max-width: 100%; float: left; }
 @media only screen and (min-width: 80em) { html body.daily main #articles { width: 65.5%; margin-right: 2.5%; float: left; } }
+@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.daily main #articles { width: 65.5%; margin-right: 2.5%; float: left; } }
 html body.daily main aside { width: 100%; max-width: 100%; float: left; margin-top: 1.25em; }
 @media only screen and (min-width: 80em) { html body.daily main aside { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; margin-top: 0; } }
+@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.daily main aside { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; margin-top: 0; } }
 html body.daily main aside section { margin-bottom: 0.625em; }
 html body.daily main aside section h3 { display: block; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; display: block; }
 html body.daily main aside section h3 a { color: #982022; text-decoration: none; }
@@ -4062,6 +4093,7 @@ html body.daily main aside section article h1 { font-weight: normal; }
 
 @media only screen and (max-width: 29.999em) { html body.daily main aside section article { width: 100%; max-width: 100%; float: left; } }
 @media only screen and (min-width: 80em) { html body.daily main aside section article { width: 100%; max-width: 100%; float: left; } }
+@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.daily main aside section article { width: 100%; max-width: 100%; float: left; } }
 html body.daily main aside #spacer > h3 { display: none; }
 html body.daily #articles { /* The first article
 */ /* The rest of the articles

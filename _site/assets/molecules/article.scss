@@ -7,6 +7,10 @@
     @include col-nm(2, 3);
   }
   
+  @include tablet-landscape {
+    @include col-nm(2, 3);
+  }
+  
   article.single {
     @include article-parts(category, date, title, figure, figcaption, null, body);
     @include body-text;

@@ -23,6 +23,10 @@
           }
         }
         
+        @include tablet-landscape {
+          @include hide-title;
+        }
+        
         nav {
           @include hide-title;
           @include menu(border-thin);
@@ -51,6 +55,10 @@
       }
       
       @include small-screen-and-up {
+        display: none;
+      }
+      
+      @include tablet-landscape {
         display: none;
       }
     }
