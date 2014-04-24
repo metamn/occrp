@@ -210,7 +210,7 @@
     @include mobile-menubar(tablet);
     position: absolute;
     right: 0;
-    bottom: .5em; /* to align to logo */
+    bottom: $pad/4;
   }
   
   @if ($type == normal) {
