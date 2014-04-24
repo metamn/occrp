@@ -450,7 +450,8 @@ html body .container #header .close-icon:after { content: "\2715"; padding: 0.15
   html body .container #header .main:nth-of-type(3), html body .container #header .logo:nth-of-type(3), html body .container #header .secondary:nth-of-type(3) { margin-right: 0; }
   html body .container #header .secondary { margin-right: 0 !important; }
   html body .container #header .secondary ul { float: right; }
-  html body .container #header .main, html body .container #header .secondary { margin-top: 2.5em; border-bottom: 1px solid #f1f1f1; }
+  html body .container #header .main, html body .container #header .secondary { margin-top: 2.5em; border-bottom: 1px solid #f1f1f1; /* If the menu goes two lines in strange responsive cases then cut the second line
+*/ height: 2.5em; overflow: hidden; }
   html body .container #header .mobile-menubar, html body .container #header .close-icon { display: none; } }
 html body .container #header.mobile-menu-active { margin-bottom: 0.625em; }
 html body .container #header.mobile-menu-active .logo { position: absolute; width: 95%; margin: 0 2.5%; }
@@ -575,7 +576,8 @@ html body .container #header.mobile-menu-active .close-icon:after { content: "\2
   html body .container #header.mobile-menu-active .main:nth-of-type(3), html body .container #header.mobile-menu-active .logo:nth-of-type(3), html body .container #header.mobile-menu-active .secondary:nth-of-type(3) { margin-right: 0; }
   html body .container #header.mobile-menu-active .secondary { margin-right: 0 !important; }
   html body .container #header.mobile-menu-active .secondary ul { float: right; }
-  html body .container #header.mobile-menu-active .main, html body .container #header.mobile-menu-active .secondary { margin-top: 2.5em; border-bottom: 1px solid #f1f1f1; }
+  html body .container #header.mobile-menu-active .main, html body .container #header.mobile-menu-active .secondary { margin-top: 2.5em; border-bottom: 1px solid #f1f1f1; /* If the menu goes two lines in strange responsive cases then cut the second line
+*/ height: 2.5em; overflow: hidden; }
   html body .container #header.mobile-menu-active .mobile-menubar, html body .container #header.mobile-menu-active .close-icon { display: none; } }
 html body .container #footer { margin: 3.75em 0 0; padding: 1.25em 0; border-top: 0.3125em solid; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; }
 @media only screen and (max-width: 79.999em) { html body .container #footer nav { width: 48.75%; margin-right: 2.5%; float: left; }
@@ -727,13 +729,13 @@ html body.sticky .container #header .close-icon:after { content: "\2715"; paddin
   html body.sticky .container #header .main:nth-of-type(3), html body.sticky .container #header .logo:nth-of-type(3), html body.sticky .container #header .secondary:nth-of-type(3) { margin-right: 0; }
   html body.sticky .container #header .secondary { margin-right: 0 !important; }
   html body.sticky .container #header .secondary ul { float: right; }
-  html body.sticky .container #header .main, html body.sticky .container #header .secondary { margin-top: 2.5em; border-bottom: 1px solid #f1f1f1; }
+  html body.sticky .container #header .main, html body.sticky .container #header .secondary { margin-top: 2.5em; border-bottom: 1px solid #f1f1f1; /* If the menu goes two lines in strange responsive cases then cut the second line
+*/ height: 2.5em; overflow: hidden; }
   html body.sticky .container #header .mobile-menubar, html body.sticky .container #header .close-icon { display: none; } }
 @media only screen and (min-width: 80em) and (min-width: 90.001em) { html body.sticky .container #header { width: 75%; margin: 0 12.5%; } }
 @media only screen and (min-width: 80em) { html body.sticky .container #header .tags { display: none; }
   html body.sticky .container #header nav.main, html body.sticky .container #header nav.secondary { margin-top: 0; border-bottom: 0; } }
 html body.sticky .container main, html body.sticky .container #footer { position: relative; top: 3.75em; }
-html body.frontpage .container main #intro #slider { margin-bottom: 0.625em; }
 html body.frontpage .container main #intro #slider article { width: 100%; max-width: 100%; float: left; background: #f1f1f1; color: #231f20; }
 html body.frontpage .container main #intro #slider article h1 { display: block; }
 html body.frontpage .container main #intro #slider article figure { display: block; }
@@ -818,6 +820,7 @@ html body.frontpage .container main #intro #slider .desktop { display: block; }
 @media only screen and (min-width: 30em) { html body.frontpage .container main #intro #slider article figure, html body.frontpage .container main #intro #slider article h1, html body.frontpage .container main #intro #slider article .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.frontpage .container main #intro #slider article h1, html body.frontpage .container main #intro #slider article .excerpt { margin-right: 0; padding: 0.3125em; width: calc(48.75% - 0.625em); }
   html body.frontpage .container main #intro #slider nav { margin-left: 51.25%; width: auto; margin-top: 0; position: relative; top: -2.8125em; height: 0; } }
+@media only screen and (max-width: 29.999em) { html body.frontpage .container main #intro #slider { margin-bottom: 0.625em; } }
 html body.frontpage .container main #intro aside section { margin-bottom: 0.625em; }
 @media only screen and (max-width: 29.999em) { html body.frontpage .container main #intro aside section { width: 100%; margin-right: 0; float: left; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.frontpage .container main #intro aside section { width: 48.75%; margin-right: 2.5%; float: left; }

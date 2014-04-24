@@ -155,6 +155,11 @@
   .main, .secondary {
     margin-top: $pad*2;
     @include border-thin;
+    
+    /* If the menu goes two lines in strange responsive cases then cut the second line
+    */
+    height: $pad*2;
+    overflow: hidden;
   }
   
   .mobile-menubar, .close-icon {
