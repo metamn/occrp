@@ -211,6 +211,16 @@
     li {
       margin-bottom: $margin;
       
+      &#contact {
+        @include below-small-screen {
+          a {
+            &:before {
+              content: '\2709';
+            }
+          }
+        }
+      }
+      
       &#made-by {
         ul {
           @include list-inline;
