@@ -426,7 +426,9 @@
   @include article-style(slider);
   @include pagination;
   @include responsive-slider;
-  margin-bottom: $margin;
+  @include mobile {
+    margin-bottom: $margin;
+  }
 }
 
 
