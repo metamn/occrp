@@ -23,6 +23,10 @@
         @include block;
         @include article-style(thumb-left);
       }
+      
+      @include tablet-landscape {
+        @include grid(3, 20);
+      }
     }
   
   } @elseif ($type == category) {
@@ -62,6 +66,10 @@
       @include mobile {
         @include block;
         @include article-style(thumb-left);
+      }
+      
+      @include tablet-landscape {
+        width: 75%;
       }
     }
   
@@ -122,6 +130,7 @@
         margin-right: 0;
         margin-top: 0
       }
+      
       @include sidebar;
     }
   }

@@ -10,6 +10,8 @@
 @mixin about-us {
   main {
     aside {
+      margin-top: $pad*2;
+      
       section {
         @include hide-title;
         
@@ -291,6 +293,10 @@
   section {
     margin-top: $margin;
     @include news(news-mobile);
+    
+    @include tablet-landscape {
+      @include grid(3, 10);
+    }
   }
 }
 
@@ -327,6 +333,10 @@
   article {
     @include responsive-grid(5);
     @include article-style(projects);
+    
+    @include tablet-landscape {
+      @include grid(3, 10);
+    }
   }
   
   @include mobile {
@@ -360,6 +370,10 @@
   article {
     @include responsive-grid(4);
     @include article-style(products);
+    
+    @include tablet-landscape {
+      @include grid(3, 10);
+    }
   }
   
   @include mobile {
@@ -378,6 +392,10 @@
   article {
     @include responsive-grid(3);
     @include article-style(investigations);
+    
+    @include tablet-landscape {
+      @include grid(3, 10);
+    }
   }
 }
 

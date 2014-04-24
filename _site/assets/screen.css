@@ -1005,6 +1005,16 @@ html body.frontpage .container main #investigations article .gallery span.close 
 @media only screen and (max-width: 29.999em) { html body.frontpage .container main #investigations article { margin-bottom: 0.625em; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.frontpage .container main #investigations article { height: 30em; } }
 @media only screen and (min-width: 80em) { html body.frontpage .container main #investigations article { height: 30em; } }
+@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.frontpage .container main #investigations article { width: 31.5%; margin-right: 2.5%; float: left; }
+  html body.frontpage .container main #investigations article:nth-of-type(2) { margin-right: 2.5%; }
+  html body.frontpage .container main #investigations article:nth-of-type(3) { margin-right: 0; }
+  html body.frontpage .container main #investigations article:nth-of-type(4) { margin-right: 2.5%; }
+  html body.frontpage .container main #investigations article:nth-of-type(5) { margin-right: 2.5%; }
+  html body.frontpage .container main #investigations article:nth-of-type(6) { margin-right: 0; }
+  html body.frontpage .container main #investigations article:nth-of-type(7) { margin-right: 2.5%; }
+  html body.frontpage .container main #investigations article:nth-of-type(8) { margin-right: 2.5%; }
+  html body.frontpage .container main #investigations article:nth-of-type(9) { margin-right: 0; }
+  html body.frontpage .container main #investigations article:nth-of-type(10) { margin-right: 2.5%; } }
 html body.frontpage .container main #products h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; display: block; }
 html body.frontpage .container main #products h3 a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #products h3 a:hover { color: #231f20; }
@@ -1092,6 +1102,16 @@ html body.frontpage .container main #products article .gallery span { text-trans
 html body.frontpage .container main #products article .gallery span a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #products article .gallery span a:hover { color: #231f20; }
 html body.frontpage .container main #products article .gallery span.close { position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); padding: 0.15625em; position: absolute; bottom: 0.625em; display: none; }
+@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.frontpage .container main #products article { width: 31.5%; margin-right: 2.5%; float: left; }
+  html body.frontpage .container main #products article:nth-of-type(2) { margin-right: 2.5%; }
+  html body.frontpage .container main #products article:nth-of-type(3) { margin-right: 0; }
+  html body.frontpage .container main #products article:nth-of-type(4) { margin-right: 2.5%; }
+  html body.frontpage .container main #products article:nth-of-type(5) { margin-right: 2.5%; }
+  html body.frontpage .container main #products article:nth-of-type(6) { margin-right: 0; }
+  html body.frontpage .container main #products article:nth-of-type(7) { margin-right: 2.5%; }
+  html body.frontpage .container main #products article:nth-of-type(8) { margin-right: 2.5%; }
+  html body.frontpage .container main #products article:nth-of-type(9) { margin-right: 0; }
+  html body.frontpage .container main #products article:nth-of-type(10) { margin-right: 2.5%; } }
 @media only screen and (max-width: 29.999em) { html body.frontpage .container main #products { position: relative; height: 100%; }
   html body.frontpage .container main #products .before, html body.frontpage .container main #products .after { font-size: 150%; position: absolute; top: 40%; z-index: 2; cursor: pointer; background: #231f20; color: white; padding: 0.3125em; }
   html body.frontpage .container main #products .before a, html body.frontpage .container main #products .after a { color: white; text-decoration: none; }
@@ -1190,6 +1210,16 @@ html body.frontpage .container main #projects article .gallery span a { color: #
 html body.frontpage .container main #projects article .gallery span a:hover { color: #231f20; }
 html body.frontpage .container main #projects article .gallery span.close { position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); padding: 0.15625em; position: absolute; bottom: 0.625em; display: none; }
 html body.frontpage .container main #projects article h1 { font-size: medium; }
+@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.frontpage .container main #projects article { width: 31.5%; margin-right: 2.5%; float: left; }
+  html body.frontpage .container main #projects article:nth-of-type(2) { margin-right: 2.5%; }
+  html body.frontpage .container main #projects article:nth-of-type(3) { margin-right: 0; }
+  html body.frontpage .container main #projects article:nth-of-type(4) { margin-right: 2.5%; }
+  html body.frontpage .container main #projects article:nth-of-type(5) { margin-right: 2.5%; }
+  html body.frontpage .container main #projects article:nth-of-type(6) { margin-right: 0; }
+  html body.frontpage .container main #projects article:nth-of-type(7) { margin-right: 2.5%; }
+  html body.frontpage .container main #projects article:nth-of-type(8) { margin-right: 2.5%; }
+  html body.frontpage .container main #projects article:nth-of-type(9) { margin-right: 0; }
+  html body.frontpage .container main #projects article:nth-of-type(10) { margin-right: 2.5%; } }
 @media only screen and (max-width: 29.999em) { html body.frontpage .container main #projects { position: relative; height: 100%; }
   html body.frontpage .container main #projects .before, html body.frontpage .container main #projects .after { font-size: 150%; position: absolute; top: 40%; z-index: 2; cursor: pointer; background: #231f20; color: white; padding: 0.3125em; }
   html body.frontpage .container main #projects .before a, html body.frontpage .container main #projects .after a { color: white; text-decoration: none; }
@@ -1392,6 +1422,16 @@ html body.frontpage .container main #most-read section article .gallery span a {
 html body.frontpage .container main #most-read section article .gallery span a:hover { color: #231f20; }
 html body.frontpage .container main #most-read section article .gallery span.close { position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); padding: 0.15625em; position: absolute; bottom: 0.625em; display: none; }
 html body.frontpage .container main #most-read section article h1 { font-size: medium; font-weight: normal; padding: 0.625em 0; }
+@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.frontpage .container main #most-read section { width: 31.5%; margin-right: 2.5%; float: left; }
+  html body.frontpage .container main #most-read section:nth-of-type(2) { margin-right: 2.5%; }
+  html body.frontpage .container main #most-read section:nth-of-type(3) { margin-right: 0; }
+  html body.frontpage .container main #most-read section:nth-of-type(4) { margin-right: 2.5%; }
+  html body.frontpage .container main #most-read section:nth-of-type(5) { margin-right: 2.5%; }
+  html body.frontpage .container main #most-read section:nth-of-type(6) { margin-right: 0; }
+  html body.frontpage .container main #most-read section:nth-of-type(7) { margin-right: 2.5%; }
+  html body.frontpage .container main #most-read section:nth-of-type(8) { margin-right: 2.5%; }
+  html body.frontpage .container main #most-read section:nth-of-type(9) { margin-right: 0; }
+  html body.frontpage .container main #most-read section:nth-of-type(10) { margin-right: 2.5%; } }
 html body.frontpage .container main #videos { margin-top: 0.625em; }
 html body.frontpage .container main #videos h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; display: block; }
 html body.frontpage .container main #videos h3 a { color: #982022; text-decoration: none; }
@@ -1644,8 +1684,8 @@ html body.category main aside section article .gallery span a:hover { color: #23
 html body.category main aside section article .gallery span.close { position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); padding: 0.15625em; position: absolute; bottom: 0.625em; display: none; }
 html body.category main aside section article figure, html body.category main aside section article h1, html body.category main aside section article .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
 html body.category main aside section article h1, html body.category main aside section article .excerpt { margin-right: 0; padding: 0.3125em; width: calc(48.75% - 0.625em); }
-html body.category main aside section article h1 { font-size: small; }
-@media only screen and (min-width: 80em) { html body.category main aside section article h1 { font-size: medium; } }
+html body.category main aside section article h1 { font-size: medium; }
+@media only screen and (max-width: 47.999em) { html body.category main aside section article h1 { font-size: small; } }
 html body.category main aside section article a { color: #231f20; text-decoration: none; }
 html body.category main aside section article a:hover { color: #982022; }
 html body.category main aside section article h1 { font-weight: normal; }
@@ -1844,8 +1884,8 @@ html body.category #articles article.thumb { margin-bottom: 0.625em; }
   html body.category #articles article.thumb .gallery span.close { position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); padding: 0.15625em; position: absolute; bottom: 0.625em; display: none; }
   html body.category #articles article.thumb figure, html body.category #articles article.thumb h1, html body.category #articles article.thumb .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.category #articles article.thumb h1, html body.category #articles article.thumb .excerpt { margin-right: 0; padding: 0.3125em; width: calc(48.75% - 0.625em); }
-  html body.category #articles article.thumb h1 { font-size: small; } }
-@media only screen and (max-width: 79.999em) and (min-width: 80em) { html body.category #articles article.thumb h1 { font-size: medium; } }
+  html body.category #articles article.thumb h1 { font-size: medium; } }
+@media only screen and (max-width: 79.999em) and (max-width: 47.999em) { html body.category #articles article.thumb h1 { font-size: small; } }
 @media only screen and (max-width: 79.999em) and (max-width: 29.999em) { html body.category #articles article.thumb { width: 100%; margin-right: 0; float: left; } }
 @media only screen and (max-width: 79.999em) and (min-width: 30em) and (max-width: 79.999em) { html body.category #articles article.thumb { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.category #articles article.thumb:nth-of-type(2) { margin-right: 0; }
@@ -2070,8 +2110,8 @@ html body.tag main aside section article .gallery span a:hover { color: #231f20;
 html body.tag main aside section article .gallery span.close { position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); padding: 0.15625em; position: absolute; bottom: 0.625em; display: none; }
 html body.tag main aside section article figure, html body.tag main aside section article h1, html body.tag main aside section article .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
 html body.tag main aside section article h1, html body.tag main aside section article .excerpt { margin-right: 0; padding: 0.3125em; width: calc(48.75% - 0.625em); }
-html body.tag main aside section article h1 { font-size: small; }
-@media only screen and (min-width: 80em) { html body.tag main aside section article h1 { font-size: medium; } }
+html body.tag main aside section article h1 { font-size: medium; }
+@media only screen and (max-width: 47.999em) { html body.tag main aside section article h1 { font-size: small; } }
 html body.tag main aside section article a { color: #231f20; text-decoration: none; }
 html body.tag main aside section article a:hover { color: #982022; }
 html body.tag main aside section article h1 { font-weight: normal; }
@@ -2270,8 +2310,8 @@ html body.tag #articles article.thumb { margin-bottom: 0.625em; }
   html body.tag #articles article.thumb .gallery span.close { position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); padding: 0.15625em; position: absolute; bottom: 0.625em; display: none; }
   html body.tag #articles article.thumb figure, html body.tag #articles article.thumb h1, html body.tag #articles article.thumb .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.tag #articles article.thumb h1, html body.tag #articles article.thumb .excerpt { margin-right: 0; padding: 0.3125em; width: calc(48.75% - 0.625em); }
-  html body.tag #articles article.thumb h1 { font-size: small; } }
-@media only screen and (max-width: 79.999em) and (min-width: 80em) { html body.tag #articles article.thumb h1 { font-size: medium; } }
+  html body.tag #articles article.thumb h1 { font-size: medium; } }
+@media only screen and (max-width: 79.999em) and (max-width: 47.999em) { html body.tag #articles article.thumb h1 { font-size: small; } }
 @media only screen and (max-width: 79.999em) and (max-width: 29.999em) { html body.tag #articles article.thumb { width: 100%; margin-right: 0; float: left; } }
 @media only screen and (max-width: 79.999em) and (min-width: 30em) and (max-width: 79.999em) { html body.tag #articles article.thumb { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.tag #articles article.thumb:nth-of-type(2) { margin-right: 0; }
@@ -2613,9 +2653,29 @@ html body.archive #articles article.thumb h1 { font-size: medium; }
   html body.archive #articles article.thumb .gallery span.close { position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); padding: 0.15625em; position: absolute; bottom: 0.625em; display: none; }
   html body.archive #articles article.thumb figure, html body.archive #articles article.thumb h1, html body.archive #articles article.thumb .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.archive #articles article.thumb h1, html body.archive #articles article.thumb .excerpt { margin-right: 0; padding: 0.3125em; width: calc(48.75% - 0.625em); }
-  html body.archive #articles article.thumb h1 { font-size: small; } }
-@media only screen and (max-width: 29.999em) and (min-width: 80em) { html body.archive #articles article.thumb h1 { font-size: medium; } }
+  html body.archive #articles article.thumb h1 { font-size: medium; } }
+@media only screen and (max-width: 29.999em) and (max-width: 47.999em) { html body.archive #articles article.thumb h1 { font-size: small; } }
 
+@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.archive #articles article.thumb { width: 31.5%; margin-right: 2.5%; float: left; }
+  html body.archive #articles article.thumb:nth-of-type(2) { margin-right: 2.5%; }
+  html body.archive #articles article.thumb:nth-of-type(3) { margin-right: 0; }
+  html body.archive #articles article.thumb:nth-of-type(4) { margin-right: 2.5%; }
+  html body.archive #articles article.thumb:nth-of-type(5) { margin-right: 2.5%; }
+  html body.archive #articles article.thumb:nth-of-type(6) { margin-right: 0; }
+  html body.archive #articles article.thumb:nth-of-type(7) { margin-right: 2.5%; }
+  html body.archive #articles article.thumb:nth-of-type(8) { margin-right: 2.5%; }
+  html body.archive #articles article.thumb:nth-of-type(9) { margin-right: 0; }
+  html body.archive #articles article.thumb:nth-of-type(10) { margin-right: 2.5%; }
+  html body.archive #articles article.thumb:nth-of-type(11) { margin-right: 2.5%; }
+  html body.archive #articles article.thumb:nth-of-type(12) { margin-right: 0; }
+  html body.archive #articles article.thumb:nth-of-type(13) { margin-right: 2.5%; }
+  html body.archive #articles article.thumb:nth-of-type(14) { margin-right: 2.5%; }
+  html body.archive #articles article.thumb:nth-of-type(15) { margin-right: 0; }
+  html body.archive #articles article.thumb:nth-of-type(16) { margin-right: 2.5%; }
+  html body.archive #articles article.thumb:nth-of-type(17) { margin-right: 2.5%; }
+  html body.archive #articles article.thumb:nth-of-type(18) { margin-right: 0; }
+  html body.archive #articles article.thumb:nth-of-type(19) { margin-right: 2.5%; }
+  html body.archive #articles article.thumb:nth-of-type(20) { margin-right: 2.5%; } }
 html body.resources #tools h3, html body.resources #documents h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; display: block; font-weight: normal; margin-top: 0.625em; display: block; }
 html body.resources #tools h3 a, html body.resources #documents h3 a { color: #982022; text-decoration: none; }
 html body.resources #tools h3 a:hover, html body.resources #documents h3 a:hover { color: #231f20; }
@@ -2694,8 +2754,8 @@ html body.blog main aside section article .gallery span a:hover { color: #231f20
 html body.blog main aside section article .gallery span.close { position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); padding: 0.15625em; position: absolute; bottom: 0.625em; display: none; }
 html body.blog main aside section article figure, html body.blog main aside section article h1, html body.blog main aside section article .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
 html body.blog main aside section article h1, html body.blog main aside section article .excerpt { margin-right: 0; padding: 0.3125em; width: calc(48.75% - 0.625em); }
-html body.blog main aside section article h1 { font-size: small; }
-@media only screen and (min-width: 80em) { html body.blog main aside section article h1 { font-size: medium; } }
+html body.blog main aside section article h1 { font-size: medium; }
+@media only screen and (max-width: 47.999em) { html body.blog main aside section article h1 { font-size: small; } }
 html body.blog main aside section article a { color: #231f20; text-decoration: none; }
 html body.blog main aside section article a:hover { color: #982022; }
 html body.blog main aside section article h1 { font-weight: normal; }
@@ -2891,9 +2951,10 @@ html body.blog #articles article.thumb .excerpt { padding-bottom: 1.25em; border
   html body.blog #articles article.thumb .gallery span.close { position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); padding: 0.15625em; position: absolute; bottom: 0.625em; display: none; }
   html body.blog #articles article.thumb figure, html body.blog #articles article.thumb h1, html body.blog #articles article.thumb .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.blog #articles article.thumb h1, html body.blog #articles article.thumb .excerpt { margin-right: 0; padding: 0.3125em; width: calc(48.75% - 0.625em); }
-  html body.blog #articles article.thumb h1 { font-size: small; } }
-@media only screen and (max-width: 29.999em) and (min-width: 80em) { html body.blog #articles article.thumb h1 { font-size: medium; } }
+  html body.blog #articles article.thumb h1 { font-size: medium; } }
+@media only screen and (max-width: 29.999em) and (max-width: 47.999em) { html body.blog #articles article.thumb h1 { font-size: small; } }
 
+@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.blog #articles article.thumb { width: 75%; } }
 @media only screen and (min-width: 80em) { html body.author main { overflow: hidden; }
   html body.author main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
 html body.author main #articles { width: 100%; max-width: 100%; float: left; }
@@ -2969,8 +3030,8 @@ html body.author main aside section article .gallery span a:hover { color: #231f
 html body.author main aside section article .gallery span.close { position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); padding: 0.15625em; position: absolute; bottom: 0.625em; display: none; }
 html body.author main aside section article figure, html body.author main aside section article h1, html body.author main aside section article .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
 html body.author main aside section article h1, html body.author main aside section article .excerpt { margin-right: 0; padding: 0.3125em; width: calc(48.75% - 0.625em); }
-html body.author main aside section article h1 { font-size: small; }
-@media only screen and (min-width: 80em) { html body.author main aside section article h1 { font-size: medium; } }
+html body.author main aside section article h1 { font-size: medium; }
+@media only screen and (max-width: 47.999em) { html body.author main aside section article h1 { font-size: small; } }
 html body.author main aside section article a { color: #231f20; text-decoration: none; }
 html body.author main aside section article a:hover { color: #982022; }
 html body.author main aside section article h1 { font-weight: normal; }
@@ -3169,8 +3230,8 @@ html body.author #articles article.thumb { margin-bottom: 0.625em; }
   html body.author #articles article.thumb .gallery span.close { position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); padding: 0.15625em; position: absolute; bottom: 0.625em; display: none; }
   html body.author #articles article.thumb figure, html body.author #articles article.thumb h1, html body.author #articles article.thumb .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.author #articles article.thumb h1, html body.author #articles article.thumb .excerpt { margin-right: 0; padding: 0.3125em; width: calc(48.75% - 0.625em); }
-  html body.author #articles article.thumb h1 { font-size: small; } }
-@media only screen and (max-width: 79.999em) and (min-width: 80em) { html body.author #articles article.thumb h1 { font-size: medium; } }
+  html body.author #articles article.thumb h1 { font-size: medium; } }
+@media only screen and (max-width: 79.999em) and (max-width: 47.999em) { html body.author #articles article.thumb h1 { font-size: small; } }
 @media only screen and (max-width: 79.999em) and (max-width: 29.999em) { html body.author #articles article.thumb { width: 100%; margin-right: 0; float: left; } }
 @media only screen and (max-width: 79.999em) and (min-width: 30em) and (max-width: 79.999em) { html body.author #articles article.thumb { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.author #articles article.thumb:nth-of-type(2) { margin-right: 0; }
@@ -3395,8 +3456,8 @@ html body.article main aside section article .gallery span a:hover, html body.ab
 html body.article main aside section article .gallery span.close, html body.about main aside section article .gallery span.close, html body.post main aside section article .gallery span.close { position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); padding: 0.15625em; position: absolute; bottom: 0.625em; display: none; }
 html body.article main aside section article figure, html body.article main aside section article h1, html body.article main aside section article .excerpt, html body.about main aside section article figure, html body.about main aside section article h1, html body.about main aside section article .excerpt, html body.post main aside section article figure, html body.post main aside section article h1, html body.post main aside section article .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
 html body.article main aside section article h1, html body.article main aside section article .excerpt, html body.about main aside section article h1, html body.about main aside section article .excerpt, html body.post main aside section article h1, html body.post main aside section article .excerpt { margin-right: 0; padding: 0.3125em; width: calc(48.75% - 0.625em); }
-html body.article main aside section article h1, html body.about main aside section article h1, html body.post main aside section article h1 { font-size: small; }
-@media only screen and (min-width: 80em) { html body.article main aside section article h1, html body.about main aside section article h1, html body.post main aside section article h1 { font-size: medium; } }
+html body.article main aside section article h1, html body.about main aside section article h1, html body.post main aside section article h1 { font-size: medium; }
+@media only screen and (max-width: 47.999em) { html body.article main aside section article h1, html body.about main aside section article h1, html body.post main aside section article h1 { font-size: small; } }
 html body.article main aside section article a, html body.about main aside section article a, html body.post main aside section article a { color: #231f20; text-decoration: none; }
 html body.article main aside section article a:hover, html body.about main aside section article a:hover, html body.post main aside section article a:hover { color: #982022; }
 html body.article main aside section article h1, html body.about main aside section article h1, html body.post main aside section article h1 { font-weight: normal; }
@@ -3636,6 +3697,7 @@ html body.article #article article.single #comments ul li:before, html body.abou
 */ position: absolute; left: 0; font-weight: bold; }
 html body.article #article article.single #comments ul li a, html body.about #article article.single #comments ul li a, html body.post #article article.single #comments ul li a { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
 html body.article #article article.single #comments ul li date, html body.about #article article.single #comments ul li date, html body.post #article article.single #comments ul li date { font-size: small; color: #332d2f; font-style: normal; }
+html body.about main aside { margin-top: 2.5em; }
 html body.about main aside section > h3 { display: none; }
 @media only screen and (max-width: 79.999em) { html body.about main aside section > h3 { display: block; }
   html body.about main aside section h3 { margin-bottom: 0.625em; } }
@@ -3951,8 +4013,8 @@ html body.daily main aside section article .gallery span a:hover { color: #231f2
 html body.daily main aside section article .gallery span.close { position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); padding: 0.15625em; position: absolute; bottom: 0.625em; display: none; }
 html body.daily main aside section article figure, html body.daily main aside section article h1, html body.daily main aside section article .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
 html body.daily main aside section article h1, html body.daily main aside section article .excerpt { margin-right: 0; padding: 0.3125em; width: calc(48.75% - 0.625em); }
-html body.daily main aside section article h1 { font-size: small; }
-@media only screen and (min-width: 80em) { html body.daily main aside section article h1 { font-size: medium; } }
+html body.daily main aside section article h1 { font-size: medium; }
+@media only screen and (max-width: 47.999em) { html body.daily main aside section article h1 { font-size: small; } }
 html body.daily main aside section article a { color: #231f20; text-decoration: none; }
 html body.daily main aside section article a:hover { color: #982022; }
 html body.daily main aside section article h1 { font-weight: normal; }
@@ -4151,8 +4213,8 @@ html body.daily #articles article.thumb { margin-bottom: 0.625em; }
   html body.daily #articles article.thumb .gallery span.close { position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); padding: 0.15625em; position: absolute; bottom: 0.625em; display: none; }
   html body.daily #articles article.thumb figure, html body.daily #articles article.thumb h1, html body.daily #articles article.thumb .excerpt { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.daily #articles article.thumb h1, html body.daily #articles article.thumb .excerpt { margin-right: 0; padding: 0.3125em; width: calc(48.75% - 0.625em); }
-  html body.daily #articles article.thumb h1 { font-size: small; } }
-@media only screen and (max-width: 79.999em) and (min-width: 80em) { html body.daily #articles article.thumb h1 { font-size: medium; } }
+  html body.daily #articles article.thumb h1 { font-size: medium; } }
+@media only screen and (max-width: 79.999em) and (max-width: 47.999em) { html body.daily #articles article.thumb h1 { font-size: small; } }
 @media only screen and (max-width: 79.999em) and (max-width: 29.999em) { html body.daily #articles article.thumb { width: 100%; margin-right: 0; float: left; } }
 @media only screen and (max-width: 79.999em) and (min-width: 30em) and (max-width: 79.999em) { html body.daily #articles article.thumb { width: 48.75%; margin-right: 2.5%; float: left; }
   html body.daily #articles article.thumb:nth-of-type(2) { margin-right: 0; }

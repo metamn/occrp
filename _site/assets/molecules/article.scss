@@ -119,10 +119,10 @@
     @include color(slider);
   
     h1 {
-      font-size: small;
+      font-size: medium;
       
-      @include small-screen-and-up {
-        font-size: medium;
+      @include below-tablet {
+        font-size: small;
       }
     } 
     
