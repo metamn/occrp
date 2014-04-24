@@ -126,6 +126,10 @@
           margin: $pad/8 $pad/4 0;
         }
       }
+      
+      @include below-small-screen {
+        min-width: 50%;
+      }
     }
   }
   
