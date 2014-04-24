@@ -536,6 +536,17 @@
       @include grid(2, 2);
     }
     
+    @include tablet-landscape {
+      &#occrp {
+        @include col-nm(2, 3);
+      }
+      
+      &#social-icons {
+        @include col-nm(1, 3);
+        margin-right: 0;
+      }
+    }
+    
     &#occrp {
       @include sponsors-footer;
     }
