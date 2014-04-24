@@ -35,7 +35,9 @@
       }
       
       &.person {
-        @include floated-figure;
+        @include tablet-and-up {
+          @include floated-figure;
+        }
       }
       
       &.people, &.document {
