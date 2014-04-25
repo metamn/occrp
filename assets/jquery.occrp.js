@@ -62,6 +62,9 @@ $(document).ready(function() {
   $('.frontpage #slider article').first().show();
   $('.frontpage #slider nav ol li').removeClass('active');
   $('.frontpage #slider nav ol li').first().addClass('active');
+
+  // Fit slider title to fill the empty space
+  $('.frontpage #slider article.thumb h1').fitText();
   
   $('.frontpage #slider nav ol li').click(function() {
     var index = $(this).index();
@@ -74,17 +77,16 @@ $(document).ready(function() {
     
     $('.frontpage #slider article').hide();
     article.show();
+    article.find('h1').fitText();
     
     return false;
   });
   
   
   // Mark first item in pagination navigation active
-  // $('.navigation ol li').first().addClass('active');
   $('.navigation').each(function() {
     $(this).find('ol li').first().addClass('active');
   });
-  
   
   
   
