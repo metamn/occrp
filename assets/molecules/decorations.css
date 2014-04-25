@@ -12,10 +12,3 @@
 */
 /* Borders
 */
-/* Common
----------------------------------------------------------
-*/
-/* Remove the extra padding bottom for images inside a link
-- http://stackoverflow.com/questions/3532870/extra-padding-on-linked-images-in-every-broswer
-*/
-figure a { line-height: 0; }

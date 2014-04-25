@@ -97,14 +97,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 */
 /* Borders
 */
-/* Common
----------------------------------------------------------
-*/
-/* Remove the extra padding bottom for images inside a link
-- http://stackoverflow.com/questions/3532870/extra-padding-on-linked-images-in-every-broswer
-*/
-figure a { line-height: 0; }
-
 /* The width of the content - the content is centered with automatic left and right margins
 */
 /* Flexible grid - all items are aligned left with an uniform margin - this grid can be dynamically positioned by Isotope
@@ -145,6 +137,16 @@ figure a { line-height: 0; }
 */
 /* Center vertically or horizontally - http://davidwalsh.name/css-vertical-center 
 */
+/* A placeholder for images to hold the space until the image is loaded - http://www.barrelny.com/blog/taking-control-of-imageloading/ - the padding-top sets the image aspect ratio which might vary
+*/
+figure div.image-holder { position: relative; padding-top: 71%; overflow: hidden; background: transparent url(/assets/images/ajax-loader.gif) no-repeat 50% 50%; }
+figure div.image-holder img { position: absolute; top: 0; left: 0; width: 100%; }
+
+/* Remove the extra padding bottom for images inside a link
+- http://stackoverflow.com/questions/3532870/extra-padding-on-linked-images-in-every-broswer
+*/
+figure a { line-height: 0; }
+
 /* Hide last article 
 */
 /* The fixed header
@@ -760,12 +762,10 @@ html body.frontpage .container main #intro #slider article .meta { display: none
 html body.frontpage .container main #intro #slider article figure img { width: auto; }
 html body.frontpage .container main #intro #slider article figure figcaption { padding: 0.3125em; font-size: smaller; }
 html body.frontpage .container main #intro #slider article figure figcaption h1, html body.frontpage .container main #intro #slider article figure figcaption h2, html body.frontpage .container main #intro #slider article figure figcaption h3, html body.frontpage .container main #intro #slider article figure figcaption h4, html body.frontpage .container main #intro #slider article figure figcaption h5, html body.frontpage .container main #intro #slider article figure figcaption h6 { margin: 0; padding: 0; }
-html body.frontpage .container main #intro #slider article figure { position: relative; background: red; }
+html body.frontpage .container main #intro #slider article figure { position: relative; }
 html body.frontpage .container main #intro #slider article figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
 html body.frontpage .container main #intro #slider article figure .label a { color: #231f20; text-decoration: none; }
 html body.frontpage .container main #intro #slider article figure .label a:hover { color: white; }
-html body.frontpage .container main #intro #slider article figure div.image-holder { position: relative; padding-top: 71%; overflow: hidden; background: url(/assets/images/ru.gif) blue; }
-html body.frontpage .container main #intro #slider article figure div.image-holder img { position: absolute; top: 0; width: 100%; opacity: 1; background: green; }
 html body.frontpage .container main #intro #slider article .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
 html body.frontpage .container main #intro #slider article .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.frontpage .container main #intro #slider article .meta > h3 { display: none; }
@@ -875,12 +875,10 @@ html body.frontpage .container main #intro aside section article .meta { display
 html body.frontpage .container main #intro aside section article figure img { width: auto; }
 html body.frontpage .container main #intro aside section article figure figcaption { padding: 0.3125em; font-size: smaller; }
 html body.frontpage .container main #intro aside section article figure figcaption h1, html body.frontpage .container main #intro aside section article figure figcaption h2, html body.frontpage .container main #intro aside section article figure figcaption h3, html body.frontpage .container main #intro aside section article figure figcaption h4, html body.frontpage .container main #intro aside section article figure figcaption h5, html body.frontpage .container main #intro aside section article figure figcaption h6 { margin: 0; padding: 0; }
-html body.frontpage .container main #intro aside section article figure { position: relative; background: red; }
+html body.frontpage .container main #intro aside section article figure { position: relative; }
 html body.frontpage .container main #intro aside section article figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
 html body.frontpage .container main #intro aside section article figure .label a { color: #231f20; text-decoration: none; }
 html body.frontpage .container main #intro aside section article figure .label a:hover { color: white; }
-html body.frontpage .container main #intro aside section article figure div.image-holder { position: relative; padding-top: 71%; overflow: hidden; background: url(/assets/images/ru.gif) blue; }
-html body.frontpage .container main #intro aside section article figure div.image-holder img { position: absolute; top: 0; width: 100%; opacity: 1; background: green; }
 html body.frontpage .container main #intro aside section article .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
 html body.frontpage .container main #intro aside section article .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.frontpage .container main #intro aside section article .meta > h3 { display: none; }
@@ -968,12 +966,10 @@ html body.frontpage .container main #investigations article .meta .category { di
 html body.frontpage .container main #investigations article figure img { width: auto; }
 html body.frontpage .container main #investigations article figure figcaption { padding: 0.3125em; font-size: smaller; }
 html body.frontpage .container main #investigations article figure figcaption h1, html body.frontpage .container main #investigations article figure figcaption h2, html body.frontpage .container main #investigations article figure figcaption h3, html body.frontpage .container main #investigations article figure figcaption h4, html body.frontpage .container main #investigations article figure figcaption h5, html body.frontpage .container main #investigations article figure figcaption h6 { margin: 0; padding: 0; }
-html body.frontpage .container main #investigations article figure { position: relative; background: red; }
+html body.frontpage .container main #investigations article figure { position: relative; }
 html body.frontpage .container main #investigations article figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
 html body.frontpage .container main #investigations article figure .label a { color: #231f20; text-decoration: none; }
 html body.frontpage .container main #investigations article figure .label a:hover { color: white; }
-html body.frontpage .container main #investigations article figure div.image-holder { position: relative; padding-top: 71%; overflow: hidden; background: url(/assets/images/ru.gif) blue; }
-html body.frontpage .container main #investigations article figure div.image-holder img { position: absolute; top: 0; width: 100%; opacity: 1; background: green; }
 html body.frontpage .container main #investigations article .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
 html body.frontpage .container main #investigations article .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.frontpage .container main #investigations article .meta > h3 { display: none; }
@@ -1070,12 +1066,10 @@ html body.frontpage .container main #products article .meta { display: none; }
 html body.frontpage .container main #products article figure img { width: auto; }
 html body.frontpage .container main #products article figure figcaption { padding: 0.3125em; font-size: smaller; }
 html body.frontpage .container main #products article figure figcaption h1, html body.frontpage .container main #products article figure figcaption h2, html body.frontpage .container main #products article figure figcaption h3, html body.frontpage .container main #products article figure figcaption h4, html body.frontpage .container main #products article figure figcaption h5, html body.frontpage .container main #products article figure figcaption h6 { margin: 0; padding: 0; }
-html body.frontpage .container main #products article figure { position: relative; background: red; }
+html body.frontpage .container main #products article figure { position: relative; }
 html body.frontpage .container main #products article figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
 html body.frontpage .container main #products article figure .label a { color: #231f20; text-decoration: none; }
 html body.frontpage .container main #products article figure .label a:hover { color: white; }
-html body.frontpage .container main #products article figure div.image-holder { position: relative; padding-top: 71%; overflow: hidden; background: url(/assets/images/ru.gif) blue; }
-html body.frontpage .container main #products article figure div.image-holder img { position: absolute; top: 0; width: 100%; opacity: 1; background: green; }
 html body.frontpage .container main #products article .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
 html body.frontpage .container main #products article .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.frontpage .container main #products article .meta > h3 { display: none; }
@@ -1179,12 +1173,10 @@ html body.frontpage .container main #projects article .meta { display: none; }
 html body.frontpage .container main #projects article figure img { width: auto; }
 html body.frontpage .container main #projects article figure figcaption { padding: 0.3125em; font-size: smaller; }
 html body.frontpage .container main #projects article figure figcaption h1, html body.frontpage .container main #projects article figure figcaption h2, html body.frontpage .container main #projects article figure figcaption h3, html body.frontpage .container main #projects article figure figcaption h4, html body.frontpage .container main #projects article figure figcaption h5, html body.frontpage .container main #projects article figure figcaption h6 { margin: 0; padding: 0; }
-html body.frontpage .container main #projects article figure { position: relative; background: red; }
+html body.frontpage .container main #projects article figure { position: relative; }
 html body.frontpage .container main #projects article figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
 html body.frontpage .container main #projects article figure .label a { color: #231f20; text-decoration: none; }
 html body.frontpage .container main #projects article figure .label a:hover { color: white; }
-html body.frontpage .container main #projects article figure div.image-holder { position: relative; padding-top: 71%; overflow: hidden; background: url(/assets/images/ru.gif) blue; }
-html body.frontpage .container main #projects article figure div.image-holder img { position: absolute; top: 0; width: 100%; opacity: 1; background: green; }
 html body.frontpage .container main #projects article .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
 html body.frontpage .container main #projects article .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.frontpage .container main #projects article .meta > h3 { display: none; }
@@ -1298,12 +1290,10 @@ html body.frontpage .container main #blog article .meta { display: none; }
 html body.frontpage .container main #blog article figure img { width: auto; }
 html body.frontpage .container main #blog article figure figcaption { padding: 0.3125em; font-size: smaller; }
 html body.frontpage .container main #blog article figure figcaption h1, html body.frontpage .container main #blog article figure figcaption h2, html body.frontpage .container main #blog article figure figcaption h3, html body.frontpage .container main #blog article figure figcaption h4, html body.frontpage .container main #blog article figure figcaption h5, html body.frontpage .container main #blog article figure figcaption h6 { margin: 0; padding: 0; }
-html body.frontpage .container main #blog article figure { position: relative; background: red; }
+html body.frontpage .container main #blog article figure { position: relative; }
 html body.frontpage .container main #blog article figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
 html body.frontpage .container main #blog article figure .label a { color: #231f20; text-decoration: none; }
 html body.frontpage .container main #blog article figure .label a:hover { color: white; }
-html body.frontpage .container main #blog article figure div.image-holder { position: relative; padding-top: 71%; overflow: hidden; background: url(/assets/images/ru.gif) blue; }
-html body.frontpage .container main #blog article figure div.image-holder img { position: absolute; top: 0; width: 100%; opacity: 1; background: green; }
 html body.frontpage .container main #blog article .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
 html body.frontpage .container main #blog article .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.frontpage .container main #blog article .meta > h3 { display: none; }
@@ -1395,12 +1385,10 @@ html body.frontpage .container main #most-read section article .meta { display: 
 html body.frontpage .container main #most-read section article figure img { width: auto; }
 html body.frontpage .container main #most-read section article figure figcaption { padding: 0.3125em; font-size: smaller; }
 html body.frontpage .container main #most-read section article figure figcaption h1, html body.frontpage .container main #most-read section article figure figcaption h2, html body.frontpage .container main #most-read section article figure figcaption h3, html body.frontpage .container main #most-read section article figure figcaption h4, html body.frontpage .container main #most-read section article figure figcaption h5, html body.frontpage .container main #most-read section article figure figcaption h6 { margin: 0; padding: 0; }
-html body.frontpage .container main #most-read section article figure { position: relative; background: red; }
+html body.frontpage .container main #most-read section article figure { position: relative; }
 html body.frontpage .container main #most-read section article figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
 html body.frontpage .container main #most-read section article figure .label a { color: #231f20; text-decoration: none; }
 html body.frontpage .container main #most-read section article figure .label a:hover { color: white; }
-html body.frontpage .container main #most-read section article figure div.image-holder { position: relative; padding-top: 71%; overflow: hidden; background: url(/assets/images/ru.gif) blue; }
-html body.frontpage .container main #most-read section article figure div.image-holder img { position: absolute; top: 0; width: 100%; opacity: 1; background: green; }
 html body.frontpage .container main #most-read section article .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
 html body.frontpage .container main #most-read section article .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.frontpage .container main #most-read section article .meta > h3 { display: none; }
@@ -1475,12 +1463,10 @@ html body.frontpage .container main #videos article .meta { display: none; }
 html body.frontpage .container main #videos article figure img { width: auto; }
 html body.frontpage .container main #videos article figure figcaption { padding: 0.3125em; font-size: smaller; }
 html body.frontpage .container main #videos article figure figcaption h1, html body.frontpage .container main #videos article figure figcaption h2, html body.frontpage .container main #videos article figure figcaption h3, html body.frontpage .container main #videos article figure figcaption h4, html body.frontpage .container main #videos article figure figcaption h5, html body.frontpage .container main #videos article figure figcaption h6 { margin: 0; padding: 0; }
-html body.frontpage .container main #videos article figure { position: relative; background: red; }
+html body.frontpage .container main #videos article figure { position: relative; }
 html body.frontpage .container main #videos article figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
 html body.frontpage .container main #videos article figure .label a { color: #231f20; text-decoration: none; }
 html body.frontpage .container main #videos article figure .label a:hover { color: white; }
-html body.frontpage .container main #videos article figure div.image-holder { position: relative; padding-top: 71%; overflow: hidden; background: url(/assets/images/ru.gif) blue; }
-html body.frontpage .container main #videos article figure div.image-holder img { position: absolute; top: 0; width: 100%; opacity: 1; background: green; }
 html body.frontpage .container main #videos article .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
 html body.frontpage .container main #videos article .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.frontpage .container main #videos article .meta > h3 { display: none; }
@@ -1665,12 +1651,10 @@ html body.category main #sidebar section article .meta { display: none; }
 html body.category main #sidebar section article figure img { width: auto; }
 html body.category main #sidebar section article figure figcaption { padding: 0.3125em; font-size: smaller; }
 html body.category main #sidebar section article figure figcaption h1, html body.category main #sidebar section article figure figcaption h2, html body.category main #sidebar section article figure figcaption h3, html body.category main #sidebar section article figure figcaption h4, html body.category main #sidebar section article figure figcaption h5, html body.category main #sidebar section article figure figcaption h6 { margin: 0; padding: 0; }
-html body.category main #sidebar section article figure { position: relative; background: red; }
+html body.category main #sidebar section article figure { position: relative; }
 html body.category main #sidebar section article figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
 html body.category main #sidebar section article figure .label a { color: #231f20; text-decoration: none; }
 html body.category main #sidebar section article figure .label a:hover { color: white; }
-html body.category main #sidebar section article figure div.image-holder { position: relative; padding-top: 71%; overflow: hidden; background: url(/assets/images/ru.gif) blue; }
-html body.category main #sidebar section article figure div.image-holder img { position: absolute; top: 0; width: 100%; opacity: 1; background: green; }
 html body.category main #sidebar section article .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
 html body.category main #sidebar section article .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.category main #sidebar section article .meta > h3 { display: none; }
@@ -1801,12 +1785,10 @@ html body.category #articles aside .meta { display: none; }
 html body.category #articles aside figure img { width: auto; }
 html body.category #articles aside figure figcaption { padding: 0.3125em; font-size: smaller; }
 html body.category #articles aside figure figcaption h1, html body.category #articles aside figure figcaption h2, html body.category #articles aside figure figcaption h3, html body.category #articles aside figure figcaption h4, html body.category #articles aside figure figcaption h5, html body.category #articles aside figure figcaption h6 { margin: 0; padding: 0; }
-html body.category #articles aside figure { position: relative; background: red; }
+html body.category #articles aside figure { position: relative; }
 html body.category #articles aside figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
 html body.category #articles aside figure .label a { color: #231f20; text-decoration: none; }
 html body.category #articles aside figure .label a:hover { color: white; }
-html body.category #articles aside figure div.image-holder { position: relative; padding-top: 71%; overflow: hidden; background: url(/assets/images/ru.gif) blue; }
-html body.category #articles aside figure div.image-holder img { position: absolute; top: 0; width: 100%; opacity: 1; background: green; }
 html body.category #articles aside .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
 html body.category #articles aside .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.category #articles aside .meta > h3 { display: none; }
@@ -1870,12 +1852,10 @@ html body.category #articles article.thumb { margin-bottom: 0.625em; }
   html body.category #articles article.thumb figure img { width: auto; }
   html body.category #articles article.thumb figure figcaption { padding: 0.3125em; font-size: smaller; }
   html body.category #articles article.thumb figure figcaption h1, html body.category #articles article.thumb figure figcaption h2, html body.category #articles article.thumb figure figcaption h3, html body.category #articles article.thumb figure figcaption h4, html body.category #articles article.thumb figure figcaption h5, html body.category #articles article.thumb figure figcaption h6 { margin: 0; padding: 0; }
-  html body.category #articles article.thumb figure { position: relative; background: red; }
+  html body.category #articles article.thumb figure { position: relative; }
   html body.category #articles article.thumb figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
   html body.category #articles article.thumb figure .label a { color: #231f20; text-decoration: none; }
   html body.category #articles article.thumb figure .label a:hover { color: white; }
-  html body.category #articles article.thumb figure div.image-holder { position: relative; padding-top: 71%; overflow: hidden; background: url(/assets/images/ru.gif) blue; }
-  html body.category #articles article.thumb figure div.image-holder img { position: absolute; top: 0; width: 100%; opacity: 1; background: green; }
   html body.category #articles article.thumb .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
   html body.category #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
   html body.category #articles article.thumb .meta > h3 { display: none; }
@@ -1981,12 +1961,10 @@ html body.category #articles article.thumb { margin-bottom: 0.625em; }
   html body.category #articles article.thumb figure img { width: auto; }
   html body.category #articles article.thumb figure figcaption { padding: 0.3125em; font-size: smaller; }
   html body.category #articles article.thumb figure figcaption h1, html body.category #articles article.thumb figure figcaption h2, html body.category #articles article.thumb figure figcaption h3, html body.category #articles article.thumb figure figcaption h4, html body.category #articles article.thumb figure figcaption h5, html body.category #articles article.thumb figure figcaption h6 { margin: 0; padding: 0; }
-  html body.category #articles article.thumb figure { position: relative; background: red; }
+  html body.category #articles article.thumb figure { position: relative; }
   html body.category #articles article.thumb figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
   html body.category #articles article.thumb figure .label a { color: #231f20; text-decoration: none; }
   html body.category #articles article.thumb figure .label a:hover { color: white; }
-  html body.category #articles article.thumb figure div.image-holder { position: relative; padding-top: 71%; overflow: hidden; background: url(/assets/images/ru.gif) blue; }
-  html body.category #articles article.thumb figure div.image-holder img { position: absolute; top: 0; width: 100%; opacity: 1; background: green; }
   html body.category #articles article.thumb .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
   html body.category #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
   html body.category #articles article.thumb .meta > h3 { display: none; }
@@ -2104,12 +2082,10 @@ html body.tag main #sidebar section article .meta { display: none; }
 html body.tag main #sidebar section article figure img { width: auto; }
 html body.tag main #sidebar section article figure figcaption { padding: 0.3125em; font-size: smaller; }
 html body.tag main #sidebar section article figure figcaption h1, html body.tag main #sidebar section article figure figcaption h2, html body.tag main #sidebar section article figure figcaption h3, html body.tag main #sidebar section article figure figcaption h4, html body.tag main #sidebar section article figure figcaption h5, html body.tag main #sidebar section article figure figcaption h6 { margin: 0; padding: 0; }
-html body.tag main #sidebar section article figure { position: relative; background: red; }
+html body.tag main #sidebar section article figure { position: relative; }
 html body.tag main #sidebar section article figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
 html body.tag main #sidebar section article figure .label a { color: #231f20; text-decoration: none; }
 html body.tag main #sidebar section article figure .label a:hover { color: white; }
-html body.tag main #sidebar section article figure div.image-holder { position: relative; padding-top: 71%; overflow: hidden; background: url(/assets/images/ru.gif) blue; }
-html body.tag main #sidebar section article figure div.image-holder img { position: absolute; top: 0; width: 100%; opacity: 1; background: green; }
 html body.tag main #sidebar section article .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
 html body.tag main #sidebar section article .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.tag main #sidebar section article .meta > h3 { display: none; }
@@ -2240,12 +2216,10 @@ html body.tag #articles aside .meta { display: none; }
 html body.tag #articles aside figure img { width: auto; }
 html body.tag #articles aside figure figcaption { padding: 0.3125em; font-size: smaller; }
 html body.tag #articles aside figure figcaption h1, html body.tag #articles aside figure figcaption h2, html body.tag #articles aside figure figcaption h3, html body.tag #articles aside figure figcaption h4, html body.tag #articles aside figure figcaption h5, html body.tag #articles aside figure figcaption h6 { margin: 0; padding: 0; }
-html body.tag #articles aside figure { position: relative; background: red; }
+html body.tag #articles aside figure { position: relative; }
 html body.tag #articles aside figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
 html body.tag #articles aside figure .label a { color: #231f20; text-decoration: none; }
 html body.tag #articles aside figure .label a:hover { color: white; }
-html body.tag #articles aside figure div.image-holder { position: relative; padding-top: 71%; overflow: hidden; background: url(/assets/images/ru.gif) blue; }
-html body.tag #articles aside figure div.image-holder img { position: absolute; top: 0; width: 100%; opacity: 1; background: green; }
 html body.tag #articles aside .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
 html body.tag #articles aside .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.tag #articles aside .meta > h3 { display: none; }
@@ -2309,12 +2283,10 @@ html body.tag #articles article.thumb { margin-bottom: 0.625em; }
   html body.tag #articles article.thumb figure img { width: auto; }
   html body.tag #articles article.thumb figure figcaption { padding: 0.3125em; font-size: smaller; }
   html body.tag #articles article.thumb figure figcaption h1, html body.tag #articles article.thumb figure figcaption h2, html body.tag #articles article.thumb figure figcaption h3, html body.tag #articles article.thumb figure figcaption h4, html body.tag #articles article.thumb figure figcaption h5, html body.tag #articles article.thumb figure figcaption h6 { margin: 0; padding: 0; }
-  html body.tag #articles article.thumb figure { position: relative; background: red; }
+  html body.tag #articles article.thumb figure { position: relative; }
   html body.tag #articles article.thumb figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
   html body.tag #articles article.thumb figure .label a { color: #231f20; text-decoration: none; }
   html body.tag #articles article.thumb figure .label a:hover { color: white; }
-  html body.tag #articles article.thumb figure div.image-holder { position: relative; padding-top: 71%; overflow: hidden; background: url(/assets/images/ru.gif) blue; }
-  html body.tag #articles article.thumb figure div.image-holder img { position: absolute; top: 0; width: 100%; opacity: 1; background: green; }
   html body.tag #articles article.thumb .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
   html body.tag #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
   html body.tag #articles article.thumb .meta > h3 { display: none; }
@@ -2420,12 +2392,10 @@ html body.tag #articles article.thumb { margin-bottom: 0.625em; }
   html body.tag #articles article.thumb figure img { width: auto; }
   html body.tag #articles article.thumb figure figcaption { padding: 0.3125em; font-size: smaller; }
   html body.tag #articles article.thumb figure figcaption h1, html body.tag #articles article.thumb figure figcaption h2, html body.tag #articles article.thumb figure figcaption h3, html body.tag #articles article.thumb figure figcaption h4, html body.tag #articles article.thumb figure figcaption h5, html body.tag #articles article.thumb figure figcaption h6 { margin: 0; padding: 0; }
-  html body.tag #articles article.thumb figure { position: relative; background: red; }
+  html body.tag #articles article.thumb figure { position: relative; }
   html body.tag #articles article.thumb figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
   html body.tag #articles article.thumb figure .label a { color: #231f20; text-decoration: none; }
   html body.tag #articles article.thumb figure .label a:hover { color: white; }
-  html body.tag #articles article.thumb figure div.image-holder { position: relative; padding-top: 71%; overflow: hidden; background: url(/assets/images/ru.gif) blue; }
-  html body.tag #articles article.thumb figure div.image-holder img { position: absolute; top: 0; width: 100%; opacity: 1; background: green; }
   html body.tag #articles article.thumb .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
   html body.tag #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
   html body.tag #articles article.thumb .meta > h3 { display: none; }
@@ -2588,12 +2558,10 @@ html body.archive #articles article.thumb .meta { display: none; }
 html body.archive #articles article.thumb figure img { width: auto; }
 html body.archive #articles article.thumb figure figcaption { padding: 0.3125em; font-size: smaller; }
 html body.archive #articles article.thumb figure figcaption h1, html body.archive #articles article.thumb figure figcaption h2, html body.archive #articles article.thumb figure figcaption h3, html body.archive #articles article.thumb figure figcaption h4, html body.archive #articles article.thumb figure figcaption h5, html body.archive #articles article.thumb figure figcaption h6 { margin: 0; padding: 0; }
-html body.archive #articles article.thumb figure { position: relative; background: red; }
+html body.archive #articles article.thumb figure { position: relative; }
 html body.archive #articles article.thumb figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
 html body.archive #articles article.thumb figure .label a { color: #231f20; text-decoration: none; }
 html body.archive #articles article.thumb figure .label a:hover { color: white; }
-html body.archive #articles article.thumb figure div.image-holder { position: relative; padding-top: 71%; overflow: hidden; background: url(/assets/images/ru.gif) blue; }
-html body.archive #articles article.thumb figure div.image-holder img { position: absolute; top: 0; width: 100%; opacity: 1; background: green; }
 html body.archive #articles article.thumb .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
 html body.archive #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.archive #articles article.thumb .meta > h3 { display: none; }
@@ -2658,12 +2626,10 @@ html body.archive #articles article.thumb h1 { font-size: medium; }
   html body.archive #articles article.thumb figure img { width: auto; }
   html body.archive #articles article.thumb figure figcaption { padding: 0.3125em; font-size: smaller; }
   html body.archive #articles article.thumb figure figcaption h1, html body.archive #articles article.thumb figure figcaption h2, html body.archive #articles article.thumb figure figcaption h3, html body.archive #articles article.thumb figure figcaption h4, html body.archive #articles article.thumb figure figcaption h5, html body.archive #articles article.thumb figure figcaption h6 { margin: 0; padding: 0; }
-  html body.archive #articles article.thumb figure { position: relative; background: red; }
+  html body.archive #articles article.thumb figure { position: relative; }
   html body.archive #articles article.thumb figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
   html body.archive #articles article.thumb figure .label a { color: #231f20; text-decoration: none; }
   html body.archive #articles article.thumb figure .label a:hover { color: white; }
-  html body.archive #articles article.thumb figure div.image-holder { position: relative; padding-top: 71%; overflow: hidden; background: url(/assets/images/ru.gif) blue; }
-  html body.archive #articles article.thumb figure div.image-holder img { position: absolute; top: 0; width: 100%; opacity: 1; background: green; }
   html body.archive #articles article.thumb .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
   html body.archive #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
   html body.archive #articles article.thumb .meta > h3 { display: none; }
@@ -2765,12 +2731,10 @@ html body.blog main #sidebar section article .meta { display: none; }
 html body.blog main #sidebar section article figure img { width: auto; }
 html body.blog main #sidebar section article figure figcaption { padding: 0.3125em; font-size: smaller; }
 html body.blog main #sidebar section article figure figcaption h1, html body.blog main #sidebar section article figure figcaption h2, html body.blog main #sidebar section article figure figcaption h3, html body.blog main #sidebar section article figure figcaption h4, html body.blog main #sidebar section article figure figcaption h5, html body.blog main #sidebar section article figure figcaption h6 { margin: 0; padding: 0; }
-html body.blog main #sidebar section article figure { position: relative; background: red; }
+html body.blog main #sidebar section article figure { position: relative; }
 html body.blog main #sidebar section article figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
 html body.blog main #sidebar section article figure .label a { color: #231f20; text-decoration: none; }
 html body.blog main #sidebar section article figure .label a:hover { color: white; }
-html body.blog main #sidebar section article figure div.image-holder { position: relative; padding-top: 71%; overflow: hidden; background: url(/assets/images/ru.gif) blue; }
-html body.blog main #sidebar section article figure div.image-holder img { position: absolute; top: 0; width: 100%; opacity: 1; background: green; }
 html body.blog main #sidebar section article .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
 html body.blog main #sidebar section article .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.blog main #sidebar section article .meta > h3 { display: none; }
@@ -2898,12 +2862,10 @@ html body.blog #articles article.thumb .meta { display: none; }
 html body.blog #articles article.thumb figure img { width: auto; }
 html body.blog #articles article.thumb figure figcaption { padding: 0.3125em; font-size: smaller; }
 html body.blog #articles article.thumb figure figcaption h1, html body.blog #articles article.thumb figure figcaption h2, html body.blog #articles article.thumb figure figcaption h3, html body.blog #articles article.thumb figure figcaption h4, html body.blog #articles article.thumb figure figcaption h5, html body.blog #articles article.thumb figure figcaption h6 { margin: 0; padding: 0; }
-html body.blog #articles article.thumb figure { position: relative; background: red; }
+html body.blog #articles article.thumb figure { position: relative; }
 html body.blog #articles article.thumb figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
 html body.blog #articles article.thumb figure .label a { color: #231f20; text-decoration: none; }
 html body.blog #articles article.thumb figure .label a:hover { color: white; }
-html body.blog #articles article.thumb figure div.image-holder { position: relative; padding-top: 71%; overflow: hidden; background: url(/assets/images/ru.gif) blue; }
-html body.blog #articles article.thumb figure div.image-holder img { position: absolute; top: 0; width: 100%; opacity: 1; background: green; }
 html body.blog #articles article.thumb .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
 html body.blog #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.blog #articles article.thumb .meta > h3 { display: none; }
@@ -2967,12 +2929,10 @@ html body.blog #articles article.thumb .excerpt { padding-bottom: 1.25em; border
   html body.blog #articles article.thumb figure img { width: auto; }
   html body.blog #articles article.thumb figure figcaption { padding: 0.3125em; font-size: smaller; }
   html body.blog #articles article.thumb figure figcaption h1, html body.blog #articles article.thumb figure figcaption h2, html body.blog #articles article.thumb figure figcaption h3, html body.blog #articles article.thumb figure figcaption h4, html body.blog #articles article.thumb figure figcaption h5, html body.blog #articles article.thumb figure figcaption h6 { margin: 0; padding: 0; }
-  html body.blog #articles article.thumb figure { position: relative; background: red; }
+  html body.blog #articles article.thumb figure { position: relative; }
   html body.blog #articles article.thumb figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
   html body.blog #articles article.thumb figure .label a { color: #231f20; text-decoration: none; }
   html body.blog #articles article.thumb figure .label a:hover { color: white; }
-  html body.blog #articles article.thumb figure div.image-holder { position: relative; padding-top: 71%; overflow: hidden; background: url(/assets/images/ru.gif) blue; }
-  html body.blog #articles article.thumb figure div.image-holder img { position: absolute; top: 0; width: 100%; opacity: 1; background: green; }
   html body.blog #articles article.thumb .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
   html body.blog #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
   html body.blog #articles article.thumb .meta > h3 { display: none; }
@@ -3051,12 +3011,10 @@ html body.author main #sidebar section article .meta { display: none; }
 html body.author main #sidebar section article figure img { width: auto; }
 html body.author main #sidebar section article figure figcaption { padding: 0.3125em; font-size: smaller; }
 html body.author main #sidebar section article figure figcaption h1, html body.author main #sidebar section article figure figcaption h2, html body.author main #sidebar section article figure figcaption h3, html body.author main #sidebar section article figure figcaption h4, html body.author main #sidebar section article figure figcaption h5, html body.author main #sidebar section article figure figcaption h6 { margin: 0; padding: 0; }
-html body.author main #sidebar section article figure { position: relative; background: red; }
+html body.author main #sidebar section article figure { position: relative; }
 html body.author main #sidebar section article figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
 html body.author main #sidebar section article figure .label a { color: #231f20; text-decoration: none; }
 html body.author main #sidebar section article figure .label a:hover { color: white; }
-html body.author main #sidebar section article figure div.image-holder { position: relative; padding-top: 71%; overflow: hidden; background: url(/assets/images/ru.gif) blue; }
-html body.author main #sidebar section article figure div.image-holder img { position: absolute; top: 0; width: 100%; opacity: 1; background: green; }
 html body.author main #sidebar section article .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
 html body.author main #sidebar section article .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.author main #sidebar section article .meta > h3 { display: none; }
@@ -3187,12 +3145,10 @@ html body.author #articles aside .meta { display: none; }
 html body.author #articles aside figure img { width: auto; }
 html body.author #articles aside figure figcaption { padding: 0.3125em; font-size: smaller; }
 html body.author #articles aside figure figcaption h1, html body.author #articles aside figure figcaption h2, html body.author #articles aside figure figcaption h3, html body.author #articles aside figure figcaption h4, html body.author #articles aside figure figcaption h5, html body.author #articles aside figure figcaption h6 { margin: 0; padding: 0; }
-html body.author #articles aside figure { position: relative; background: red; }
+html body.author #articles aside figure { position: relative; }
 html body.author #articles aside figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
 html body.author #articles aside figure .label a { color: #231f20; text-decoration: none; }
 html body.author #articles aside figure .label a:hover { color: white; }
-html body.author #articles aside figure div.image-holder { position: relative; padding-top: 71%; overflow: hidden; background: url(/assets/images/ru.gif) blue; }
-html body.author #articles aside figure div.image-holder img { position: absolute; top: 0; width: 100%; opacity: 1; background: green; }
 html body.author #articles aside .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
 html body.author #articles aside .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.author #articles aside .meta > h3 { display: none; }
@@ -3256,12 +3212,10 @@ html body.author #articles article.thumb { margin-bottom: 0.625em; }
   html body.author #articles article.thumb figure img { width: auto; }
   html body.author #articles article.thumb figure figcaption { padding: 0.3125em; font-size: smaller; }
   html body.author #articles article.thumb figure figcaption h1, html body.author #articles article.thumb figure figcaption h2, html body.author #articles article.thumb figure figcaption h3, html body.author #articles article.thumb figure figcaption h4, html body.author #articles article.thumb figure figcaption h5, html body.author #articles article.thumb figure figcaption h6 { margin: 0; padding: 0; }
-  html body.author #articles article.thumb figure { position: relative; background: red; }
+  html body.author #articles article.thumb figure { position: relative; }
   html body.author #articles article.thumb figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
   html body.author #articles article.thumb figure .label a { color: #231f20; text-decoration: none; }
   html body.author #articles article.thumb figure .label a:hover { color: white; }
-  html body.author #articles article.thumb figure div.image-holder { position: relative; padding-top: 71%; overflow: hidden; background: url(/assets/images/ru.gif) blue; }
-  html body.author #articles article.thumb figure div.image-holder img { position: absolute; top: 0; width: 100%; opacity: 1; background: green; }
   html body.author #articles article.thumb .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
   html body.author #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
   html body.author #articles article.thumb .meta > h3 { display: none; }
@@ -3367,12 +3321,10 @@ html body.author #articles article.thumb { margin-bottom: 0.625em; }
   html body.author #articles article.thumb figure img { width: auto; }
   html body.author #articles article.thumb figure figcaption { padding: 0.3125em; font-size: smaller; }
   html body.author #articles article.thumb figure figcaption h1, html body.author #articles article.thumb figure figcaption h2, html body.author #articles article.thumb figure figcaption h3, html body.author #articles article.thumb figure figcaption h4, html body.author #articles article.thumb figure figcaption h5, html body.author #articles article.thumb figure figcaption h6 { margin: 0; padding: 0; }
-  html body.author #articles article.thumb figure { position: relative; background: red; }
+  html body.author #articles article.thumb figure { position: relative; }
   html body.author #articles article.thumb figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
   html body.author #articles article.thumb figure .label a { color: #231f20; text-decoration: none; }
   html body.author #articles article.thumb figure .label a:hover { color: white; }
-  html body.author #articles article.thumb figure div.image-holder { position: relative; padding-top: 71%; overflow: hidden; background: url(/assets/images/ru.gif) blue; }
-  html body.author #articles article.thumb figure div.image-holder img { position: absolute; top: 0; width: 100%; opacity: 1; background: green; }
   html body.author #articles article.thumb .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
   html body.author #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
   html body.author #articles article.thumb .meta > h3 { display: none; }
@@ -3490,12 +3442,10 @@ html body.article main #sidebar section article .meta, html body.about main #sid
 html body.article main #sidebar section article figure img, html body.about main #sidebar section article figure img, html body.post main #sidebar section article figure img { width: auto; }
 html body.article main #sidebar section article figure figcaption, html body.about main #sidebar section article figure figcaption, html body.post main #sidebar section article figure figcaption { padding: 0.3125em; font-size: smaller; }
 html body.article main #sidebar section article figure figcaption h1, html body.article main #sidebar section article figure figcaption h2, html body.article main #sidebar section article figure figcaption h3, html body.article main #sidebar section article figure figcaption h4, html body.article main #sidebar section article figure figcaption h5, html body.article main #sidebar section article figure figcaption h6, html body.about main #sidebar section article figure figcaption h1, html body.about main #sidebar section article figure figcaption h2, html body.about main #sidebar section article figure figcaption h3, html body.about main #sidebar section article figure figcaption h4, html body.about main #sidebar section article figure figcaption h5, html body.about main #sidebar section article figure figcaption h6, html body.post main #sidebar section article figure figcaption h1, html body.post main #sidebar section article figure figcaption h2, html body.post main #sidebar section article figure figcaption h3, html body.post main #sidebar section article figure figcaption h4, html body.post main #sidebar section article figure figcaption h5, html body.post main #sidebar section article figure figcaption h6 { margin: 0; padding: 0; }
-html body.article main #sidebar section article figure, html body.about main #sidebar section article figure, html body.post main #sidebar section article figure { position: relative; background: red; }
+html body.article main #sidebar section article figure, html body.about main #sidebar section article figure, html body.post main #sidebar section article figure { position: relative; }
 html body.article main #sidebar section article figure .label, html body.about main #sidebar section article figure .label, html body.post main #sidebar section article figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
 html body.article main #sidebar section article figure .label a, html body.about main #sidebar section article figure .label a, html body.post main #sidebar section article figure .label a { color: #231f20; text-decoration: none; }
 html body.article main #sidebar section article figure .label a:hover, html body.about main #sidebar section article figure .label a:hover, html body.post main #sidebar section article figure .label a:hover { color: white; }
-html body.article main #sidebar section article figure div.image-holder, html body.about main #sidebar section article figure div.image-holder, html body.post main #sidebar section article figure div.image-holder { position: relative; padding-top: 71%; overflow: hidden; background: url(/assets/images/ru.gif) blue; }
-html body.article main #sidebar section article figure div.image-holder img, html body.about main #sidebar section article figure div.image-holder img, html body.post main #sidebar section article figure div.image-holder img { position: absolute; top: 0; width: 100%; opacity: 1; background: green; }
 html body.article main #sidebar section article .excerpt, html body.about main #sidebar section article .excerpt, html body.post main #sidebar section article .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
 html body.article main #sidebar section article .meta, html body.about main #sidebar section article .meta, html body.post main #sidebar section article .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.article main #sidebar section article .meta > h3, html body.about main #sidebar section article .meta > h3, html body.post main #sidebar section article .meta > h3 { display: none; }
@@ -3608,12 +3558,10 @@ html body.article #article article.single .excerpt, html body.about #article art
 html body.article #article article.single figure img, html body.about #article article.single figure img, html body.post #article article.single figure img { width: auto; }
 html body.article #article article.single figure figcaption, html body.about #article article.single figure figcaption, html body.post #article article.single figure figcaption { padding: 0.3125em; font-size: smaller; }
 html body.article #article article.single figure figcaption h1, html body.article #article article.single figure figcaption h2, html body.article #article article.single figure figcaption h3, html body.article #article article.single figure figcaption h4, html body.article #article article.single figure figcaption h5, html body.article #article article.single figure figcaption h6, html body.about #article article.single figure figcaption h1, html body.about #article article.single figure figcaption h2, html body.about #article article.single figure figcaption h3, html body.about #article article.single figure figcaption h4, html body.about #article article.single figure figcaption h5, html body.about #article article.single figure figcaption h6, html body.post #article article.single figure figcaption h1, html body.post #article article.single figure figcaption h2, html body.post #article article.single figure figcaption h3, html body.post #article article.single figure figcaption h4, html body.post #article article.single figure figcaption h5, html body.post #article article.single figure figcaption h6 { margin: 0; padding: 0; }
-html body.article #article article.single figure, html body.about #article article.single figure, html body.post #article article.single figure { position: relative; background: red; }
+html body.article #article article.single figure, html body.about #article article.single figure, html body.post #article article.single figure { position: relative; }
 html body.article #article article.single figure .label, html body.about #article article.single figure .label, html body.post #article article.single figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
 html body.article #article article.single figure .label a, html body.about #article article.single figure .label a, html body.post #article article.single figure .label a { color: #231f20; text-decoration: none; }
 html body.article #article article.single figure .label a:hover, html body.about #article article.single figure .label a:hover, html body.post #article article.single figure .label a:hover { color: white; }
-html body.article #article article.single figure div.image-holder, html body.about #article article.single figure div.image-holder, html body.post #article article.single figure div.image-holder { position: relative; padding-top: 71%; overflow: hidden; background: url(/assets/images/ru.gif) blue; }
-html body.article #article article.single figure div.image-holder img, html body.about #article article.single figure div.image-holder img, html body.post #article article.single figure div.image-holder img { position: absolute; top: 0; width: 100%; opacity: 1; background: green; }
 html body.article #article article.single .excerpt, html body.about #article article.single .excerpt, html body.post #article article.single .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
 html body.article #article article.single .meta, html body.about #article article.single .meta, html body.post #article article.single .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.article #article article.single .meta > h3, html body.about #article article.single .meta > h3, html body.post #article article.single .meta > h3 { display: none; }
@@ -3827,12 +3775,10 @@ html body.jobs #main #article .single .content article .meta, html body.announce
 html body.jobs #main #article .single .content article figure img, html body.announcements #main #article .single .content article figure img { width: auto; }
 html body.jobs #main #article .single .content article figure figcaption, html body.announcements #main #article .single .content article figure figcaption { padding: 0.3125em; font-size: smaller; }
 html body.jobs #main #article .single .content article figure figcaption h1, html body.jobs #main #article .single .content article figure figcaption h2, html body.jobs #main #article .single .content article figure figcaption h3, html body.jobs #main #article .single .content article figure figcaption h4, html body.jobs #main #article .single .content article figure figcaption h5, html body.jobs #main #article .single .content article figure figcaption h6, html body.announcements #main #article .single .content article figure figcaption h1, html body.announcements #main #article .single .content article figure figcaption h2, html body.announcements #main #article .single .content article figure figcaption h3, html body.announcements #main #article .single .content article figure figcaption h4, html body.announcements #main #article .single .content article figure figcaption h5, html body.announcements #main #article .single .content article figure figcaption h6 { margin: 0; padding: 0; }
-html body.jobs #main #article .single .content article figure, html body.announcements #main #article .single .content article figure { position: relative; background: red; }
+html body.jobs #main #article .single .content article figure, html body.announcements #main #article .single .content article figure { position: relative; }
 html body.jobs #main #article .single .content article figure .label, html body.announcements #main #article .single .content article figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
 html body.jobs #main #article .single .content article figure .label a, html body.announcements #main #article .single .content article figure .label a { color: #231f20; text-decoration: none; }
 html body.jobs #main #article .single .content article figure .label a:hover, html body.announcements #main #article .single .content article figure .label a:hover { color: white; }
-html body.jobs #main #article .single .content article figure div.image-holder, html body.announcements #main #article .single .content article figure div.image-holder { position: relative; padding-top: 71%; overflow: hidden; background: url(/assets/images/ru.gif) blue; }
-html body.jobs #main #article .single .content article figure div.image-holder img, html body.announcements #main #article .single .content article figure div.image-holder img { position: absolute; top: 0; width: 100%; opacity: 1; background: green; }
 html body.jobs #main #article .single .content article .excerpt, html body.announcements #main #article .single .content article .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
 html body.jobs #main #article .single .content article .meta, html body.announcements #main #article .single .content article .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.jobs #main #article .single .content article .meta > h3, html body.announcements #main #article .single .content article .meta > h3 { display: none; }
@@ -4061,12 +4007,10 @@ html body.daily main #sidebar section article .meta { display: none; }
 html body.daily main #sidebar section article figure img { width: auto; }
 html body.daily main #sidebar section article figure figcaption { padding: 0.3125em; font-size: smaller; }
 html body.daily main #sidebar section article figure figcaption h1, html body.daily main #sidebar section article figure figcaption h2, html body.daily main #sidebar section article figure figcaption h3, html body.daily main #sidebar section article figure figcaption h4, html body.daily main #sidebar section article figure figcaption h5, html body.daily main #sidebar section article figure figcaption h6 { margin: 0; padding: 0; }
-html body.daily main #sidebar section article figure { position: relative; background: red; }
+html body.daily main #sidebar section article figure { position: relative; }
 html body.daily main #sidebar section article figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
 html body.daily main #sidebar section article figure .label a { color: #231f20; text-decoration: none; }
 html body.daily main #sidebar section article figure .label a:hover { color: white; }
-html body.daily main #sidebar section article figure div.image-holder { position: relative; padding-top: 71%; overflow: hidden; background: url(/assets/images/ru.gif) blue; }
-html body.daily main #sidebar section article figure div.image-holder img { position: absolute; top: 0; width: 100%; opacity: 1; background: green; }
 html body.daily main #sidebar section article .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
 html body.daily main #sidebar section article .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.daily main #sidebar section article .meta > h3 { display: none; }
@@ -4197,12 +4141,10 @@ html body.daily #articles aside .meta { display: none; }
 html body.daily #articles aside figure img { width: auto; }
 html body.daily #articles aside figure figcaption { padding: 0.3125em; font-size: smaller; }
 html body.daily #articles aside figure figcaption h1, html body.daily #articles aside figure figcaption h2, html body.daily #articles aside figure figcaption h3, html body.daily #articles aside figure figcaption h4, html body.daily #articles aside figure figcaption h5, html body.daily #articles aside figure figcaption h6 { margin: 0; padding: 0; }
-html body.daily #articles aside figure { position: relative; background: red; }
+html body.daily #articles aside figure { position: relative; }
 html body.daily #articles aside figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
 html body.daily #articles aside figure .label a { color: #231f20; text-decoration: none; }
 html body.daily #articles aside figure .label a:hover { color: white; }
-html body.daily #articles aside figure div.image-holder { position: relative; padding-top: 71%; overflow: hidden; background: url(/assets/images/ru.gif) blue; }
-html body.daily #articles aside figure div.image-holder img { position: absolute; top: 0; width: 100%; opacity: 1; background: green; }
 html body.daily #articles aside .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
 html body.daily #articles aside .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.daily #articles aside .meta > h3 { display: none; }
@@ -4266,12 +4208,10 @@ html body.daily #articles article.thumb { margin-bottom: 0.625em; }
   html body.daily #articles article.thumb figure img { width: auto; }
   html body.daily #articles article.thumb figure figcaption { padding: 0.3125em; font-size: smaller; }
   html body.daily #articles article.thumb figure figcaption h1, html body.daily #articles article.thumb figure figcaption h2, html body.daily #articles article.thumb figure figcaption h3, html body.daily #articles article.thumb figure figcaption h4, html body.daily #articles article.thumb figure figcaption h5, html body.daily #articles article.thumb figure figcaption h6 { margin: 0; padding: 0; }
-  html body.daily #articles article.thumb figure { position: relative; background: red; }
+  html body.daily #articles article.thumb figure { position: relative; }
   html body.daily #articles article.thumb figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
   html body.daily #articles article.thumb figure .label a { color: #231f20; text-decoration: none; }
   html body.daily #articles article.thumb figure .label a:hover { color: white; }
-  html body.daily #articles article.thumb figure div.image-holder { position: relative; padding-top: 71%; overflow: hidden; background: url(/assets/images/ru.gif) blue; }
-  html body.daily #articles article.thumb figure div.image-holder img { position: absolute; top: 0; width: 100%; opacity: 1; background: green; }
   html body.daily #articles article.thumb .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
   html body.daily #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
   html body.daily #articles article.thumb .meta > h3 { display: none; }
@@ -4377,12 +4317,10 @@ html body.daily #articles article.thumb { margin-bottom: 0.625em; }
   html body.daily #articles article.thumb figure img { width: auto; }
   html body.daily #articles article.thumb figure figcaption { padding: 0.3125em; font-size: smaller; }
   html body.daily #articles article.thumb figure figcaption h1, html body.daily #articles article.thumb figure figcaption h2, html body.daily #articles article.thumb figure figcaption h3, html body.daily #articles article.thumb figure figcaption h4, html body.daily #articles article.thumb figure figcaption h5, html body.daily #articles article.thumb figure figcaption h6 { margin: 0; padding: 0; }
-  html body.daily #articles article.thumb figure { position: relative; background: red; }
+  html body.daily #articles article.thumb figure { position: relative; }
   html body.daily #articles article.thumb figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
   html body.daily #articles article.thumb figure .label a { color: #231f20; text-decoration: none; }
   html body.daily #articles article.thumb figure .label a:hover { color: white; }
-  html body.daily #articles article.thumb figure div.image-holder { position: relative; padding-top: 71%; overflow: hidden; background: url(/assets/images/ru.gif) blue; }
-  html body.daily #articles article.thumb figure div.image-holder img { position: absolute; top: 0; width: 100%; opacity: 1; background: green; }
   html body.daily #articles article.thumb .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
   html body.daily #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
   html body.daily #articles article.thumb .meta > h3 { display: none; }
@@ -4504,12 +4442,10 @@ html body.daily #articles article.thumb .meta { display: none; }
 html body.daily #articles article.thumb figure img { width: auto; }
 html body.daily #articles article.thumb figure figcaption { padding: 0.3125em; font-size: smaller; }
 html body.daily #articles article.thumb figure figcaption h1, html body.daily #articles article.thumb figure figcaption h2, html body.daily #articles article.thumb figure figcaption h3, html body.daily #articles article.thumb figure figcaption h4, html body.daily #articles article.thumb figure figcaption h5, html body.daily #articles article.thumb figure figcaption h6 { margin: 0; padding: 0; }
-html body.daily #articles article.thumb figure { position: relative; background: red; }
+html body.daily #articles article.thumb figure { position: relative; }
 html body.daily #articles article.thumb figure .label { position: absolute; bottom: 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; background: #982022; color: white; padding: 0.3125em; opacity: .9; }
 html body.daily #articles article.thumb figure .label a { color: #231f20; text-decoration: none; }
 html body.daily #articles article.thumb figure .label a:hover { color: white; }
-html body.daily #articles article.thumb figure div.image-holder { position: relative; padding-top: 71%; overflow: hidden; background: url(/assets/images/ru.gif) blue; }
-html body.daily #articles article.thumb figure div.image-holder img { position: absolute; top: 0; width: 100%; opacity: 1; background: green; }
 html body.daily #articles article.thumb .excerpt { line-height: 1.5; color: #332d2f; margin: 0.3125em 0 0.625em; }
 html body.daily #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.daily #articles article.thumb .meta > h3 { display: none; }
