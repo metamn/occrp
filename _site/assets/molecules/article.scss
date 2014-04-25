@@ -323,6 +323,22 @@
       padding: $pad/4;
       opacity: .9;
     }
+    
+    background: red;
+    div.image-holder {
+      position: relative;
+      padding-top: 71%;
+      overflow: hidden; 
+      background: url(/assets/images/ru.gif) blue;
+      
+      img {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        opacity: 1;
+        background: green;
+      }
+    }
   }
   
   .excerpt {
