@@ -1,0 +1,8 @@
+---
+layout: about
+title: OCCRP in News
+---
+
+{% for post in site.categories.daily limit:5 offset:0 %}
+  {% include article.html klass = 'thumb' %}
+{% endfor %}
