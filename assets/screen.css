@@ -364,7 +364,7 @@ html body .container #header nav.tags ul.search li.input form input[type='submit
 html body .container #header nav.tags ul.search li.input form input[type='submit']:hover a:hover { color: #982022; }
 html body .container #header nav.tags ul.search li.input form label { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
 html body .container #header nav.tags ul.search li.input form input { margin: 0.15625em 0.3125em 0; }
-@media only screen and (max-width: 79.999em) { html body .container #header nav.tags ul.search li.input { min-width: 50%; } }
+@media only screen and (max-width: 79.999em) { html body .container #header nav.tags ul.search li.input { width: calc(100% - 1.25em); } }
 html body .container #header nav.tags ul.tag-list { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
 html body .container #header nav.tags ul.tag-list li, html body .container #header nav.tags ul.social li, html body .container #header nav.tags ul.search li { display: inline-block; float: left; margin-right: 0.3125em; }
 html body .container #header nav.tags ul.tag-list li:last-of-type, html body .container #header nav.tags ul.social li:last-of-type, html body .container #header nav.tags ul.search li:last-of-type { margin-right: 0; }
@@ -374,7 +374,7 @@ html body .container #header nav.tags ul.social li { /* We are not replacing soc
 html body .container #header nav.tags ul.social li img { height: 12px; position: relative; top: 1px; }
 html body .container #header nav.tags ul.social li a img { height: 13px; }
 html body .container #header nav.tags ul.social li a img:last-of-type { display: none; }
-html body .container #header .close-icon:after { content: "\2715"; padding: 0.15625em 0.3125em; border: 1px solid; color: white; position: relative; top: -1.875em; right: 0.3125em; float: right; cursor: pointer; }
+html body .container #header .close-icon:after { content: "\2715"; padding: 0.15625em 0.3125em; border: 1px solid; color: white; position: relative; top: -2.1875em; right: 0.625em; float: right; cursor: pointer; }
 @media only screen and (max-width: 29.999em) { html body .container #header nav.main, html body .container #header nav.secondary { border-bottom: 1px solid #231f20; margin-bottom: 1.25em; }
   html body .container #header nav.main ul li, html body .container #header nav.secondary ul li { border-bottom: 1px solid #f1f1f1; }
   html body .container #header nav.main { margin-top: 6.25em; }
@@ -399,7 +399,7 @@ html body .container #header .close-icon:after { content: "\2715"; padding: 0.15
   html body .container #header nav.tags ul.search li.input form input[type='submit']:hover a:hover { color: #982022; }
   html body .container #header nav.tags ul.search li.input form label { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
   html body .container #header nav.tags ul.search li.input form input { margin: 0.15625em 0.3125em 0; } }
-@media only screen and (max-width: 29.999em) and (max-width: 79.999em) { html body .container #header nav.tags ul.search li.input { min-width: 50%; } }
+@media only screen and (max-width: 29.999em) and (max-width: 79.999em) { html body .container #header nav.tags ul.search li.input { width: calc(100% - 1.25em); } }
 @media only screen and (max-width: 29.999em) { html body .container #header nav.tags ul.search li.text { display: none; }
   html body .container #header nav.tags ul.search li.input { display: block; }
   html body .container #header .mobile-menubar { width: 100%; max-width: 100%; float: left; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; cursor: pointer; background: #231f20; color: white; padding: 0.3125em 0; } }
@@ -437,7 +437,7 @@ html body .container #header .close-icon:after { content: "\2715"; padding: 0.15
   html body .container #header nav.tags ul.search li.input form input[type='submit']:hover a:hover { color: #982022; }
   html body .container #header nav.tags ul.search li.input form label { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
   html body .container #header nav.tags ul.search li.input form input { margin: 0.15625em 0.3125em 0; } }
-@media only screen and (min-width: 30em) and (max-width: 79.999em) and (max-width: 79.999em) { html body .container #header nav.tags ul.search li.input { min-width: 50%; } }
+@media only screen and (min-width: 30em) and (max-width: 79.999em) and (max-width: 79.999em) { html body .container #header nav.tags ul.search li.input { width: calc(100% - 1.25em); } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body .container #header nav.tags ul.search li.text { display: none; }
   html body .container #header nav.tags ul.search li.input { display: block; }
   html body .container #header section.logo, html body .container #header section.mobile-menubar { width: 48.75%; margin-right: 2.5%; float: left; }
@@ -492,7 +492,7 @@ html body .container #header.mobile-menu-active nav.tags ul.search li.input form
 html body .container #header.mobile-menu-active nav.tags ul.search li.input form input[type='submit']:hover a:hover { color: #982022; }
 html body .container #header.mobile-menu-active nav.tags ul.search li.input form label { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
 html body .container #header.mobile-menu-active nav.tags ul.search li.input form input { margin: 0.15625em 0.3125em 0; }
-@media only screen and (max-width: 79.999em) { html body .container #header.mobile-menu-active nav.tags ul.search li.input { min-width: 50%; } }
+@media only screen and (max-width: 79.999em) { html body .container #header.mobile-menu-active nav.tags ul.search li.input { width: calc(100% - 1.25em); } }
 html body .container #header.mobile-menu-active nav.tags ul.tag-list { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
 html body .container #header.mobile-menu-active nav.tags ul.tag-list li, html body .container #header.mobile-menu-active nav.tags ul.social li, html body .container #header.mobile-menu-active nav.tags ul.search li { display: inline-block; float: left; margin-right: 0.3125em; }
 html body .container #header.mobile-menu-active nav.tags ul.tag-list li:last-of-type, html body .container #header.mobile-menu-active nav.tags ul.social li:last-of-type, html body .container #header.mobile-menu-active nav.tags ul.search li:last-of-type { margin-right: 0; }
@@ -502,7 +502,7 @@ html body .container #header.mobile-menu-active nav.tags ul.social li { /* We ar
 html body .container #header.mobile-menu-active nav.tags ul.social li img { height: 12px; position: relative; top: 1px; }
 html body .container #header.mobile-menu-active nav.tags ul.social li a img { height: 13px; }
 html body .container #header.mobile-menu-active nav.tags ul.social li a img:last-of-type { display: none; }
-html body .container #header.mobile-menu-active .close-icon:after { content: "\2715"; padding: 0.15625em 0.3125em; border: 1px solid; color: white; position: relative; top: -1.875em; right: 0.3125em; float: right; cursor: pointer; }
+html body .container #header.mobile-menu-active .close-icon:after { content: "\2715"; padding: 0.15625em 0.3125em; border: 1px solid; color: white; position: relative; top: -2.1875em; right: 0.625em; float: right; cursor: pointer; }
 @media only screen and (max-width: 29.999em) { html body .container #header.mobile-menu-active nav.main, html body .container #header.mobile-menu-active nav.secondary { border-bottom: 1px solid #231f20; margin-bottom: 1.25em; }
   html body .container #header.mobile-menu-active nav.main ul li, html body .container #header.mobile-menu-active nav.secondary ul li { border-bottom: 1px solid #f1f1f1; }
   html body .container #header.mobile-menu-active nav.main { margin-top: 6.25em; }
@@ -527,7 +527,7 @@ html body .container #header.mobile-menu-active .close-icon:after { content: "\2
   html body .container #header.mobile-menu-active nav.tags ul.search li.input form input[type='submit']:hover a:hover { color: #982022; }
   html body .container #header.mobile-menu-active nav.tags ul.search li.input form label { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
   html body .container #header.mobile-menu-active nav.tags ul.search li.input form input { margin: 0.15625em 0.3125em 0; } }
-@media only screen and (max-width: 29.999em) and (max-width: 79.999em) { html body .container #header.mobile-menu-active nav.tags ul.search li.input { min-width: 50%; } }
+@media only screen and (max-width: 29.999em) and (max-width: 79.999em) { html body .container #header.mobile-menu-active nav.tags ul.search li.input { width: calc(100% - 1.25em); } }
 @media only screen and (max-width: 29.999em) { html body .container #header.mobile-menu-active nav.tags ul.search li.text { display: none; }
   html body .container #header.mobile-menu-active nav.tags ul.search li.input { display: block; }
   html body .container #header.mobile-menu-active .mobile-menubar { width: 100%; max-width: 100%; float: left; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; cursor: pointer; background: #231f20; color: white; padding: 0.3125em 0; } }
@@ -565,7 +565,7 @@ html body .container #header.mobile-menu-active .close-icon:after { content: "\2
   html body .container #header.mobile-menu-active nav.tags ul.search li.input form input[type='submit']:hover a:hover { color: #982022; }
   html body .container #header.mobile-menu-active nav.tags ul.search li.input form label { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
   html body .container #header.mobile-menu-active nav.tags ul.search li.input form input { margin: 0.15625em 0.3125em 0; } }
-@media only screen and (min-width: 30em) and (max-width: 79.999em) and (max-width: 79.999em) { html body .container #header.mobile-menu-active nav.tags ul.search li.input { min-width: 50%; } }
+@media only screen and (min-width: 30em) and (max-width: 79.999em) and (max-width: 79.999em) { html body .container #header.mobile-menu-active nav.tags ul.search li.input { width: calc(100% - 1.25em); } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body .container #header.mobile-menu-active nav.tags ul.search li.text { display: none; }
   html body .container #header.mobile-menu-active nav.tags ul.search li.input { display: block; }
   html body .container #header.mobile-menu-active section.logo, html body .container #header.mobile-menu-active section.mobile-menubar { width: 48.75%; margin-right: 2.5%; float: left; }
@@ -577,7 +577,7 @@ html body .container #header.mobile-menu-active .close-icon:after { content: "\2
   html body .container #header.mobile-menu-active .mobile-menubar ul li:last-of-type { margin-right: 0; }
   html body .container #header.mobile-menu-active .mobile-menubar ul li.icon img { height: 9px; position: relative; top: 1px; }
   html body .container #header.mobile-menu-active .mobile-menubar ul { float: right; }
-  html body .container #header.mobile-menu-active section.logo { width: 100%; max-width: 100%; float: left; }
+  html body .container #header.mobile-menu-active section.logo { width: 100%; max-width: 100%; float: left; text-align: center; }
   html body .container #header.mobile-menu-active nav, html body .container #header.mobile-menu-active .close-icon { display: block; } }
 @media only screen and (min-width: 80em) { html body .container #header.mobile-menu-active .main, html body .container #header.mobile-menu-active .logo, html body .container #header.mobile-menu-active .secondary { width: 31.5%; margin-right: 2.5%; float: left; }
   html body .container #header.mobile-menu-active .main:nth-of-type(2), html body .container #header.mobile-menu-active .logo:nth-of-type(2), html body .container #header.mobile-menu-active .secondary:nth-of-type(2) { margin-right: 2.5%; }
@@ -649,7 +649,7 @@ html body.sticky .container #header nav.tags ul.search li.input form input[type=
 html body.sticky .container #header nav.tags ul.search li.input form input[type='submit']:hover a:hover { color: #982022; }
 html body.sticky .container #header nav.tags ul.search li.input form label { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
 html body.sticky .container #header nav.tags ul.search li.input form input { margin: 0.15625em 0.3125em 0; }
-@media only screen and (max-width: 79.999em) { html body.sticky .container #header nav.tags ul.search li.input { min-width: 50%; } }
+@media only screen and (max-width: 79.999em) { html body.sticky .container #header nav.tags ul.search li.input { width: calc(100% - 1.25em); } }
 html body.sticky .container #header nav.tags ul.tag-list { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
 html body.sticky .container #header nav.tags ul.tag-list li, html body.sticky .container #header nav.tags ul.social li, html body.sticky .container #header nav.tags ul.search li { display: inline-block; float: left; margin-right: 0.3125em; }
 html body.sticky .container #header nav.tags ul.tag-list li:last-of-type, html body.sticky .container #header nav.tags ul.social li:last-of-type, html body.sticky .container #header nav.tags ul.search li:last-of-type { margin-right: 0; }
@@ -659,7 +659,7 @@ html body.sticky .container #header nav.tags ul.social li { /* We are not replac
 html body.sticky .container #header nav.tags ul.social li img { height: 12px; position: relative; top: 1px; }
 html body.sticky .container #header nav.tags ul.social li a img { height: 13px; }
 html body.sticky .container #header nav.tags ul.social li a img:last-of-type { display: none; }
-html body.sticky .container #header .close-icon:after { content: "\2715"; padding: 0.15625em 0.3125em; border: 1px solid; color: white; position: relative; top: -1.875em; right: 0.3125em; float: right; cursor: pointer; }
+html body.sticky .container #header .close-icon:after { content: "\2715"; padding: 0.15625em 0.3125em; border: 1px solid; color: white; position: relative; top: -2.1875em; right: 0.625em; float: right; cursor: pointer; }
 @media only screen and (max-width: 29.999em) { html body.sticky .container #header { position: fixed; z-index: 1; background: white; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; }
   html body.sticky .container #header nav.main, html body.sticky .container #header nav.secondary { border-bottom: 1px solid #231f20; margin-bottom: 1.25em; }
   html body.sticky .container #header nav.main ul li, html body.sticky .container #header nav.secondary ul li { border-bottom: 1px solid #f1f1f1; }
@@ -685,7 +685,7 @@ html body.sticky .container #header .close-icon:after { content: "\2715"; paddin
   html body.sticky .container #header nav.tags ul.search li.input form input[type='submit']:hover a:hover { color: #982022; }
   html body.sticky .container #header nav.tags ul.search li.input form label { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
   html body.sticky .container #header nav.tags ul.search li.input form input { margin: 0.15625em 0.3125em 0; } }
-@media only screen and (max-width: 29.999em) and (max-width: 79.999em) { html body.sticky .container #header nav.tags ul.search li.input { min-width: 50%; } }
+@media only screen and (max-width: 29.999em) and (max-width: 79.999em) { html body.sticky .container #header nav.tags ul.search li.input { width: calc(100% - 1.25em); } }
 @media only screen and (max-width: 29.999em) { html body.sticky .container #header nav.tags ul.search li.text { display: none; }
   html body.sticky .container #header nav.tags ul.search li.input { display: block; }
   html body.sticky .container #header .mobile-menubar { width: 100%; max-width: 100%; float: left; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-size: small; cursor: pointer; background: #231f20; color: white; padding: 0.3125em 0; } }
@@ -724,7 +724,7 @@ html body.sticky .container #header .close-icon:after { content: "\2715"; paddin
   html body.sticky .container #header nav.tags ul.search li.input form input[type='submit']:hover a:hover { color: #982022; }
   html body.sticky .container #header nav.tags ul.search li.input form label { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
   html body.sticky .container #header nav.tags ul.search li.input form input { margin: 0.15625em 0.3125em 0; } }
-@media only screen and (min-width: 30em) and (max-width: 79.999em) and (max-width: 79.999em) { html body.sticky .container #header nav.tags ul.search li.input { min-width: 50%; } }
+@media only screen and (min-width: 30em) and (max-width: 79.999em) and (max-width: 79.999em) { html body.sticky .container #header nav.tags ul.search li.input { width: calc(100% - 1.25em); } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.sticky .container #header nav.tags ul.search li.text { display: none; }
   html body.sticky .container #header nav.tags ul.search li.input { display: block; }
   html body.sticky .container #header section.logo, html body.sticky .container #header section.mobile-menubar { width: 48.75%; margin-right: 2.5%; float: left; }
@@ -1580,7 +1580,7 @@ html body.frontpage .container main #tags-and-gallery nav ul.search li.input for
 html body.frontpage .container main #tags-and-gallery nav ul.search li.input form input[type='submit']:hover a:hover { color: #982022; }
 html body.frontpage .container main #tags-and-gallery nav ul.search li.input form label { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
 html body.frontpage .container main #tags-and-gallery nav ul.search li.input form input { margin: 0.15625em 0.3125em 0; }
-@media only screen and (max-width: 79.999em) { html body.frontpage .container main #tags-and-gallery nav ul.search li.input { min-width: 50%; } }
+@media only screen and (max-width: 79.999em) { html body.frontpage .container main #tags-and-gallery nav ul.search li.input { width: calc(100% - 1.25em); } }
 html body.frontpage .container main #tags-and-gallery nav ul.tag-list { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
 html body.frontpage .container main #tags-and-gallery nav ul.tag-list li, html body.frontpage .container main #tags-and-gallery nav ul.social li, html body.frontpage .container main #tags-and-gallery nav ul.search li { display: inline-block; float: left; margin-right: 0.3125em; }
 html body.frontpage .container main #tags-and-gallery nav ul.tag-list li:last-of-type, html body.frontpage .container main #tags-and-gallery nav ul.social li:last-of-type, html body.frontpage .container main #tags-and-gallery nav ul.search li:last-of-type { margin-right: 0; }

@@ -221,6 +221,7 @@
   } @elseif ($type == active) {
     section.logo {
       @include block;
+      text-align: center;
     }
     
     nav, .close-icon {

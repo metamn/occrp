@@ -128,7 +128,7 @@
       }
       
       @include below-small-screen {
-        min-width: 50%;
+        width: calc(100% - 1.25em);
       }
     }
   }
