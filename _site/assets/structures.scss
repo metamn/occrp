@@ -83,12 +83,34 @@
             margin-top: $pad*2 !important;
           }
           
-          dd.portrait {
+          dd {
             @include block;
             margin-bottom: $pad;
+          }
+          
+          figure {
+            margin-top: 0;
             
-            @include tablet-and-up {
-              @include image-thumb-left(50%);
+            .image-holder {
+              padding-top: 65%;
+            }
+            
+            figcaption {
+              display: none;
+            }
+            
+            &.person {
+              top: $pad/2;
+              display: inline-block;
+              max-width: 25em;
+              
+              .image-holder {
+                padding-top: 0;
+                
+                img {
+                  position: relative;
+                }
+              }
             }
           }
         }

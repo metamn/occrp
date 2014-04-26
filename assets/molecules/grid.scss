@@ -268,10 +268,10 @@
   - http://www.barrelny.com/blog/taking-control-of-imageloading/
   - the padding-top sets the image aspect ratio which might vary
 */
-@mixin image-placeholder {
+@mixin image-placeholder($aspect-ratio: 71%) {
   div.image-holder {
     position: relative;
-    padding-top: 71%;
+    padding-top: $aspect-ratio;
     overflow: hidden; 
     background: transparent url(/assets/images/ajax-loader.gif) no-repeat 50% 50%;
     

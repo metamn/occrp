@@ -3757,10 +3757,13 @@ html body.about main .subpages-menu .arrow:after { content: "\2794"; margin-left
 @media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.about main .subpages-menu { display: none; } }
 html body.board-directors main #article .single .content h4 { border-bottom: 1px solid #f1f1f1; font-weight: bold; padding-bottom: 0; }
 html body.board-directors main #article .single .content dl + p { margin-top: 2.5em !important; }
-html body.board-directors main #article .single .content dd.portrait { width: 100%; max-width: 100%; float: left; margin-bottom: 1.25em; }
-@media only screen and (min-width: 48em) { html body.board-directors main #article .single .content dd.portrait img { width: 50%; float: left; margin: 0 1.25em 1.25em 0; }
-  html body.board-directors main #article .single .content dd.portrait div { padding: 0 0.625em; line-height: 1.75; margin-left: calc(50% + 1.25em + 1.25em); }
-  html body.board-directors main #article .single .content dd.portrait div p + p { margin-top: 1.25em; } }
+html body.board-directors main #article .single .content dd { width: 100%; max-width: 100%; float: left; margin-bottom: 1.25em; }
+html body.board-directors main #article .single .content figure { margin-top: 0; }
+html body.board-directors main #article .single .content figure .image-holder { padding-top: 65%; }
+html body.board-directors main #article .single .content figure figcaption { display: none; }
+html body.board-directors main #article .single .content figure.person { top: 0.625em; display: inline-block; max-width: 25em; }
+html body.board-directors main #article .single .content figure.person .image-holder { padding-top: 0; }
+html body.board-directors main #article .single .content figure.person .image-holder img { position: relative; }
 html body.jobs #main #article .single .content article, html body.announcements #main #article .single .content article { border-bottom: 1px solid #f1f1f1; margin-bottom: 0.3125em; padding-bottom: 0.3125em; max-width: 43.75em; line-height: 1.75; /* Padding of individual elements
 */ /* Padding of consecutive elements
 */ }
