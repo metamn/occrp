@@ -448,6 +448,11 @@
   
       @include button;
     }
+
+    /* Image */
+    input[type="image"] {
+      width: auto;
+    }
     
     /* Label
     */

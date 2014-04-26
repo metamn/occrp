@@ -27,6 +27,10 @@
       }
     }
     
+    input[type="image"] {
+      width: auto;
+    }
+    
     figure {
       &.people, &.document, &.company {
         @include below-tablet {

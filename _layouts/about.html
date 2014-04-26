@@ -30,6 +30,14 @@
       </nav>
     </section>
     
+    <section id="projects">
+      <h3>Projects</h3>
+      
+      {% for post in site.categories.projects limit:5 offset:0 %}
+        {% include article.html klass = 'thumb' holder='false' %}
+      {% endfor %}
+    </section>
+    
     <section id="spacer">
       <h3>Fixed sidebar spacer</h3>
     </section>
