@@ -1,6 +1,24 @@
 ---
 layout: about
 title: Board Directors
+images:
+  - title: Marina Gorbis
+    url: /assets/images/marina_gorbis.jpg
+  - title: David Boardman
+    url: /assets/images/david_boardman.jpg
+  - title: Lowell Bergman
+    url: /assets/images/lowell_bergman.jpg
+  - title: Sheila Coronel
+    url: /assets/images/sheila_coronel.jpg
+  - title: David E. Kaplan
+    url: /assets/images/david_e_kaplan.jpg
+  - title: Drew Sullivan
+    url: /assets/images/drew_sulliwan.jpg
+  - title: Paul Radu
+    url: /assets/images/paul_radu.jpg
+  - title: Branko Cecen
+    url: /assets/images/branko_cecen.jpg
+
 ---
 
 <h4>JDN/OCCRP Board of Directors</h4>
@@ -8,15 +26,18 @@ title: Board Directors
 <dl>
   <dt>Marina Gorbis, (President)</dt>
   <dd>
-    <img src="{{ site.url }}/assets/images/marina_gorbis.jpg" alt="Marina Gorbis">
+    {% assign post = page %}
+    {% assign image_index = 0 %}
+    {% include responsive-images.html holder = 'false' type = 'from post' %}
     <div>
       Marina Gorbis is also the Executive Director of the Institute for the Future (IFTF). Gorbis created the Global Innovation Forum, a project comparing innovation strategies in different regions, and founded the Global Ethnographic Network (GEN), and led IFTF’s Technology Horizons Program, focusing on interaction between technology and social organizations. She has authored publications on international business and economics, with an emphasis on regional innovation.
     </div>
   </dd>
   
   <dt>David Boardman, (Treasurer)</dt>
-  <dd class="portrait">
-    <img src="{{ site.url }}/assets/images/david_boardman.jpg" alt="David Boardman">
+  <dd>
+    {% assign image_index = 1 %}
+    {% include responsive-images.html holder = 'false' type = 'from post' klass="person left" %}
     <div>
       David Boardman (Treasurer) is Executive Editor to The Seattle Times and has served as its Senior Vice President since May 2010. He is also vice president of the American Society of News Editors. He sits on several boards in addition to that of OCCRP, including the Center for Investigative Reporting, and the Reporters’ Committee for Freedom of the Press. He is a former twotime president of Investigative Reporters and Editors Inc. Under his leadership, The Times won the 2012 Pulitzer Prize for investigative reporting and the 2010 Pulitzer Prize for breaking news.
     </div>
@@ -24,23 +45,26 @@ title: Board Directors
   
   <dt>Lowell Bergman</dt>
   <dd>
-    <img src="{{ site.url }}/assets/images/lowell_bergman.jpg" alt="Lowell Bergman">
+    {% assign image_index = 2 %}
+    {% include responsive-images.html holder = 'false' type = 'from post' %}
     <div>
       Lowell Bergman is the Reva and David Logan Distinguished Professor of Investigative Reporting at the U.C. Berkeley Graduate School of Journalism. He has received the Pulitzer Prize for Public Service, awarded to The New York Times in 2004. The recipient of numerous Emmys, Mr. Bergman has also received five Alfred I. duPont-Columbia University silver and golden Baton awards, three Peabodys, a Polk Award, a Sidney Hillman award for labor reporting, the Bart Richards Award for Media Criticism and the James Madison Freedom of Information Award for Career Achievement from The Society of Professional Journalists.
     </div>
   </dd>
   
   <dt>Sheila Coronel</dt>
-  <dd class="portrait">
-    <img src="{{ site.url }}/assets/images/sheila_coronel.jpg" alt="Sheila Coronel">
+  <dd>
+    {% assign image_index = 3 %}
+    {% include responsive-images.html holder = 'false' type = 'from post' klass="person left" %}
     <div>
       Sheila Coronel is the Professor of Professional Practice, Columbia University, New York, as well as director of the Toni Stabile Center for Investigative Journalism. In 1989, she co-founded the Philippine Center for Investigative Journalism (PCIJ) to promote investigative reporting. She has received numerous awards including the Ramon Magsaysay Award for Journalism, Literature and Creative Communication Arts in 2003, which further promoted the widespread recognition of her work.
     </div>
   </dd>
   
   <dt>David E. Kaplan</dt>
-  <dd class="portrait">
-    <img src="{{ site.url }}/assets/images/david_e_kaplan.jpg" alt="David E. Kaplan">
+  <dd>
+    {% assign image_index = 4 %}
+    {% include responsive-images.html holder = 'false' type = 'from post' klass="person left" %}
     <div>
       David E. Kaplan is director of the Global Investigative Journalism Network, an association of more than 70 organizations worldwide dedicated to the expansion and support of investigative reporting. Kaplan has reported from two dozen countries and his stories have won or shared more than 20 awards. He is a four-time winner of the coveted Investigative Reporters and Editors Award, including three medals, IRE’s highest honor.
     </div>
@@ -53,8 +77,9 @@ title: Board Directors
 
 <dl>
   <dt>Drew Sullivan</dt>
-  <dd class="portrait">
-    <img src="{{ site.url }}/assets/images/drew_sulliwan.jpg" alt="Drew Sullivan">
+  <dd>
+    {% assign image_index = 5 %}
+    {% include responsive-images.html holder = 'false' type = 'from post' klass="person left" %}
     <div>
       Drew Sullivan is the executive editor and co-founder of OCCRP and served as the first director. He founded the Journalism Development Network, an innovative media development organization with programs worldwide. He has served on the board of directors of Investigative Reporters and Editors and the National Institute for Computer Assisted Reporting. Before becoming a journalist, he was an aerospace engineer on the Space Shuttle Project for Rockwell International Space Systems. He worked on stories with OCCRP that have been awarded the Daniel Pearl Award, the Online Journalism Award for investigative reporting, the Global Shining Light Award for reporting under duress, the Tom Renner award for Crime Reporting and many other international awards.
     </div>
@@ -62,7 +87,8 @@ title: Board Directors
   
   <dt>Paul Radu</dt>
   <dd>
-    <img src="{{ site.url }}/assets/images/paul_radu.jpg" alt="Paul Radu">
+    {% assign image_index = 6 %}
+    {% include responsive-images.html holder = 'false' type = 'from post' %}
     <div>
       Paul Radu is the executive director and co-founder of OCCRP and a co-creator of the Investigative Dashboard concept www.investigativedashboard.org. He is the recipient of numerous awards including in 2004, the Knight International Journalism Award and the Investigative Reporters and Editors Award, in 2007, the Global Shining Light Award, the Tom Renner Investigative Reporters and Editors Award and in 2011 the Daniel Pearl Award for Outstanding International Investigative Reporting.
     </div>
@@ -76,7 +102,8 @@ title: Board Directors
 <dl>
   <dt>Branko Cecen</dt>
   <dd>
-    <img src="{{ site.url }}/assets/images/branko_cecen.jpg" alt="Branko Cecen">
+    {% assign image_index = 7 %}
+    {% include responsive-images.html holder = 'false' type = 'from post' %}
     <div>
       Branko Čečen has worked for 20 years in Serbian media as a journalist, editor and director. He presently works as media consultant, trainer and as the director of the Center for Investigative Journalism of Serbia (CINS). For its work, CINS has won three times the Serbian Annual Award for Investigative journalism. 
     </div>

@@ -1,3 +1,10 @@
+@mixin menu-wrapper {
+  border: 1px solid;
+  @include box-shadow($shadow);
+  @include padding; 
+}
+
+
 @mixin link-as-button {
   a {
     display: inline-block;
@@ -126,6 +133,10 @@
           margin: $pad/8 $pad/4 0;
         }
       }
+      
+      @include below-small-screen {
+        width: calc(100% - 1.25em);
+      }
     }
   }
   
@@ -216,6 +227,10 @@
     li {
       margin-bottom: $margin;
       
+      &#copyright {
+        margin-bottom: 0;
+      }
+      
       &#contact {
         @include below-small-screen {
           a {
@@ -231,6 +246,13 @@
           @include list-inline;
           
           @include small-screen-and-up {
+            li#usaid {
+              position: relative;
+              top: -$pad/2;
+            }
+          }
+          
+          @include tablet-landscape {
             li#usaid {
               position: relative;
               top: -$pad/2;

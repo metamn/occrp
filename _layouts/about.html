@@ -10,7 +10,7 @@
     {% include article.html klass = 'single' %}
   </section>
   
-  <aside>
+  <aside id="sidebar">
     <section id="subpages">
       <h3>More pages</h3>
       <nav>
@@ -24,8 +24,18 @@
           <li id="jobs"><a href="{{ site.url }}/about-us/jobs" title="Jobs">Jobs</a></li>
           <li id="awards"><a href="{{ site.url }}/about-us/awards" title="Awards">Awards</a></li>
           <li id="announcements"><a href="{{ site.url }}/about-us/announcements" title="Announcements">Announcements</a></li>
+          <li id="occrp-in-news"><a href="{{ site.url }}/about-us/occrp-in-news" title="OCCRP In News">OCCRP In News</a></li>
+          <li id="activities"><a href="{{ site.url }}/about-us/activities" title="Activities">Activities</a></li>
         </ul>
       </nav>
+    </section>
+    
+    <section id="projects">
+      <h3>Projects</h3>
+      
+      {% for post in site.categories.projects limit:5 offset:0 %}
+        {% include article.html klass = 'thumb' holder='false' %}
+      {% endfor %}
     </section>
     
     <section id="spacer">

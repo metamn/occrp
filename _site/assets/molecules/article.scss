@@ -7,6 +7,10 @@
     @include col-nm(2, 3);
   }
   
+  @include tablet-landscape {
+    @include col-nm(2, 3);
+  }
+  
   article.single {
     @include article-parts(category, date, title, figure, figcaption, null, body);
     @include body-text;
@@ -21,6 +25,10 @@
       .print {
         display: inline-block;
       }
+    }
+    
+    input[type="image"] {
+      width: auto;
     }
     
     figure {
@@ -119,10 +127,10 @@
     @include color(slider);
   
     h1 {
-      font-size: small;
+      font-size: medium;
       
-      @include small-screen-and-up {
-        font-size: medium;
+      @include below-tablet {
+        font-size: small;
       }
     } 
     
@@ -231,6 +239,12 @@
       @include article-parts(null, null, title, figure, null, excerpt);
       
       @include color(slider);
+      
+      @include mobile-landscape {
+        .excerpt {
+          display: none;
+        }
+      }
     }
   } 
 }
@@ -356,7 +370,7 @@
           
           &:first-of-type, &:last-of-type {
             &:after {
-              content: '';
+              content: none;
             }
           }
         }

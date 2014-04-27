@@ -159,7 +159,7 @@ html {
     
     /* Jobs, Announcements
     */
-    &.jobs, &.announcements {
+    &.jobs, &.announcements, &.occrp-in-news {
       @include jobs;
     }
     
@@ -322,5 +322,20 @@ html {
       }
     }
     
+    &.occrp-in-news {  
+      aside #subpages nav li#occrp-in-news {
+        a {
+          @include color(menu);
+        }
+      }
+    }
+    
+    &.activities {  
+      aside #subpages nav li#activities {
+        a {
+          @include color(menu);
+        }
+      }
+    }
   }
 }

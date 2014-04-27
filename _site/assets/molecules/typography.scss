@@ -21,7 +21,6 @@
     font-weight: bold;
     
     @include color(highlight);
-    display: block;
   
   } @elseif ($type == date) {
     font-size: small;
@@ -448,6 +447,11 @@
   
       @include button;
     }
+
+    /* Image */
+    input[type="image"] {
+      width: auto;
+    }
     
     /* Label
     */
@@ -531,7 +535,7 @@
   - they display a custom bullet / number via $before
   - the text of the list is aligned right related to the bullet / number
 */
-@mixin ol-ul($before : null) {
+@mixin ol-ul($before: '') {
   list-style: none outside;
   
   li {
@@ -543,6 +547,11 @@
     
     &:before {
       content: $before;
+      
+      /* A Safari & Chrome fix */
+      @if ($before == '') {
+        content: none;
+      }
       
       /* making the content of the list perfectly align with numbering
         - <li> is relatively positioned

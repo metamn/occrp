@@ -264,6 +264,51 @@
 }
 
 
+/* A placeholder for images to hold the space until the image is loaded
+  - http://www.barrelny.com/blog/taking-control-of-imageloading/
+  - the padding-top sets the image aspect ratio which might vary
+*/
+@mixin image-placeholder($aspect-ratio: 71%) {
+  div.image-holder {
+    position: relative;
+    padding-top: $aspect-ratio;
+    overflow: hidden; 
+    background: transparent url(/assets/images/ajax-loader.gif) no-repeat 50% 50%;
+    
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
+}
+
+figure {
+  @include image-placeholder;
+}
+
+
+@mixin fluid-image {
+  img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+
+/* Remove the extra padding bottom for images inside a link
+- http://stackoverflow.com/questions/3532870/extra-padding-on-linked-images-in-every-broswer
+*/
+figure {
+  a {
+    line-height: 0;
+  }
+}
+
+
+
 
 /* Hide last article 
 */

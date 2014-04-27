@@ -38,5 +38,15 @@
 */
 /* Center vertically or horizontally - http://davidwalsh.name/css-vertical-center 
 */
+/* A placeholder for images to hold the space until the image is loaded - http://www.barrelny.com/blog/taking-control-of-imageloading/ - the padding-top sets the image aspect ratio which might vary
+*/
+figure div.image-holder { position: relative; padding-top: 71%; overflow: hidden; background: transparent url(/assets/images/ajax-loader.gif) no-repeat 50% 50%; }
+figure div.image-holder img { position: absolute; top: 0; left: 0; width: 100%; }
+
+/* Remove the extra padding bottom for images inside a link
+- http://stackoverflow.com/questions/3532870/extra-padding-on-linked-images-in-every-broswer
+*/
+figure a { line-height: 0; }
+
 /* Hide last article 
 */

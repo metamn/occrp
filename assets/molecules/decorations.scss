@@ -114,8 +114,8 @@
     color: $background;
     
     position: relative;
-    top: -$pad - $pad/2;
-    right: $pad/4;
+    top: -$pad*2 + $pad/4;
+    right: $pad/2;
     float: right;
     
     cursor: pointer;
@@ -134,31 +134,5 @@
   border-bottom: 1px solid $c;
 }
 
-
-
-
-
-
-/* Common
----------------------------------------------------------
-*/
-
-@mixin fluid-image {
-  img {
-    width: auto;
-    height: auto;
-    max-width: 100%;
-  }
-}
-
-
-/* Remove the extra padding bottom for images inside a link
-- http://stackoverflow.com/questions/3532870/extra-padding-on-linked-images-in-every-broswer
-*/
-figure {
-  a {
-    line-height: 0;
-  }
-}
 
 
