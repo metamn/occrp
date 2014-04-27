@@ -21,7 +21,6 @@
     font-weight: bold;
     
     @include color(highlight);
-    display: block;
   
   } @elseif ($type == date) {
     font-size: small;

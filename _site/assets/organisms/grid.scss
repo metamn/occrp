@@ -193,7 +193,7 @@
     
     aside {
       #spacer {
-        margin-bottom: -$pad*2000;
+        margin-bottom: -$pad*2000 !important;
         padding-bottom: $pad*2000;
         @include color(slider);
       }
@@ -205,7 +205,7 @@
     
     aside {
       #spacer {
-        margin-bottom: -$pad*2000;
+        margin-bottom: -$pad*2000 !important;
         padding-bottom: $pad*2000;
         @include color(slider);
       }

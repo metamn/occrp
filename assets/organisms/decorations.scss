@@ -1,3 +1,10 @@
+@mixin menu-wrapper {
+  border: 1px solid;
+  @include box-shadow($shadow);
+  @include padding; 
+}
+
+
 @mixin link-as-button {
   a {
     display: inline-block;

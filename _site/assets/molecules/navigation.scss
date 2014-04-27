@@ -42,6 +42,8 @@
 */
 @mixin mobile-menu {
   nav {
+    @include menu-wrapper;
+    
     &.main, &.secondary {
       @include border-thin($color);
       margin-bottom: $pad;
@@ -58,7 +60,7 @@
     }
     
     &.tags {
-      @include block;
+      width: auto;
       margin-right: 0;
       @include enlarge-social-icons;
       

@@ -376,10 +376,11 @@ html body .container #header nav.tags ul.social li img { height: 12px; position:
 html body .container #header nav.tags ul.social li a img { height: 13px; }
 html body .container #header nav.tags ul.social li a img:last-of-type { display: none; }
 html body .container #header .close-icon:after { content: "\2715"; padding: 0.15625em 0.3125em; border: 1px solid; color: white; position: relative; top: -2.1875em; right: 0.625em; float: right; cursor: pointer; }
-@media only screen and (max-width: 29.999em) { html body .container #header nav.main, html body .container #header nav.secondary { border-bottom: 1px solid #231f20; margin-bottom: 1.25em; }
+@media only screen and (max-width: 29.999em) { html body .container #header nav { border: 1px solid; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; padding: 1.25em; width: calc(100% - 2.5em); }
+  html body .container #header nav.main, html body .container #header nav.secondary { border-bottom: 1px solid #231f20; margin-bottom: 1.25em; }
   html body .container #header nav.main ul li, html body .container #header nav.secondary ul li { border-bottom: 1px solid #f1f1f1; }
   html body .container #header nav.main { margin-top: 6.25em; }
-  html body .container #header nav.tags { width: 100%; max-width: 100%; float: left; margin-right: 0; }
+  html body .container #header nav.tags { width: auto; margin-right: 0; }
   html body .container #header nav.tags ul.search, html body .container #header nav.tags ul.tag-list { margin-top: 0.3125em; }
   html body .container #header nav.tags ul.social li a { margin-bottom: 0.3125em; height: 1.25em; }
   html body .container #header nav.tags ul.social li a img { height: 1.25em; }
@@ -415,10 +416,11 @@ html body .container #header .close-icon:after { content: "\2715"; padding: 0.15
   html body .container #header .mobile-menubar ul { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
   html body .container #header nav, html body .container #header .close-icon { display: none; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body .container #header { position: relative; border-bottom: 1px solid #f1f1f1; }
+  html body .container #header nav { border: 1px solid; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; padding: 1.25em; width: calc(100% - 2.5em); }
   html body .container #header nav.main, html body .container #header nav.secondary { border-bottom: 1px solid #231f20; margin-bottom: 1.25em; }
   html body .container #header nav.main ul li, html body .container #header nav.secondary ul li { border-bottom: 1px solid #f1f1f1; }
   html body .container #header nav.main { margin-top: 6.25em; }
-  html body .container #header nav.tags { width: 100%; max-width: 100%; float: left; margin-right: 0; }
+  html body .container #header nav.tags { width: auto; margin-right: 0; }
   html body .container #header nav.tags ul.search, html body .container #header nav.tags ul.tag-list { margin-top: 0.3125em; }
   html body .container #header nav.tags ul.social li a { margin-bottom: 0.3125em; height: 1.25em; }
   html body .container #header nav.tags ul.social li a img { height: 1.25em; }
@@ -507,10 +509,11 @@ html body .container #header.mobile-menu-active nav.tags ul.social li img { heig
 html body .container #header.mobile-menu-active nav.tags ul.social li a img { height: 13px; }
 html body .container #header.mobile-menu-active nav.tags ul.social li a img:last-of-type { display: none; }
 html body .container #header.mobile-menu-active .close-icon:after { content: "\2715"; padding: 0.15625em 0.3125em; border: 1px solid; color: white; position: relative; top: -2.1875em; right: 0.625em; float: right; cursor: pointer; }
-@media only screen and (max-width: 29.999em) { html body .container #header.mobile-menu-active nav.main, html body .container #header.mobile-menu-active nav.secondary { border-bottom: 1px solid #231f20; margin-bottom: 1.25em; }
+@media only screen and (max-width: 29.999em) { html body .container #header.mobile-menu-active nav { border: 1px solid; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; padding: 1.25em; width: calc(100% - 2.5em); }
+  html body .container #header.mobile-menu-active nav.main, html body .container #header.mobile-menu-active nav.secondary { border-bottom: 1px solid #231f20; margin-bottom: 1.25em; }
   html body .container #header.mobile-menu-active nav.main ul li, html body .container #header.mobile-menu-active nav.secondary ul li { border-bottom: 1px solid #f1f1f1; }
   html body .container #header.mobile-menu-active nav.main { margin-top: 6.25em; }
-  html body .container #header.mobile-menu-active nav.tags { width: 100%; max-width: 100%; float: left; margin-right: 0; }
+  html body .container #header.mobile-menu-active nav.tags { width: auto; margin-right: 0; }
   html body .container #header.mobile-menu-active nav.tags ul.search, html body .container #header.mobile-menu-active nav.tags ul.tag-list { margin-top: 0.3125em; }
   html body .container #header.mobile-menu-active nav.tags ul.social li a { margin-bottom: 0.3125em; height: 1.25em; }
   html body .container #header.mobile-menu-active nav.tags ul.social li a img { height: 1.25em; }
@@ -546,10 +549,11 @@ html body .container #header.mobile-menu-active .close-icon:after { content: "\2
   html body .container #header.mobile-menu-active .mobile-menubar ul { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
   html body .container #header.mobile-menu-active nav, html body .container #header.mobile-menu-active .close-icon { display: block; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body .container #header.mobile-menu-active { position: relative; border-bottom: 1px solid #f1f1f1; }
+  html body .container #header.mobile-menu-active nav { border: 1px solid; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; padding: 1.25em; width: calc(100% - 2.5em); }
   html body .container #header.mobile-menu-active nav.main, html body .container #header.mobile-menu-active nav.secondary { border-bottom: 1px solid #231f20; margin-bottom: 1.25em; }
   html body .container #header.mobile-menu-active nav.main ul li, html body .container #header.mobile-menu-active nav.secondary ul li { border-bottom: 1px solid #f1f1f1; }
   html body .container #header.mobile-menu-active nav.main { margin-top: 6.25em; }
-  html body .container #header.mobile-menu-active nav.tags { width: 100%; max-width: 100%; float: left; margin-right: 0; }
+  html body .container #header.mobile-menu-active nav.tags { width: auto; margin-right: 0; }
   html body .container #header.mobile-menu-active nav.tags ul.search, html body .container #header.mobile-menu-active nav.tags ul.tag-list { margin-top: 0.3125em; }
   html body .container #header.mobile-menu-active nav.tags ul.social li a { margin-bottom: 0.3125em; height: 1.25em; }
   html body .container #header.mobile-menu-active nav.tags ul.social li a img { height: 1.25em; }
@@ -668,10 +672,11 @@ html body.sticky .container #header nav.tags ul.social li a img { height: 13px; 
 html body.sticky .container #header nav.tags ul.social li a img:last-of-type { display: none; }
 html body.sticky .container #header .close-icon:after { content: "\2715"; padding: 0.15625em 0.3125em; border: 1px solid; color: white; position: relative; top: -2.1875em; right: 0.625em; float: right; cursor: pointer; }
 @media only screen and (max-width: 29.999em) { html body.sticky .container #header { position: fixed; z-index: 1; background: white; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; }
+  html body.sticky .container #header nav { border: 1px solid; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; padding: 1.25em; width: calc(100% - 2.5em); }
   html body.sticky .container #header nav.main, html body.sticky .container #header nav.secondary { border-bottom: 1px solid #231f20; margin-bottom: 1.25em; }
   html body.sticky .container #header nav.main ul li, html body.sticky .container #header nav.secondary ul li { border-bottom: 1px solid #f1f1f1; }
   html body.sticky .container #header nav.main { margin-top: 6.25em; }
-  html body.sticky .container #header nav.tags { width: 100%; max-width: 100%; float: left; margin-right: 0; }
+  html body.sticky .container #header nav.tags { width: auto; margin-right: 0; }
   html body.sticky .container #header nav.tags ul.search, html body.sticky .container #header nav.tags ul.tag-list { margin-top: 0.3125em; }
   html body.sticky .container #header nav.tags ul.social li a { margin-bottom: 0.3125em; height: 1.25em; }
   html body.sticky .container #header nav.tags ul.social li a img { height: 1.25em; }
@@ -708,10 +713,11 @@ html body.sticky .container #header .close-icon:after { content: "\2715"; paddin
   html body.sticky .container #header .logo { margin-top: 0.3125em; }
   html body.sticky .container #header .mobile-menubar { display: none !important; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.sticky .container #header { position: relative; border-bottom: 1px solid #f1f1f1; position: fixed; z-index: 1; background: white; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; width: 95%; margin: 0 2.5%; margin-left: 0; }
+  html body.sticky .container #header nav { border: 1px solid; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; padding: 1.25em; width: calc(100% - 2.5em); }
   html body.sticky .container #header nav.main, html body.sticky .container #header nav.secondary { border-bottom: 1px solid #231f20; margin-bottom: 1.25em; }
   html body.sticky .container #header nav.main ul li, html body.sticky .container #header nav.secondary ul li { border-bottom: 1px solid #f1f1f1; }
   html body.sticky .container #header nav.main { margin-top: 6.25em; }
-  html body.sticky .container #header nav.tags { width: 100%; max-width: 100%; float: left; margin-right: 0; }
+  html body.sticky .container #header nav.tags { width: auto; margin-right: 0; }
   html body.sticky .container #header nav.tags ul.search, html body.sticky .container #header nav.tags ul.tag-list { margin-top: 0.3125em; }
   html body.sticky .container #header nav.tags ul.social li a { margin-bottom: 0.3125em; height: 1.25em; }
   html body.sticky .container #header nav.tags ul.social li a img { height: 1.25em; }
@@ -869,7 +875,7 @@ html body.frontpage .container main #intro aside section { margin-bottom: 0.625e
   html body.frontpage .container main #intro aside section:nth-of-type(8) { margin-right: 2.5%; }
   html body.frontpage .container main #intro aside section:nth-of-type(9) { margin-right: 0; }
   html body.frontpage .container main #intro aside section:nth-of-type(10) { margin-right: 2.5%; } }
-html body.frontpage .container main #intro aside section h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; display: block; }
+html body.frontpage .container main #intro aside section h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; }
 html body.frontpage .container main #intro aside section h3 a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #intro aside section h3 a:hover { color: #231f20; }
 html body.frontpage .container main #intro aside section article { border-bottom: 1px solid #f1f1f1; margin-bottom: 0.3125em; padding-bottom: 0.3125em; }
@@ -942,7 +948,7 @@ html body.frontpage .container main #intro aside section article h1 { font-size:
   html body.frontpage .container main #intro aside:nth-of-type(2) { margin-right: 2.5%; }
   html body.frontpage .container main #intro aside:nth-of-type(1) { margin-right: 2.5%; }
   html body.frontpage .container main #intro aside section { width: 100%; max-width: 100%; float: left; } }
-html body.frontpage .container main #investigations h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; display: block; }
+html body.frontpage .container main #investigations h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; }
 html body.frontpage .container main #investigations h3 a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #investigations h3 a:hover { color: #231f20; }
 html body.frontpage .container main #investigations article { border-top: 0.3125em solid; padding-top: 0.3125em; }
@@ -1039,7 +1045,7 @@ html body.frontpage .container main #investigations article .gallery span.close 
   html body.frontpage .container main #investigations article:nth-of-type(8) { margin-right: 2.5%; }
   html body.frontpage .container main #investigations article:nth-of-type(9) { margin-right: 0; }
   html body.frontpage .container main #investigations article:nth-of-type(10) { margin-right: 2.5%; } }
-html body.frontpage .container main #products h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; display: block; }
+html body.frontpage .container main #products h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; }
 html body.frontpage .container main #products h3 a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #products h3 a:hover { color: #231f20; }
 html body.frontpage .container main #products article { margin-bottom: 0.3125em; }
@@ -1146,7 +1152,7 @@ html body.frontpage .container main #products article .gallery span.close { posi
   html body.frontpage .container main #products article, html body.frontpage .container main #products .gallery-item { display: none; }
   html body.frontpage .container main #products article:first-of-type, html body.frontpage .container main #products .gallery-item:first-of-type { display: block; } }
 html body.frontpage .container main #projects { margin-top: 0.625em; }
-html body.frontpage .container main #projects h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; display: block; }
+html body.frontpage .container main #projects h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; }
 html body.frontpage .container main #projects h3 a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #projects h3 a:hover { color: #231f20; }
 html body.frontpage .container main #projects article { margin-bottom: 0.3125em; }
@@ -1263,7 +1269,7 @@ html body.frontpage .container main #projects div a:hover { background: white; c
 html body.frontpage .container main #projects div a:hover a { color: #231f20; text-decoration: none; }
 html body.frontpage .container main #projects div a:hover a:hover { color: #982022; }
 html body.frontpage .container main #projects div a .arrow:after { content: "\2794"; font-size: 150%; margin-left: 0.3125em; position: relative; top: 1.5px; }
-html body.frontpage .container main #blog h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; display: block; }
+html body.frontpage .container main #blog h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; }
 html body.frontpage .container main #blog h3 a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #blog h3 a:hover { color: #231f20; }
 html body.frontpage .container main #blog article { background: #231f20; color: white; margin-bottom: 0.3125em; }
@@ -1379,7 +1385,7 @@ html body.frontpage .container main #most-read section { margin-top: 0.625em; }
   html body.frontpage .container main #most-read section:nth-of-type(8) { margin-right: 2.5%; }
   html body.frontpage .container main #most-read section:nth-of-type(9) { margin-right: 0; }
   html body.frontpage .container main #most-read section:nth-of-type(10) { margin-right: 2.5%; } }
-html body.frontpage .container main #most-read section h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; display: block; }
+html body.frontpage .container main #most-read section h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; }
 html body.frontpage .container main #most-read section h3 a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #most-read section h3 a:hover { color: #231f20; }
 html body.frontpage .container main #most-read section article { border-bottom: 1px solid #f1f1f1; margin-bottom: 0.3125em; padding-bottom: 0.3125em; }
@@ -1457,7 +1463,7 @@ html body.frontpage .container main #most-read section article h1 { font-size: m
   html body.frontpage .container main #most-read section:nth-of-type(9) { margin-right: 0; }
   html body.frontpage .container main #most-read section:nth-of-type(10) { margin-right: 2.5%; } }
 html body.frontpage .container main #videos { margin-top: 0.625em; }
-html body.frontpage .container main #videos h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; display: block; }
+html body.frontpage .container main #videos h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; }
 html body.frontpage .container main #videos h3 a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #videos h3 a:hover { color: #231f20; }
 html body.frontpage .container main #videos article { margin-bottom: 0.3125em; position: relative; width: 100%; height: 100%; width: 31.5%; margin-right: 2.5%; float: left; }
@@ -1567,7 +1573,7 @@ html body.frontpage .container main #videos article:nth-of-type(10) { margin-rig
   html body.frontpage .container main #videos article, html body.frontpage .container main #videos .gallery-item { display: none; }
   html body.frontpage .container main #videos article:first-of-type, html body.frontpage .container main #videos .gallery-item:first-of-type { display: block; } }
 html body.frontpage .container main #tags-and-gallery { margin-top: 0.625em; }
-html body.frontpage .container main #tags-and-gallery h3, html body.frontpage .container main #tags-and-gallery figcaption { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; display: block; display: none; }
+html body.frontpage .container main #tags-and-gallery h3, html body.frontpage .container main #tags-and-gallery figcaption { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; display: none; }
 html body.frontpage .container main #tags-and-gallery h3 a, html body.frontpage .container main #tags-and-gallery figcaption a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #tags-and-gallery h3 a:hover, html body.frontpage .container main #tags-and-gallery figcaption a:hover { color: #231f20; }
 html body.frontpage .container main #tags-and-gallery nav { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; width: 100%; max-width: 100%; float: left; background: #231f20; color: white; }
@@ -1637,11 +1643,11 @@ html body.frontpage .container main #tags-and-gallery aside > h3, html body.fron
   html body.frontpage .container main #tags-and-gallery aside figure div.image-holder img { position: absolute; top: 0; left: 0; width: 100%; }
   html body.frontpage .container main #tags-and-gallery nav { width: 31.5%; margin-right: 2.5%; float: left; } }
 html body.frontpage .container main #tags-and-gallery nav { margin-right: 0; }
-@media only screen and (max-width: 29.999em) { html body.frontpage .container main #tags-and-gallery nav { margin-top: 0.625em; } }
+@media only screen and (max-width: 47.999em) { html body.frontpage .container main #tags-and-gallery nav { margin-top: 0.625em; } }
 @media only screen and (min-width: 80em) { html body.category main { overflow: hidden; }
-  html body.category main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
+  html body.category main aside #spacer { margin-bottom: -2500em !important; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
 @media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.category main { overflow: hidden; }
-  html body.category main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
+  html body.category main aside #spacer { margin-bottom: -2500em !important; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
 html body.category main #articles { width: 100%; max-width: 100%; float: left; }
 @media only screen and (min-width: 80em) { html body.category main #articles { width: 65.5%; margin-right: 2.5%; float: left; } }
 @media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.category main #articles { width: 65.5%; margin-right: 2.5%; float: left; } }
@@ -1649,7 +1655,7 @@ html body.category main #sidebar { width: 100%; max-width: 100%; float: left; ma
 @media only screen and (min-width: 80em) { html body.category main #sidebar { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; margin-top: 0; } }
 @media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.category main #sidebar { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; margin-top: 0; } }
 html body.category main #sidebar section { margin-bottom: 0.625em; }
-html body.category main #sidebar section h3 { display: block; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; display: block; }
+html body.category main #sidebar section h3 { display: block; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; }
 html body.category main #sidebar section h3 a { color: #982022; text-decoration: none; }
 html body.category main #sidebar section h3 a:hover { color: #231f20; }
 html body.category main #sidebar section article { width: 100%; max-width: 100%; float: left; margin-bottom: 0.3125em; background: #f1f1f1; color: #231f20; background: white; color: #231f20; border-bottom: 1px solid #f1f1f1; padding-bottom: 0.3125em; }
@@ -1771,7 +1777,7 @@ html body.category main #sidebar #spacer > h3 { display: none; }
 html body.category #articles { /* The first article
 */ /* The rest of the articles
 */ }
-html body.category #articles .title { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; display: block; }
+html body.category #articles .title { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; }
 html body.category #articles .title a { color: #982022; text-decoration: none; }
 html body.category #articles .title a:hover { color: #231f20; }
 html body.category #articles nav { margin: 1.25em 0; }
@@ -2070,9 +2076,9 @@ html body.category #articles article.thumb { margin-bottom: 0.625em; }
 
 @media only screen and (max-width: 29.999em) { html body.category #articles article.thumb { width: 100%; max-width: 100%; float: left; } }
 @media only screen and (min-width: 80em) { html body.tag main { overflow: hidden; }
-  html body.tag main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
+  html body.tag main aside #spacer { margin-bottom: -2500em !important; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
 @media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.tag main { overflow: hidden; }
-  html body.tag main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
+  html body.tag main aside #spacer { margin-bottom: -2500em !important; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
 html body.tag main #articles { width: 100%; max-width: 100%; float: left; }
 @media only screen and (min-width: 80em) { html body.tag main #articles { width: 65.5%; margin-right: 2.5%; float: left; } }
 @media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.tag main #articles { width: 65.5%; margin-right: 2.5%; float: left; } }
@@ -2080,7 +2086,7 @@ html body.tag main #sidebar { width: 100%; max-width: 100%; float: left; margin-
 @media only screen and (min-width: 80em) { html body.tag main #sidebar { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; margin-top: 0; } }
 @media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.tag main #sidebar { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; margin-top: 0; } }
 html body.tag main #sidebar section { margin-bottom: 0.625em; }
-html body.tag main #sidebar section h3 { display: block; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; display: block; }
+html body.tag main #sidebar section h3 { display: block; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; }
 html body.tag main #sidebar section h3 a { color: #982022; text-decoration: none; }
 html body.tag main #sidebar section h3 a:hover { color: #231f20; }
 html body.tag main #sidebar section article { width: 100%; max-width: 100%; float: left; margin-bottom: 0.3125em; background: #f1f1f1; color: #231f20; background: white; color: #231f20; border-bottom: 1px solid #f1f1f1; padding-bottom: 0.3125em; }
@@ -2202,7 +2208,7 @@ html body.tag main #sidebar #spacer > h3 { display: none; }
 html body.tag #articles { /* The first article
 */ /* The rest of the articles
 */ }
-html body.tag #articles .title { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; display: block; }
+html body.tag #articles .title { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; }
 html body.tag #articles .title a { color: #982022; text-decoration: none; }
 html body.tag #articles .title a:hover { color: #231f20; }
 html body.tag #articles nav { margin: 1.25em 0; }
@@ -2502,7 +2508,7 @@ html body.tag #articles article.thumb { margin-bottom: 0.625em; }
 @media only screen and (max-width: 29.999em) { html body.tag #articles article.thumb { width: 100%; max-width: 100%; float: left; } }
 html body.tag #banner { margin-bottom: 1.25em; }
 html body.tag #banner figure figcaption { display: none; }
-html body.archive #articles .title { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; display: block; }
+html body.archive #articles .title { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; }
 html body.archive #articles .title a { color: #982022; text-decoration: none; }
 html body.archive #articles .title a:hover { color: #231f20; }
 html body.archive #articles nav { margin: 1.25em 0; }
@@ -2715,13 +2721,13 @@ html body.archive #articles article.thumb h1 { font-size: medium; }
   html body.archive #articles article.thumb:nth-of-type(18) { margin-right: 0; }
   html body.archive #articles article.thumb:nth-of-type(19) { margin-right: 2.5%; }
   html body.archive #articles article.thumb:nth-of-type(20) { margin-right: 2.5%; } }
-html body.resources #tools h3, html body.resources #documents h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; display: block; font-weight: normal; margin-top: 0.625em; display: block; }
+html body.resources #tools h3, html body.resources #documents h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; font-weight: normal; margin-top: 0.625em; display: block; }
 html body.resources #tools h3 a, html body.resources #documents h3 a { color: #982022; text-decoration: none; }
 html body.resources #tools h3 a:hover, html body.resources #documents h3 a:hover { color: #231f20; }
 @media only screen and (min-width: 80em) { html body.blog main { overflow: hidden; }
-  html body.blog main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
+  html body.blog main aside #spacer { margin-bottom: -2500em !important; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
 @media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.blog main { overflow: hidden; }
-  html body.blog main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
+  html body.blog main aside #spacer { margin-bottom: -2500em !important; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
 html body.blog main #articles { width: 100%; max-width: 100%; float: left; }
 @media only screen and (min-width: 80em) { html body.blog main #articles { width: 65.5%; margin-right: 2.5%; float: left; } }
 @media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.blog main #articles { width: 65.5%; margin-right: 2.5%; float: left; } }
@@ -2729,7 +2735,7 @@ html body.blog main #sidebar { width: 100%; max-width: 100%; float: left; margin
 @media only screen and (min-width: 80em) { html body.blog main #sidebar { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; margin-top: 0; } }
 @media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.blog main #sidebar { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; margin-top: 0; } }
 html body.blog main #sidebar section { margin-bottom: 0.625em; }
-html body.blog main #sidebar section h3 { display: block; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; display: block; }
+html body.blog main #sidebar section h3 { display: block; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; }
 html body.blog main #sidebar section h3 a { color: #982022; text-decoration: none; }
 html body.blog main #sidebar section h3 a:hover { color: #231f20; }
 html body.blog main #sidebar section article { width: 100%; max-width: 100%; float: left; margin-bottom: 0.3125em; background: #f1f1f1; color: #231f20; background: white; color: #231f20; border-bottom: 1px solid #f1f1f1; padding-bottom: 0.3125em; }
@@ -2848,7 +2854,7 @@ html body.blog main #sidebar section article h1 { font-weight: normal; }
 @media only screen and (min-width: 80em) { html body.blog main #sidebar section article { width: 100%; max-width: 100%; float: left; } }
 @media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.blog main #sidebar section article { width: 100%; max-width: 100%; float: left; } }
 html body.blog main #sidebar #spacer > h3 { display: none; }
-html body.blog #articles .title { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; display: block; }
+html body.blog #articles .title { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; }
 html body.blog #articles .title a { color: #982022; text-decoration: none; }
 html body.blog #articles .title a:hover { color: #231f20; }
 html body.blog #articles nav { margin: 1.25em 0; }
@@ -2999,9 +3005,9 @@ html body.blog #articles article.thumb .excerpt { padding-bottom: 1.25em; border
 @media only screen and (max-width: 29.999em) and (max-width: 47.999em) { html body.blog #articles article.thumb h1 { font-size: small; } }
 
 @media only screen and (min-width: 80em) { html body.author main { overflow: hidden; }
-  html body.author main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
+  html body.author main aside #spacer { margin-bottom: -2500em !important; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
 @media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.author main { overflow: hidden; }
-  html body.author main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
+  html body.author main aside #spacer { margin-bottom: -2500em !important; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
 html body.author main #articles { width: 100%; max-width: 100%; float: left; }
 @media only screen and (min-width: 80em) { html body.author main #articles { width: 65.5%; margin-right: 2.5%; float: left; } }
 @media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.author main #articles { width: 65.5%; margin-right: 2.5%; float: left; } }
@@ -3009,7 +3015,7 @@ html body.author main #sidebar { width: 100%; max-width: 100%; float: left; marg
 @media only screen and (min-width: 80em) { html body.author main #sidebar { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; margin-top: 0; } }
 @media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.author main #sidebar { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; margin-top: 0; } }
 html body.author main #sidebar section { margin-bottom: 0.625em; }
-html body.author main #sidebar section h3 { display: block; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; display: block; }
+html body.author main #sidebar section h3 { display: block; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; }
 html body.author main #sidebar section h3 a { color: #982022; text-decoration: none; }
 html body.author main #sidebar section h3 a:hover { color: #231f20; }
 html body.author main #sidebar section article { width: 100%; max-width: 100%; float: left; margin-bottom: 0.3125em; background: #f1f1f1; color: #231f20; background: white; color: #231f20; border-bottom: 1px solid #f1f1f1; padding-bottom: 0.3125em; }
@@ -3131,7 +3137,7 @@ html body.author main #sidebar #spacer > h3 { display: none; }
 html body.author #articles { /* The first article
 */ /* The rest of the articles
 */ }
-html body.author #articles .title { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; display: block; }
+html body.author #articles .title { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; }
 html body.author #articles .title a { color: #982022; text-decoration: none; }
 html body.author #articles .title a:hover { color: #231f20; }
 html body.author #articles nav { margin: 1.25em 0; }
@@ -3430,9 +3436,9 @@ html body.author #articles article.thumb { margin-bottom: 0.625em; }
 
 @media only screen and (max-width: 29.999em) { html body.author #articles article.thumb { width: 100%; max-width: 100%; float: left; } }
 @media only screen and (min-width: 80em) { html body.article main, html body.about main, html body.post main { overflow: hidden; }
-  html body.article main aside #spacer, html body.about main aside #spacer, html body.post main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
+  html body.article main aside #spacer, html body.about main aside #spacer, html body.post main aside #spacer { margin-bottom: -2500em !important; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
 @media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.article main, html body.about main, html body.post main { overflow: hidden; }
-  html body.article main aside #spacer, html body.about main aside #spacer, html body.post main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
+  html body.article main aside #spacer, html body.about main aside #spacer, html body.post main aside #spacer { margin-bottom: -2500em !important; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
 html body.article main #articles, html body.about main #articles, html body.post main #articles { width: 100%; max-width: 100%; float: left; }
 @media only screen and (min-width: 80em) { html body.article main #articles, html body.about main #articles, html body.post main #articles { width: 65.5%; margin-right: 2.5%; float: left; } }
 @media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.article main #articles, html body.about main #articles, html body.post main #articles { width: 65.5%; margin-right: 2.5%; float: left; } }
@@ -3440,7 +3446,7 @@ html body.article main #sidebar, html body.about main #sidebar, html body.post m
 @media only screen and (min-width: 80em) { html body.article main #sidebar, html body.about main #sidebar, html body.post main #sidebar { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; margin-top: 0; } }
 @media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.article main #sidebar, html body.about main #sidebar, html body.post main #sidebar { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; margin-top: 0; } }
 html body.article main #sidebar section, html body.about main #sidebar section, html body.post main #sidebar section { margin-bottom: 0.625em; }
-html body.article main #sidebar section h3, html body.about main #sidebar section h3, html body.post main #sidebar section h3 { display: block; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; display: block; }
+html body.article main #sidebar section h3, html body.about main #sidebar section h3, html body.post main #sidebar section h3 { display: block; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; }
 html body.article main #sidebar section h3 a, html body.about main #sidebar section h3 a, html body.post main #sidebar section h3 a { color: #982022; text-decoration: none; }
 html body.article main #sidebar section h3 a:hover, html body.about main #sidebar section h3 a:hover, html body.post main #sidebar section h3 a:hover { color: #231f20; }
 html body.article main #sidebar section article, html body.about main #sidebar section article, html body.post main #sidebar section article { width: 100%; max-width: 100%; float: left; margin-bottom: 0.3125em; background: #f1f1f1; color: #231f20; background: white; color: #231f20; border-bottom: 1px solid #f1f1f1; padding-bottom: 0.3125em; }
@@ -3754,17 +3760,17 @@ html body.article #article article.single #comments ul li:before, html body.abou
 html body.article #article article.single #comments ul li a, html body.about #article article.single #comments ul li a, html body.post #article article.single #comments ul li a { font-size: small; text-transform: uppercase; letter-spacing: 1.1px; font-style: normal; }
 html body.article #article article.single #comments ul li date, html body.about #article article.single #comments ul li date, html body.post #article article.single #comments ul li date { font-size: small; color: #332d2f; font-style: normal; }
 html body.about main aside { margin-top: 2.5em; }
-html body.about main aside section > h3 { display: none; }
-@media only screen and (max-width: 79.999em) { html body.about main aside section > h3 { display: block; }
-  html body.about main aside section h3 { margin-bottom: 0.625em; } }
-@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.about main aside section > h3 { display: none; } }
-html body.about main aside section nav { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; }
-html body.about main aside section nav > h3 { display: none; }
-html body.about main aside section nav ul li a { padding: 0.625em 0.3125em; display: inline-block; }
-html body.about main aside section nav ul li.active a, html body.about main aside section nav ul li:hover a { background: #982022; color: white; }
-html body.about main aside section nav ul li.active a a, html body.about main aside section nav ul li:hover a a { color: #231f20; text-decoration: none; }
-html body.about main aside section nav ul li.active a a:hover, html body.about main aside section nav ul li:hover a a:hover { color: white; }
-html body.about main aside section nav ul li { border-bottom: 1px solid #f1f1f1; margin-bottom: 0.3125em; padding-bottom: 0.3125em; }
+html body.about main aside #subpages > h3 { display: none; }
+@media only screen and (max-width: 79.999em) { html body.about main aside #subpages > h3 { display: block; }
+  html body.about main aside #subpages h3 { margin-bottom: 0.625em; } }
+@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.about main aside #subpages > h3 { display: none; } }
+html body.about main aside #subpages nav { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; border: 1px solid; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; padding: 1.25em; width: calc(100% - 2.5em); }
+html body.about main aside #subpages nav > h3 { display: none; }
+html body.about main aside #subpages nav ul li a { padding: 0.625em 0.3125em; display: inline-block; }
+html body.about main aside #subpages nav ul li.active a, html body.about main aside #subpages nav ul li:hover a { background: #982022; color: white; }
+html body.about main aside #subpages nav ul li.active a a, html body.about main aside #subpages nav ul li:hover a a { color: #231f20; text-decoration: none; }
+html body.about main aside #subpages nav ul li.active a a:hover, html body.about main aside #subpages nav ul li:hover a a:hover { color: white; }
+html body.about main aside #subpages nav ul li { border-bottom: 1px solid #f1f1f1; margin-bottom: 0.3125em; padding-bottom: 0.3125em; }
 html body.about main aside #spacer { top: 0; }
 html body.about main .subpages-menu { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; position: absolute; right: 0.625em; margin-top: 0.625em; cursor: pointer; }
 html body.about main .subpages-menu .arrow:after { content: "\2794"; margin-left: 0.3125em; display: inline-block; -moz-transform: rotate(90deg); -ms-transform: rotate(90deg); -o-transform: rotate(90deg); -webkit-transform: rotate(90deg); transform: rotate(90deg); }
@@ -3942,7 +3948,7 @@ html body.jobs #main #article .single .content article h1 + ul, html body.jobs #
 html body.jobs #main #article .single .content article li ul, html body.jobs #main #article .single .content article li ol, html body.announcements #main #article .single .content article li ul, html body.announcements #main #article .single .content article li ol, html body.occrp-in-news #main #article .single .content article li ul, html body.occrp-in-news #main #article .single .content article li ol { margin-top: 0; }
 html body.jobs #main #article .single .content article h1, html body.announcements #main #article .single .content article h1, html body.occrp-in-news #main #article .single .content article h1 { padding-bottom: 0; }
 html body.jobs #main #article .single .content article .excerpt, html body.announcements #main #article .single .content article .excerpt, html body.occrp-in-news #main #article .single .content article .excerpt { display: block; padding-left: 0; }
-html body.galleries #articles .title { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; display: block; }
+html body.galleries #articles .title { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; }
 html body.galleries #articles .title a { color: #982022; text-decoration: none; }
 html body.galleries #articles .title a:hover { color: #231f20; }
 html body.galleries #articles nav { margin: 1.25em 0; }
@@ -4001,9 +4007,9 @@ html body.galleries #articles article.thumb { height: auto; border-top: 0; paddi
   html body.galleries #articles article.thumb:nth-of-type(19) { margin-right: 2.5%; }
   html body.galleries #articles article.thumb:nth-of-type(20) { margin-right: 2.5%; } }
 @media only screen and (min-width: 80em) { html body.daily main { overflow: hidden; }
-  html body.daily main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
+  html body.daily main aside #spacer { margin-bottom: -2500em !important; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
 @media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.daily main { overflow: hidden; }
-  html body.daily main aside #spacer { margin-bottom: -2500em; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
+  html body.daily main aside #spacer { margin-bottom: -2500em !important; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
 html body.daily main #articles { width: 100%; max-width: 100%; float: left; }
 @media only screen and (min-width: 80em) { html body.daily main #articles { width: 65.5%; margin-right: 2.5%; float: left; } }
 @media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.daily main #articles { width: 65.5%; margin-right: 2.5%; float: left; } }
@@ -4011,7 +4017,7 @@ html body.daily main #sidebar { width: 100%; max-width: 100%; float: left; margi
 @media only screen and (min-width: 80em) { html body.daily main #sidebar { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; margin-top: 0; } }
 @media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.daily main #sidebar { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; margin-top: 0; } }
 html body.daily main #sidebar section { margin-bottom: 0.625em; }
-html body.daily main #sidebar section h3 { display: block; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; display: block; }
+html body.daily main #sidebar section h3 { display: block; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; }
 html body.daily main #sidebar section h3 a { color: #982022; text-decoration: none; }
 html body.daily main #sidebar section h3 a:hover { color: #231f20; }
 html body.daily main #sidebar section article { width: 100%; max-width: 100%; float: left; margin-bottom: 0.3125em; background: #f1f1f1; color: #231f20; background: white; color: #231f20; border-bottom: 1px solid #f1f1f1; padding-bottom: 0.3125em; }
@@ -4133,7 +4139,7 @@ html body.daily main #sidebar #spacer > h3 { display: none; }
 html body.daily #articles { /* The first article
 */ /* The rest of the articles
 */ }
-html body.daily #articles .title { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; display: block; }
+html body.daily #articles .title { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; }
 html body.daily #articles .title a { color: #982022; text-decoration: none; }
 html body.daily #articles .title a:hover { color: #231f20; }
 html body.daily #articles nav { margin: 1.25em 0; }
@@ -4431,7 +4437,7 @@ html body.daily #articles article.thumb { margin-bottom: 0.625em; }
   html body.daily #articles article.thumb:nth-of-type(20) { margin-right: 2.5%; } }
 
 @media only screen and (max-width: 29.999em) { html body.daily #articles article.thumb { width: 100%; max-width: 100%; float: left; } }
-html body.daily #articles .title { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; display: block; }
+html body.daily #articles .title { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; }
 html body.daily #articles .title a { color: #982022; text-decoration: none; }
 html body.daily #articles .title a:hover { color: #231f20; }
 html body.daily #articles nav { margin: 1.25em 0; }

@@ -12,7 +12,7 @@
     aside {
       margin-top: $pad*2;
       
-      section {
+      #subpages {
         @include hide-title;
         
         @include below-small-screen {
@@ -30,6 +30,7 @@
         nav {
           @include hide-title;
           @include menu(border-thin);
+          @include menu-wrapper;
         }
       }
       
@@ -284,7 +285,7 @@
   nav {
     margin-right: 0;
     
-    @include mobile {
+    @include below-tablet {
       margin-top: $margin;
     }
   }
