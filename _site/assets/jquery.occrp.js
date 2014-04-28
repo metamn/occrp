@@ -64,7 +64,7 @@ $(document).ready(function() {
   $('.frontpage #slider nav ol li').first().addClass('active');
 
   // Fit slider title to fill the empty space
-  $('.frontpage #slider article.thumb h1').fitText();
+  //$('.frontpage #slider article.thumb h1').fitText();
   
   $('.frontpage #slider nav ol li').click(function() {
     var index = $(this).index();
@@ -77,7 +77,7 @@ $(document).ready(function() {
     
     $('.frontpage #slider article').hide();
     article.show();
-    article.find('h1').fitText();
+    //article.find('h1').fitText();
     
     return false;
   });

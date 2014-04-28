@@ -32,6 +32,8 @@
     }
     
     figure {
+      @include remove-image-placeholder;
+      
       &.people, &.document, &.company {
         @include below-tablet {
           @include inline-figure;
@@ -149,6 +151,11 @@
       padding: $pad/4;
     }
   
+    @include mobile-landscape {
+      .excerpt {
+        display: none;
+      }
+    }
     
   } @elseif ($style == archive) {
     // It goes together with projects
@@ -219,6 +226,12 @@
       font-weight: normal;
       padding: $margin 0;
     }
+    
+    &:first-of-type {
+      h1 {
+        padding-top: 0;
+      }
+    }
 
   } @elseif ($style == daily) {
     // builds upon news
@@ -237,10 +250,17 @@
     article {
       @include block;
       @include article-parts(null, null, title, figure, null, excerpt);
-      
       @include color(slider);
       
+      h1 {
+        @include font(single-article-title);
+      }
+      
       @include mobile-landscape {
+        h1 {
+          @include h1;
+        }
+        
         .excerpt {
           display: none;
         }
@@ -380,6 +400,11 @@
     .print {
       cursor: pointer;
       width: $pad;
+      display: none;
+    }
+    
+    .more-pages {
+      @include font(navigation);
       display: none;
     }
   }
