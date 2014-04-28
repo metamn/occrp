@@ -284,6 +284,18 @@
   }
 }
 
+@mixin remove-image-placeholder {
+  div.image-holder {
+    padding-top: 0;
+    overflow: visible;
+    
+    img {
+      position: relative;
+      width: 100%;
+    }
+  }
+}
+
 figure {
   @include image-placeholder;
 }

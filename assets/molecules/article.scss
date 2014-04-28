@@ -32,6 +32,8 @@
     }
     
     figure {
+      @include remove-image-placeholder;
+      
       &.people, &.document, &.company {
         @include below-tablet {
           @include inline-figure;
@@ -398,6 +400,11 @@
     .print {
       cursor: pointer;
       width: $pad;
+      display: none;
+    }
+    
+    .more-pages {
+      @include font(navigation);
       display: none;
     }
   }
