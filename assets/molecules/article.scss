@@ -149,6 +149,11 @@
       padding: $pad/4;
     }
   
+    @include mobile-landscape {
+      .excerpt {
+        display: none;
+      }
+    }
     
   } @elseif ($style == archive) {
     // It goes together with projects
