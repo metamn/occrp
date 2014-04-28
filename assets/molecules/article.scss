@@ -237,10 +237,17 @@
     article {
       @include block;
       @include article-parts(null, null, title, figure, null, excerpt);
-      
       @include color(slider);
       
+      h1 {
+        @include font(single-article-title);
+      }
+      
       @include mobile-landscape {
+        h1 {
+          @include h1;
+        }
+        
         .excerpt {
           display: none;
         }

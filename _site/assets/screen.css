@@ -828,7 +828,9 @@ html body.frontpage .container main #intro #slider article .gallery span { text-
 html body.frontpage .container main #intro #slider article .gallery span a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #intro #slider article .gallery span a:hover { color: #231f20; }
 html body.frontpage .container main #intro #slider article .gallery span.close { position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); padding: 0.15625em; position: absolute; bottom: 0.625em; display: none; }
-@media only screen and (max-width: 47.999em) and (orientation: landscape) { html body.frontpage .container main #intro #slider article .excerpt { display: none; } }
+html body.frontpage .container main #intro #slider article h1 { font-size: 24px; font-size: 1.5rem; padding: 0; }
+@media only screen and (max-width: 47.999em) and (orientation: landscape) { html body.frontpage .container main #intro #slider article h1 { font-size: 20px; font-size: 1.25rem; font-weight: bold; }
+  html body.frontpage .container main #intro #slider article .excerpt { display: none; } }
 html body.frontpage .container main #intro #slider nav { margin: 1.25em 0; }
 html body.frontpage .container main #intro #slider nav > h3 { display: none; }
 html body.frontpage .container main #intro #slider nav ol li { display: inline-block; float: left; margin-right: 0.625em; }
