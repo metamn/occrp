@@ -76,6 +76,10 @@
       height: auto;
       border-top: 0;
       padding-top: 0;
+      
+      figure {
+        @include block;
+      }
     }
   
   } @elseif ($type == daily) {

@@ -146,13 +146,6 @@ $(document).ready(function() {
 
 
   
-  // Scroll to subpages on About Us
-  $('.subpages-menu').click(function() {
-    scrollTo($('#subpages'));
-  });
-  
-  
-  
   // Share buttons in article body
   $('.share-buttons .twitter').sharrre({
     share: {

@@ -9,34 +9,6 @@
 */
 @mixin about-us {
   main {
-    #article {
-      .single {
-        .meta {
-          .more-pages {
-            cursor: pointer;
-            
-            @include below-small-screen {
-              display: block;
-            }
-            
-            @include tablet-landscape {
-              display: none;
-            }
-            
-            .arrow {
-              &:after {
-                content: $arrow-down;
-                margin-left: $pad/4;
-                display: inline-block;
-                @include transform(rotate(90deg));
-              }
-            }
-          }
-        }
-      }
-    }
-    
-    
     aside {
       margin-top: $pad*2;
       

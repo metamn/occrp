@@ -48,6 +48,14 @@
   overflow: hidden;
   
   figure {
+    @include remove-image-placeholder;
+    
+    div.image-holder {
+      img {
+        width: auto !important;
+      }
+    }
+    
     figcaption {
       display: none;
     }
@@ -55,13 +63,13 @@
   
   span {
     @include font(navigation);
-    @include color(highlight);
+    @include color(invert);
+    padding: $pad/4 $pad/2;
     font-size: small;
     cursor: pointer;
     
     &.close {
       @include center(horizontal);
-      padding: $pad/8;
       
       position: absolute;
       bottom: $margin;
