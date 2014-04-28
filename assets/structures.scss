@@ -383,10 +383,10 @@
     @include hide-last-article;
   }
   
-  div {
+  .more-projects {
     @include block;
     @include mobile {
-      margin-top: $margin;
+      margin: $margin 0;
     }
     
     text-align: center;
@@ -485,8 +485,11 @@
 /* The Slider with the news on frontpage
 */
 @mixin frontpage-intro {
+  @include hide-title;
+  
   #slider {
     @include slider;
+    @include hide-title;
   }
   
   aside {

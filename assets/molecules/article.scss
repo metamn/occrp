@@ -224,6 +224,12 @@
       font-weight: normal;
       padding: $margin 0;
     }
+    
+    &:first-of-type {
+      h1 {
+        padding-top: 0;
+      }
+    }
 
   } @elseif ($style == daily) {
     // builds upon news

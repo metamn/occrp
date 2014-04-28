@@ -223,6 +223,12 @@
 /* Sponsors, contact in the footer
 */
 @mixin sponsors-footer {
+  
+  @include below-small-screen {
+    position: relative;
+    top: -$pad/2;
+  }
+  
   ul {
     li {
       margin-bottom: $margin;

@@ -597,11 +597,13 @@ html body .container #header.mobile-menu-active .close-icon:after { content: "\2
   html body .container #header.mobile-menu-active .main, html body .container #header.mobile-menu-active .secondary { margin-top: 2.5em; border-bottom: 1px solid #f1f1f1; /* If the menu goes two lines in strange responsive cases then cut the second line
 */ height: 2.5em; overflow: hidden; }
   html body .container #header.mobile-menu-active .mobile-menubar, html body .container #header.mobile-menu-active .close-icon { display: none; } }
+html body .container #main section > h3 { display: block; }
 html body .container #footer { margin: 3.75em 0 0; padding: 1.25em 0; border-top: 0.3125em solid; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; }
 @media only screen and (max-width: 79.999em) { html body .container #footer nav { width: 48.75%; margin-right: 2.5%; float: left; }
   html body .container #footer nav:nth-of-type(2) { margin-right: 0; } }
 @media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body .container #footer nav#occrp { width: 65.5%; margin-right: 2.5%; float: left; }
   html body .container #footer nav#social-icons { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; } }
+@media only screen and (max-width: 79.999em) { html body .container #footer nav#occrp { position: relative; top: -0.625em; } }
 html body .container #footer nav#occrp ul li { margin-bottom: 0.625em; }
 html body .container #footer nav#occrp ul li#copyright { margin-bottom: 0; }
 @media only screen and (max-width: 79.999em) { html body .container #footer nav#occrp ul li#contact a:before { content: '\2709'; } }
@@ -766,6 +768,7 @@ html body.sticky .container #header .close-icon:after { content: "\2715"; paddin
 @media only screen and (min-width: 80em) { html body.sticky .container #header .tags { display: none; }
   html body.sticky .container #header nav.main, html body.sticky .container #header nav.secondary { margin-top: 0; border-bottom: 0; } }
 html body.sticky .container main, html body.sticky .container #footer { position: relative; top: 3.75em; }
+html body.frontpage .container main #intro > h3 { display: none; }
 html body.frontpage .container main #intro #slider article { width: 100%; max-width: 100%; float: left; background: #f1f1f1; color: #231f20; }
 html body.frontpage .container main #intro #slider article h1 { display: block; }
 html body.frontpage .container main #intro #slider article figure { display: block; }
@@ -855,6 +858,7 @@ html body.frontpage .container main #intro #slider .desktop { display: block; }
   html body.frontpage .container main #intro #slider article h1, html body.frontpage .container main #intro #slider article .excerpt { margin-right: 0; padding: 0.3125em; width: calc(48.75% - 0.625em); }
   html body.frontpage .container main #intro #slider nav { margin-left: 51.25%; width: auto; margin-top: 0; position: relative; top: -2.8125em; height: 0; } }
 @media only screen and (max-width: 29.999em) { html body.frontpage .container main #intro #slider { margin-bottom: 0.625em; } }
+html body.frontpage .container main #intro #slider > h3 { display: none; }
 html body.frontpage .container main #intro aside section { margin-bottom: 0.625em; }
 @media only screen and (max-width: 29.999em) { html body.frontpage .container main #intro aside section { width: 100%; margin-right: 0; float: left; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.frontpage .container main #intro aside section { width: 48.75%; margin-right: 2.5%; float: left; }
@@ -1262,15 +1266,15 @@ html body.frontpage .container main #projects article h1 { font-size: medium; }
   html body.frontpage .container main #projects article, html body.frontpage .container main #projects .gallery-item { display: none; }
   html body.frontpage .container main #projects article:first-of-type, html body.frontpage .container main #projects .gallery-item:first-of-type { display: block; } }
 @media only screen and (min-width: 80em) { html body.frontpage .container main #projects article:last-of-type { display: none; } }
-html body.frontpage .container main #projects div { width: 100%; max-width: 100%; float: left; text-align: center; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; }
-@media only screen and (max-width: 29.999em) { html body.frontpage .container main #projects div { margin-top: 0.625em; } }
-html body.frontpage .container main #projects div a { display: inline-block; text-transform: uppercase; letter-spacing: 1.1px; border: 1px solid #231f20; background: #231f20; color: white; cursor: pointer; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; padding: 0.625em; padding-top: 0.3125em; }
-html body.frontpage .container main #projects div a a { color: white; text-decoration: none; }
-html body.frontpage .container main #projects div a a:hover { color: white; }
-html body.frontpage .container main #projects div a:hover { background: white; color: #231f20; }
-html body.frontpage .container main #projects div a:hover a { color: #231f20; text-decoration: none; }
-html body.frontpage .container main #projects div a:hover a:hover { color: #982022; }
-html body.frontpage .container main #projects div a .arrow:after { content: "\2794"; font-size: 150%; margin-left: 0.3125em; position: relative; top: 1.5px; }
+html body.frontpage .container main #projects .more-projects { width: 100%; max-width: 100%; float: left; text-align: center; text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; }
+@media only screen and (max-width: 29.999em) { html body.frontpage .container main #projects .more-projects { margin: 0.625em 0; } }
+html body.frontpage .container main #projects .more-projects a { display: inline-block; text-transform: uppercase; letter-spacing: 1.1px; border: 1px solid #231f20; background: #231f20; color: white; cursor: pointer; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; padding: 0.625em; padding-top: 0.3125em; }
+html body.frontpage .container main #projects .more-projects a a { color: white; text-decoration: none; }
+html body.frontpage .container main #projects .more-projects a a:hover { color: white; }
+html body.frontpage .container main #projects .more-projects a:hover { background: white; color: #231f20; }
+html body.frontpage .container main #projects .more-projects a:hover a { color: #231f20; text-decoration: none; }
+html body.frontpage .container main #projects .more-projects a:hover a:hover { color: #982022; }
+html body.frontpage .container main #projects .more-projects a .arrow:after { content: "\2794"; font-size: 150%; margin-left: 0.3125em; position: relative; top: 1.5px; }
 html body.frontpage .container main #blog h3 { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; }
 html body.frontpage .container main #blog h3 a { color: #982022; text-decoration: none; }
 html body.frontpage .container main #blog h3 a:hover { color: #231f20; }
@@ -1454,6 +1458,7 @@ html body.frontpage .container main #most-read section article .gallery span a {
 html body.frontpage .container main #most-read section article .gallery span a:hover { color: #231f20; }
 html body.frontpage .container main #most-read section article .gallery span.close { position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); padding: 0.15625em; position: absolute; bottom: 0.625em; display: none; }
 html body.frontpage .container main #most-read section article h1 { font-size: medium; font-weight: normal; padding: 0.625em 0; }
+html body.frontpage .container main #most-read section article:first-of-type h1 { padding-top: 0; }
 @media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.frontpage .container main #most-read section { width: 31.5%; margin-right: 2.5%; float: left; }
   html body.frontpage .container main #most-read section:nth-of-type(2) { margin-right: 2.5%; }
   html body.frontpage .container main #most-read section:nth-of-type(3) { margin-right: 0; }
