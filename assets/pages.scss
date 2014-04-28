@@ -26,6 +26,10 @@ html {
         }
       }
       
+      #main section {
+        @include show-title;
+      }
+      
       #footer {
         margin: $pad*3 0 0;
         @include footer;
