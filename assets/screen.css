@@ -2536,6 +2536,8 @@ html body.tag #articles article.thumb { margin-bottom: 0.625em; }
 
 @media only screen and (max-width: 29.999em) { html body.tag #articles article.thumb { width: 100%; max-width: 100%; float: left; } }
 html body.tag #banner { margin-bottom: 1.25em; }
+html body.tag #banner figure div.image-holder { padding-top: 0; overflow: visible; }
+html body.tag #banner figure div.image-holder img { position: relative; width: 100%; }
 html body.tag #banner figure figcaption { display: none; }
 html body.archive #articles .title { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-family: 'Droid Sans', sans-serif; font-weight: bold; background: white; color: #982022; }
 html body.archive #articles .title a { color: #982022; text-decoration: none; }

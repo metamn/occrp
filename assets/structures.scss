@@ -195,6 +195,7 @@
     margin-bottom: $pad;
     
     figure {
+      @include remove-image-placeholder;
       figcaption {
         display: none;
       }
