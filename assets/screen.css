@@ -53,7 +53,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 */
 /* Transforms an inline list back to normal
 */
-/* Centers an inline list
+/* Centers an inline list - IE fix: http://www.primecut.gr/2013/05/navigation-menu-align-centered-using-width-fit-content-css/
 */
 /* List floated right
 */
@@ -369,7 +369,7 @@ html body .container #header nav.tags ul.search li.input form input[type="image"
 html body .container #header nav.tags ul.search li.input form label { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
 html body .container #header nav.tags ul.search li.input form input { margin: 0.15625em 0.3125em 0; }
 @media only screen and (max-width: 79.999em) { html body .container #header nav.tags ul.search li.input { width: calc(100% - 1.25em); } }
-html body .container #header nav.tags ul.tag-list { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
+html body .container #header nav.tags ul.tag-list { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; display: table\0/ !important; /* IE 8-9 */ }
 html body .container #header nav.tags ul.tag-list li, html body .container #header nav.tags ul.social li, html body .container #header nav.tags ul.search li { display: inline-block; float: left; margin-right: 0.3125em; }
 html body .container #header nav.tags ul.tag-list li:last-of-type, html body .container #header nav.tags ul.social li:last-of-type, html body .container #header nav.tags ul.search li:last-of-type { margin-right: 0; }
 html body .container #header nav.tags ul.social { float: right; }
@@ -416,7 +416,7 @@ html body .container #header .close-icon:after { content: "\2715"; padding: 0.15
   html body .container #header .mobile-menubar ul li.icon img { height: 9px; position: relative; top: 1px; }
   html body .container #header .mobile-menubar a { color: white; text-decoration: none; }
   html body .container #header .mobile-menubar a:hover { color: white; }
-  html body .container #header .mobile-menubar ul { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
+  html body .container #header .mobile-menubar ul { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; display: table\0/ !important; /* IE 8-9 */ }
   html body .container #header nav, html body .container #header .close-icon { display: none; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body .container #header { position: relative; border-bottom: 1px solid #f1f1f1; }
   html body .container #header nav { border: 1px solid; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; padding: 1.25em; width: calc(100% - 2.5em); }
@@ -502,7 +502,7 @@ html body .container #header.mobile-menu-active nav.tags ul.search li.input form
 html body .container #header.mobile-menu-active nav.tags ul.search li.input form label { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
 html body .container #header.mobile-menu-active nav.tags ul.search li.input form input { margin: 0.15625em 0.3125em 0; }
 @media only screen and (max-width: 79.999em) { html body .container #header.mobile-menu-active nav.tags ul.search li.input { width: calc(100% - 1.25em); } }
-html body .container #header.mobile-menu-active nav.tags ul.tag-list { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
+html body .container #header.mobile-menu-active nav.tags ul.tag-list { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; display: table\0/ !important; /* IE 8-9 */ }
 html body .container #header.mobile-menu-active nav.tags ul.tag-list li, html body .container #header.mobile-menu-active nav.tags ul.social li, html body .container #header.mobile-menu-active nav.tags ul.search li { display: inline-block; float: left; margin-right: 0.3125em; }
 html body .container #header.mobile-menu-active nav.tags ul.tag-list li:last-of-type, html body .container #header.mobile-menu-active nav.tags ul.social li:last-of-type, html body .container #header.mobile-menu-active nav.tags ul.search li:last-of-type { margin-right: 0; }
 html body .container #header.mobile-menu-active nav.tags ul.social { float: right; }
@@ -549,7 +549,7 @@ html body .container #header.mobile-menu-active .close-icon:after { content: "\2
   html body .container #header.mobile-menu-active .mobile-menubar ul li.icon img { height: 9px; position: relative; top: 1px; }
   html body .container #header.mobile-menu-active .mobile-menubar a { color: white; text-decoration: none; }
   html body .container #header.mobile-menu-active .mobile-menubar a:hover { color: white; }
-  html body .container #header.mobile-menu-active .mobile-menubar ul { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
+  html body .container #header.mobile-menu-active .mobile-menubar ul { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; display: table\0/ !important; /* IE 8-9 */ }
   html body .container #header.mobile-menu-active nav, html body .container #header.mobile-menu-active .close-icon { display: block; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body .container #header.mobile-menu-active { position: relative; border-bottom: 1px solid #f1f1f1; }
   html body .container #header.mobile-menu-active nav { border: 1px solid; -moz-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; -webkit-box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; box-shadow: 1px 0 #231f20, 0 1px #231f20, 2px 1px #231f20, 1px 2px #231f20, 3px 2px #231f20, 2px 3px #231f20, 4px 3px #231f20, 3px 4px #231f20, 5px 4px #231f20, 4px 5px #231f20; padding: 1.25em; width: calc(100% - 2.5em); }
@@ -666,7 +666,7 @@ html body.sticky .container #header nav.tags ul.search li.input form input[type=
 html body.sticky .container #header nav.tags ul.search li.input form label { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
 html body.sticky .container #header nav.tags ul.search li.input form input { margin: 0.15625em 0.3125em 0; }
 @media only screen and (max-width: 79.999em) { html body.sticky .container #header nav.tags ul.search li.input { width: calc(100% - 1.25em); } }
-html body.sticky .container #header nav.tags ul.tag-list { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
+html body.sticky .container #header nav.tags ul.tag-list { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; display: table\0/ !important; /* IE 8-9 */ }
 html body.sticky .container #header nav.tags ul.tag-list li, html body.sticky .container #header nav.tags ul.social li, html body.sticky .container #header nav.tags ul.search li { display: inline-block; float: left; margin-right: 0.3125em; }
 html body.sticky .container #header nav.tags ul.tag-list li:last-of-type, html body.sticky .container #header nav.tags ul.social li:last-of-type, html body.sticky .container #header nav.tags ul.search li:last-of-type { margin-right: 0; }
 html body.sticky .container #header nav.tags ul.social { float: right; }
@@ -714,7 +714,7 @@ html body.sticky .container #header .close-icon:after { content: "\2715"; paddin
   html body.sticky .container #header .mobile-menubar ul li.icon img { height: 9px; position: relative; top: 1px; }
   html body.sticky .container #header .mobile-menubar a { color: white; text-decoration: none; }
   html body.sticky .container #header .mobile-menubar a:hover { color: white; }
-  html body.sticky .container #header .mobile-menubar ul { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
+  html body.sticky .container #header .mobile-menubar ul { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; display: table\0/ !important; /* IE 8-9 */ }
   html body.sticky .container #header .logo { margin-top: 0.3125em; }
   html body.sticky .container #header .mobile-menubar { display: none !important; } }
 @media only screen and (min-width: 30em) and (max-width: 79.999em) { html body.sticky .container #header { position: relative; border-bottom: 1px solid #f1f1f1; position: fixed; z-index: 1; background: white; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.625em; width: 95%; margin: 0 2.5%; margin-left: 0; }
@@ -791,8 +791,6 @@ html body.frontpage .container main #intro #slider article .excerpt { line-heigh
 html body.frontpage .container main #intro #slider article .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.frontpage .container main #intro #slider article .meta > h3 { display: none; }
 html body.frontpage .container main #intro #slider article .meta ul { margin: 0; }
-html body.frontpage .container main #intro #slider article .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.frontpage .container main #intro #slider article .meta ul li:before { content: none; }
 html body.frontpage .container main #intro #slider article .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.frontpage .container main #intro #slider article .meta ul li:last-of-type { margin-right: 0; }
 html body.frontpage .container main #intro #slider article .meta .date { font-size: small; color: #332d2f; font-style: normal; }
@@ -910,8 +908,6 @@ html body.frontpage .container main #intro aside section article .excerpt { line
 html body.frontpage .container main #intro aside section article .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.frontpage .container main #intro aside section article .meta > h3 { display: none; }
 html body.frontpage .container main #intro aside section article .meta ul { margin: 0; }
-html body.frontpage .container main #intro aside section article .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.frontpage .container main #intro aside section article .meta ul li:before { content: none; }
 html body.frontpage .container main #intro aside section article .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.frontpage .container main #intro aside section article .meta ul li:last-of-type { margin-right: 0; }
 html body.frontpage .container main #intro aside section article .meta .date { font-size: small; color: #332d2f; font-style: normal; }
@@ -1004,8 +1000,6 @@ html body.frontpage .container main #investigations article .excerpt { line-heig
 html body.frontpage .container main #investigations article .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.frontpage .container main #investigations article .meta > h3 { display: none; }
 html body.frontpage .container main #investigations article .meta ul { margin: 0; }
-html body.frontpage .container main #investigations article .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.frontpage .container main #investigations article .meta ul li:before { content: none; }
 html body.frontpage .container main #investigations article .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.frontpage .container main #investigations article .meta ul li:last-of-type { margin-right: 0; }
 html body.frontpage .container main #investigations article .meta .date { font-size: small; color: #332d2f; font-style: normal; }
@@ -1107,8 +1101,6 @@ html body.frontpage .container main #products article .excerpt { line-height: 1.
 html body.frontpage .container main #products article .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.frontpage .container main #products article .meta > h3 { display: none; }
 html body.frontpage .container main #products article .meta ul { margin: 0; }
-html body.frontpage .container main #products article .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.frontpage .container main #products article .meta ul li:before { content: none; }
 html body.frontpage .container main #products article .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.frontpage .container main #products article .meta ul li:last-of-type { margin-right: 0; }
 html body.frontpage .container main #products article .meta .date { font-size: small; color: #332d2f; font-style: normal; }
@@ -1217,8 +1209,6 @@ html body.frontpage .container main #projects article .excerpt { line-height: 1.
 html body.frontpage .container main #projects article .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.frontpage .container main #projects article .meta > h3 { display: none; }
 html body.frontpage .container main #projects article .meta ul { margin: 0; }
-html body.frontpage .container main #projects article .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.frontpage .container main #projects article .meta ul li:before { content: none; }
 html body.frontpage .container main #projects article .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.frontpage .container main #projects article .meta ul li:last-of-type { margin-right: 0; }
 html body.frontpage .container main #projects article .meta .date { font-size: small; color: #332d2f; font-style: normal; }
@@ -1337,8 +1327,6 @@ html body.frontpage .container main #blog article .excerpt { line-height: 1.5; c
 html body.frontpage .container main #blog article .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.frontpage .container main #blog article .meta > h3 { display: none; }
 html body.frontpage .container main #blog article .meta ul { margin: 0; }
-html body.frontpage .container main #blog article .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.frontpage .container main #blog article .meta ul li:before { content: none; }
 html body.frontpage .container main #blog article .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.frontpage .container main #blog article .meta ul li:last-of-type { margin-right: 0; }
 html body.frontpage .container main #blog article .meta .date { font-size: small; color: #332d2f; font-style: normal; }
@@ -1435,8 +1423,6 @@ html body.frontpage .container main #most-read section article .excerpt { line-h
 html body.frontpage .container main #most-read section article .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.frontpage .container main #most-read section article .meta > h3 { display: none; }
 html body.frontpage .container main #most-read section article .meta ul { margin: 0; }
-html body.frontpage .container main #most-read section article .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.frontpage .container main #most-read section article .meta ul li:before { content: none; }
 html body.frontpage .container main #most-read section article .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.frontpage .container main #most-read section article .meta ul li:last-of-type { margin-right: 0; }
 html body.frontpage .container main #most-read section article .meta .date { font-size: small; color: #332d2f; font-style: normal; }
@@ -1517,8 +1503,6 @@ html body.frontpage .container main #videos article .excerpt { line-height: 1.5;
 html body.frontpage .container main #videos article .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.frontpage .container main #videos article .meta > h3 { display: none; }
 html body.frontpage .container main #videos article .meta ul { margin: 0; }
-html body.frontpage .container main #videos article .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.frontpage .container main #videos article .meta ul li:before { content: none; }
 html body.frontpage .container main #videos article .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.frontpage .container main #videos article .meta ul li:last-of-type { margin-right: 0; }
 html body.frontpage .container main #videos article .meta .date { font-size: small; color: #332d2f; font-style: normal; }
@@ -1633,7 +1617,7 @@ html body.frontpage .container main #tags-and-gallery nav ul.search li.input for
 html body.frontpage .container main #tags-and-gallery nav ul.search li.input form label { text-transform: uppercase; letter-spacing: 1.1px; font-size: small; }
 html body.frontpage .container main #tags-and-gallery nav ul.search li.input form input { margin: 0.15625em 0.3125em 0; }
 @media only screen and (max-width: 79.999em) { html body.frontpage .container main #tags-and-gallery nav ul.search li.input { width: calc(100% - 1.25em); } }
-html body.frontpage .container main #tags-and-gallery nav ul.tag-list { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
+html body.frontpage .container main #tags-and-gallery nav ul.tag-list { text-align: center; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; display: table\0/ !important; /* IE 8-9 */ }
 html body.frontpage .container main #tags-and-gallery nav ul.tag-list li, html body.frontpage .container main #tags-and-gallery nav ul.social li, html body.frontpage .container main #tags-and-gallery nav ul.search li { display: inline-block; float: left; margin-right: 0.3125em; }
 html body.frontpage .container main #tags-and-gallery nav ul.tag-list li:last-of-type, html body.frontpage .container main #tags-and-gallery nav ul.social li:last-of-type, html body.frontpage .container main #tags-and-gallery nav ul.search li:last-of-type { margin-right: 0; }
 html body.frontpage .container main #tags-and-gallery nav ul.social { float: right; }
@@ -1712,8 +1696,6 @@ html body.category main #sidebar section article .excerpt { line-height: 1.5; co
 html body.category main #sidebar section article .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.category main #sidebar section article .meta > h3 { display: none; }
 html body.category main #sidebar section article .meta ul { margin: 0; }
-html body.category main #sidebar section article .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.category main #sidebar section article .meta ul li:before { content: none; }
 html body.category main #sidebar section article .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.category main #sidebar section article .meta ul li:last-of-type { margin-right: 0; }
 html body.category main #sidebar section article .meta .date { font-size: small; color: #332d2f; font-style: normal; }
@@ -1849,8 +1831,6 @@ html body.category #articles aside .excerpt { line-height: 1.5; color: #332d2f; 
 html body.category #articles aside .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.category #articles aside .meta > h3 { display: none; }
 html body.category #articles aside .meta ul { margin: 0; }
-html body.category #articles aside .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.category #articles aside .meta ul li:before { content: none; }
 html body.category #articles aside .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.category #articles aside .meta ul li:last-of-type { margin-right: 0; }
 html body.category #articles aside .meta .date { font-size: small; color: #332d2f; font-style: normal; }
@@ -1920,8 +1900,6 @@ html body.category #articles article.thumb { margin-bottom: 0.625em; }
   html body.category #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
   html body.category #articles article.thumb .meta > h3 { display: none; }
   html body.category #articles article.thumb .meta ul { margin: 0; }
-  html body.category #articles article.thumb .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-  html body.category #articles article.thumb .meta ul li:before { content: none; }
   html body.category #articles article.thumb .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
   html body.category #articles article.thumb .meta ul li:last-of-type { margin-right: 0; }
   html body.category #articles article.thumb .meta .date { font-size: small; color: #332d2f; font-style: normal; }
@@ -2032,8 +2010,6 @@ html body.category #articles article.thumb { margin-bottom: 0.625em; }
   html body.category #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
   html body.category #articles article.thumb .meta > h3 { display: none; }
   html body.category #articles article.thumb .meta ul { margin: 0; }
-  html body.category #articles article.thumb .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-  html body.category #articles article.thumb .meta ul li:before { content: none; }
   html body.category #articles article.thumb .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
   html body.category #articles article.thumb .meta ul li:last-of-type { margin-right: 0; }
   html body.category #articles article.thumb .meta .date { font-size: small; color: #332d2f; font-style: normal; }
@@ -2156,8 +2132,6 @@ html body.tag main #sidebar section article .excerpt { line-height: 1.5; color: 
 html body.tag main #sidebar section article .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.tag main #sidebar section article .meta > h3 { display: none; }
 html body.tag main #sidebar section article .meta ul { margin: 0; }
-html body.tag main #sidebar section article .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.tag main #sidebar section article .meta ul li:before { content: none; }
 html body.tag main #sidebar section article .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.tag main #sidebar section article .meta ul li:last-of-type { margin-right: 0; }
 html body.tag main #sidebar section article .meta .date { font-size: small; color: #332d2f; font-style: normal; }
@@ -2293,8 +2267,6 @@ html body.tag #articles aside .excerpt { line-height: 1.5; color: #332d2f; margi
 html body.tag #articles aside .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.tag #articles aside .meta > h3 { display: none; }
 html body.tag #articles aside .meta ul { margin: 0; }
-html body.tag #articles aside .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.tag #articles aside .meta ul li:before { content: none; }
 html body.tag #articles aside .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.tag #articles aside .meta ul li:last-of-type { margin-right: 0; }
 html body.tag #articles aside .meta .date { font-size: small; color: #332d2f; font-style: normal; }
@@ -2364,8 +2336,6 @@ html body.tag #articles article.thumb { margin-bottom: 0.625em; }
   html body.tag #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
   html body.tag #articles article.thumb .meta > h3 { display: none; }
   html body.tag #articles article.thumb .meta ul { margin: 0; }
-  html body.tag #articles article.thumb .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-  html body.tag #articles article.thumb .meta ul li:before { content: none; }
   html body.tag #articles article.thumb .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
   html body.tag #articles article.thumb .meta ul li:last-of-type { margin-right: 0; }
   html body.tag #articles article.thumb .meta .date { font-size: small; color: #332d2f; font-style: normal; }
@@ -2476,8 +2446,6 @@ html body.tag #articles article.thumb { margin-bottom: 0.625em; }
   html body.tag #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
   html body.tag #articles article.thumb .meta > h3 { display: none; }
   html body.tag #articles article.thumb .meta ul { margin: 0; }
-  html body.tag #articles article.thumb .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-  html body.tag #articles article.thumb .meta ul li:before { content: none; }
   html body.tag #articles article.thumb .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
   html body.tag #articles article.thumb .meta ul li:last-of-type { margin-right: 0; }
   html body.tag #articles article.thumb .meta .date { font-size: small; color: #332d2f; font-style: normal; }
@@ -2645,8 +2613,6 @@ html body.archive #articles article.thumb .excerpt { line-height: 1.5; color: #3
 html body.archive #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.archive #articles article.thumb .meta > h3 { display: none; }
 html body.archive #articles article.thumb .meta ul { margin: 0; }
-html body.archive #articles article.thumb .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.archive #articles article.thumb .meta ul li:before { content: none; }
 html body.archive #articles article.thumb .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.archive #articles article.thumb .meta ul li:last-of-type { margin-right: 0; }
 html body.archive #articles article.thumb .meta .date { font-size: small; color: #332d2f; font-style: normal; }
@@ -2716,8 +2682,6 @@ html body.archive #articles article.thumb h1 { font-size: medium; }
   html body.archive #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
   html body.archive #articles article.thumb .meta > h3 { display: none; }
   html body.archive #articles article.thumb .meta ul { margin: 0; }
-  html body.archive #articles article.thumb .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-  html body.archive #articles article.thumb .meta ul li:before { content: none; }
   html body.archive #articles article.thumb .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
   html body.archive #articles article.thumb .meta ul li:last-of-type { margin-right: 0; }
   html body.archive #articles article.thumb .meta .date { font-size: small; color: #332d2f; font-style: normal; }
@@ -2824,8 +2788,6 @@ html body.blog main #sidebar section article .excerpt { line-height: 1.5; color:
 html body.blog main #sidebar section article .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.blog main #sidebar section article .meta > h3 { display: none; }
 html body.blog main #sidebar section article .meta ul { margin: 0; }
-html body.blog main #sidebar section article .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.blog main #sidebar section article .meta ul li:before { content: none; }
 html body.blog main #sidebar section article .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.blog main #sidebar section article .meta ul li:last-of-type { margin-right: 0; }
 html body.blog main #sidebar section article .meta .date { font-size: small; color: #332d2f; font-style: normal; }
@@ -2958,8 +2920,6 @@ html body.blog #articles article.thumb .excerpt { line-height: 1.5; color: #332d
 html body.blog #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.blog #articles article.thumb .meta > h3 { display: none; }
 html body.blog #articles article.thumb .meta ul { margin: 0; }
-html body.blog #articles article.thumb .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.blog #articles article.thumb .meta ul li:before { content: none; }
 html body.blog #articles article.thumb .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.blog #articles article.thumb .meta ul li:last-of-type { margin-right: 0; }
 html body.blog #articles article.thumb .meta .date { font-size: small; color: #332d2f; font-style: normal; }
@@ -3028,8 +2988,6 @@ html body.blog #articles article.thumb .excerpt { padding-bottom: 1.25em; border
   html body.blog #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
   html body.blog #articles article.thumb .meta > h3 { display: none; }
   html body.blog #articles article.thumb .meta ul { margin: 0; }
-  html body.blog #articles article.thumb .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-  html body.blog #articles article.thumb .meta ul li:before { content: none; }
   html body.blog #articles article.thumb .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
   html body.blog #articles article.thumb .meta ul li:last-of-type { margin-right: 0; }
   html body.blog #articles article.thumb .meta .date { font-size: small; color: #332d2f; font-style: normal; }
@@ -3113,8 +3071,6 @@ html body.author main #sidebar section article .excerpt { line-height: 1.5; colo
 html body.author main #sidebar section article .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.author main #sidebar section article .meta > h3 { display: none; }
 html body.author main #sidebar section article .meta ul { margin: 0; }
-html body.author main #sidebar section article .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.author main #sidebar section article .meta ul li:before { content: none; }
 html body.author main #sidebar section article .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.author main #sidebar section article .meta ul li:last-of-type { margin-right: 0; }
 html body.author main #sidebar section article .meta .date { font-size: small; color: #332d2f; font-style: normal; }
@@ -3250,8 +3206,6 @@ html body.author #articles aside .excerpt { line-height: 1.5; color: #332d2f; ma
 html body.author #articles aside .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.author #articles aside .meta > h3 { display: none; }
 html body.author #articles aside .meta ul { margin: 0; }
-html body.author #articles aside .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.author #articles aside .meta ul li:before { content: none; }
 html body.author #articles aside .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.author #articles aside .meta ul li:last-of-type { margin-right: 0; }
 html body.author #articles aside .meta .date { font-size: small; color: #332d2f; font-style: normal; }
@@ -3321,8 +3275,6 @@ html body.author #articles article.thumb { margin-bottom: 0.625em; }
   html body.author #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
   html body.author #articles article.thumb .meta > h3 { display: none; }
   html body.author #articles article.thumb .meta ul { margin: 0; }
-  html body.author #articles article.thumb .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-  html body.author #articles article.thumb .meta ul li:before { content: none; }
   html body.author #articles article.thumb .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
   html body.author #articles article.thumb .meta ul li:last-of-type { margin-right: 0; }
   html body.author #articles article.thumb .meta .date { font-size: small; color: #332d2f; font-style: normal; }
@@ -3433,8 +3385,6 @@ html body.author #articles article.thumb { margin-bottom: 0.625em; }
   html body.author #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
   html body.author #articles article.thumb .meta > h3 { display: none; }
   html body.author #articles article.thumb .meta ul { margin: 0; }
-  html body.author #articles article.thumb .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-  html body.author #articles article.thumb .meta ul li:before { content: none; }
   html body.author #articles article.thumb .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
   html body.author #articles article.thumb .meta ul li:last-of-type { margin-right: 0; }
   html body.author #articles article.thumb .meta .date { font-size: small; color: #332d2f; font-style: normal; }
@@ -3557,8 +3507,6 @@ html body.article main #sidebar section article .excerpt, html body.about main #
 html body.article main #sidebar section article .meta, html body.about main #sidebar section article .meta, html body.post main #sidebar section article .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.article main #sidebar section article .meta > h3, html body.about main #sidebar section article .meta > h3, html body.post main #sidebar section article .meta > h3 { display: none; }
 html body.article main #sidebar section article .meta ul, html body.about main #sidebar section article .meta ul, html body.post main #sidebar section article .meta ul { margin: 0; }
-html body.article main #sidebar section article .meta ul li, html body.about main #sidebar section article .meta ul li, html body.post main #sidebar section article .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.article main #sidebar section article .meta ul li:before, html body.about main #sidebar section article .meta ul li:before, html body.post main #sidebar section article .meta ul li:before { content: none; }
 html body.article main #sidebar section article .meta ul li, html body.about main #sidebar section article .meta ul li, html body.post main #sidebar section article .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.article main #sidebar section article .meta ul li:last-of-type, html body.about main #sidebar section article .meta ul li:last-of-type, html body.post main #sidebar section article .meta ul li:last-of-type { margin-right: 0; }
 html body.article main #sidebar section article .meta .date, html body.about main #sidebar section article .meta .date, html body.post main #sidebar section article .meta .date { font-size: small; color: #332d2f; font-style: normal; }
@@ -3656,7 +3604,7 @@ html body.article main #sidebar section article h1, html body.about main #sideba
 @media only screen and (min-width: 80em) { html body.article main #sidebar section article, html body.about main #sidebar section article, html body.post main #sidebar section article { width: 100%; max-width: 100%; float: left; } }
 @media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.article main #sidebar section article, html body.about main #sidebar section article, html body.post main #sidebar section article { width: 100%; max-width: 100%; float: left; } }
 html body.article main #sidebar #spacer > h3, html body.about main #sidebar #spacer > h3, html body.post main #sidebar #spacer > h3 { display: none; }
-html body.article #article, html body.about #article, html body.post #article { width: 100%; max-width: 100%; float: left; background: red; }
+html body.article #article, html body.about #article, html body.post #article { width: 100%; max-width: 100%; float: left; }
 html body.article #article article.single, html body.about #article article.single, html body.post #article article.single { max-width: 43.75em; line-height: 1.75; /* Padding of individual elements
 */ /* Padding of consecutive elements
 */ }
@@ -3674,8 +3622,6 @@ html body.article #article article.single .excerpt, html body.about #article art
 html body.article #article article.single .meta, html body.about #article article.single .meta, html body.post #article article.single .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.article #article article.single .meta > h3, html body.about #article article.single .meta > h3, html body.post #article article.single .meta > h3 { display: none; }
 html body.article #article article.single .meta ul, html body.about #article article.single .meta ul, html body.post #article article.single .meta ul { margin: 0; }
-html body.article #article article.single .meta ul li, html body.about #article article.single .meta ul li, html body.post #article article.single .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.article #article article.single .meta ul li:before, html body.about #article article.single .meta ul li:before, html body.post #article article.single .meta ul li:before { content: none; }
 html body.article #article article.single .meta ul li, html body.about #article article.single .meta ul li, html body.post #article article.single .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.article #article article.single .meta ul li:last-of-type, html body.about #article article.single .meta ul li:last-of-type, html body.post #article article.single .meta ul li:last-of-type { margin-right: 0; }
 html body.article #article article.single .meta .date, html body.about #article article.single .meta .date, html body.post #article article.single .meta .date { font-size: small; color: #332d2f; font-style: normal; }
@@ -3815,7 +3761,8 @@ html body.article #article article.single p + p, html body.about #article articl
 html body.article #article article.single h1 + h2, html body.article #article article.single h2 + h3, html body.about #article article.single h1 + h2, html body.about #article article.single h2 + h3, html body.post #article article.single h1 + h2, html body.post #article article.single h2 + h3 { padding-top: 0; }
 html body.article #article article.single h1 + ul, html body.article #article article.single h2 + ul, html body.article #article article.single h3 + ul, html body.article #article article.single h1 + ol, html body.article #article article.single h2 + ol, html body.article #article article.single h3 + ol, html body.article #article article.single h1 + figure, html body.article #article article.single h2 + figure, html body.article #article article.single h3 + figure, html body.article #article article.single h1 + nav, html body.about #article article.single h1 + ul, html body.about #article article.single h2 + ul, html body.about #article article.single h3 + ul, html body.about #article article.single h1 + ol, html body.about #article article.single h2 + ol, html body.about #article article.single h3 + ol, html body.about #article article.single h1 + figure, html body.about #article article.single h2 + figure, html body.about #article article.single h3 + figure, html body.about #article article.single h1 + nav, html body.post #article article.single h1 + ul, html body.post #article article.single h2 + ul, html body.post #article article.single h3 + ul, html body.post #article article.single h1 + ol, html body.post #article article.single h2 + ol, html body.post #article article.single h3 + ol, html body.post #article article.single h1 + figure, html body.post #article article.single h2 + figure, html body.post #article article.single h3 + figure, html body.post #article article.single h1 + nav { margin-top: 0; }
 html body.article #article article.single li ul, html body.article #article article.single li ol, html body.about #article article.single li ul, html body.about #article article.single li ol, html body.post #article article.single li ul, html body.post #article article.single li ol { margin-top: 0; }
-html body.article #article article.single h1:first-of-type, html body.about #article article.single h1:first-of-type, html body.post #article article.single h1:first-of-type { font-size: 24px; font-size: 1.5rem; padding: 0; }
+html body.article #article article.single h1:first-of-type, html body.about #article article.single h1:first-of-type, html body.post #article article.single h1:first-of-type { font-size: 24px; font-size: 1.5rem; padding: 0; background: red; }
+html body.article #article article.single .meta, html body.about #article article.single .meta, html body.post #article article.single .meta { background: red; }
 html body.article #article article.single .meta .print, html body.about #article article.single .meta .print, html body.post #article article.single .meta .print { display: inline-block; }
 html body.article #article article.single input[type="image"], html body.about #article article.single input[type="image"], html body.post #article article.single input[type="image"] { width: auto; }
 html body.article #article article.single figure div.image-holder, html body.about #article article.single figure div.image-holder, html body.post #article article.single figure div.image-holder { padding-top: 0; overflow: visible; }
@@ -3896,8 +3843,6 @@ html body.jobs #main #article .single .content article .excerpt, html body.annou
 html body.jobs #main #article .single .content article .meta, html body.announcements #main #article .single .content article .meta, html body.occrp-in-news #main #article .single .content article .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.jobs #main #article .single .content article .meta > h3, html body.announcements #main #article .single .content article .meta > h3, html body.occrp-in-news #main #article .single .content article .meta > h3 { display: none; }
 html body.jobs #main #article .single .content article .meta ul, html body.announcements #main #article .single .content article .meta ul, html body.occrp-in-news #main #article .single .content article .meta ul { margin: 0; }
-html body.jobs #main #article .single .content article .meta ul li, html body.announcements #main #article .single .content article .meta ul li, html body.occrp-in-news #main #article .single .content article .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.jobs #main #article .single .content article .meta ul li:before, html body.announcements #main #article .single .content article .meta ul li:before, html body.occrp-in-news #main #article .single .content article .meta ul li:before { content: none; }
 html body.jobs #main #article .single .content article .meta ul li, html body.announcements #main #article .single .content article .meta ul li, html body.occrp-in-news #main #article .single .content article .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.jobs #main #article .single .content article .meta ul li:last-of-type, html body.announcements #main #article .single .content article .meta ul li:last-of-type, html body.occrp-in-news #main #article .single .content article .meta ul li:last-of-type { margin-right: 0; }
 html body.jobs #main #article .single .content article .meta .date, html body.announcements #main #article .single .content article .meta .date, html body.occrp-in-news #main #article .single .content article .meta .date { font-size: small; color: #332d2f; font-style: normal; }
@@ -4133,8 +4078,6 @@ html body.daily main #sidebar section article .excerpt { line-height: 1.5; color
 html body.daily main #sidebar section article .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.daily main #sidebar section article .meta > h3 { display: none; }
 html body.daily main #sidebar section article .meta ul { margin: 0; }
-html body.daily main #sidebar section article .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.daily main #sidebar section article .meta ul li:before { content: none; }
 html body.daily main #sidebar section article .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.daily main #sidebar section article .meta ul li:last-of-type { margin-right: 0; }
 html body.daily main #sidebar section article .meta .date { font-size: small; color: #332d2f; font-style: normal; }
@@ -4270,8 +4213,6 @@ html body.daily #articles aside .excerpt { line-height: 1.5; color: #332d2f; mar
 html body.daily #articles aside .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.daily #articles aside .meta > h3 { display: none; }
 html body.daily #articles aside .meta ul { margin: 0; }
-html body.daily #articles aside .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.daily #articles aside .meta ul li:before { content: none; }
 html body.daily #articles aside .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.daily #articles aside .meta ul li:last-of-type { margin-right: 0; }
 html body.daily #articles aside .meta .date { font-size: small; color: #332d2f; font-style: normal; }
@@ -4341,8 +4282,6 @@ html body.daily #articles article.thumb { margin-bottom: 0.625em; }
   html body.daily #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
   html body.daily #articles article.thumb .meta > h3 { display: none; }
   html body.daily #articles article.thumb .meta ul { margin: 0; }
-  html body.daily #articles article.thumb .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-  html body.daily #articles article.thumb .meta ul li:before { content: none; }
   html body.daily #articles article.thumb .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
   html body.daily #articles article.thumb .meta ul li:last-of-type { margin-right: 0; }
   html body.daily #articles article.thumb .meta .date { font-size: small; color: #332d2f; font-style: normal; }
@@ -4453,8 +4392,6 @@ html body.daily #articles article.thumb { margin-bottom: 0.625em; }
   html body.daily #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
   html body.daily #articles article.thumb .meta > h3 { display: none; }
   html body.daily #articles article.thumb .meta ul { margin: 0; }
-  html body.daily #articles article.thumb .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-  html body.daily #articles article.thumb .meta ul li:before { content: none; }
   html body.daily #articles article.thumb .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
   html body.daily #articles article.thumb .meta ul li:last-of-type { margin-right: 0; }
   html body.daily #articles article.thumb .meta .date { font-size: small; color: #332d2f; font-style: normal; }
@@ -4581,8 +4518,6 @@ html body.daily #articles article.thumb .excerpt { line-height: 1.5; color: #332
 html body.daily #articles article.thumb .meta { width: 100%; max-width: 100%; float: left; margin-bottom: 0.625em; }
 html body.daily #articles article.thumb .meta > h3 { display: none; }
 html body.daily #articles article.thumb .meta ul { margin: 0; }
-html body.daily #articles article.thumb .meta ul li { display: block; margin-right: none; float: none; padding-left: 0; }
-html body.daily #articles article.thumb .meta ul li:before { content: none; }
 html body.daily #articles article.thumb .meta ul li { display: inline-block; float: left; margin-right: 0.625em; }
 html body.daily #articles article.thumb .meta ul li:last-of-type { margin-right: 0; }
 html body.daily #articles article.thumb .meta .date { font-size: small; color: #332d2f; font-style: normal; }

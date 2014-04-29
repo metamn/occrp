@@ -2,7 +2,6 @@
 */
 @mixin single-article {
   @include block;
-  background: red;
   
   article.single {
     @include article-parts(category, date, title, figure, figcaption, null, body);
@@ -11,10 +10,12 @@
     h1 {
       &:first-of-type {
         @include font(single-article-title);
+        background: red;
       }
     }
     
     .meta {
+      background: red;
       .print {
         display: inline-block;
       }
@@ -353,7 +354,7 @@
     margin-bottom: $margin;
     
     ul {
-      @include list-normal;
+      //@include list-normal;
       @include list-inline($pad/2);
       margin: 0;
     }
