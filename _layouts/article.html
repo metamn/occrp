@@ -3,12 +3,12 @@
 
 <main id="main">
 
-  <section id="article">
+  <section id="article" role="main">
     {% assign post = page %}
     {% include article.html klass = 'single' %}
   </section>
   
-  <aside id="sidebar">
+  <aside id="sidebar" role="complementary">
     <section id="related-articles">
       <h3>Related articles</h3>
       {% for post in site.categories.investigations limit:5 %}

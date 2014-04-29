@@ -6,7 +6,7 @@
     {% include responsive-images.html title="banner" link="" normal="http://placehold.it/1920x200" mobile="http://placehold.it/600x400" holder="false" %}
   </section>
   
-  <section id="articles">
+  <section id="articles" role="main">
     <h1 class="title">{{ page.title }}</h1>
     {{ content }}
     
@@ -14,7 +14,7 @@
     {% include navigation.html %}
   </section>
   
-  <aside id="sidebar">
+  <aside id="sidebar" role="complementary" >
     <section id="most-read">
       <h3>Most read in this category</h3>
       

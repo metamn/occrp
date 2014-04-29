@@ -2,15 +2,15 @@
 {% include header.html %}
 
 <main id="main">  
-  <section id="article">
+  <section id="article" role="main">
     {% assign post = page %}
     {% include article.html klass = 'single' %}
   </section>
   
-  <aside id="sidebar">
+  <aside id="sidebar" role="complementary">
     <section id="subpages">
       <h3>More pages</h3>
-      <nav>
+      <nav role="navigation">
         <h3>Subpage links</h3>
         <ul>
           <li id="about"><a href="{{ site.url }}/about-us" title="About Us">About Us</a></li>
