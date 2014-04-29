@@ -1,3 +1,0 @@
-/* Make arrow smaller
-*/
-html body.frontpage .container main #projects .more-projects a .arrow:after { font-size: 100%; top: 3px; }
