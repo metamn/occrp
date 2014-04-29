@@ -5,7 +5,14 @@
   
   article.single {
     @include article-parts(category, date, title, figure, figcaption, null, body);
-    @include body-text;
+    
+    /* Cannot make everything to be $body-text, it will break the .meta inline lists in iE
+    */
+    max-width: $body-text-width; 
+    .content {
+      @include body-text;
+    }
+    
     
     h1 {
       &:first-of-type {
@@ -15,7 +22,6 @@
     }
     
     .meta {
-      background: red;
       .print {
         display: inline-block;
       }
