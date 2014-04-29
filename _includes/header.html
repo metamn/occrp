@@ -1,4 +1,4 @@
-<header id="header">
+<header id="header" role="banner">
   <h3>Header</h3>
   
   {% include nav-main.html %}
@@ -13,7 +13,7 @@
     
     <figure>
       <a href="{{ site.url }}/" title="{{ site.title }}">
-        <img src="{{ site.url }}/assets/images/logo.jpg">
+        <img src="{{ site.url }}/assets/images/logo.jpg" alt="Logo">
       </a>
       <figcaption>
         {{ site.title }}
@@ -21,7 +21,7 @@
     </figure>
   </section>
   
-  <section class="mobile-menubar">
+  <section class="mobile-menubar" role="navigation">
     <h3>Mobile menu</h3>
     <ul>
       <li>Navigation</li>
