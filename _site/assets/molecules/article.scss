@@ -6,18 +6,14 @@
   article.single {
     @include article-parts(category, date, title, figure, figcaption, null, body);
     
-    /* Cannot make everything to be $body-text, it will break the .meta inline lists in iE
+    /* Cannot make the whole article to be $body-text, it will break the .meta inline lists in iE
+      - here we set width, later will add $body-text to .content only
     */
     max-width: $body-text-width; 
-    .content {
-      @include body-text;
-    }
-    
     
     h1 {
       &:first-of-type {
         @include font(single-article-title);
-        background: red;
       }
     }
     
@@ -27,77 +23,81 @@
       }
     }
     
-    input[type="image"] {
-      width: auto;
-    }
-    
-    figure {
-      @include remove-image-placeholder;
+    .content {
+      @include body-text;
       
-      &.people, &.document, &.company {
-        @include below-tablet {
-          @include inline-figure;
-        }
+      input[type="image"] {
+        width: auto;
+      }
+      
+      figure {
+        @include remove-image-placeholder;
         
-        @include tablet-and-up {
-          @include floated-figure;
-        }
-      }
-      
-      &.person {
-        @include tablet-and-up {
-          @include floated-figure;
-        }
-      }
-      
-      &.people, &.document {
-        @include mobile-and-up {
-          img {
-            max-width: 75%;
+        &.people, &.document, &.company {
+          @include below-tablet {
+            @include inline-figure;
+          }
+          
+          @include tablet-and-up {
+            @include floated-figure;
           }
         }
-      }
-      
-      
-      figcaption {
-        ul {
-          margin: 0;
-          @include block;
-          
-          li {
-            border-bottom: $border-thin;
-            margin-bottom: $pad/4;
+        
+        &.person {
+          @include tablet-and-up {
+            @include floated-figure;
+          }
+        }
+        
+        &.people, &.document {
+          @include mobile-and-up {
+            img {
+              max-width: 75%;
+            }
+          }
+        }
+        
+        
+        figcaption {
+          ul {
+            margin: 0;
+            @include block;
             
-            padding-left: 0;
-            &:before {
-              display: none;
+            li {
+              border-bottom: $border-thin;
+              margin-bottom: $pad/4;
+              
+              padding-left: 0;
+              &:before {
+                display: none;
+              }
             }
           }
         }
       }
-    }
-    
-    #comments {
-      @include block;
-      @include show-title;
       
-      form, .notice, ul {
+      #comments {
         @include block;
-      }
-      
-      ul {
-        @include ol-ul('');
-        li {
-          a {
-            @include font(author);
-          }
-          
-          date {
-            @include font(date);
+        @include show-title;
+        
+        form, .notice, ul {
+          @include block;
+        }
+        
+        ul {
+          @include ol-ul('');
+          li {
+            a {
+              @include font(author);
+            }
+            
+            date {
+              @include font(date);
+            }
           }
         }
       }
-    }
+    } 
   }
 }
 

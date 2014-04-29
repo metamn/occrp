@@ -54,6 +54,7 @@
 }
 
 /* Transforms an inline list back to normal
+- This breaks the IE9 .... fix needed
 */
 @mixin list-normal {
   li {
