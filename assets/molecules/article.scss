@@ -2,14 +2,7 @@
 */
 @mixin single-article {
   @include block;
-  
-  @include small-screen-and-up {
-    @include col-nm(2, 3);
-  }
-  
-  @include tablet-landscape {
-    @include col-nm(2, 3);
-  }
+  background: red;
   
   article.single {
     @include article-parts(category, date, title, figure, figcaption, null, body);

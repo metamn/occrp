@@ -1682,9 +1682,9 @@ html body.frontpage .container main #tags-and-gallery nav { margin-right: 0; }
   html body.category main aside #spacer { margin-bottom: -2500em !important; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
 @media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.category main { overflow: hidden; }
   html body.category main aside #spacer { margin-bottom: -2500em !important; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
-html body.category main #articles { width: 100%; max-width: 100%; float: left; }
-@media only screen and (min-width: 80em) { html body.category main #articles { width: 65.5%; margin-right: 2.5%; float: left; } }
-@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.category main #articles { width: 65.5%; margin-right: 2.5%; float: left; } }
+html body.category main #articles, html body.category main #article { width: 100%; max-width: 100%; float: left; }
+@media only screen and (min-width: 80em) { html body.category main #articles, html body.category main #article { width: 65.5%; margin-right: 2.5%; float: left; } }
+@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.category main #articles, html body.category main #article { width: 65.5%; margin-right: 2.5%; float: left; } }
 html body.category main #sidebar { width: 100%; max-width: 100%; float: left; margin-top: 1.25em; }
 @media only screen and (min-width: 80em) { html body.category main #sidebar { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; margin-top: 0; } }
 @media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.category main #sidebar { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; margin-top: 0; } }
@@ -2126,9 +2126,9 @@ html body.category #articles article.thumb { margin-bottom: 0.625em; }
   html body.tag main aside #spacer { margin-bottom: -2500em !important; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
 @media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.tag main { overflow: hidden; }
   html body.tag main aside #spacer { margin-bottom: -2500em !important; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
-html body.tag main #articles { width: 100%; max-width: 100%; float: left; }
-@media only screen and (min-width: 80em) { html body.tag main #articles { width: 65.5%; margin-right: 2.5%; float: left; } }
-@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.tag main #articles { width: 65.5%; margin-right: 2.5%; float: left; } }
+html body.tag main #articles, html body.tag main #article { width: 100%; max-width: 100%; float: left; }
+@media only screen and (min-width: 80em) { html body.tag main #articles, html body.tag main #article { width: 65.5%; margin-right: 2.5%; float: left; } }
+@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.tag main #articles, html body.tag main #article { width: 65.5%; margin-right: 2.5%; float: left; } }
 html body.tag main #sidebar { width: 100%; max-width: 100%; float: left; margin-top: 1.25em; }
 @media only screen and (min-width: 80em) { html body.tag main #sidebar { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; margin-top: 0; } }
 @media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.tag main #sidebar { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; margin-top: 0; } }
@@ -2794,9 +2794,9 @@ html body.resources #tools h3 a:hover, html body.resources #documents h3 a:hover
   html body.blog main aside #spacer { margin-bottom: -2500em !important; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
 @media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.blog main { overflow: hidden; }
   html body.blog main aside #spacer { margin-bottom: -2500em !important; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
-html body.blog main #articles { width: 100%; max-width: 100%; float: left; }
-@media only screen and (min-width: 80em) { html body.blog main #articles { width: 65.5%; margin-right: 2.5%; float: left; } }
-@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.blog main #articles { width: 65.5%; margin-right: 2.5%; float: left; } }
+html body.blog main #articles, html body.blog main #article { width: 100%; max-width: 100%; float: left; }
+@media only screen and (min-width: 80em) { html body.blog main #articles, html body.blog main #article { width: 65.5%; margin-right: 2.5%; float: left; } }
+@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.blog main #articles, html body.blog main #article { width: 65.5%; margin-right: 2.5%; float: left; } }
 html body.blog main #sidebar { width: 100%; max-width: 100%; float: left; margin-top: 1.25em; }
 @media only screen and (min-width: 80em) { html body.blog main #sidebar { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; margin-top: 0; } }
 @media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.blog main #sidebar { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; margin-top: 0; } }
@@ -3083,9 +3083,9 @@ html body.blog #articles article.thumb .excerpt { padding-bottom: 1.25em; border
   html body.author main aside #spacer { margin-bottom: -2500em !important; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
 @media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.author main { overflow: hidden; }
   html body.author main aside #spacer { margin-bottom: -2500em !important; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
-html body.author main #articles { width: 100%; max-width: 100%; float: left; }
-@media only screen and (min-width: 80em) { html body.author main #articles { width: 65.5%; margin-right: 2.5%; float: left; } }
-@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.author main #articles { width: 65.5%; margin-right: 2.5%; float: left; } }
+html body.author main #articles, html body.author main #article { width: 100%; max-width: 100%; float: left; }
+@media only screen and (min-width: 80em) { html body.author main #articles, html body.author main #article { width: 65.5%; margin-right: 2.5%; float: left; } }
+@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.author main #articles, html body.author main #article { width: 65.5%; margin-right: 2.5%; float: left; } }
 html body.author main #sidebar { width: 100%; max-width: 100%; float: left; margin-top: 1.25em; }
 @media only screen and (min-width: 80em) { html body.author main #sidebar { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; margin-top: 0; } }
 @media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.author main #sidebar { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; margin-top: 0; } }
@@ -3527,9 +3527,9 @@ html body.author #articles article.thumb { margin-bottom: 0.625em; }
   html body.article main aside #spacer, html body.about main aside #spacer, html body.post main aside #spacer { margin-bottom: -2500em !important; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
 @media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.article main, html body.about main, html body.post main { overflow: hidden; }
   html body.article main aside #spacer, html body.about main aside #spacer, html body.post main aside #spacer { margin-bottom: -2500em !important; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
-html body.article main #articles, html body.about main #articles, html body.post main #articles { width: 100%; max-width: 100%; float: left; }
-@media only screen and (min-width: 80em) { html body.article main #articles, html body.about main #articles, html body.post main #articles { width: 65.5%; margin-right: 2.5%; float: left; } }
-@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.article main #articles, html body.about main #articles, html body.post main #articles { width: 65.5%; margin-right: 2.5%; float: left; } }
+html body.article main #articles, html body.article main #article, html body.about main #articles, html body.about main #article, html body.post main #articles, html body.post main #article { width: 100%; max-width: 100%; float: left; }
+@media only screen and (min-width: 80em) { html body.article main #articles, html body.article main #article, html body.about main #articles, html body.about main #article, html body.post main #articles, html body.post main #article { width: 65.5%; margin-right: 2.5%; float: left; } }
+@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.article main #articles, html body.article main #article, html body.about main #articles, html body.about main #article, html body.post main #articles, html body.post main #article { width: 65.5%; margin-right: 2.5%; float: left; } }
 html body.article main #sidebar, html body.about main #sidebar, html body.post main #sidebar { width: 100%; max-width: 100%; float: left; margin-top: 1.25em; }
 @media only screen and (min-width: 80em) { html body.article main #sidebar, html body.about main #sidebar, html body.post main #sidebar { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; margin-top: 0; } }
 @media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.article main #sidebar, html body.about main #sidebar, html body.post main #sidebar { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; margin-top: 0; } }
@@ -3656,9 +3656,7 @@ html body.article main #sidebar section article h1, html body.about main #sideba
 @media only screen and (min-width: 80em) { html body.article main #sidebar section article, html body.about main #sidebar section article, html body.post main #sidebar section article { width: 100%; max-width: 100%; float: left; } }
 @media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.article main #sidebar section article, html body.about main #sidebar section article, html body.post main #sidebar section article { width: 100%; max-width: 100%; float: left; } }
 html body.article main #sidebar #spacer > h3, html body.about main #sidebar #spacer > h3, html body.post main #sidebar #spacer > h3 { display: none; }
-html body.article #article, html body.about #article, html body.post #article { width: 100%; max-width: 100%; float: left; }
-@media only screen and (min-width: 80em) { html body.article #article, html body.about #article, html body.post #article { width: 65.5%; margin-right: 2.5%; float: left; } }
-@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.article #article, html body.about #article, html body.post #article { width: 65.5%; margin-right: 2.5%; float: left; } }
+html body.article #article, html body.about #article, html body.post #article { width: 100%; max-width: 100%; float: left; background: red; }
 html body.article #article article.single, html body.about #article article.single, html body.post #article article.single { max-width: 43.75em; line-height: 1.75; /* Padding of individual elements
 */ /* Padding of consecutive elements
 */ }
@@ -4105,9 +4103,9 @@ html body.galleries #articles article.thumb figure { width: 100%; max-width: 100
   html body.daily main aside #spacer { margin-bottom: -2500em !important; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
 @media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.daily main { overflow: hidden; }
   html body.daily main aside #spacer { margin-bottom: -2500em !important; padding-bottom: 2500em; background: #f1f1f1; color: #231f20; } }
-html body.daily main #articles { width: 100%; max-width: 100%; float: left; }
-@media only screen and (min-width: 80em) { html body.daily main #articles { width: 65.5%; margin-right: 2.5%; float: left; } }
-@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.daily main #articles { width: 65.5%; margin-right: 2.5%; float: left; } }
+html body.daily main #articles, html body.daily main #article { width: 100%; max-width: 100%; float: left; }
+@media only screen and (min-width: 80em) { html body.daily main #articles, html body.daily main #article { width: 65.5%; margin-right: 2.5%; float: left; } }
+@media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.daily main #articles, html body.daily main #article { width: 65.5%; margin-right: 2.5%; float: left; } }
 html body.daily main #sidebar { width: 100%; max-width: 100%; float: left; margin-top: 1.25em; }
 @media only screen and (min-width: 80em) { html body.daily main #sidebar { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; margin-top: 0; } }
 @media only screen and (min-width: 48.001em) and (max-width: 80em) and (orientation: landscape) { html body.daily main #sidebar { width: 31.5%; margin-right: 2.5%; float: left; margin-right: 0; margin-top: 0; } }
