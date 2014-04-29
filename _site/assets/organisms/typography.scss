@@ -1,0 +1,105 @@
+
+/* Default settings for this theme
+  - like typography, links, colors, etc
+*/
+@mixin default-settings {
+  @include color;
+  @include fluid-image;
+  @include font;
+}
+
+
+
+/* Vertical spacing of all typographic elements
+*/
+@mixin vertical-rhythm {
+  /* Padding of individual elements
+  */
+  ul, ol, dl, table, figure, form, q, blockquote, pre, code {
+    margin: $pad 0;
+  }
+  
+  figure {
+    margin-top: $pad;
+  }
+  
+  figure + figure {
+    margin-top: 0;
+  }
+  
+  
+  
+  /* Padding of consecutive elements
+  */
+  dd + dt {
+    margin-top: $pad;
+  }
+  
+  p + p {
+    margin-top: $pad;
+  }
+  
+  h1 + h2, h2 + h3 {
+    padding-top: 0;
+  }
+  
+  
+  h1 + ul, h2 + ul, h3 + ul,
+  h1 + ol, h2 + ol, h3 + ol,
+  h1 + figure, h2 + figure, h3 + figure,
+  h1 + nav {
+    margin-top: 0;
+  }
+  
+  
+  li ul, li ol {
+    margin-top: 0;
+  }
+  
+}
+
+
+/* Settings for long text content like articles, blog posts
+*/
+@mixin body-text {
+  max-width: $body-text-width; 
+  @include line-height(text);
+  
+  @include headings(padding);
+  
+  
+  @include ul;
+  @include ol;
+  @include dl;
+  @include table;
+  @include figure;
+  @include form;
+  @include q;
+  @include blockquote;
+  @include code;
+  @include hr;
+  @include em;
+  @include strong;
+  @include small;
+  @include strikethrough;
+  @include cite;
+  @include q;
+  @include dfn;
+  @include abbr;
+  @include time;
+  @include var;
+  @include samp;
+  @include sup;
+  @include mark;
+  @include del;
+  @include address;
+  @include select;
+  @include checkbox;
+  
+  
+  @include vertical-rhythm;
+}
+
+
+
+
