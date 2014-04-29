@@ -54,6 +54,7 @@
 }
 
 /* Transforms an inline list back to normal
+- This breaks the IE9 .... fix needed
 */
 @mixin list-normal {
   li {
@@ -70,6 +71,7 @@
 
 
 /* Centers an inline list
+  - IE fix: http://www.primecut.gr/2013/05/navigation-menu-align-centered-using-width-fit-content-css/
 */
 @mixin list-centered {
   text-align: center;
@@ -77,6 +79,7 @@
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  display: table\0/ !important; /* IE 8-9 */
 }
 
 

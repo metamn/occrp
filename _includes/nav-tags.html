@@ -15,6 +15,11 @@
     </li>
   </ul>
   
+  <!-- Otherwise in IE 9 this is not aligned well to right -->
+  <ul class="social">
+    {% include social.html color='-white' highlight='-white' %}
+  </ul>
+  
   <ul class="tag-list">
     <li class="russia">
       <a href="{{ site.url }}/russia" title="About Us">
@@ -47,7 +52,5 @@
     </li>
   </ul>
   
-  <ul class="social">
-    {% include social.html color='-white' highlight='-white' %}
-  </ul>
+  
 </nav>
