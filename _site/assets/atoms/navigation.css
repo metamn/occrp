@@ -3,8 +3,9 @@
 /* Displays an <ul> list inline
 */
 /* Transforms an inline list back to normal
+- This breaks the IE9 .... fix needed
 */
-/* Centers an inline list
+/* Centers an inline list - IE fix: http://www.primecut.gr/2013/05/navigation-menu-align-centered-using-width-fit-content-css/
 */
 /* List floated right
 */
